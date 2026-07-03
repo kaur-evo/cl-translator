@@ -258,6 +258,9 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
   background:#000;color:#fff;font-size:14px;line-height:20px;font-weight:400;
   padding:6px 16px;border-radius:var(--radius);max-width:340px;white-space:nowrap;
   box-shadow:var(--shadow);z-index:20;pointer-events:none;}
+/* the LAST field's caption sits at the scroll edge — open its tooltip upwards
+   so it isn't clipped by the scrolling field list */
+.edit-field-wrap:last-child .cap.tip:hover::after{top:auto;bottom:calc(100% + 4px);}
 .edit-field{background:var(--input);border-bottom:1px solid var(--input-stroke);
   border-radius:4px 4px 0 0;padding:16px;display:flex;align-items:center;}
 .edit-field textarea{width:100%;border:none;background:none;font-family:var(--font);
