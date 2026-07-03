@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist translations — Evocon prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- The flow lives entirely inside this canvas: add a language, review the
+       AI-seeded translation, edit fields one by one. No app chrome. -->
+  <div class="canvas">
+    <div class="stage">
+
+      <!-- View 1: the existing checklist editor (Settings) with a Translations
+           section at the bottom, matching the stop-reason pattern. -->
+      <section class="card" id="view-base"></section>
+
+    </div>
+  </div>
+
+  <!-- View 2: review & edit — a MODAL over the base view (Figma 46045:7156).
+       After translating, the translation dialog morphs into this full review
+       in the same scope; reopening a language (pencil) shows it as a modal. -->
+  <div class="overlay" id="ov-review" hidden>
+    <section class="card ov-review" id="view-review"></section>
+  </div>
+
+  <!-- Overlay: add a language (Translation) -->
+  <div class="overlay" id="ov-add" hidden></div>
+
+  <!-- Overlay: add a task (free-text question) -->
+  <div class="overlay" id="ov-task" hidden></div>
+
+  <!-- Prototype console: a right-side drawer showing translation runs
+       (model, time, tokens, cost) + live log. Toggle with the tab button. -->
+  <button class="console-tab" id="console-tab" aria-label="Open console">⌥ Console</button>
+  <aside class="console" id="console" hidden></aside>
+
+  <script src="js/gate.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/backend-direct.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>

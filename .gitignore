@@ -1,0 +1,22 @@
+# secrets — never commit keys
+.env
+*.env
+!.env.example
+
+# private UX knowledge base + working notes — not for publishing
+ux-images/
+ux-instructions/
+claude-ux-companion/
+CLAUDE.md
+.claude/
+
+# reference translator scripts with hardcoded (deprecated) keys — do not publish
+translator/translator-v2.py
+translator/translator-v3.py
+translator/Translations/
+
+# local runtimes / junk
+node_modules/
+.venv/
+__pycache__/
+.DS_Store
