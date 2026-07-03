@@ -151,6 +151,7 @@ Every phrase comes with an explicit "type" — never guess what a string is:
   convention when one exists (e.g. Estonian "tk" → English "pcs"). International
   symbols (°C, kg, %, mm) stay unchanged.
 - "out-of-range message": warning shown when a measurement is outside its range.
+- "no-answer message": warning shown when the operator answers 'No' on a Yes/No task.
 - "option": one answer choice in a select list; keep parallel phrasing across options.
 - "checklist description": the standard-operating-procedure text; always the last phrase.
 

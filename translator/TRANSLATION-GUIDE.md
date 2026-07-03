@@ -16,17 +16,23 @@ Every user-written string in a checklist, and nothing else.
 | 3 | Task description | `task description` | Instruction text under a question |
 | 4 | Unit (Measurement) | `unit` | Next to the numeric input |
 | 5 | Out-of-range message (Measurement) | `out-of-range message` | Warning when a value is outside min/max |
-| 6 | Option label (Single/Multi select) | `option` | One answer choice in the list |
-| 7 | Checklist description | `checklist description` | The standard-operating-procedure text |
+| 6 | No-answer message (Yes/No) | `no-answer message` | Warning when the operator answers 'No' |
+| 7 | Option label (Single/Multi select) | `option` | One answer choice in the list |
+| 8 | Checklist description | `checklist description` | The standard-operating-procedure text |
 
 Never sent (not user language content):
 
 - numbers: target value, min/max, sample counts
 - system answer labels: Yes / No / Done / Not applicable (translated by the app's own i18n)
+- task-settings toggles and their captions (allow N/A, allow images, multiple samples — app i18n)
 - group names (translated at group level, out of checklist scope — open question)
 
-Task-type coverage: Mark as done and Yes/No and Enter text contribute rows 2–3;
-Measurement contributes rows 2–5; Single/Multi select contribute rows 2–3 + 6.
+Character limits (from the task editor): question 200, task description 500,
+unit 10, both message kinds 200, option 200 (max 30 options per select task).
+
+Task-type coverage: Mark as done and Enter text contribute rows 2–3; Yes/No
+contributes rows 2–3 + 6; Measurement contributes rows 2–5; Single/Multi select
+contribute rows 2–3 + 7.
 
 ## 2. Pre-assigned field kinds — the translator never guesses
 

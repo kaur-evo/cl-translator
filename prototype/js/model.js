@@ -69,6 +69,7 @@ window.Model = (function () {
     "Description": "task description",
     "Unit": "unit",
     "Out-of-range message": "out-of-range message",
+    "Message": "no-answer message", // Yes/No: shown when the operator answers 'No'
   };
   const kindOf = (field) => FIELD_KIND[field] || (field.startsWith("Option") ? "option" : "text");
 
@@ -87,7 +88,7 @@ window.Model = (function () {
     {
       id: "t1",
       type: "Mark as done",
-      fields: [["Question", 100, "Question"], ["Description", 500, "Description"]],
+      fields: [["Question", 200, "Question"], ["Description", 500, "Description"]],
       base: {
         Question: "Lülita masin välja",
         Description: "Veendu, et kõik ohutusmeetmed on täidetud ja teavitatud.",
@@ -97,10 +98,12 @@ window.Model = (function () {
     {
       id: "t2",
       type: "Yes / No",
-      fields: [["Question", 200, "Question"], ["Description", 500, "Description"]],
+      // Yes/No also carries a Message shown when the operator answers 'No'.
+      fields: [["Question", 200, "Question"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
       base: {
         Question: "Kas puhvertsoonis on piisavalt ruumi, et hoida tootmist üleval?",
         Description: "Kontrolli puhvertsooni mahtu enne liini taaskäivitamist.",
+        Message: "Ära käivita liini enne, kui puhvertsoon on tühjendatud, ja teavita vahetuse juhti.",
       },
       t: {},
     },
@@ -145,11 +148,11 @@ window.Model = (function () {
       id: "t5",
       type: "Single select",
       fields: [
-        ["Question", 100, "Question"],
+        ["Question", 200, "Question"],
         ["Description", 500, "Description"],
-        ["Option 1", 100, "Option"],
-        ["Option 2", 100, "Option"],
-        ["Option 3", 100, "Option"],
+        ["Option 1", 200, "Option"],
+        ["Option 2", 200, "Option"],
+        ["Option 3", 200, "Option"],
       ],
       base: {
         Question: "Mis oli toote välimus?",
@@ -163,12 +166,12 @@ window.Model = (function () {
       type: "Multi select",
       // EXTREME #3 — multi-select with description + several options.
       fields: [
-        ["Question", 100, "Question"],
+        ["Question", 200, "Question"],
         ["Description", 500, "Description"],
-        ["Option 1", 100, "Option"],
-        ["Option 2", 100, "Option"],
-        ["Option 3", 100, "Option"],
-        ["Option 4", 100, "Option"],
+        ["Option 1", 200, "Option"],
+        ["Option 2", 200, "Option"],
+        ["Option 3", 200, "Option"],
+        ["Option 4", 200, "Option"],
       ],
       base: {
         Question: "Millised defektid olid pinnal näha?",
@@ -183,11 +186,11 @@ window.Model = (function () {
       type: "Multi select",
       // EXTREME #4 — a second multi-select to push the harder type twice.
       fields: [
-        ["Question", 100, "Question"],
+        ["Question", 200, "Question"],
         ["Description", 500, "Description"],
-        ["Option 1", 100, "Option"],
-        ["Option 2", 100, "Option"],
-        ["Option 3", 100, "Option"],
+        ["Option 1", 200, "Option"],
+        ["Option 2", 200, "Option"],
+        ["Option 3", 200, "Option"],
       ],
       base: {
         Question: "Millised tööriistad olid changeoveri ajal kasutusel?",
