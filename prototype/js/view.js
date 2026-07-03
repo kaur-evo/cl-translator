@@ -415,7 +415,7 @@ window.View = (function () {
           <span class="toggle sm ${review ? "on" : ""}" data-action="toggle-review" role="switch" aria-checked="${review}"></span>
         </label>
         <button class="btn con-run" data-action="run-full" ${busy ? "disabled" : ""}>
-          ${busy ? `<span class="spinner"></span><span>RUNNING…</span>` : `${globe}RUN ON FULL LIST`}
+          ${busy ? `<span class="spinner"></span><span>RUNNING…</span>` : `${globe}RE-RUN TRANSLATIONS`}
         </button>
       </div>
 
