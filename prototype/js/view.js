@@ -242,11 +242,9 @@ window.View = (function () {
         </div>
 
         ${contentHeader("Translations", langs.length ? "" : "Please add translations")}
-
+        ${warnBanner}
         <div class="row-card-list">${langRows}</div>
         <div class="btn-row"><button class="btn btn-tertiary" data-action="add-trans">${mdi(P.add, "btn-ico")}translation</button></div>
-
-        ${warnBanner}
       </div>
 
       <div class="footer">

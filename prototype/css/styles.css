@@ -198,7 +198,7 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
   background:var(--msg-bg);border-radius:4px;padding:8px;
   font-size:14px;line-height:20px;color:var(--text);}
 .inline-msg-ico{flex:0 0 18px;color:var(--text);}
-.warn-msg{background:var(--orange-bg);margin-top:24px;}
+.warn-msg{background:var(--orange-bg);margin-bottom:8px;}
 .warn-msg .warn,.inline-msg-ico.warn{color:var(--orange);}
 
 /* ---------- footer (pt-8 pb-16 px-16, right buttons gap 8) ---------- */
