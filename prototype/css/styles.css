@@ -125,6 +125,8 @@ button{font-family:var(--font);}
 .row-card-list{display:flex;flex-direction:column;gap:8px;}
 .row-card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);
   min-height:62px;padding:8px 16px;display:flex;align-items:center;gap:16px;}
+.row-card.clickable{cursor:pointer;}
+.row-card.clickable:hover{background:#fafafa;}
 .task-num{flex:0 0 24px;width:24px;height:24px;border:1px solid var(--icon);color:var(--icon);
   border-radius:50%;font-size:12px;display:inline-flex;align-items:center;justify-content:center;}
 .row-card-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px;justify-content:center;}

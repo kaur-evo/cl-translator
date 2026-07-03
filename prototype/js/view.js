@@ -163,8 +163,9 @@ window.View = (function () {
 
     const langRows = langs.map(l => {
       const incomplete = !Model.isComplete(l.name);
+      // The whole card opens the review; the trash resolves first via closest().
       return `
-      <div class="row-card">
+      <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
         <div class="row-card-body">
           <div class="row-card-head">${esc(l.name)}${incomplete ? '<span class="miss-dot" title="Some translations are missing"></span>' : ""}</div>
