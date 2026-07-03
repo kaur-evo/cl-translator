@@ -134,7 +134,8 @@ window.Model = (function () {
       ],
       base: {
         Question: "Mis oli pakendi kaal?",
-        Description: "Kaalu kolm juhuslikku pakendit ja sisesta keskmine.",
+        // deliberately long: spans two lines in the review field for most languages
+        Description: "Kaalu kolm juhuslikku pakendit otse liinilt, veendu enne mõõtmist, et kaal on tareeritud ja puhas, sisesta kolme mõõtmise aritmeetiline keskmine ning märgi kõik kõrvalekalded kommentaari väljale enne partii vabastamist lattu.",
         Unit: "kg",
         "Out-of-range message": "Eemalda partii ja märgi praaki, kui kaal on vahemikust väljas.",
       },

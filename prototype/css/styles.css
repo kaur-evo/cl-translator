@@ -163,8 +163,12 @@ button{font-family:var(--font);}
 .btn-text{background:transparent;color:var(--text);}
 button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 
-/* loading state on a CTA — standard spinner, button keeps its own colour */
-.is-loading{cursor:progress;}
+/* loading state on a CTA (Figma 46051:3919): disabled-secondary look
+   (black-12% fill, 25% opacity, dark text/icon), loader after the label */
+.btn.is-loading,.btn.is-loading:disabled{background:#0000001f;color:var(--text);
+  opacity:.25;cursor:progress;pointer-events:none;}
+.btn-loader{display:inline-flex;align-items:center;padding-left:4px;}
+.btn-loader .spinner{width:18px;height:18px;border-width:2.5px;}
 .spinner{flex:0 0 auto;width:14px;height:14px;border-radius:50%;
   border:2px solid currentColor;border-top-color:transparent;
   display:inline-block;animation:spin .6s linear infinite;}

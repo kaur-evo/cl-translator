@@ -102,18 +102,23 @@
     els.ovTask.hidden = true;
   }
 
-  /* ---------- Loading state on a CTA (standard spinner) ---------- */
+  /* ---------- Loading state on a CTA (Figma 46051:3919) ----------
+     The button keeps its icon + label, drops to the disabled look
+     (black-12% fill at 25% opacity), and a loader spins AFTER the text. */
   function setLoading(btn, on) {
     if (!btn) return;
     if (on) {
-      btn.dataset.label = btn.innerHTML;
       btn.disabled = true;
       btn.classList.add("is-loading");
-      btn.innerHTML = `<span class="spinner" aria-hidden="true"></span><span>TRANSLATING…</span>`;
+      if (!btn.querySelector(".btn-loader")) {
+        btn.insertAdjacentHTML("beforeend",
+          `<span class="btn-loader" aria-hidden="true"><span class="spinner"></span></span>`);
+      }
     } else {
       btn.disabled = false;
       btn.classList.remove("is-loading");
-      if (btn.dataset.label != null) btn.innerHTML = btn.dataset.label;
+      const l = btn.querySelector(".btn-loader");
+      if (l) l.remove();
     }
   }
 
