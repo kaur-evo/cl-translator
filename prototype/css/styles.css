@@ -155,8 +155,10 @@ button{font-family:var(--font);}
 .btn-primary{background:var(--green);color:#fff;}
 .btn-primary:hover{filter:brightness(.97);}
 .btn-secondary{background:var(--green-fill);color:var(--green);}
-.btn-secondary:hover{background:#2ecc7130;}
-.btn-secondary:disabled{background:#2ecc710f;color:#2ecc7166;cursor:not-allowed;}
+.btn-secondary:hover:not(:disabled){background:#2ecc7130;}
+/* disabled = same look as loading (black-12% fill, 25% opacity, dark text),
+   just without the spinner (Figma 46051:3919 disabled secondary) */
+.btn-secondary:disabled{background:#0000001f;color:var(--text);opacity:.25;cursor:not-allowed;}
 .btn-tertiary{background:var(--btn-tertiary-bg);color:var(--text);}
 .btn-tertiary:hover{background:#e2e2e2;}
 .btn-tertiary:disabled{color:#21212159;cursor:not-allowed;}
