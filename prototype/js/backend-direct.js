@@ -14,6 +14,7 @@ window.DirectBackend = (function () {
   const API = "https://api.anthropic.com/v1/messages";
   const PRICES = {
     "claude-opus-4-8":   { in: 5.0, out: 25.0 },
+    "claude-sonnet-5":   { in: 3.0, out: 15.0 }, // assumed Sonnet-tier pricing
     "claude-sonnet-4-6": { in: 3.0, out: 15.0 },
     "claude-haiku-4-5":  { in: 1.0, out: 5.0 },
   };

@@ -348,6 +348,7 @@ window.View = (function () {
   const MODEL_OPTIONS = [
     "claude-haiku-4-5",
     "claude-sonnet-4-6",
+    "claude-sonnet-5",
     "claude-opus-4-8",
   ];
 
@@ -396,7 +397,7 @@ window.View = (function () {
     host.innerHTML = `
       <div class="con-header">
         <span class="con-title">Translation console</span>
-        <button class="icon-btn" data-action="close-console" aria-label="Close console">${mdi("M6 6l12 12M18 6 6 18", "", 17)}</button>
+        <button class="icon-btn" data-action="close-console" aria-label="Close console">${mdi("M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z", "", 18)}</button>
       </div>
 
       <div class="con-controls">
