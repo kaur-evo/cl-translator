@@ -65,7 +65,7 @@ window.Model = (function () {
   // a string is — every string is sent with a pre-assigned kind (see the dev
   // guide in translator/TRANSLATION-GUIDE.md). Option N labels map to "option".
   const FIELD_KIND = {
-    "Question": "question",
+    "Task": "task",
     "Description": "task description",
     "Unit": "unit",
     "Out-of-range message": "out-of-range message",
@@ -88,9 +88,9 @@ window.Model = (function () {
     {
       id: "t1",
       type: "Mark as done",
-      fields: [["Question", 200, "Question"], ["Description", 500, "Description"]],
+      fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
       base: {
-        Question: "Lülita masin välja",
+        Task: "Lülita masin välja",
         Description: "Veendu, et kõik ohutusmeetmed on täidetud ja teavitatud.",
       },
       t: {},
@@ -99,9 +99,9 @@ window.Model = (function () {
       id: "t2",
       type: "Yes / No",
       // Yes/No also carries a Message shown when the operator answers 'No'.
-      fields: [["Question", 200, "Question"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
+      fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
       base: {
-        Question: "Kas puhvertsoonis on piisavalt ruumi, et hoida tootmist üleval?",
+        Task: "Kas puhvertsoonis on piisavalt ruumi, et hoida tootmist üleval?",
         Description: "Kontrolli puhvertsooni mahtu enne liini taaskäivitamist.",
         Message: "Ära käivita liini enne, kui puhvertsoon on tühjendatud, ja teavita vahetuse juhti.",
       },
@@ -112,13 +112,13 @@ window.Model = (function () {
       type: "Measurement",
       // EXTREME #1 — every measurement text field at once.
       fields: [
-        ["Question", 200, "Question"],
+        ["Task", 200, "Task"],
         ["Description", 500, "Description"],
         ["Unit", 10, "Unit"],
         ["Out-of-range message", 200, "Out-of-range message"],
       ],
       base: {
-        Question: "Mis oli toote temperatuur väljastusel?",
+        Task: "Mis oli toote temperatuur väljastusel?",
         Description: "Mõõda temperatuuri kalibreeritud anduriga liini keskelt.",
         Unit: "°C",
         "Out-of-range message": "Teavita vahetuse juhti enne jätkamist.",
@@ -130,13 +130,13 @@ window.Model = (function () {
       type: "Measurement",
       // EXTREME #2 — a second measurement (different unit + message).
       fields: [
-        ["Question", 200, "Question"],
+        ["Task", 200, "Task"],
         ["Description", 500, "Description"],
         ["Unit", 10, "Unit"],
         ["Out-of-range message", 200, "Out-of-range message"],
       ],
       base: {
-        Question: "Mis oli pakendi kaal?",
+        Task: "Mis oli pakendi kaal?",
         // deliberately long: spans two lines in the review field for most languages
         Description: "Kaalu kolm juhuslikku pakendit otse liinilt, veendu enne mõõtmist, et kaal on tareeritud ja puhas, sisesta kolme mõõtmise aritmeetiline keskmine ning märgi kõik kõrvalekalded kommentaari väljale enne partii vabastamist lattu.",
         Unit: "kg",
@@ -148,14 +148,14 @@ window.Model = (function () {
       id: "t5",
       type: "Single select",
       fields: [
-        ["Question", 200, "Question"],
+        ["Task", 200, "Task"],
         ["Description", 500, "Description"],
         ["Option 1", 200, "Option"],
         ["Option 2", 200, "Option"],
         ["Option 3", 200, "Option"],
       ],
       base: {
-        Question: "Mis oli toote välimus?",
+        Task: "Mis oli toote välimus?",
         Description: "Hinda toote välimust visuaalselt hea valgustuse all.",
         "Option 1": "Kole", "Option 2": "Ilus", "Option 3": "Väga ilus",
       },
@@ -166,7 +166,7 @@ window.Model = (function () {
       type: "Multi select",
       // EXTREME #3 — multi-select with description + several options.
       fields: [
-        ["Question", 200, "Question"],
+        ["Task", 200, "Task"],
         ["Description", 500, "Description"],
         ["Option 1", 200, "Option"],
         ["Option 2", 200, "Option"],
@@ -174,7 +174,7 @@ window.Model = (function () {
         ["Option 4", 200, "Option"],
       ],
       base: {
-        Question: "Millised defektid olid pinnal näha?",
+        Task: "Millised defektid olid pinnal näha?",
         Description: "Märgi kõik täheldatud defektid; vali mitu, kui vajalik.",
         "Option 1": "Kriimustused", "Option 2": "Mullid",
         "Option 3": "Värvimuutus", "Option 4": "Mõlgid",
@@ -186,14 +186,14 @@ window.Model = (function () {
       type: "Multi select",
       // EXTREME #4 — a second multi-select to push the harder type twice.
       fields: [
-        ["Question", 200, "Question"],
+        ["Task", 200, "Task"],
         ["Description", 500, "Description"],
         ["Option 1", 200, "Option"],
         ["Option 2", 200, "Option"],
         ["Option 3", 200, "Option"],
       ],
       base: {
-        Question: "Millised tööriistad olid changeoveri ajal kasutusel?",
+        Task: "Millised tööriistad olid changeoveri ajal kasutusel?",
         Description: "Vali kõik töövahendid, mida tootevahetuse käigus kasutati.",
         "Option 1": "Mutrivõti", "Option 2": "Kruvikeeraja", "Option 3": "Survemõõdik",
       },
@@ -202,9 +202,9 @@ window.Model = (function () {
     {
       id: "t8",
       type: "Enter text",
-      fields: [["Question", 200, "Question"], ["Description", 500, "Description"]],
+      fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
       base: {
-        Question: "Kirjelda, kui midagi ebatavalist toimus tootevahetusel.",
+        Task: "Kirjelda, kui midagi ebatavalist toimus tootevahetusel.",
         Description: "Kirjuta vabas vormis kõik kõrvalekalded või tähelepanekud.",
       },
       t: {},
@@ -234,8 +234,8 @@ window.Model = (function () {
       tasks.push({
         id: `t${taskSeq}`,
         type: "Enter text",
-        fields: [["Question", 200, "Question"]],
-        base: { Question: questionText },
+        fields: [["Task", 200, "Task"]],
+        base: { Task: questionText },
         t: {},
       });
     },

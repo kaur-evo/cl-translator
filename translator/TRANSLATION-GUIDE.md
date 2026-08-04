@@ -12,8 +12,8 @@ Every user-written string in a checklist, and nothing else.
 | # | String | Kind (sent as `kind`) | Where it appears |
 |---|--------|----------------------|------------------|
 | 1 | Checklist name | `checklist name` | Shift View checklist modal title, Settings list |
-| 2 | Task question | `question` | The task prompt operators answer |
-| 3 | Task description | `task description` | Instruction text under a question |
+| 2 | Task (the task's own title) | `task` | Field labeled "Task" in the task editor — what operators see as the prompt |
+| 3 | Task description | `task description` | Instruction text under the task title (labeled "Description (Optional)") |
 | 4 | Unit (Measurement) | `unit` | Next to the numeric input |
 | 5 | Out-of-range message (Measurement) | `out-of-range message` | Warning when a value is outside min/max |
 | 6 | No-answer message (Yes/No) | `no-answer message` | Warning when the operator answers 'No' |
@@ -27,7 +27,7 @@ Never sent (not user language content):
 - task-settings toggles and their captions (allow N/A, allow images, multiple samples — app i18n)
 - group names (translated at group level, out of checklist scope — open question)
 
-Character limits (from the task editor): question 200, task description 500,
+Character limits (from the task editor): task 200, task description 500,
 unit 10, both message kinds 200, option 200 (max 30 options per select task).
 
 Task-type coverage: Mark as done and Enter text contribute rows 2–3; Yes/No
@@ -63,7 +63,7 @@ Request (stdin to `translate_run.py`, or POST `/translate` via the proxy):
   "language": "English",
   "fields": [
     {"key": "__name__",        "text": "Ohutuskontroll...", "kind": "checklist name"},
-    {"key": "t3::Question",    "text": "Mis oli toote...",  "kind": "question"},
+    {"key": "t3::Task",        "text": "Mis oli toote...",  "kind": "task"},
     {"key": "t3::Unit",        "text": "tk",                "kind": "unit"},
     {"key": "__description__", "text": "Veenduge, et...",   "kind": "checklist description"}
   ],

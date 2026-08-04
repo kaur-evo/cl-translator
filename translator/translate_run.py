@@ -145,7 +145,7 @@ Translate each phrase from Estonian into {language}, maintaining consistency and
 
 Every phrase comes with an explicit "type" — never guess what a string is:
 - "checklist name": short title operators see on the checklist; keep it concise.
-- "question": the task prompt shown to the operator.
+- "task": the task's own title/prompt shown to the operator.
 - "task description": supporting instruction text under a question.
 - "unit": a unit of measurement. Units MUST be translated to the target language's
   convention when one exists (e.g. Estonian "tk" → English "pcs"). International

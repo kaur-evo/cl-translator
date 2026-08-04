@@ -135,13 +135,19 @@ button{font-family:var(--font);}
 .row-card-type{font-size:10px;line-height:14px;font-weight:600;letter-spacing:.8px;
   text-transform:uppercase;color:var(--muted);}
 .row-card-icons{display:flex;align-items:center;gap:4px;}
+/* 40x40 hit area (touch-friendly on the row card); the SVG glyph inside stays
+   24x24 either way — only the button's own box grows. */
 .row-card-icons .icon-btn{width:40px;height:40px;}
 .miss-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex:0 0 8px;}
 
-.icon-btn{background:none;border:none;cursor:pointer;color:var(--icon);padding:0;
+/* Classic Material icon-button: round grey hover bubble that exactly fills
+   the button's own box (24x24 standalone, 40x40 on row cards). Same neutral
+   hover for every icon button — trash included, it never turns red; delete
+   is confirmed by the action, not by colour. */
+.icon-btn{background:none;border:none;cursor:pointer;color:var(--icon);
+  width:24px;height:24px;padding:0;flex:0 0 24px;
   display:inline-flex;align-items:center;justify-content:center;border-radius:50%;}
-.icon-btn:hover{color:var(--text);background:#0000000a;}
-.icon-btn.trash:hover{color:var(--danger);}
+.icon-btn:hover{color:var(--text);background:#0000000f;}
 .icon-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 
 /* ---------- buttons (Figma: pl-12 pr-16 py-6, gap 4, 14/16 semibold uppercase) ---------- */
@@ -169,8 +175,9 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
    (black-12% fill, 25% opacity, dark text/icon), loader after the label */
 .btn.is-loading,.btn.is-loading:disabled{background:#0000001f;color:var(--text);
   opacity:.25;cursor:progress;pointer-events:none;}
+/* Loader per Figma 46051:3919: 24x24, pl-4 gap after the label */
 .btn-loader{display:inline-flex;align-items:center;padding-left:4px;}
-.btn-loader .spinner{width:18px;height:18px;border-width:2.5px;}
+.btn-loader .spinner{width:24px;height:24px;border-width:2.5px;}
 .spinner{flex:0 0 auto;width:14px;height:14px;border-radius:50%;
   border:2px solid currentColor;border-top-color:transparent;
   display:inline-block;animation:spin .6s linear infinite;}
@@ -271,7 +278,7 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .edit-field textarea::placeholder{color:var(--input-placeholder);}
 .edit-field textarea:focus{outline:none;}
 /* missing translation: empty input, orange underline (matches the orange dot) */
-.edit-field.missing{border-bottom:2px solid var(--orange);padding-bottom:15px;}
+.edit-field.missing{border-bottom:2px solid var(--danger);padding-bottom:15px;}
 /* filled + typing state: darker fill, green underline (wins over .missing when focused) */
 .edit-field:focus-within{background:var(--input-entered);border-bottom:2px solid var(--green);padding-bottom:15px;}
 

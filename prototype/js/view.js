@@ -109,7 +109,7 @@ window.View = (function () {
 
   /* ---- shared bits ---- */
   const iconBtn = (path, action, extra = "") =>
-    `<button class="icon-btn${extra ? " " + extra : ""}"${action ? ` data-action="${action}"` : ""}>${mdi(path, "", 18)}</button>`;
+    `<button class="icon-btn${extra ? " " + extra : ""}"${action ? ` data-action="${action}"` : ""}>${mdi(path, "", 24)}</button>`;
 
   const contentHeader = (title, desc, withInfo) => `
     <div class="content-header">
@@ -149,11 +149,13 @@ window.View = (function () {
      VIEW 1 — base checklist editor (Figma 46012:3499)
      =========================================================== */
   function renderBase(host, langs, tasks) {
+    // Card heading = the task's own title (its "Task" field), matching the
+    // real task editor — not a positional "Task N" label.
     const taskList = tasks.map((t, i) => `
       <div class="row-card">
         <span class="task-num">${i + 1}</span>
         <div class="row-card-body">
-          <div class="row-card-head">Task ${i + 1}</div>
+          <div class="row-card-head">${esc(t.base.Task)}</div>
           <div class="row-card-type">${esc(TYPE_LABEL[t.type] || t.type)}</div>
         </div>
         <div class="row-card-icons">
@@ -171,8 +173,8 @@ window.View = (function () {
           <div class="row-card-head">${esc(l.name)}${incomplete ? '<span class="miss-dot" title="Some translations are missing"></span>' : ""}</div>
         </div>
         <div class="row-card-icons">
-          <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 18)}</button>
-          <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 18)}</button>
+          <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 24)}</button>
+          <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 24)}</button>
         </div>
       </div>`;
     }).join("");
@@ -259,22 +261,24 @@ window.View = (function () {
      VIEW 2 — review & edit modal (Figma 46045:7950, 975 wide)
      =========================================================== */
   function renderReview(host, lang, tasks) {
+    // The hover hint is just the STRING KIND (Task, Description, Unit, Message,
+    // Out-of-range message, Option, Checklist name, Checklist description) —
+    // no task numbering or type, so it reads the same wherever it appears.
     let body = fieldInput(
       Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__",
-      "Checklist, Name"
+      "Checklist name · max 50"
     );
 
-    tasks.forEach((task, i) => {
+    tasks.forEach((task) => {
       task.fields.forEach(([field, limit, kind]) => {
-        const tip = `Task ${i + 1}, ${task.type}, ${kind || field}`;
         body += fieldInput(Model.baseText(task, field), Model.translatedText(task, field, lang.name),
-          limit, `${task.id}::${field}`, tip);
+          limit, `${task.id}::${field}`, `${kind || field} · max ${limit}`);
       });
     });
 
     body += fieldInput(
       Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__",
-      "Checklist, Description"
+      "Checklist description · max 500"
     );
 
     const complete = Model.isComplete(lang.name);
@@ -396,7 +400,7 @@ window.View = (function () {
     host.innerHTML = `
       <div class="con-header">
         <span class="con-title">Translation console</span>
-        <button class="icon-btn" data-action="close-console" aria-label="Close console">${mdi("M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z", "", 18)}</button>
+        <button class="icon-btn" data-action="close-console" aria-label="Close console">${mdi("M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z", "", 24)}</button>
       </div>
 
       <div class="con-controls">
