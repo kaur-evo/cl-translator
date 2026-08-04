@@ -305,7 +305,7 @@ window.View = (function () {
       <div class="card ov-small">
         <div class="header58"><h2>Translation</h2></div>
         <div class="ov-content">
-          ${inlineMsg("Translations are automatically generated and can be edited.")}
+          ${inlineMsg("Translations are automatically generated and editable.")}
           <div class="input-group dd">
             <button class="input-box select dd-trigger" data-action="toggle-dd">
               <span class="val dd-current placeholder">Select language</span>${mdi(P.arrowDown, "sel-arrow", 24)}

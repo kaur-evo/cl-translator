@@ -136,8 +136,9 @@ button{font-family:var(--font);}
   text-transform:uppercase;color:var(--muted);}
 .row-card-icons{display:flex;align-items:center;gap:4px;}
 /* 40x40 hit area (touch-friendly on the row card); the SVG glyph inside stays
-   24x24 either way — only the button's own box grows. */
-.row-card-icons .icon-btn{width:40px;height:40px;}
+   24x24 either way — only the button's own box grows. Must override flex-basis
+   too, or the base .icon-btn's flex:0 0 24px pins the width at 24px. */
+.row-card-icons .icon-btn{width:40px;height:40px;flex:0 0 40px;}
 .miss-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex:0 0 8px;}
 
 /* Classic Material icon-button: round grey hover bubble that exactly fills
