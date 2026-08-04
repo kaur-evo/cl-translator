@@ -285,7 +285,6 @@ window.View = (function () {
 
     host.innerHTML = `
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
-      ${inlineMsg("All user written text is editable field with original written below.")}
       <div class="review-fields">${body}</div>
       <div class="footer">
         <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "hidden" : ""}>${globe}translate</button>
