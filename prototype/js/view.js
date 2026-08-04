@@ -261,24 +261,22 @@ window.View = (function () {
      VIEW 2 — review & edit modal (Figma 46045:7950, 975 wide)
      =========================================================== */
   function renderReview(host, lang, tasks) {
-    // The hover hint is just the STRING KIND (Task, Description, Unit, Message,
-    // Out-of-range message, Option, Checklist name, Checklist description) —
-    // no task numbering or type, so it reads the same wherever it appears.
+    // The hover hint is just the bare STRING KIND (Task, Description, Unit,
+    // Message, Out-of-range message, Option, Name) — no char limit, no task
+    // numbering, no qualifier. Same word wherever that kind of field appears.
     let body = fieldInput(
-      Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__",
-      "Checklist name · max 50"
+      Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__", "Name"
     );
 
     tasks.forEach((task) => {
       task.fields.forEach(([field, limit, kind]) => {
         body += fieldInput(Model.baseText(task, field), Model.translatedText(task, field, lang.name),
-          limit, `${task.id}::${field}`, `${kind || field} · max ${limit}`);
+          limit, `${task.id}::${field}`, kind || field);
       });
     });
 
     body += fieldInput(
-      Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__",
-      "Checklist description · max 500"
+      Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__", "Description"
     );
 
     const complete = Model.isComplete(lang.name);
