@@ -286,7 +286,7 @@ window.View = (function () {
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
       <div class="review-fields">${body}</div>
       <div class="footer">
-        <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "hidden" : ""}>generate missing translations</button>
+        <button class="btn btn-secondary" data-action="retranslate" ${complete ? "hidden" : ""}>generate missing translations</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">cancel</button>
         <button class="btn btn-secondary" data-action="review-save">apply</button>
