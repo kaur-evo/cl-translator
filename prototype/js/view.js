@@ -172,7 +172,7 @@ window.View = (function () {
       // going through the review modal one at a time (each shows its own
       // console run card + loading state, same as the modal's button).
       const genBtn = incomplete
-        ? `<button class="btn btn-tertiary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`
+        ? `<button class="btn btn-secondary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`
         : "";
       return `
       <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
@@ -181,9 +181,9 @@ window.View = (function () {
           <div class="row-card-head">${esc(l.name)}${incomplete ? '<span class="miss-dot" title="Some translations are missing"></span>' : ""}</div>
         </div>
         <div class="row-card-icons">
-          ${genBtn}
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 24)}</button>
           <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 24)}</button>
+          ${genBtn}
         </div>
       </div>`;
     }).join("");
