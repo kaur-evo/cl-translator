@@ -178,7 +178,7 @@ window.View = (function () {
       <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
         <div class="row-card-body">
-          <div class="row-card-head">${esc(l.name)}${incomplete ? '<span class="miss-dot" title="Some translations are missing"></span>' : ""}</div>
+          <div class="row-card-head">${esc(l.name)}</div>
         </div>
         <div class="row-card-icons">
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 24)}</button>

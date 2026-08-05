@@ -348,7 +348,7 @@
           .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
           .finally(() => {
             generatingLangs.delete(lang.name);
-            showBase(); // re-render clears this row's dot/button; re-applies any sibling still running
+            showBase(); // re-render drops this row's generate button once complete; re-applies any sibling still running
           });
         break;
       }
