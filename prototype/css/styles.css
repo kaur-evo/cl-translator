@@ -139,6 +139,8 @@ button{font-family:var(--font);}
    24x24 either way — only the button's own box grows. Must override flex-basis
    too, or the base .icon-btn's flex:0 0 24px pins the width at 24px. */
 .row-card-icons .icon-btn{width:40px;height:40px;flex:0 0 40px;}
+/* per-row generate CTA — same 40px height as the icon buttons beside it */
+.row-gen{height:40px;flex:0 0 auto;white-space:nowrap;}
 .miss-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex:0 0 8px;}
 
 /* Classic Material icon-button: round grey hover bubble that exactly fills

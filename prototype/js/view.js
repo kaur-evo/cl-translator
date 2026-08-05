@@ -166,7 +166,14 @@ window.View = (function () {
 
     const langRows = langs.map(l => {
       const incomplete = !Model.isComplete(l.name);
-      // The whole card opens the review; the trash resolves first via closest().
+      // The whole card opens the review; the trash/pencil/generate buttons
+      // resolve first via closest(). Incomplete languages get an inline
+      // "generate" CTA so several can be kicked off in parallel without
+      // going through the review modal one at a time (each shows its own
+      // console run card + loading state, same as the modal's button).
+      const genBtn = incomplete
+        ? `<button class="btn btn-tertiary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`
+        : "";
       return `
       <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
@@ -174,6 +181,7 @@ window.View = (function () {
           <div class="row-card-head">${esc(l.name)}${incomplete ? '<span class="miss-dot" title="Some translations are missing"></span>' : ""}</div>
         </div>
         <div class="row-card-icons">
+          ${genBtn}
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 24)}</button>
           <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 24)}</button>
         </div>

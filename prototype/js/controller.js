@@ -324,6 +324,20 @@
         break;
       }
 
+      case "gen-lang": {
+        // Per-row generate: runs missing-only translation for THIS language
+        // without opening the review modal, so several rows can run at once
+        // (each gets its own console run card). Loading state matches the
+        // modal's CTA; re-rendering the row on completion clears the dot.
+        const lang = Model.getLanguages().find(l => l.name === t.dataset.lang);
+        if (!lang || t.disabled) break;
+        setLoading(t, true);
+        runTranslation(lang, true)
+          .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
+          .finally(() => showBase()); // re-render clears the dot/button and any loading state
+        break;
+      }
+
       case "del-lang":
         Model.removeLanguage(t.dataset.lang);
         showBase();
