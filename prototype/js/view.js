@@ -317,7 +317,7 @@ window.View = (function () {
         <div class="footer">
           <span class="spacer"></span>
           <button class="btn btn-text" data-action="close-overlay">cancel</button>
-          <button class="btn btn-secondary" data-action="do-translate" disabled>generate translations</button>
+          <button class="btn btn-primary" data-action="do-translate" disabled>generate translations</button>
         </div>
       </div>`;
   }

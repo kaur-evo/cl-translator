@@ -160,7 +160,8 @@ button{font-family:var(--font);}
 .btn:has(svg){padding-left:12px;}
 .btn-ico{flex:0 0 24px;width:24px;height:24px;}
 .btn-primary{background:var(--green);color:#fff;}
-.btn-primary:hover{filter:brightness(.97);}
+.btn-primary:hover:not(:disabled){filter:brightness(.97);}
+.btn-primary:disabled{background:#0000001f;color:var(--text);opacity:.25;cursor:not-allowed;}
 .btn-secondary{background:var(--green-fill);color:var(--green);}
 .btn-secondary:hover:not(:disabled){background:#2ecc7130;}
 /* disabled = same look as loading (black-12% fill, 25% opacity, dark text),
