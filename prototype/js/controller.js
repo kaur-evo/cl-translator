@@ -344,10 +344,18 @@
         }
         break;
 
-      case "review-save":
+      case "review-save": {
         if (currentLang) syncReviewToModel(currentLang);
+        // APPLY still works with missing strings — but scroll the first one
+        // into view instead of silently saving, so it's clear what's left.
+        const firstMissing = els.review.querySelector(".edit-field.missing");
+        if (firstMissing) {
+          firstMissing.scrollIntoView({ block: "center", behavior: "smooth" });
+          break;
+        }
         closeReview();
         break;
+      }
 
       case "review-cancel":
         closeReview(); // discard edits

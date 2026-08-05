@@ -280,6 +280,9 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .edit-field textarea:focus{outline:none;}
 /* missing translation: empty input, orange underline (matches the orange dot) */
 .edit-field.missing{border-bottom:2px solid var(--danger);padding-bottom:15px;}
+/* the original-string caption under a missing field turns red too, so the
+   whole "this needs attention" signal reads at a glance, not just the underline */
+.edit-field-wrap:has(.edit-field.missing) .input-bottom .cap:first-child{color:var(--danger);}
 /* filled + typing state: darker fill, green underline (wins over .missing when focused) */
 .edit-field:focus-within{background:var(--input-entered);border-bottom:2px solid var(--green);padding-bottom:15px;}
 
