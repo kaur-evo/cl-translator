@@ -20,6 +20,7 @@
   let pendingLang = null;   // language chosen in the add overlay, not yet confirmed
   let currentLang = null;   // language being reviewed
   let lastLang = null;      // last language translated (for "run on full list")
+  const generatingLangs = new Set(); // language names with an in-flight per-row generate run
 
   // Where translations run: the local node proxy serves the app on :8787;
   // anywhere else (e.g. GitHub Pages) is static, so "real" uses the direct
@@ -49,9 +50,18 @@
   function openConsole() { els.console.hidden = false; els.conTab.hidden = true; }
   function closeConsole() { els.console.hidden = true; els.conTab.hidden = false; }
 
-  /* ---------- View 1: base editor (always visible under the modals) ---------- */
+  /* ---------- View 1: base editor (always visible under the modals) ----------
+     Rebuilds the whole list from Model state on every call. A per-row generate
+     run outlives any number of these rebuilds (another language finishing
+     triggers one too), so re-apply the loading state to any row whose language
+     is still in generatingLangs — otherwise a sibling's re-render silently
+     wipes the spinner off a run that's still going. */
   function showBase() {
     View.renderBase(els.base, Model.getLanguages(), Model.getTasks());
+    generatingLangs.forEach(name => {
+      const btn = els.base.querySelector(`.row-gen[data-lang="${CSS.escape(name)}"]`);
+      if (btn) setLoading(btn, true);
+    });
   }
 
   /* ---------- View 2: review & edit — a modal over the base view ----------
@@ -327,14 +337,19 @@
       case "gen-lang": {
         // Per-row generate: runs missing-only translation for THIS language
         // without opening the review modal, so several rows can run at once
-        // (each gets its own console run card). Loading state matches the
-        // modal's CTA; re-rendering the row on completion clears the dot.
+        // (each gets its own console run card). generatingLangs tracks who's
+        // still in flight so a SIBLING finishing first — which re-renders the
+        // whole row list via showBase() — doesn't wipe this row's spinner.
         const lang = Model.getLanguages().find(l => l.name === t.dataset.lang);
-        if (!lang || t.disabled) break;
+        if (!lang || t.disabled || generatingLangs.has(lang.name)) break;
+        generatingLangs.add(lang.name);
         setLoading(t, true);
         runTranslation(lang, true)
           .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
-          .finally(() => showBase()); // re-render clears the dot/button and any loading state
+          .finally(() => {
+            generatingLangs.delete(lang.name);
+            showBase(); // re-render clears this row's dot/button; re-applies any sibling still running
+          });
         break;
       }
 
