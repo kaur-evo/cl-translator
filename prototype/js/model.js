@@ -226,6 +226,10 @@ window.Model = (function () {
     getLanguages: () => languages,
     getAvailable: () => available.filter(a => !languages.some(l => l.name === a.name)),
     addLanguage(lang) {
+      // The base language is never a translation target — even if something
+      // upstream (a picker built from stale options, a test harness, etc.)
+      // hands it in, refuse it structurally rather than trust every caller.
+      if (lang.name === baseLanguage.name) return;
       if (!languages.some(l => l.name === lang.name)) languages.push(lang);
     },
     removeLanguage(name) {
