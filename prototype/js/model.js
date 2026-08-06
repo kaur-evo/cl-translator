@@ -219,6 +219,7 @@ window.Model = (function () {
   ];
 
   let taskSeq = tasks.length;
+  let randomTaskCount = 0; // alternates addRandomTask's source language
 
   return {
     getBaseLanguage: () => baseLanguage,
@@ -248,44 +249,64 @@ window.Model = (function () {
     },
 
     // Mocking helper: generate a random task of a random type with plausible
-    // Estonian field values, so + TASK can be used repeatedly to build test
-    // data without typing anything. No translations yet, so every added
-    // language becomes incomplete (same as addTask).
+    // field values, so + TASK can be used repeatedly to build test data
+    // without typing anything. Alternates source language on every other
+    // call (Estonian, then Russian, then Estonian, …) — same mixed-tenant
+    // scenario as the seed data, so repeated use keeps stressing it. No
+    // translations yet, so every added language becomes incomplete (same as addTask).
     addRandomTask() {
       taskSeq += 1;
+      randomTaskCount += 1;
       const id = `t${taskSeq}`;
+      const russian = randomTaskCount % 2 === 0; // every OTHER call
       const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
       const templates = [
         { type: "Mark as done",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
-          base: { Task: pick(["Lülita seade välja", "Puhasta tööpind", "Sulge kaitsekate"]),
-                  Description: "Kinnita, et toiming on lõpetatud." } },
+          et: { Task: pick(["Lülita seade välja", "Puhasta tööpind", "Sulge kaitsekate"]),
+                Description: "Kinnita, et toiming on lõpetatud." },
+          ru: { Task: pick(["Выключите оборудование", "Очистите рабочую поверхность", "Закройте защитный кожух"]),
+                Description: "Подтвердите, что действие завершено." } },
         { type: "Yes / No",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
-          base: { Task: pick(["Kas kõik anduri on kalibreeritud?", "Kas ohutuslukk on aktiveeritud?"]),
-                  Description: "Kontrolli enne järgmise etapi alustamist.",
-                  Message: "Teavita vahetuse juhti enne jätkamist." } },
+          et: { Task: pick(["Kas kõik anduri on kalibreeritud?", "Kas ohutuslukk on aktiveeritud?"]),
+                Description: "Kontrolli enne järgmise etapi alustamist.",
+                Message: "Teavita vahetuse juhti enne jätkamist." },
+          ru: { Task: pick(["Все ли датчики откалиброваны?", "Активирована ли блокировка безопасности?"]),
+                Description: "Проверьте перед началом следующего этапа.",
+                Message: "Сообщите руководителю смены перед продолжением." } },
         { type: "Measurement",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Unit", 10, "Unit"], ["Out-of-range message", 200, "Out-of-range message"]],
-          base: { Task: pick(["Mis oli survetase?", "Mis oli vibratsioonitase?"]),
-                  Description: "Mõõda kalibreeritud seadmega.",
-                  Unit: pick(["bar", "Hz", "mm"]),
-                  "Out-of-range message": "Peata liin ja teavita hooldust." } },
+          et: { Task: pick(["Mis oli survetase?", "Mis oli vibratsioonitase?"]),
+                Description: "Mõõda kalibreeritud seadmega.",
+                Unit: pick(["bar", "Hz", "mm"]),
+                "Out-of-range message": "Peata liin ja teavita hooldust." },
+          ru: { Task: pick(["Каков был уровень давления?", "Каков был уровень вибрации?"]),
+                Description: "Измерьте калиброванным прибором.",
+                Unit: pick(["бар", "Гц", "мм"]),
+                "Out-of-range message": "Остановите линию и сообщите в службу техобслуживания." } },
         { type: "Single select",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Option 1", 200, "Option"], ["Option 2", 200, "Option"], ["Option 3", 200, "Option"]],
-          base: { Task: "Milline oli üldine seisukord?", Description: "Vali sobivaim variant.",
-                  "Option 1": "Halb", "Option 2": "Rahuldav", "Option 3": "Hea" } },
+          et: { Task: "Milline oli üldine seisukord?", Description: "Vali sobivaim variant.",
+                "Option 1": "Halb", "Option 2": "Rahuldav", "Option 3": "Hea" },
+          ru: { Task: "Каково было общее состояние?", Description: "Выберите наиболее подходящий вариант.",
+                "Option 1": "Плохое", "Option 2": "Удовлетворительное", "Option 3": "Хорошее" } },
         { type: "Multi select",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Option 1", 200, "Option"], ["Option 2", 200, "Option"], ["Option 3", 200, "Option"]],
-          base: { Task: "Millised probleemid esinesid?", Description: "Vali kõik, mis kehtivad.",
-                  "Option 1": "Müra", "Option 2": "Leke", "Option 3": "Ülekuumenemine" } },
+          et: { Task: "Millised probleemid esinesid?", Description: "Vali kõik, mis kehtivad.",
+                "Option 1": "Müra", "Option 2": "Leke", "Option 3": "Ülekuumenemine" },
+          ru: { Task: "Какие проблемы возникли?", Description: "Выберите все подходящие варианты.",
+                "Option 1": "Шум", "Option 2": "Утечка", "Option 3": "Перегрев" } },
         { type: "Enter text",
           fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
-          base: { Task: "Kirjelda vahetuse käigus tekkinud kõrvalekaldeid.",
-                  Description: "Vabas vormis, too välja ka aeg." } },
+          et: { Task: "Kirjelda vahetuse käigus tekkinud kõrvalekaldeid.",
+                Description: "Vabas vormis, too välja ka aeg." },
+          ru: { Task: "Опишите отклонения, произошедшие во время смены.",
+                Description: "В свободной форме, укажите также время." } },
       ];
       const t = pick(templates);
-      tasks.push({ id, type: t.type, fields: t.fields, base: { ...t.base }, t: {} });
+      const base = russian ? t.ru : t.et;
+      tasks.push({ id, type: t.type, fields: t.fields, base: { ...base }, t: {} });
       return id;
     },
 
