@@ -313,7 +313,7 @@ window.View = (function () {
       <div class="card ov-small">
         <div class="header58"><h2>Translation</h2></div>
         <div class="ov-content">
-          ${inlineMsg("Translations are generated automatically and are fully editable. This can take a few minutes for longer checklists.")}
+          ${inlineMsg("Translations are generated automatically. This can take a few minutes for longer checklists.")}
           <div class="input-group dd">
             <button class="input-box select dd-trigger" data-action="toggle-dd">
               <span class="val dd-current placeholder">Select language</span>${mdi(P.arrowDown, "sel-arrow", 24)}
