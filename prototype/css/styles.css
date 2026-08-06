@@ -368,7 +368,9 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 /* ---------- snackbar: transient toast stacked from the top-right ---------- */
 .snackbar-stack{position:fixed;top:18px;right:18px;z-index:80;
   display:flex;flex-direction:column;gap:8px;align-items:flex-end;
-  pointer-events:none;}
+  pointer-events:none;transition:right .2s ease;}
+/* keep clear of the console drawer when it's open, instead of overlapping it */
+body.console-open .snackbar-stack{right:min(438px, calc(92vw + 18px));}
 .snackbar{display:flex;align-items:center;gap:8px;background:var(--nav);color:#fff;
   border-radius:var(--radius);box-shadow:var(--shadow);padding:12px 16px;
   font-family:var(--font);font-size:14px;line-height:20px;

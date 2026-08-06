@@ -70,8 +70,8 @@
     const liveLog = els.console.querySelector(".run.is-running .run-log");
     if (liveLog) liveLog.scrollTop = liveLog.scrollHeight;
   }
-  function openConsole() { els.console.hidden = false; els.conTab.hidden = true; }
-  function closeConsole() { els.console.hidden = true; els.conTab.hidden = false; }
+  function openConsole() { els.console.hidden = false; els.conTab.hidden = true; document.body.classList.add("console-open"); }
+  function closeConsole() { els.console.hidden = true; els.conTab.hidden = false; document.body.classList.remove("console-open"); }
 
   /* ---------- View 1: base editor (always visible under the modals) ----------
      Rebuilds the whole list from Model state on every call. generatingLangs is
