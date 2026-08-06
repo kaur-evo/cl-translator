@@ -364,3 +364,19 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
   font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;line-height:1.5;
   color:#c8c8c8;white-space:pre-wrap;word-break:break-word;max-height:180px;overflow-y:auto;}
 .spinner.sm{width:11px;height:11px;border-width:1.5px;}
+
+/* ---------- snackbar: transient toast stacked from the top-right ---------- */
+.snackbar-stack{position:fixed;top:18px;right:18px;z-index:80;
+  display:flex;flex-direction:column;gap:8px;align-items:flex-end;
+  pointer-events:none;}
+.snackbar{display:flex;align-items:center;gap:8px;background:var(--nav);color:#fff;
+  border-radius:var(--radius);box-shadow:var(--shadow);padding:12px 16px;
+  font-family:var(--font);font-size:14px;line-height:20px;
+  max-width:360px;pointer-events:auto;
+  transform:translateX(24px);opacity:0;
+  transition:transform .22s cubic-bezier(.2,.8,.2,1),opacity .22s ease;}
+.snackbar.in{transform:translateX(0);opacity:1;}
+.snackbar.out{transform:translateX(24px);opacity:0;}
+.snackbar-ico{flex:0 0 18px;color:var(--green);}
+.snackbar-ico svg{width:18px;height:18px;}
+@media (prefers-reduced-motion: reduce){.snackbar{transition:opacity .15s ease;}}

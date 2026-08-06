@@ -14,7 +14,18 @@
     ovTask:   $("#ov-task"),
     console:  $("#console"),
     conTab:   $("#console-tab"),
+    snacks:   $("#snackbar-stack"),
   };
+
+  // Show a toast in the top-right stack; auto-dismisses after `ms`.
+  function notify(message, ms = 3200) {
+    const el = View.showSnackbar(els.snacks, message);
+    setTimeout(() => {
+      el.classList.remove("in");
+      el.classList.add("out");
+      el.addEventListener("transitionend", () => el.remove(), { once: true });
+    }, ms);
+  }
 
   // Transient flow state
   let pendingLang = null;   // language chosen in the add overlay, not yet confirmed
@@ -342,6 +353,7 @@
     if (generatingLangs.has(lang.name)) return;
     generatingLangs.add(lang.name);
     showBase(); // render the row immediately so it shows loading right away
+    notify("Translation generating started");
     runTranslation(lang, onlyMissing)
       .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
       .finally(() => {

@@ -494,5 +494,18 @@ window.View = (function () {
       <div class="con-runs">${runCards}</div>`;
   }
 
-  return { renderBase, renderReview, renderAddOverlay, renderAddManual, renderTaskEditOverlay, renderConsole, flagSvg };
+  /* ===========================================================
+     SNACKBAR — transient toast stacked from the top-right corner
+     =========================================================== */
+  function showSnackbar(host, message) {
+    const el = document.createElement("div");
+    el.className = "snackbar";
+    el.innerHTML = `<span class="snackbar-ico">${globe}</span><span>${esc(message)}</span>`;
+    host.appendChild(el);
+    // animate in on the next frame (so the transition actually runs)
+    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in")));
+    return el;
+  }
+
+  return { renderBase, renderReview, renderAddOverlay, renderAddManual, renderTaskEditOverlay, renderConsole, showSnackbar, flagSvg };
 })();
