@@ -448,13 +448,21 @@
         break;
 
       case "do-translate": {
-        // Dialog GENERATE (picker mode). Closes the dialog immediately; the
-        // run continues in the background against the new row on the base
-        // view (same mechanism as the per-row generate).
+        // Dialog GENERATE (picker mode). Shows a brief loading state on the
+        // button itself so pressing it doesn't feel like a no-op, THEN
+        // closes the dialog and hands off to the background run against the
+        // new row on the base view (same mechanism as the per-row generate).
         if (!pendingLang || t.disabled) break;
-        Model.addLanguage(pendingLang);
-        closeOverlay();
-        startBackgroundGenerate(pendingLang, false);
+        const lang = pendingLang;
+        setLoading(t, true);
+        t.disabled = true;
+        els.ovAdd.querySelector('[data-action="close-overlay"]').disabled = true;
+        els.ovAdd.querySelector('[data-action="add-manually"]').disabled = true;
+        setTimeout(() => {
+          Model.addLanguage(lang);
+          closeOverlay();
+          startBackgroundGenerate(lang, false);
+        }, 1000);
         break;
       }
 
@@ -614,6 +622,10 @@
     // emptying a field is how the admin requests a re-translation of it.
     const btn = els.review.querySelector('[data-action="retranslate"]');
     if (btn) btn.hidden = !els.review.querySelector(".edit-field.missing");
+    // any hand-edit (on a complete language, SAVE starts disabled) makes
+    // SAVE meaningful again
+    const save = els.review.querySelector('[data-action="review-save"]');
+    if (save) save.disabled = false;
   });
 
   // Grow a textarea to fit its content (wraps onto extra lines as needed).

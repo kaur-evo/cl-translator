@@ -315,6 +315,9 @@ window.View = (function () {
 
     const complete = Model.isComplete(lang.name);
 
+    // SAVE starts disabled when the language is already fully translated —
+    // nothing has been hand-edited yet, so there's nothing new to persist.
+    // Typing in any field re-enables it (see the review input listener).
     host.innerHTML = `
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
       <div class="review-fields">${body}</div>
@@ -322,7 +325,7 @@ window.View = (function () {
         <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "hidden" : ""}>generate</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">cancel</button>
-        <button class="btn btn-primary" data-action="review-save">save</button>
+        <button class="btn btn-primary" data-action="review-save" ${complete ? "disabled" : ""}>save</button>
       </div>`;
   }
 
