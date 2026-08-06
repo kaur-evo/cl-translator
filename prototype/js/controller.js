@@ -21,6 +21,18 @@
   let currentLang = null;   // language being reviewed
   let lastLang = null;      // last language translated (for "run on full list")
   const generatingLangs = new Set(); // language names with an in-flight per-row generate run
+  // True while the add-language dialog or the review modal has a translation
+  // in flight — blocks CANCEL, the backdrop, and Escape until it finishes, so
+  // a running generate can't be walked away from mid-request.
+  let modalBusy = false;
+  function setModalBusy(on) {
+    modalBusy = on;
+    // disable (not just ignore) CANCEL in whichever modal is open, so the
+    // lock is visible, not just silently enforced on click
+    [els.ovAdd.querySelector('[data-action="close-overlay"]'),
+     els.review.querySelector('[data-action="review-cancel"]')]
+      .forEach(btn => { if (btn) btn.disabled = on; });
+  }
 
   // Where translations run: the local node proxy serves the app on :8787;
   // anywhere else (e.g. GitHub Pages) is static, so "real" uses the direct
@@ -268,6 +280,7 @@
   // Translate, showing a spinner on `btn`, then open the review on success.
   async function translateAndReview(lang, btn, onlyMissing) {
     setLoading(btn, true);
+    setModalBusy(true);
     try {
       await runTranslation(lang, onlyMissing);
       if (btn === els.ovAdd.querySelector('[data-action="do-translate"]')) closeOverlay();
@@ -277,6 +290,7 @@
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
     } finally {
       setLoading(btn, false);
+      setModalBusy(false);
     }
   }
 
@@ -284,8 +298,11 @@
   document.addEventListener("click", (e) => {
     const t = e.target.closest("[data-action]");
 
-    // Backdrop click closes whichever overlay was clicked
+    // Backdrop click closes whichever overlay was clicked — but never while a
+    // translation is running in it (modalBusy), so a generate can't be walked
+    // away from mid-request.
     if (e.target.classList.contains("overlay")) {
+      if (modalBusy) return;
       closeOverlay(); closeTaskOverlay();
       if (e.target === els.ovReview) closeReview(); // = cancel, edits discarded
       return;
@@ -387,10 +404,12 @@
       }
 
       case "review-cancel":
+        if (modalBusy) break; // a generate is running in this modal — don't discard mid-request
         closeReview(); // discard edits
         break;
 
       case "close-overlay":
+        if (modalBusy) break;
         closeOverlay();
         break;
 
@@ -496,9 +515,10 @@
     els.ovTask.querySelector('[data-action="save-task"]').disabled = e.target.value.trim() === "";
   });
 
-  /* ---------- Esc closes overlays ---------- */
+  /* ---------- Esc closes overlays (unless a translation is running in one) ---------- */
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
+    if (modalBusy) return;
     closeOverlay(); closeTaskOverlay();
     if (!els.ovReview.hidden) closeReview();
   });
