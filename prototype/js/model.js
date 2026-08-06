@@ -247,6 +247,78 @@ window.Model = (function () {
       });
     },
 
+    // Mocking helper: generate a random task of a random type with plausible
+    // Estonian field values, so + TASK can be used repeatedly to build test
+    // data without typing anything. No translations yet, so every added
+    // language becomes incomplete (same as addTask).
+    addRandomTask() {
+      taskSeq += 1;
+      const id = `t${taskSeq}`;
+      const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+      const templates = [
+        { type: "Mark as done",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
+          base: { Task: pick(["Lülita seade välja", "Puhasta tööpind", "Sulge kaitsekate"]),
+                  Description: "Kinnita, et toiming on lõpetatud." } },
+        { type: "Yes / No",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
+          base: { Task: pick(["Kas kõik anduri on kalibreeritud?", "Kas ohutuslukk on aktiveeritud?"]),
+                  Description: "Kontrolli enne järgmise etapi alustamist.",
+                  Message: "Teavita vahetuse juhti enne jätkamist." } },
+        { type: "Measurement",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Unit", 10, "Unit"], ["Out-of-range message", 200, "Out-of-range message"]],
+          base: { Task: pick(["Mis oli survetase?", "Mis oli vibratsioonitase?"]),
+                  Description: "Mõõda kalibreeritud seadmega.",
+                  Unit: pick(["bar", "Hz", "mm"]),
+                  "Out-of-range message": "Peata liin ja teavita hooldust." } },
+        { type: "Single select",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Option 1", 200, "Option"], ["Option 2", 200, "Option"], ["Option 3", 200, "Option"]],
+          base: { Task: "Milline oli üldine seisukord?", Description: "Vali sobivaim variant.",
+                  "Option 1": "Halb", "Option 2": "Rahuldav", "Option 3": "Hea" } },
+        { type: "Multi select",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Option 1", 200, "Option"], ["Option 2", 200, "Option"], ["Option 3", 200, "Option"]],
+          base: { Task: "Millised probleemid esinesid?", Description: "Vali kõik, mis kehtivad.",
+                  "Option 1": "Müra", "Option 2": "Leke", "Option 3": "Ülekuumenemine" } },
+        { type: "Enter text",
+          fields: [["Task", 200, "Task"], ["Description", 500, "Description"]],
+          base: { Task: "Kirjelda vahetuse käigus tekkinud kõrvalekaldeid.",
+                  Description: "Vabas vormis, too välja ka aeg." } },
+      ];
+      const t = pick(templates);
+      tasks.push({ id, type: t.type, fields: t.fields, base: { ...t.base }, t: {} });
+      return id;
+    },
+
+    // Duplicate a task (deep-copies base strings; translations start empty on
+    // the copy since it's a distinct entity — every language becomes incomplete).
+    duplicateTask(id) {
+      const src = tasks.findIndex(t => t.id === id);
+      if (src === -1) return null;
+      taskSeq += 1;
+      const copy = { id: `t${taskSeq}`, type: tasks[src].type,
+        fields: tasks[src].fields.map(f => [...f]),
+        base: { ...tasks[src].base }, t: {} };
+      tasks.splice(src + 1, 0, copy);
+      return copy.id;
+    },
+    removeTask(id) {
+      const i = tasks.findIndex(t => t.id === id);
+      if (i > -1) tasks.splice(i, 1);
+    },
+
+    // Edit a single base field's text directly (mocking tool — the flat
+    // per-task edit dialog, not the real Evocon task editor). Existing
+    // translations for that field are cleared across ALL languages since the
+    // source changed, so it's flagged missing again for re-translation.
+    setTaskBaseField(id, field, value) {
+      const task = tasks.find(t => t.id === id);
+      if (!task) return;
+      task.base[field] = value;
+      languages.forEach(l => {
+        if (task.t[l.name]) delete task.t[l.name][field];
+      });
+    },
+
     // Is every translatable field translated for this language?
     isComplete(langName) {
       const nameOk = name[langName] != null;

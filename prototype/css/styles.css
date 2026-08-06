@@ -184,8 +184,16 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .spinner{flex:0 0 auto;width:14px;height:14px;border-radius:50%;
   border:2px solid currentColor;border-top-color:transparent;
   display:inline-block;animation:spin .6s linear infinite;}
+.spinner.lg{width:32px;height:32px;border-width:3px;color:var(--green);}
 @keyframes spin{to{transform:rotate(360deg);}}
 @media (prefers-reduced-motion: reduce){.spinner{animation-duration:1.4s;}}
+
+/* review modal — whole-dialog loading state (edit dialog opened on a
+   language that's still generating in the background: "double loading",
+   this full-content spinner PLUS the footer generate button's own spinner) */
+.review-loading{display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:16px;padding:64px 16px;color:var(--muted);
+  font-size:14px;}
 
 /* ---------- description text area (Figma TextArea, min-h 148 + toolbar) ---------- */
 .desc-block{padding:8px 0;}
@@ -244,6 +252,12 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .review-fields{display:flex;flex-direction:column;gap:8px;padding:0 16px;
   overflow-y:auto;flex:1;min-height:0;}
 .ov-review .footer{flex:0 0 auto;}
+
+/* add-language dialog, MANUAL mode — same scrollable-field-list sizing as
+   the review modal, since it's the same body (fieldInput list). */
+.ov-add-manual{width:975px;max-width:100%;display:flex;flex-direction:column;
+  max-height:calc(100vh - 130px);overflow:hidden;}
+.ov-add-manual .footer{flex:0 0 auto;}
 
 /* ---------- language dropdown (Figma 46018:6391) ---------- */
 .dd{position:relative;}

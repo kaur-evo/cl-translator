@@ -149,7 +149,8 @@ window.View = (function () {
   /* ===========================================================
      VIEW 1 — base checklist editor (Figma 46012:3499)
      =========================================================== */
-  function renderBase(host, langs, tasks) {
+  function renderBase(host, langs, tasks, generatingLangs) {
+    generatingLangs = generatingLangs || new Set();
     // Card heading = the task's own title (its "Task" field), matching the
     // real task editor — not a positional "Task N" label.
     const taskList = tasks.map((t, i) => `
@@ -160,19 +161,24 @@ window.View = (function () {
           <div class="row-card-type">${esc(TYPE_LABEL[t.type] || t.type)}</div>
         </div>
         <div class="row-card-icons">
-          ${iconBtn(P.del, "", "trash")}${iconBtn(P.duplicate)}${iconBtn(P.pencil)}
+          <button class="icon-btn trash" data-action="del-task" data-task="${t.id}" aria-label="Delete task">${mdi(P.del, "", 24)}</button>
+          <button class="icon-btn" data-action="dup-task" data-task="${t.id}" aria-label="Duplicate task">${mdi(P.duplicate, "", 24)}</button>
+          <button class="icon-btn" data-action="edit-task" data-task="${t.id}" aria-label="Edit task">${mdi(P.pencil, "", 24)}</button>
         </div>
       </div>`).join("");
 
     const langRows = langs.map(l => {
       const incomplete = !Model.isComplete(l.name);
+      const generating = generatingLangs.has(l.name);
       // The whole card opens the review; the trash/pencil/generate buttons
       // resolve first via closest(). Incomplete languages get an inline
       // "generate" CTA so several can be kicked off in parallel without
       // going through the review modal one at a time (each shows its own
-      // console run card + loading state, same as the modal's button).
+      // console run card + loading state, same as the modal's button). While
+      // generating: delete is disabled (nothing to delete mid-request would
+      // make sense) and the generate button shows its loading state.
       const genBtn = incomplete
-        ? `<button class="btn btn-secondary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`
+        ? `<button class="btn btn-secondary row-gen${generating ? " is-loading" : ""}" data-action="gen-lang" data-lang="${esc(l.name)}" ${generating ? "disabled" : ""}>generate${generating ? `<span class="btn-loader"><span class="spinner"></span></span>` : ""}</button>`
         : "";
       return `
       <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
@@ -181,7 +187,7 @@ window.View = (function () {
           <div class="row-card-head">${esc(l.name)}</div>
         </div>
         <div class="row-card-icons">
-          <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation">${mdi(P.del, "", 24)}</button>
+          <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation" ${generating ? "disabled" : ""}>${mdi(P.del, "", 24)}</button>
           <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 24)}</button>
           ${genBtn}
         </div>
@@ -269,7 +275,26 @@ window.View = (function () {
   /* ===========================================================
      VIEW 2 — review & edit modal (Figma 46045:7950, 975 wide)
      =========================================================== */
-  function renderReview(host, lang, tasks) {
+  function renderReview(host, lang, tasks, generating) {
+    // If this language is still generating in the background (opened via
+    // pencil while its row is loading), skip the field list entirely and
+    // show a loading state instead — no point rendering fields that could
+    // be overwritten by the run at any moment.
+    if (generating) {
+      host.innerHTML = `
+        <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
+        <div class="review-loading">
+          <span class="spinner lg"></span>
+          <p>Generating translation…</p>
+        </div>
+        <div class="footer">
+          <button class="btn btn-tertiary is-loading" disabled>${globe}<span class="btn-loader"><span class="spinner"></span></span>generate</button>
+          <span class="spacer"></span>
+          <button class="btn btn-text" data-action="review-cancel">close</button>
+        </div>`;
+      return;
+    }
+
     // The hover hint is just the bare STRING KIND (Task, Description, Unit,
     // Message, Out-of-range message, Option, Name) — no char limit, no task
     // numbering, no qualifier. Same word wherever that kind of field appears.
@@ -303,6 +328,13 @@ window.View = (function () {
 
   /* ===========================================================
      OVERLAY — add a language (Figma 46022:3636 + list 46018:6391)
+
+     Two modes, swapped in place without closing the dialog:
+     - picker (default): pick a language, GENERATE (primary) runs AI
+       translation; ADD MANUALLY (tertiary, left) switches to...
+     - manual: the full flat field list for that language (like the
+       review modal), footer becomes generate (tertiary) / close / save
+       (primary). Used to hand-type a translation instead of generating.
      =========================================================== */
   function renderAddOverlay(host, available) {
     const opts = available.map(a => `
@@ -311,9 +343,9 @@ window.View = (function () {
       </div>`).join("");
     host.innerHTML = `
       <div class="card ov-small">
-        <div class="header58"><h2>Translation</h2></div>
+        <div class="header58"><h2>New: Translation</h2></div>
         <div class="ov-content">
-          ${inlineMsg("Translations are generated automatically. It can take a few minutes for longer checklists.")}
+          ${inlineMsg("Generating translations can take a few minutes.")}
           <div class="input-group dd">
             <button class="input-box select dd-trigger" data-action="toggle-dd">
               <span class="val dd-current placeholder">Select language</span>${mdi(P.arrowDown, "sel-arrow", 24)}
@@ -323,30 +355,63 @@ window.View = (function () {
           </div>
         </div>
         <div class="footer">
+          <button class="btn btn-tertiary" data-action="add-manually" disabled>add manually</button>
           <span class="spacer"></span>
-          <button class="btn btn-text" data-action="close-overlay">cancel</button>
-          <button class="btn btn-primary" data-action="do-translate" disabled>generate</button>
+          <button class="btn btn-text" data-action="close-overlay">close</button>
+          <button class="btn btn-primary" data-action="do-translate" disabled>${globe}generate</button>
+        </div>
+      </div>`;
+  }
+
+  // Manual mode: swap the picker for the full flat field list of the
+  // language being hand-typed. Reuses fieldInput (same shape as the review
+  // modal) so typing here behaves identically to editing later.
+  function renderAddManual(host, lang, tasks) {
+    let body = fieldInput(Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__", "Name");
+    tasks.forEach((task) => {
+      task.fields.forEach(([field, limit, kind]) => {
+        body += fieldInput(Model.baseText(task, field), Model.translatedText(task, field, lang.name),
+          limit, `${task.id}::${field}`, kind || field);
+      });
+    });
+    body += fieldInput(Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__", "Description");
+
+    host.innerHTML = `
+      <div class="card ov-small ov-add-manual">
+        <div class="header58"><h2>New: Translation</h2></div>
+        <div class="review-fields">${body}</div>
+        <div class="footer">
+          <button class="btn btn-tertiary" data-action="manual-generate">${globe}generate</button>
+          <span class="spacer"></span>
+          <button class="btn btn-text" data-action="close-overlay">close</button>
+          <button class="btn btn-primary" data-action="save-manual" disabled>save</button>
         </div>
       </div>`;
   }
 
   /* ===========================================================
-     OVERLAY — add a task (free-text question)
+     OVERLAY — edit a task's base strings (MOCKING TOOL, not the real
+     Evocon task editor). Flat list of that task's own fields, each a
+     plain editable input with its field name as the caption — just
+     enough to create test data quickly. Close + Save only.
      =========================================================== */
-  function renderTaskOverlay(host) {
+  function renderTaskEditOverlay(host, task) {
+    const rows = task.fields.map(([field, limit]) => {
+      const value = task.base[field] || "";
+      return `
+      <div class="edit-field-wrap">
+        <div class="edit-field"><textarea rows="1" maxlength="${limit}" data-field="${esc(field)}">${esc(value)}</textarea></div>
+        <span class="input-bottom"><span class="cap">${esc(field)}</span><span class="cap cnt">${[...value].length} / ${limit}</span></span>
+      </div>`;
+    }).join("");
     host.innerHTML = `
       <div class="card ov-small">
-        <div class="header58"><h2>New: Task</h2></div>
-        <div class="ov-content">
-          <div class="edit-field-wrap">
-            <div class="edit-field"><textarea id="task-q" rows="1" maxlength="200" placeholder="What has to be checked?"></textarea></div>
-            <span class="input-bottom"><span class="cap">Question (Estonian)</span><span class="cap cnt">0 / 200</span></span>
-          </div>
-        </div>
+        <div class="header58"><h2>Edit: ${esc(TYPE_LABEL[task.type] || task.type)}</h2></div>
+        <div class="review-fields" style="padding:0 16px;">${rows}</div>
         <div class="footer">
           <span class="spacer"></span>
-          <button class="btn btn-text" data-action="close-task">cancel</button>
-          <button class="btn btn-secondary" data-action="save-task" disabled>add task</button>
+          <button class="btn btn-text" data-action="close-task">close</button>
+          <button class="btn btn-primary" data-action="save-task">save</button>
         </div>
       </div>`;
   }
@@ -439,5 +504,5 @@ window.View = (function () {
       <div class="con-runs">${runCards}</div>`;
   }
 
-  return { renderBase, renderReview, renderAddOverlay, renderTaskOverlay, renderConsole, flagSvg };
+  return { renderBase, renderReview, renderAddOverlay, renderAddManual, renderTaskEditOverlay, renderConsole, flagSvg };
 })();

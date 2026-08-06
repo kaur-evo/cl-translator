@@ -105,7 +105,23 @@ translation set; never overwrite admin edits that weren't sent.
 Cost/latency reference from live runs: ~40 strings ≈ 2–4k tokens ≈ under a
 cent with Haiku translate + Opus review; a 4-string partial run ≈ $0.001.
 
-## 7. Invariants worth testing
+## 7. Saving with translations still missing
+
+Missing translations do not block saving the checklist. If the admin saves
+while a language is incomplete, every still-missing field falls back to the
+**base/original string** for that language — the exact same fallback rule
+Shift View already uses for an untranslated language (see the spec: "Is
+their language translated? No → they see the base language").
+
+The system never inspects or cares what language a base string is actually
+written in — it is simply "the original text as authored," regardless of
+script. A checklist can (and in practice will) mix source languages field by
+field; the fallback rule doesn't change based on that. This is why the
+per-string translate pipeline is told each string's *kind* (task, option,
+unit, …) but never its source language — kind is knowable and necessary,
+source language is neither.
+
+## 8. Invariants worth testing
 
 - result keys == request keys (bijective, order-independent by key)
 - description present ⇒ last element of `fields`

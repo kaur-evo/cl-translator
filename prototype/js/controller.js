@@ -63,25 +63,26 @@
   function closeConsole() { els.console.hidden = true; els.conTab.hidden = false; }
 
   /* ---------- View 1: base editor (always visible under the modals) ----------
-     Rebuilds the whole list from Model state on every call. A per-row generate
-     run outlives any number of these rebuilds (another language finishing
-     triggers one too), so re-apply the loading state to any row whose language
-     is still in generatingLangs — otherwise a sibling's re-render silently
-     wipes the spinner off a run that's still going. */
+     Rebuilds the whole list from Model state on every call. generatingLangs is
+     passed straight through so the view itself renders each row's loading
+     state (generate button spinning, delete disabled) — a sibling finishing
+     first and triggering its own showBase() can't wipe a still-running row's
+     state, since it's derived fresh from generatingLangs every time. */
   function showBase() {
-    View.renderBase(els.base, Model.getLanguages(), Model.getTasks());
-    generatingLangs.forEach(name => {
-      const btn = els.base.querySelector(`.row-gen[data-lang="${CSS.escape(name)}"]`);
-      if (btn) setLoading(btn, true);
-    });
+    View.renderBase(els.base, Model.getLanguages(), Model.getTasks(), generatingLangs);
   }
 
   /* ---------- View 2: review & edit — a modal over the base view ----------
      After a translation the add-language dialog morphs into this modal in the
-     same scope; reopening a language (pencil) shows it as a modal again. */
+     same scope; reopening a language (pencil) shows it as a modal again. If
+     that language is still generating in the background (opened via pencil
+     while its row is loading), show a loading state instead of the field
+     list: a dimmed overlay over the whole content PLUS the generate button
+     itself spinning — CLOSE still works to leave without waiting. */
   function showReview(lang) {
     currentLang = lang;
-    View.renderReview(els.review, lang, Model.getTasks());
+    const generating = generatingLangs.has(lang.name);
+    View.renderReview(els.review, lang, Model.getTasks(), generating);
     els.ovReview.hidden = false;
     // size each field to its content so pre-filled long strings wrap to 2+ lines
     els.review.querySelectorAll(".edit-field textarea").forEach(autoGrow);
@@ -108,20 +109,31 @@
     pendingLang = null;
     View.renderAddOverlay(els.ovAdd, Model.getAvailable());
     els.ovAdd.hidden = false;
+    // ADD MANUALLY is disabled while ANY language is generating in the
+    // background — hand-editing while a run could apply() at any moment
+    // would race with it.
+    if (generatingLangs.size > 0) {
+      const btn = els.ovAdd.querySelector('[data-action="add-manually"]');
+      if (btn) btn.disabled = true;
+    }
   }
   function closeOverlay() {
     els.ovAdd.hidden = true;
   }
 
-  /* ---------- Overlay: add a task ---------- */
-  function openTaskOverlay() {
-    View.renderTaskOverlay(els.ovTask);
+  /* ---------- Overlay: edit a task's base strings (mocking tool) ---------- */
+  let editingTaskId = null;
+  function openTaskEditOverlay(id) {
+    const task = Model.getTask(id);
+    if (!task) return;
+    editingTaskId = id;
+    View.renderTaskEditOverlay(els.ovTask, task);
     els.ovTask.hidden = false;
-    const inp = els.ovTask.querySelector("#task-q");
-    if (inp) inp.focus();
+    els.ovTask.querySelectorAll(".edit-field textarea").forEach(autoGrow);
   }
   function closeTaskOverlay() {
     els.ovTask.hidden = true;
+    editingTaskId = null;
   }
 
   /* ---------- Loading state on a CTA (Figma 46051:3919) ----------
@@ -278,12 +290,14 @@
   }
 
   // Translate, showing a spinner on `btn`, then open the review on success.
+  // Used by the review modal's own "generate" (retranslate) and by the
+  // add-language dialog's MANUAL-mode generate button — both keep their
+  // modal open and blocked (modalBusy) for the duration of the run.
   async function translateAndReview(lang, btn, onlyMissing) {
     setLoading(btn, true);
     setModalBusy(true);
     try {
       await runTranslation(lang, onlyMissing);
-      if (btn === els.ovAdd.querySelector('[data-action="do-translate"]')) closeOverlay();
       showReview(lang);
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
@@ -292,6 +306,56 @@
       setLoading(btn, false);
       setModalBusy(false);
     }
+  }
+
+  // Manual-mode generate: same run as translateAndReview, but re-renders the
+  // MANUAL field list in place (not the separate review modal) on success —
+  // the admin stays in the "add manually" dialog, now pre-filled by AI, and
+  // can keep hand-editing before SAVE.
+  async function translateAndReviewInManual(lang, btn) {
+    setLoading(btn, true);
+    setModalBusy(true);
+    try {
+      await runTranslation(lang, false);
+      View.renderAddManual(els.ovAdd, lang, Model.getTasks());
+      els.ovAdd.querySelector('[data-action="save-manual"]').disabled = true; // fresh generate = nothing unsaved
+    } catch (e) {
+      alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
+            `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
+    } finally {
+      setModalBusy(false);
+    }
+  }
+
+  // Write the manual dialog's fields back into the model (SAVE).
+  function syncManualToModel(lang) {
+    els.ovAdd.querySelectorAll(".edit-field textarea").forEach(ta => {
+      const v = ta.value.trim();
+      Model.setFieldTranslation(lang.name, ta.dataset.field, v === "" ? null : v);
+    });
+  }
+
+  // Fire-and-forget background generate for a language row on the BASE view
+  // (no modal involved) — used by the per-row "generate" button AND by the
+  // add-language dialog's picker-mode GENERATE, which closes the dialog
+  // immediately rather than waiting. generatingLangs + showBase()'s re-apply
+  // logic keeps the row's loading state correct across any re-render,
+  // including a sibling language finishing first.
+  function startBackgroundGenerate(lang, onlyMissing) {
+    if (generatingLangs.has(lang.name)) return;
+    generatingLangs.add(lang.name);
+    showBase(); // render the row immediately so it shows loading right away
+    runTranslation(lang, onlyMissing)
+      .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
+      .finally(() => {
+        generatingLangs.delete(lang.name);
+        showBase();
+        // if this language's edit dialog happens to be open, refresh it too
+        // (it was showing its own loading state while the run continued)
+        if (currentLang && currentLang.name === lang.name && !els.ovReview.hidden) {
+          showReview(currentLang);
+        }
+      });
   }
 
   /* ---------- Global click delegation ---------- */
@@ -321,16 +385,32 @@
         break;
 
       case "add-task":
-        openTaskOverlay();
+        // Mocking tool: generate a random task instantly, no dialog.
+        Model.addRandomTask();
+        showBase(); // re-render: task list, dots, warning banner update
+        break;
+
+      case "dup-task":
+        Model.duplicateTask(t.dataset.task);
+        showBase();
+        break;
+
+      case "del-task":
+        Model.removeTask(t.dataset.task);
+        showBase();
+        break;
+
+      case "edit-task":
+        openTaskEditOverlay(t.dataset.task);
         break;
 
       case "save-task": {
-        const inp = els.ovTask.querySelector("#task-q");
-        const text = (inp.value || "").trim();
-        if (!text) break;
-        Model.addTask(text);   // new task → existing languages now incomplete
+        if (!editingTaskId) break;
+        els.ovTask.querySelectorAll(".edit-field textarea").forEach(ta => {
+          Model.setTaskBaseField(editingTaskId, ta.dataset.field, ta.value);
+        });
         closeTaskOverlay();
-        showBase();            // re-render: task list, dots, warning banner update
+        showBase();
         break;
       }
 
@@ -353,32 +433,50 @@
 
       case "gen-lang": {
         // Per-row generate: runs missing-only translation for THIS language
-        // without opening the review modal, so several rows can run at once
-        // (each gets its own console run card). generatingLangs tracks who's
-        // still in flight so a SIBLING finishing first — which re-renders the
-        // whole row list via showBase() — doesn't wipe this row's spinner.
+        // without opening any modal, so several rows can run at once (each
+        // gets its own console run card).
         const lang = Model.getLanguages().find(l => l.name === t.dataset.lang);
-        if (!lang || t.disabled || generatingLangs.has(lang.name)) break;
-        generatingLangs.add(lang.name);
-        setLoading(t, true);
-        runTranslation(lang, true)
-          .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
-          .finally(() => {
-            generatingLangs.delete(lang.name);
-            showBase(); // re-render drops this row's generate button once complete; re-applies any sibling still running
-          });
+        if (!lang || t.disabled) break;
+        startBackgroundGenerate(lang, true);
         break;
       }
 
       case "del-lang":
+        if (generatingLangs.has(t.dataset.lang)) break; // disabled while generating
         Model.removeLanguage(t.dataset.lang);
         showBase();
         break;
 
-      case "do-translate":
+      case "do-translate": {
+        // Dialog GENERATE (picker mode). Closes the dialog immediately; the
+        // run continues in the background against the new row on the base
+        // view (same mechanism as the per-row generate).
         if (!pendingLang || t.disabled) break;
         Model.addLanguage(pendingLang);
-        translateAndReview(pendingLang, t); // AI fills, then drops into review
+        closeOverlay();
+        startBackgroundGenerate(pendingLang, false);
+        break;
+      }
+
+      case "manual-generate":
+        // Manual mode's own generate button — stays inside the dialog,
+        // blocks CANCEL/backdrop/Escape (modalBusy), same as the review
+        // modal's retranslate.
+        if (pendingLang) translateAndReviewInManual(pendingLang, t);
+        break;
+
+      case "add-manually":
+        if (!pendingLang || t.disabled) break;
+        Model.addLanguage(pendingLang);
+        View.renderAddManual(els.ovAdd, pendingLang, Model.getTasks());
+        break;
+
+      case "save-manual":
+        if (pendingLang) {
+          syncManualToModel(pendingLang);
+          closeOverlay();
+          showBase();
+        }
         break;
 
       case "retranslate":
@@ -487,6 +585,20 @@
     els.ovAdd.querySelectorAll(".dd-opt").forEach(o => o.classList.toggle("selected", o === opt));
     els.ovAdd.querySelector(".dd-menu").hidden = true;
     els.ovAdd.querySelector('[data-action="do-translate"]').disabled = false;
+    const manualBtn = els.ovAdd.querySelector('[data-action="add-manually"]');
+    if (manualBtn) manualBtn.disabled = generatingLangs.size > 0;
+  });
+
+  /* ---------- Manual-add mode: char counters + dirty-tracking for SAVE ---------- */
+  els.ovAdd.addEventListener("input", (e) => {
+    if (!e.target.matches(".edit-field textarea")) return;
+    const limit = e.target.getAttribute("maxlength");
+    const wrap = e.target.closest(".edit-field-wrap");
+    wrap.querySelector(".cnt").textContent = `${[...e.target.value].length} / ${limit}`;
+    e.target.closest(".edit-field").classList.toggle("missing", e.target.value.trim() === "");
+    autoGrow(e.target);
+    const save = els.ovAdd.querySelector('[data-action="save-manual"]');
+    if (save) save.disabled = false; // any hand-edit makes SAVE meaningful again
   });
 
   /* ---------- Live char counters + clear the missing state on type ---------- */
@@ -507,12 +619,13 @@
   // Grow a textarea to fit its content (wraps onto extra lines as needed).
   function autoGrow(ta) { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + "px"; }
 
-  /* ---------- Task overlay: enable ADD TASK + live counter ---------- */
+  /* ---------- Task edit overlay: live char counters (mocking tool) ---------- */
   els.ovTask.addEventListener("input", (e) => {
-    if (e.target.id !== "task-q") return;
-    const len = [...e.target.value].length;
-    els.ovTask.querySelector(".cnt").textContent = `${len} / 200`;
-    els.ovTask.querySelector('[data-action="save-task"]').disabled = e.target.value.trim() === "";
+    if (!e.target.matches(".edit-field textarea")) return;
+    const limit = e.target.getAttribute("maxlength");
+    const wrap = e.target.closest(".edit-field-wrap");
+    wrap.querySelector(".cnt").textContent = `${[...e.target.value].length} / ${limit}`;
+    autoGrow(e.target);
   });
 
   /* ---------- Esc closes overlays (unless a translation is running in one) ---------- */
