@@ -151,6 +151,9 @@ button{font-family:var(--font);}
   display:inline-flex;align-items:center;justify-content:center;border-radius:50%;}
 .icon-btn:hover{color:var(--text);background:#0000000f;}
 .icon-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+.icon-btn:disabled{color:var(--input-placeholder);cursor:not-allowed;}
+.icon-btn:disabled:hover{background:none;}
+.row-card:not(.clickable){cursor:default;}
 
 /* ---------- buttons (Figma: pl-12 pr-16 py-6, gap 4, 14/16 semibold uppercase) ---------- */
 .btn-row{padding:8px 0;}
@@ -184,16 +187,8 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .spinner{flex:0 0 auto;width:14px;height:14px;border-radius:50%;
   border:2px solid currentColor;border-top-color:transparent;
   display:inline-block;animation:spin .6s linear infinite;}
-.spinner.lg{width:32px;height:32px;border-width:3px;color:var(--green);}
 @keyframes spin{to{transform:rotate(360deg);}}
 @media (prefers-reduced-motion: reduce){.spinner{animation-duration:1.4s;}}
-
-/* review modal — whole-dialog loading state (edit dialog opened on a
-   language that's still generating in the background: "double loading",
-   this full-content spinner PLUS the footer generate button's own spinner) */
-.review-loading{display:flex;flex-direction:column;align-items:center;
-  justify-content:center;gap:16px;padding:64px 16px;color:var(--muted);
-  font-size:14px;}
 
 /* ---------- description text area (Figma TextArea, min-h 148 + toolbar) ---------- */
 .desc-block{padding:8px 0;}

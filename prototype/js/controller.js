@@ -74,15 +74,12 @@
 
   /* ---------- View 2: review & edit — a modal over the base view ----------
      After a translation the add-language dialog morphs into this modal in the
-     same scope; reopening a language (pencil) shows it as a modal again. If
-     that language is still generating in the background (opened via pencil
-     while its row is loading), show a loading state instead of the field
-     list: a dimmed overlay over the whole content PLUS the generate button
-     itself spinning — CLOSE still works to leave without waiting. */
+     same scope; reopening a language (pencil) shows it as a modal again.
+     The pencil is disabled (and the row isn't clickable) while that language
+     is still generating, so this never opens mid-run. */
   function showReview(lang) {
     currentLang = lang;
-    const generating = generatingLangs.has(lang.name);
-    View.renderReview(els.review, lang, Model.getTasks(), generating);
+    View.renderReview(els.review, lang, Model.getTasks());
     els.ovReview.hidden = false;
     // size each field to its content so pre-filled long strings wrap to 2+ lines
     els.review.querySelectorAll(".edit-field textarea").forEach(autoGrow);
@@ -350,11 +347,6 @@
       .finally(() => {
         generatingLangs.delete(lang.name);
         showBase();
-        // if this language's edit dialog happens to be open, refresh it too
-        // (it was showing its own loading state while the run continued)
-        if (currentLang && currentLang.name === lang.name && !els.ovReview.hidden) {
-          showReview(currentLang);
-        }
       });
   }
 

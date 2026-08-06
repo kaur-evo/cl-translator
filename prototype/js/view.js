@@ -175,26 +175,32 @@ window.View = (function () {
       // "generate" CTA so several can be kicked off in parallel without
       // going through the review modal one at a time (each shows its own
       // console run card + loading state, same as the modal's button). While
-      // generating: delete is disabled (nothing to delete mid-request would
-      // make sense) and the generate button shows its loading state.
+      // generating: nothing on the row opens anything — delete AND pencil
+      // are disabled, the card itself isn't clickable, and the generate
+      // button shows its loading state. There's nothing to edit or delete
+      // mid-request.
       const genBtn = incomplete
         ? `<button class="btn btn-secondary row-gen${generating ? " is-loading" : ""}" data-action="gen-lang" data-lang="${esc(l.name)}" ${generating ? "disabled" : ""}>generate${generating ? `<span class="btn-loader"><span class="spinner"></span></span>` : ""}</button>`
         : "";
       return `
-      <div class="row-card clickable" data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0" aria-label="Review ${esc(l.name)} translation">
+      <div class="row-card${generating ? "" : " clickable"}" ${generating ? "" : `data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0"`} aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
         <div class="row-card-body">
           <div class="row-card-head">${esc(l.name)}</div>
         </div>
         <div class="row-card-icons">
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation" ${generating ? "disabled" : ""}>${mdi(P.del, "", 24)}</button>
-          <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation">${mdi(P.pencil, "", 24)}</button>
+          <button class="icon-btn" data-action="open-lang" data-lang="${esc(l.name)}" aria-label="Review ${esc(l.name)} translation" ${generating ? "disabled" : ""}>${mdi(P.pencil, "", 24)}</button>
           ${genBtn}
         </div>
       </div>`;
     }).join("");
 
-    const warnBanner = Model.hasMissingTranslations()
+    // Suppress the warning while every incomplete language is already
+    // generating — it's not an error state, it's in progress.
+    const anyIncompleteNotGenerating = langs.some(l =>
+      !Model.isComplete(l.name) && !generatingLangs.has(l.name));
+    const warnBanner = anyIncompleteNotGenerating
       ? inlineMsg("Some translations are missing, please review and translate.", true)
       : "";
 
@@ -275,26 +281,7 @@ window.View = (function () {
   /* ===========================================================
      VIEW 2 — review & edit modal (Figma 46045:7950, 975 wide)
      =========================================================== */
-  function renderReview(host, lang, tasks, generating) {
-    // If this language is still generating in the background (opened via
-    // pencil while its row is loading), skip the field list entirely and
-    // show a loading state instead — no point rendering fields that could
-    // be overwritten by the run at any moment.
-    if (generating) {
-      host.innerHTML = `
-        <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
-        <div class="review-loading">
-          <span class="spinner lg"></span>
-          <p>Generating translation…</p>
-        </div>
-        <div class="footer">
-          <button class="btn btn-tertiary is-loading" disabled>${globe}<span class="btn-loader"><span class="spinner"></span></span>generate</button>
-          <span class="spacer"></span>
-          <button class="btn btn-text" data-action="review-cancel">close</button>
-        </div>`;
-      return;
-    }
-
+  function renderReview(host, lang, tasks) {
     // The hover hint is just the bare STRING KIND (Task, Description, Unit,
     // Message, Out-of-range message, Option, Name) — no char limit, no task
     // numbering, no qualifier. Same word wherever that kind of field appears.
