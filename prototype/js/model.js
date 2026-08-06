@@ -2,9 +2,11 @@
    MODEL
    State + data only. No DOM, no rendering.
 
-   The checklist is authored in ESTONIAN (the base language). Translations
-   into other languages layer on top and start empty — they're filled by the
-   real AI translation call (see controller.js → proxy → Claude Haiku).
+   The checklist's base language is ESTONIAN, but a few fields are deliberately
+   authored in Russian (t2, and some options in t5/t6) — real tenant checklists
+   are often a mix, whoever set up a given task typed it in their own language.
+   Translations into other languages layer on top and start empty — they're
+   filled by the real AI translation call (see controller.js → proxy → Claude).
    ============================================================ */
 window.Model = (function () {
 
@@ -99,11 +101,13 @@ window.Model = (function () {
       id: "t2",
       type: "Yes / No",
       // Yes/No also carries a Message shown when the operator answers 'No'.
+      // Authored in Russian — mixed-source-language checklists are common in
+      // multi-factory tenants (whoever set up this task typed it in Russian).
       fields: [["Task", 200, "Task"], ["Description", 500, "Description"], ["Message", 200, "Message"]],
       base: {
-        Task: "Kas puhvertsoonis on piisavalt ruumi, et hoida tootmist üleval?",
-        Description: "Kontrolli puhvertsooni mahtu enne liini taaskäivitamist.",
-        Message: "Ära käivita liini enne, kui puhvertsoon on tühjendatud, ja teavita vahetuse juhti.",
+        Task: "Достаточно ли места в буферной зоне для поддержания производства?",
+        Description: "Проверьте объём буферной зоны перед перезапуском линии.",
+        Message: "Не запускайте линию, пока буферная зона не будет освобождена, и сообщите руководителю смены.",
       },
       t: {},
     },
@@ -155,9 +159,11 @@ window.Model = (function () {
         ["Option 3", 200, "Option"],
       ],
       base: {
+        // Task/description in Estonian, but the options were typed by a Russian-
+        // speaking operator lead — mixed source language within one task.
         Task: "Mis oli toote välimus?",
         Description: "Hinda toote välimust visuaalselt hea valgustuse all.",
-        "Option 1": "Kole", "Option 2": "Ilus", "Option 3": "Väga ilus",
+        "Option 1": "Плохой", "Option 2": "Хороший", "Option 3": "Отличный",
       },
       t: {},
     },
@@ -174,9 +180,10 @@ window.Model = (function () {
         ["Option 4", 200, "Option"],
       ],
       base: {
+        // Same mix here: Estonian task/description, Russian option labels.
         Task: "Millised defektid olid pinnal näha?",
         Description: "Märgi kõik täheldatud defektid; vali mitu, kui vajalik.",
-        "Option 1": "Kriimustused", "Option 2": "Mullid",
+        "Option 1": "Царапины", "Option 2": "Пузыри",
         "Option 3": "Värvimuutus", "Option 4": "Mõlgid",
       },
       t: {},

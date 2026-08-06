@@ -141,7 +141,13 @@ REVIEW_TOOLS = [{
 }]
 
 TRANSLATE_PROMPT = """You are a professional translator for OEE (Overall Equipment Effectiveness) manufacturing software.
-Translate each phrase from Estonian into {language}, maintaining consistency and an operator-facing, concise tone suitable for a shop-floor screen.
+Translate each phrase into {language}, maintaining consistency and an operator-facing, concise tone suitable for a shop-floor screen.
+
+The checklist's base language is Estonian, but individual phrases may have been
+authored by different people in different languages (e.g. a multi-factory
+tenant where one task was typed in Russian while the rest is Estonian).
+Detect each phrase's own source language automatically — do not assume every
+phrase is Estonian. If a phrase is already in {language}, return it unchanged.
 
 Every phrase comes with an explicit "type" — never guess what a string is:
 - "checklist name": short title operators see on the checklist; keep it concise.
