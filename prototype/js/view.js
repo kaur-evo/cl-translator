@@ -311,7 +311,7 @@ window.View = (function () {
       <div class="footer">
         <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "hidden" : ""}>generate</button>
         <span class="spacer"></span>
-        <button class="btn btn-text" data-action="review-cancel">cancel</button>
+        <button class="btn btn-text" data-action="review-cancel">close</button>
         <button class="btn btn-primary" data-action="review-save" ${complete ? "disabled" : ""}>save</button>
       </div>`;
   }
