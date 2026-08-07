@@ -500,7 +500,7 @@ window.View = (function () {
   function showSnackbar(host, message) {
     const el = document.createElement("div");
     el.className = "snackbar";
-    el.innerHTML = `<span class="snackbar-ico">${globe}</span><span>${esc(message)}</span>`;
+    el.innerHTML = `<span class="snackbar-ico">${mdi(P.checkCircle, "", 20)}</span><span>${esc(message)}</span>`;
     host.appendChild(el);
     // animate in on the next frame (so the transition actually runs)
     requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in")));
