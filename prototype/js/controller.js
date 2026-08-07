@@ -176,8 +176,9 @@
       : Model.collectBaseFields();
     if (fields.length === 0) return; // nothing missing — no-op
 
-    // Open the console and push a live run that grows as lines arrive.
-    openConsole();
+    // Push a live run that grows as lines arrive — the console itself only
+    // opens via its own tab button, never forced open by a translation run
+    // (the snackbar already gives feedback that something started).
     const run = { language: lang.name, log: [], stats: null, running: true };
     con.runs.push(run);
     renderConsole();
