@@ -109,13 +109,23 @@
      same scope; reopening a language (pencil) shows it as a modal again.
      The pencil is disabled (and the row isn't clickable) while that language
      is still generating, so this never opens mid-run. */
-  function showReview(lang) {
+  function showReview(lang, dirty = false, draft = null) {
     currentLang = lang;
-    View.renderReview(els.review, lang, Model.getTasks());
+    // A draft only lives in the inputs. SAVE reads the inputs back into the
+    // model (syncReviewToModel), so CLOSE discards it with no extra bookkeeping.
+    View.renderReview(els.review, lang, dirty, draft);
     els.ovReview.hidden = false;
     // size each field to its content so pre-filled long strings wrap to 2+ lines
     els.review.querySelectorAll(".edit-field textarea").forEach(autoGrow);
-    els.review.scrollTop = 0;
+    // Open on the first gap rather than the top: with a long string list, the
+    // thing needing attention is usually far below the fold.
+    const firstMissing = els.review.querySelector(".edit-field.missing");
+    if (firstMissing) {
+      firstMissing.scrollIntoView({ block: "center" });
+      firstMissing.querySelector("textarea")?.focus();
+    } else {
+      els.review.querySelector(".review-fields").scrollTop = 0;
+    }
   }
   function closeReview() {
     els.ovReview.hidden = true;
@@ -187,8 +197,18 @@
 
   /* ---------- Real AI translation via the local proxy (NDJSON stream) ----------
      onlyMissing: translate just the untranslated strings (review re-translate);
-     otherwise translate everything. Log lines stream into the console live. */
-  async function runTranslation(lang, onlyMissing) {
+     otherwise translate everything. Log lines stream into the console live.
+
+     draft: don't commit the result to the model — return it instead. Used by
+     the edit modal, where a generate fills the inputs but only SAVE persists
+     them, so CLOSE can still discard. Background runs (row / add dialog) leave
+     this off and save on completion, as the spec requires. */
+  async function runTranslation(lang, onlyMissing, draft = false) {
+    const draftResult = {};
+    const commit = (strings) => {
+      if (draft) Object.assign(draftResult, strings);
+      else Model.applyTranslation(lang.name, strings);
+    };
     // Ordered, TYPED, DEDUPED strings: [{key, text, kind}] where key === text.
     // The translator is told what each string is (task / unit / option / …);
     // the checklist description is always last. Identical strings appear once.
@@ -196,7 +216,7 @@
     const fields = onlyMissing
       ? Model.collectMissingStrings(lang.name)
       : Model.collectStrings();
-    if (fields.length === 0) return; // nothing missing — no-op
+    if (fields.length === 0) return draftResult; // nothing missing — no-op
 
     // Push a live run that grows as lines arrive — the console itself only
     // opens via its own tab button, never forced open by a translation run
@@ -206,7 +226,7 @@
     renderConsole();
 
     // Mock mode: fabricate a translation locally. No proxy, no key, no cost.
-    if (con.mock) { await mockRun(lang, fields, run); return; }
+    if (con.mock) { await mockRun(lang, fields, run, commit); return draftResult; }
 
     // Static hosting (e.g. GitHub Pages): no proxy exists, so call the
     // Anthropic API directly from the browser with the viewer's own key
@@ -219,10 +239,10 @@
           { key, translateModel: con.translateModel, reviewModel: con.reviewModel, review: con.review },
           (line) => { run.log.push(line); renderConsole(); });
         run.stats = out.stats;
-        Model.applyTranslation(lang.name, out.strings);
+        commit(out.strings);
         lastLang = lang;
         if (out.error) throw new Error(out.error);
-        return;
+        return draftResult;
       } catch (e) {
         run.log.push(`❌ ${e.message}`);
         throw e;
@@ -264,12 +284,12 @@
         } else if (msg.type === "result") {
           run.stats = msg.stats;
           run.running = false;
-          Model.applyTranslation(lang.name, msg.strings); // merges; edits kept
+          commit(msg.strings); // merges; edits kept
           lastLang = lang;
           renderConsole();
         } else if (msg.type === "error") {
           // apply whatever partial strings did come back (rest stay missing)
-          if (msg.strings) Model.applyTranslation(lang.name, msg.strings);
+          if (msg.strings) commit(msg.strings);
           if (msg.stats) run.stats = msg.stats;
           run.running = false;
           renderConsole();
@@ -280,6 +300,7 @@
     run.running = false;
     renderConsole();
     if (finalError) throw new Error(finalError);
+    return draftResult;
   }
 
   /* ---------- Mock translation (no API) ----------
@@ -288,7 +309,7 @@
      string is prefixed with the language code so it's visibly a placeholder. */
   function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-  async function mockRun(lang, fields, run) {
+  async function mockRun(lang, fields, run, commit) {
     const t0 = performance.now();
 
     const push = (line) => { run.log.push(line); renderConsole(); };
@@ -315,7 +336,7 @@
       inputTokens: 0, outputTokens: 0, costUsd: 0, seconds,
     };
     run.running = false;
-    Model.applyTranslation(lang.name, out);
+    commit(out);
     lastLang = lang;
     renderConsole();
   }
@@ -328,8 +349,10 @@
     setLoading(btn, true);
     setModalBusy(true);
     try {
-      await runTranslation(lang, onlyMissing);
-      showReview(lang);
+      const draft = await runTranslation(lang, onlyMissing, true);
+      // dirty + draft: the fields are filled but nothing is stored yet, so SAVE
+      // is the only way to keep them and CLOSE throws them away.
+      showReview(lang, true, draft);
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
@@ -347,9 +370,10 @@
     setLoading(btn, true);
     setModalBusy(true);
     try {
-      await runTranslation(lang, false);
-      View.renderAddManual(els.ovAdd, lang, Model.getTasks());
-      els.ovAdd.querySelector('[data-action="save-manual"]').disabled = true; // fresh generate = nothing unsaved
+      const draft = await runTranslation(lang, false, true);
+      View.renderAddManual(els.ovAdd, lang, draft);
+      // The generated strings are only in the inputs — SAVE is what stores them.
+      els.ovAdd.querySelector('[data-action="save-manual"]').disabled = false;
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
@@ -533,11 +557,14 @@
           emptyField.closest(".edit-field").classList.add("missing");
           emptyField.scrollIntoView({ block: "center", behavior: "smooth" });
           emptyField.focus();
+          notify("Please fill in missing translations", "error");
           break;
         }
-        syncManualToModel(pendingLang);
+        const savedLang = pendingLang;
+        syncManualToModel(savedLang);
         closeOverlay();
         showBase();
+        notify(`${savedLang.label || savedLang.name} saved`);
         break;
       }
 
@@ -551,17 +578,33 @@
         break;
 
       case "review-save": {
-        if (currentLang) syncReviewToModel(currentLang);
-        // APPLY still works with missing strings — but scroll the first one
-        // into view instead of silently saving, so it's clear what's left.
+        if (!currentLang) break;
+        const lang = currentLang;
+        syncReviewToModel(lang);
+        // Saving with gaps is allowed here (unlike the manual dialog) — what
+        // was filled in is kept, the rest stays missing and the row keeps its
+        // warning. Scroll to the first gap and say so instead of closing.
         const firstMissing = els.review.querySelector(".edit-field.missing");
         if (firstMissing) {
           firstMissing.scrollIntoView({ block: "center", behavior: "smooth" });
+          notify("Please fill in missing translations", "error");
           break;
         }
         closeReview();
+        notify(`${lang.label || lang.name} saved`);
         break;
       }
+
+      /* Checklist-level SAVE. Saving the checklist with incomplete languages is
+         allowed (the warning banner already says what is left), but it says so
+         rather than closing quietly. */
+      case "save-checklist":
+        if (Model.hasMissingTranslations()) {
+          notify("Please fill in missing translations", "error");
+        } else {
+          notify("Checklist saved");
+        }
+        break;
 
       case "review-cancel":
         if (modalBusy) break; // a generate is running in this modal — don't discard mid-request
@@ -630,7 +673,7 @@
     try {
       await runTranslation(lang, false); // false = full list, not just missing
       // if we're on the review screen for this language, refresh it
-      if (currentLang && currentLang.name === lang.name) showReview(currentLang);
+      if (currentLang && currentLang.name === lang.name) showReview(currentLang, true);
       else showBase();
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}`);

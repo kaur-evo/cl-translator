@@ -15,8 +15,11 @@ window.View = (function () {
   const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
   /* ---- Material glyphs (24px viewBox), as Evocon uses ---- */
-  const mdi = (path, cls = "", size = 24) =>
-    `<svg class="${cls}" viewBox="0 0 24 24" width="${size}" height="${size}" fill="currentColor" aria-hidden="true"><path d="${path}"/></svg>`;
+  // `evenodd`: paths whose counters (the "!" bar and dot) are knocked out of a
+  // single subpath rather than drawn as separate shapes. Design-supplied icons
+  // are authored this way; the stock Material glyphs are not, so it's opt-in.
+  const mdi = (path, cls = "", size = 24, evenodd = false) =>
+    `<svg class="${cls}" viewBox="0 0 24 24" width="${size}" height="${size}" fill="currentColor" aria-hidden="true"><path${evenodd ? ' fill-rule="evenodd" clip-rule="evenodd"' : ""} d="${path}"/></svg>`;
 
   const P = {
     arrowDown: "M7 10l5 5 5-5z",
@@ -30,7 +33,10 @@ window.View = (function () {
     checkCircleOutline: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z",
     clock: "M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m.5 5H11v6l4.75 2.85.75-1.23-4-2.37V7z",
     attach: "M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z",
-    warn: "M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z",
+    // design-supplied warning triangle (16px source, scaled to the 24 box)
+    warn: "M23 21L12 2L1 21H23ZM11 18V16H13V18H11ZM11 14H13V10H11V14Z",
+    // design-supplied info/error circle (18px source, scaled to the 24 box)
+    infoCircle: "M2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12ZM13 11V17H11V11H13ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7V9H11V7H13Z",
     // filled circle with a knocked-out "!" — the error counterpart to
     // checkCircle, per the snackbar frame (46099:4394)
     alertCircle: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z",
@@ -123,8 +129,10 @@ window.View = (function () {
       ${desc ? `<div class="ch-desc">${esc(desc)}</div>` : ""}
     </div>`;
 
+  // The banner uses the circle icon in both variants (see the missing-translations
+  // screenshot); only the colour changes. The triangle is the ROW-level marker.
   const inlineMsg = (html, warn) => `
-    <div class="inline-msg${warn ? " warn-msg" : ""}">${mdi(warn ? P.warn : P.infoOutline, "inline-msg-ico" + (warn ? " warn" : ""), 18)}<span>${html}</span></div>`;
+    <div class="inline-msg${warn ? " warn-msg" : ""}">${mdi(P.infoCircle, "inline-msg-ico" + (warn ? " warn" : ""), 18, true)}<span>${html}</span></div>`;
 
   /* A single editable field group (review modal). Input value = translation
      (empty + orange underline when missing), caption = original base string.
@@ -191,7 +199,7 @@ window.View = (function () {
       <div class="row-card${generating ? "" : " clickable"}" ${generating ? "" : `data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0"`} aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
         <div class="row-card-body">
-          <div class="row-card-head">${esc(l.name)}</div>
+          <div class="row-card-head">${esc(l.name)}${incomplete && !generating ? mdi(P.warn, "row-warn", 16, true) : ""}</div>
         </div>
         <div class="row-card-icons">
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation" ${generating ? "disabled" : ""}>${mdi(P.del, "", 24)}</button>
@@ -288,7 +296,7 @@ window.View = (function () {
       <div class="footer">
         <span class="spacer"></span>
         <button class="btn btn-text">cancel</button>
-        <button class="btn btn-primary">save</button>
+        <button class="btn btn-primary" data-action="save-checklist">save</button>
       </div>`;
   }
 
@@ -306,32 +314,39 @@ window.View = (function () {
     "unit": "Unit", "out-of-range message": "Message", "no-answer message": "Message",
     "option": "Option", "checklist description": "Description",
   };
-  function stringList(lang) {
+  // `draft` — generated-but-unsaved strings, shown in the inputs on top of what
+  // the model holds. They only reach the model on SAVE, so CLOSE discards them.
+  function stringList(lang, draft) {
     return Model.collectStrings().map(s => fieldInput(
       s.text,
-      Model.translationOf(s.text, lang.name),
+      (draft && draft[s.text] != null) ? draft[s.text] : Model.translationOf(s.text, lang.name),
       CHAR_LIMIT[s.kind] || 200,
       s.text,                       // the source string IS the key
       KIND_LABEL[s.kind] || s.kind
     )).join("");
   }
 
-  function renderReview(host, lang) {
-    const complete = Model.isComplete(lang.name);
+  // `dirty` — something has changed since the modal opened (typed, or filled
+  // by a generate run), so there is something to persist.
+  function renderReview(host, lang, dirty, draft) {
+    // Draft strings count towards completeness — the fields are visibly filled,
+    // so generate has nothing left to do even though nothing is saved yet.
+    const complete = Model.collectMissingStrings(lang.name)
+      .every(s => draft && draft[s.text] != null);
 
-    // SAVE starts disabled when the language is already fully translated —
-    // nothing has been hand-edited yet, so there's nothing new to persist.
-    // Typing in any field re-enables it (see the review input listener).
+    // SAVE is disabled only when there is genuinely nothing to save: opened on
+    // an already-complete language and untouched since. Anything that changes
+    // the fields — typing OR generating the missing ones — enables it.
     // GENERATE is disabled (not hidden) when everything is filled: it only
     // ever fills missing strings, so with none missing it has nothing to do.
     host.innerHTML = `
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
-      <div class="review-fields">${stringList(lang)}</div>
+      <div class="review-fields">${stringList(lang, draft)}</div>
       <div class="footer">
         <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">close</button>
-        <button class="btn btn-primary" data-action="review-save" ${complete ? "disabled" : ""}>save</button>
+        <button class="btn btn-primary" data-action="review-save" ${(complete && !dirty) ? "disabled" : ""}>save</button>
       </div>`;
   }
 
@@ -375,11 +390,11 @@ window.View = (function () {
   // Manual mode: swap the picker for the full flat field list of the
   // language being hand-typed. Reuses fieldInput (same shape as the review
   // modal) so typing here behaves identically to editing later.
-  function renderAddManual(host, lang) {
+  function renderAddManual(host, lang, draft) {
     host.innerHTML = `
       <div class="card ov-small ov-add-manual">
         <div class="header58"><h2>New: Translation</h2></div>
-        <div class="review-fields">${stringList(lang)}</div>
+        <div class="review-fields">${stringList(lang, draft)}</div>
         <div class="footer">
           <button class="btn btn-tertiary" data-action="manual-generate">${globe}generate</button>
           <span class="spacer"></span>

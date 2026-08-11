@@ -132,6 +132,8 @@ button{font-family:var(--font);}
 .row-card-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px;justify-content:center;}
 .row-card-head{font-size:16px;line-height:24px;font-weight:600;color:var(--text);
   display:flex;align-items:center;gap:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* per-language "this one is incomplete" marker, next to the language name */
+.row-warn{flex:0 0 16px;color:var(--danger);}
 .row-card-type{font-size:10px;line-height:14px;font-weight:600;letter-spacing:.8px;
   text-transform:uppercase;color:var(--muted);}
 .row-card-icons{display:flex;align-items:center;gap:4px;}
@@ -219,8 +221,10 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
   background:var(--msg-bg);border-radius:4px;padding:8px;
   font-size:14px;line-height:20px;color:var(--text);}
 .inline-msg-ico{flex:0 0 18px;color:var(--text);}
-.warn-msg{background:var(--orange-bg);margin-bottom:8px;}
-.warn-msg .warn,.inline-msg-ico.warn{color:var(--orange);}
+/* the missing-translations banner reads as an error, matching the red used by
+   the missing-field underline and the per-language triangle */
+.warn-msg{background:#fdecea;margin-bottom:8px;}
+.warn-msg .warn,.inline-msg-ico.warn{color:var(--danger);}
 
 /* ---------- footer (pt-8 pb-16 px-16, right buttons gap 8) ---------- */
 .footer{display:flex;align-items:center;gap:8px;padding:8px 16px 16px;}
