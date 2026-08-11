@@ -31,6 +31,11 @@ window.View = (function () {
     clock: "M12 20a8 8 0 1 1 0-16 8 8 0 0 1 0 16m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m.5 5H11v6l4.75 2.85.75-1.23-4-2.37V7z",
     attach: "M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z",
     warn: "M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z",
+    // filled circle with a knocked-out "!" — the error counterpart to
+    // checkCircle, per the snackbar frame (46099:4394)
+    alertCircle: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z",
+    // filled circle with a knocked-out "×" — snackbar dismiss
+    closeCircle: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z",
   };
 
   // public/globe — exact Material glyph from Figma (20x20 in a 24 box)
@@ -502,13 +507,17 @@ window.View = (function () {
   /* ===========================================================
      SNACKBAR — transient toast stacked from the top-right corner
      =========================================================== */
-  // variant: "success" (green check) or "error" (red alert).
+  /* Snackbar per Figma 46099:4394 — white card (light red for errors), a
+     filled status circle on the left, and a grey filled dismiss circle on
+     the right. variant: "success" (green check) or "error" (red alert). */
   function showSnackbar(host, message, variant = "success") {
     const error = variant === "error";
     const el = document.createElement("div");
     el.className = `snackbar${error ? " snackbar-error" : ""}`;
-    const icon = error ? P.warn : P.checkCircle;
-    el.innerHTML = `<span class="snackbar-ico">${mdi(icon, "", 20)}</span><span>${esc(message)}</span>`;
+    el.innerHTML =
+      `<span class="snackbar-ico">${mdi(error ? P.alertCircle : P.checkCircle, "", 24)}</span>` +
+      `<span class="snackbar-msg">${esc(message)}</span>` +
+      `<button class="snackbar-close" data-action="dismiss-snack" aria-label="Dismiss">${mdi(P.closeCircle, "", 24)}</button>`;
     host.appendChild(el);
     // animate in on the next frame (so the transition actually runs)
     requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in")));

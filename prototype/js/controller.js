@@ -17,14 +17,20 @@
     snacks:   $("#snackbar-stack"),
   };
 
-  // Show a toast in the top-right stack; auto-dismisses after `ms`.
+  // Animate a snackbar out and remove it. Safe to call twice (the timeout and
+  // the dismiss button can race), so guard on the class.
+  function dismissSnack(el) {
+    if (!el || el.classList.contains("out")) return;
+    el.classList.remove("in");
+    el.classList.add("out");
+    el.addEventListener("transitionend", () => el.remove(), { once: true });
+  }
+
+  // Show a toast in the top-right stack; auto-dismisses after `ms`, or when
+  // the user hits its × button.
   function notify(message, variant = "success", ms = 3200) {
     const el = View.showSnackbar(els.snacks, message, variant);
-    setTimeout(() => {
-      el.classList.remove("in");
-      el.classList.add("out");
-      el.addEventListener("transitionend", () => el.remove(), { once: true });
-    }, ms);
+    setTimeout(() => dismissSnack(el), ms);
   }
 
   // Transient flow state
@@ -355,13 +361,13 @@
     if (generatingLangs.has(lang.name)) return;
     generatingLangs.add(lang.name);
     showBase(); // render the row immediately so it shows loading right away
-    notify("Translation generating started");
+    notify("Translation started");
     runTranslation(lang, onlyMissing)
       // A background run can finish while the admin is anywhere in the app.
       // We never interrupt with a modal — a failed run just leaves the language
       // incomplete (so the warning + generate CTA come back on their own) and
       // says so with an error snackbar.
-      .catch(() => notify(`Translation failed for ${lang.name}`, "error"))
+      .catch(() => notify("Translation failed", "error"))
       .finally(() => {
         generatingLangs.delete(lang.name);
         showBase();
@@ -544,6 +550,10 @@
       case "close-overlay":
         if (modalBusy) break;
         closeOverlay();
+        break;
+
+      case "dismiss-snack":
+        dismissSnack(t.closest(".snackbar"));
         break;
 
       /* ---- console ---- */
