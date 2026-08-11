@@ -370,10 +370,9 @@
     setLoading(btn, true);
     setModalBusy(true);
     try {
+      // The generated strings land in the inputs only — SAVE is what stores them.
       const draft = await runTranslation(lang, false, true);
       View.renderAddManual(els.ovAdd, lang, draft);
-      // The generated strings are only in the inputs — SAVE is what stores them.
-      els.ovAdd.querySelector('[data-action="save-manual"]').disabled = false;
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
@@ -547,25 +546,25 @@
       case "add-manually":
         if (!pendingLang || t.disabled) break;
         Model.addLanguage(pendingLang);
-        View.renderAddManual(els.ovAdd, pendingLang, Model.getTasks());
+        View.renderAddManual(els.ovAdd, pendingLang, null);
         break;
 
       case "save-manual": {
         if (!pendingLang) break;
-        // Human-entered translations must be complete before saving (AI-driven
-        // saves are unconditional because AI always fills what it was given).
-        // Validate BEFORE writing, so a blocked save leaves nothing half-written.
-        const emptyField = [...els.ovAdd.querySelectorAll(".edit-field textarea")]
-          .find(ta => !ta.value.trim());
-        if (emptyField) {
-          emptyField.closest(".edit-field").classList.add("missing");
-          emptyField.scrollIntoView({ block: "center", behavior: "smooth" });
-          emptyField.focus();
+        const savedLang = pendingLang;
+        // Same contract as the review modal: what was typed is kept, gaps stay
+        // missing and the row keeps its warning. SAVE is where empty fields
+        // turn red — before that they're simply not filled in yet.
+        syncManualToModel(savedLang);
+        const emptyFields = [...els.ovAdd.querySelectorAll(".edit-field textarea")]
+          .filter(ta => !ta.value.trim());
+        if (emptyFields.length) {
+          emptyFields.forEach(ta => ta.closest(".edit-field").classList.add("missing"));
+          emptyFields[0].scrollIntoView({ block: "center", behavior: "smooth" });
+          showBase(); // the language now exists, partially filled
           notify("Please fill in missing translations", "error");
           break;
         }
-        const savedLang = pendingLang;
-        syncManualToModel(savedLang);
         closeOverlay();
         showBase();
         notify(`${savedLang.label || savedLang.name} saved`);
@@ -702,16 +701,17 @@
     if (manualBtn) manualBtn.disabled = generatingLangs.size > 0;
   });
 
-  /* ---------- Manual-add mode: char counters + dirty-tracking for SAVE ---------- */
+  /* ---------- Manual-add mode: char counters ---------- */
   els.ovAdd.addEventListener("input", (e) => {
     if (!e.target.matches(".edit-field textarea")) return;
     const limit = e.target.getAttribute("maxlength");
     const wrap = e.target.closest(".edit-field-wrap");
     wrap.querySelector(".cnt").textContent = `${[...e.target.value].length} / ${limit}`;
-    e.target.closest(".edit-field").classList.toggle("missing", e.target.value.trim() === "");
+    // Typing only ever CLEARS the red here. Emptying a field again shouldn't
+    // re-flag it before the admin has tried to save: red means "you tried to
+    // save with this empty", not "this is empty right now".
+    if (e.target.value.trim() !== "") e.target.closest(".edit-field").classList.remove("missing");
     autoGrow(e.target);
-    const save = els.ovAdd.querySelector('[data-action="save-manual"]');
-    if (save) save.disabled = false; // any hand-edit makes SAVE meaningful again
   });
 
   /* ---------- Live char counters + clear the missing state on type ---------- */
@@ -723,10 +723,12 @@
     // typing into a missing field fills it → drop the orange underline
     e.target.closest(".edit-field").classList.toggle("missing", e.target.value.trim() === "");
     autoGrow(e.target);
-    // TRANSLATE shows only while at least one field is empty/missing —
+    // GENERATE is live only while at least one field is empty/missing —
     // emptying a field is how the admin requests a re-translation of it.
+    // Disabled, not hidden, so the footer doesn't reflow as you type (this
+    // matches how renderReview draws it on open).
     const btn = els.review.querySelector('[data-action="retranslate"]');
-    if (btn) btn.hidden = !els.review.querySelector(".edit-field.missing");
+    if (btn) btn.disabled = !els.review.querySelector(".edit-field.missing");
     // any hand-edit (on a complete language, SAVE starts disabled) makes
     // SAVE meaningful again
     const save = els.review.querySelector('[data-action="review-save"]');

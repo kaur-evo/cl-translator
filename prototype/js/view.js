@@ -138,10 +138,13 @@ window.View = (function () {
      (empty + orange underline when missing), caption = original base string.
      The provenance tooltip (Figma 46048:3757) hangs off the CAPTION only and
      opens below it, so it never covers the input. */
-  function fieldInput(caption, translation, limit, fieldKey, tip) {
+  function fieldInput(caption, translation, limit, fieldKey, tip, flagMissing = true) {
     const tipAttrs = tip ? ` class="cap tip" data-tip="${esc(tip)}"` : ' class="cap"';
-    const missing = translation == null;
-    const value = missing ? "" : translation;
+    const empty = translation == null;
+    const value = empty ? "" : translation;
+    // flagMissing off: empty is the expected starting state (a fresh manual
+    // add), so don't accuse the admin of a gap before they've typed anything.
+    const missing = empty && flagMissing;
     return `
       <div class="edit-field-wrap">
         <div class="edit-field${missing ? " missing" : ""}"><textarea rows="1" maxlength="${limit}" data-field="${esc(fieldKey || caption)}">${esc(value)}</textarea></div>
@@ -316,13 +319,14 @@ window.View = (function () {
   };
   // `draft` — generated-but-unsaved strings, shown in the inputs on top of what
   // the model holds. They only reach the model on SAVE, so CLOSE discards them.
-  function stringList(lang, draft) {
+  function stringList(lang, draft, flagMissing = true) {
     return Model.collectStrings().map(s => fieldInput(
       s.text,
       (draft && draft[s.text] != null) ? draft[s.text] : Model.translationOf(s.text, lang.name),
       CHAR_LIMIT[s.kind] || 200,
       s.text,                       // the source string IS the key
-      KIND_LABEL[s.kind] || s.kind
+      KIND_LABEL[s.kind] || s.kind,
+      flagMissing
     )).join("");
   }
 
@@ -390,16 +394,22 @@ window.View = (function () {
   // Manual mode: swap the picker for the full flat field list of the
   // language being hand-typed. Reuses fieldInput (same shape as the review
   // modal) so typing here behaves identically to editing later.
-  function renderAddManual(host, lang, draft) {
+  //
+  // `flagMissing` off on the first render: the dialog opens empty by
+  // definition, so marking every field red before a single keystroke reads as
+  // an error state rather than a starting state. Gaps turn red on SAVE, the
+  // same way the review modal behaves. SAVE stays active throughout — saving
+  // a partial translation is allowed here too.
+  function renderAddManual(host, lang, draft, flagMissing = false) {
     host.innerHTML = `
       <div class="card ov-small ov-add-manual">
         <div class="header58"><h2>New: Translation</h2></div>
-        <div class="review-fields">${stringList(lang, draft)}</div>
+        <div class="review-fields">${stringList(lang, draft, flagMissing)}</div>
         <div class="footer">
           <button class="btn btn-secondary" data-action="manual-generate">generate</button>
           <span class="spacer"></span>
           <button class="btn btn-text" data-action="close-overlay">close</button>
-          <button class="btn btn-primary" data-action="save-manual" disabled>save</button>
+          <button class="btn btn-primary" data-action="save-manual">save</button>
         </div>
       </div>`;
   }
