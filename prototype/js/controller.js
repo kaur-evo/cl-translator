@@ -104,9 +104,9 @@
      same scope; reopening a language (pencil) shows it as a modal again.
      The pencil is disabled (and the row isn't clickable) while that language
      is still generating, so this never opens mid-run. */
-  function showReview(lang, dirty = false) {
+  function showReview(lang) {
     currentLang = lang;
-    View.renderReview(els.review, lang, dirty);
+    View.renderReview(els.review, lang);
     els.ovReview.hidden = false;
     // size each field to its content so pre-filled long strings wrap to 2+ lines
     els.review.querySelectorAll(".edit-field textarea").forEach(autoGrow);
@@ -613,7 +613,7 @@
     try {
       await runTranslation(lang, false); // false = full list, not just missing
       // if we're on the review screen for this language, refresh it
-      if (currentLang && currentLang.name === lang.name) showReview(currentLang, true);
+      if (currentLang && currentLang.name === lang.name) showReview(currentLang);
       else showBase();
     } catch (e) {
       alert(`Could not translate into ${lang.name}.\n\n${e.message}`);
@@ -666,10 +666,6 @@
     // matches how renderReview draws it on open).
     const btn = els.review.querySelector('[data-action="retranslate"]');
     if (btn) btn.disabled = !els.review.querySelector(".edit-field.missing");
-    // any hand-edit (on a complete language, SAVE starts disabled) makes
-    // SAVE meaningful again
-    const save = els.review.querySelector('[data-action="review-save"]');
-    if (save) save.disabled = false;
   });
 
   // Grow a textarea to fit its content (wraps onto extra lines as needed).

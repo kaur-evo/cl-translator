@@ -328,13 +328,12 @@ window.View = (function () {
     )).join("");
   }
 
-  // `dirty` — something has been typed since the modal opened, so there is
-  // something to persist.
-  function renderReview(host, lang, dirty) {
+  function renderReview(host, lang) {
     const complete = Model.isComplete(lang.name);
 
-    // SAVE is disabled only when there is genuinely nothing to save: opened on
-    // an already-complete language and untouched since. Typing enables it.
+    // SAVE is always live, like the manual dialog and the checklist footer:
+    // saving an untouched translation is a no-op, not an error, and a greyed
+    // SAVE on an already-complete language reads as something being wrong.
     // GENERATE is disabled (not hidden) when everything is filled: it only
     // ever fills missing strings, so with none missing it has nothing to do.
     host.innerHTML = `
@@ -344,7 +343,7 @@ window.View = (function () {
         <button class="btn btn-secondary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">close</button>
-        <button class="btn btn-primary" data-action="review-save" ${(complete && !dirty) ? "disabled" : ""}>save</button>
+        <button class="btn btn-primary" data-action="review-save">save</button>
       </div>`;
   }
 
