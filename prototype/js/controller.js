@@ -54,16 +54,45 @@
   let lastLang = null;      // last language translated (for "run on full list")
   const generatingLangs = new Set(); // language names with an in-flight per-row generate run
   // True while the add-language dialog or the review modal has a translation
-  // in flight — blocks CANCEL, the backdrop, and Escape until it finishes, so
-  // a running generate can't be walked away from mid-request.
+  // in flight. CLOSE stays available: leaving mid-run hands the run over to the
+  // row (see abandonModalRun), it doesn't cancel it.
   let modalBusy = false;
   function setModalBusy(on) {
     modalBusy = on;
-    // disable (not just ignore) CANCEL in whichever modal is open, so the
-    // lock is visible, not just silently enforced on click
-    [els.ovAdd.querySelector('[data-action="close-overlay"]'),
-     els.review.querySelector('[data-action="review-cancel"]')]
-      .forEach(btn => { if (btn) btn.disabled = on; });
+  }
+
+  /* Closing a modal DURING a generate abandons the draft contract: the admin
+     never saw the result, so there is nothing for them to have accepted or
+     rejected. The run is adopted by the row instead — it commits to the model
+     and reports itself exactly like a background generate, which is what the
+     row's spinner now implies.
+
+     Set while a modal run is in flight; the run reads it on completion. */
+  let abandonedRun = null; // { langName } — the run whose modal was closed
+  function abandonModalRun(lang) {
+    if (!modalBusy || !lang) return false;
+    abandonedRun = { langName: lang.name };
+    setModalBusy(false);
+    generatingLangs.add(lang.name); // the row picks up the spinner
+    showBase();
+    return true;
+  }
+  // Clear the abandoned marker + the row spinner. Returns whether THIS run was
+  // the abandoned one, so the caller knows to skip its modal-facing branch.
+  function finishAbandoned(lang) {
+    if (!abandonedRun || !lang || abandonedRun.langName !== lang.name) return false;
+    abandonedRun = null;
+    generatingLangs.delete(lang.name);
+    showBase();
+    return true;
+  }
+  // Commit an abandoned run's draft, then report it like a background generate.
+  function adoptIfAbandoned(lang, draft) {
+    if (!finishAbandoned(lang)) return false;
+    Model.applyTranslation(lang.name, draft);
+    showBase();
+    notify("Translation saved");
+    return true;
   }
 
   // Where translations run: the local node proxy serves the app on :8787;
@@ -343,17 +372,22 @@
 
   // Translate, showing a spinner on `btn`, then open the review on success.
   // Used by the review modal's own "generate" (retranslate) and by the
-  // add-language dialog's MANUAL-mode generate button — both keep their
-  // modal open and blocked (modalBusy) for the duration of the run.
+  // add-language dialog's MANUAL-mode generate button — both keep their modal
+  // open for the duration of the run, and both hand the run to the row if the
+  // admin closes the modal before it lands.
   async function translateAndReview(lang, btn, onlyMissing) {
     setLoading(btn, true);
     setModalBusy(true);
     try {
       const draft = await runTranslation(lang, onlyMissing, true);
+      // Modal closed mid-run: the admin never saw this result, so it's saved
+      // for them rather than discarded.
+      if (adoptIfAbandoned(lang, draft)) return;
       // dirty + draft: the fields are filled but nothing is stored yet, so SAVE
       // is the only way to keep them and CLOSE throws them away.
       showReview(lang, true, draft);
     } catch (e) {
+      if (finishAbandoned(lang)) { notify("Translation failed", "error"); return; }
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
     } finally {
@@ -372,11 +406,14 @@
     try {
       // The generated strings land in the inputs only — SAVE is what stores them.
       const draft = await runTranslation(lang, false, true);
+      if (adoptIfAbandoned(lang, draft)) return;
       View.renderAddManual(els.ovAdd, lang, draft);
     } catch (e) {
+      if (finishAbandoned(lang)) { notify("Translation failed", "error"); return; }
       alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
             `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
     } finally {
+      setLoading(btn, false);
       setModalBusy(false);
     }
   }
@@ -420,11 +457,10 @@
   document.addEventListener("click", (e) => {
     const t = e.target.closest("[data-action]");
 
-    // Backdrop click closes whichever overlay was clicked — but never while a
-    // translation is running in it (modalBusy), so a generate can't be walked
-    // away from mid-request.
+    // Backdrop click closes whichever overlay was clicked. If a generate is
+    // running in it, the run is handed to the row rather than lost.
     if (e.target.classList.contains("overlay")) {
-      if (modalBusy) return;
+      abandonModalRun(e.target === els.ovReview ? currentLang : pendingLang);
       closeOverlay(); closeTaskOverlay(); closeConfirm();
       if (e.target === els.ovReview) closeReview(); // = cancel, edits discarded
       return;
@@ -537,9 +573,9 @@
       }
 
       case "manual-generate":
-        // Manual mode's own generate button — stays inside the dialog,
-        // blocks CANCEL/backdrop/Escape (modalBusy), same as the review
-        // modal's retranslate.
+        // Manual mode's own generate button — stays inside the dialog, and
+        // moves to the row if the dialog is closed mid-run, same as the
+        // review modal's retranslate.
         if (pendingLang) translateAndReviewInManual(pendingLang, t);
         break;
 
@@ -609,13 +645,15 @@
         }
         break;
 
+      // Leaving mid-generate hands the run to the row instead of discarding it
+      // (abandonModalRun) — a result the admin never saw isn't theirs to reject.
       case "review-cancel":
-        if (modalBusy) break; // a generate is running in this modal — don't discard mid-request
+        abandonModalRun(currentLang);
         closeReview(); // discard edits
         break;
 
       case "close-overlay":
-        if (modalBusy) break;
+        abandonModalRun(pendingLang);
         closeOverlay();
         break;
 
@@ -747,10 +785,10 @@
     autoGrow(e.target);
   });
 
-  /* ---------- Esc closes overlays (unless a translation is running in one) ---------- */
+  /* ---------- Esc closes overlays (a running generate moves to the row) ---------- */
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    if (modalBusy) return;
+    abandonModalRun(!els.ovReview.hidden ? currentLang : pendingLang);
     closeOverlay(); closeTaskOverlay(); closeConfirm();
     if (!els.ovReview.hidden) closeReview();
   });
