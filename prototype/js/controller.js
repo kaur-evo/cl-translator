@@ -402,6 +402,10 @@
     showBase(); // render the row immediately so it shows loading right away
     notify("Translation started");
     runTranslation(lang, onlyMissing)
+      // A background run commits straight to the model, so finishing IS a save
+      // and it says so — the run started long enough ago that the row quietly
+      // losing its spinner isn't enough of a signal on its own.
+      .then(() => notify(`${lang.label || lang.name} saved`))
       // A background run can finish while the admin is anywhere in the app.
       // We never interrupt with a modal — a failed run just leaves the language
       // incomplete (so the warning + generate CTA come back on their own) and
