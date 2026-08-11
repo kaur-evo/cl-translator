@@ -53,47 +53,13 @@
   let currentLang = null;   // language being reviewed
   let lastLang = null;      // last language translated (for "run on full list")
   const generatingLangs = new Set(); // language names with an in-flight per-row generate run
-  // True while the add-language dialog or the review modal has a translation
-  // in flight. CLOSE stays available: leaving mid-run hands the run over to the
-  // row (see abandonModalRun), it doesn't cancel it.
-  let modalBusy = false;
-  function setModalBusy(on) {
-    modalBusy = on;
-  }
+  /* Generating NEVER happens inside a modal. Every generate — from the picker,
+     from a row, or from inside the edit/manual dialog — closes the dialog and
+     runs on the row (startBackgroundGenerate). One flow, one place to look for
+     progress, and no modal that has to be babysat while a run finishes.
 
-  /* Closing a modal DURING a generate abandons the draft contract: the admin
-     never saw the result, so there is nothing for them to have accepted or
-     rejected. The run is adopted by the row instead — it commits to the model
-     and reports itself exactly like a background generate, which is what the
-     row's spinner now implies.
-
-     Set while a modal run is in flight; the run reads it on completion. */
-  let abandonedRun = null; // { langName } — the run whose modal was closed
-  function abandonModalRun(lang) {
-    if (!modalBusy || !lang) return false;
-    abandonedRun = { langName: lang.name };
-    setModalBusy(false);
-    generatingLangs.add(lang.name); // the row picks up the spinner
-    showBase();
-    return true;
-  }
-  // Clear the abandoned marker + the row spinner. Returns whether THIS run was
-  // the abandoned one, so the caller knows to skip its modal-facing branch.
-  function finishAbandoned(lang) {
-    if (!abandonedRun || !lang || abandonedRun.langName !== lang.name) return false;
-    abandonedRun = null;
-    generatingLangs.delete(lang.name);
-    showBase();
-    return true;
-  }
-  // Commit an abandoned run's draft, then report it like a background generate.
-  function adoptIfAbandoned(lang, draft) {
-    if (!finishAbandoned(lang)) return false;
-    Model.applyTranslation(lang.name, draft);
-    showBase();
-    notify("Translation saved");
-    return true;
-  }
+     That also removes the draft/discard question entirely: a run always
+     commits, because there is never an open modal holding an unsaved result. */
 
   // Where translations run: the local node proxy serves the app on :8787;
   // anywhere else (e.g. GitHub Pages) is static, so "real" uses the direct
@@ -138,11 +104,9 @@
      same scope; reopening a language (pencil) shows it as a modal again.
      The pencil is disabled (and the row isn't clickable) while that language
      is still generating, so this never opens mid-run. */
-  function showReview(lang, dirty = false, draft = null) {
+  function showReview(lang, dirty = false) {
     currentLang = lang;
-    // A draft only lives in the inputs. SAVE reads the inputs back into the
-    // model (syncReviewToModel), so CLOSE discards it with no extra bookkeeping.
-    View.renderReview(els.review, lang, dirty, draft);
+    View.renderReview(els.review, lang, dirty);
     els.ovReview.hidden = false;
     // size each field to its content so pre-filled long strings wrap to 2+ lines
     els.review.querySelectorAll(".edit-field textarea").forEach(autoGrow);
@@ -204,40 +168,19 @@
     editingTaskId = null;
   }
 
-  /* ---------- Loading state on a CTA (Figma 46051:3919) ----------
-     The button keeps its icon + label, drops to the disabled look
-     (black-12% fill at 25% opacity), and a loader spins AFTER the text. */
-  function setLoading(btn, on) {
-    if (!btn) return;
-    if (on) {
-      btn.disabled = true;
-      btn.classList.add("is-loading");
-      if (!btn.querySelector(".btn-loader")) {
-        btn.insertAdjacentHTML("beforeend",
-          `<span class="btn-loader" aria-hidden="true"><span class="spinner"></span></span>`);
-      }
-    } else {
-      btn.disabled = false;
-      btn.classList.remove("is-loading");
-      const l = btn.querySelector(".btn-loader");
-      if (l) l.remove();
-    }
-  }
+  /* The CTA loading state (Figma 46051:3919) is rendered by the view straight
+     from generatingLangs — see renderBase's row-gen button. Nothing imperative
+     is needed now that a run only ever spins on a row. */
 
   /* ---------- Real AI translation via the local proxy (NDJSON stream) ----------
      onlyMissing: translate just the untranslated strings (review re-translate);
      otherwise translate everything. Log lines stream into the console live.
 
-     draft: don't commit the result to the model — return it instead. Used by
-     the edit modal, where a generate fills the inputs but only SAVE persists
-     them, so CLOSE can still discard. Background runs (row / add dialog) leave
-     this off and save on completion, as the spec requires. */
-  async function runTranslation(lang, onlyMissing, draft = false) {
-    const draftResult = {};
-    const commit = (strings) => {
-      if (draft) Object.assign(draftResult, strings);
-      else Model.applyTranslation(lang.name, strings);
-    };
+     Every run commits to the model on completion: generating always happens on
+     the row, never behind an open modal, so there is no unsaved result for the
+     admin to accept or reject. */
+  async function runTranslation(lang, onlyMissing) {
+    const commit = (strings) => Model.applyTranslation(lang.name, strings);
     // Ordered, TYPED, DEDUPED strings: [{key, text, kind}] where key === text.
     // The translator is told what each string is (task / unit / option / …);
     // the checklist description is always last. Identical strings appear once.
@@ -245,7 +188,7 @@
     const fields = onlyMissing
       ? Model.collectMissingStrings(lang.name)
       : Model.collectStrings();
-    if (fields.length === 0) return draftResult; // nothing missing — no-op
+    if (fields.length === 0) return; // nothing missing — no-op
 
     // Push a live run that grows as lines arrive — the console itself only
     // opens via its own tab button, never forced open by a translation run
@@ -255,7 +198,7 @@
     renderConsole();
 
     // Mock mode: fabricate a translation locally. No proxy, no key, no cost.
-    if (con.mock) { await mockRun(lang, fields, run, commit); return draftResult; }
+    if (con.mock) { await mockRun(lang, fields, run, commit); return; }
 
     // Static hosting (e.g. GitHub Pages): no proxy exists, so call the
     // Anthropic API directly from the browser with the viewer's own key
@@ -271,7 +214,7 @@
         commit(out.strings);
         lastLang = lang;
         if (out.error) throw new Error(out.error);
-        return draftResult;
+        return;
       } catch (e) {
         run.log.push(`❌ ${e.message}`);
         throw e;
@@ -329,7 +272,6 @@
     run.running = false;
     renderConsole();
     if (finalError) throw new Error(finalError);
-    return draftResult;
   }
 
   /* ---------- Mock translation (no API) ----------
@@ -370,52 +312,15 @@
     renderConsole();
   }
 
-  // Translate, showing a spinner on `btn`, then open the review on success.
-  // Used by the review modal's own "generate" (retranslate) and by the
-  // add-language dialog's MANUAL-mode generate button — both keep their modal
-  // open for the duration of the run, and both hand the run to the row if the
-  // admin closes the modal before it lands.
-  async function translateAndReview(lang, btn, onlyMissing) {
-    setLoading(btn, true);
-    setModalBusy(true);
-    try {
-      const draft = await runTranslation(lang, onlyMissing, true);
-      // Modal closed mid-run: the admin never saw this result, so it's saved
-      // for them rather than discarded.
-      if (adoptIfAbandoned(lang, draft)) return;
-      // dirty + draft: the fields are filled but nothing is stored yet, so SAVE
-      // is the only way to keep them and CLOSE throws them away.
-      showReview(lang, true, draft);
-    } catch (e) {
-      if (finishAbandoned(lang)) { notify("Translation failed", "error"); return; }
-      alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
-            `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
-    } finally {
-      setLoading(btn, false);
-      setModalBusy(false);
-    }
-  }
-
-  // Manual-mode generate: same run as translateAndReview, but re-renders the
-  // MANUAL field list in place (not the separate review modal) on success —
-  // the admin stays in the "add manually" dialog, now pre-filled by AI, and
-  // can keep hand-editing before SAVE.
-  async function translateAndReviewInManual(lang, btn) {
-    setLoading(btn, true);
-    setModalBusy(true);
-    try {
-      // The generated strings land in the inputs only — SAVE is what stores them.
-      const draft = await runTranslation(lang, false, true);
-      if (adoptIfAbandoned(lang, draft)) return;
-      View.renderAddManual(els.ovAdd, lang, draft);
-    } catch (e) {
-      if (finishAbandoned(lang)) { notify("Translation failed", "error"); return; }
-      alert(`Could not translate into ${lang.name}.\n\n${e.message}\n\n` +
-            `Is the proxy running with ANTHROPIC_API_KEY set? (node proxy.js)`);
-    } finally {
-      setLoading(btn, false);
-      setModalBusy(false);
-    }
+  /* Generate from inside a modal (the edit modal's GENERATE, the manual
+     dialog's GENERATE). Keeps whatever was typed so far, closes the modal, and
+     runs on the row — identical from there on to the picker's GENERATE and the
+     row's own. `syncToModel` persists the open dialog's fields first, so
+     hand-edits made before hitting generate aren't lost by the close. */
+  function generateFromModal(lang, onlyMissing, syncToModel, closeModal) {
+    syncToModel(lang);
+    closeModal();
+    startBackgroundGenerate(lang, onlyMissing);
   }
 
   // Write the manual dialog's fields back into the model (SAVE). data-field is
@@ -460,7 +365,6 @@
     // Backdrop click closes whichever overlay was clicked. If a generate is
     // running in it, the run is handed to the row rather than lost.
     if (e.target.classList.contains("overlay")) {
-      abandonModalRun(e.target === els.ovReview ? currentLang : pendingLang);
       closeOverlay(); closeTaskOverlay(); closeConfirm();
       if (e.target === els.ovReview) closeReview(); // = cancel, edits discarded
       return;
@@ -573,16 +477,16 @@
       }
 
       case "manual-generate":
-        // Manual mode's own generate button — stays inside the dialog, and
-        // moves to the row if the dialog is closed mid-run, same as the
-        // review modal's retranslate.
-        if (pendingLang) translateAndReviewInManual(pendingLang, t);
+        // Manual mode's own generate button — keeps anything hand-typed so
+        // far, closes, and fills the REST on the row. Same flow as the
+        // picker's GENERATE and the edit modal's.
+        if (pendingLang) generateFromModal(pendingLang, true, syncManualToModel, closeOverlay);
         break;
 
       case "add-manually":
         if (!pendingLang || t.disabled) break;
         Model.addLanguage(pendingLang);
-        View.renderAddManual(els.ovAdd, pendingLang, null);
+        View.renderAddManual(els.ovAdd, pendingLang);
         break;
 
       case "save-manual": {
@@ -608,12 +512,9 @@
       }
 
       case "retranslate":
-        // Sync edits first (emptied fields become "missing" in the model),
-        // then translate ONLY the still-missing strings for this language.
-        if (currentLang) {
-          syncReviewToModel(currentLang);
-          translateAndReview(currentLang, t, true);
-        }
+        // Keeps edits (emptied fields become "missing" in the model), closes,
+        // then translates ONLY the still-missing strings on the row.
+        if (currentLang) generateFromModal(currentLang, true, syncReviewToModel, closeReview);
         break;
 
       case "review-save": {
@@ -645,15 +546,13 @@
         }
         break;
 
-      // Leaving mid-generate hands the run to the row instead of discarding it
-      // (abandonModalRun) — a result the admin never saw isn't theirs to reject.
+      // No run is ever in flight behind an open modal, so closing simply
+      // discards whatever was typed.
       case "review-cancel":
-        abandonModalRun(currentLang);
         closeReview(); // discard edits
         break;
 
       case "close-overlay":
-        abandonModalRun(pendingLang);
         closeOverlay();
         break;
 
@@ -785,10 +684,9 @@
     autoGrow(e.target);
   });
 
-  /* ---------- Esc closes overlays (a running generate moves to the row) ---------- */
+  /* ---------- Esc closes overlays ---------- */
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
-    abandonModalRun(!els.ovReview.hidden ? currentLang : pendingLang);
     closeOverlay(); closeTaskOverlay(); closeConfirm();
     if (!els.ovReview.hidden) closeReview();
   });

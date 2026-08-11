@@ -317,12 +317,10 @@ window.View = (function () {
     "unit": "Unit", "out-of-range message": "Message", "no-answer message": "Message",
     "option": "Option", "checklist description": "Description",
   };
-  // `draft` — generated-but-unsaved strings, shown in the inputs on top of what
-  // the model holds. They only reach the model on SAVE, so CLOSE discards them.
-  function stringList(lang, draft, flagMissing = true) {
+  function stringList(lang, flagMissing = true) {
     return Model.collectStrings().map(s => fieldInput(
       s.text,
-      (draft && draft[s.text] != null) ? draft[s.text] : Model.translationOf(s.text, lang.name),
+      Model.translationOf(s.text, lang.name),
       CHAR_LIMIT[s.kind] || 200,
       s.text,                       // the source string IS the key
       KIND_LABEL[s.kind] || s.kind,
@@ -330,22 +328,18 @@ window.View = (function () {
     )).join("");
   }
 
-  // `dirty` — something has changed since the modal opened (typed, or filled
-  // by a generate run), so there is something to persist.
-  function renderReview(host, lang, dirty, draft) {
-    // Draft strings count towards completeness — the fields are visibly filled,
-    // so generate has nothing left to do even though nothing is saved yet.
-    const complete = Model.collectMissingStrings(lang.name)
-      .every(s => draft && draft[s.text] != null);
+  // `dirty` — something has been typed since the modal opened, so there is
+  // something to persist.
+  function renderReview(host, lang, dirty) {
+    const complete = Model.isComplete(lang.name);
 
     // SAVE is disabled only when there is genuinely nothing to save: opened on
-    // an already-complete language and untouched since. Anything that changes
-    // the fields — typing OR generating the missing ones — enables it.
+    // an already-complete language and untouched since. Typing enables it.
     // GENERATE is disabled (not hidden) when everything is filled: it only
     // ever fills missing strings, so with none missing it has nothing to do.
     host.innerHTML = `
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
-      <div class="review-fields">${stringList(lang, draft)}</div>
+      <div class="review-fields">${stringList(lang)}</div>
       <div class="footer">
         <button class="btn btn-secondary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
@@ -400,11 +394,11 @@ window.View = (function () {
   // an error state rather than a starting state. Gaps turn red on SAVE, the
   // same way the review modal behaves. SAVE stays active throughout — saving
   // a partial translation is allowed here too.
-  function renderAddManual(host, lang, draft, flagMissing = false) {
+  function renderAddManual(host, lang, flagMissing = false) {
     host.innerHTML = `
       <div class="card ov-small ov-add-manual">
         <div class="header58"><h2>New: Translation</h2></div>
-        <div class="review-fields">${stringList(lang, draft, flagMissing)}</div>
+        <div class="review-fields">${stringList(lang, flagMissing)}</div>
         <div class="footer">
           <button class="btn btn-secondary" data-action="manual-generate">generate</button>
           <span class="spacer"></span>
