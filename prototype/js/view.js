@@ -395,6 +395,24 @@ window.View = (function () {
      plain editable input with its field name as the caption — just
      enough to create test data quickly. Close + Save only.
      =========================================================== */
+  /* ===========================================================
+     OVERLAY — confirmation for destructive actions.
+     Left-aligned heading + body, CANCEL (text) and DELETE (danger text)
+     bottom-right.
+     =========================================================== */
+  function renderConfirmOverlay(host, message, confirmLabel = "delete") {
+    host.innerHTML = `
+      <div class="card ov-confirm">
+        <h2 class="confirm-title">Confirmation</h2>
+        <p class="confirm-body">${esc(message)}</p>
+        <div class="footer">
+          <span class="spacer"></span>
+          <button class="btn btn-text" data-action="confirm-no">cancel</button>
+          <button class="btn btn-text btn-danger" data-action="confirm-yes">${esc(confirmLabel)}</button>
+        </div>
+      </div>`;
+  }
+
   function renderTaskEditOverlay(host, task) {
     const rows = task.fields.map(([field, limit]) => {
       const value = task.base[field] || "";
@@ -524,5 +542,5 @@ window.View = (function () {
     return el;
   }
 
-  return { renderBase, renderReview, renderAddOverlay, renderAddManual, renderTaskEditOverlay, renderConsole, showSnackbar, flagSvg };
+  return { renderBase, renderReview, renderAddOverlay, renderAddManual, renderTaskEditOverlay, renderConfirmOverlay, renderConsole, showSnackbar, flagSvg };
 })();

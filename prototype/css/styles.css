@@ -238,6 +238,17 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
 .overlay[hidden]{display:none;}
 .overlay .card{box-shadow:var(--shadow);overflow:visible;}
 .ov-small{width:700px;max-width:100%;}
+
+/* confirmation dialog for destructive actions (delete a translation).
+   Sits above the other overlays — it can be raised from inside the review
+   modal, so it must not depend on DOM order to win. */
+#ov-confirm{z-index:70;}
+.ov-confirm{width:520px;max-width:100%;padding:24px 24px 8px;}
+.confirm-title{margin:0;font-size:24px;line-height:32px;font-weight:700;color:var(--text);}
+.confirm-body{margin:20px 0 0;font-size:16px;line-height:24px;color:var(--text);}
+.ov-confirm .footer{padding:16px 0 8px;}
+.btn-danger{color:var(--danger);}
+.btn-danger:hover{color:#d32f2f;}
 .ov-content{display:flex;flex-direction:column;gap:8px;padding:0 16px;width:100%;}
 
 /* review modal (Figma 46045:7950 — 975 wide, fields at 16px inset) */

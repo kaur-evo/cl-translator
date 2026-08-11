@@ -12,10 +12,25 @@
     ovReview: $("#ov-review"),
     ovAdd:    $("#ov-add"),
     ovTask:   $("#ov-task"),
+    ovConfirm: $("#ov-confirm"),
     console:  $("#console"),
     conTab:   $("#console-tab"),
     snacks:   $("#snackbar-stack"),
   };
+
+  /* ---------- Confirmation dialog (destructive actions) ----------
+     Styled overlay rather than the browser's native confirm(). The pending
+     action is held until the user answers. */
+  let confirmAction = null;
+  function askConfirm(message, onYes, confirmLabel = "delete") {
+    confirmAction = onYes;
+    View.renderConfirmOverlay(els.ovConfirm, message, confirmLabel);
+    els.ovConfirm.hidden = false;
+  }
+  function closeConfirm() {
+    els.ovConfirm.hidden = true;
+    confirmAction = null;
+  }
 
   // Animate a snackbar out and remove it. Safe to call twice (the timeout and
   // the dismiss button can race), so guard on the class.
@@ -383,7 +398,7 @@
     // away from mid-request.
     if (e.target.classList.contains("overlay")) {
       if (modalBusy) return;
-      closeOverlay(); closeTaskOverlay();
+      closeOverlay(); closeTaskOverlay(); closeConfirm();
       if (e.target === els.ovReview) closeReview(); // = cancel, edits discarded
       return;
     }
@@ -461,30 +476,36 @@
         if (generatingLangs.has(t.dataset.lang)) break; // disabled while generating
         const name = t.dataset.lang;
         // Deleting a translation throws away real work, so confirm first.
-        if (!confirm(`Are you sure you want to delete ${name}?`)) break;
-        Model.removeLanguage(name);
-        Model.clearTranslations(name);
-        if (currentLang && currentLang.name === name) closeReview();
-        showBase();
+        askConfirm(`Are you sure you want to delete ${name}?`, () => {
+          Model.removeLanguage(name);
+          Model.clearTranslations(name);
+          if (currentLang && currentLang.name === name) closeReview();
+          showBase();
+        });
         break;
       }
 
+      case "confirm-yes": {
+        const run = confirmAction;
+        closeConfirm();
+        if (run) run();
+        break;
+      }
+
+      case "confirm-no":
+        closeConfirm();
+        break;
+
       case "do-translate": {
-        // Dialog GENERATE (picker mode). Shows a brief loading state on the
-        // button itself so pressing it doesn't feel like a no-op, THEN
-        // closes the dialog and hands off to the background run against the
-        // new row on the base view (same mechanism as the per-row generate).
+        // Dialog GENERATE (picker mode). Closes immediately and drops the
+        // language straight into the list in its loading state — that row IS
+        // the confirmation that it started, so there's no need to hold the
+        // dialog open on a fake spinner first.
         if (!pendingLang || t.disabled) break;
         const lang = pendingLang;
-        setLoading(t, true);
-        t.disabled = true;
-        els.ovAdd.querySelector('[data-action="close-overlay"]').disabled = true;
-        els.ovAdd.querySelector('[data-action="add-manually"]').disabled = true;
-        setTimeout(() => {
-          Model.addLanguage(lang);
-          closeOverlay();
-          startBackgroundGenerate(lang, false);
-        }, 1000);
+        Model.addLanguage(lang);
+        closeOverlay();
+        startBackgroundGenerate(lang, false);
         break;
       }
 
@@ -681,7 +702,7 @@
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
     if (modalBusy) return;
-    closeOverlay(); closeTaskOverlay();
+    closeOverlay(); closeTaskOverlay(); closeConfirm();
     if (!els.ovReview.hidden) closeReview();
   });
 
