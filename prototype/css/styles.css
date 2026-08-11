@@ -159,8 +159,10 @@ button{font-family:var(--font);}
 
 /* ---------- buttons (Figma: pl-12 pr-16 py-6, gap 4, 14/16 semibold uppercase) ---------- */
 .btn-row{padding:8px 0;}
+/* fixed 36px: the icon/spinner variants are 24px tall and would otherwise
+   push the button past 36 and make it jump when a run starts */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;
-  min-height:36px;padding:6px 16px;border:none;border-radius:var(--radius);cursor:pointer;
+  height:36px;min-height:36px;padding:6px 16px;border:none;border-radius:var(--radius);cursor:pointer;
   font-size:14px;line-height:16px;font-weight:600;text-transform:uppercase;
   color:var(--text);background:transparent;}
 .btn:has(svg){padding-left:12px;}

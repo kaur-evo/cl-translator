@@ -343,7 +343,7 @@ window.View = (function () {
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
       <div class="review-fields">${stringList(lang, draft)}</div>
       <div class="footer">
-        <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
+        <button class="btn btn-secondary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">close</button>
         <button class="btn btn-primary" data-action="review-save" ${(complete && !dirty) ? "disabled" : ""}>save</button>
@@ -382,7 +382,7 @@ window.View = (function () {
           <button class="btn btn-tertiary" data-action="add-manually" disabled>add manually</button>
           <span class="spacer"></span>
           <button class="btn btn-text" data-action="close-overlay">close</button>
-          <button class="btn btn-primary" data-action="do-translate" disabled>${globe}generate</button>
+          <button class="btn btn-primary" data-action="do-translate" disabled>generate</button>
         </div>
       </div>`;
   }
@@ -396,7 +396,7 @@ window.View = (function () {
         <div class="header58"><h2>New: Translation</h2></div>
         <div class="review-fields">${stringList(lang, draft)}</div>
         <div class="footer">
-          <button class="btn btn-tertiary" data-action="manual-generate">${globe}generate</button>
+          <button class="btn btn-secondary" data-action="manual-generate">generate</button>
           <span class="spacer"></span>
           <button class="btn btn-text" data-action="close-overlay">close</button>
           <button class="btn btn-primary" data-action="save-manual" disabled>save</button>
