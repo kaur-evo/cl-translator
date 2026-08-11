@@ -18,8 +18,8 @@
   };
 
   // Show a toast in the top-right stack; auto-dismisses after `ms`.
-  function notify(message, ms = 3200) {
-    const el = View.showSnackbar(els.snacks, message);
+  function notify(message, variant = "success", ms = 3200) {
+    const el = View.showSnackbar(els.snacks, message, variant);
     setTimeout(() => {
       el.classList.remove("in");
       el.classList.add("out");
@@ -102,13 +102,13 @@
     showBase(); // refresh dots / warning banner after any edits
   }
 
-  /* Write the review fields back into the model. An emptied field CLEARS its
-     translation (making it "missing" → orange, re-translatable); anything else
-     is stored as the admin's manual edit. */
+  /* Write the review fields back into the model. Each input's data-field IS
+     the source string (translations are keyed by string, not by task/field).
+     An emptied field CLEARS that string's translation, so it goes back to
+     missing and can be re-generated. */
   function syncReviewToModel(lang) {
     els.review.querySelectorAll(".edit-field textarea").forEach(ta => {
-      const v = ta.value.trim();
-      Model.setFieldTranslation(lang.name, ta.dataset.field, v === "" ? null : v);
+      Model.setStringTranslation(lang.name, ta.dataset.field, ta.value.trim() || null);
     });
   }
 
@@ -168,12 +168,13 @@
      onlyMissing: translate just the untranslated strings (review re-translate);
      otherwise translate everything. Log lines stream into the console live. */
   async function runTranslation(lang, onlyMissing) {
-    // Ordered, TYPED fields: [{key, text, kind}] — the translator is told what
-    // each string is (question / unit / option / …) and the checklist
-    // description is always the last entry. See translator/TRANSLATION-GUIDE.md.
+    // Ordered, TYPED, DEDUPED strings: [{key, text, kind}] where key === text.
+    // The translator is told what each string is (task / unit / option / …);
+    // the checklist description is always last. Identical strings appear once.
+    // See translator/TRANSLATION-GUIDE.md.
     const fields = onlyMissing
-      ? Model.collectMissingFields(lang.name)
-      : Model.collectBaseFields();
+      ? Model.collectMissingStrings(lang.name)
+      : Model.collectStrings();
     if (fields.length === 0) return; // nothing missing — no-op
 
     // Push a live run that grows as lines arrive — the console itself only
@@ -336,11 +337,11 @@
     }
   }
 
-  // Write the manual dialog's fields back into the model (SAVE).
+  // Write the manual dialog's fields back into the model (SAVE). data-field is
+  // the source string — translations are keyed by string, not task/field.
   function syncManualToModel(lang) {
     els.ovAdd.querySelectorAll(".edit-field textarea").forEach(ta => {
-      const v = ta.value.trim();
-      Model.setFieldTranslation(lang.name, ta.dataset.field, v === "" ? null : v);
+      Model.setStringTranslation(lang.name, ta.dataset.field, ta.value.trim() || null);
     });
   }
 
@@ -356,7 +357,11 @@
     showBase(); // render the row immediately so it shows loading right away
     notify("Translation generating started");
     runTranslation(lang, onlyMissing)
-      .catch(e => alert(`Could not translate into ${lang.name}.\n\n${e.message}`))
+      // A background run can finish while the admin is anywhere in the app.
+      // We never interrupt with a modal — a failed run just leaves the language
+      // incomplete (so the warning + generate CTA come back on their own) and
+      // says so with an error snackbar.
+      .catch(() => notify(`Translation failed for ${lang.name}`, "error"))
       .finally(() => {
         generatingLangs.delete(lang.name);
         showBase();
@@ -446,11 +451,17 @@
         break;
       }
 
-      case "del-lang":
+      case "del-lang": {
         if (generatingLangs.has(t.dataset.lang)) break; // disabled while generating
-        Model.removeLanguage(t.dataset.lang);
+        const name = t.dataset.lang;
+        // Deleting a translation throws away real work, so confirm first.
+        if (!confirm(`Are you sure you want to delete ${name}?`)) break;
+        Model.removeLanguage(name);
+        Model.clearTranslations(name);
+        if (currentLang && currentLang.name === name) closeReview();
         showBase();
         break;
+      }
 
       case "do-translate": {
         // Dialog GENERATE (picker mode). Shows a brief loading state on the
@@ -484,13 +495,24 @@
         View.renderAddManual(els.ovAdd, pendingLang, Model.getTasks());
         break;
 
-      case "save-manual":
-        if (pendingLang) {
-          syncManualToModel(pendingLang);
-          closeOverlay();
-          showBase();
+      case "save-manual": {
+        if (!pendingLang) break;
+        // Human-entered translations must be complete before saving (AI-driven
+        // saves are unconditional because AI always fills what it was given).
+        // Validate BEFORE writing, so a blocked save leaves nothing half-written.
+        const emptyField = [...els.ovAdd.querySelectorAll(".edit-field textarea")]
+          .find(ta => !ta.value.trim());
+        if (emptyField) {
+          emptyField.closest(".edit-field").classList.add("missing");
+          emptyField.scrollIntoView({ block: "center", behavior: "smooth" });
+          emptyField.focus();
+          break;
         }
+        syncManualToModel(pendingLang);
+        closeOverlay();
+        showBase();
         break;
+      }
 
       case "retranslate":
         // Sync edits first (emptied fields become "missing" in the model),

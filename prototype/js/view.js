@@ -196,13 +196,21 @@ window.View = (function () {
       </div>`;
     }).join("");
 
-    // Suppress the warning while every incomplete language is already
-    // generating — it's not an error state, it's in progress.
+    // Section-level warning (placement per Figma 46012:3499): shows whenever a
+    // language still has untranslated strings. Suppressed only while every
+    // incomplete language is actively generating — that's progress, not an
+    // error. A failed run leaves the language incomplete, so it reappears.
     const anyIncompleteNotGenerating = langs.some(l =>
       !Model.isComplete(l.name) && !generatingLangs.has(l.name));
     const warnBanner = anyIncompleteNotGenerating
       ? inlineMsg("Some translations are missing, please review and translate.", true)
       : "";
+
+    // No content yet (no name, no tasks, no description) means there is
+    // nothing to translate — explain it and disable the CTA.
+    const hasContent = Model.hasTranslatableContent();
+    const emptyMsg = hasContent ? ""
+      : inlineMsg("Add checklist content before adding translations.");
 
     const desc = Model.descriptionBase();
 
@@ -266,9 +274,10 @@ window.View = (function () {
         </div>
 
         ${contentHeader("Translations", langs.length ? "" : "Please add translations")}
+        ${emptyMsg}
         ${warnBanner}
         <div class="row-card-list">${langRows}</div>
-        <div class="btn-row"><button class="btn btn-tertiary" data-action="add-trans">${mdi(P.add, "btn-ico")}translation</button></div>
+        <div class="btn-row"><button class="btn btn-tertiary" data-action="add-trans" ${hasContent ? "" : "disabled"}>${mdi(P.add, "btn-ico")}translation</button></div>
       </div>
 
       <div class="footer">
@@ -281,35 +290,40 @@ window.View = (function () {
   /* ===========================================================
      VIEW 2 — review & edit modal (Figma 46045:7950, 975 wide)
      =========================================================== */
-  function renderReview(host, lang, tasks) {
-    // The hover hint is just the bare STRING KIND (Task, Description, Unit,
-    // Message, Out-of-range message, Option, Name) — no char limit, no task
-    // numbering, no qualifier. Same word wherever that kind of field appears.
-    let body = fieldInput(
-      Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__", "Name"
-    );
+  /* The flat string list, shared by the review modal and the manual-add
+     dialog. One input per UNIQUE source string (deduped by Model), in
+     checklist order: name → tasks → description. Input holds the
+     translation, caption below holds the original string; the hover hint is
+     the bare string KIND (Task, Option, Unit, Message, …). */
+  const CHAR_LIMIT = { "unit": 10, "checklist name": 50, "checklist description": 500 };
+  const KIND_LABEL = {
+    "checklist name": "Name", "task": "Task", "task description": "Description",
+    "unit": "Unit", "out-of-range message": "Message", "no-answer message": "Message",
+    "option": "Option", "checklist description": "Description",
+  };
+  function stringList(lang) {
+    return Model.collectStrings().map(s => fieldInput(
+      s.text,
+      Model.translationOf(s.text, lang.name),
+      CHAR_LIMIT[s.kind] || 200,
+      s.text,                       // the source string IS the key
+      KIND_LABEL[s.kind] || s.kind
+    )).join("");
+  }
 
-    tasks.forEach((task) => {
-      task.fields.forEach(([field, limit, kind]) => {
-        body += fieldInput(Model.baseText(task, field), Model.translatedText(task, field, lang.name),
-          limit, `${task.id}::${field}`, kind || field);
-      });
-    });
-
-    body += fieldInput(
-      Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__", "Description"
-    );
-
+  function renderReview(host, lang) {
     const complete = Model.isComplete(lang.name);
 
     // SAVE starts disabled when the language is already fully translated —
     // nothing has been hand-edited yet, so there's nothing new to persist.
     // Typing in any field re-enables it (see the review input listener).
+    // GENERATE is disabled (not hidden) when everything is filled: it only
+    // ever fills missing strings, so with none missing it has nothing to do.
     host.innerHTML = `
       <div class="header58"><h2>Edit: ${esc(lang.name)}</h2></div>
-      <div class="review-fields">${body}</div>
+      <div class="review-fields">${stringList(lang)}</div>
       <div class="footer">
-        <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "hidden" : ""}>generate</button>
+        <button class="btn btn-tertiary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
         <button class="btn btn-text" data-action="review-cancel">close</button>
         <button class="btn btn-primary" data-action="review-save" ${complete ? "disabled" : ""}>save</button>
@@ -356,20 +370,11 @@ window.View = (function () {
   // Manual mode: swap the picker for the full flat field list of the
   // language being hand-typed. Reuses fieldInput (same shape as the review
   // modal) so typing here behaves identically to editing later.
-  function renderAddManual(host, lang, tasks) {
-    let body = fieldInput(Model.nameBase(), Model.nameTranslated(lang.name), 50, "__name__", "Name");
-    tasks.forEach((task) => {
-      task.fields.forEach(([field, limit, kind]) => {
-        body += fieldInput(Model.baseText(task, field), Model.translatedText(task, field, lang.name),
-          limit, `${task.id}::${field}`, kind || field);
-      });
-    });
-    body += fieldInput(Model.descriptionBase(), Model.descriptionTranslated(lang.name), 500, "__description__", "Description");
-
+  function renderAddManual(host, lang) {
     host.innerHTML = `
       <div class="card ov-small ov-add-manual">
         <div class="header58"><h2>New: Translation</h2></div>
-        <div class="review-fields">${body}</div>
+        <div class="review-fields">${stringList(lang)}</div>
         <div class="footer">
           <button class="btn btn-tertiary" data-action="manual-generate">${globe}generate</button>
           <span class="spacer"></span>
@@ -497,10 +502,13 @@ window.View = (function () {
   /* ===========================================================
      SNACKBAR — transient toast stacked from the top-right corner
      =========================================================== */
-  function showSnackbar(host, message) {
+  // variant: "success" (green check) or "error" (red alert).
+  function showSnackbar(host, message, variant = "success") {
+    const error = variant === "error";
     const el = document.createElement("div");
-    el.className = "snackbar";
-    el.innerHTML = `<span class="snackbar-ico">${mdi(P.checkCircle, "", 20)}</span><span>${esc(message)}</span>`;
+    el.className = `snackbar${error ? " snackbar-error" : ""}`;
+    const icon = error ? P.warn : P.checkCircle;
+    el.innerHTML = `<span class="snackbar-ico">${mdi(icon, "", 20)}</span><span>${esc(message)}</span>`;
     host.appendChild(el);
     // animate in on the next frame (so the transition actually runs)
     requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in")));

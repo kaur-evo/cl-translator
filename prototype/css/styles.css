@@ -381,4 +381,7 @@ body.console-open .snackbar-stack{right:min(438px, calc(92vw + 18px));}
 .snackbar.out{transform:translateX(24px);opacity:0;}
 .snackbar-ico{flex:0 0 18px;color:var(--green);}
 .snackbar-ico svg{width:18px;height:18px;}
+/* error variant — same white card, red alert icon instead of the green check.
+   NOTE: not yet matched against Figma 46099:4394 (connector was unavailable). */
+.snackbar-error .snackbar-ico{color:var(--danger);}
 @media (prefers-reduced-motion: reduce){.snackbar{transition:opacity .15s ease;}}

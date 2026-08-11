@@ -18,6 +18,11 @@ window.Model = (function () {
   // Languages added on top. Start empty — admin adds them via + TRANSLATION.
   const languages = [];
 
+  // Translations keyed by SOURCE STRING, not by task/field:
+  //   { "English": { "Lülita masin välja": "Turn the machine off", … } }
+  // See the translation layer section at the bottom for why.
+  const trans = {};
+
   // Languages an admin can pick from in the add-translation overlay — the full
   // set the translator system supports (translator-v3 LANGUAGES, normalized to
   // clean product names; Estonian excluded because it is this checklist's base).
@@ -332,125 +337,97 @@ window.Model = (function () {
     },
 
     // Edit a single base field's text directly (mocking tool — the flat
-    // per-task edit dialog, not the real Evocon task editor). Existing
-    // translations for that field are cleared across ALL languages since the
-    // source changed, so it's flagged missing again for re-translation.
+    // per-task edit dialog, not the real Evocon task editor). No translation
+    // bookkeeping needed: translations are keyed by source string, so a changed
+    // original is simply a new, untranslated string, and the old one stops
+    // being collected the moment nothing references it.
     setTaskBaseField(id, field, value) {
       const task = tasks.find(t => t.id === id);
       if (!task) return;
       task.base[field] = value;
-      languages.forEach(l => {
-        if (task.t[l.name]) delete task.t[l.name][field];
-      });
     },
 
-    // Is every translatable field translated for this language?
+    /* ---- Translation layer: UNIQUE STRINGS, not per-field ----
+       A translation is keyed by the SOURCE STRING itself, not by which task or
+       field it came from. Consequences (all intentional, per the spec):
+         - "Good" appearing in five tasks is ONE string to translate once.
+         - Editing an original produces a NEW string, which is untranslated —
+           the old translation is simply no longer collected.
+         - Deleting the last task using a string orphans it, so it stops being
+           collected and its translation is dropped. If another task still uses
+           the same string, it survives.
+       `trans` is { langName: { sourceString: translatedString } }. */
+
+    // Every unique translatable source string, in checklist order:
+    // name → tasks (authoring order, fields in on-screen order) → description.
+    // Deduped by string, first occurrence wins for `kind`.
+    collectStrings() {
+      const seen = new Set();
+      const out = [];
+      const push = (text, kind) => {
+        if (text == null || text === "" || seen.has(text)) return;
+        seen.add(text);
+        out.push({ key: text, text, kind });
+      };
+      push(name.base, "checklist name");
+      tasks.forEach(task => {
+        task.fields.forEach(([field]) => push(task.base[field], kindOf(field)));
+      });
+      push(description.base, "checklist description");
+      return out;
+    },
+    // Same, but only strings this language hasn't translated yet.
+    collectMissingStrings(langName) {
+      const t = trans[langName] || {};
+      return this.collectStrings().filter(s => t[s.key] == null);
+    },
+    // Is every unique string translated for this language?
     isComplete(langName) {
-      const nameOk = name[langName] != null;
-      const descOk = description[langName] != null;
-      const tasksOk = tasks.every(task =>
-        task.fields.every(([field]) => task.t[langName] && task.t[langName][field] != null)
-      );
-      return nameOk && descOk && tasksOk;
+      return this.collectMissingStrings(langName).length === 0;
+    },
+    // Does this checklist have anything to translate at all? Used to gate the
+    // + TRANSLATION CTA — a checklist with no name/tasks/description yet has
+    // no strings, so there is nothing to generate.
+    hasTranslatableContent() {
+      return this.collectStrings().length > 0;
     },
     // Any added language missing translations?
     hasMissingTranslations() {
       return languages.some(l => !this.isComplete(l.name));
     },
-
-    // Resolve a translatable string for a language, falling back to base.
-    text(task, field, langName) {
-      return (task.t[langName] && task.t[langName][field]) || task.base[field];
-    },
-    // The translation only, or null if this field isn't translated yet.
-    translatedText(task, field, langName) {
-      return (task.t[langName] && task.t[langName][field]) != null
-        ? task.t[langName][field] : null;
-    },
-    // The original (base-language, Estonian) string — shown as the caption.
-    baseText(task, field) {
-      return task.base[field];
-    },
-    nameBase() {
-      return name.base;
-    },
-    nameTranslated(langName) {
-      return name[langName] != null ? name[langName] : null;
-    },
-    descriptionFor(langName) {
-      return description[langName] || description.base;
-    },
-    descriptionTranslated(langName) {
-      return description[langName] != null ? description[langName] : null;
-    },
-    descriptionBase() {
-      return description.base;
+    // Per-language: is this specific row incomplete? (drives the row warning)
+    isMissing(langName) {
+      return !this.isComplete(langName);
     },
 
-    /* ---- AI translation plumbing ----
-       Wire format: an ORDERED list of typed fields, so the translator knows
-       exactly what each string is (never guesses, e.g. units) and the general
-       description is always the very LAST string. See translator/TRANSLATION-GUIDE.md. */
+    // Translation for a source string, or null.
+    translationOf(sourceString, langName) {
+      const t = trans[langName];
+      return t && t[sourceString] != null ? t[sourceString] : null;
+    },
+    // Resolve for display, falling back to the original string.
+    resolve(sourceString, langName) {
+      return this.translationOf(sourceString, langName) ?? sourceString;
+    },
 
-    // Every base string as [{key, text, kind}], in canonical order:
-    // checklist name → tasks (authoring order) → checklist description (last).
-    collectBaseFields() {
-      const out = [{ key: "__name__", text: name.base, kind: "checklist name" }];
-      tasks.forEach(task => {
-        task.fields.forEach(([field]) => {
-          out.push({ key: `${task.id}::${field}`, text: task.base[field], kind: kindOf(field) });
-        });
-      });
-      out.push({ key: "__description__", text: description.base, kind: "checklist description" });
-      return out;
-    },
-    // Same order, but ONLY the fields still missing a translation for this language.
-    collectMissingFields(langName) {
-      const missing = (task, field) => !(task.t[langName] && task.t[langName][field] != null);
-      const out = [];
-      if (name[langName] == null) out.push({ key: "__name__", text: name.base, kind: "checklist name" });
-      tasks.forEach(task => {
-        task.fields.forEach(([field]) => {
-          if (missing(task, field)) {
-            out.push({ key: `${task.id}::${field}`, text: task.base[field], kind: kindOf(field) });
-          }
-        });
-      });
-      if (description[langName] == null) {
-        out.push({ key: "__description__", text: description.base, kind: "checklist description" });
-      }
-      return out;
-    },
-    // Store the AI result ({key: translated} map) for a language.
+    nameBase() { return name.base; },
+    descriptionBase() { return description.base; },
+    baseText(task, field) { return task.base[field]; },
+
+    // Store an AI result ({sourceString: translated}) for a language.
     applyTranslation(langName, keyed) {
-      if (keyed.__name__ != null) name[langName] = keyed.__name__;
-      if (keyed.__description__ != null) description[langName] = keyed.__description__;
-      tasks.forEach(task => {
-        task.t[langName] = task.t[langName] || {};
-        task.fields.forEach(([field]) => {
-          const v = keyed[`${task.id}::${field}`];
-          if (v != null) task.t[langName][field] = v;
-        });
+      trans[langName] = trans[langName] || {};
+      Object.keys(keyed).forEach(src => {
+        if (keyed[src] != null) trans[langName][src] = keyed[src];
       });
     },
-    // Set (or clear, with null) one field's translation — used when the admin
-    // edits a review field by hand or empties it to request a re-translation.
-    setFieldTranslation(langName, key, value) {
-      if (key === "__name__") {
-        if (value == null) delete name[langName]; else name[langName] = value;
-        return;
-      }
-      if (key === "__description__") {
-        if (value == null) delete description[langName]; else description[langName] = value;
-        return;
-      }
-      const sep = key.indexOf("::");
-      const task = tasks.find(t => t.id === key.slice(0, sep));
-      if (!task) return;
-      const field = key.slice(sep + 2);
-      task.t[langName] = task.t[langName] || {};
-      if (value == null) delete task.t[langName][field];
-      else task.t[langName][field] = value;
+    // Set (or clear, with null) one string's translation.
+    setStringTranslation(langName, sourceString, value) {
+      trans[langName] = trans[langName] || {};
+      if (value == null || value === "") delete trans[langName][sourceString];
+      else trans[langName][sourceString] = value;
     },
+    // Drop a whole language's translation set.
+    clearTranslations(langName) { delete trans[langName]; },
   };
 })();
