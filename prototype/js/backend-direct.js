@@ -53,11 +53,11 @@ window.DirectBackend = (function () {
 `You are a professional translator for OEE (Overall Equipment Effectiveness) manufacturing software.
 Translate each phrase into ${language}, maintaining consistency and an operator-facing, concise tone suitable for a shop-floor screen.
 
-The checklist's base language is Estonian, but individual phrases may have been
-authored by different people in different languages (e.g. a multi-factory
-tenant where one task was typed in Russian while the rest is Estonian).
-Detect each phrase's own source language automatically — do not assume every
-phrase is Estonian. If a phrase is already in ${language}, return it unchanged.
+Phrases may have been authored by different people in different languages
+(e.g. a multi-factory tenant where one task was typed in Russian while the
+rest is in another language). Detect each phrase's own source language
+automatically — never assume the phrases share one source language. If a
+phrase is already in ${language}, return it unchanged.
 
 Every phrase comes with an explicit "type" — never guess what a string is:
 - "checklist name": short title operators see on the checklist; keep it concise.
@@ -140,12 +140,14 @@ ${payload}`;
 
     if (cfg.review && translations.length) {
       log(`🔍 Reviewing with ${cfg.reviewModel}…`);
-      const pairs = fields.map((f, i) => ({ index: i, type: f.kind, source_et: f.text, translation: translations[i] }));
+      const pairs = fields.map((f, i) => ({ index: i, type: f.kind, source: f.text, translation: translations[i] }));
       const rResp = await call(cfg.key, {
         model: cfg.reviewModel, max_tokens: 4096,
         system: "You are a translation quality reviewer specialising in OEE manufacturing software.",
         messages: [{ role: "user", content:
-`Review these ${language} UI translations of Estonian source strings for OEE software.
+`Review these ${language} UI translations for OEE software. Each entry carries the
+source phrase it was translated from; sources may be in different languages, so
+judge each pair on its own.
 Rules:
 1. Verify correctness, tone, and any placeholder variables in curly braces.
 2. Keep plurals plural and singulars singular.
