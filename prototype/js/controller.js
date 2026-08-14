@@ -151,6 +151,13 @@
   }
   function closeOverlay() {
     els.ovAdd.hidden = true;
+    // Abandoning the manual dialog leaves no trace. A language the admin never
+    // saved must not keep the strings typed into it (or a partial save's), or
+    // re-adding it later would silently resurrect them.
+    if (pendingLang && !Model.getLanguages().some(l => l.name === pendingLang.name)) {
+      Model.clearTranslations(pendingLang.name);
+    }
+    pendingLang = null;
   }
 
   /* ---------- Overlay: edit a task's base strings (mocking tool) ---------- */
@@ -318,6 +325,10 @@
      row's own. `syncToModel` persists the open dialog's fields first, so
      hand-edits made before hitting generate aren't lost by the close. */
   function generateFromModal(lang, onlyMissing, syncToModel, closeModal) {
+    // Generating IS a commitment to the language, so this is where a manual
+    // dialog's language actually enters the model (add-manually only swaps the
+    // dialog's mode). Already-added languages are a no-op.
+    Model.addLanguage(lang);
     syncToModel(lang);
     closeModal();
     startBackgroundGenerate(lang, onlyMissing);
@@ -483,21 +494,36 @@
         if (pendingLang) generateFromModal(pendingLang, true, syncManualToModel, closeOverlay);
         break;
 
+      // Only swaps the dialog to manual mode. The language is NOT added to the
+      // model here: closing without saving must leave no trace, and a language
+      // that exists with no translations is invisible on the base view (no row
+      // renders) while still being taken out of the picker — so it would look
+      // like the language had vanished.
       case "add-manually":
         if (!pendingLang || t.disabled) break;
-        Model.addLanguage(pendingLang);
         View.renderAddManual(els.ovAdd, pendingLang);
         break;
 
       case "save-manual": {
         if (!pendingLang) break;
         const savedLang = pendingLang;
+        const fields = [...els.ovAdd.querySelectorAll(".edit-field textarea")];
+        const emptyFields = fields.filter(ta => !ta.value.trim());
+
+        // Nothing typed at all: there is no translation to save, so don't
+        // create the language. Adding it here would take it out of the picker
+        // while rendering no row, i.e. it would look like it disappeared.
+        if (emptyFields.length === fields.length) {
+          emptyFields.forEach(ta => ta.closest(".edit-field").classList.add("missing"));
+          notify("Please fill in missing translations", "error");
+          break;
+        }
+
         // Same contract as the review modal: what was typed is kept, gaps stay
         // missing and the row keeps its warning. SAVE is where empty fields
         // turn red — before that they're simply not filled in yet.
+        Model.addLanguage(savedLang);
         syncManualToModel(savedLang);
-        const emptyFields = [...els.ovAdd.querySelectorAll(".edit-field textarea")]
-          .filter(ta => !ta.value.trim());
         if (emptyFields.length) {
           emptyFields.forEach(ta => ta.closest(".edit-field").classList.add("missing"));
           emptyFields[0].scrollIntoView({ block: "center", behavior: "smooth" });
