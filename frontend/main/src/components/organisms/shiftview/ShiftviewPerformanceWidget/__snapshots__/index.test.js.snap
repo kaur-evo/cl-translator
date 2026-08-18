@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftviewPerformanceWidget > renders correctly 1`] = `
+<div
+  class="fill-height d-flex"
+  data-v-4542eb34=""
+>
+  <div
+    class="performance-chart"
+    data-v-4542eb34=""
+  >
+    <performance-chart-stub
+      chartmode="UNIT_PER_MINUTE"
+      data="[object Object]"
+      data-v-4542eb34=""
+      screenwidth="0"
+      timezone="UTC"
+      xdomainminstart="2020-01-01T00:00:00.000Z"
+    />
+  </div>
+  <div
+    data-v-4542eb34=""
+  >
+    <evocon-zooming-slider-stub
+      data-v-4542eb34=""
+      slidermaxvalue="100"
+      sliderminvalue="0"
+      sliderstep="1"
+      zoomvalue="0"
+    />
+  </div>
+</div>
+`;

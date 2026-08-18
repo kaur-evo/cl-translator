@@ -1,0 +1,432 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LabelsByChartTypeAndGrouping > if it returns expected configuration snapshot 1`] = `
+{
+  "CHECKLIST": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "entityGroupId": {
+      "text": "Checklist group",
+    },
+    "entityId": {
+      "text": "Checklist",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "CUSTOM_REPORT": {},
+  "DOWNTIME": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "entityGroupId": {
+      "text": "Stop group",
+    },
+    "entityId": {
+      "text": "Stop reason",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "OEE": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "entityId": {
+      "text": "OEE",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "PRODUCTION_SPEED": {
+    "SECOND_PER_UNIT": {
+      "icon": "iconDot",
+      "iconColor": [Function],
+      "text": [Function],
+    },
+    "UNIT_PER_HOUR": {
+      "icon": "iconDot",
+      "iconColor": [Function],
+      "text": [Function],
+    },
+    "UNIT_PER_MINUTE": {
+      "icon": "iconDot",
+      "iconColor": [Function],
+      "text": [Function],
+    },
+    "UNIT_PER_SECOND": {
+      "icon": "iconDot",
+      "iconColor": [Function],
+      "text": [Function],
+    },
+    "entityGroupId": {
+      "icon": "iconDot",
+      "iconColor": [Function],
+      "text": [Function],
+    },
+  },
+  "QUANTITY": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "SCRAPREASON": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "entityGroupId": {
+      "text": "Scrap reason group",
+    },
+    "entityId": {
+      "text": "Scrap reason",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "SPEEDLOSS": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "entityGroupId": {
+      "text": "Speed loss group",
+    },
+    "entityId": {
+      "text": "Speed loss reason",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+  "TIME_USAGE": {
+    "date": {
+      "text": "Day",
+    },
+    "dayofweek": {
+      "text": "Day of the week",
+    },
+    "factoryId": {
+      "text": "Factory",
+    },
+    "lotCode": {
+      "text": "LOT/Batch",
+    },
+    "month": {
+      "text": "Month",
+    },
+    "productGroupId": {
+      "text": "Product group",
+    },
+    "productId": {
+      "text": "Product",
+    },
+    "productionOrder": {
+      "text": "Orders",
+    },
+    "quarter": {
+      "text": "Quarter",
+    },
+    "shiftId": {
+      "text": "Shift",
+    },
+    "shiftTemplate": {
+      "text": "Shift",
+    },
+    "singleOperator": {
+      "text": "operator",
+    },
+    "sku": {
+      "text": "Product code",
+    },
+    "stationGroupId": {
+      "text": "Station group",
+    },
+    "stationId": {
+      "text": "station",
+    },
+    "weekofyear": {
+      "text": "Week",
+    },
+    "year": {
+      "text": "Year",
+    },
+  },
+}
+`;

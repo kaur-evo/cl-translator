@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImageCardButton > renders correctly 1`] = `
+<v-hover-stub
+  data-v-4e0932b5=""
+  disabled="false"
+>
+  <v-sheet-stub
+    border="false"
+    class="position-relative cursor-pointer d-flex flex-column align-center pa-2"
+    data-v-4e0932b5=""
+    tag="div"
+    tile="false"
+  >
+    <!--v-if-->
+    <img
+      alt=""
+      class="non-selectable mt-1"
+      data-v-4e0932b5=""
+      src="string"
+    />
+    <span
+      class="text-body-medium mt-1 text-center white-space-nowrap"
+      data-v-4e0932b5=""
+    >
+      string
+    </span>
+  </v-sheet-stub>
+</v-hover-stub>
+`;

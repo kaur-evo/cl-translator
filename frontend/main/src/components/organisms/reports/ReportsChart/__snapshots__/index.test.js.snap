@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsChart > renders correctly 1`] = `
+<div
+  class="chart-wrapper"
+  data-v-68be4446=""
+>
+  <reports-internal-chart-stub
+    data-v-68be4446=""
+    date-range=""
+    issidemenuopen="true"
+    screenpxtotal="0"
+    totals="[object Object]"
+  />
+</div>
+`;

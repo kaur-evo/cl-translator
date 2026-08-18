@@ -1,0 +1,157 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphLegend > getItemIcon > returns custom icon if item has icon defined 1`] = `"this icon is custom"`;
+
+exports[`GraphLegend > getItemIcon > returns deselected state icon if item is deselected 1`] = `"M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z"`;
+
+exports[`GraphLegend > getItemIcon > returns selected state icon if item is not selectable 1`] = `"M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z"`;
+
+exports[`GraphLegend > getItemIcon > returns selected state icon if item is selected 1`] = `"M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z"`;
+
+exports[`GraphLegend > renders correctly 1`] = `
+<div>
+  <div
+    class="d-flex flex-wrap"
+  >
+    
+    
+  </div>
+</div>
+`;
+
+exports[`GraphLegend > renders correctly with data 1`] = `
+<div>
+  <div
+    class="d-flex flex-wrap"
+  >
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#E01C21"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Kommenteerimata
+      </span>
+    </div>
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#851114"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Planeerimata seisakud
+      </span>
+    </div>
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#707070"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Planeeritud seisakud (k.a OEE)
+      </span>
+    </div>
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#303030"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Planeeritud seisakud (v.a OEE)
+      </span>
+    </div>
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#FDD505"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Kiiruse kadu
+      </span>
+    </div>
+    
+    
+    <div
+      class="mr-4 my-0 prevent-select cursor-pointer"
+    >
+      <v-icon-stub
+        color="#0AAC00"
+        disabled="false"
+        end="false"
+        size="18"
+        start="false"
+        tag="i"
+      >
+        M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z
+      </v-icon-stub>
+      <span
+        class="text-body-small ml-1 text-primary-text"
+      >
+        Normaalkiirus
+      </span>
+    </div>
+    
+    
+  </div>
+</div>
+`;

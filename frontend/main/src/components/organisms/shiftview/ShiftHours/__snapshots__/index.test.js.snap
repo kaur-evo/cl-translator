@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftHours > renders correctly 1`] = `
+<div
+  class="hours"
+  data-v-64191603=""
+  style="font-size: 16px;"
+>
+  
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    12
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    13
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    14
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    15
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    16
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftHours > renders correctly with 12h time version 1`] = `
+<div
+  class="hours"
+  data-v-64191603=""
+  style="font-size: 16px;"
+>
+  
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    12PM
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    1PM
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    2PM
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    3PM
+  </div>
+  <div
+    class="hour"
+    data-v-64191603=""
+  >
+    4PM
+  </div>
+  
+</div>
+`;

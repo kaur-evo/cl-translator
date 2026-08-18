@@ -1,0 +1,231 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BatchWidget > renders correctly 1`] = `
+<div>
+  
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-0"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <span
+        class="mr-3"
+        id="product-order-number"
+      >
+        123
+      </span>
+      <!--v-if-->
+      <span
+        id="product-name"
+      >
+        Product1
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-1"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <span
+        class="mr-3"
+        id="product-sku"
+      >
+        456
+      </span>
+      <span
+        id="product-name"
+      >
+        Product2
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-2"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <span
+        class="mr-3"
+        id="product-sku"
+      >
+        789
+      </span>
+      <span
+        id="product-name"
+      >
+        Product3
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-3"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <!--v-if-->
+      <span
+        id="product-name"
+      >
+        Product3
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  
+  <!--v-if-->
+</div>
+`;
+
+exports[`BatchWidget > renders correctly with tooltip 1`] = `
+<div>
+  
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-0"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <span
+        class="mr-3"
+        id="product-order-number"
+      >
+        123
+      </span>
+      <!--v-if-->
+      <span
+        id="product-name"
+      >
+        Product1
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-1"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <span
+        class="mr-3"
+        id="product-sku"
+      >
+        456
+      </span>
+      <span
+        id="product-name"
+      >
+        Product2
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-2"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <span
+        class="mr-3"
+        id="product-sku"
+      >
+        789
+      </span>
+      <span
+        id="product-name"
+      >
+        Product3
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  <div
+    class="d-flex text-no-wrap"
+    id="product-item-row-3"
+  >
+    <div
+      class="font-weight-regular overflow-hidden text-overflow-ellipsis pr-1"
+    >
+      <!--v-if-->
+      <!--v-if-->
+      <span
+        id="product-name"
+      >
+        Product3
+      </span>
+    </div>
+    <batch-quantity-amount-stub
+      batch="[object Object]"
+      class="ml-auto mr-0 flex-shrink-0"
+      showgoodqty="false"
+      showprogress="false"
+      textclass=""
+    />
+  </div>
+  
+  <!--v-if-->
+</div>
+`;

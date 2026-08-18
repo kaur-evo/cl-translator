@@ -1,0 +1,121 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`usersTableHeadersConf 1`] = `
+[
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Name_Person",
+    "textKey": "fullName",
+    "value": "fullName",
+  },
+  {
+    "isBold": true,
+    "text": "Role",
+    "textKey": "userRoles",
+  },
+  {
+    "text": "Username",
+    "textKey": "username",
+    "value": "username",
+  },
+  {
+    "text": "Email",
+    "textKey": "email",
+  },
+  {
+    "text": "Default station",
+    "textKey": "defaultStation",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "text": "Stations",
+    "textKey": "stationNames",
+  },
+  {
+    "text": "Security profile",
+    "textKey": "securityProfile",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;
+
+exports[`usersTableHeadersConf 2`] = `
+[
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Name_Person",
+    "textKey": "fullName",
+    "value": "fullName",
+  },
+  {
+    "isBold": true,
+    "text": "Role",
+    "textKey": "userRoles",
+  },
+  {
+    "text": "Username",
+    "textKey": "username",
+    "value": "username",
+  },
+  {
+    "text": "Email",
+    "textKey": "email",
+  },
+  {
+    "text": "Default station",
+    "textKey": "defaultStation",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "text": "Stations",
+    "textKey": "stationNames",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;

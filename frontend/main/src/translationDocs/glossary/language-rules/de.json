@@ -1,0 +1,66 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] DIN EN 13306:2018-02 (trilingual maintenance terminology, German adoption of EN 13306:2017)",
+    "[S1] VDI 3423:2011-08 (Verfügbarkeit von Maschinen und Anlagen — equipment availability definitions)",
+    "[S1] VDI 2893 (selection and formation of maintenance KPIs)",
+    "[S1] VDMA-Einheitsblatt 66412 Parts 1-4 (MES-KPIs: Verfügbarkeit, Leistungsgrad, Qualitätsrate)",
+    "[S1] DIN ISO 22400-2 (German adoption of ISO 22400-2:2014)",
+    "[S2] SAP Digital Manufacturing Deutschland — uses OEE/Gesamtanlageneffektivität, Verfügbarkeit, Leistungsgrad",
+    "[S2] Siemens Opcenter DE — uses OEE, Verfügbarkeit, Leistung/Leistungsgrad, Qualität",
+    "[S2] ISTOS GmbH (German MES, Siemens ecosystem) — documents GAE and OEE usage",
+    "[S2] FORCAM ENISCO — German MES vendor, OEE Kennzahl documentation",
+    "[S3] Comarch Deutschland — OEE (GAE) Leistungskennzahl article",
+    "[S3] IBM Deutschland — Was ist die Gesamtanlageneffektivität (OEE)?",
+    "[S3] German Wikipedia — Gesamtanlageneffektivität article, references VDI 3423 and ISO 22400-2",
+    "[S4] Microsoft German Localization Style Guide (DEU-DEU) — formal Sie, imperative verbs"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Sie",
+  "falseFriends": {
+    "actual": "Use 'Ist-' prefix (Ist-Wert, Ist-Geschwindigkeit) or 'tatsächlich', not 'aktuell' (which means 'current/recent'). The Ist/Soll distinction is fundamental to German engineering.",
+    "performance": "Use 'Leistungsgrad' (VDMA 66412) or 'Leistung', not 'Performance' or 'Performanz' (anglicisms). 'Performance' signals unlocalised software to German manufacturing professionals.",
+    "eventually": "Use 'schließlich' or 'letztendlich', not 'eventuell' (which means 'possibly'). Critical in production reports.",
+    "billion": "Use 'Milliarde' (10^9), not 'Billion' (which means 10^12 in German long scale). Critical for production volumes and financial reporting.",
+    "sensible": "Use 'vernünftig' or 'sinnvoll', not 'sensibel' (which means 'sensitive/delicate').",
+    "scrap": "Use 'Ausschuss' (quality rejects/inspection failures), not 'Schrott' (metal scrap for recycling). 'Schrott' implies parts going to melting, not failing QA inspection.",
+    "station": "Use 'Arbeitsstation' or 'Arbeitsplatz' for manufacturing workstation. 'Station' alone evokes Bahnhof/Polizeistation in German.",
+    "idle": "Use 'Leerlauf' (running idle, no-load) or 'Wartezeit' (waiting time), not 'faul' (lazy, strongly pejorative) or 'untätig' (inactive, sounds unnatural for equipment).",
+    "rate": "In OEE context use 'Takt', 'Geschwindigkeit', or 'Quote'. German 'Rate' primarily means installment payment. 'Qualitätsrate' is the established German OEE term — but here 'Rate' is German, not an English cognate.",
+    "effective": "Use 'Gesamtanlageneffektivität' for OEE, not generic 'Effektivität' alone. 'Wirksam/Wirksamkeit' for general effectiveness. 'Effektiv' exists but is overused as anglicism.",
+    "setup": "Use 'Rüsten' / 'Rüstvorgang' / 'Rüstzeit' for manufacturing changeover setup. Not 'Setup' (anglicism) or 'Einrichtung' (permanent installation)."
+  },
+  "grammarNotes": {
+    "compoundWords": "German forms compounds aggressively: Gesamtanlageneffektivität (OEE), Zykluszeit (cycle time), Geschwindigkeitsverlust (speed loss), Stillstandsgrund (stop reason), Produktionssignal (production signal). Never split with spaces — this is a severe error immediately visible to native speakers.",
+    "caseSystem": "Four cases (Nominative, Accusative, Dative, Genitive). UI labels use nominative: 'Verfügbarkeit', 'Leistungsgrad'. Instructional text must match case to grammatical role: 'Berechnen Sie die Verfügbarkeit' (accusative).",
+    "genderAgreement": "Every noun has gender affecting articles: 'die Verfügbarkeit' (f), 'der Leistungsgrad' (m), 'die Qualität' (f), 'die Zykluszeit' (f), 'der Stillstand' (m), 'die Schicht' (f), 'der Ausschuss' (m). Compounds inherit final component gender: 'Zykluszeit' (f) from 'Zeit' (f).",
+    "numberFormatting": "Decimal: comma (,). Thousands: period (.) or non-breaking space. 'OEE von 85,5%'. '1.000 Einheiten'. DIN 5008: space before % is technically correct ('85,5 %') but '85,5%' common in software.",
+    "nounCapitalization": "German capitalizes ALL nouns including common nouns and compounds: 'Verfügbarkeit', 'Leistungsgrad', 'Qualitätsrate', 'Zykluszeit', 'Ausschuss'. Failing to capitalize is an immediately visible error. Adjectives lowercase: 'geplante Zeit'.",
+    "compoundPluralModifiers": "German compound words inherently use the singular stem for the modifier (Bestimmungswort). 'Geschwindigkeitsverlustgründe' correctly uses 'Geschwindigkeitsverlust-' (singular stem) + 'gründe' (plural head). No compound pluralization issue — correct by construction."
+  },
+  "industryContext": {
+    "oeeTerminology": "Both OEE (English acronym) and GAE (Gesamtanlageneffektivität) are used. OEE is practitioner-dominant in software (SAP, Siemens, FORCAM). GAE appears in academic/consulting literature and VDI 3423. Practitioner preference: english_dominant.",
+    "standardsUsed": [
+      "DIN EN 13306:2018-02",
+      "VDI 3423:2011-08",
+      "VDI 2893",
+      "VDMA 66412 Parts 1-4",
+      "DIN ISO 22400-2"
+    ],
+    "dominantVendors": "SAP (HQ Walldorf, Germany), Siemens Opcenter, FORCAM ENISCO, MPDV, ISTOS, PSI",
+    "industrie40": "Germany coined 'Industrie 4.0' (Hannover Messe 2011). Vocabulary: 'Digitale Fabrik', 'Cyber-physisches System', 'Plattform Industrie 4.0', 'Digitaler Zwilling'. OEE is the 'Königsindikator der Fertigung' (king metric of manufacturing).",
+    "automotiveContext": "VDA (Verband der Automobilindustrie) requires OEE measurement at supplier facilities. IATF 16949 mandates OEE. German Mittelstand SMEs increasingly adopt OEE via Industrie 4.0 initiatives."
+  },
+  "commonMistakes": [
+    "Using 'Performance' or 'Performanz' instead of 'Leistungsgrad' — VDMA 66412 defines 'Leistungsgrad' as the OEE performance component",
+    "Using 'aktuell' where 'Ist-' or 'tatsächlich' is needed — 'Ist-Wert' vs 'Soll-Wert' is fundamental to German engineering language",
+    "Not capitalizing German nouns: 'verfügbarkeit' should be 'Verfügbarkeit', 'leistungsgrad' should be 'Leistungsgrad'",
+    "Splitting compound words: 'Zykluszeit' not 'Zyklus Zeit'; 'Geschwindigkeitsverlust' not 'Geschwindigkeits Verlust'",
+    "Using 'Schrott' instead of 'Ausschuss' for production quality rejects — 'Schrott' is metal scrap for recycling",
+    "Inconsistently using 'Ausfallzeit' vs 'Stillstandszeit' for downtime — standardize on 'Ausfallzeit' per DIN EN 13306"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE acronym is practitioner-dominant in German manufacturing software; full German term is Gesamtanlageneffektivität (GAE). Use formal 'Sie' form. Avoid anglicisms where German equivalents exist (Leistungsgrad not Performance, Ausschuss not Schrott, Rüstzeit not Setup-Zeit). German compounds must never be split with spaces. All nouns capitalized. VDI 3423, VDMA 66412, and DIN EN 13306 define the German manufacturing terminology framework."
+}

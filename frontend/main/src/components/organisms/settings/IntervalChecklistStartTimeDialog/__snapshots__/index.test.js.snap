@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IntervalChecklistStartTimeDialog > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-text-stub
+    class="py-2"
+    tag="div"
+  >
+    <v-radio-group-stub
+      centeraffix="true"
+      density="default"
+      error="false"
+      errormessages=""
+      falseicon="$radioOff"
+      focused="false"
+      glow="false"
+      height="auto"
+      hidedetails="true"
+      hidespinbuttons="false"
+      iconcolor="false"
+      inline="false"
+      maxerrors="1"
+      messages=""
+      modelvalue="now"
+      persistenthint="false"
+      ripple="true"
+      rules=""
+      trueicon="$radioOn"
+      type="radio"
+      valuecomparator="[Function]"
+    >
+      <evocon-v-radio-stub
+        label="Start interval now"
+        modelvalue="false"
+        sublabel=""
+        value="now"
+      />
+      <evocon-v-radio-stub
+        class="mt-2"
+        label="Set interval start time"
+        modelvalue="false"
+        sublabel=""
+        value="time"
+      />
+    </v-radio-group-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    tag="div"
+  >
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="primary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      icon=""
+      iconcolor=""
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;

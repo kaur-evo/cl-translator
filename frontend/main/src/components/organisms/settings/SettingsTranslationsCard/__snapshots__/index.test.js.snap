@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsTranslationsCard > renders correctly 1`] = `
+<v-row-stub
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    class="px-1"
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <!--v-if-->
+    <tiny-cards-list-stub
+      cardbuttons="[object Object],[object Object]"
+      flagiconkey="iconKey"
+      items="[object Object],[object Object]"
+      listitemicon=""
+      subtitle-text-key="langName"
+      subtitlekeyvaluepairs=""
+      titlefunction="[Function]"
+      titletextkey="languageText"
+      useslot="false"
+    />
+  </v-col-stub>
+  <v-col-stub
+    class="px-1 mt-2"
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <evocon-v-button-stub
+      color="quaternary-dark"
+      icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      iconcolor=""
+      text="Translation"
+      textclass=""
+      type="primary"
+    />
+  </v-col-stub>
+</v-row-stub>
+`;

@@ -1,0 +1,55 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] MSZT (Magyar Szabványügyi Testület) — ISO/CEN member; MSZ EN 13306, MSZ ISO 22400",
+    "[S2] SAP Digital Manufacturing Hungarian localization — confirmed terminology",
+    "[S2] Microsoft Hungarian Localization Style Guide — formal 'Ön'",
+    "[S3] Hungarian Wikipedia: Teljes eszközhatékonyság — TEH/OEE documentation",
+    "[S3] Lean Szótár (leanszotar.hu) — Hungarian lean terminology dictionary",
+    "[S4] kora.hu, controsys.hu, controllingportal.hu — Hungarian manufacturing corpus",
+    "[S5] terms.json — Hungarian translations analyzed for length multiplier calibration"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Ön",
+  "falseFriends": {
+    "actual": "Use 'tényleges' or 'valós', not 'aktuális' (which means 'current/topical')",
+    "availability": "Use 'rendelkezésre állás' not 'elérhetőség' (personal reachability) — critical OEE distinction",
+    "performance": "Use 'teljesítmény', never 'előadás' (theatrical performance/show)",
+    "shift": "Use 'műszak' (work shift), not 'váltás' (generic change/switch)",
+    "station": "'Állomás' is acceptable; 'munkaállomás' more precise for production workstation",
+    "idle": "Use 'üresjárat' or 'várakozási idő', not 'lusta' (lazy/pejorative)",
+    "billion": "Use 'milliárd' (10^9), not 'billió' (which means 10^12 in Hungarian long scale)",
+    "setup": "Use 'átállás' (changeover) or 'beállítás' (calibration), not 'szettap' (anglicism)"
+  },
+  "grammarNotes": {
+    "caseSystem": "18 grammatical cases — nominative for labels: 'Rendelkezésre állás'",
+    "vowelHarmony": "All suffixes must obey vowel harmony. Back-vowel stems (a, á, o, ó, u, ú) take back-vowel suffixes (-ban, -ra, -ok). Front-vowel stems (e, é, i, í, ö, ő, ü, ű) take front-vowel suffixes (-ben, -re, -ek/-ök). Example: 'selejt' has front vowels → plural 'selejtEK' (not *selejtOK). 'műszak' has back vowels → 'műszakBAN' (not *műszakBEN).",
+    "definiteArticle": "'A' (before consonants) / 'az' (before vowels). UI labels omit article.",
+    "compoundWords": "Manufacturing compounds: 'ciklusidő' (cycle time), 'állásidő' (downtime), 'célsebesség' (target speed).",
+    "numberFormatting": "Decimal: comma. Thousands: space. '1 234 567,89'. Percentage: '85,5%'.",
+    "compoundPluralModifiers": "In compound noun phrases, only the HEAD noun takes the plural suffix. The modifier stays in its singular possessive form. CORRECT: 'sebességveszteség okai' (speed-loss [sg] + reasons-its [pl]). WRONG: 'sebességveszteségek okai' (speed-losses [pl] + reasons). For hyphenated compounds like 'sebességveszteség-csoportok' (speed loss groups), the first element is inherently singular — correct by construction."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE is dominant. Full Hungarian term: 'teljes eszközhatékonyság' (TEH). German manufacturers standardized terminology.",
+    "tehAcronym": "TEH appears in literature but OEE used in software interfaces.",
+    "dominantSectors": "Automotive (Audi Győr, Mercedes-Benz Kecskemét, BMW Debrecen), electronics, food, pharma",
+    "standardsUsed": [
+      "MSZ EN 13306",
+      "MSZ ISO 22400"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'elérhetőség' instead of 'rendelkezésre állás' for OEE availability",
+    "Vowel harmony errors: 'műszakben' (wrong) vs 'műszakban' (correct)",
+    "Using informal 'te' instead of formal 'Ön'",
+    "Using 'előadás' for manufacturing 'performance' instead of 'teljesítmény'",
+    "Incorrect definite article: omitting 'a/az' in sentences or adding to labels",
+    "Confusing 'átfutási idő' (lead time) with 'ciklusidő' (cycle time)",
+    "Splitting compound words: 'ciklus idő' instead of 'ciklusidő'",
+    "Pluralizing the modifier in compound noun phrases: 'sebességveszteségek okai' (WRONG — modifier pluralized) instead of 'sebességveszteség okai' (CORRECT — modifier stays singular). The modifier names the category; only the head noun takes plural"
+  ],
+  "lengthMultiplier": 2,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is standard; TEH exists but not required. Strong German manufacturing influence. 18-case agglutinative system with vowel harmony. Formal 'Ön' required. P95 expansion ~1.87x."
+}

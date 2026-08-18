@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextHighlight > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable-next-line vue/no-v-html -->
+  <span>
+    <span
+      class="bg-quaternary-dark-2"
+    >
+      string
+    </span>
+  </span>
+  
+</div>
+`;

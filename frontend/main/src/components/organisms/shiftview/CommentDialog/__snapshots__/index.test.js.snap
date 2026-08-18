@@ -1,0 +1,1059 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CommentDialog > renders correctly if showLocationBeforeGroup is true 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content"
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <top-reasons-selection-stub
+      data-v-d4ca798d=""
+      loading="false"
+      selectedreason="1"
+      topreasons="[object Object],[object Object]"
+      topreasonsloading="false"
+      visiblereasons=""
+    />
+    <shiftview-search-stub
+      class="mt-3"
+      data-v-d4ca798d=""
+      filteritemsonsearch="true"
+      items="[object Object],[object Object]"
+      itemsubtitlefunction="[Function]"
+      itemsubtitlekey=""
+      itemtitlekey="name"
+      itemvaluekey="id"
+    />
+    <v-form-stub
+      data-v-d4ca798d=""
+      disabled="false"
+      fastfail="false"
+      modelvalue="true"
+      validateon="input"
+    >
+      <v-row-stub
+        class="my-4 mx-n1 d-flex"
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="pl-1 pr-2 order-1"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+            items="[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="true"
+            showerror="false"
+            subtitle="Groups"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="px-2 order-2"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="1"
+            showerror="false"
+            subtitle="Reasons"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 pr-1 order-0"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="false"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="true"
+            modelvalue="0"
+            showerror="false"
+            subtitle="Machine locations"
+            title=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-combobox-stub
+            appendicon=""
+            data-v-d4ca798d=""
+            density="default"
+            hint="Extra note (optional)"
+            items=""
+            maxlength="500"
+            modelvalue=""
+            positiontop="true"
+            rules="true"
+          />
+        </v-col-stub>
+      </v-row-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly if showLocationBeforeReason is true 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content"
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <top-reasons-selection-stub
+      data-v-d4ca798d=""
+      loading="false"
+      selectedreason="1"
+      topreasons="[object Object],[object Object]"
+      topreasonsloading="false"
+      visiblereasons=""
+    />
+    <shiftview-search-stub
+      class="mt-3"
+      data-v-d4ca798d=""
+      filteritemsonsearch="true"
+      items="[object Object],[object Object]"
+      itemsubtitlefunction="[Function]"
+      itemsubtitlekey=""
+      itemtitlekey="name"
+      itemvaluekey="id"
+    />
+    <v-form-stub
+      data-v-d4ca798d=""
+      disabled="false"
+      fastfail="false"
+      modelvalue="true"
+      validateon="input"
+    >
+      <v-row-stub
+        class="my-4 mx-n1 d-flex"
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="pl-1 pr-2 order-1"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="false"
+            height="300px"
+            itemappendicon="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+            items="[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="true"
+            showerror="false"
+            subtitle="Groups"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="px-2 order-2"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="1"
+            showerror="false"
+            subtitle="Reasons"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 pr-1 order-1"
+          cols="4"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="0"
+            showerror="false"
+            subtitle="Machine locations"
+            title=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-combobox-stub
+            appendicon=""
+            data-v-d4ca798d=""
+            density="default"
+            hint="Extra note (optional)"
+            items=""
+            maxlength="500"
+            modelvalue=""
+            positiontop="true"
+            rules="true"
+          />
+        </v-col-stub>
+      </v-row-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly in mobile view 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content"
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <top-reasons-selection-stub
+      data-v-d4ca798d=""
+      loading="false"
+      selectedreason="1"
+      topreasons="[object Object],[object Object]"
+      topreasonsloading="false"
+      visiblereasons="[object Object],[object Object]"
+    />
+    <!--v-if-->
+    <v-form-stub
+      data-v-d4ca798d=""
+      disabled="false"
+      fastfail="false"
+      modelvalue="true"
+      validateon="input"
+    >
+      <div
+        class="d-flex flex-column"
+        data-v-d4ca798d=""
+      >
+        <selection-input-stub
+          checkbox="true"
+          coloractiveprepend="false"
+          data-v-d4ca798d=""
+          dense=""
+          disabled="false"
+          disabledvalues=""
+          emittoggleall="false"
+          emptyequalsallselected="false"
+          error="false"
+          filled="true"
+          groupidkey="id"
+          groups="[object Object],[object Object]"
+          groupsorderby="name"
+          hiddenitemscount="0"
+          hidesearch="false"
+          hint="Reason"
+          inverted="false"
+          isgroupedselect="true"
+          issingleselect="true"
+          itemflag=""
+          itemgroupidkey="groupId"
+          items="[object Object],[object Object]"
+          itemsecondarytext=""
+          itemtertiarytext=""
+          itemtext="name"
+          itemvalue="id"
+          loading="false"
+          menuinputclass="my-2"
+          menuinputtype="primary"
+          modelvalue="1"
+          numericorderby="false"
+          placeholder="Reason"
+          prependtext=""
+          removenonexistentselections="false"
+          required="true"
+          showemptyarrayasallselected="false"
+          someselected="false"
+          totalcount="0"
+          usechips="false"
+        />
+        <selection-input-stub
+          checkbox="true"
+          coloractiveprepend="false"
+          data-v-d4ca798d=""
+          dense=""
+          disabled="false"
+          disabledvalues=""
+          emittoggleall="false"
+          emptyequalsallselected="false"
+          error="false"
+          filled="true"
+          groupidkey="id"
+          groups=""
+          groupsorderby="name"
+          hiddenitemscount="0"
+          hidesearch="false"
+          hint="Machine location"
+          inverted="false"
+          isgroupedselect="false"
+          issingleselect="true"
+          itemflag=""
+          itemgroupidkey="groupId"
+          items="[object Object],[object Object]"
+          itemsecondarytext=""
+          itemtertiarytext=""
+          itemtext="name"
+          itemvalue="id"
+          loading="false"
+          menuinputclass="mb-2"
+          menuinputtype="primary"
+          modelvalue="0"
+          numericorderby="false"
+          placeholder="Machine location"
+          prependtext=""
+          removenonexistentselections="false"
+          required="false"
+          showemptyarrayasallselected="false"
+          someselected="false"
+          totalcount="0"
+          usechips="false"
+        />
+      </div>
+      <v-row-stub
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-combobox-stub
+            appendicon=""
+            data-v-d4ca798d=""
+            density="compact"
+            hint="Extra note (optional)"
+            items=""
+            maxlength="500"
+            modelvalue=""
+            positiontop="true"
+            rules="true"
+          />
+        </v-col-stub>
+      </v-row-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly when isEdit is true 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content"
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <top-reasons-selection-stub
+      data-v-d4ca798d=""
+      loading="false"
+      selectedreason="1"
+      topreasons="[object Object],[object Object]"
+      topreasonsloading="false"
+      visiblereasons="[object Object],[object Object]"
+    />
+    <shiftview-search-stub
+      class="mt-3"
+      data-v-d4ca798d=""
+      filteritemsonsearch="true"
+      items="[object Object],[object Object],[object Object],[object Object]"
+      itemsubtitlefunction="[Function]"
+      itemsubtitlekey=""
+      itemtitlekey="name"
+      itemvaluekey="id"
+    />
+    <v-form-stub
+      data-v-d4ca798d=""
+      disabled="false"
+      fastfail="false"
+      modelvalue="true"
+      validateon="input"
+    >
+      <v-row-stub
+        class="my-4 mx-n1 d-flex"
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <!--v-if-->
+        <v-col-stub
+          class="px-2 order-1"
+          cols="6"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="1"
+            showerror="false"
+            subtitle="Reasons"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 pr-1 order-2"
+          cols="6"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="false"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="0"
+            showerror="false"
+            subtitle="Machine locations"
+            title=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-combobox-stub
+            appendicon=""
+            data-v-d4ca798d=""
+            density="default"
+            hint="Extra note (optional)"
+            items=""
+            maxlength="500"
+            modelvalue=""
+            positiontop="true"
+            rules="true"
+          />
+        </v-col-stub>
+      </v-row-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <delete-button-stub
+      data-v-d4ca798d=""
+    />
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly when loading 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-progress-linear-stub
+    absolute="false"
+    active="true"
+    buffervalue="0"
+    chunkgap="4"
+    clickable="false"
+    color="primary"
+    data-v-d4ca798d=""
+    height="4"
+    indeterminate="true"
+    location="top"
+    max="100"
+    modelvalue="0"
+    reverse="false"
+    roundedbar="false"
+    stream="false"
+    striped="false"
+    tag="div"
+    tile="false"
+  />
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly with reasons 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content"
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <top-reasons-selection-stub
+      data-v-d4ca798d=""
+      loading="false"
+      selectedreason="1"
+      topreasons="[object Object],[object Object]"
+      topreasonsloading="false"
+      visiblereasons="[object Object],[object Object]"
+    />
+    <shiftview-search-stub
+      class="mt-3"
+      data-v-d4ca798d=""
+      filteritemsonsearch="true"
+      items="[object Object],[object Object],[object Object],[object Object]"
+      itemsubtitlefunction="[Function]"
+      itemsubtitlekey=""
+      itemtitlekey="name"
+      itemvaluekey="id"
+    />
+    <v-form-stub
+      data-v-d4ca798d=""
+      disabled="false"
+      fastfail="false"
+      modelvalue="true"
+      validateon="input"
+    >
+      <v-row-stub
+        class="my-4 mx-n1 d-flex"
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <!--v-if-->
+        <v-col-stub
+          class="px-2 order-1"
+          cols="6"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="true"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="1"
+            showerror="false"
+            subtitle="Reasons"
+            title=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 pr-1 order-2"
+          cols="6"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <shiftview-select-stub
+            additionaltext=""
+            data-v-d4ca798d=""
+            disabled="false"
+            height="300px"
+            itemappendicon=""
+            items="[object Object],[object Object]"
+            itemsubtitlekey=""
+            itemtext="name"
+            itemvalue="id"
+            mandatory="false"
+            modelvalue="0"
+            showerror="false"
+            subtitle="Machine locations"
+            title=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-d4ca798d=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-d4ca798d=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-combobox-stub
+            appendicon=""
+            data-v-d4ca798d=""
+            density="default"
+            hint="Extra note (optional)"
+            items=""
+            maxlength="500"
+            modelvalue=""
+            positiontop="true"
+            rules="true"
+          />
+        </v-col-stub>
+      </v-row-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`CommentDialog > renders correctly without reasons 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="primary"
+    data-v-d4ca798d=""
+    iconcolor="white"
+    title="Add Comment"
+  />
+  <empty-view-stub
+    class="dialog-content"
+    data-v-d4ca798d=""
+    description="There are no comments to display at this time."
+    descriptionrows=""
+    header="No Comments Available"
+    imgurl="downtime"
+    imgwidth=""
+    primarybtn="Go to settings"
+    primarybtnicon=""
+    secondarybtn=""
+    secondarybtncolor=""
+    secondarybtnicon=""
+    small="false"
+    tertiarybtn=""
+    tertiarybtnicon=""
+  />
+  <v-card-actions-stub
+    data-v-d4ca798d=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-d4ca798d=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-d4ca798d=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d4ca798d=""
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;

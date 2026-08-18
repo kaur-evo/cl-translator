@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DashboardGrid > renders correctly 1`] = `
+<div
+  class="dashboard-grid-wrapper"
+>
+  <draggable-stub
+    animation="300"
+    class="v-row ma-2"
+    clone="[Function]"
+    delay="400"
+    delay-on-touch-only="true"
+    draggable=".draggable-item"
+    filter=".no-drag"
+    ghost-class="ghost"
+    itemkey="i"
+    modelvalue=""
+    tag="div"
+  />
+</div>
+`;

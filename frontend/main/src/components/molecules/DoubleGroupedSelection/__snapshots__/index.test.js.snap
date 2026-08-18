@@ -1,0 +1,132 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DoubleGroupedSelection > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <selection-list-search-input-stub
+    class="mb-2"
+    density="default"
+    isdropdown="false"
+    isfocused="false"
+    label="Search"
+    modelvalue=""
+  />
+  <v-list-stub
+    activatable="false"
+    border="false"
+    class="pa-0"
+    density="default"
+    disabled="false"
+    filterable="false"
+    itemchildren="children"
+    itemprops="props"
+    items=""
+    itemsregistration="render"
+    itemtitle="title"
+    itemtype="type"
+    itemvalue="value"
+    lines="one"
+    mandatory="false"
+    nav="false"
+    navigationstrategy="focus"
+    opened="group-value-11,sub-group-value-11-21"
+    openstrategy="multiple"
+    returnobject="false"
+    selectable="false"
+    selectstrategy="single-leaf"
+    slim="false"
+    tag="div"
+    tile="false"
+    variant="text"
+  >
+    <!--v-if-->
+    
+    <v-list-group-stub
+      collapseicon="$collapse"
+      disabled="false"
+      expandicon="$expand"
+      fluid="false"
+      subgroup="false"
+      tag="div"
+      value="group-value-11"
+    >
+      
+      <v-list-group-stub
+        collapseicon="$collapse"
+        density="default"
+        disabled="false"
+        expandicon="$expand"
+        fluid="false"
+        subgroup="false"
+        tag="div"
+        value="sub-group-value-11-21"
+      >
+        <selection-list-item-group-stub
+          checkbox="true"
+          dense="false"
+          disabled="false"
+          disabledvalues=""
+          error="false"
+          groupid="21"
+          issingleselect="true"
+          itemiconcolorkey=""
+          itemidkey="id"
+          items="[object Object],[object Object]"
+          itemtertiarytextclasses=""
+          listselection="[object Object]"
+          orderitemsby="ordering"
+          search=""
+          searchbysecondarytext="false"
+          showappendonhover="false"
+        />
+      </v-list-group-stub>
+      
+    </v-list-group-stub>
+    <v-list-group-stub
+      collapseicon="$collapse"
+      disabled="false"
+      expandicon="$expand"
+      fluid="false"
+      subgroup="false"
+      tag="div"
+      value="group-value-12"
+    >
+      
+      <v-list-group-stub
+        collapseicon="$collapse"
+        density="default"
+        disabled="false"
+        expandicon="$expand"
+        fluid="false"
+        subgroup="false"
+        tag="div"
+        value="sub-group-value-12-22"
+      >
+        <selection-list-item-group-stub
+          checkbox="true"
+          dense="false"
+          disabled="false"
+          disabledvalues=""
+          error="false"
+          groupid="22"
+          issingleselect="true"
+          itemiconcolorkey=""
+          itemidkey="id"
+          items="[object Object]"
+          itemtertiarytextclasses=""
+          listselection="[object Object]"
+          orderitemsby="ordering"
+          search=""
+          searchbysecondarytext="false"
+          showappendonhover="false"
+        />
+      </v-list-group-stub>
+      
+    </v-list-group-stub>
+    
+  </v-list-stub>
+  
+</div>
+`;

@@ -1,0 +1,70 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GlobalAnnouncementDialog > renders correctly 1`] = `
+<div
+  data-v-91599494=""
+>
+  <dialog-toolbar-stub
+    color="white"
+    data-v-91599494=""
+    iconcolor="secondary"
+    title="title"
+    titleicon="M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content px-2 pt-2"
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    <v-progress-linear-stub
+      absolute="false"
+      active="true"
+      buffervalue="0"
+      chunkgap="4"
+      clickable="false"
+      height="4"
+      indeterminate="false"
+      location="top"
+      max="100"
+      modelvalue="0"
+      reverse="false"
+      roundedbar="false"
+      stream="false"
+      striped="false"
+      tag="div"
+      tile="false"
+    />
+    <div
+      class="px-4 py-2"
+    >
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <pre
+        class="text-body-large pre-wrap"
+      >
+        text
+      </pre>
+    </div>
+    
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Close"
+      textclass=""
+      type="secondary"
+    />
+    
+  </v-card-actions-stub>
+</div>
+`;

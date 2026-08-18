@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsShiftTimelineHeaderSegment > renders correctly 1`] = `
+<div
+  class="py-2 align-center d-flex flex-wrap"
+>
+  <span
+    class="d-flex"
+  >
+    <evocon-v-chip-stub
+      allowgrow="false"
+      class="mr-2"
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label=""
+      type="primary"
+    />
+  </span>
+  <span
+    class="d-flex mr-4"
+  >
+    <settings-shift-timeline-navigation-chip-stub
+      currentrangetype="week"
+      viewrangeconfig="[object Object]"
+    />
+  </span>
+  <span
+    class="d-flex text-headline-small font-weight-medium text-nowrap"
+  >
+    January 2024
+  </span>
+</div>
+`;

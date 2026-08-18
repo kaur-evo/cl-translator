@@ -1,0 +1,87 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReminderBanner > renders correctly when clickable 1`] = `
+<v-app-bar-stub
+  absolute="false"
+  border="false"
+  class="px-4 clickable"
+  collapse="false"
+  collapseposition="start"
+  color="snackbar-yellow"
+  data-v-23172e17=""
+  density="default"
+  extensionheight="48"
+  flat="false"
+  floating="false"
+  height="40"
+  location="top"
+  modelvalue="true"
+  order="0"
+  scrollthreshold="300"
+  tag="header"
+  theme="light"
+  tile="false"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="secondary"
+    data-v-23172e17=""
+    disabled="false"
+    end="false"
+    size="small"
+    start="false"
+    tag="i"
+  >
+    M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z
+  </v-icon-stub>
+  <span
+    class="font-weight-medium"
+    data-v-23172e17=""
+  >
+    This is a reminder banner.
+  </span>
+</v-app-bar-stub>
+`;
+
+exports[`ReminderBanner > renders correctly when visible 1`] = `
+<v-app-bar-stub
+  absolute="false"
+  border="false"
+  class="px-4"
+  collapse="false"
+  collapseposition="start"
+  color="snackbar-yellow"
+  data-v-23172e17=""
+  density="default"
+  extensionheight="48"
+  flat="false"
+  floating="false"
+  height="40"
+  location="top"
+  modelvalue="true"
+  order="0"
+  scrollthreshold="300"
+  tag="header"
+  theme="light"
+  tile="false"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="secondary"
+    data-v-23172e17=""
+    disabled="false"
+    end="false"
+    size="small"
+    start="false"
+    tag="i"
+  >
+    M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z
+  </v-icon-stub>
+  <span
+    class="font-weight-medium"
+    data-v-23172e17=""
+  >
+    This is a reminder banner.
+  </span>
+</v-app-bar-stub>
+`;

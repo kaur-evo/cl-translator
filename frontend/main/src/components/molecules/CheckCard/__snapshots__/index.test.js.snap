@@ -1,0 +1,1484 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CheckCard > it renders correctly in mobile with images and warning 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly if type is SELECTION and multipleSelection is false 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly if type is SELECTION and multipleSelection is true 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly with images selected 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="primary"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Select items
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex full-width"
+      >
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <span
+          class="full-width"
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            density="comfortable"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hide-select-all=""
+            hidesearch="true"
+            hint="Select"
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="true"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items=""
+            itemsecondarytext=""
+            itemtertiarytext=""
+            itemtext="value"
+            itemvalue="value"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue="selected"
+            numericorderby="false"
+            placeholder="Select"
+            prependtext=""
+            removenonexistentselections="false"
+            required="false"
+            showemptyarrayasallselected="false"
+            someselected="false"
+            totalcount="0"
+            usechips="false"
+          />
+        </span>
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <!--v-if-->
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="mt-1"
+    >
+      <span
+        class=""
+      >
+        
+        <evocon-v-chip-stub
+          active="true"
+          allowgrow="false"
+          class="mr-2 my-1"
+          disabled="false"
+          error="false"
+          icon="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z"
+          iconclass=""
+          imgsrc=""
+          label="image1.jpg"
+          type="primary"
+        />
+        <evocon-v-chip-stub
+          active="true"
+          allowgrow="false"
+          class="mr-2 my-1"
+          disabled="false"
+          error="true"
+          icon="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z"
+          iconclass=""
+          imgsrc=""
+          label="image2.jpg"
+          type="primary"
+        />
+        
+      </span>
+      <span
+        class="order-2"
+      >
+        <evocon-v-button-stub
+          class="mr-2 my-1"
+          color=""
+          disabled="false"
+          icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+          iconcolor=""
+          size="small"
+          text="Image"
+          textclass=""
+          type="primary-light"
+        />
+        <icon-with-tooltip-stub
+          additionalclasses=""
+          color=""
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          iconid=""
+          iconsrc=""
+          size="16"
+          text="Upload up to {value} files. Maximum file size: {value}MB."
+          tooltiplocation="top"
+          tooltiptext=""
+        />
+        <label
+          for="file-input"
+        >
+          <input
+            accept="image/jpeg,image/png"
+            class="d-none"
+            id="file-input"
+            multiple=""
+            type="file"
+          />
+        </label>
+      </span>
+      <!--v-if-->
+    </div>
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is CHECK 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex"
+      >
+        <check-card-chips-stub
+          dense="false"
+          disabled="false"
+          ismultipleselection="false"
+          itemtype="CHECK"
+          limit="100"
+          modelvalue="false"
+          notapplicableselected="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center flex-grow-1 flex-shrink-0"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <!--v-if-->
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is CHECK and "not applicable" chip is visible 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="primary"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex"
+      >
+        <check-card-chips-stub
+          dense="false"
+          disabled="false"
+          ismultipleselection="false"
+          itemtype="CHECK"
+          limit="100"
+          modelvalue="true"
+          notapplicableselected="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center flex-grow-1 flex-shrink-0"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is MEASUREMENT 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex flex-grow-1 overflow-hidden"
+      >
+        <!--v-if-->
+        <div
+          class="d-flex full-width"
+        >
+          <evocon-number-input-stub
+            allowfloat="true"
+            allownegative="true"
+            density="comfortable"
+            grow="false"
+            hint="Enter measurement"
+            id="value-input"
+            maxvalue="999999999999999"
+            modelvalue="11"
+            usechip="false"
+          />
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <!--v-if-->
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is MEASUREMENT and "not applicable" chip is visible 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="primary"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex flex-grow-1 overflow-hidden"
+      >
+        <!--v-if-->
+        <div
+          class="d-flex full-width"
+        >
+          <evocon-number-input-stub
+            allowfloat="true"
+            allownegative="true"
+            density="comfortable"
+            grow="false"
+            hint="Enter measurement"
+            id="value-input"
+            maxvalue="999999999999999"
+            modelvalue="8"
+            usechip="false"
+          />
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is MEASUREMENT, item has warningMessage and value is out of range 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex flex-grow-1 overflow-hidden"
+      >
+        <!--v-if-->
+        <div
+          class="d-flex full-width"
+        >
+          <evocon-number-input-stub
+            allowfloat="true"
+            allownegative="true"
+            density="comfortable"
+            grow="false"
+            hint="Enter measurement"
+            id="value-input"
+            maxvalue="999999999999999"
+            modelvalue="11"
+            usechip="false"
+          />
+        </div>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <info-block-stub
+      body="Value is out of range, so warning message is shown"
+      class="mt-2"
+      collapsible="false"
+      color="#F28A0D"
+      header=""
+      headertextcolor="text-secondary-text"
+      icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+    />
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is TEXT 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="primary"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex flex-grow-1"
+      >
+        <!--v-if-->
+        <!--v-if-->
+        <evocon-v-combobox-stub
+          appendicon=""
+          density="comfortable"
+          hint="Answer"
+          id="value-input"
+          items=""
+          maxlength="500"
+          modelmodifiers="[object Object]"
+          modelvalue="test value"
+          placeholder="Answer"
+          positiontop="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <!--v-if-->
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is TEXT and "not applicable" chip is visible 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <info-block-stub
+      body="test description"
+      class="mt-2"
+      collapsible="true"
+      color="#9E9E9E"
+      header=""
+      headertextcolor="text-secondary-text"
+      icon="M12 21.5C10.65 20.65 8.2 20 6.5 20C4.85 20 3.15 20.3 1.75 21.05C1.65 21.1 1.6 21.1 1.5 21.1C1.25 21.1 1 20.85 1 20.6V6C1.6 5.55 2.25 5.25 3 5C4.11 4.65 5.33 4.5 6.5 4.5C8.45 4.5 10.55 4.9 12 6C13.45 4.9 15.55 4.5 17.5 4.5C18.67 4.5 19.89 4.65 21 5C21.75 5.25 22.4 5.55 23 6V20.6C23 20.85 22.75 21.1 22.5 21.1C22.4 21.1 22.35 21.1 22.25 21.05C20.85 20.3 19.15 20 17.5 20C15.8 20 13.35 20.65 12 21.5M11 7.5C9.64 6.9 7.84 6.5 6.5 6.5C5.3 6.5 4.1 6.65 3 7V18.5C4.1 18.15 5.3 18 6.5 18C7.84 18 9.64 18.4 11 19V7.5M13 19C14.36 18.4 16.16 18 17.5 18C18.7 18 19.9 18.15 21 18.5V7C19.9 6.65 18.7 6.5 17.5 6.5C16.16 6.5 14.36 6.9 13 7.5V19M14 16.35C14.96 16 16.12 15.83 17.5 15.83C18.54 15.83 19.38 15.91 20 16.07V14.57C19.13 14.41 18.29 14.33 17.5 14.33C16.16 14.33 15 14.5 14 14.76V16.35M14 13.69C14.96 13.34 16.12 13.16 17.5 13.16C18.54 13.16 19.38 13.24 20 13.4V11.9C19.13 11.74 18.29 11.67 17.5 11.67C16.22 11.67 15.05 11.82 14 12.12V13.69M14 11C14.96 10.67 16.12 10.5 17.5 10.5C18.41 10.5 19.26 10.59 20 10.78V9.23C19.13 9.08 18.29 9 17.5 9C16.18 9 15 9.15 14 9.46V11Z"
+    />
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex flex-grow-1"
+      >
+        <!--v-if-->
+        <!--v-if-->
+        <evocon-v-combobox-stub
+          appendicon=""
+          density="comfortable"
+          hint="Answer"
+          id="value-input"
+          items=""
+          maxlength="500"
+          modelmodifiers="[object Object]"
+          modelvalue="test value"
+          placeholder="Answer"
+          positiontop="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center mb-5"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is YES_NO 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="primary"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex"
+      >
+        <check-card-chips-stub
+          dense="false"
+          disabled="false"
+          ismultipleselection="false"
+          itemtype="YES_NO"
+          limit="100"
+          modelvalue="true"
+          notapplicableselected="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center flex-grow-1 flex-shrink-0"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <!--v-if-->
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is YES_NO and "not applicable" chip is visible 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Check paint
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex"
+      >
+        <check-card-chips-stub
+          dense="false"
+          disabled="false"
+          ismultipleselection="false"
+          itemtype="YES_NO"
+          limit="100"
+          modelvalue="false"
+          notapplicableselected="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center flex-grow-1 flex-shrink-0"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders correctly, when type is YES_NO, item has warningMessage and No is selected 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-card-stub
+    border="false"
+    class="my-2 px-4 py-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="d-flex"
+    >
+      <ordering-number-stub
+        class="mr-1"
+        color="lw-orange"
+        number="1"
+        outlined="false"
+        small="false"
+      />
+      <span
+        class="mr-6 text-body-large check-name"
+      >
+        Safety check
+      </span>
+    </div>
+    <!--v-if-->
+    <div
+      class="d-flex mt-2 full-width flex-row"
+    >
+      <div
+        class="d-flex"
+      >
+        <check-card-chips-stub
+          dense="false"
+          disabled="false"
+          ismultipleselection="false"
+          itemtype="YES_NO"
+          limit="100"
+          modelvalue="false"
+          notapplicableselected="false"
+        />
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div
+        class="d-flex flex-row justify-end align-center flex-grow-1 flex-shrink-0"
+      >
+        <v-chip-group-stub
+          centeractive="false"
+          column="false"
+          direction="horizontal"
+          disabled="false"
+          filter="false"
+          mandatory="false"
+          multiple="false"
+          nexticon="$next"
+          previcon="$prev"
+          scrolltoactive="false"
+          selectedclass="v-chip--selected"
+          showarrows="false"
+          symbol="Symbol(vuetify:v-slide-group)"
+          tag="div"
+          valuecomparator="[Function]"
+          variant="tonal"
+        >
+          <evocon-v-chip-stub
+            allowgrow="false"
+            class="my-0 ml-2"
+            dark="false"
+            disabled="false"
+            error="false"
+            icon="M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22 2 17.5 2 12 6.5 2 12 2M12 4C10.1 4 8.4 4.6 7.1 5.7L18.3 16.9C19.3 15.5 20 13.8 20 12C20 7.6 16.4 4 12 4M16.9 18.3L5.7 7.1C4.6 8.4 4 10.1 4 12C4 16.4 7.6 20 12 20C13.9 20 15.6 19.4 16.9 18.3Z"
+            iconclass=""
+            id="not-applicable-chip"
+            imgsrc=""
+            label="Not applicable"
+            size="default"
+            style="order: 0;"
+            type="neutral"
+          />
+        </v-chip-group-stub>
+        <evocon-v-button-stub
+          class="pa-0 ml-2"
+          color=""
+          icon="M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"
+          iconcolor=""
+          id="check-comment-btn"
+          style="order: 1;"
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+    <info-block-stub
+      body="Contact supervisor immediately when No is selected"
+      class="mt-2"
+      collapsible="false"
+      color="#F28A0D"
+      header=""
+      headertextcolor="text-secondary-text"
+      icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+    />
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+  <checklist-img-preview-stub
+    deletable="true"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders disabled state correctly when type is CHECK 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="false"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders disabled state correctly when type is MEASUREMENT 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="false"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders disabled state correctly when type is TEXT 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="false"
+  />
+  
+</div>
+`;
+
+exports[`CheckCard > renders disabled state correctly when type is YES_NO 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!--v-if-->
+  <checklist-img-preview-stub
+    deletable="false"
+  />
+  
+</div>
+`;

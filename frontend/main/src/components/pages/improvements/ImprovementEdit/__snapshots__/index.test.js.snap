@@ -1,0 +1,863 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementEdit > hasOneFactory > renders correctly 1`] = `
+<div
+  class="py-10 fill-height bg-quaternary-dark"
+  data-v-96ada5b7=""
+>
+  <v-container-stub
+    class="fill-height d-flex flex-wrap justify-center align-center"
+    data-v-96ada5b7=""
+    fluid="false"
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="improvement-card-container pa-6 pt-0"
+      data-v-96ada5b7=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="improvement-information d-flex flex-column justify-center align-center"
+        data-v-96ada5b7=""
+      >
+        <div
+          class="text-headline-small font-weight-medium"
+          data-v-96ada5b7=""
+        >
+          Improvement
+        </div>
+        <div
+          class="text-body-medium text-medium-emphasis font-weight-regular"
+          data-v-96ada5b7=""
+        >
+          Define basic information about the improvement
+        </div>
+      </div>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <!--v-if-->
+        <v-col-stub
+          class="pb-2"
+          cols="false"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            data-v-96ada5b7=""
+            disabled="false"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hidesearch="false"
+            hint="Stations"
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="false"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items="[object Object]"
+            itemsecondarytext=""
+            itemsmap="[object Object]"
+            itemtertiarytext=""
+            itemtext="name"
+            itemvalue="id"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue=""
+            numericorderby="false"
+            placeholder="Stations"
+            prependtext=""
+            removenonexistentselections="false"
+            required="false"
+            showemptyarrayasallselected="false"
+            someselected="false"
+            totalcount="0"
+            usechips="false"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-input-stub
+            data-v-96ada5b7=""
+            filled="true"
+            grow="false"
+            hint="Improvement name"
+            maxlength="50"
+            modelvalue=""
+            placeholder="Improvement name"
+            required=""
+            rules="(v) => !!v || _ctx.$t('Improvement name'),(v) => !v || !!v && v.length <= 50 || _ctx.$t('Improvement name')"
+            truncateinput="false"
+            type="text"
+            usechip="false"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pr-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="start-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="Start"
+            min=""
+            modelvalue="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="true"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="end-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="End"
+            max=""
+            min="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="End"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            auto-grow="false"
+            data-v-96ada5b7=""
+            hint="Describe the problem in more detail"
+            maxlength="200"
+            modelvalue=""
+            no-resize=""
+            placeholder="Problem statement"
+            rows="3"
+            rules="(v) => !v || !!v && v.length <= 200 || _ctx.$t('Describe the problem in more detail')"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="py-2"
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <evocon-v-input-stub
+          append-inner-icon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+          data-v-96ada5b7=""
+          filled="true"
+          grow="false"
+          hint="At least one person needs to be selected"
+          modelvalue="0 selected"
+          placeholder="Team"
+          prepend-inner-icon="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+          readonly=""
+          truncateinput="false"
+          type="text"
+          usechip="false"
+        />
+      </v-row-stub>
+      <v-card-actions-stub
+        class="pa-0 justify-end"
+        data-v-96ada5b7=""
+        tag="div"
+      >
+        <evocon-v-button-stub
+          color=""
+          data-v-96ada5b7=""
+          disabled="false"
+          icon=""
+          iconcolor=""
+          text="Cancel"
+          textclass=""
+          type="primary"
+          variant="text"
+        />
+        <evocon-v-button-stub
+          class="bg-primary"
+          color=""
+          data-v-96ada5b7=""
+          disabled="true"
+          icon=""
+          iconcolor=""
+          loading="false"
+          text="Save"
+          textclass=""
+          type="primary"
+        />
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-container-stub>
+</div>
+`;
+
+exports[`ImprovementEdit > no factories available > renders correctly 1`] = `
+<div
+  class="py-10 fill-height bg-quaternary-dark"
+  data-v-96ada5b7=""
+>
+  <v-container-stub
+    class="fill-height d-flex flex-wrap justify-center align-center"
+    data-v-96ada5b7=""
+    fluid="false"
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="improvement-card-container pa-6 pt-0"
+      data-v-96ada5b7=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="improvement-information d-flex flex-column justify-center align-center"
+        data-v-96ada5b7=""
+      >
+        <div
+          class="text-headline-small font-weight-medium"
+          data-v-96ada5b7=""
+        >
+          Improvement
+        </div>
+        <div
+          class="text-body-medium text-medium-emphasis font-weight-regular"
+          data-v-96ada5b7=""
+        >
+          Define basic information about the improvement
+        </div>
+      </div>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <!--v-if-->
+        <v-col-stub
+          class="pb-2"
+          cols="false"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            data-v-96ada5b7=""
+            disabled="false"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hidesearch="false"
+            hint="Stations"
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="false"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items="[object Object]"
+            itemsecondarytext=""
+            itemsmap="[object Object]"
+            itemtertiarytext=""
+            itemtext="name"
+            itemvalue="id"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue=""
+            numericorderby="false"
+            placeholder="Stations"
+            prependtext=""
+            removenonexistentselections="false"
+            required="false"
+            showemptyarrayasallselected="false"
+            someselected="false"
+            totalcount="0"
+            usechips="false"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-input-stub
+            data-v-96ada5b7=""
+            filled="true"
+            grow="false"
+            hint="Improvement name"
+            maxlength="50"
+            modelvalue=""
+            placeholder="Improvement name"
+            required=""
+            rules="(v) => !!v || _ctx.$t('Improvement name'),(v) => !v || !!v && v.length <= 50 || _ctx.$t('Improvement name')"
+            truncateinput="false"
+            type="text"
+            usechip="false"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pr-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="start-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="Start"
+            min=""
+            modelvalue="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="true"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="end-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="End"
+            max=""
+            min="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="End"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            auto-grow="false"
+            data-v-96ada5b7=""
+            hint="Describe the problem in more detail"
+            maxlength="200"
+            modelvalue=""
+            no-resize=""
+            placeholder="Problem statement"
+            rows="3"
+            rules="(v) => !v || !!v && v.length <= 200 || _ctx.$t('Describe the problem in more detail')"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="py-2"
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <evocon-v-input-stub
+          append-inner-icon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+          data-v-96ada5b7=""
+          filled="true"
+          grow="false"
+          hint="At least one person needs to be selected"
+          modelvalue="0 selected"
+          placeholder="Team"
+          prepend-inner-icon="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+          readonly=""
+          truncateinput="false"
+          type="text"
+          usechip="false"
+        />
+      </v-row-stub>
+      <v-card-actions-stub
+        class="pa-0 justify-end"
+        data-v-96ada5b7=""
+        tag="div"
+      >
+        <evocon-v-button-stub
+          color=""
+          data-v-96ada5b7=""
+          disabled="false"
+          icon=""
+          iconcolor=""
+          text="Cancel"
+          textclass=""
+          type="primary"
+          variant="text"
+        />
+        <evocon-v-button-stub
+          class="bg-primary"
+          color=""
+          data-v-96ada5b7=""
+          disabled="true"
+          icon=""
+          iconcolor=""
+          loading="false"
+          text="Save"
+          textclass=""
+          type="primary"
+        />
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-container-stub>
+</div>
+`;
+
+exports[`ImprovementEdit > renders correctly 1`] = `
+<div
+  class="py-10 fill-height bg-quaternary-dark"
+  data-v-96ada5b7=""
+>
+  <v-container-stub
+    class="fill-height d-flex flex-wrap justify-center align-center"
+    data-v-96ada5b7=""
+    fluid="false"
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="improvement-card-container pa-6 pt-0"
+      data-v-96ada5b7=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="improvement-information d-flex flex-column justify-center align-center"
+        data-v-96ada5b7=""
+      >
+        <div
+          class="text-headline-small font-weight-medium"
+          data-v-96ada5b7=""
+        >
+          Improvement
+        </div>
+        <div
+          class="text-body-medium text-medium-emphasis font-weight-regular"
+          data-v-96ada5b7=""
+        >
+          Define basic information about the improvement
+        </div>
+      </div>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="pr-4 pb-2"
+          cols="false"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            data-v-96ada5b7=""
+            disabled="false"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hidesearch="false"
+            hint="Factory"
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="true"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items="[object Object],[object Object],[object Object]"
+            itemsecondarytext=""
+            itemsmap="[object Object]"
+            itemtertiarytext=""
+            itemtext="name"
+            itemvalue="id"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue=""
+            numericorderby="false"
+            placeholder="Factory"
+            prependtext=""
+            removenonexistentselections="false"
+            required="true"
+            rules="Factory"
+            showemptyarrayasallselected="false"
+            someselected="false"
+            totalcount="0"
+            usechips="false"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pb-2"
+          cols="false"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            data-v-96ada5b7=""
+            disabled="true"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hidesearch="false"
+            hint="Stations"
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="false"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items="[object Object]"
+            itemsecondarytext=""
+            itemsmap="[object Object]"
+            itemtertiarytext=""
+            itemtext="name"
+            itemvalue="id"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue=""
+            numericorderby="false"
+            placeholder="Stations"
+            prependtext=""
+            removenonexistentselections="false"
+            required="false"
+            showemptyarrayasallselected="false"
+            someselected="false"
+            totalcount="0"
+            usechips="false"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-input-stub
+            data-v-96ada5b7=""
+            filled="true"
+            grow="false"
+            hint="Improvement name"
+            maxlength="50"
+            modelvalue=""
+            placeholder="Improvement name"
+            required=""
+            rules="(v) => !!v || _ctx.$t('Improvement name'),(v) => !v || !!v && v.length <= 50 || _ctx.$t('Improvement name')"
+            truncateinput="false"
+            type="text"
+            usechip="false"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pr-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="start-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="Start"
+            min=""
+            modelvalue="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="true"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="pl-2 py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          id="end-date-picker"
+          lg="false"
+          md="6"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-date-input-stub
+            clearable="true"
+            data-v-96ada5b7=""
+            disabled="false"
+            formatfn="[Function]"
+            hint="End"
+            max=""
+            min="2023-01-01"
+            persistenthint="true"
+            range="false"
+            required="true"
+            rules="End"
+          />
+        </v-col-stub>
+        <v-col-stub
+          class="py-2"
+          cols="12"
+          data-v-96ada5b7=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            auto-grow="false"
+            data-v-96ada5b7=""
+            hint="Describe the problem in more detail"
+            maxlength="200"
+            modelvalue=""
+            no-resize=""
+            placeholder="Problem statement"
+            rows="3"
+            rules="(v) => !v || !!v && v.length <= 200 || _ctx.$t('Describe the problem in more detail')"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="py-2"
+        data-v-96ada5b7=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <evocon-v-input-stub
+          append-inner-icon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+          data-v-96ada5b7=""
+          filled="true"
+          grow="false"
+          hint="At least one person needs to be selected"
+          modelvalue="0 selected"
+          placeholder="Team"
+          prepend-inner-icon="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+          readonly=""
+          truncateinput="false"
+          type="text"
+          usechip="false"
+        />
+      </v-row-stub>
+      <v-card-actions-stub
+        class="pa-0 justify-end"
+        data-v-96ada5b7=""
+        tag="div"
+      >
+        <evocon-v-button-stub
+          color=""
+          data-v-96ada5b7=""
+          disabled="false"
+          icon=""
+          iconcolor=""
+          text="Cancel"
+          textclass=""
+          type="primary"
+          variant="text"
+        />
+        <evocon-v-button-stub
+          class="bg-primary"
+          color=""
+          data-v-96ada5b7=""
+          disabled="true"
+          icon=""
+          iconcolor=""
+          loading="false"
+          text="Save"
+          textclass=""
+          type="primary"
+        />
+      </v-card-actions-stub>
+    </v-card-stub>
+  </v-container-stub>
+</div>
+`;

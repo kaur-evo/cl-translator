@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OeeComponent > renders correctly 1`] = `
+"<div data-v-9f205326="" class="d-flex flex-column bg-black flex-grow-1 rounded overflow-hidden pa-2">
+  <shift-view-oee-block-stub data-v-9f205326="" labelclass="" valueclass="text-body-medium font-weight-medium" compact="false" expanded="false"></shift-view-oee-block-stub>
+  <div data-v-9f205326="" class="d-flex flex-grow-1 align-center flex-row overflow-hidden">
+    <shift-view-mr-evocon-wrapper-stub data-v-9f205326="" hasfixedheight="false"></shift-view-mr-evocon-wrapper-stub>
+    <v-tooltip-stub data-v-9f205326="" interactive="false" attach="false" closeonback="false" contained="false" disabled="false" noclickanimation="false" modelvalue="false" persistent="false" scrim="false" zindex="2000" activatorprops="[object Object]" openonclick="false" openonhover="true" closeoncontentclick="false" minwidth="0" eager="true" locationstrategy="connected" location="bottom" origin="auto" offset="10" sticktotarget="false" viewportmargin="12" scrollstrategy="reposition">
+      <evocon-v-tooltip-stub data-v-9f205326="" iconcolor="" type="" title="" rows="[object Object],[object Object],[object Object]" titleicon="" titleiconcolor="white"></evocon-v-tooltip-stub>
+    </v-tooltip-stub>
+  </div>
+</div>"
+`;
+
+exports[`OeeComponent > renders correctly in expanded mode 1`] = `
+"<div data-v-9f205326="" class="d-flex flex-column bg-black flex-grow-1 rounded overflow-hidden pa-2">
+  <shift-view-oee-block-stub data-v-9f205326="" labelclass="" valueclass="text-body-medium font-weight-medium" compact="false" expanded="true"></shift-view-oee-block-stub>
+  <div data-v-9f205326="" class="d-flex flex-grow-1 align-center flex-row overflow-hidden">
+    <shift-view-mr-evocon-wrapper-stub data-v-9f205326="" hasfixedheight="true"></shift-view-mr-evocon-wrapper-stub>
+    <v-tooltip-stub data-v-9f205326="" interactive="false" attach="false" closeonback="false" contained="false" disabled="false" noclickanimation="false" modelvalue="false" persistent="false" scrim="false" zindex="2000" activatorprops="[object Object]" openonclick="false" openonhover="true" closeoncontentclick="false" minwidth="0" eager="true" locationstrategy="connected" location="bottom" origin="auto" offset="10" sticktotarget="false" viewportmargin="12" scrollstrategy="reposition">
+      <evocon-v-tooltip-stub data-v-9f205326="" iconcolor="" type="" title="" rows="[object Object],[object Object],[object Object]" titleicon="" titleiconcolor="white"></evocon-v-tooltip-stub>
+    </v-tooltip-stub>
+  </div>
+</div>"
+`;
+
+exports[`OeeComponent > renders correctly when loading 1`] = `
+"<div data-v-9f205326="" class="d-flex flex-column bg-black flex-grow-1 rounded overflow-hidden">
+  <shift-view-skeleton-loader-stub data-v-9f205326=""></shift-view-skeleton-loader-stub>
+</div>"
+`;
+
+exports[`OeeComponent > renders correctly when vertical prop is true 1`] = `
+"<div data-v-9f205326="" class="d-flex flex-column bg-black flex-grow-1 rounded overflow-hidden pa-2">
+  <shift-view-oee-block-stub data-v-9f205326="" labelclass="" valueclass="text-body-medium font-weight-medium" compact="false" expanded="false"></shift-view-oee-block-stub>
+  <div data-v-9f205326="" class="d-flex flex-grow-1 align-center flex-column">
+    <shift-view-mr-evocon-wrapper-stub data-v-9f205326="" hasfixedheight="false"></shift-view-mr-evocon-wrapper-stub>
+    <v-tooltip-stub data-v-9f205326="" interactive="false" attach="false" closeonback="false" contained="false" disabled="false" noclickanimation="false" modelvalue="false" persistent="false" scrim="false" zindex="2000" activatorprops="[object Object]" openonclick="false" openonhover="true" closeoncontentclick="false" minwidth="0" eager="true" locationstrategy="connected" location="bottom" origin="auto" offset="10" sticktotarget="false" viewportmargin="12" scrollstrategy="reposition">
+      <evocon-v-tooltip-stub data-v-9f205326="" iconcolor="" type="" title="" rows="[object Object],[object Object],[object Object]" titleicon="" titleiconcolor="white"></evocon-v-tooltip-stub>
+    </v-tooltip-stub>
+  </div>
+</div>"
+`;
+
+exports[`OeeComponent > renders correctly with zero data 1`] = `
+"<div data-v-9f205326="" class="d-flex flex-column bg-black flex-grow-1 rounded overflow-hidden pa-2">
+  <shift-view-oee-block-stub data-v-9f205326="" labelclass="" valueclass="text-body-medium font-weight-medium" compact="false" expanded="false"></shift-view-oee-block-stub>
+  <div data-v-9f205326="" class="d-flex flex-grow-1 align-center flex-row overflow-hidden">
+    <shift-view-mr-evocon-wrapper-stub data-v-9f205326="" hasfixedheight="false"></shift-view-mr-evocon-wrapper-stub>
+    <v-tooltip-stub data-v-9f205326="" interactive="false" attach="false" closeonback="false" contained="false" disabled="false" noclickanimation="false" modelvalue="false" persistent="false" scrim="false" zindex="2000" activatorprops="[object Object]" openonclick="false" openonhover="true" closeoncontentclick="false" minwidth="0" eager="true" locationstrategy="connected" location="bottom" origin="auto" offset="10" sticktotarget="false" viewportmargin="12" scrollstrategy="reposition">
+      <evocon-v-tooltip-stub data-v-9f205326="" iconcolor="" type="" title="" rows="[object Object],[object Object],[object Object]" titleicon="" titleiconcolor="white"></evocon-v-tooltip-stub>
+    </v-tooltip-stub>
+  </div>
+</div>"
+`;

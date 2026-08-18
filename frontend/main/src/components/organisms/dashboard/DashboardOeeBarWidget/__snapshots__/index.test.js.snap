@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DashboardOeeBarWidget > renders correctly 1`] = `
+<div
+  class="d-flex flex-column flex-nowrap fill-height justify-center align-center"
+>
+  <div
+    class="d-flex full-width fill-height justify-center align-center"
+  >
+    <!--v-if-->
+    <small-placeholder-text-stub
+      primarytext="No data available"
+      secondarytext="Please check back later or edit settings"
+    />
+  </div>
+</div>
+`;
+
+exports[`DashboardOeeBarWidget > renders correctly when loading 1`] = `
+<div
+  class="d-flex flex-column flex-nowrap fill-height justify-center align-center"
+>
+  <v-progress-circular-stub
+    color="primary"
+    indeterminate="true"
+    modelvalue="0"
+    reveal="false"
+    rotate="0"
+    rounded="false"
+    size="50"
+    tag="div"
+    width="4"
+  />
+</div>
+`;
+
+exports[`DashboardOeeBarWidget > renders correctly with data 1`] = `
+<div
+  class="d-flex flex-column flex-nowrap fill-height justify-center align-center"
+>
+  <div
+    class="d-flex full-width fill-height justify-center align-center"
+  >
+    <bar-chart-vertical-stub
+      areahighlightsenabled="true"
+      chartdata="[object Object]"
+      comparisonbarsdata=""
+      comparisonbarsenabled="false"
+      datatype="pct"
+      i="string"
+      production-units-in-use="[object Set]"
+      targetlinedataobj="[object Object]"
+      targetlineenabled="false"
+      tooltiphtmlfunc="[Function]"
+      trendlinedataobj="[object Object]"
+      trendlineenabled="false"
+      updatetrigger="0"
+      xaxislabel="Day"
+      yaxisoptions="[object Object]"
+    />
+    <!--v-if-->
+  </div>
+</div>
+`;

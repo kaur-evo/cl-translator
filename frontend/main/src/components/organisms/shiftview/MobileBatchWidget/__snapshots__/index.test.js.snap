@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MobileBatchWidget > renders correctly with empty items 1`] = `
+<small-placeholder-text-stub
+  primarytext="No data available"
+  secondarytext=""
+/>
+`;
+
+exports[`MobileBatchWidget > renders correctly with items 1`] = `
+<div>
+  
+  <div>
+    
+    <header-label-value-row-stub
+      label="Product"
+      labelclass=""
+      large="false"
+      value="Widget A"
+      valueclass="text-body-medium"
+    />
+    <header-label-value-row-stub
+      label="Quantity"
+      labelclass=""
+      large="false"
+      value="100"
+      valueclass="text-body-medium"
+    >
+      <batch-quantity-amount-stub
+        batch="[object Object]"
+        class="flex-shrink-0"
+        showgoodqty="true"
+        showprogress="false"
+        textclass=""
+      />
+    </header-label-value-row-stub>
+    
+    <v-divider-stub
+      class="my-1"
+      gradient="false"
+      inset="false"
+      variant="solid"
+      vertical="false"
+    />
+  </div>
+  <div>
+    
+    <header-label-value-row-stub
+      label="Product"
+      labelclass=""
+      large="false"
+      value="Widget B"
+      valueclass="text-body-medium"
+    />
+    
+    <!--v-if-->
+  </div>
+  
+</div>
+`;

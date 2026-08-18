@@ -1,0 +1,323 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FormPageTemplate > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Primary title
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+</div>
+`;
+
+exports[`FormPageTemplate > renders correctly in mobile 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-0"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="568"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Primary title
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+</div>
+`;
+
+exports[`FormPageTemplate > renders correctly with secondary segment 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Primary title
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            secondary title
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        >
+          secondary subtitle
+        </div>
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div>
+        secondary
+      </div>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+</div>
+`;
+
+exports[`FormPageTemplate > renders correctly with tertiary segment 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Primary title
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="tertiary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            tertiary title
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="tertiary-subtitle"
+        >
+          tertiary subtitle
+        </div>
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div>
+        tertiary
+      </div>
+      
+    </div>
+    <!--v-if-->
+  </v-card-stub>
+</div>
+`;

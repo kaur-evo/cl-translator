@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SliceNotesIcon > renders correctly 1`] = `
+<v-icon-stub
+  class="notes-icon ml-4"
+  data-v-8b8bbcf5=""
+  disabled="false"
+  end="false"
+  size="16"
+  start="false"
+  tag="i"
+>
+  M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z
+</v-icon-stub>
+`;
+
+exports[`SliceNotesIcon > renders correctly in mobile view 1`] = `
+<v-icon-stub
+  class="notes-icon"
+  data-v-8b8bbcf5=""
+  disabled="false"
+  end="false"
+  size="12"
+  start="false"
+  tag="i"
+>
+  M22,4C22,2.89 21.1,2 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z
+</v-icon-stub>
+`;

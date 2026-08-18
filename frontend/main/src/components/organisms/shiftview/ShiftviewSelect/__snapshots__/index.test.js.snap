@@ -1,0 +1,486 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftviewSelect > renders correctly - empty state 1`] = `
+<v-card-stub
+  border="false"
+  class="selector-card"
+  data-v-87ac0aab=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  loading="false"
+  replace="false"
+  ripple="true"
+  style="--max-height: string;"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  
+  <v-card-title-stub
+    class="text-body-large font-weight-medium"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    string 
+    <!--v-if-->
+  </v-card-title-stub>
+  <v-divider-stub
+    data-v-87ac0aab=""
+    gradient="false"
+    inset="false"
+    variant="solid"
+    vertical="false"
+  />
+  
+  <v-card-subtitle-stub
+    class="py-2"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <span
+      class="text-label-small"
+      data-v-87ac0aab=""
+    >
+      string
+    </span>
+  </v-card-subtitle-stub>
+  <v-card-text-stub
+    class="px-2 py-0"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <div
+      class="d-flex justify-center py-4"
+      data-v-87ac0aab=""
+    >
+      No data available
+    </div>
+  </v-card-text-stub>
+</v-card-stub>
+`;
+
+exports[`ShiftviewSelect > renders correctly when disabled 1`] = `
+<v-card-stub
+  border="false"
+  class="selector-card"
+  data-v-87ac0aab=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  loading="false"
+  replace="false"
+  ripple="true"
+  style="--max-height: string;"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  
+  <v-card-title-stub
+    class="text-body-large font-weight-medium"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    string 
+    <!--v-if-->
+  </v-card-title-stub>
+  <v-divider-stub
+    data-v-87ac0aab=""
+    gradient="false"
+    inset="false"
+    variant="solid"
+    vertical="false"
+  />
+  
+  <v-card-subtitle-stub
+    class="py-2"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <span
+      class="text-label-small"
+      data-v-87ac0aab=""
+    >
+      string
+    </span>
+  </v-card-subtitle-stub>
+  <v-card-text-stub
+    class="px-2 py-0"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <v-list-stub
+      activatable="false"
+      border="false"
+      class="pt-0"
+      data-v-87ac0aab=""
+      density="default"
+      disabled="true"
+      filterable="false"
+      itemchildren="children"
+      itemprops="props"
+      items=""
+      itemsregistration="render"
+      itemtitle="title"
+      itemtype="type"
+      itemvalue="value"
+      lines="one"
+      mandatory="true"
+      nav="false"
+      navigationstrategy="focus"
+      openstrategy="list"
+      returnobject="false"
+      selectable="false"
+      selected=""
+      selectstrategy="single-independent"
+      slim="false"
+      tag="div"
+      tile="false"
+      variant="text"
+    >
+      
+      <v-list-item-stub
+        activeclass="font-weight-medium text-primary"
+        border="false"
+        class="rounded overflow-hidden"
+        data-v-87ac0aab=""
+        density="default"
+        disabled="true"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        value="1"
+        variant="text"
+      >
+        <list-item-contents-stub
+          checkbox="false"
+          class="py-2"
+          color="primary"
+          dark="false"
+          data-v-87ac0aab=""
+          dense="false"
+          disabled="false"
+          error="false"
+          flagcountrycode=""
+          icon=""
+          iconcolor=""
+          iconsize=""
+          indeterminate="false"
+          inputvalue="false"
+          isgroupactivatoritem="false"
+          issingleselect="false"
+          loading="false"
+          primaryhighlight=""
+          primarytext="Test 1"
+          secondaryhighlight=""
+          secondarytext=""
+          tertiaryhighlight=""
+          tertiarytext=""
+          tertiarytextclasses=""
+        />
+      </v-list-item-stub>
+      <v-list-item-stub
+        activeclass="font-weight-medium text-primary"
+        border="false"
+        class="rounded overflow-hidden"
+        data-v-87ac0aab=""
+        density="default"
+        disabled="true"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        value="2"
+        variant="text"
+      >
+        <list-item-contents-stub
+          checkbox="false"
+          class="py-2"
+          color="primary"
+          dark="false"
+          data-v-87ac0aab=""
+          dense="false"
+          disabled="false"
+          error="false"
+          flagcountrycode=""
+          icon=""
+          iconcolor=""
+          iconsize=""
+          indeterminate="false"
+          inputvalue="false"
+          isgroupactivatoritem="false"
+          issingleselect="false"
+          loading="false"
+          primaryhighlight=""
+          primarytext="Test 2"
+          secondaryhighlight=""
+          secondarytext=""
+          tertiaryhighlight=""
+          tertiarytext=""
+          tertiarytextclasses=""
+        />
+      </v-list-item-stub>
+      
+    </v-list-stub>
+  </v-card-text-stub>
+</v-card-stub>
+`;
+
+exports[`ShiftviewSelect > renders correctly with additional text 1`] = `
+<v-card-stub
+  border="false"
+  class="selector-card"
+  data-v-87ac0aab=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  loading="false"
+  replace="false"
+  ripple="true"
+  style="--max-height: string;"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  
+  <v-card-title-stub
+    class="text-body-large font-weight-medium mb-1 d-flex flex-column align-start"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    string 
+    <span
+      class="text-body-small text-secondary"
+      data-v-87ac0aab=""
+    >
+      Test additional text
+    </span>
+  </v-card-title-stub>
+  <v-divider-stub
+    data-v-87ac0aab=""
+    gradient="false"
+    inset="false"
+    variant="solid"
+    vertical="false"
+  />
+  
+  <v-card-subtitle-stub
+    class="py-2"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <span
+      class="text-label-small"
+      data-v-87ac0aab=""
+    >
+      string
+    </span>
+  </v-card-subtitle-stub>
+  <v-card-text-stub
+    class="px-2 py-0"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <div
+      class="d-flex justify-center py-4"
+      data-v-87ac0aab=""
+    >
+      No data available
+    </div>
+  </v-card-text-stub>
+</v-card-stub>
+`;
+
+exports[`ShiftviewSelect > renders correctly with items 1`] = `
+<v-card-stub
+  border="false"
+  class="selector-card"
+  data-v-87ac0aab=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  loading="false"
+  replace="false"
+  ripple="true"
+  style="--max-height: string;"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  
+  <v-card-title-stub
+    class="text-body-large font-weight-medium"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    string 
+    <!--v-if-->
+  </v-card-title-stub>
+  <v-divider-stub
+    data-v-87ac0aab=""
+    gradient="false"
+    inset="false"
+    variant="solid"
+    vertical="false"
+  />
+  
+  <v-card-subtitle-stub
+    class="py-2"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <span
+      class="text-label-small"
+      data-v-87ac0aab=""
+    >
+      string
+    </span>
+  </v-card-subtitle-stub>
+  <v-card-text-stub
+    class="px-2 py-0"
+    data-v-87ac0aab=""
+    tag="div"
+  >
+    <v-list-stub
+      activatable="false"
+      border="false"
+      class="pt-0"
+      data-v-87ac0aab=""
+      density="default"
+      disabled="false"
+      filterable="false"
+      itemchildren="children"
+      itemprops="props"
+      items=""
+      itemsregistration="render"
+      itemtitle="title"
+      itemtype="type"
+      itemvalue="value"
+      lines="one"
+      mandatory="true"
+      nav="false"
+      navigationstrategy="focus"
+      openstrategy="list"
+      returnobject="false"
+      selectable="false"
+      selected=""
+      selectstrategy="single-independent"
+      slim="false"
+      tag="div"
+      tile="false"
+      variant="text"
+    >
+      
+      <v-list-item-stub
+        activeclass="font-weight-medium text-primary"
+        border="false"
+        class="rounded overflow-hidden"
+        data-v-87ac0aab=""
+        density="default"
+        disabled="false"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        value="1"
+        variant="text"
+      >
+        <list-item-contents-stub
+          checkbox="false"
+          class="py-2"
+          color="primary"
+          dark="false"
+          data-v-87ac0aab=""
+          dense="false"
+          disabled="false"
+          error="false"
+          flagcountrycode=""
+          icon=""
+          iconcolor=""
+          iconsize=""
+          indeterminate="false"
+          inputvalue="false"
+          isgroupactivatoritem="false"
+          issingleselect="false"
+          loading="false"
+          primaryhighlight=""
+          primarytext="Test 1"
+          secondaryhighlight=""
+          secondarytext=""
+          tertiaryhighlight=""
+          tertiarytext=""
+          tertiarytextclasses=""
+        />
+      </v-list-item-stub>
+      <v-list-item-stub
+        activeclass="font-weight-medium text-primary"
+        border="false"
+        class="rounded overflow-hidden"
+        data-v-87ac0aab=""
+        density="default"
+        disabled="false"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        value="2"
+        variant="text"
+      >
+        <list-item-contents-stub
+          checkbox="false"
+          class="py-2"
+          color="primary"
+          dark="false"
+          data-v-87ac0aab=""
+          dense="false"
+          disabled="false"
+          error="false"
+          flagcountrycode=""
+          icon=""
+          iconcolor=""
+          iconsize=""
+          indeterminate="false"
+          inputvalue="false"
+          isgroupactivatoritem="false"
+          issingleselect="false"
+          loading="false"
+          primaryhighlight=""
+          primarytext="Test 2"
+          secondaryhighlight=""
+          secondarytext=""
+          tertiaryhighlight=""
+          tertiarytext=""
+          tertiarytextclasses=""
+        />
+      </v-list-item-stub>
+      
+    </v-list-stub>
+  </v-card-text-stub>
+</v-card-stub>
+`;

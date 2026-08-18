@@ -1,0 +1,283 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RangeChipSelection > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <evocon-v-chip-stub
+    active="true"
+    allowgrow="false"
+    class="range-chip-selection px-0"
+    disabled="false"
+    error="false"
+    icon=""
+    iconclass=""
+    imgsrc=""
+    label="Range"
+    type="primary"
+  />
+  <v-menu-stub
+    activator="parent"
+    activatorprops="[object Object]"
+    attach="false"
+    capturefocus="true"
+    closedelay="250"
+    closeonback="true"
+    closeoncontentclick="true"
+    contained="false"
+    disabled="false"
+    disableinitialfocus="false"
+    eager="true"
+    locationstrategy="connected"
+    modelvalue="false"
+    noclickanimation="false"
+    opendelay="300"
+    openonhover="false"
+    origin="auto"
+    persistent="false"
+    retainfocus="false"
+    scrim="false"
+    scrollstrategy="reposition"
+    sticktotarget="false"
+    submenu="false"
+    transition="[object Object]"
+    viewportmargin="12"
+    zindex="2000"
+  >
+    <v-card-stub
+      border="false"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div>
+        
+        
+      </div>
+      <!--v-if-->
+    </v-card-stub>
+  </v-menu-stub>
+  
+</div>
+`;
+
+exports[`RangeChipSelection > renders correctly in mobile view 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <evocon-v-chip-stub
+    active="true"
+    allowgrow="false"
+    class="range-chip-selection px-0"
+    disabled="false"
+    error="false"
+    icon=""
+    iconclass=""
+    imgsrc=""
+    label="Range"
+    type="primary"
+  />
+  <v-dialog-stub
+    absolute="false"
+    activatorprops="[object Object]"
+    attach="false"
+    capturefocus="true"
+    closeonback="true"
+    closeoncontentclick="false"
+    contained="false"
+    disabled="false"
+    eager="true"
+    fullscreen="true"
+    location="bottom"
+    locationstrategy="static"
+    modelvalue="false"
+    noclickanimation="false"
+    openonhover="false"
+    origin="center center"
+    persistent="false"
+    retainfocus="true"
+    scrim="true"
+    scrollable="false"
+    scrollstrategy="block"
+    sticktotarget="false"
+    transition="[object Object]"
+    viewportmargin="12"
+    zindex="2400"
+  >
+    <v-card-stub
+      border="false"
+      class="py-0 max-height-100-pct overflow-hidden rounded"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <dialog-template-stub
+        color="white"
+        iconcolor=""
+        title="Range"
+        titleicon=""
+      />
+    </v-card-stub>
+  </v-dialog-stub>
+  
+</div>
+`;
+
+exports[`RangeChipSelection > renders correctly in mobile view when open 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <evocon-v-chip-stub
+    active="true"
+    allowgrow="false"
+    class="range-chip-selection px-0"
+    disabled="false"
+    error="false"
+    icon=""
+    iconclass=""
+    imgsrc=""
+    label="Range"
+    type="primary"
+  />
+  <v-dialog-stub
+    absolute="false"
+    activatorprops="[object Object]"
+    attach="false"
+    capturefocus="true"
+    closeonback="true"
+    closeoncontentclick="false"
+    contained="false"
+    disabled="false"
+    eager="true"
+    fullscreen="true"
+    location="bottom"
+    locationstrategy="static"
+    modelvalue="true"
+    noclickanimation="false"
+    openonhover="false"
+    origin="center center"
+    persistent="false"
+    retainfocus="true"
+    scrim="true"
+    scrollable="false"
+    scrollstrategy="block"
+    sticktotarget="false"
+    transition="[object Object]"
+    viewportmargin="12"
+    zindex="2400"
+  >
+    <v-card-stub
+      border="false"
+      class="py-0 max-height-100-pct overflow-hidden rounded"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <dialog-template-stub
+        color="white"
+        iconcolor=""
+        title="Range"
+        titleicon=""
+      />
+    </v-card-stub>
+  </v-dialog-stub>
+  
+</div>
+`;
+
+exports[`RangeChipSelection > renders correctly when open 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <evocon-v-chip-stub
+    active="true"
+    allowgrow="false"
+    class="range-chip-selection px-0"
+    disabled="false"
+    error="false"
+    icon=""
+    iconclass=""
+    imgsrc=""
+    label="Range"
+    type="primary"
+  />
+  <v-menu-stub
+    activator="parent"
+    activatorprops="[object Object]"
+    attach="false"
+    capturefocus="true"
+    closedelay="250"
+    closeonback="true"
+    closeoncontentclick="true"
+    contained="false"
+    disabled="false"
+    disableinitialfocus="false"
+    eager="true"
+    locationstrategy="connected"
+    modelvalue="true"
+    noclickanimation="false"
+    opendelay="300"
+    openonhover="false"
+    origin="auto"
+    persistent="false"
+    retainfocus="false"
+    scrim="false"
+    scrollstrategy="reposition"
+    sticktotarget="false"
+    submenu="false"
+    transition="[object Object]"
+    viewportmargin="12"
+    zindex="2000"
+  >
+    <v-card-stub
+      border="false"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div>
+        
+        
+      </div>
+      <!--v-if-->
+    </v-card-stub>
+  </v-menu-stub>
+  
+</div>
+`;

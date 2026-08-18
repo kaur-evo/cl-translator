@@ -1,0 +1,98 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MobileFilterBarDialog > renders correctly 1`] = `
+<div
+  data-v-91599494=""
+>
+  <dialog-toolbar-stub
+    color="primary-dark"
+    data-v-91599494=""
+    iconcolor=""
+    title="Filters"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content dialog-content--mobile px-4 pt-0"
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    
+    <div
+      class="my-4"
+    >
+      <filter-bar-filter-stub
+        dense="true"
+        filter="factoryId"
+        limit="300"
+        usechips="false"
+      />
+    </div>
+    <div
+      class="my-4"
+    >
+      <filter-bar-filter-stub
+        dense="true"
+        filter="stationId"
+        limit="300"
+        usechips="false"
+      />
+    </div>
+    <div
+      class="my-4"
+    >
+      <filter-bar-filter-stub
+        dense="true"
+        filter="groupId"
+        limit="300"
+        usechips="false"
+      />
+    </div>
+    
+    <div
+      class="d-flex justify-end full-width pr-2"
+    >
+      <evocon-v-button-stub
+        color=""
+        disabled="true"
+        icon=""
+        iconcolor=""
+        size="small"
+        text="Reset"
+        textclass=""
+        type="secondary"
+      />
+    </div>
+    
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      size="small"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      icon=""
+      iconcolor=""
+      size="small"
+      text="Apply"
+      textclass=""
+      type="primary"
+    />
+    
+  </v-card-actions-stub>
+</div>
+`;

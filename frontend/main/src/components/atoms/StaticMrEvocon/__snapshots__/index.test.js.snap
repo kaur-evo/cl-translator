@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StaticMrEvocon > renders correctly 1`] = `
+<img
+  alt="mr-evocon"
+  src=""
+  style="max-width: 150px; max-height: 150px;"
+/>
+`;

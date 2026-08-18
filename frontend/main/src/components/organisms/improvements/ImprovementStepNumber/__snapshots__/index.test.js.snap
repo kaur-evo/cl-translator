@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementStepNumber > renders correctly 1`] = `
+<v-avatar-stub
+  badge="false"
+  border="false"
+  class="avatar-border my-3 mx-2"
+  density="default"
+  end="false"
+  size="24"
+  start="false"
+  tag="div"
+  tile="false"
+  variant="flat"
+>
+  <span
+    class="text-h7 font-weight-medium"
+  >
+    1
+  </span>
+</v-avatar-stub>
+`;

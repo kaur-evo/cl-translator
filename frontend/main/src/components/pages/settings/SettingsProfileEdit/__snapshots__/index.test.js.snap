@@ -1,0 +1,1625 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsProfileEdit > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Edit profile
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <profile-picture-stub
+          classnames="mb-4 mx-auto"
+          clickable="false"
+          editable="true"
+          img=""
+          size="100"
+          withhalo="false"
+        />
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Name_Person"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="John Doe"
+              persistent-hint=""
+              placeholder="Name_Person"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Name_Person')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Email"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="john@doe.net"
+              persistent-hint=""
+              placeholder="Email"
+              rules="(v) => _ctx.isValidEmail(v)"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Username"
+              modelmodifiers="[object Object]"
+              modelvalue="john.doe@factory"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="false"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Language"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag="languageId"
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="languageId"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="et"
+              numericorderby="false"
+              placeholder="Language"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Role"
+              modelvalue="COMPANY_ADMIN"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="py-6"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Preferences
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Choose display preferences in Evocon
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <user-preferences-form-stub
+          formdata="[object Object]"
+          hasstartpageoption="true"
+          islineviewuser="false"
+          stationsfilter=""
+        />
+        <div
+          class="d-flex justify-center my-4"
+        >
+          <span
+            class="text-body-large font-weight-bold"
+          >
+            Security
+          </span>
+        </div>
+        <div
+          class="d-flex justify-space-between align-center my-4"
+        >
+          <input-label-stub
+            class="ml-1"
+            dark="false"
+            disabled="false"
+            label="Password"
+            sublabel="For security purposes, make sure you choose a strong password."
+          />
+          <evocon-v-button-stub
+            class="mx-1"
+            color="quaternary-dark"
+            icon=""
+            iconcolor=""
+            text="Change password"
+            textclass=""
+            type="primary"
+          />
+        </div>
+        <div
+          class="my-4"
+        >
+          <div
+            class="d-flex justify-space-between align-center"
+          >
+            <input-label-stub
+              class="ml-1"
+              dark="false"
+              disabled="false"
+              label="Two-factor authentication"
+              sublabel="Add an additional layer of security to your account."
+            />
+            <!--v-if-->
+          </div>
+          <info-block-stub
+            body="To change two-factor authentication settings, please re-login."
+            class="mt-2 ml-1"
+            collapsible="false"
+            color="#9E9E9E"
+            header=""
+            headertextcolor="text-secondary-text"
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          />
+        </div>
+        <selection-input-stub
+          checkbox="true"
+          coloractiveprepend="false"
+          disabled="false"
+          disabledvalues=""
+          emittoggleall="false"
+          emptyequalsallselected="false"
+          error="false"
+          filled="true"
+          groupidkey="id"
+          groups=""
+          groupsorderby="name"
+          hiddenitemscount="0"
+          hidesearch="true"
+          hint="Security profile"
+          inverted="false"
+          isgroupedselect="false"
+          issingleselect="true"
+          itemflag=""
+          itemgroupidkey="groupId"
+          items="[object Object],[object Object]"
+          itemsecondarytext="subtitle"
+          itemtertiarytext=""
+          itemtext="name"
+          itemvalue="id"
+          loading="false"
+          menuinputtype="primary"
+          modelvalue=""
+          numericorderby="false"
+          placeholder="Security profile"
+          prepend-inner-icon="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"
+          prependtext=""
+          removenonexistentselections="false"
+          required="false"
+          showemptyarrayasallselected="false"
+          someselected="false"
+          totalcount="0"
+          usechips="false"
+        />
+      </v-form-stub>
+      <!--v-if-->
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsProfileEdit > renders correctly if security settings are disabled 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Edit profile
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <profile-picture-stub
+          classnames="mb-4 mx-auto"
+          clickable="false"
+          editable="true"
+          img=""
+          size="100"
+          withhalo="false"
+        />
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Name_Person"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="John Doe"
+              persistent-hint=""
+              placeholder="Name_Person"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Name_Person')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Email"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="john@doe.net"
+              persistent-hint=""
+              placeholder="Email"
+              rules="(v) => _ctx.isValidEmail(v)"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Username"
+              modelmodifiers="[object Object]"
+              modelvalue="john.doe@factory"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="false"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Language"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag="languageId"
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="languageId"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="et"
+              numericorderby="false"
+              placeholder="Language"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Role"
+              modelvalue="COMPANY_ADMIN"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="py-6"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Preferences
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Choose display preferences in Evocon
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <user-preferences-form-stub
+          formdata="[object Object]"
+          hasstartpageoption="true"
+          islineviewuser="false"
+          stationsfilter=""
+        />
+        <div
+          class="d-flex justify-center my-4"
+        >
+          <span
+            class="text-body-large font-weight-bold"
+          >
+            Security
+          </span>
+        </div>
+        <div
+          class="d-flex justify-space-between align-center my-4"
+        >
+          <input-label-stub
+            class="ml-1"
+            dark="false"
+            disabled="false"
+            label="Password"
+            sublabel="For security purposes, make sure you choose a strong password."
+          />
+          <evocon-v-button-stub
+            class="mx-1"
+            color="quaternary-dark"
+            icon=""
+            iconcolor=""
+            text="Change password"
+            textclass=""
+            type="primary"
+          />
+        </div>
+        <div
+          class="my-4"
+        >
+          <div
+            class="d-flex justify-space-between align-center"
+          >
+            <input-label-stub
+              class="ml-1"
+              dark="false"
+              disabled="false"
+              label="Two-factor authentication"
+              sublabel="Add an additional layer of security to your account."
+            />
+            <!--v-if-->
+          </div>
+          <info-block-stub
+            body="To change two-factor authentication settings, please re-login."
+            class="mt-2 ml-1"
+            collapsible="false"
+            color="#9E9E9E"
+            header=""
+            headertextcolor="text-secondary-text"
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          />
+        </div>
+        <!--v-if-->
+      </v-form-stub>
+      <!--v-if-->
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsProfileEdit > renders correctly wiht sso providers 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Edit profile
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <profile-picture-stub
+          classnames="mb-4 mx-auto"
+          clickable="false"
+          editable="true"
+          img=""
+          size="100"
+          withhalo="false"
+        />
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Name_Person"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="John Doe"
+              persistent-hint=""
+              placeholder="Name_Person"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Name_Person')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Email"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="john@doe.net"
+              persistent-hint=""
+              placeholder="Email"
+              rules="(v) => _ctx.isValidEmail(v)"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Username"
+              modelmodifiers="[object Object]"
+              modelvalue="john.doe@factory"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="false"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Language"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag="languageId"
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="languageId"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="et"
+              numericorderby="false"
+              placeholder="Language"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Role"
+              modelvalue="COMPANY_ADMIN"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="py-6"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Preferences
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Choose display preferences in Evocon
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <user-preferences-form-stub
+          formdata="[object Object]"
+          hasstartpageoption="true"
+          islineviewuser="false"
+          stationsfilter=""
+        />
+        <div
+          class="d-flex justify-center my-4"
+        >
+          <span
+            class="text-body-large font-weight-bold"
+          >
+            Security
+          </span>
+        </div>
+        <div
+          class="d-flex justify-space-between align-center my-4"
+        >
+          <input-label-stub
+            class="ml-1"
+            dark="false"
+            disabled="false"
+            label="Password"
+            sublabel="For security purposes, make sure you choose a strong password."
+          />
+          <evocon-v-button-stub
+            class="mx-1"
+            color="quaternary-dark"
+            icon=""
+            iconcolor=""
+            text="Change password"
+            textclass=""
+            type="primary"
+          />
+        </div>
+        <div
+          class="my-4"
+        >
+          <div
+            class="d-flex justify-space-between align-center"
+          >
+            <input-label-stub
+              class="ml-1"
+              dark="false"
+              disabled="false"
+              label="Two-factor authentication"
+              sublabel="Add an additional layer of security to your account."
+            />
+            <!--v-if-->
+          </div>
+          <info-block-stub
+            body="To change two-factor authentication settings, please re-login."
+            class="mt-2 ml-1"
+            collapsible="false"
+            color="#9E9E9E"
+            header=""
+            headertextcolor="text-secondary-text"
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          />
+        </div>
+        <selection-input-stub
+          checkbox="true"
+          coloractiveprepend="false"
+          disabled="false"
+          disabledvalues=""
+          emittoggleall="false"
+          emptyequalsallselected="false"
+          error="false"
+          filled="true"
+          groupidkey="id"
+          groups=""
+          groupsorderby="name"
+          hiddenitemscount="0"
+          hidesearch="true"
+          hint="Security profile"
+          inverted="false"
+          isgroupedselect="false"
+          issingleselect="true"
+          itemflag=""
+          itemgroupidkey="groupId"
+          items="[object Object],[object Object]"
+          itemsecondarytext="subtitle"
+          itemtertiarytext=""
+          itemtext="name"
+          itemvalue="id"
+          loading="false"
+          menuinputtype="primary"
+          modelvalue=""
+          numericorderby="false"
+          placeholder="Security profile"
+          prepend-inner-icon="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"
+          prependtext=""
+          removenonexistentselections="false"
+          required="false"
+          showemptyarrayasallselected="false"
+          someselected="false"
+          totalcount="0"
+          usechips="false"
+        />
+      </v-form-stub>
+      <div
+        class="pb-6 mx-1"
+      >
+        <div
+          class="d-flex justify-center my-4"
+        >
+          <span
+            class="text-body-large font-weight-bold"
+          >
+            Single sign-on providers
+          </span>
+        </div>
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          
+          <v-col-stub
+            class="d-flex justify-space-between px-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="d-flex flex-column"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Service provider
+              </span>
+              <span
+                class="text-body-large"
+              >
+                Google
+              </span>
+            </div>
+            <div
+              class="d-flex flex-column align-end"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Identificator
+              </span>
+              <span
+                class="text-body-large"
+              >
+                google user id
+              </span>
+            </div>
+          </v-col-stub>
+          <v-col-stub
+            class="d-flex justify-space-between px-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="d-flex flex-column"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Service provider
+              </span>
+              <span
+                class="text-body-large"
+              >
+                Facebook
+              </span>
+            </div>
+            <div
+              class="d-flex flex-column align-end"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Identificator
+              </span>
+              <span
+                class="text-body-large"
+              >
+                fb user id
+              </span>
+            </div>
+          </v-col-stub>
+          <v-col-stub
+            class="d-flex justify-space-between px-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="d-flex flex-column"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Service provider
+              </span>
+              <span
+                class="text-body-large"
+              >
+                GitHub
+              </span>
+            </div>
+            <div
+              class="d-flex flex-column align-end"
+            >
+              <span
+                class="text-body-small text-secondary-text"
+              >
+                Identificator
+              </span>
+              <span
+                class="text-body-large"
+              >
+                github user id
+              </span>
+            </div>
+          </v-col-stub>
+          
+        </v-row-stub>
+      </div>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsProfileEdit > renders correctly with MFA reset button visible 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Edit profile
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <profile-picture-stub
+          classnames="mb-4 mx-auto"
+          clickable="false"
+          editable="true"
+          img=""
+          size="100"
+          withhalo="false"
+        />
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Name_Person"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="John Doe"
+              persistent-hint=""
+              placeholder="Name_Person"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Name_Person')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="100"
+              filled="true"
+              grow="false"
+              hint="Email"
+              maxlength="100"
+              modelmodifiers="[object Object]"
+              modelvalue="john@doe.net"
+              persistent-hint=""
+              placeholder="Email"
+              rules="(v) => _ctx.isValidEmail(v)"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Username"
+              modelmodifiers="[object Object]"
+              modelvalue="john.doe@factory"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="false"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Language"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag="languageId"
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="languageId"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="et"
+              numericorderby="false"
+              placeholder="Language"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Role"
+              modelvalue="COMPANY_ADMIN"
+              persistent-hint=""
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="py-6"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Preferences
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Choose display preferences in Evocon
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <user-preferences-form-stub
+          formdata="[object Object]"
+          hasstartpageoption="true"
+          islineviewuser="false"
+          stationsfilter=""
+        />
+        <div
+          class="d-flex justify-center my-4"
+        >
+          <span
+            class="text-body-large font-weight-bold"
+          >
+            Security
+          </span>
+        </div>
+        <div
+          class="d-flex justify-space-between align-center my-4"
+        >
+          <input-label-stub
+            class="ml-1"
+            dark="false"
+            disabled="false"
+            label="Password"
+            sublabel="For security purposes, make sure you choose a strong password."
+          />
+          <evocon-v-button-stub
+            class="mx-1"
+            color="quaternary-dark"
+            icon=""
+            iconcolor=""
+            text="Change password"
+            textclass=""
+            type="primary"
+          />
+        </div>
+        <div
+          class="my-4"
+        >
+          <div
+            class="d-flex justify-space-between align-center"
+          >
+            <input-label-stub
+              class="ml-1"
+              dark="false"
+              disabled="false"
+              label="Two-factor authentication"
+              sublabel="Add an additional layer of security to your account."
+            />
+            
+            <evocon-v-button-stub
+              class="mx-1"
+              color="quaternary-dark"
+              disabled="false"
+              icon=""
+              iconcolor=""
+              loading="false"
+              text="Reset"
+              textclass=""
+              type="primary"
+            />
+            
+          </div>
+          <!--v-if-->
+        </div>
+        <selection-input-stub
+          checkbox="true"
+          coloractiveprepend="false"
+          disabled="false"
+          disabledvalues=""
+          emittoggleall="false"
+          emptyequalsallselected="false"
+          error="false"
+          filled="true"
+          groupidkey="id"
+          groups=""
+          groupsorderby="name"
+          hiddenitemscount="0"
+          hidesearch="true"
+          hint="Security profile"
+          inverted="false"
+          isgroupedselect="false"
+          issingleselect="true"
+          itemflag=""
+          itemgroupidkey="groupId"
+          items="[object Object],[object Object]"
+          itemsecondarytext="subtitle"
+          itemtertiarytext=""
+          itemtext="name"
+          itemvalue="id"
+          loading="false"
+          menuinputtype="primary"
+          modelvalue=""
+          numericorderby="false"
+          placeholder="Security profile"
+          prepend-inner-icon="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z"
+          prependtext=""
+          removenonexistentselections="false"
+          required="false"
+          showemptyarrayasallselected="false"
+          someselected="false"
+          totalcount="0"
+          usechips="false"
+        />
+      </v-form-stub>
+      <!--v-if-->
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;

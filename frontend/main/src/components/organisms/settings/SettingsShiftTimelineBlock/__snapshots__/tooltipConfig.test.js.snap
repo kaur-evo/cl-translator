@@ -1,0 +1,67 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getTooltipDotRow > should handle missing color gracefully 1`] = `
+"<div class="v-row align-center flex-nowrap"><span class="d-flex ma-n2 pr-2">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24"
+    style="width: 24px; height: 24px; display: inline-flex; margin:undefined"
+    role="img" 
+    aria-hidden="true" 
+    class="v-icon__svg ">
+    <g fill="undefined">
+      <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+    </g>
+    </svg></span><span class="text-label-small">Label</span></div>"
+`;
+
+exports[`getTooltipDotRow > should return correct HTML when shiftName is provided 1`] = `
+"<div class="v-row align-center flex-nowrap"><span class="d-flex ma-n2 pr-2">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24"
+    style="width: 24px; height: 24px; display: inline-flex; margin:undefined"
+    role="img" 
+    aria-hidden="true" 
+    class="v-icon__svg ">
+    <g fill="#ff0000">
+      <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+    </g>
+    </svg></span><span class="text-label-small">Test Label</span></div>"
+`;
+
+exports[`getTooltipDotRow > should use the provided color in the icon template 1`] = `
+"<div class="v-row align-center flex-nowrap"><span class="d-flex ma-n2 pr-2">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24"
+    style="width: 24px; height: 24px; display: inline-flex; margin:undefined"
+    role="img" 
+    aria-hidden="true" 
+    class="v-icon__svg ">
+    <g fill="#123456">
+      <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+    </g>
+    </svg></span><span class="text-label-small">Label</span></div>"
+`;
+
+exports[`getTooltipHTML > returns tooltip with dot row, params, and no extra info for enabled shift 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+        <div class="v-row align-center flex-nowrap"><span class="d-flex ma-n2 pr-2">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24"
+    style="width: 24px; height: 24px; display: inline-flex; margin:undefined"
+    role="img" 
+    aria-hidden="true" 
+    class="v-icon__svg ">
+    <g fill="#fff">
+      <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+    </g>
+    </svg></span><span class="text-label-small">Morning</span></div>
+        <div class="text-label-small font-weight-regular align-center d-flex">
+              <span class="text-tertiary-dark font-weight-regular">[Start]:&nbsp;</span>
+              <span class="text-body-small font-weight-regular text-none">2025-11-10</span>
+              </div><div class="text-label-small font-weight-regular align-center d-flex">
+              <span class="text-tertiary-dark font-weight-regular">[Time]:&nbsp;</span>
+              <span class="text-body-small font-weight-regular text-none">10:00 - 18:00 (8h)</span>
+              </div>
+        
+        </v-col></div>"
+`;

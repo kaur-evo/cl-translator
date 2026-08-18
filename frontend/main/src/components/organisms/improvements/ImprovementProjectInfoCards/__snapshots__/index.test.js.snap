@@ -1,0 +1,332 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementProjectInfoCards > renders correctly 1`] = `
+<v-row-stub
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    class="pa-1 pl-3"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis mb-2 d-flex"
+      >
+        Baseline Per day 
+        <v-tooltip-stub
+          activatorprops="[object Object]"
+          attach="false"
+          closeonback="false"
+          closeoncontentclick="false"
+          contained="false"
+          contentclass="pa-4"
+          disabled="false"
+          eager="true"
+          interactive="false"
+          location="top"
+          locationstrategy="connected"
+          minwidth="0"
+          modelvalue="false"
+          noclickanimation="false"
+          offset="10"
+          openonclick="false"
+          openonhover="true"
+          origin="auto"
+          persistent="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <span>
+            Average: 01.01.2020 - 31.01.2020
+          </span>
+        </v-tooltip-stub>
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis mb-2"
+      >
+        20m 0s
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+  <v-col-stub
+    class="pa-1"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis mb-2 d-flex"
+      >
+        Target Per day
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis mb-2"
+      >
+        10m 0s
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+  <v-col-stub
+    class="pa-1"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis mb-2 d-flex"
+      >
+        Current Per day 
+        <v-tooltip-stub
+          activatorprops="[object Object]"
+          attach="false"
+          closeonback="false"
+          closeoncontentclick="false"
+          contained="false"
+          contentclass="pa-4"
+          disabled="false"
+          eager="true"
+          interactive="false"
+          location="top"
+          locationstrategy="connected"
+          minwidth="0"
+          modelvalue="false"
+          noclickanimation="false"
+          offset="10"
+          openonclick="false"
+          openonhover="true"
+          origin="auto"
+          persistent="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <span>
+            Average: 01.02.2020 - 29.02.2020
+          </span>
+        </v-tooltip-stub>
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis mb-2"
+      >
+        16m 40s
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+  <v-col-stub
+    class="pa-1"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis mb-2"
+      >
+        rolling7days
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis mb-2"
+      >
+        16m 39s
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+  <v-col-stub
+    class="pa-1"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis d-flex mb-2"
+      >
+        Total time saved 
+        <v-tooltip-stub
+          activatorprops="[object Object]"
+          attach="false"
+          closeonback="false"
+          closeoncontentclick="false"
+          contained="false"
+          contentclass="pa-4"
+          disabled="false"
+          eager="true"
+          interactive="false"
+          location="top"
+          locationstrategy="connected"
+          minwidth="0"
+          modelvalue="false"
+          noclickanimation="false"
+          offset="10"
+          openonclick="false"
+          openonhover="true"
+          origin="auto"
+          persistent="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <span>
+            Total time saved: 01.02.2020 - 29.02.2020
+          </span>
+        </v-tooltip-stub>
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis mb-2"
+      >
+        2m 3s
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+  <v-col-stub
+    class="pa-1 pr-3"
+    cols="false"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <v-card-stub
+      border="false"
+      class="pa-4 fill-height d-flex flex-column justify-space-between"
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="text-label-small text-uppercase font-weight-medium text-medium-emphasis mb-2"
+      >
+        Total money saved
+      </div>
+      <div
+        class="text-headline-medium font-weight-medium text-high-emphasis d-flex align-start mb-2"
+      >
+        €1,16 
+        <evocon-v-button-stub
+          class="mt-n1 ml-2"
+          color=""
+          icon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+          iconcolor=""
+          text=""
+          textclass=""
+          type="primary"
+        />
+      </div>
+    </v-card-stub>
+  </v-col-stub>
+</v-row-stub>
+`;

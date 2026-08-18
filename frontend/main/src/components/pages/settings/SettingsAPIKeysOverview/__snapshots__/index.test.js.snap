@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsAPIKeysOverview > renders correctly 1`] = `
+<settings-entities-overview-stub
+  arecolsloading="false"
+  arerowsclickable="true"
+  caneditgroups="true"
+  customviews=""
+  entityname="apiKeys"
+  filterconfiguration="[object Map]"
+  groupfields=""
+  groups=""
+  hasgroupview="false"
+  hideresetbtn="false"
+  isdeletinggroupinprogress="false"
+  items="[object Object]"
+  languagetextentity=""
+  loading="false"
+  menuitems=""
+  namefield="name"
+  navigatetoeditroute="true"
+  openpanelsonfilter="true"
+  overviewheader="API keys"
+  primarybtnaction="[Function]"
+  primarybtntext="API key"
+  saveactionname=""
+  secondarybtntext=""
+  showdragicon="false"
+  showemptygroups="true"
+  showglobalgroupsicon="false"
+  showgroupitemscount="true"
+  statuskey="enabled"
+  tableheaders="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  togglebtnvalue="list"
+  usebackendfiltering="false"
+/>
+`;

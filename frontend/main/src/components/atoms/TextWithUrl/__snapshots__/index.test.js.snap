@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextHighlight > renders correctly with <p> tag 1`] = `
+<p>
+  this link 
+  <a
+    href="https://evocon.com/how-evocon-works/"
+    target="_blank"
+  >
+    https://evocon.com/how-evocon-works/
+  </a>
+   describes how evocon works
+</p>
+`;
+
+exports[`TextHighlight > renders correctly with multiple urls 1`] = `
+<span>
+  this link 
+  <a
+    href="https://evocon.com/how-evocon-works/"
+    target="_blank"
+  >
+    https://evocon.com/how-evocon-works/
+  </a>
+   describes how evocon works and this one 
+  <a
+    href="https://evocon.com/oee-software-roi-calculator/"
+    target="_blank"
+  >
+    https://evocon.com/oee-software-roi-calculator/
+  </a>
+   has roi calculator
+</span>
+`;
+
+exports[`TextHighlight > renders correctly with url 1`] = `
+<span>
+  this link 
+  <a
+    href="https://evocon.com/how-evocon-works/"
+    target="_blank"
+  >
+    https://evocon.com/how-evocon-works/
+  </a>
+   describes how evocon works
+</span>
+`;
+
+exports[`TextHighlight > renders correctly without url 1`] = `
+<span>
+  string
+</span>
+`;

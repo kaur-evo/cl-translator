@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistQuantityTrigger > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <span
+    class="d-flex align-center white-space-nowrap"
+  >
+    <span
+      class="ma-1"
+    >
+      show every
+    </span>
+    <evocon-number-input-stub
+      allowfloat="true"
+      allownegative="false"
+      class="ma-1"
+      error="false"
+      grow="true"
+      maxvalue="999999999999999"
+      modelvalue="10"
+      suffix="units"
+      usechip="true"
+    />
+  </span>
+  
+  
+  
+</div>
+`;

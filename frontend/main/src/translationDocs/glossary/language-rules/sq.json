@@ -1,0 +1,59 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] DPS (Drejtoria e Përgjithshme e Standardizimit) — Albanian Standards Authority, ISO correspondent member, CEN/CENELEC affiliate",
+    "[S2] Siemens Automation Albania (automation.al) — industrial automation in Albania",
+    "[S2] Microsoft Albanian Localization Style Guide (sqi-alb-StyleGuide.pdf) — formal register conventions",
+    "[S3] IATE (Interactive Terminology for Europe) — Albanian as candidate-country language",
+    "[S3] BalkanEngineer Albania — technical articles on Albanian manufacturing vocabulary",
+    "[S4] Albanian Wikipedia — 'Efektiviteti' article distinguishing efektiviteti (effectiveness) from efikasiteti (efficiency)",
+    "[S4] ScienceDirect — 'Bilingual Homonyms in English and Albanian' (2013) — systematic false friends analysis",
+    "[S4] Albanian morphology reference — postposed article, case system, gender rules",
+    "[S4] HiNative — formal pronoun 'Ju' confirmed for professional contexts",
+    "[S5] Invest in Albania (invest-in-albania.org) — textile/garment industry context",
+    "[S5] ILO Mapping Report — Textile, Clothing, Leather and Footwear Sector in Albania",
+    "[S5] terms.json — 72 Albanian translations analyzed for length multiplier and consistency"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Ju",
+  "falseFriends": {
+    "actual": "Use 'i vërtetë' or 'real', not 'aktual' (which means 'current/topical' from Italian 'attuale')",
+    "fabric": "Use 'pëlhurë' or 'stofë', not 'fabrikë' (which means 'factory'). Critical given Albania's dominant textile industry.",
+    "eventual": "Use 'përfundimisht', not 'eventualisht' (which means 'possibly/perhaps')",
+    "effective": "Use 'efektiv/efektivitet' for effectiveness, NOT 'efikas/efikasitet' (which means efficiency). OEE measures effectiveness.",
+    "sensible": "Use 'i arsyeshëm' or 'praktik', not 'sensibël' (which means 'sensitive' from Italian 'sensibile')",
+    "magazine": "Use 'revistë', not 'magazinë' (which means 'warehouse/storage room')",
+    "station": "Use 'stacion pune' or 'stacion prodhimi' for workstation. Bare 'stacion' is ambiguous (train/bus/work)."
+  },
+  "grammarNotes": {
+    "postposedArticle": "Definite article is suffix: 'fabrikë' (a factory) → 'fabrika' (the factory). Foreign acronyms hyphenated: 'OEE-ja' (the OEE), 'KPI-të' (the KPIs).",
+    "caseSystem": "5 cases (nom, gen, dat, acc, abl). Genitive requires linking particle i/e/të/së: 'koha e ciklit' (cycle time). Missing particle is a common error.",
+    "twoGenders": "Masculine and feminine. Technical loanwords preserve source gender. Adjectives agree: 'njësi primare' (f+f), 'prodhim i mirë' (m+linker+m).",
+    "schwaPhonemic": "Letter ë (schwa) is distinct phoneme — must not be omitted. 'Fabrikë' ≠ 'fabrika' (definite vs indefinite).",
+    "numberFormatting": "Decimal: comma (,). Thousands: period (.). '85,5%'. '1.000 njësi'. Continental European convention.",
+    "compoundPluralModifiers": "In compound noun phrases with genitive particle (e/të/i/së), only the HEAD noun pluralizes. The genitive modifier stays SINGULAR. CORRECT: 'shkaqet e humbjes së shpejtësisë' (causes + of loss [gen.sg] + of speed [gen.sg]). WRONG: 'shkaqet e humbjeve të shpejtësisë' (causes + of losses [gen.pl] + of speed). The modifier 'humbjes' names the concept of speed loss; only the head noun counts items."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE (English) standard. No local Albanian acronym exists.",
+    "preferAcronym": true,
+    "albanianFullTerm": "efektiviteti i përgjithshëm i pajisjeve",
+    "dominantSectors": "Textiles/garments (~44% of exports, ~1000 companies, ~90,000 workers), footwear, food processing, construction materials",
+    "italianInfluence": "Italian investment dominates Albanian manufacturing (fason/cut-make-trim). Italian terminology influences Albanian technical vocabulary.",
+    "standardsUsed": [
+      "SSH standards (aligned with EU harmonized standards)"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'efikasiteti' (efficiency) instead of 'efektiviteti' (effectiveness) for OEE — OEE measures effectiveness, not efficiency",
+    "Omitting ë (schwa) — phonemically distinct and mandatory. 'ndërrimi' not 'ndrrimi'",
+    "Using 'mbeturinë' (general waste) for manufacturing scrap — consider 'brak' or 'skart' in quality context",
+    "Missing genitive particle: 'koha ciklit' (WRONG) vs 'koha e ciklit' (CORRECT)",
+    "Using informal 'ti' instead of formal 'Ju' in B2B software",
+    "Using 'aktual' for 'actual/real' instead of 'i vërtetë' or 'real'",
+    "Pluralizing the modifier in compound noun phrases: 'shkaqet e humbjeve të shpejtësisë' (WRONG — 'humbjeve' is genitive plural) instead of 'shkaqet e humbjes së shpejtësisë' (CORRECT — 'humbjes' is genitive singular). The modifier names the category; only the head noun takes plural"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": true,
+  "notes": "OEE (English) standard. Unique Indo-European language. Latin script with ë, ç. Formal 'Ju'. Postposed articles. Textile/garment industry dominant. P95 expansion 1.94x. Full term available for expansion."
+}

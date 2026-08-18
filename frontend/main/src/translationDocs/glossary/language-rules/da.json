@@ -1,0 +1,52 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] DS (Dansk Standard) — DS/ISO 22400-2:2014",
+    "[S1] DS-EN 13306 — Danish adoption of EN 13306",
+    "[S2] MADE (Manufacturing Academy of Denmark) — made.dk",
+    "[S2] Novotek Danmark — Danish OEE documentation",
+    "[S3] Dansk Lean Forum (videnpunkt.dk) — OEE terminology",
+    "[S3] Unbabel Danish Guidelines — 'du' is standard form",
+    "[S3] Microsoft Danish Localization Style Guide — informal 'du'",
+    "[S5] terms.json — Danish translations analyzed for consistency"
+  ],
+  "termSubstitutions": {},
+  "formality": "informal",
+  "pronounForm": "du",
+  "falseFriends": {
+    "actual": "Use 'virkelig' or 'faktisk', not 'aktuel' (which means 'current')",
+    "eventually": "Use 'til sidst', not 'eventuelt' (which means 'possibly')",
+    "billion": "Use 'milliard' (10^9), not 'billion' (which means 10^12)",
+    "performance": "'Ydeevne' = speed ratio in OEE, not general capability",
+    "station": "Use 'arbejdsstation' for workstation; 'station' means train/bus/police station",
+    "scrap": "Use 'spild' for quality rejects, not 'skrot' (metal recycling waste)",
+    "order": "Use 'arbejdsordre' for production orders, not 'ordre' (commercial order)",
+    "idle": "Use 'tomgang' or 'inaktiv', not 'doven' (lazy — pejorative)"
+  },
+  "grammarNotes": {
+    "compoundWords": "Danish forms compounds: 'cyklustid' (cycle time), 'nedetid' (downtime). Never split.",
+    "enEt": "Two genders with 'en' (common) and 'et' (neuter). Definite suffix: 'maskinen'/'skiftet'.",
+    "softD": "Danish pronunciation has swallowed consonants but writing is consistent.",
+    "numberFormatting": "Comma decimal, period/space thousands: '85,5%', '1.000 enheder'.",
+    "compoundPluralModifiers": "Danish compound words inherently use singular modifier stems. Compound formation handles modifier singularity by construction. No compound pluralization issue."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE acronym is used directly. Full Danish term: 'samlet udstyrseffektivitet'. No Danish equivalent of Swedish TAK.",
+    "dominantSectors": "Pharmaceuticals (Novo Nordisk), wind energy (Vestas), food (Danish Crown, Arla), pumps (Grundfos)",
+    "standardsUsed": [
+      "DS/ISO 22400-2:2014",
+      "DS-EN 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'De' instead of 'du' — 'De' is archaic in Danish; 'du' correct for all modern software",
+    "Using 'aktuel' for 'actual' instead of 'virkelig' or 'faktisk'",
+    "Splitting compound words: 'cykel tid' instead of 'cyklustid'",
+    "Using 'skrot' for production quality rejects instead of 'spild'",
+    "Wrong article (en vs et) for technical nouns",
+    "Using 'spild' ambiguously — in OEE context = quality rejects"
+  ],
+  "lengthMultiplier": 1.8,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is used; Danish workplace among most informal. 'du' is universal. P95 expansion 1.38x. Most compact Germanic language."
+}

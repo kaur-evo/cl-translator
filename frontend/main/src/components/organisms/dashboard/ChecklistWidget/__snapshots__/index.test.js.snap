@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistWidget > snapshots > renders chart state when API returns data 1`] = `
+<div
+  class="d-flex fill-height align-center justify-center"
+>
+  <div
+    class="fill-height full-width"
+  >
+    <div
+      class="fill-height full-width"
+      id="checklist-chart-0"
+    />
+    <small-placeholder-text-stub
+      primarytext="No data available"
+      secondarytext="Please check back later or edit settings"
+      style="display: none;"
+    />
+  </div>
+</div>
+`;
+
+exports[`ChecklistWidget > snapshots > renders loading state while fetching 1`] = `
+<div
+  class="d-flex fill-height align-center justify-center"
+>
+  <v-progress-circular-stub
+    color="primary"
+    indeterminate="true"
+    modelvalue="0"
+    reveal="false"
+    rotate="0"
+    rounded="false"
+    size="50"
+    tag="div"
+    width="4"
+  />
+</div>
+`;
+
+exports[`ChecklistWidget > snapshots > renders no data state when API returns empty results 1`] = `
+<div
+  class="d-flex fill-height align-center justify-center"
+>
+  <div
+    class="fill-height full-width"
+  >
+    <div
+      class="fill-height full-width"
+      id="checklist-chart-0"
+      style="display: none;"
+    />
+    <small-placeholder-text-stub
+      primarytext="No data available"
+      secondarytext="Please check back later or edit settings"
+    />
+  </div>
+</div>
+`;

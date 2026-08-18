@@ -1,0 +1,16 @@
+export default {
+  'above-target-scrap-qty': '#FFDAAF',
+  'above-target-technical-availability': '#0CCAE8',
+  'above-target-oee': '#CDCDCD',
+  'below-target-qty': '#D3ACE8',
+  'below-target-quality': '#FFDAAF',
+  'below-target-availability': '#B7FFD5',
+  'below-target-oee': '#666666',
+  'below-target-performance': '#FFFAE1',
+  'below-target-technical-availability': '#B3F1FB',
+  'improvement-above-target': '#90DA8B',
+  'improvement-below-target': '#51A162',
+  'dark-theme-grid-lines': 'rgba(255, 255, 255, 0.38)',
+  'graph-yellow': '#F1C40F',
+  'graph-blue': '#0066CC',
+};

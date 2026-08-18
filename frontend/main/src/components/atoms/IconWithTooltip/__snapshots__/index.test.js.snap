@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconWithTooltip > renders correctly 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-c9a9e819=""
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="top"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="false"
+  noclickanimation="false"
+  offset="10"
+  openonclick="true"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  text="string"
+  viewportmargin="12"
+  zindex="2000"
+/>
+`;

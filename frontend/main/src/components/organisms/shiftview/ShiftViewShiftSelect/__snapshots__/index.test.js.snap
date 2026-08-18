@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewShiftSelect > renders correctly 1`] = `
+<header-block-button-stub
+  data-v-275462fa=""
+  large="false"
+  title="Monday 20.01.2020 - Test shift"
+  titleclass="title"
+/>
+`;
+
+exports[`ShiftViewShiftSelect > renders correctly when compact is true 1`] = `
+<header-block-button-stub
+  data-v-275462fa=""
+  large="false"
+  title="M 20.01 - Test shift"
+  titleclass="title"
+/>
+`;
+
+exports[`ShiftViewShiftSelect > renders correctly when compactOffline is true and offline 1`] = `
+<header-block-button-stub
+  data-v-275462fa=""
+  large="false"
+  title="Monday 20.01.2020 - Test shift"
+  titleclass="title"
+/>
+`;
+
+exports[`ShiftViewShiftSelect > renders correctly when large is true 1`] = `
+<header-block-button-stub
+  data-v-275462fa=""
+  large="true"
+  title="Monday 20.01.2020 - Test shift"
+  titleclass="title"
+/>
+`;
+
+exports[`ShiftViewShiftSelect > renders correctly when offline 1`] = `
+<header-block-button-stub
+  data-v-275462fa=""
+  large="false"
+  title="Monday 20.01.2020 - Test shift"
+  titleclass="title"
+/>
+`;

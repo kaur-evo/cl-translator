@@ -1,0 +1,204 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`activityLogsHelpers > getEntitiesList > returns correct entities list if checklistsEnabled is false 1`] = `
+[
+  {
+    "id": "USER",
+    "name": "Users",
+  },
+  {
+    "id": "OPERATOR",
+    "name": "Operators",
+  },
+  {
+    "id": "STOP_REASON",
+    "name": "Stop reasons",
+  },
+  {
+    "id": "STOP_REASON_GROUP",
+    "name": "Stop groups",
+  },
+  {
+    "id": "SPEED_LOSS",
+    "name": "Speed loss reasons",
+  },
+  {
+    "id": "SPEED_LOSS_GROUP",
+    "name": "Speed loss groups",
+  },
+  {
+    "id": "SCRAP_REASON",
+    "name": "Scrap reasons",
+  },
+  {
+    "id": "SCRAP_REASON_GROUP",
+    "name": "Scrap groups",
+  },
+  {
+    "id": "STATION",
+    "name": "Stations",
+  },
+  {
+    "id": "STATION_GROUP",
+    "name": "Station groups",
+  },
+  {
+    "id": "POSITION",
+    "name": "Machine locations",
+  },
+  {
+    "id": "PRODUCT",
+    "name": "products",
+  },
+  {
+    "id": "PRODUCT_GROUP",
+    "name": "Product groups",
+  },
+  {
+    "id": "SHIFT",
+    "name": "Shifts",
+  },
+]
+`;
+
+exports[`activityLogsHelpers > getEntitiesList > returns correct entities list if checklistsEnabled is true 1`] = `
+[
+  {
+    "id": "USER",
+    "name": "Users",
+  },
+  {
+    "id": "OPERATOR",
+    "name": "Operators",
+  },
+  {
+    "id": "STOP_REASON",
+    "name": "Stop reasons",
+  },
+  {
+    "id": "STOP_REASON_GROUP",
+    "name": "Stop groups",
+  },
+  {
+    "id": "SPEED_LOSS",
+    "name": "Speed loss reasons",
+  },
+  {
+    "id": "SPEED_LOSS_GROUP",
+    "name": "Speed loss groups",
+  },
+  {
+    "id": "SCRAP_REASON",
+    "name": "Scrap reasons",
+  },
+  {
+    "id": "SCRAP_REASON_GROUP",
+    "name": "Scrap groups",
+  },
+  {
+    "id": "STATION",
+    "name": "Stations",
+  },
+  {
+    "id": "STATION_GROUP",
+    "name": "Station groups",
+  },
+  {
+    "id": "POSITION",
+    "name": "Machine locations",
+  },
+  {
+    "id": "PRODUCT",
+    "name": "products",
+  },
+  {
+    "id": "PRODUCT_GROUP",
+    "name": "Product groups",
+  },
+  {
+    "id": "SHIFT",
+    "name": "Shifts",
+  },
+  {
+    "id": "CHECKLIST",
+    "isHidden": false,
+    "name": "Checklists",
+  },
+  {
+    "id": "CHECKLIST_GROUP",
+    "isHidden": false,
+    "name": "Checklist groups",
+  },
+]
+`;
+
+exports[`activityLogsHelpers > getSVLogsEventsList > returns correct SV logs events list if checklistsEnabled is false 1`] = `
+[
+  {
+    "id": "BATCH",
+    "name": "Changeover",
+  },
+  {
+    "id": "DOWNTIME",
+    "name": "Downtime",
+  },
+  {
+    "id": "OPERATOR",
+    "name": "Operators",
+  },
+  {
+    "id": "SCRAP",
+    "name": "Scrap",
+  },
+  {
+    "id": "SHIFT",
+    "name": "Shift",
+  },
+  {
+    "id": "SIGNAL",
+    "name": "Signal",
+  },
+  {
+    "id": "SPEED_LOSS",
+    "name": "Speed loss",
+  },
+]
+`;
+
+exports[`activityLogsHelpers > getSVLogsEventsList > returns correct SV logs events list if checklistsEnabled is true 1`] = `
+[
+  {
+    "id": "BATCH",
+    "name": "Changeover",
+  },
+  {
+    "id": "CHECKLIST",
+    "isHidden": false,
+    "name": "Checklists",
+  },
+  {
+    "id": "DOWNTIME",
+    "name": "Downtime",
+  },
+  {
+    "id": "OPERATOR",
+    "name": "Operators",
+  },
+  {
+    "id": "SCRAP",
+    "name": "Scrap",
+  },
+  {
+    "id": "SHIFT",
+    "name": "Shift",
+  },
+  {
+    "id": "SIGNAL",
+    "name": "Signal",
+  },
+  {
+    "id": "SPEED_LOSS",
+    "name": "Speed loss",
+  },
+]
+`;

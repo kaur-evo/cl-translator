@@ -1,0 +1,69 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] SII (Standards Institution of Israel) — ISO founding member, national standards body",
+    "[S1] Academy of Hebrew Language (hebrew-academy.org.il) — 120,000+ terms across 240 dictionaries",
+    "[S2] SAP Israel — SAP Digital Manufacturing in Hebrew, OEE acronym used with Hebrew explanatory terms",
+    "[S2] Contel Technologies (contel.co.il) — Israel's leading MES provider, PharmaOEE, 150+ OEE lines",
+    "[S2] Matics Manufacturing Analytics (matics.live) — Israeli MES/OEE startup",
+    "[S3] Magma Group Israel (magmagroup.co.il) — OEE = 'OEE — יעילות כוללת של הציוד' pattern",
+    "[S3] Shtern Management Consultants — OEE/MES/TPM consulting, English acronyms in Hebrew content",
+    "[S3] Pisga Systems MES (pisgasys.co.il) — 'מדד OEE' (OEE metric) pattern",
+    "[S3] Coral Technologies, Smart Logic, ALD Reliability — Hebrew OEE resources",
+    "[S3] Lean-Agile Israel (lean.org.il) — TPM digital course using English TPM acronym",
+    "[S4] Hebrew Wikipedia — OEE article uses 'יעילות כוללת של הציוד' with OEE in Latin script",
+    "[S4] ManufacturingTerms.com Hebrew section — SPC defined in Hebrew",
+    "[S4] AnyMaint, New-Tech Online — Hebrew MTBF/MTTR articles using English acronyms",
+    "[S4] TAPI Blog — Hebrew OEE/KPI guide using English acronyms",
+    "[S4] Microsoft Hebrew Localization Style Guide (heb-isr-StyleGuide.pdf) — referenced",
+    "[S4] CLDR he-IL locale data — decimal dot (.), comma thousands separator (,)",
+    "[S5] Tomedes Hebrew localization guide — Hebrew UI/strings best practices",
+    "[S5] Globalization Partners Hebrew localization — Hebrew software internationalization guidelines",
+    "[S5] terms.json — 79 Hebrew translations analyzed for length multiplier calibration"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "אתם/אתן",
+  "falseFriends": {
+    "actual": "Use 'בפועל' (be-fo'al) or 'ממשי' (mamashi), not 'אקטואלי' (which means 'current/topical' from German/Yiddish)",
+    "performance": "Use 'ביצועים' (bitsue'im), not 'פרפורמנס' (arts/entertainment loanword — sounds unprofessional)",
+    "quality": "Use 'איכות' (eikhut), not 'קוואליטי' (informal slang meaning 'premium/good quality')",
+    "available": "Use 'זמין' (zamin) for equipment availability; 'פנוי' (panui) means free/unoccupied (for people/rooms)",
+    "setup": "Use 'הכנה' (preparation) or 'החלפת מוצר' (product changeover), not 'סטאפ' (software installation in Israeli hi-tech)",
+    "line": "Use 'קו ייצור' (production line) — bare 'קו' alone is ambiguous (geometric/queue/phone line)",
+    "idle": "Use 'סרק' (serak, idle running) or 'המתנה' (standby/waiting), not 'עצלן' (atslan, lazy — pejorative)",
+    "efficiency_vs_effectiveness": "'יעילות' covers both efficiency and effectiveness — in OEE context, 'יעילות כוללת' is established and correct"
+  },
+  "grammarNotes": {
+    "rtlScript": "RTL Hebrew script; Latin acronyms (OEE, KPI, MTTR) maintain LTR via Unicode BiDi. 'ה-OEE' connects Hebrew article to Latin acronym with hyphen.",
+    "genderAgreement": "Two genders. 'זמינות גבוהה' (high availability, f+f). 'ביצועים גבוהים' (high performance, m.pl). Mismatched gender immediately visible to native speakers.",
+    "constructState": "Compound nouns via construct state (סמיכות): 'זמן מחזור' (cycle time), 'סיבת עצירה' (stop reason). Preferred over 'של' for technical terms.",
+    "noNiqqud": "Professional Hebrew does NOT use niqqud (vowel marks). Adding niqqud looks patronizing.",
+    "numberFormatting": "Decimal: period (.). Thousands: comma (,). '85%' (no space). Israel follows Anglo-American convention. Numbers in Arabic numerals, never Hebrew numerals.",
+    "compoundPluralModifiers": "In construct state (סמיכות) compounds, the modifier (סומך) stays SINGULAR while the head noun (נסמך) takes plural. 'סיבות אובדן מהירות' (reasons [pl.construct] + loss [sg] + speed) is correctly formed. No compound pluralization issue — correct by construct state rules."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE (Latin) universal in Israeli manufacturing. Use 'מדד ה-OEE' in Hebrew text. Full: 'יעילות כוללת של הציוד' for tooltips/docs only.",
+    "preferAcronym": true,
+    "hebrewFullTerm": "יעילות כוללת של הציוד",
+    "usagePattern": {
+      "uiLabels": "OEE",
+      "tooltips": "OEE - יעילות כוללת של הציוד",
+      "documentation": "OEE (יעילות כוללת של הציוד) on first mention"
+    },
+    "dominantSectors": "Semiconductors (Intel, Tower), medical devices, pharmaceuticals (Teva), defense/aerospace (IAI, Elbit), food & beverage",
+    "dominantVendors": "Contel Technologies/Trunovate (leading Israeli MES), SAP (via Malam Team), Matics, Priority Software"
+  },
+  "commonMistakes": [
+    "Using full Hebrew term 'יעילות כוללת של הציוד' in UI labels instead of 'OEE'",
+    "Gender agreement errors: 'זמינות גבוה' (wrong) vs 'זמינות גבוהה' (correct) — f noun needs f adjective",
+    "Using 'פרפורמנס' (entertainment) instead of 'ביצועים' for manufacturing performance",
+    "Using 'אקטואלי' (current/topical) instead of 'בפועל' for actual/measured values",
+    "Incorrect scrap terminology: 'סיבת ברק' means 'lightning reason' — should be 'סיבת פסולת' or 'סיבת פחת'",
+    "Missing hyphen in 'ה-OEE' — should connect Hebrew definite article to Latin acronym",
+    "Adding niqqud to professional manufacturing text"
+  ],
+  "lengthMultiplier": 1.2,
+  "acronymExpansionAllowed": true,
+  "notes": "OEE (Latin) universal in Israeli manufacturing. Hebrew is typically SHORTER than English (P95 1.25x). Unicode BiDi handles RTL/LTR mixing. Formal pronouns but Hebrew lacks Sie/vous distinction. Full Hebrew term available for expansion in tooltips."
+}

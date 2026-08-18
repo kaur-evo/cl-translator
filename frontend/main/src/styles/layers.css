@@ -1,0 +1,4 @@
+/* Explicit CSS layer order declaration.
+   Must be imported BEFORE vuetify/styles or any component styles.
+   The first @layer statement encountered by the browser locks the order. */
+@layer vuetify-core, vuetify-components, vuetify-utilities, vuetify-final, vuetify-overrides;

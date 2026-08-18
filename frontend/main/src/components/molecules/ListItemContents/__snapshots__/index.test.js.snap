@@ -1,0 +1,92 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListItemContents > renders correctly 1`] = `
+<v-lazy-stub
+  class="text-truncate row"
+  modelvalue="false"
+  options="[object Object]"
+  tag="div"
+  transition="fade-transition"
+>
+  <div
+    class="d-flex flex-nowrap align-center"
+  >
+    <!-- prepend part -->
+    <div
+      class="d-flex"
+    >
+      
+      <list-item-checkbox-stub
+        class="mr-2"
+        dark="false"
+        disabled="true"
+        error="true"
+        indeterminate="false"
+        issingleselect="false"
+        value="true"
+      />
+      <!--v-if-->
+      <!--v-if-->
+      <v-list-item-action-stub
+        class="ml-1 mr-3 my-0"
+        end="false"
+        start="false"
+        tag="div"
+      >
+        <span
+          class="fill-height align-center"
+        >
+          <evocon-flag-icon-stub
+            addborder="true"
+            flagcountrycode="string"
+            rounded="false"
+            squared="false"
+          />
+        </span>
+      </v-list-item-action-stub>
+      
+    </div>
+    <!-- main content -->
+    <div
+      class="overflow-hidden"
+    >
+      <evocon-v-tooltip-wrap-stub
+        disabled="true"
+        internal-activator="true"
+        location="top"
+        model-value="false"
+        opendelay="500"
+        text="string"
+      />
+      <v-list-item-subtitle-stub
+        class="text-body-small text-secondary-text"
+        tag="div"
+      >
+        <text-highlight-stub
+          dark="false"
+          highlight=""
+          text="string"
+        />
+      </v-list-item-subtitle-stub>
+    </div>
+    
+    
+    <!-- append part/tertiary -->
+    <div
+      class="mr-0 ml-auto"
+    >
+      <span
+        class="text-body-small text-secondary-text"
+      >
+        <text-highlight-stub
+          dark="false"
+          highlight=""
+          text="string"
+        />
+      </span>
+      
+      
+    </div>
+  </div>
+</v-lazy-stub>
+`;

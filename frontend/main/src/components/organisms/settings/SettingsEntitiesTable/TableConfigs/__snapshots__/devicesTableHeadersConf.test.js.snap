@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`devicesTableHeadersConf > creates table conf 1`] = `
+[
+  {
+    "isBold": true,
+    "isFixed": true,
+    "text": "Serial number",
+    "textKey": "serialNumber",
+    "value": "serialNumber",
+  },
+  {
+    "formatFn": [Function],
+    "isBold": true,
+    "prependIcon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+    "prependIconColor": [Function],
+    "prependIconSize": 9,
+    "secondaryTextClass": "text-body-small",
+    "secondaryTextKey": "lastOnline",
+    "text": "Status",
+    "textKey": "status",
+    "tooltipTextKey": "lastOnline",
+  },
+  {
+    "class": [Function],
+    "text": [Function],
+    "textKey": "input1",
+  },
+  {
+    "class": [Function],
+    "text": [Function],
+    "textKey": "input2",
+  },
+  {
+    "class": [Function],
+    "text": [Function],
+    "textKey": "input3",
+  },
+  {
+    "class": [Function],
+    "text": [Function],
+    "textKey": "input4",
+  },
+  {
+    "classes": "py-2",
+    "noTruncation": true,
+    "text": "Description",
+    "textKey": "description",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;

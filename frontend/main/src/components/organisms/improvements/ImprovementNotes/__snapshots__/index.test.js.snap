@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementNotes > renders empty state correctly for user with edit rights 1`] = `
+<empty-view-stub
+  data-v-4d270213=""
+  description="Add notes to document the improvement journey."
+  descriptionrows=""
+  header="No notes added"
+  id="improvement-notes-empty-view"
+  imgurl="notes"
+  imgwidth=""
+  primarybtn="Note"
+  primarybtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+  secondarybtn=""
+  secondarybtncolor=""
+  secondarybtnicon=""
+  small="false"
+  tertiarybtn=""
+  tertiarybtnicon=""
+/>
+`;
+
+exports[`ImprovementNotes > renders empty state correctly for user without edit rights 1`] = `
+<empty-view-stub
+  data-v-4d270213=""
+  description=""
+  descriptionrows=""
+  header="No notes added"
+  id="improvement-notes-empty-view"
+  imgurl="notes"
+  imgwidth=""
+  primarybtn=""
+  primarybtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+  secondarybtn=""
+  secondarybtncolor=""
+  secondarybtnicon=""
+  small="false"
+  tertiarybtn=""
+  tertiarybtnicon=""
+/>
+`;

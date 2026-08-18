@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewMain > renders correctly 1`] = `
+<div
+  class="flex-column shift-view d-flex"
+  data-v-da00080f=""
+>
+  <!--v-if-->
+  <div
+    class="flex-shrink-1 flex-grow-0 pa-1 header-container"
+    data-v-da00080f=""
+  >
+    <header-layout-stub
+      data-v-da00080f=""
+      status="online"
+    />
+    <selection-header-stub
+      data-v-da00080f=""
+    />
+  </div>
+  <v-col-stub
+    class="flex-grow-1 flex-shrink-0 pa-0 overflow-container"
+    cols="false"
+    data-v-da00080f=""
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <shift-timeline-stub
+      class="dark-theme-scrollbar"
+      data-v-da00080f=""
+      id="shiftview-timeline"
+      requireoperator="true"
+    />
+  </v-col-stub>
+  <shift-view-footer-menu-stub
+    data-v-da00080f=""
+    requireoperator="true"
+    unreadmessagescount="0"
+  />
+  <message-notification-stub
+    data-v-da00080f=""
+    description=""
+    newmessagescount="0"
+    style="margin-bottom: 8px;"
+  />
+  <checklist-notification-stub
+    data-v-da00080f=""
+  />
+  <evocon-v-snackbar-stub
+    class="mb-14"
+    data-v-da00080f=""
+    description=""
+    icon=""
+    label="Device(s) offline"
+    location="bottom center"
+    model-value="false"
+    timeout="-1"
+    type="error"
+  />
+  <shift-notification-stub
+    data-v-da00080f=""
+  />
+  <shiftview-selection-popover-stub
+    data-v-da00080f=""
+  />
+</div>
+`;

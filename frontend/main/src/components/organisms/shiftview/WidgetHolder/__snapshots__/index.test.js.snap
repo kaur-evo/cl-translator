@@ -1,0 +1,135 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WidgetHolder > renders correctly 1`] = `
+<div
+  class="bg-black rounded d-flex flex-column overflow-hidden pa-2"
+  data-v-e384f9da=""
+>
+  
+  <div
+    class="d-flex align-center"
+    data-v-e384f9da=""
+  >
+    <div
+      class="tabs-flex-wrapper"
+      data-v-e384f9da=""
+    >
+      <widget-tabs-row-stub
+        backgroundcolor="black"
+        dark="true"
+        data-v-e384f9da=""
+        height="33"
+        modelvalue="0"
+        showarrows="true"
+        sizeclass=""
+        widgetslist="[object Object],[object Object]"
+      />
+    </div>
+    <!--v-if-->
+  </div>
+  <widget-renderer-stub
+    data-v-e384f9da=""
+    large="false"
+    valueclass=""
+    widget="[object Object]"
+    widgetkey="0"
+  />
+  
+</div>
+`;
+
+exports[`WidgetHolder > renders correctly if loading prop is true 1`] = `
+<div
+  class="bg-black rounded d-flex flex-column overflow-hidden"
+  data-v-e384f9da=""
+>
+  <shift-view-skeleton-loader-stub
+    data-v-e384f9da=""
+  />
+</div>
+`;
+
+exports[`WidgetHolder > renders correctly if openInBottomSheet prop is true 1`] = `
+<div
+  class="bg-black rounded d-flex flex-column overflow-hidden pa-2"
+  data-v-e384f9da=""
+>
+  
+  <div
+    class="d-flex align-center"
+    data-v-e384f9da=""
+  >
+    <div
+      class="tabs-flex-wrapper"
+      data-v-e384f9da=""
+    >
+      <widget-tabs-row-stub
+        backgroundcolor="black"
+        dark="true"
+        data-v-e384f9da=""
+        height="33"
+        modelvalue="0"
+        showarrows="true"
+        sizeclass=""
+        widgetslist="[object Object],[object Object]"
+      />
+    </div>
+    <evocon-v-button-stub
+      color="white"
+      data-v-e384f9da=""
+      icon="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z"
+      iconcolor=""
+      size="small"
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <widget-renderer-stub
+    data-v-e384f9da=""
+    large="false"
+    valueclass=""
+    widget="[object Object]"
+    widgetkey="0"
+  />
+  
+</div>
+`;
+
+exports[`WidgetHolder > renders correctly with large prop 1`] = `
+<div
+  class="bg-black rounded d-flex flex-column overflow-hidden pa-4"
+  data-v-e384f9da=""
+>
+  
+  <div
+    class="d-flex align-center"
+    data-v-e384f9da=""
+  >
+    <div
+      class="tabs-flex-wrapper"
+      data-v-e384f9da=""
+    >
+      <widget-tabs-row-stub
+        backgroundcolor="black"
+        dark="true"
+        data-v-e384f9da=""
+        height="44"
+        modelvalue="0"
+        showarrows="true"
+        sizeclass="text-headline-small"
+        widgetslist="[object Object],[object Object]"
+      />
+    </div>
+    <!--v-if-->
+  </div>
+  <widget-renderer-stub
+    data-v-e384f9da=""
+    large="true"
+    valueclass=""
+    widget="[object Object]"
+    widgetkey="0"
+  />
+  
+</div>
+`;

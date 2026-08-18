@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeaderLayout > renders correctly if screen size is mdAndUp 1`] = `
+<shift-view-large-header-stub
+  status="online"
+/>
+`;
+
+exports[`HeaderLayout > renders correctly if screen size is not mdAndUp 1`] = `
+<shift-view-small-header-stub
+  status="online"
+/>
+`;
+
+exports[`HeaderLayout > renders correctly in XXL view 1`] = `
+<shift-view-extra-large-header-stub
+  status="online"
+/>
+`;
+
+exports[`HeaderLayout > renders correctly in mobile portrait 1`] = `
+<shift-view-extra-small-header-stub
+  status="online"
+/>
+`;

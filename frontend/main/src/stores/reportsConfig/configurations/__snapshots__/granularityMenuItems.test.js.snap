@@ -1,0 +1,70 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`granularityMenuItems > if getExtendedGranularityMenu returns expected configuration snapshot 1`] = `
+[
+  {
+    "text": "Day",
+    "value": "date",
+  },
+  {
+    "text": "Weekday",
+    "value": "dayofweek",
+  },
+  {
+    "text": "Weekofyear",
+    "value": "weekofyear",
+  },
+  {
+    "text": "Month",
+    "value": "month",
+  },
+  {
+    "text": "Quarter",
+    "value": "quarter",
+  },
+  {
+    "text": "Year",
+    "value": "year",
+  },
+  {
+    "text": "Total",
+    "value": "total",
+  },
+]
+`;
+
+exports[`granularityMenuItems > if getExtraGranularityItem returns expected configuration snapshot 1`] = `
+{
+  "text": "Timeline",
+  "value": "starttime",
+}
+`;
+
+exports[`granularityMenuItems > if getGranularityMenu returns expected configuration snapshot 1`] = `
+[
+  {
+    "text": "Day",
+    "value": "date",
+  },
+  {
+    "text": "Weekday",
+    "value": "dayofweek",
+  },
+  {
+    "text": "Weekofyear",
+    "value": "weekofyear",
+  },
+  {
+    "text": "Month",
+    "value": "month",
+  },
+  {
+    "text": "Quarter",
+    "value": "quarter",
+  },
+  {
+    "text": "Year",
+    "value": "year",
+  },
+]
+`;

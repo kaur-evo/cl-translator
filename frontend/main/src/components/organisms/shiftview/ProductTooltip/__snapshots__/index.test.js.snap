@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductTooltip > renders correctly as scrap signal tooltip 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  contentclass="bg-black"
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="top"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="true"
+  noclickanimation="false"
+  offset="10"
+  offset-overflow=""
+  openonclick="false"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  target="NaN,"
+  viewportmargin="12"
+  zindex="2000"
+>
+  <evocon-v-tooltip-stub
+    iconcolor="lw-orange"
+    rows="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    title="test scrap reason"
+    titleicon=""
+    titleiconcolor="white"
+    type="Scrap"
+  />
+</v-tooltip-stub>
+`;
+
+exports[`ProductTooltip > renders correctly as usual signal tooltip 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  contentclass="bg-black"
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="top"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="true"
+  noclickanimation="false"
+  offset="10"
+  offset-overflow=""
+  openonclick="false"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  target="NaN,"
+  viewportmargin="12"
+  zindex="2000"
+>
+  <evocon-v-tooltip-stub
+    iconcolor="grey"
+    rows="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    title="test product (test sku)"
+    titleicon=""
+    titleiconcolor="white"
+    type="Production signal"
+  />
+</v-tooltip-stub>
+`;

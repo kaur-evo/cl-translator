@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResponsiveConditionBlock > renders correctly in mobile view 1`] = `
+<v-expansion-panels-stub
+  collapseicon="$collapse"
+  data-v-ea5df706=""
+  disabled="false"
+  eager="true"
+  expandicon="$expand"
+  flat="false"
+  focusable="false"
+  hideactions="false"
+  mandatory="false"
+  multiple="false"
+  ripple="false"
+  static="false"
+  tag="div"
+  tile="false"
+  variant="default"
+>
+  <v-expansion-panel-stub
+    collapseicon="$collapse"
+    data-v-ea5df706=""
+    disabled="false"
+    eager="false"
+    expandicon="$expand"
+    focusable="false"
+    hideactions="false"
+    ripple="false"
+    static="false"
+    tag="div"
+    tile="false"
+  >
+    <v-expansion-panel-title-stub
+      collapseicon="$collapse"
+      data-v-ea5df706=""
+      expandicon="$expand"
+      focusable="false"
+      height="48px"
+      hideactions="false"
+      minheight="48px"
+      ripple="false"
+      static="false"
+    >
+      
+      
+    </v-expansion-panel-title-stub>
+    <v-expansion-panel-text-stub
+      class="expansion-panel-text"
+      data-v-ea5df706=""
+      eager="false"
+    >
+      <div
+        class="d-grid"
+        data-v-ea5df706=""
+      >
+        
+        
+      </div>
+    </v-expansion-panel-text-stub>
+  </v-expansion-panel-stub>
+</v-expansion-panels-stub>
+`;
+
+exports[`ResponsiveConditionBlock > renders correctly in not mobile view 1`] = `
+<div
+  data-v-ea5df706=""
+>
+  <div
+    class="d-flex align-center mb-2 mx-2"
+    data-v-ea5df706=""
+  >
+    
+    
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-3 py-1 d-flex align-center flex-wrap"
+    data-v-ea5df706=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    
+    
+  </v-card-stub>
+</div>
+`;

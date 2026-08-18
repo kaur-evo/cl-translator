@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DeniedView > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <div
+    class="bg-primary-dark fill-height d-flex flex-column justify-center align-center px-8"
+  >
+    <img
+      alt="denied"
+      src="/src/assets/images/denied.svg"
+      width="510px"
+    />
+    <span
+      class="mt-6 text-align-center"
+    >
+      Sorry, you do not have permission to view this page.
+    </span>
+  </div>
+  
+</div>
+`;
+
+exports[`DeniedView > renders correctly in mobile 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <div
+    class="bg-primary-dark fill-height d-flex flex-column justify-center align-center px-8"
+  >
+    <img
+      alt="denied"
+      src="/src/assets/images/denied.svg"
+      width="100%"
+    />
+    <span
+      class="mt-6 text-align-center"
+    >
+      Sorry, you do not have permission to view this page.
+    </span>
+  </div>
+  
+</div>
+`;

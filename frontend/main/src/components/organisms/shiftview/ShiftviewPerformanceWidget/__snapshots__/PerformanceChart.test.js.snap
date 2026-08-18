@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PerformanceChart > renders correctly 1`] = `
+<div
+  class="fill-height"
+>
+  <div
+    class="fill-height"
+    id="performance-test"
+  />
+</div>
+`;
+
+exports[`PerformanceChart > should return tooltip template correctly 1`] = `
+"
+        <div class="row align-center">
+          <v-col>
+            <div class="d-flex align-center ml-n2">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 24 24"
+    style="width: 24px; height: 24px; display: inline-flex; margin:undefined"
+    role="img" 
+    aria-hidden="true" 
+    class="v-icon__svg undefined">
+    <g fill="red">
+      <path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+    </g>
+    </svg><span class="text-label-small">Measure</span></div>
+            <div class="text-body-medium font-weight-medium">100 {unit}_PER_MINUTE</div>
+            
+        <div class="text-label-small font-weight-regular d-flex">
+          <span class="text-tertiary-dark font-weight-medium">Target:</span>
+          <span class="text-body-small font-weight-medium text-none">200 {unit}_PER_MINUTE</span>
+        </div>
+            
+        <div class="text-label-small font-weight-regular d-flex">
+          <span class="text-tertiary-dark font-weight-medium">Product:</span>
+          <span class="text-body-small font-weight-medium text-none">Product</span>
+        </div>
+          </v-col>
+        </div>"
+`;

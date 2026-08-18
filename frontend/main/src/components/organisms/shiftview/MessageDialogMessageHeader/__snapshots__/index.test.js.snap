@@ -1,0 +1,263 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MessageDialogMessageHeader > renders correctly 1`] = `
+<v-row-stub
+  class="pl-4"
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <div
+      class="pr-0 d-flex align-center max-width-100 overflow-hidden"
+    >
+      <v-avatar-stub
+        badge="false"
+        border="false"
+        class="mr-2 my-0 justify-center"
+        color="grey"
+        density="default"
+        end="false"
+        size="40"
+        start="false"
+        tag="div"
+        tile="false"
+        variant="flat"
+      >
+        <span
+          class="text-white font-weight-medium"
+        >
+          P
+        </span>
+      </v-avatar-stub>
+      <span
+        class="font-weight-medium white-space-nowrap flex-grow-0 flex-shrink-1 overflow-hidden text-overflow-ellipsis text-body-large"
+      >
+        subject
+      </span>
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="quaternary-dark"
+        icon="M5.12,5L5.93,4H17.93L18.87,5M12,17.5L6.5,12H10V10H14V12H17.5L12,17.5M20.54,5.23L19.15,3.55C18.88,3.21 18.47,3 18,3H6C5.53,3 5.12,3.21 4.84,3.55L3.46,5.23C3.17,5.57 3,6 3,6.5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V6.5C21,6 20.83,5.57 20.54,5.23Z"
+        iconcolor=""
+        text="Archive"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </v-col-stub>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="message-email-chip my-4"
+      dark="false"
+      disabled="true"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="paricipant"
+      size="default"
+      type="neutral"
+      value="paricipant"
+    />
+    <!--v-if-->
+    
+  </v-col-stub>
+</v-row-stub>
+`;
+
+exports[`MessageDialogMessageHeader > renders correctly if it is new message 1`] = `
+<v-row-stub
+  class="pl-4"
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <evocon-v-input-stub
+      class="mb-2"
+      density="default"
+      error-messages="string"
+      filled="true"
+      grow="false"
+      hint="Subject"
+      maxlength="100"
+      modelvalue=""
+      placeholder="Subject"
+      truncateinput="false"
+      type="text"
+      usechip="false"
+    />
+  </v-col-stub>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <selection-input-stub
+      checkbox="true"
+      coloractiveprepend="false"
+      dark="false"
+      disabled="false"
+      disabledvalues=""
+      emittoggleall="false"
+      emptyequalsallselected="false"
+      error="false"
+      filled="true"
+      groupidkey="id"
+      groups=""
+      groupsorderby="name"
+      hiddenitemscount="0"
+      hidesearch="true"
+      hint="Recipients"
+      inverted="false"
+      isgroupedselect="false"
+      issingleselect="false"
+      itemflag=""
+      itemgroupidkey="groupId"
+      items="[object Object],[object Object]"
+      itemsecondarytext=""
+      itemtertiarytext=""
+      itemtext="name"
+      itemvalue="name"
+      loading="false"
+      menuinputtype="primary"
+      modelvalue="paricipant"
+      numericorderby="false"
+      placeholder="Recipients"
+      prependtext=""
+      removenonexistentselections="false"
+      required="true"
+      showemptyarrayasallselected="false"
+      someselected="false"
+      totalcount="0"
+      usechips="false"
+    />
+  </v-col-stub>
+</v-row-stub>
+`;
+
+exports[`MessageDialogMessageHeader > renders correctly in mobile 1`] = `
+<v-row-stub
+  class=""
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <div
+      class="pr-0 d-flex align-center max-width-100 overflow-hidden pl-0"
+    >
+      <v-avatar-stub
+        badge="false"
+        border="false"
+        class="mr-2 my-0 justify-center"
+        color="grey"
+        density="default"
+        end="false"
+        size="36"
+        start="false"
+        tag="div"
+        tile="false"
+        variant="flat"
+      >
+        <span
+          class="text-white font-weight-medium"
+        >
+          P
+        </span>
+      </v-avatar-stub>
+      <span
+        class="font-weight-medium white-space-nowrap flex-grow-0 flex-shrink-1 overflow-hidden text-overflow-ellipsis text-body-medium"
+      >
+        subject
+      </span>
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color=""
+        icon="M5.12,5L5.93,4H17.93L18.87,5M12,17.5L6.5,12H10V10H14V12H17.5L12,17.5M20.54,5.23L19.15,3.55C18.88,3.21 18.47,3 18,3H6C5.53,3 5.12,3.21 4.84,3.55L3.46,5.23C3.17,5.57 3,6 3,6.5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V6.5C21,6 20.83,5.57 20.54,5.23Z"
+        iconcolor=""
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </v-col-stub>
+  <v-col-stub
+    cols="12"
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="message-email-chip my-4"
+      dark="false"
+      disabled="true"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="paricipant"
+      size="small"
+      type="neutral"
+      value="paricipant"
+    />
+    <!--v-if-->
+    
+  </v-col-stub>
+</v-row-stub>
+`;

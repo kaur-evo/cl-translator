@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MessageDialogMessageTemplate > renders correctly 1`] = `
+<div
+  class="d-flex flex-column justify-space-between"
+  data-v-afb09d07=""
+>
+  <div
+    data-v-afb09d07=""
+  >
+    <message-dialog-message-header-stub
+      data-v-afb09d07=""
+      message="[object Object]"
+    />
+    <div
+      class="thread-messages"
+      data-v-afb09d07=""
+    >
+      
+      
+    </div>
+  </div>
+  <evocon-v-textarea-stub
+    class="ml-4 mt-2"
+    data-v-afb09d07=""
+    disabled="false"
+    loading="false"
+    maxlength="500"
+    modelvalue=""
+    placeholder="Message"
+    rows="8"
+  />
+</div>
+`;
+
+exports[`MessageDialogMessageTemplate > renders correctly in mobile 1`] = `
+<div
+  class="d-flex flex-column justify-space-between"
+  data-v-afb09d07=""
+>
+  <div
+    data-v-afb09d07=""
+  >
+    <message-dialog-message-header-stub
+      data-v-afb09d07=""
+      message="[object Object]"
+    />
+    <div
+      class="thread-messages thread-messages--mobile"
+      data-v-afb09d07=""
+    >
+      
+      
+    </div>
+  </div>
+  <evocon-v-textarea-stub
+    class="mt-2"
+    data-v-afb09d07=""
+    disabled="false"
+    loading="false"
+    maxlength="500"
+    modelvalue=""
+    placeholder="Message"
+    rows="2"
+  />
+</div>
+`;
+
+exports[`MessageDialogMessageTemplate > renders correctly in tablet 1`] = `
+<div
+  class="d-flex flex-column justify-space-between"
+  data-v-afb09d07=""
+>
+  <div
+    data-v-afb09d07=""
+  >
+    <message-dialog-message-header-stub
+      data-v-afb09d07=""
+      message="[object Object]"
+    />
+    <div
+      class="thread-messages thread-messages--tablet"
+      data-v-afb09d07=""
+    >
+      
+      
+    </div>
+  </div>
+  <evocon-v-textarea-stub
+    class="ml-4 mt-2"
+    data-v-afb09d07=""
+    disabled="false"
+    loading="false"
+    maxlength="500"
+    modelvalue=""
+    placeholder="Message"
+    rows="8"
+  />
+</div>
+`;

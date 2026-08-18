@@ -1,0 +1,89 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PinTooltip > snapshots > renders correctly for changeover pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="#0099FF"
+  rows="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  title="test product (SKU)"
+  titleicon=""
+  titleiconcolor="white"
+  type="Changeover"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for missed checklist pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="#E01C21"
+  rows="[object Object],[object Object],[object Object],[object Object]"
+  title="Safety assessment"
+  titleicon=""
+  titleiconcolor="white"
+  type="Missed"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for new checklist pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="#303030"
+  rows="[object Object],[object Object],[object Object],[object Object]"
+  title="Safety assessment"
+  titleicon=""
+  titleiconcolor="white"
+  type="New"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for random type pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor=""
+  rows=""
+  title=""
+  titleicon=""
+  titleiconcolor="white"
+  type=""
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for successful checklist pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="primary"
+  rows="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  title="test refresh CL"
+  titleicon=""
+  titleiconcolor="white"
+  type="Successful"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for target pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="#0099FF"
+  rows="[object Object],[object Object]"
+  title=""
+  titleicon=""
+  titleiconcolor="white"
+  type="Target reached"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for team pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="primary"
+  rows="[object Object],[object Object]"
+  title="operator 1, operator 2"
+  titleicon=""
+  titleiconcolor="white"
+  type="Team"
+/>
+`;
+
+exports[`PinTooltip > snapshots > renders correctly for unsuccessful checklist pin 1`] = `
+<evocon-v-tooltip-stub
+  iconcolor="#F28A0D"
+  rows="[object Object],[object Object],[object Object],[object Object],[object Object]"
+  title="test refresh CL"
+  titleicon=""
+  titleiconcolor="white"
+  type="Unsuccessful"
+/>
+`;

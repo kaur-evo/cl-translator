@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SingleSelectList > renders correctly 1`] = `
+<div
+  class="v-list v-theme--light v-list--density-default v-list--one-line"
+  role="list"
+  tabindex="0"
+>
+  
+  
+  <div
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text"
+    role="listitem"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="v-lazy text-truncate row"
+      >
+        <!---->
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text"
+    role="listitem"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="v-lazy text-truncate row"
+      >
+        <!---->
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text"
+    role="listitem"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="v-lazy text-truncate row"
+      >
+        <!---->
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text"
+    role="listitem"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="v-lazy text-truncate row"
+      >
+        <!---->
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  
+  
+</div>
+`;

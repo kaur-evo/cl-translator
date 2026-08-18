@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FilterBarFilter > renders correctly 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  contentclass="d-none"
+  data-v-dcdea37c=""
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="top"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="false"
+  noclickanimation="false"
+  offset="10"
+  openonclick="false"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  text="undefined "
+  viewportmargin="12"
+  zindex="2000"
+/>
+`;
+
+exports[`FilterBarFilter > renders correctly with factories multiselect 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  contentclass="d-none"
+  data-v-dcdea37c=""
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="top"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="false"
+  noclickanimation="false"
+  offset="10"
+  openonclick="false"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  text="Factories: "
+  viewportmargin="12"
+  zindex="2000"
+/>
+`;

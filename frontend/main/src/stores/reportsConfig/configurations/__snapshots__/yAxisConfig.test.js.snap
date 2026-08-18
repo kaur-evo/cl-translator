@@ -1,0 +1,328 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CHECKLIST > for yAxis value > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis entityCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type CUSTOM_REPORT > for yAxis value > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type DOWNTIME > for yAxis value > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis duration > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis productionCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis something else > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type OEE > for yAxis value > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis entityCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis productionCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type PRODUCTION_SPEED > for yAxis value > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis duration > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis productionCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis something else > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type QUANTITY > for yAxis value > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SCRAPREASON > for yAxis value > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis duration > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis entityCount > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type SPEEDLOSS > for yAxis value > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis avgDurationVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis avgTimeVal > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis duration > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleTime",
+}
+`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis entityCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis entityPctPlannedTime > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis productionCount > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis productionTimeDt > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis something else > returns expected configuration snapshot 1`] = `"case not defined"`;
+
+exports[`yAxisConfig > for configuration type TIME_USAGE > for yAxis value > returns expected configuration snapshot 1`] = `
+{
+  "yScaleFormat": [Function],
+  "yScaleType": "scaleLinear",
+}
+`;

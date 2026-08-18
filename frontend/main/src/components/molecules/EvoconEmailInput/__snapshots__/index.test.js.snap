@@ -1,0 +1,55 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconEmailInput > renders correctly 1`] = `
+<evocon-multi-chip-input-stub
+  chiptype="String"
+  chipvalidationfn="[Function]"
+  density="default"
+  disabled="false"
+  error="false"
+  hint="Emails"
+  limit="0"
+  modelvalue=""
+  placeholder="placeholder"
+  required="false"
+  showorderingnumbers="false"
+  validate="true"
+  wrapchips="false"
+/>
+`;
+
+exports[`EvoconEmailInput > renders correctly with invalid input 1`] = `
+<evocon-multi-chip-input-stub
+  chiptype="String"
+  chipvalidationfn="[Function]"
+  density="default"
+  disabled="false"
+  error="true"
+  hint="Emails"
+  limit="0"
+  modelvalue="valid@email.com,invalid-email"
+  placeholder="placeholder"
+  required="false"
+  showorderingnumbers="false"
+  validate="true"
+  wrapchips="false"
+/>
+`;
+
+exports[`EvoconEmailInput > renders correctly with valid input 1`] = `
+<evocon-multi-chip-input-stub
+  chiptype="String"
+  chipvalidationfn="[Function]"
+  density="default"
+  disabled="false"
+  error="false"
+  hint="Emails"
+  limit="0"
+  modelvalue="adss@das.ee,asdsttt@test.com"
+  placeholder="placeholder"
+  required="false"
+  showorderingnumbers="false"
+  validate="true"
+  wrapchips="false"
+/>
+`;

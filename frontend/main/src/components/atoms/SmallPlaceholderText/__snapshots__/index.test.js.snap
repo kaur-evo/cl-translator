@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SmallPlaceholderText > renders correctly 1`] = `
+<div
+  class="fill-height small-placeholder-text"
+  data-v-9faa08a8=""
+>
+  <div
+    class="d-flex flex-grow-1 justify-center align-center"
+    data-v-9faa08a8=""
+  >
+    <div
+      class="text-center"
+      data-v-9faa08a8=""
+    >
+      <div
+        class="text-uppercase"
+        data-v-9faa08a8=""
+      >
+        Primary text
+      </div>
+      <div
+        class="text-body-medium mt-2"
+        data-v-9faa08a8=""
+      >
+        Secondary text that is somewhat longer
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OeePercentageValue > renders correctly 1`] = `
+<div
+  class="text-no-wrap max-width-100 overflow-hidden value-class"
+>
+  60,87%
+</div>
+`;

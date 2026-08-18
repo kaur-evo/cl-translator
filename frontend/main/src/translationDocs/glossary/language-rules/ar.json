@@ -1,0 +1,69 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] GCC Standardization Organization (GSO) — GSO ISO 22400-2:2015 confirmed adoption (manufacturing KPI standard)",
+    "[S1] SASO (Saudi Standards, Metrology and Quality Organization) — ISO/IEC member since 1972; national standards body for Saudi Arabia",
+    "[S1] EOS (Egyptian Organization for Standardization and Quality) — ISO member, ~80% ISO harmonization",
+    "[S2] SAP MENA — Arabic localization confirmed for S/4HANA; OEE MES terminology not publicly accessible",
+    "[S3] CS-ERP Systems (cserps.com/cs-oee) — Arabic OEE page, English acronym, Arabic component terms confirmed",
+    "[S3] Focuser Academy (focuseracademy.com) — Arabic OEE training, english_dominant confirmed",
+    "[S3] OMDIIC Training (omdiic.com) — Arabic OEE course, english_dominant confirmed",
+    "[S3] IBM Think Topics Arabic (ibm.com/think/topics/oee) — Arabic OEE article, english_dominant",
+    "[S3] AIIEM (Arab Institute of Industrial Engineering Management) — OEE in Top 10 industrial abbreviations (English)",
+    "[S3] Bayt.com / Naukrigulf — GCC engineering job postings use English OEE",
+    "[S4] Roll Forming Magazine Arabic (rollformingmagazine.com/ar) — OEE pattern confirmed",
+    "[S4] IJERT 2025 — Saudi manufacturing study, English OEE/TPM exclusively",
+    "[S4] IBM Arabic MTTR article — MTTR Arabic expansion confirmed",
+    "[S4] Telaeris Arabic (ar.telaeris.com) — MTBF Arabic expansion confirmed",
+    "[S4] Microsoft Arabic Localization Style Guide (ara-sau-StyleGuide.pdf, 42 pp, direct verification 2026-04-22) — §4.1.2 Acronyms (expand when possible, keep English when space-constrained), §4.1.5 Capitalization (none — use quotes to highlight), §4.1.7 Diacritics (omitted in professional text except when disambiguating), §4.1.8 Genitive (iḍāfah construct, head noun takes plural), §4.1.11 Nouns (plural vs dual contextualization), §4.1.12 Numbers (Western Arabic numerals standard; 0/1/2 spelled out, dual form for 2-counts)",
+    "[S4] Arabic grammar references — iḍāfah, dual number, sun-letter assimilation",
+    "[S4] Arabization/localization guides — MSA, Western Arabic numerals, RTL confirmed",
+    "[S5] GSO Wikipedia — GSO background",
+    "[S5] Vision 2030 / IJERT Saudi manufacturing context"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "أنتم",
+  "falseFriends": {
+    "actual": "Use 'الفعلي' (al-fi'li = real/measured), NOT 'الحالي' (al-hali = current/present). 'Actual output' = 'الإنتاج الفعلي'.",
+    "performance": "Use 'الأداء' (al-ada') for the OEE performance component. NOT 'بيرفورمانس' (informal English loanword) or 'الأداء العام' (over-expanded).",
+    "quality": "Use 'الجودة' (al-jawda) for the OEE quality rate metric. NOT 'النوعية' (al-naw'iyya = type/grade) or 'الكيفية' (al-kayfiyya = qualitative).",
+    "availability": "Use 'التوافر' (al-tawafur) for OEE availability component. NOT 'الإتاحة' (al-itaha = IT/resource accessibility).",
+    "scrap": "Use 'الهالك' (al-halik = manufacturing waste/scrap) or 'المرفوضات' (al-marfudat = rejected units). NOT 'الخردة' (al-khurda = junk/scrap metal for recycling).",
+    "stop": "Use 'توقف' (tawaqquf) for production stop event; 'وقت التوقف' (waqt al-tawaqquf) for downtime duration. NOT 'التعطل' (al-ta'attal = breakdown/malfunction — implies unplanned only).",
+    "shift": "Use 'الوردية' (al-wardiyya) for modern manufacturing MSA. NOT 'النوبة' (al-nawba = archaic/classical Arabic).",
+    "line": "Use 'خط الإنتاج' (khatt al-intaj = production line) with qualifier. NOT bare 'خط' (khatt = line, phone line, text line — ambiguous)."
+  },
+  "grammarNotes": {
+    "rtlScript": "RTL Arabic script; Latin acronyms (OEE, KPI, MTTR, MTBF, SPC, TPM) maintain LTR directionality via Unicode BiDi. Formula displays (e.g., 'OEE = التوافر × الأداء × الجودة') may need explicit dir=\"ltr\" wrapping for the formula part.",
+    "definiteArticle": "The Arabic definite article 'ال' (al-) prefixes directly to nouns. Sun letters (14) cause phonological assimilation in pronunciation but spelling always retains 'ال'. Example: 'التوافر' (al-tawafur) — NOT 'اتوافر'. No tashkeel on 'ال' in professional text.",
+    "idafaConstructState": "Compound nouns via iḍāfah construct state: first noun (muḍāf) + second noun (muḍāf ilayhi in genitive with 'ال'). Examples: 'سبب التوقف' (stop reason), 'زمن الدورة' (cycle time), 'خط الإنتاج' (production line), 'نموذج الوردية' (shift template). Only the final element takes full definiteness marking.",
+    "dualAndCompoundPluralization": "Arabic has three numbers: singular, dual, plural. In iḍāfah compounds, ONLY the head noun (muḍāf) pluralizes; modifier (muḍāf ilayhi) stays genitive singular. 'سبب التوقف' (sg.) → 'أسباب التوقف' (pl.) — NOT 'أسباب التوقفات' (over-pluralized modifier). 'أسباب' is a broken plural of 'سبب'.",
+    "noTashkeel": "Arabic professional B2B text must NOT contain tashkeel (vowel diacritics ُ ِ َ ّ etc.), except in the rare case where a word is genuinely ambiguous without them [Microsoft Arabic Style Guide §4.1.7]. Diacritics otherwise appear only in Quran, children's books, and language learning materials. Adding tashkeel to manufacturing software UI is patronizing.",
+    "numberFormatting": "Use Western Arabic numerals (0–9), NOT Eastern Arabic-Indic (٠–٩) — Microsoft's standard rule, confirmed across GCC enterprise software [MS §4.1.12]. Decimal: period (.). Percentage: '85%' (no space). Thousands: comma (1,000). Count-agreement rule [MS §4.1.12]: 0 is NOT written as a digit — render as 'لا يوجد' / 'لا توجد' (none); 1 is spelled out (واحد / واحدة); 2 uses the dual form (e.g., 'توقفان' for 2 stops, 'ماكينتان' for 2 machines); 3 and above use digits normally. Critical for manufacturing dashboards showing counts like '0 stops today', '1 changeover', '2 machines down'."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE (Latin acronym) is universally used in Arabic-language manufacturing contexts. No Arabic-letter OEE acronym exists. Most common Arabic descriptive expansion: 'فعالية المعدات الشاملة' (fa'aliyyat al-mu'iddat al-shamila). Alternatives in use: 'الكفاءة الإجمالية للمعدات', 'الكفاءة الكلية للماكينات'. For UI: use 'OEE'. For tooltips/documentation: 'OEE (فعالية المعدات الشاملة)'.",
+    "preferAcronym": true,
+    "arabicFullTerm": "فعالية المعدات الشاملة",
+    "usagePattern": {
+      "uiLabels": "OEE",
+      "tooltips": "OEE (فعالية المعدات الشاملة)",
+      "documentation": "OEE (فعالية المعدات الشاملة) on first mention"
+    },
+    "dominantSectors": "Saudi Arabia: oil & gas downstream (Aramco), chemicals (SABIC), mining (Ma'aden), cement, food. UAE: aluminum (EGA), logistics (DP World), aerospace MRO. Egypt: automotive assembly (Renault, BMW, Stellantis), textiles, cement. Qatar: LNG downstream, steel (Qatar Steel). Morocco: automotive (Renault Tangier, Stellantis Kenitra), aerospace (Safran, Airbus), phosphates (OCP).",
+    "dominantVendors": "SAP (dominant GCC large enterprise — Aramco, SABIC, ADNOC), Oracle (Egypt, GCC government), Microsoft Dynamics (SME), Infor (process industries), Siemens Opcenter/Rockwell FactoryTalk (major facilities)"
+  },
+  "commonMistakes": [
+    "Using 'الحالي' instead of 'الفعلي' for 'actual' — الحالي means 'current/present' (temporal), not 'real/measured'",
+    "Using 'الخردة' instead of 'الهالك' for 'scrap' — الخردة means recycling/junk metal, not manufacturing defect tracking",
+    "Over-pluralizing iḍāfah modifier: 'أسباب التوقفات' (wrong) → 'أسباب التوقف' (correct) — only the head noun pluralizes",
+    "Using 'النوعية' instead of 'الجودة' for the OEE quality rate metric — النوعية means type/grade, not the OEE quality component",
+    "Using 'التعطل' for all production stops — التعطل implies unplanned breakdown only; use 'التوقف' for all stop categories including planned",
+    "Adding tashkeel (vowel marks) to manufacturing UI text — diacritics are inappropriate in B2B professional software",
+    "Using digits for 0/1/2 in Arabic UI counts — Microsoft §4.1.12 specifies: 0 renders as 'لا يوجد' (none), 1 as 'واحد', 2 in the dual form (e.g., 'ماكينتان' for 2 machines); dashboards displaying '0 stops' or '2 alerts' with literal digits read unnaturally in MSA"
+  ],
+  "lengthMultiplier": 2.0,
+  "acronymExpansionAllowed": true,
+  "notes": "OEE (Latin) universally used in Arabic manufacturing (english_dominant, high confidence). MSA is mandatory; regional dialects strictly excluded. Length multiplier 2.0 validated against 73 real glossary-term pairs in terms.json (2026-04-22): mean=0.97, median=1.00, p95=1.38, max=1.56; FP rate at multiplier=2.0 is 0.00%. Value is conservatively over-provisioned — tightening to 1.7 would still yield 0% FP. Kept at 2.0 for margin against future additions. Prior calibration from 1039 locale pairs (mean=1.07, p95=1.71) showed slightly higher ratios because UI strings include short English words that require multi-word Arabic phrases; glossary terms are more compact. RTL handling uses Unicode BiDi. Western Arabic numerals (0–9). ConsistencyValidator now passes for Arabic at 100% coverage."
+}

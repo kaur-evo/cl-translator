@@ -1,0 +1,56 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] TSE (Türk Standartları Enstitüsü) — TS ISO 22400-2, TS EN 13306 (ISO member)",
+    "[S2] ENOSAD — Industrial Automation Association of Turkey",
+    "[S2] Yalın Enstitü (lean.org.tr) — Turkish OEE/lean terminology",
+    "[S3] siskon.com.tr, akillifabrika.org, eratilmis.com — Turkish OEE resources",
+    "[S3] MESS — Metal Employers' Union (automation market $1.8B)",
+    "[S4] Wikiversity Turkish-English false friends (aktüel, fabrika confirmed)",
+    "[S5] terms.json — Turkish translations analyzed for consistency validation"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "siz",
+  "falseFriends": {
+    "actual": "Use 'gerçek' or 'fiili', not 'aktüel' (which means 'current/topical')",
+    "fabric": "Use 'kumaş' for cloth, not 'fabrika' (which means 'factory')",
+    "performance": "'Performans' accepted for OEE component; 'verimlilik' (efficiency) is more native — distinguish carefully",
+    "productivity": "Use 'verimlilik' (native), not 'prodüktivite' (French loanword) in formal contexts",
+    "operator": "'Operatör' is accepted loanword; 'işçi' (worker) is too informal",
+    "control": "'Kontrol' (French loanword) dominates in manufacturing; 'denetleme' is more native",
+    "station": "Use 'iş istasyonu' for workstation, not 'istasyon' alone (transport station)",
+    "idle": "Use 'boşta' or 'beklemede', not 'tembel' (lazy — pejorative)",
+    "setup": "Use 'hazırlık süresi' (setup time) or 'kalıp değişimi' (die change), not 'kurulum' (software installation)",
+    "billion": "Use 'milyar' (10^9), not 'trilyon' — Turkish uses short scale like English"
+  },
+  "grammarNotes": {
+    "agglutinative": "Suffixes modify meaning: 'vardiya' → 'vardiyada' (in the shift), 'vardiyaların' (of the shifts)",
+    "vowelHarmony": "Back vowels (a, ı, o, u) vs front vowels (e, i, ö, ü). Violations immediately apparent.",
+    "noGender": "No grammatical gender",
+    "subjectObjectVerb": "SOV word order. Verb comes at end in sentences.",
+    "postpositions": "Turkish uses postpositions: 'üretimde' (in production — suffix-based)",
+    "compoundSpacing": "Turkish compounds include spaces: 'çevrim süresi' (cycle time), NOT 'çevrimsüresi'.",
+    "compoundPluralModifiers": "In Turkish izafet (possessive compound) constructions, the modifier stays UNMARKED while the head noun takes plural and possessive suffixes. 'hız kaybı nedenleri' (speed loss [unmarked] + reasons-its [pl+poss]) is correctly formed. No compound pluralization issue — correct by izafet rules."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE is standard. Full Turkish term: 'Toplam Ekipman Etkinliği' (TEE) — TEE not standardized, OEE preferred.",
+    "leanTpmAdoption": "Yalın Enstitü (lean.org.tr) is key driver of lean/OEE terminology. TAYSAD automotive suppliers drive adoption.",
+    "dominantSectors": "Automotive (Ford Otosan, Toyota Turkey, Hyundai Assan, TOFAS ~10% industrial production), white goods (Arçelik), textiles",
+    "standardsUsed": [
+      "TS ISO 22400-2",
+      "TS EN 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'aktüel' for 'actual' instead of 'gerçek' or 'fiili'",
+    "Incorrect vowel harmony: 'vardiyaler' (wrong) vs 'vardiyalar' (correct)",
+    "Using 'fabrika' to mean 'fabric/cloth'",
+    "Using 'verimlilik' and 'performans' interchangeably — 'performans' is OEE component, 'verimlilik' broader",
+    "Forgetting compound word spacing: 'çevrim süresi' not 'çevrimsüresi'",
+    "Using informal 'sen' instead of formal 'siz'"
+  ],
+  "lengthMultiplier": 1.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is used; formal 'siz'. Agglutinative with vowel harmony. Text expansion ~20-30%. TEE exists but not standardized. P95 expansion 1.60x."
+}

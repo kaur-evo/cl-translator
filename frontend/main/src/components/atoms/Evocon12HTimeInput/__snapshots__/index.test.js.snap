@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Evocon12HTimeInput > renders correctly when chip should be used 1`] = `
+<evocon-v-input-stub
+  filled="true"
+  grow="false"
+  inputmask=""
+  modelvalue="12:12PM"
+  placeholder="10:15AM"
+  rules="true"
+  truncateinput="false"
+  type="text"
+  usechip="true"
+/>
+`;
+
+exports[`Evocon12HTimeInput > renders correctly when value exists 1`] = `
+<evocon-v-input-stub
+  filled="true"
+  grow="false"
+  inputmask=""
+  modelvalue="12:12PM"
+  placeholder="10:15AM"
+  rules="true"
+  truncateinput="false"
+  type="text"
+  usechip="false"
+/>
+`;
+
+exports[`Evocon12HTimeInput > renders correctly with empty value 1`] = `
+<evocon-v-input-stub
+  filled="true"
+  grow="false"
+  inputmask=""
+  placeholder="10:15AM"
+  rules="true"
+  truncateinput="false"
+  type="text"
+  usechip="false"
+/>
+`;

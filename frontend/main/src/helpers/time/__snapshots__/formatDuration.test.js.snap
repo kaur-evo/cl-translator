@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`formatDuration > if formats seconds in expected manner for format type: HOURS 1`] = `"342 935,53 hr"`;
+
+exports[`formatDuration > if formats seconds in expected manner for format type: MINUTES 1`] = `"20 576 131,5 min"`;
+
+exports[`formatDuration > if formats seconds in expected manner for format type: READABLE 1`] = `"342 935h 31m 30s"`;
+
+exports[`formatDuration > if formats seconds in expected manner for format type: SECONDS 1`] = `"1 234 567 890 sec"`;

@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconFlagIcon > renders flag correctly 1`] = `
+<div
+  data-v-72626beb=""
+>
+  <div
+    class="flag mb-n1"
+    data-v-72626beb=""
+  >
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <span
+      data-v-72626beb=""
+    />
+  </div>
+</div>
+`;
+
+exports[`EvoconFlagIcon > renders rounded flag correctly 1`] = `
+<div
+  data-v-72626beb=""
+>
+  <div
+    class="flag mb-n1 rounded-flag-icon"
+    data-v-72626beb=""
+  >
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <span
+      data-v-72626beb=""
+    />
+  </div>
+</div>
+`;
+
+exports[`EvoconFlagIcon > renders squared flag correctly 1`] = `
+<div
+  data-v-72626beb=""
+>
+  <div
+    class="flag mb-n1"
+    data-v-72626beb=""
+  >
+    <!-- eslint-disable-next-line vue/no-v-html -->
+    <span
+      data-v-72626beb=""
+    />
+  </div>
+</div>
+`;

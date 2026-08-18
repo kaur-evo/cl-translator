@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Time > renders correctly 1`] = `
+"<div data-v-f7608018="" class="time-component d-flex align-center justify-center flex-nowrap bg-black rounded flex-grow-1">
+  <div data-v-f7608018="" class="d-flex"><span data-v-f7608018="" class="text-body-large font-weight-medium">14:00</span><span data-v-f7608018="" class="ml-1 text-tertiary-dark text-body-small">:00</span></div>
+</div>"
+`;
+
+exports[`Time > renders correctly with large prop 1`] = `
+"<div data-v-f7608018="" class="time-component d-flex align-center justify-center flex-nowrap bg-black rounded flex-grow-1 time-component--large">
+  <div data-v-f7608018="" class="d-flex"><span data-v-f7608018="" class="text-body-large font-weight-medium">14:00</span><span data-v-f7608018="" class="ml-1 text-tertiary-dark text-body-small">:00</span></div>
+</div>"
+`;

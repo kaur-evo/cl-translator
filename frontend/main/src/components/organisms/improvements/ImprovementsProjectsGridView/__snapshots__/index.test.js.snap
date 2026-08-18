@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementsProjectsGridView > renders correctly 1`] = `
+<div
+  class="grid-view"
+  data-v-5c4ce1c5=""
+>
+  
+  <improvements-project-card-stub
+    actions=""
+    data-v-5c4ce1c5=""
+    datevalue="25.02.1970"
+    datevalueheader="End"
+    isfinished="false"
+    isoverdue="true"
+    project="[object Object]"
+    team="[object Object]"
+  />
+  <improvements-project-card-stub
+    actions=""
+    data-v-5c4ce1c5=""
+    datevalue="03.02.1999"
+    datevalueheader="End"
+    isfinished="true"
+    isoverdue="false"
+    project="[object Object]"
+    team="[object Object]"
+  />
+  
+</div>
+`;

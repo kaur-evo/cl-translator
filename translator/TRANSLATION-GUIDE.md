@@ -8,10 +8,9 @@ Written to be implemented against, by two kinds of reader:
 
 - **An engine integrating this pipeline** needs sections 1–8. These are
   normative, and rules are numbered (`R1`, `R2`, …) so they can be cited.
-- **An agent doing the translating** needs section 0 for the domain context
-  the strings themselves have been stripped of, then R9 for how to handle each
-  of the eight kinds, plus R10 (punctuation) and R13–R14 (source language,
-  length).
+- **An agent doing the translating** needs section 0 (what the strings are,
+  who reads them, how to write them) and R9 (what to do with each of the eight
+  kinds). R10, R13 and R14 cover punctuation, source language and length.
 
 Section 9 is rationale, section 10 is a conformance checklist. Where this
 document and an implementation disagree, this document is wrong and should be
@@ -22,95 +21,76 @@ fixed. It describes an existing working pipeline (`translate_run.py`,
 (`collectStrings`). Consumer: `translator/translate_run.py`. Browser-side
 consumer: `prototype/js/backend-direct.js`.
 
-## 0. Domain context: what these strings actually are
+**Not yet implemented:** R9a (checklist context). The prototype sends each
+string with its kind but no checklist context, so a partial run currently
+translates its strings blind. Everything else here describes working code.
 
-An agent translating these strings is not translating documentation, marketing
-copy, or a UI shell. It is translating **individual strings pulled out of one
-production-floor checklist**, which will be reassembled and shown to a machine
-operator mid-shift. This section exists so that context survives the trip.
+## 0. What you are translating
 
-**The product.** Evocon is a production-monitoring platform for manufacturing.
-Sensors on a machine capture output and stoppages automatically; operators add
-the context a sensor cannot: why a machine stopped, what was scrapped, and
-the results of quality checks. Checklists are that last part: structured
-quality and compliance checks, licensed separately, filled on the shop floor.
+You are translating **individual strings taken out of one Evocon checklist**,
+which the app reassembles and shows to a machine operator in Shift View.
 
-**Who reads the output.** A machine operator, standing at a station, on a
-large touch screen, mid-shift, often wearing gloves, frequently under time
-pressure, and reading in their own configured language rather than the one the
-checklist was written in. They are a domain expert in the physical process and
-not necessarily a fluent reader of the source language. This is the single
-most important fact about the audience: **operational clarity beats
-elegance.** A blunt, unambiguous instruction is correct; a graceful ambiguous
-one is a defect.
+Every string is **free-form text a tenant typed** into a checklist field in
+Settings. None of it is Evocon's own product copy, none of it is drawn from a
+fixed vocabulary, and none of it is predictable. The only thing known about a
+string is which field it came from, which is why every string arrives with an
+explicit `kind` (R8) and why you must never infer meaning from content alone.
 
-**Who writes the input.** A plant manager, production engineer, or quality
-manager, authoring in Settings on a desktop. They write in shop-floor
-shorthand, use plant-local jargon, abbreviate freely (`tk`, `min`, `pcs`), and
-frequently write terse fragments rather than sentences.
+**Evocon** is production-monitoring software for factories. Sensors on a
+machine record output and stoppages automatically; the operator supplies what
+a sensor cannot: why the machine stopped, what was scrapped, and the results
+of quality checks. **Checklists** are that last part, a separately licensed
+module for structured quality and compliance checks.
 
-**Where each kind is used.** A checklist appears in Shift View as a coloured
-pin on the shift timeline, at a moment defined by its frequency: every two
-hours, after every 1000 units, on a product changeover, when a specific stop
-reason is logged, or on demand. The operator taps the pin, and a modal opens
-containing the checklist name, the due time, and every task in order:
+**Who wrote the input:** a plant manager, production engineer, or quality
+manager, typing into Settings on a desktop. Expect shop-floor shorthand,
+plant-local jargon, abbreviations (`tk`, `min`, `pcs`), and fragments rather
+than sentences.
 
-- **`checklist name`** titles that modal and identifies the checklist in
-  Settings lists, report tables, and dashboard widgets. It is scanned, not
-  read, often in a list beside a dozen others, so it must stay
-  distinguishable from its neighbours and short enough not to truncate.
-- **`task`** is the actual instruction the operator acts on, one per row.
-  This is the highest-stakes kind in the set: an operator misreading it takes
-  the wrong physical action on a machine. Imperative and concrete.
-- **`task description`** is optional supporting text beneath a task, used for
-  the detail that would not fit in the task line: a method, a caveat, a
-  threshold. Read only when the task alone is not enough.
-- **`unit`** sits beside a numeric input (`°C`, `kg`, `tk`, `bar`). Ten
-  characters, no room for a word where a symbol belongs. See R9.
-- **`out-of-range message`** fires the moment a measurement falls outside its
-  configured min/max. The operator has just entered a bad reading; this text
-  must say what to do about it, not merely that something is wrong.
-- **`no-answer message`** fires when an operator answers "No" on a Yes/No
-  task, which by convention means the check failed. Same job as above.
-- **`option`** is one choice in a single- or multi-select list, read as a set
-  and chosen between at a glance. Options are translated as a group and must
-  stay mutually distinguishable and grammatically parallel. If the source
-  options are all nouns, the translations are all nouns.
-- **`checklist description`** is the standard-operating-procedure text for the
-  checklist as a whole: the longest string in the set, the one closest to
-  ordinary prose, and the only one an operator may read at length.
+**Who reads your output:** a machine operator, at one station, during a shift,
+on a touch screen that runs anywhere from a phone to a 4K wall display. They
+read in the language selected on the Shift View footer, which is a
+station-level setting rather than a personal one: one account is typically
+shared per station, and the language can be switched mid-shift by whoever is
+standing there. They know the physical process; they may not read the language
+the checklist was authored in.
 
-**What the answers feed.** Task results are not just displayed and forgotten.
-A checklist resolves to successful, unsuccessful, or missed; that status
-colours the timeline pin, aggregates into the Checklists report, drives
-dashboard widgets, and can trigger alerts by email or webhook. A mistranslated
-threshold or a garbled option label therefore corrupts quality data, not just
-one screen.
+**When they read it:** a checklist appears as a coloured pin on the shift
+timeline when its trigger fires. Evocon has seven: Periodical, Regular
+intervals, Shift time, Changeover, Quantity produced, Downtime (a specific
+stop reason being logged), and Manual activation. The operator taps the pin
+and fills the tasks in a modal, sometimes after entering a passcode, sometimes
+attaching a photo, sometimes marking a task "not applicable". Then they get
+back to running the machine. A checklist not completed in time is marked
+missed, so this is read under time pressure.
 
-**Consequences for the translation itself:**
+**What their answers become:** the checklist resolves to New, Successful,
+Unsuccessful (some checks not OK), or Missed. That result colours the timeline pin, feeds the
+Checklists report and dashboard widgets, and can fire alerts by email or
+webhook. A mistranslated threshold or a garbled option does not just confuse
+one operator, it corrupts the quality record the plant reports on.
 
-- **Register is instructional, not conversational.** Prefer the imperative.
-  Address the operator directly if the target language requires a choice; do
-  not invent politeness the source does not have.
-- **Terminology follows the plant, not the dictionary.** Manufacturing terms
-  have established shop-floor equivalents in every target language. Use them.
-- **Preserve the source's specificity exactly.** Numbers, tolerances, machine
-  and part identifiers, product codes, brand names, and standard references
-  (ISO, HACCP) are carried through untouched. Never convert a value or a
-  measurement system, and never round.
-- **Preserve terseness.** A source fragment stays a fragment. Do not expand
-  `Kontrolli survet` into a full polite sentence.
-- **Consistency across the set outweighs local perfection.** The same source
-  term appearing in several strings is translated the same way every time.
-  The operator reads them as one document, and R5 means one string is
-  literally one unit.
-- **Ambiguity resolves toward the physically safer reading.** These strings
-  govern actions on machinery and food-safety-grade quality checks. Where a
-  source phrase admits two readings, choose the one whose failure mode is a
-  needless check rather than a missed one.
+### How to translate, in this context
 
-Nothing in this section relaxes any rule below. It exists so an agent can make
-the judgement calls the rules do not cover.
+Evocon's own writing rules apply to tenant content too: **as few words as
+possible, as many as necessary**, and phrasing that survives 25+ languages.
+
+1. **Instructional register.** Prefer the imperative. Do not add politeness
+   the source does not have.
+2. **Keep it as short as the source.** A fragment stays a fragment. Never
+   expand `Kontrolli survet` into a full sentence.
+3. **Plant vocabulary, not dictionary vocabulary.** Manufacturing terms have
+   established shop-floor equivalents. Use the one an operator would say.
+4. **No idioms, no wordplay, no cultural references.** They fail across 25+
+   languages and are unreadable to a non-native speaker.
+5. **Carry specifics through untouched.** Numbers, tolerances, machine and
+   part identifiers, product codes, brand names, standard references (ISO,
+   HACCP). Never convert units of measure, never round.
+6. **Translate the same source term the same way every time.** The operator
+   reads the checklist as one document.
+7. **When a phrase is ambiguous, pick the reading whose failure is a wasted
+   check rather than a missed one.** These strings govern actions on
+   machinery and the quality data behind them.
 
 ## 1. Scope: what is translatable
 
@@ -123,8 +103,8 @@ verbatim as the wire value in column 3.
 | 2 | Task title | `task` | The prompt the operator reads ("Task" in the editor) |
 | 3 | Task description | `task description` | Instruction text under the task title |
 | 4 | Unit | `unit` | Next to the numeric input (Measurement tasks) |
-| 5 | Out-of-range message | `out-of-range message` | Shown when a value falls outside min/max |
-| 6 | No-answer message | `no-answer message` | Shown when the operator answers "No" |
+| 5 | Warning message (Measurement) | `out-of-range message` | Shown when a value falls outside Min/Max |
+| 6 | Warning message (Yes/No) | `no-answer message` | Shown when the operator answers "No" |
 | 7 | Option label | `option` | One answer choice (Single/Multi select) |
 | 8 | Checklist description | `checklist description` | Standard-operating-procedure text |
 
@@ -139,13 +119,27 @@ verbatim as the wire value in column 3.
 
 **R3.** A producer must not send empty or whitespace-only strings.
 
-Which kinds a task contributes depends on its type: Mark-as-done and
-Enter-text contribute 2–3; Yes/No contributes 2–3 and 6; Measurement
-contributes 2–5; Single/Multi select contribute 2–3 and 7.
+The six task types, named as the editor names them, and what each contributes:
 
-Authoring limits, for length-aware translation: task 200, task description
-500, unit 10, both message kinds 200, option 200 (max 30 options per select
-task). These are source-side limits; see R14.
+| Task type | Contributes |
+|-----------|-------------|
+| Mark as done | 2, 3 |
+| Enter text | 2, 3 |
+| Yes/No | 2, 3, 6 |
+| Measurement | 2, 3, 4, 5 |
+| Single-select | 2, 3, 7 |
+| Multi-select | 2, 3, 7 |
+
+Kinds 5 and 6 are the **same input field** in the editor (`warningMessage`).
+Its purpose changes with the task type, so it is sent as two kinds: on a
+Measurement task the hint reads "Message to operators when measurement is out
+of range", on a Yes/No task "Message to operators when the answer is No".
+Both are optional.
+
+Authoring limits, from the editor: checklist name 50, task 200, task
+description 500, unit 10, warning message 200, option 200 (2–30 options per
+select task), checklist description 500. These are source-side limits; see
+R14.
 
 ## 2. Identity: the unique string is the unit of translation
 
@@ -191,19 +185,39 @@ pass it to the model and must not infer it from content. `°C` is knowable as
 a unit only because the producer said so; `10` could be a unit, an option, or
 a task title.
 
-**R9.** Each kind carries its own handling. Section 1 says which kinds exist
-and section 0 says where they appear; this is what to do with each one.
+**R9.** Each kind has its own job. This is what to do with each one.
 
-| `kind` | Handling |
-|--------|----------|
-| `checklist name` | Keep it short. It is scanned in a list beside other checklists and in report tables, so it must stay distinguishable from its neighbours and short enough not to truncate. |
-| `task` | The instruction the operator acts on. Imperative and concrete. Highest stakes in the set: misreading it means the wrong physical action on a machine. |
-| `task description` | Supporting detail below the task. Same register as the task, but it may run longer, and it is only read when the task line alone is not enough. |
-| `unit` | Convert to the target language's convention where one exists (`tk` → `pcs`). Return international symbols unchanged: `°C`, `kg`, `%`, `mm`, `bar`. Never expand a symbol into a word: the field is ten characters wide. |
-| `out-of-range message` | Fires the instant a measurement falls outside min/max. The operator has just entered a bad reading, so say what to do about it, not merely that something is wrong. |
-| `no-answer message` | Fires when the operator answers "No" on a Yes/No task, which by convention means the check failed. Same job as out-of-range. |
-| `option` | One choice in a select list, read as a set at a glance. Translate the options of a task as a group: keep them mutually distinguishable and grammatically parallel. If the source options are all nouns, the translations are all nouns. |
-| `checklist description` | The standard-operating-procedure text, and the only string an operator may read at length. Closest to ordinary prose; still no padding. |
+| `kind` | Where it appears | How to translate it |
+|--------|------------------|---------------------|
+| `checklist name` | Title of the Shift View modal; also the Settings list, the Checklists report, and dashboard widgets | Short. It is scanned in a list, not read, and it has to stay distinguishable from the other checklists on the same station. |
+| `task` | One row in the modal, the thing the operator actually does. The editor prompts for it with "What has to be measured?" on a Measurement task | Imperative and concrete. Highest stakes here: this is the string that decides what someone does to a machine. |
+| `task description` | Optional text under the task, read only if the task line is not enough | Same register as the task. May run longer; still no padding. |
+| `unit` | Beside the numeric input on a Measurement task. The editor prompts for it with "E.g. pcs, kg, litre" | Convert where the target language has its own convention (`tk` → `pcs`). Leave international symbols alone: `°C`, `kg`, `%`, `mm`, `bar`. The field is 10 characters, so never turn a symbol into a word. |
+| `out-of-range message` | Shown when an entered measurement falls outside the configured Min/Max. The editor calls it "Message to operators when measurement is out of range" | The operator has just entered a bad value. Say what to do about it, not that something is wrong. |
+| `no-answer message` | Shown when the operator answers "No" on a Yes/No task, which counts as a failed check | Same job as out-of-range. |
+| `option` | One choice in a Single or Multi select task, picked at a glance | Translate a task's options as a set: mutually distinguishable and grammatically parallel. If the source options are all nouns, so are the translations. |
+| `checklist description` | The checklist's standard-operating-procedure text | The only string an operator may read at length, and the closest to prose. Still no padding. |
+
+**R9a (checklist context).** The strings of one run all belong to one
+checklist, and the translator is told so. Every request carries the checklist
+it came from, and a partial run (R21) additionally carries the strings it is
+*not* re-translating, marked as context rather than as work:
+
+- the checklist name, always, even when it is not itself being translated
+- the already-translated strings of the same checklist, in the target
+  language, so new work matches the wording the operator already sees
+- the untranslated strings of the same checklist, so a term appearing in
+  several places is translated once and consistently
+
+Without this a partial run sees a handful of orphaned strings. `Halb` alone
+is untranslatable in any useful sense: it could be an option in a visual
+quality check or a rating of a surface finish, and the operator reads it in a
+list next to options translated during an earlier run. Context is what keeps
+the checklist reading as one document instead of a pile of independently
+translated fragments.
+
+Context strings are **never returned**. The response contains exactly the
+strings that were sent as work (R18).
 
 **R10.** End-of-sentence punctuation is preserved as-is. A source ending
 without a full stop returns without one. This matters most for the short
@@ -251,6 +265,15 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
     {"key": "tk",                                "text": "tk",                                "kind": "unit"},
     {"key": "Veenduge, et liin on puhas.",       "text": "Veenduge, et liin on puhas.",       "kind": "checklist description"}
   ],
+  "context": {
+    "checklistName": "Ohutuskontroll enne tootevahetust",
+    "translated": [
+      {"text": "Kas masin puhastati?", "translation": "Was the machine cleaned?", "kind": "task"}
+    ],
+    "untranslated": [
+      {"text": "Hea", "kind": "option"}
+    ]
+  },
   "translateModel": "claude-haiku-4-5",
   "reviewModel": "claude-opus-4-8",
   "review": true
@@ -264,6 +287,10 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
 | `fields[].key` | yes | Identity of the unit. Opaque to the consumer. |
 | `fields[].text` | yes | The source string to translate. |
 | `fields[].kind` | yes | One of the eight values in R1. |
+| `context` | yes | The checklist these strings belong to, per R9a. Reference material only, never translated and never returned. |
+| `context.checklistName` | yes | The checklist's name, even when it is not in `fields`. |
+| `context.translated` | no | Strings of this checklist already translated into `language`, so new work matches existing wording. Omit on a first full run, where there are none. |
+| `context.untranslated` | no | Strings of this checklist with no translation yet and not in this run. |
 | `translateModel` | no | Defaults to `claude-haiku-4-5`. |
 | `reviewModel` | no | Defaults to `claude-opus-4-8`. |
 | `review` | no | Defaults to `true`. |
@@ -306,8 +333,11 @@ that language. Keys absent from the response keep their existing values.
 ## 7. Partial runs
 
 **R21.** To translate only what is missing (a task was added, an admin
-emptied a field), send only those units. R11 ordering applies within the
-subset (description last if present).
+emptied a field), send only those units as `fields`. R11 ordering applies
+within the subset (description last if present). The rest of the checklist
+still goes along as `context` (R9a): a partial run is the case where context
+matters most, because the strings being translated have to match wording the
+operator is already reading.
 
 **R22.** A partial result must never clear or overwrite units that were not
 sent. Combined with R20: the response is applied as a merge, never as a
@@ -376,6 +406,9 @@ Wire-level:
 - [ ] no request field names a source language
 - [ ] empty `fields` performs no model call
 - [ ] a translation longer than its source is accepted, not truncated
+- [ ] every request carries `context.checklistName`
+- [ ] a partial run carries the checklist's other strings as context
+- [ ] no context string appears in the response
 
 Identity-level (all observable through the producer's collected set):
 

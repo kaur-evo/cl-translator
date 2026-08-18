@@ -1,0 +1,2217 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsStationsEdit > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Station name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Station name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemsmap="[object Object]"
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Description (Optional) "
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Description"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Notification emails
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Who should receive messages from this station?
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <div
+          class="mt-4 px-1 mb-2"
+        >
+          <evocon-email-input-stub
+            modelvalue=""
+            placeholder="Notification emails"
+            required="false"
+          />
+        </div>
+        <info-block-stub
+          body="test@email.com"
+          class="mx-1 mt-2"
+          collapsible="false"
+          color="#9E9E9E"
+          header="Use this email to send messages directly to this station"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              OEE settings
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Define OEE and hourly quantities targets in Shift View
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="mb-2"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-negative"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="negative"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-neutral"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="neutral"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-positive"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="positive"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon unhappy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon unhappy %"
+              rules="Mr Evocon unhappy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Mr Evocon neutral %"
+              modelvalue="0 - 100"
+              suffix="%"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon happy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon happy %"
+              rules="Mr Evocon happy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-card-stub
+          border="false"
+          class="my-4"
+          density="default"
+          disabled="false"
+          exact="false"
+          flat="false"
+          hover="false"
+          loading="false"
+          replace="false"
+          ripple="true"
+          tag="div"
+          tile="false"
+          variant="elevated"
+        >
+          <v-card-title-stub
+            class="text-body-large font-weight-bold align-center v-row justify-center text-center py-4 px-6"
+            tag="div"
+          >
+            <span>
+              Shift View settings
+            </span>
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Learn more"
+            />
+          </v-card-title-stub>
+          <v-card-text-stub
+            class="px-6"
+            tag="div"
+          >
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Default reasons
+            </div>
+            <div
+              class="mt-2"
+            >
+              <v-sheet-stub
+                border="false"
+                class="py-1 px-3 d-flex flex-wrap"
+                tag="div"
+                tile="false"
+              >
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Empty shift reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Empty shift reason"
+                  prepend-inner-icon="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M9.31,17L11.75,14.56L14.19,17L15.25,15.94L12.81,13.5L15.25,11.06L14.19,10L11.75,12.44L9.31,10L8.25,11.06L10.69,13.5L8.25,15.94L9.31,17Z"
+                  prependtext="Empty shift reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Product changeover reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Product changeover reason"
+                  prepend-inner-icon="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"
+                  prependtext="Product changeover reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Default scrap reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Default scrap reason"
+                  prepend-inner-icon="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                  prependtext="Default scrap reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+              </v-sheet-stub>
+            </div>
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Advanced settings
+            </div>
+            <v-row-stub
+              dense="false"
+              density="default"
+              nogutters="false"
+              tag="div"
+            >
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Operator selection is mandatory for each shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1 d-flex align-center"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Automatically carry stop reason to next shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <icon-with-tooltip-stub
+                  additionalclasses="ml-2"
+                  color=""
+                  icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+                  iconid=""
+                  iconsrc=""
+                  size="16"
+                  tooltiplocation="top"
+                  tooltiptext="If the next shift starts immediately after, the stop reason is carried over."
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require extra note on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require LOT/Batch number on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow operators to delete production signals (circles)"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow manual shift management"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <evocon-v-input-stub
+                  class="mt-2"
+                  counter="200"
+                  disabled="true"
+                  filled="true"
+                  grow="false"
+                  hint="Please enter extra shift name (e.g weekend shift)"
+                  id="manual-shift-name-input"
+                  maxlength="200"
+                  modelmodifiers="[object Object]"
+                  modelvalue=""
+                  persistent-hint=""
+                  placeholder="Extra shift"
+                  required=""
+                  rules="(v) => !$data.formData.showManualShift || !!(v && v.trim()) || _ctx.$t('Please enter extra shift name (e.g weekend shift)')"
+                  truncateinput="false"
+                  type="text"
+                  usechip="false"
+                  validate-on="blur"
+                  variant="filled"
+                />
+              </v-col-stub>
+            </v-row-stub>
+          </v-card-text-stub>
+        </v-card-stub>
+      </v-form-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStationsEdit > renders correctly if notificationEmails are provided and one of them is invalid 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Station name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Station name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items=""
+              itemsecondarytext=""
+              itemsmap="[object Object]"
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Description (Optional) "
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Description"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Notification emails
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Who should receive messages from this station?
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <div
+          class="mt-4 px-1 mb-2"
+        >
+          <evocon-email-input-stub
+            modelvalue="test@email.com,test2@"
+            placeholder="Notification emails"
+            required="false"
+          />
+        </div>
+        <info-block-stub
+          body="test@email.com"
+          class="mx-1 mt-2"
+          collapsible="false"
+          color="#9E9E9E"
+          header="Use this email to send messages directly to this station"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              OEE settings
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Define OEE and hourly quantities targets in Shift View
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="mb-2"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-negative"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="negative"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-neutral"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="neutral"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-positive"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="positive"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon unhappy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon unhappy %"
+              rules="Mr Evocon unhappy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Mr Evocon neutral %"
+              modelvalue="0 - 100"
+              suffix="%"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon happy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon happy %"
+              rules="Mr Evocon happy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-card-stub
+          border="false"
+          class="my-4"
+          density="default"
+          disabled="false"
+          exact="false"
+          flat="false"
+          hover="false"
+          loading="false"
+          replace="false"
+          ripple="true"
+          tag="div"
+          tile="false"
+          variant="elevated"
+        >
+          <v-card-title-stub
+            class="text-body-large font-weight-bold align-center v-row justify-center text-center py-4 px-6"
+            tag="div"
+          >
+            <span>
+              Shift View settings
+            </span>
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Learn more"
+            />
+          </v-card-title-stub>
+          <v-card-text-stub
+            class="px-6"
+            tag="div"
+          >
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Default reasons
+            </div>
+            <div
+              class="mt-2"
+            >
+              <v-sheet-stub
+                border="false"
+                class="py-1 px-3 d-flex flex-wrap"
+                tag="div"
+                tile="false"
+              >
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Empty shift reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Empty shift reason"
+                  prepend-inner-icon="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M9.31,17L11.75,14.56L14.19,17L15.25,15.94L12.81,13.5L15.25,11.06L14.19,10L11.75,12.44L9.31,10L8.25,11.06L10.69,13.5L8.25,15.94L9.31,17Z"
+                  prependtext="Empty shift reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Product changeover reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Product changeover reason"
+                  prepend-inner-icon="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"
+                  prependtext="Product changeover reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Default scrap reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Default scrap reason"
+                  prepend-inner-icon="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                  prependtext="Default scrap reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+              </v-sheet-stub>
+            </div>
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Advanced settings
+            </div>
+            <v-row-stub
+              dense="false"
+              density="default"
+              nogutters="false"
+              tag="div"
+            >
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Operator selection is mandatory for each shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1 d-flex align-center"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Automatically carry stop reason to next shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <icon-with-tooltip-stub
+                  additionalclasses="ml-2"
+                  color=""
+                  icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+                  iconid=""
+                  iconsrc=""
+                  size="16"
+                  tooltiplocation="top"
+                  tooltiptext="If the next shift starts immediately after, the stop reason is carried over."
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require extra note on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require LOT/Batch number on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow operators to delete production signals (circles)"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow manual shift management"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <evocon-v-input-stub
+                  class="mt-2"
+                  counter="200"
+                  disabled="true"
+                  filled="true"
+                  grow="false"
+                  hint="Please enter extra shift name (e.g weekend shift)"
+                  id="manual-shift-name-input"
+                  maxlength="200"
+                  modelmodifiers="[object Object]"
+                  modelvalue=""
+                  persistent-hint=""
+                  placeholder="Extra shift"
+                  required=""
+                  rules="(v) => !$data.formData.showManualShift || !!(v && v.trim()) || _ctx.$t('Please enter extra shift name (e.g weekend shift)')"
+                  truncateinput="false"
+                  type="text"
+                  usechip="false"
+                  validate-on="blur"
+                  variant="filled"
+                />
+              </v-col-stub>
+            </v-row-stub>
+          </v-card-text-stub>
+        </v-card-stub>
+      </v-form-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStationsEdit > renders correctly if notificationEmails are provided and valid 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              autofocus=""
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Station name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Station name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on="blur"
+              variant="filled"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items=""
+              itemsecondarytext=""
+              itemsmap="[object Object]"
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              filled="true"
+              grow="false"
+              hint="Description (Optional) "
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              persistent-hint=""
+              placeholder="Description"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              variant="filled"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              Notification emails
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Who should receive messages from this station?
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <div
+          class="mt-4 px-1 mb-2"
+        >
+          <evocon-email-input-stub
+            modelvalue="test@email.com,test2@email.ee"
+            placeholder="Notification emails"
+            required="false"
+          />
+        </div>
+        <info-block-stub
+          body="test@email.com"
+          class="mx-1 mt-2"
+          collapsible="false"
+          color="#9E9E9E"
+          header="Use this email to send messages directly to this station"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+        <v-row-stub
+          class="my-4"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="text-center"
+            cols="false"
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <div
+              class="text-body-large font-weight-bold"
+            >
+              OEE settings
+            </div>
+            <div
+              class="text-body-medium text-secondary-text"
+            >
+              Define OEE and hourly quantities targets in Shift View
+            </div>
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          class="mb-2"
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-negative"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="negative"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-neutral"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="neutral"
+            />
+          </v-col-stub>
+          <v-col-stub
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <static-mr-evocon-stub
+              class="d-flex mx-auto"
+              id="mr-evocon-positive"
+              imgfolder="regular"
+              maxheight="100px"
+              maxwidth="100px"
+              state="positive"
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-row-stub
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon unhappy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon unhappy %"
+              rules="Mr Evocon unhappy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              disabled=""
+              filled="true"
+              grow="false"
+              hint="Mr Evocon neutral %"
+              modelvalue="0 - 100"
+              suffix="%"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1"
+            cols="false"
+            lg="false"
+            md="4"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-number-input-stub
+              allowfloat="true"
+              allownegative="false"
+              grow="false"
+              hint="Mr Evocon happy %"
+              maxvalue="999999999999999"
+              placeholder="Mr Evocon happy %"
+              rules="Mr Evocon happy %"
+              suffix="%"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+        </v-row-stub>
+        <v-card-stub
+          border="false"
+          class="my-4"
+          density="default"
+          disabled="false"
+          exact="false"
+          flat="false"
+          hover="false"
+          loading="false"
+          replace="false"
+          ripple="true"
+          tag="div"
+          tile="false"
+          variant="elevated"
+        >
+          <v-card-title-stub
+            class="text-body-large font-weight-bold align-center v-row justify-center text-center py-4 px-6"
+            tag="div"
+          >
+            <span>
+              Shift View settings
+            </span>
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Learn more"
+            />
+          </v-card-title-stub>
+          <v-card-text-stub
+            class="px-6"
+            tag="div"
+          >
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Default reasons
+            </div>
+            <div
+              class="mt-2"
+            >
+              <v-sheet-stub
+                border="false"
+                class="py-1 px-3 d-flex flex-wrap"
+                tag="div"
+                tile="false"
+              >
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Empty shift reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Empty shift reason"
+                  prepend-inner-icon="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M9.31,17L11.75,14.56L14.19,17L15.25,15.94L12.81,13.5L15.25,11.06L14.19,10L11.75,12.44L9.31,10L8.25,11.06L10.69,13.5L8.25,15.94L9.31,17Z"
+                  prependtext="Empty shift reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Product changeover reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Product changeover reason"
+                  prepend-inner-icon="M12,6V9L16,5L12,1V4A8,8 0 0,0 4,12C4,13.57 4.46,15.03 5.24,16.26L6.7,14.8C6.25,13.97 6,13 6,12A6,6 0 0,1 12,6M18.76,7.74L17.3,9.2C17.74,10.04 18,11 18,12A6,6 0 0,1 12,18V15L8,19L12,23V20A8,8 0 0,0 20,12C20,10.43 19.54,8.97 18.76,7.74Z"
+                  prependtext="Product changeover reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+                <selection-input-stub
+                  checkbox="true"
+                  class="ma-1"
+                  coloractiveprepend="false"
+                  disabled="false"
+                  disabledvalues=""
+                  emittoggleall="false"
+                  emptyequalsallselected="false"
+                  error="false"
+                  filled="true"
+                  groupidkey="id"
+                  groups=""
+                  groupsorderby="name"
+                  hiddenitemscount="0"
+                  hidesearch="false"
+                  hint="Default scrap reason (Optional) "
+                  inverted="false"
+                  isgroupedselect="true"
+                  issingleselect="true"
+                  itemflag=""
+                  itemgroupidkey="groupId"
+                  items=""
+                  itemsecondarytext=""
+                  itemsmap="[object Object]"
+                  itemtertiarytext=""
+                  itemtext="name"
+                  itemvalue="id"
+                  loading="false"
+                  menuinputtype="primary"
+                  modelvalue=""
+                  numericorderby="false"
+                  placeholder="Default scrap reason"
+                  prepend-inner-icon="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                  prependtext="Default scrap reason: "
+                  removenonexistentselections="false"
+                  required="false"
+                  showemptyarrayasallselected="false"
+                  someselected="false"
+                  totalcount="0"
+                  usechips="true"
+                />
+              </v-sheet-stub>
+            </div>
+            <div
+              class="text-body-medium font-weight-bold my-4"
+            >
+              Advanced settings
+            </div>
+            <v-row-stub
+              dense="false"
+              density="default"
+              nogutters="false"
+              tag="div"
+            >
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Operator selection is mandatory for each shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1 d-flex align-center"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Automatically carry stop reason to next shift"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <icon-with-tooltip-stub
+                  additionalclasses="ml-2"
+                  color=""
+                  icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+                  iconid=""
+                  iconsrc=""
+                  size="16"
+                  tooltiplocation="top"
+                  tooltiptext="If the next shift starts immediately after, the stop reason is carried over."
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require extra note on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Require LOT/Batch number on changeovers"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow operators to delete production signals (circles)"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+              </v-col-stub>
+              <v-col-stub
+                class="px-1 my-1"
+                cols="12"
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                <evocon-v-checkbox-stub
+                  dark="false"
+                  disabled="false"
+                  label="Allow manual shift management"
+                  modelvalue="false"
+                  sublabel=""
+                  truevalue="true"
+                />
+                <evocon-v-input-stub
+                  class="mt-2"
+                  counter="200"
+                  disabled="true"
+                  filled="true"
+                  grow="false"
+                  hint="Please enter extra shift name (e.g weekend shift)"
+                  id="manual-shift-name-input"
+                  maxlength="200"
+                  modelmodifiers="[object Object]"
+                  modelvalue=""
+                  persistent-hint=""
+                  placeholder="Extra shift"
+                  required=""
+                  rules="(v) => !$data.formData.showManualShift || !!(v && v.trim()) || _ctx.$t('Please enter extra shift name (e.g weekend shift)')"
+                  truncateinput="false"
+                  type="text"
+                  usechip="false"
+                  validate-on="blur"
+                  variant="filled"
+                />
+              </v-col-stub>
+            </v-row-stub>
+          </v-card-text-stub>
+        </v-card-stub>
+      </v-form-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStationsEdit > renders correctly if selected station is not in stationsMap 1`] = `<removed-entity-view-stub />`;

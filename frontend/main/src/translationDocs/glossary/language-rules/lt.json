@@ -1,0 +1,63 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] LST (Lietuvos standartizacijos departamentas) — ISO/CEN member; LST EN 13306:2017, LST ISO 22400-2",
+    "[S2] Microsoft Lithuanian Localization Style Guide — formal 'Jūs' (capitalized) for professional software",
+    "[S2] OEE Tech (oee.lt) — Lithuanian OEE software vendor, uses OEE directly",
+    "[S2] Terra CMMS (terracmms.lt) — Lithuanian CMMS/OEE vendor, OEE methodology page",
+    "[S2] Iwoscan (iwoscan.lt/oee) — Lithuanian OEE monitoring vendor",
+    "[S3] IATE (iate.europa.eu) — EU institutional terminology for Lithuanian",
+    "[S3] Invest Lithuania (investlithuania.com) — manufacturing sector data",
+    "[S4] Unbabel Language Guidelines for Lithuanian — Jūs pronoun confirmation",
+    "[S4] Lithuanian declension/grammar references — 7 grammatical cases",
+    "[S4] Lithuanian-English false friends academic literature (talpykla.elaba.lt)",
+    "[S5] terms.json — 63 Lithuanian translations measured for length multiplier calibration"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Jūs",
+  "falseFriends": {
+    "actual": "Use 'tikras' or 'faktinis', not 'aktualus' (which means 'current/relevant')",
+    "fabric": "Use 'audinys', not 'fabrikas' (which means 'factory')",
+    "magazine": "Use 'žurnalas', not 'magazinas' (which means 'store/warehouse')",
+    "performance": "Use 'našumas', not 'performansas' (anglicism for theatrical performance)",
+    "station": "Use 'darbo vieta' for workstation, not 'stotis' (train/bus station)",
+    "idle": "Use 'tuščioji eiga' for machine idle, not 'tingus' (lazy — pejorative)",
+    "order": "Use 'gamybos užsakymas' for production order, not 'tvarka' (tidiness)",
+    "stop": "Use 'sustojimas' for production stop, not 'stotelė' (bus stop)",
+    "eventually": "Use 'galiausiai', not 'eventualiai' (which means 'possibly')",
+    "billion": "Use 'milijardas' (10^9), not 'bilijonas' (which means 10^12 in Lithuanian long scale)",
+    "setup": "Use 'perderinimas' (manufacturing changeover), not 'setup' (software anglicism)"
+  },
+  "grammarNotes": {
+    "caseSystem": "7 cases with complex endings. Nominative for labels: 'prieinamumas'; genitive: 'prieinamumo lygis'. Wrong case endings immediately obvious to native speakers.",
+    "genderAgreement": "Two genders (m -as/-is/-us; f -a/-ė). Adjectives agree: 'idealus ciklo laikas' (m), 'techninė priežiūra' (f).",
+    "genitiveChains": "Genitive chains for compound terms: 'greičio praradimo priežastis' (speed loss reason). Primary driver of Lithuanian's high 3.5x expansion multiplier.",
+    "noArticles": "No articles. 'Prieinamumas' = both 'availability' and 'the availability'.",
+    "numberFormatting": "Decimal: comma (,). Thousands: non-breaking space. Percentage: '85 %' (space before %). Lithuanian follows EU formatting.",
+    "compoundPluralModifiers": "In genitive chain compounds, only the HEAD noun pluralizes. The genitive modifier stays SINGULAR. CORRECT: 'greičio praradimo priežastys' (speed [gen.sg] + loss [gen.sg] + reasons [nom.pl]). WRONG: 'greičio praradimų priežastys' (speed [gen.sg] + losses [gen.pl] + reasons). The modifier 'praradimo' names the category of loss; only 'priežastys' counts items."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE universal. Full Lithuanian: 'bendrasis įrenginių efektyvumas'. Factors: prieinamumas x našumas x kokybė.",
+    "preferAcronym": true,
+    "lithuanianFullTerm": "bendrasis įrenginių efektyvumas",
+    "manufacturingSectors": "Electronics (Teltonika — 30M+ devices/year, Continental, Hella), food processing, wood/furniture, metalworking",
+    "standardsUsed": [
+      "LST EN 13306:2017",
+      "LST ISO 22400-2"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'aktualus' for 'actual' instead of 'tikras' or 'faktinis'",
+    "Freezing all nouns in nominative — UI phrases must decline correctly across 7 cases",
+    "Using 'performansas' instead of 'našumas' for OEE performance",
+    "Translating 'station' as 'stotis' instead of 'darbo vieta'",
+    "Omitting diacritics (ą, č, ę, ė, į, š, ų, ū, ž) — changes word meaning",
+    "Using informal 'tu' instead of formal 'Jūs' (capitalized)",
+    "Using period as decimal separator (85.5%) instead of comma (85,5 %)",
+    "Pluralizing the modifier in compound noun phrases: 'greičio nuostolių priežastys' (WRONG — 'nuostolių' is genitive plural) instead of 'greičio nuostolio priežastys' (CORRECT — 'nuostolio' is genitive singular). The modifier names the category; only the head noun takes plural"
+  ],
+  "lengthMultiplier": 3.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE universal. Formal Jūs (capitalized). 7-case system with genitive chains produces longest translations (3.5x). NOT Slavic — Baltic family. P95 expansion 2.13x."
+}

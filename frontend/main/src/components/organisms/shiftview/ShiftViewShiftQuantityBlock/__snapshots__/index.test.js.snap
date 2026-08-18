@@ -1,0 +1,236 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly 1`] = `
+<div
+  class="px-2 py-2 bg-black flex-grow-1 align-center d-flex flex-column rounded overflow-hidden"
+>
+  
+  <div
+    class="shift-view-label text-truncate"
+  >
+    Shift quantity
+  </div>
+  <div
+    class="d-flex flex-column align-center justify-center flex-grow-1 max-width-100"
+  >
+    <div
+      class="value-class max-width-100 overflow-hidden text-no-wrap"
+    >
+      1 232
+    </div>
+    <div
+      class="target-class text-quaternary-dark-2 d-flex align-center max-width-100 font-weight-regular"
+    >
+      <div
+        class="text-truncate"
+      >
+        1 244 tk
+      </div>
+      <icon-with-tooltip-stub
+        additionalclasses=""
+        buttonsize="extra-small"
+        color="white"
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly if alt unit is used and batches have different units 1`] = `
+<div
+  class="px-2 py-2 bg-black flex-grow-1 align-center d-flex flex-column rounded overflow-hidden"
+>
+  
+  <div
+    class="shift-view-label text-truncate"
+  >
+    Shift quantity
+  </div>
+  <div
+    class="d-flex flex-column align-center justify-center flex-grow-1 max-width-100"
+  >
+    <div
+      class="max-width-100 overflow-hidden text-no-wrap"
+    >
+      1 244
+    </div>
+    <div
+      class="text-quaternary-dark-2 d-flex align-center max-width-100 font-weight-regular"
+    >
+      <div
+        class="text-truncate"
+      >
+        12,44 
+      </div>
+      <icon-with-tooltip-stub
+        additionalclasses=""
+        buttonsize="extra-small"
+        color="white"
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly if batches have different units 1`] = `
+<div
+  class="px-2 py-2 bg-black flex-grow-1 align-center d-flex flex-column rounded overflow-hidden"
+>
+  
+  <div
+    class="shift-view-label text-truncate"
+  >
+    Shift quantity
+  </div>
+  <div
+    class="d-flex flex-column align-center justify-center flex-grow-1 max-width-100"
+  >
+    <div
+      class="max-width-100 overflow-hidden text-no-wrap"
+    >
+      1 232
+    </div>
+    <div
+      class="text-quaternary-dark-2 d-flex align-center max-width-100 font-weight-regular"
+    >
+      <div
+        class="text-truncate"
+      >
+        1 244 tk
+      </div>
+      <icon-with-tooltip-stub
+        additionalclasses=""
+        buttonsize="extra-small"
+        color="white"
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly if good + scrap quantity is used 1`] = `
+<div
+  class="px-2 py-2 bg-black flex-grow-1 align-center d-flex flex-column rounded overflow-hidden"
+>
+  
+  <div
+    class="shift-view-label text-truncate"
+  >
+    Shift quantity
+  </div>
+  <div
+    class="d-flex flex-column align-center justify-center flex-grow-1 max-width-100"
+  >
+    <div
+      class="max-width-100 overflow-hidden text-no-wrap"
+    >
+      1 244
+    </div>
+    <div
+      class="text-quaternary-dark-2 d-flex align-center max-width-100 font-weight-regular"
+    >
+      <div
+        class="text-truncate"
+      >
+        12,44 pcs
+      </div>
+      <icon-with-tooltip-stub
+        additionalclasses=""
+        buttonsize="extra-small"
+        color="white"
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+    </div>
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly in compact mode 1`] = `
+"<div class="px-2 py-2 d-flex flex-column rounded overflow-hidden">
+  <div class="shift-view-label text-truncate">Shift quantity</div>
+  <div class="value-class text-truncate max-width-100">1 232 / 1 244 tk</div>
+</div>"
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly when loading 1`] = `
+<div
+  class="bg-black flex-grow-1 d-flex flex-column rounded overflow-hidden"
+>
+  <shift-view-skeleton-loader-stub />
+</div>
+`;
+
+exports[`ShiftViewShiftQuantityBlock > renders correctly with alternative qty when unit isnt shown 1`] = `
+<div
+  class="px-2 py-2 bg-black flex-grow-1 align-center d-flex flex-column rounded overflow-hidden"
+>
+  
+  <div
+    class="shift-view-label text-truncate"
+  >
+    Shift quantity
+  </div>
+  <div
+    class="d-flex flex-column align-center justify-center flex-grow-1 max-width-100"
+  >
+    <div
+      class="value-class max-width-100 overflow-hidden text-no-wrap"
+    >
+      1 244
+    </div>
+    <div
+      class="target-class text-quaternary-dark-2 d-flex align-center max-width-100 font-weight-regular"
+    >
+      <div
+        class="text-truncate"
+      >
+        12,44 pcs
+      </div>
+      <icon-with-tooltip-stub
+        additionalclasses=""
+        buttonsize="extra-small"
+        color="white"
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+    </div>
+  </div>
+  
+</div>
+`;

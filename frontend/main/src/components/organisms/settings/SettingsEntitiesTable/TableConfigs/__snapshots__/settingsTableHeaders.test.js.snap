@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`settingsTableHeaders > stationHeader > should return an object with the correct properties -  not sortable and show empty array as empty 1`] = `
+{
+  "formatFn": [Function],
+  "formatTooltipFn": [Function],
+  "sortable": false,
+  "text": "Stations",
+  "textKey": "stationNamesArray",
+}
+`;
+
+exports[`settingsTableHeaders > stationHeader > should return an object with the correct properties -  sortable and show empty array as empty 1`] = `
+{
+  "formatFn": [Function],
+  "formatTooltipFn": [Function],
+  "sortable": true,
+  "text": "Stations",
+  "textKey": "stationNamesArray",
+}
+`;
+
+exports[`settingsTableHeaders > stationHeader > should return an object with the correct properties - not sortable and show empty array as all 1`] = `
+{
+  "formatFn": [Function],
+  "formatTooltipFn": [Function],
+  "sortable": false,
+  "text": "Stations",
+  "textKey": "stationNamesArray",
+}
+`;
+
+exports[`settingsTableHeaders > stationHeader > should return an object with the correct properties - sortable and show empty array as all 1`] = `
+{
+  "formatFn": [Function],
+  "formatTooltipFn": [Function],
+  "sortable": true,
+  "text": "Stations",
+  "textKey": "stationNamesArray",
+}
+`;

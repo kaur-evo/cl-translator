@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsGraphLegend > renders correctly 1`] = `
+<graph-legend-stub
+  class="d-flex align-center"
+  data=""
+  itemcolor="color"
+  itemicon="icon"
+  itemiconsize="iconSize"
+  itemtext="text"
+  itemvalue="value"
+  modelvalue=""
+/>
+`;

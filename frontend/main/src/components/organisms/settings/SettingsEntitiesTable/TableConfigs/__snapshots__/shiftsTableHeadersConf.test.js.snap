@@ -1,0 +1,161 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`shiftsTableHeadersConf > returns correct table headers configuration after 2024-12-03 1`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "enabled",
+    "tooltip": "Deleting or turning off templates will not affect active shifts or historical data.",
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "prependIcon": "M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z",
+    "prependIconColor": [Function],
+    "prependIconSize": 16,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Shifts",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "headerAppendIcon": null,
+    "headerAppendIconClass": "ml-1 mt-n1",
+    "headerAppendIconColor": "primary",
+    "headerAppendIconSize": 9,
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Days",
+    "textKey": "shiftDays",
+    "valueKey": "shiftDays",
+  },
+  {
+    "text": "Shift time",
+    "textKey": "shiftTime",
+    "valueKey": "startTime",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "filterable": false,
+    "formatFn": [Function],
+    "isBold": true,
+    "isPopUp": [Function],
+    "style": {
+      "width": "120px",
+    },
+    "text": "No shift",
+    "textKey": "noShiftDeviationCount",
+    "valueKey": "noShiftDeviationCount",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;
+
+exports[`shiftsTableHeadersConf > returns correct table headers configuration before 2024-12-03 1`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "enabled",
+    "tooltip": "Deleting or turning off templates will not affect active shifts or historical data.",
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "prependIcon": "M8 3H16C18.76 3 21 5.24 21 8V16C21 18.76 18.76 21 16 21H8C5.24 21 3 18.76 3 16V8C3 5.24 5.24 3 8 3Z",
+    "prependIconColor": [Function],
+    "prependIconSize": 16,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Shifts",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "headerAppendIcon": "M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z",
+    "headerAppendIconClass": "ml-1 mt-n1",
+    "headerAppendIconColor": "primary",
+    "headerAppendIconSize": 9,
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Days",
+    "textKey": "shiftDays",
+    "valueKey": "shiftDays",
+  },
+  {
+    "text": "Shift time",
+    "textKey": "shiftTime",
+    "valueKey": "startTime",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "filterable": false,
+    "formatFn": [Function],
+    "isBold": true,
+    "isPopUp": [Function],
+    "style": {
+      "width": "120px",
+    },
+    "text": "No shift",
+    "textKey": "noShiftDeviationCount",
+    "valueKey": "noShiftDeviationCount",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;

@@ -1,0 +1,419 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftviewChecklistAuthDialog > renders correctly 1`] = `
+<v-dialog-stub
+  absolute="false"
+  activatorprops="[object Object]"
+  attach="false"
+  capturefocus="true"
+  closeonback="true"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-9fd0df72=""
+  disabled="false"
+  eager="false"
+  fullscreen="false"
+  location="bottom"
+  locationstrategy="static"
+  modelvalue="false"
+  noclickanimation="false"
+  openonhover="false"
+  origin="center center"
+  persistent="true"
+  retainfocus="true"
+  scrim="true"
+  scrollable="false"
+  scrollstrategy="block"
+  sticktotarget="false"
+  transition="[object Object]"
+  viewportmargin="12"
+  width="400"
+  zindex="2400"
+>
+  <v-card-stub
+    border="false"
+    data-v-9fd0df72=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <v-card-title-stub
+      class="d-flex align-center justify-center"
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <!--v-if-->
+      <span
+        data-v-9fd0df72=""
+      >
+        Access checklist
+      </span>
+    </v-card-title-stub>
+    <v-card-text-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <selection-input-stub
+        checkbox="true"
+        coloractiveprepend="false"
+        data-v-9fd0df72=""
+        disabled="false"
+        disabledvalues=""
+        emittoggleall="false"
+        emptyequalsallselected="false"
+        error="false"
+        filled="true"
+        groupidkey="id"
+        groups=""
+        groupsorderby="name"
+        hiddenitemscount="0"
+        hidesearch="false"
+        hint="operator"
+        inverted="false"
+        isgroupedselect="false"
+        issingleselect="true"
+        itemflag=""
+        itemgroupidkey="groupId"
+        items="[object Object]"
+        itemsecondarytext=""
+        itemtertiarytext=""
+        itemtext="name"
+        itemvalue="id"
+        loading="false"
+        menuinputtype="primary"
+        modelvalue=""
+        numericorderby="false"
+        placeholder="operator"
+        prependtext=""
+        removenonexistentselections="false"
+        required="true"
+        showemptyarrayasallselected="false"
+        someselected="false"
+        totalcount="0"
+        usechips="false"
+      />
+    </v-card-text-stub>
+    <v-card-actions-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <v-spacer-stub
+        data-v-9fd0df72=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        text="Next_noun"
+        textclass=""
+        type="primary"
+      />
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-dialog-stub>
+`;
+
+exports[`ShiftviewChecklistAuthDialog > renders correctly if operator selection is not visible 1`] = `
+<v-dialog-stub
+  absolute="false"
+  activatorprops="[object Object]"
+  attach="false"
+  capturefocus="true"
+  closeonback="true"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-9fd0df72=""
+  disabled="false"
+  eager="false"
+  fullscreen="false"
+  location="bottom"
+  locationstrategy="static"
+  modelvalue="false"
+  noclickanimation="false"
+  openonhover="false"
+  origin="center center"
+  persistent="true"
+  retainfocus="true"
+  scrim="true"
+  scrollable="false"
+  scrollstrategy="block"
+  sticktotarget="false"
+  transition="[object Object]"
+  viewportmargin="12"
+  width="400"
+  zindex="2400"
+>
+  <v-card-stub
+    border="false"
+    data-v-9fd0df72=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <v-card-title-stub
+      class="d-flex align-center justify-center"
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <evocon-v-button-stub
+        class="back-button"
+        color=""
+        data-v-9fd0df72=""
+        icon="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+        iconcolor=""
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <span
+        data-v-9fd0df72=""
+      >
+        Access checklist
+      </span>
+    </v-card-title-stub>
+    <v-card-text-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <div
+        data-v-9fd0df72=""
+      >
+        <div
+          class="d-flex align-center justify-center"
+          data-v-9fd0df72=""
+        >
+          <v-icon-stub
+            class="mr-2"
+            color=""
+            data-v-9fd0df72=""
+            disabled="false"
+            end="false"
+            size="default"
+            start="false"
+            tag="i"
+          >
+            M12,15C7.58,15 4,16.79 4,19V21H20V19C20,16.79 16.42,15 12,15M8,9A4,4 0 0,0 12,13A4,4 0 0,0 16,9M11.5,2C11.2,2 11,2.21 11,2.5V5.5H10V3C10,3 7.75,3.86 7.75,6.75C7.75,6.75 7,6.89 7,8H17C16.95,6.89 16.25,6.75 16.25,6.75C16.25,3.86 14,3 14,3V5.5H13V2.5C13,2.21 12.81,2 12.5,2H11.5Z
+          </v-icon-stub>
+          <span
+            data-v-9fd0df72=""
+          >
+            Test Operator1
+          </span>
+        </div>
+        <otp-input-stub
+          data-v-9fd0df72=""
+          digitcount="4"
+          invalid="false"
+          label=""
+          modelvalue=""
+          type="password"
+          width="216"
+        />
+      </div>
+    </v-card-text-stub>
+    <v-card-actions-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <v-spacer-stub
+        data-v-9fd0df72=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Ok"
+        textclass=""
+        type="primary"
+      />
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-dialog-stub>
+`;
+
+exports[`ShiftviewChecklistAuthDialog > renders correctly if operator selection is not visible and showUsualCheckPasscodeInput is true 1`] = `
+<v-dialog-stub
+  absolute="false"
+  activatorprops="[object Object]"
+  attach="false"
+  capturefocus="true"
+  closeonback="true"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-9fd0df72=""
+  disabled="false"
+  eager="false"
+  fullscreen="false"
+  location="bottom"
+  locationstrategy="static"
+  modelvalue="false"
+  noclickanimation="false"
+  openonhover="false"
+  origin="center center"
+  persistent="true"
+  retainfocus="true"
+  scrim="true"
+  scrollable="false"
+  scrollstrategy="block"
+  sticktotarget="false"
+  transition="[object Object]"
+  viewportmargin="12"
+  width="400"
+  zindex="2400"
+>
+  <v-card-stub
+    border="false"
+    data-v-9fd0df72=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <v-card-title-stub
+      class="d-flex align-center justify-center"
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <evocon-v-button-stub
+        class="back-button"
+        color=""
+        data-v-9fd0df72=""
+        icon="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+        iconcolor=""
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <span
+        data-v-9fd0df72=""
+      >
+        Access checklist
+      </span>
+    </v-card-title-stub>
+    <v-card-text-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <div
+        data-v-9fd0df72=""
+      >
+        <div
+          class="d-flex align-center justify-center"
+          data-v-9fd0df72=""
+        >
+          <v-icon-stub
+            class="mr-2"
+            color=""
+            data-v-9fd0df72=""
+            disabled="false"
+            end="false"
+            size="default"
+            start="false"
+            tag="i"
+          >
+            M12,15C7.58,15 4,16.79 4,19V21H20V19C20,16.79 16.42,15 12,15M8,9A4,4 0 0,0 12,13A4,4 0 0,0 16,9M11.5,2C11.2,2 11,2.21 11,2.5V5.5H10V3C10,3 7.75,3.86 7.75,6.75C7.75,6.75 7,6.89 7,8H17C16.95,6.89 16.25,6.75 16.25,6.75C16.25,3.86 14,3 14,3V5.5H13V2.5C13,2.21 12.81,2 12.5,2H11.5Z
+          </v-icon-stub>
+          <span
+            data-v-9fd0df72=""
+          >
+            Test Operator1
+          </span>
+        </div>
+        <div
+          class="usual-pin-input mx-auto"
+          data-v-9fd0df72=""
+        >
+          <evocon-v-input-stub
+            autocomplete="one-time-code"
+            class="mt-2"
+            data-v-9fd0df72=""
+            error="false"
+            filled="true"
+            grow="false"
+            hint=""
+            id="check-pin"
+            modelvalue=""
+            truncateinput="false"
+            type="password"
+            usechip="false"
+          />
+        </div>
+      </div>
+    </v-card-text-stub>
+    <v-card-actions-stub
+      data-v-9fd0df72=""
+      tag="div"
+    >
+      <v-spacer-stub
+        data-v-9fd0df72=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-9fd0df72=""
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Ok"
+        textclass=""
+        type="primary"
+      />
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-dialog-stub>
+`;

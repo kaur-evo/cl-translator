@@ -1,0 +1,255 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconVInput > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <v-text-field-stub
+    active="false"
+    autocomplete="off"
+    autofocus="false"
+    class="evocon-v-input"
+    clearable="false"
+    clearicon="$clear"
+    color="primary"
+    density="default"
+    dirty="false"
+    error="false"
+    errormessages=""
+    flat="false"
+    focused="false"
+    glow="false"
+    hidedetails="auto"
+    hidespinbuttons="false"
+    iconcolor="false"
+    loading="false"
+    maxerrors="1"
+    messages=""
+    modelvalue="Test"
+    persistentclear="false"
+    persistentcounter="true"
+    persistenthint="true"
+    persistentplaceholder="false"
+    reverse="false"
+    rules=""
+    singleline="false"
+    tile="false"
+    type="text"
+    variant="filled"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly as a chip 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <evocon-input-chip-stub
+    disabled="false"
+    error="false"
+    grow="false"
+    isdynamicchip="false"
+    isplaininputchip="false"
+    modelvalue="Test"
+    warning="false"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly as a chip without value 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <evocon-input-chip-stub
+    disabled="false"
+    error="false"
+    grow="false"
+    isdynamicchip="false"
+    isplaininputchip="false"
+    warning="false"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly if icon is activated 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <v-text-field-stub
+    active="false"
+    autocomplete="off"
+    autofocus="false"
+    class="evocon-v-input evocon-v-input--active-icon"
+    clearable="false"
+    clearicon="$clear"
+    color="primary"
+    density="default"
+    dirty="false"
+    error="false"
+    errormessages=""
+    flat="false"
+    focused="false"
+    glow="false"
+    hidedetails="auto"
+    hidespinbuttons="false"
+    iconcolor="false"
+    loading="false"
+    maxerrors="1"
+    messages=""
+    modelvalue="Test"
+    persistentclear="false"
+    persistentcounter="true"
+    persistenthint="true"
+    persistentplaceholder="false"
+    reverse="false"
+    rules=""
+    singleline="false"
+    tile="false"
+    type="text"
+    variant="filled"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly if icon is rotated by 270 deg 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <v-text-field-stub
+    active="false"
+    autocomplete="off"
+    autofocus="false"
+    class="evocon-v-input"
+    clearable="false"
+    clearicon="$clear"
+    color="primary"
+    density="default"
+    dirty="false"
+    error="false"
+    errormessages=""
+    flat="false"
+    focused="false"
+    glow="false"
+    hidedetails="auto"
+    hidespinbuttons="false"
+    iconcolor="false"
+    isiconrotated="true"
+    loading="false"
+    maxerrors="1"
+    messages=""
+    modelvalue="Test"
+    persistentclear="false"
+    persistentcounter="true"
+    persistenthint="true"
+    persistentplaceholder="false"
+    reverse="false"
+    rules=""
+    singleline="false"
+    tile="false"
+    type="text"
+    variant="filled"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly if input is not filled and should be truncated 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <v-text-field-stub
+    active="false"
+    autocomplete="off"
+    autofocus="false"
+    class="evocon-v-input borderless-text-field text-field-truncate"
+    clearable="false"
+    clearicon="$clear"
+    color="primary"
+    density="default"
+    dirty="false"
+    error="false"
+    errormessages=""
+    flat="false"
+    focused="false"
+    glow="false"
+    hidedetails="auto"
+    hidespinbuttons="false"
+    iconcolor="false"
+    loading="false"
+    maxerrors="1"
+    messages=""
+    modelvalue="Test"
+    persistentclear="false"
+    persistentcounter="true"
+    persistenthint="true"
+    persistentplaceholder="false"
+    reverse="false"
+    rules=""
+    singleline="false"
+    tile="false"
+    type="text"
+    variant="underlined"
+  />
+  
+</div>
+`;
+
+exports[`EvoconVInput > renders correctly in mobile view 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <!-- eslint-disable vue/custom-event-name-casing -->
+  <v-text-field-stub
+    active="false"
+    autocomplete="off"
+    autofocus="false"
+    class="evocon-v-input"
+    clearable="false"
+    clearicon="$clear"
+    color="primary"
+    density="compact"
+    dirty="false"
+    error="false"
+    errormessages=""
+    flat="false"
+    focused="false"
+    glow="false"
+    hidedetails="auto"
+    hidespinbuttons="false"
+    iconcolor="false"
+    isiconrotated="true"
+    loading="false"
+    maxerrors="1"
+    messages=""
+    modelvalue="Test"
+    persistentclear="false"
+    persistentcounter="true"
+    persistenthint="true"
+    persistentplaceholder="false"
+    reverse="false"
+    rules=""
+    singleline="false"
+    tile="false"
+    type="text"
+    variant="filled"
+  />
+  
+</div>
+`;

@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListItemToggleAll > renders correctly 1`] = `
+<v-list-item-stub
+  border="false"
+  density="compact"
+  disabled="true"
+  exact="false"
+  height="40px"
+  lines="false"
+  nav="false"
+  replace="false"
+  ripple="true"
+  slim="false"
+  tag="div"
+  tile="false"
+  variant="text"
+>
+  <list-item-contents-stub
+    checkbox="true"
+    color="primary"
+    dense="true"
+    disabled="true"
+    error="true"
+    flagcountrycode=""
+    icon=""
+    iconcolor=""
+    iconsize=""
+    indeterminate="false"
+    isgroupactivatoritem="false"
+    issingleselect="false"
+    loading="false"
+    primaryhighlight=""
+    primarytext="Select all"
+    secondaryhighlight=""
+    secondarytext=""
+    tertiaryhighlight=""
+    tertiarytext=""
+    tertiarytextclasses=""
+  />
+</v-list-item-stub>
+`;

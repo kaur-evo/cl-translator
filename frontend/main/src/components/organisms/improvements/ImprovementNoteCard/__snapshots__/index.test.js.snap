@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementNoteCard > renders correctly 1`] = `
+<v-row-stub
+  class="mt-4 align-baseline notes-row editable"
+  data-v-f3fa8d44=""
+  dense="false"
+  density="default"
+  nogutters="false"
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    data-v-f3fa8d44=""
+    lg="3"
+    md="false"
+    sm="4"
+    tag="div"
+    xl="2"
+    xxl="false"
+  >
+    <div
+      class="text-label-small text-high-emphasis"
+      data-v-f3fa8d44=""
+    />
+    <div
+      class="mt-2 text-label-small text-medium-emphasis"
+      data-v-f3fa8d44=""
+    >
+      00:00 · 01.01.2020
+    </div>
+    <div
+      class="mt-1 action-buttons d-flex align-center"
+      data-v-f3fa8d44=""
+    >
+      <!--v-if-->
+      <!--v-if-->
+    </div>
+  </v-col-stub>
+  <v-col-stub
+    class="px-5"
+    cols="12"
+    data-v-f3fa8d44=""
+    lg="9"
+    md="false"
+    sm="8"
+    tag="div"
+    xl="10"
+    xxl="false"
+  >
+    
+    <p
+      data-v-f3fa8d44=""
+    >
+      note
+    </p>
+    
+  </v-col-stub>
+</v-row-stub>
+`;

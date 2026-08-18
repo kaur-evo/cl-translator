@@ -1,0 +1,303 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MessageDialogSideMenu > renders correctly 1`] = `
+<div
+  class="mr-1"
+  data-v-17b33d2d=""
+>
+  <evocon-v-button-stub
+    class="mb-4"
+    color="quaternary-dark"
+    data-v-17b33d2d=""
+    disabled="true"
+    icon=""
+    iconcolor=""
+    text="New message"
+    textclass=""
+    type="primary"
+  />
+  <generic-tabs-row-stub
+    color=""
+    data-v-17b33d2d=""
+    disabledrulefunc="[Function]"
+    grow="true"
+    height="56"
+    items="Inbox,Archived"
+    modelvalue="0"
+    notclickable="false"
+    sizeclass=""
+    tabnamefn="[Function]"
+  />
+  <div
+    class="side-menu-list"
+    data-v-17b33d2d=""
+  >
+    <v-list-stub
+      activatable="false"
+      border="false"
+      class="py-1"
+      data-v-17b33d2d=""
+      density="default"
+      disabled="false"
+      filterable="false"
+      itemchildren="children"
+      itemprops="props"
+      items=""
+      itemsregistration="render"
+      itemtitle="title"
+      itemtype="type"
+      itemvalue="value"
+      lines="one"
+      mandatory="false"
+      nav="false"
+      navigationstrategy="focus"
+      openstrategy="list"
+      returnobject="false"
+      selectable="false"
+      selectstrategy="single-leaf"
+      slim="false"
+      tag="div"
+      tile="false"
+      variant="text"
+    >
+      
+      <v-list-item-stub
+        active="true"
+        border="false"
+        class="px-2 py-3"
+        color="primary"
+        data-v-17b33d2d=""
+        density="default"
+        disabled="false"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        variant="text"
+      >
+        <v-list-item-title-stub
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          <span
+            class="font-weight-medium"
+            data-v-17b33d2d=""
+          >
+            subject
+          </span>
+        </v-list-item-title-stub>
+        <v-list-item-subtitle-stub
+          class="text-secondary-text"
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          paricipant
+        </v-list-item-subtitle-stub>
+      </v-list-item-stub>
+      
+    </v-list-stub>
+  </div>
+</div>
+`;
+
+exports[`MessageDialogSideMenu > renders correctly in mobile 1`] = `
+<div
+  class="mr-1"
+  data-v-17b33d2d=""
+>
+  <!--v-if-->
+  <generic-tabs-row-stub
+    color=""
+    data-v-17b33d2d=""
+    disabledrulefunc="[Function]"
+    grow="true"
+    height="40"
+    items="Inbox,Archived"
+    modelvalue="0"
+    notclickable="false"
+    sizeclass=""
+    tabnamefn="[Function]"
+  />
+  <div
+    class="side-menu-list side-menu-list--mobile"
+    data-v-17b33d2d=""
+  >
+    <v-list-stub
+      activatable="false"
+      border="false"
+      class="py-1"
+      data-v-17b33d2d=""
+      density="default"
+      disabled="false"
+      filterable="false"
+      itemchildren="children"
+      itemprops="props"
+      items=""
+      itemsregistration="render"
+      itemtitle="title"
+      itemtype="type"
+      itemvalue="value"
+      lines="one"
+      mandatory="false"
+      nav="false"
+      navigationstrategy="focus"
+      openstrategy="list"
+      returnobject="false"
+      selectable="false"
+      selectstrategy="single-leaf"
+      slim="false"
+      tag="div"
+      tile="false"
+      variant="text"
+    >
+      
+      <v-list-item-stub
+        active="true"
+        border="false"
+        class="px-2 py-3"
+        color="primary"
+        data-v-17b33d2d=""
+        density="default"
+        disabled="false"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        variant="text"
+      >
+        <v-list-item-title-stub
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          <span
+            class="font-weight-medium text-body-medium"
+            data-v-17b33d2d=""
+          >
+            subject
+          </span>
+        </v-list-item-title-stub>
+        <v-list-item-subtitle-stub
+          class="text-secondary-text text-body-small"
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          paricipant
+        </v-list-item-subtitle-stub>
+      </v-list-item-stub>
+      
+    </v-list-stub>
+  </div>
+</div>
+`;
+
+exports[`MessageDialogSideMenu > renders correctly in tablet 1`] = `
+<div
+  class="mr-1"
+  data-v-17b33d2d=""
+>
+  <evocon-v-button-stub
+    class="mb-4"
+    color="quaternary-dark"
+    data-v-17b33d2d=""
+    disabled="true"
+    icon=""
+    iconcolor=""
+    text="New message"
+    textclass=""
+    type="primary"
+  />
+  <generic-tabs-row-stub
+    color=""
+    data-v-17b33d2d=""
+    disabledrulefunc="[Function]"
+    grow="true"
+    height="56"
+    items="Inbox,Archived"
+    modelvalue="0"
+    notclickable="false"
+    sizeclass=""
+    tabnamefn="[Function]"
+  />
+  <div
+    class="side-menu-list side-menu-list--tablet"
+    data-v-17b33d2d=""
+  >
+    <v-list-stub
+      activatable="false"
+      border="false"
+      class="py-1"
+      data-v-17b33d2d=""
+      density="default"
+      disabled="false"
+      filterable="false"
+      itemchildren="children"
+      itemprops="props"
+      items=""
+      itemsregistration="render"
+      itemtitle="title"
+      itemtype="type"
+      itemvalue="value"
+      lines="one"
+      mandatory="false"
+      nav="false"
+      navigationstrategy="focus"
+      openstrategy="list"
+      returnobject="false"
+      selectable="false"
+      selectstrategy="single-leaf"
+      slim="false"
+      tag="div"
+      tile="false"
+      variant="text"
+    >
+      
+      <v-list-item-stub
+        active="true"
+        border="false"
+        class="px-2 py-3"
+        color="primary"
+        data-v-17b33d2d=""
+        density="default"
+        disabled="false"
+        exact="false"
+        lines="false"
+        nav="false"
+        replace="false"
+        ripple="true"
+        slim="false"
+        tag="div"
+        tile="false"
+        variant="text"
+      >
+        <v-list-item-title-stub
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          <span
+            class="font-weight-medium"
+            data-v-17b33d2d=""
+          >
+            subject
+          </span>
+        </v-list-item-title-stub>
+        <v-list-item-subtitle-stub
+          class="text-secondary-text"
+          data-v-17b33d2d=""
+          tag="div"
+        >
+          paricipant
+        </v-list-item-subtitle-stub>
+      </v-list-item-stub>
+      
+    </v-list-stub>
+  </div>
+</div>
+`;

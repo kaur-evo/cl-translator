@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementProjectFinishForm > renders correctly 1`] = `
+<div
+  class="px-4 pb-4 pt-0"
+>
+  <div
+    class="mx-2 text-body-small text-medium-emphasis"
+  >
+    Problem statement
+  </div>
+  <div
+    class="mx-2 text-body-large mt-1 mb-4 text-high-emphasis"
+  >
+    description
+  </div>
+  <evocon-v-textarea-stub
+    class="ma-2"
+    counter=""
+    hint="Improvement summary"
+    modelvalue="final summary"
+    no-resize=""
+    placeholder="Improvement summary"
+    rules="(v) => !!v"
+  />
+  <evocon-date-input-stub
+    class="mx-2"
+    clearable="false"
+    disabled="false"
+    hint="Done"
+    max=""
+    min="2021-01-01"
+    modelvalue="2024-01-08"
+    persistenthint="true"
+    range="false"
+    required="false"
+  />
+  <v-card-actions-stub
+    class="pa-2 justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="false"
+      icon="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+      iconcolor=""
+      text="Finish"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;

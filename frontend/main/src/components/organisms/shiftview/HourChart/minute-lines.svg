@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="axes">
+  <style>
+    .min-line {
+      stroke: #fff;
+      fill-opacity:0.54;
+      stroke-width: 1px;
+    }
+
+    .min-line-dash {
+      stroke: #fff;
+      fill-opacity:0.54;
+      stroke-dasharray: 5;
+      opacity: 0.5;
+    }
+  </style>
+  <line class="min-line-dash" x1="8.34%" y1="0" x2="8.34%" y2="100%" />
+  <line class="min-line-dash" x1="16.68%" y1="0" x2="16.68%" y2="100%" />
+  <line class="min-line" x1="25.02%" y1="0" x2="25.02%" y2="100%" />
+  <line class="min-line-dash" x1="33.36%" y1="0" x2="33.36%" y2="100%" />
+  <line class="min-line-dash" x1="41.7%" y1="0" x2="41.7%" y2="100%" />
+  <line class="min-line" x1="50.04%" y1="0" x2="50.04%" y2="100%" />
+  <line class="min-line-dash" x1="58.38%" y1="0" x2="58.38%" y2="100%" />
+  <line class="min-line-dash" x1="66.72%" y1="0" x2="66.72%" y2="100%" />
+  <line class="min-line" x1="75.06%" y1="0" x2="75.06%" y2="100%" />
+  <line class="min-line-dash" x1="83.4%" y1="0" x2="83.4%" y2="100%" />
+  <line class="min-line-dash" x1="91.74%" y1="0" x2="91.74%" y2="100%" />
+</svg>

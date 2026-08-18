@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SecondaryNavDrawerItem > renders correctly 1`] = `
+<div
+  activecolor="primary"
+  class="secondary-nav-drawer-item"
+  data-v-4a38ec51=""
+  value="true"
+>
+  <evocon-v-tooltip-wrap-stub
+    data-v-4a38ec51=""
+    disabled="true"
+    location="top"
+    opendelay="500"
+    position="end"
+    text="Label"
+  />
+</div>
+`;
+
+exports[`SecondaryNavDrawerItem > renders correctly as collapsed 1`] = `
+<div
+  activecolor="primary"
+  class="secondary-nav-drawer-item"
+  data-v-4a38ec51=""
+  value="true"
+>
+  <evocon-v-tooltip-wrap-stub
+    data-v-4a38ec51=""
+    disabled="false"
+    location="top"
+    opendelay="500"
+    position="end"
+    text="Label"
+  />
+</div>
+`;

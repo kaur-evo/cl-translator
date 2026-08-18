@@ -1,0 +1,149 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`permissionsFactory > returns correct permissionsMap 1`] = `
+{
+  "addAPIKeys": [
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "SYS_ADMIN",
+  ],
+  "allfactories": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "billingNotification": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+  ],
+  "chat": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "dashboard": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "dataImportExport": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+  ],
+  "deleteChecklist": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+  ],
+  "deleteShift": [
+    "FACTORY_ADMIN",
+    "COMPANY_ADMIN",
+    "SYS_ADMIN",
+  ],
+  "editGlobalGroup": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+  ],
+  "editPastShift": [
+    "FACTORY_ADMIN",
+    "COMPANY_ADMIN",
+    "SYS_ADMIN",
+  ],
+  "editProfile": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "editSignal": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+  ],
+  "exportSettings": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+  ],
+  "gridview": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "help": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+    "LINEVIEW_USER",
+  ],
+  "improvements": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "productTour": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "releasesUpdate": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "reportsNew": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "securitySettings": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+  ],
+  "settings": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+  ],
+  "shareDashboard": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+  ],
+  "shiftview": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+    "LINEVIEW_USER",
+  ],
+  "splitview": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+    "LINEVIEW_USER",
+  ],
+  "suggestFeature": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+  "support": [
+    "SYS_ADMIN",
+    "COMPANY_ADMIN",
+    "FACTORY_ADMIN",
+    "OFFICE_USER",
+  ],
+}
+`;

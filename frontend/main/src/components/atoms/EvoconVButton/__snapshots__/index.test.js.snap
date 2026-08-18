@@ -1,0 +1,299 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconVButton > renders correctly 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class="px-4"
+  color="primary"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height=""
+  icon="false"
+  id="evocon-button"
+  loading="false"
+  maxheight=""
+  maxwidth=""
+  minheight=""
+  minwidth=""
+  replace="false"
+  ripple="true"
+  size="default"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="flat"
+  width=""
+>
+  <!--v-if-->
+  <span
+    class=""
+    id="evocon-button-text"
+  >
+    button text
+  </span>
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly if button type is primary-light 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class="px-4"
+  color="primary"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height=""
+  icon="false"
+  id="evocon-button"
+  loading="false"
+  maxheight=""
+  maxwidth=""
+  minheight=""
+  minwidth=""
+  replace="false"
+  ripple="true"
+  size="default"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="tonal"
+  width=""
+>
+  <!--v-if-->
+  <span
+    class=""
+    id="evocon-button-text"
+  >
+    button text
+  </span>
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly if button type is secondary 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class="px-4"
+  color="grey"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height=""
+  icon="false"
+  id="evocon-button"
+  loading="false"
+  maxheight=""
+  maxwidth=""
+  minheight=""
+  minwidth=""
+  replace="false"
+  ripple="true"
+  size="default"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="text"
+  width=""
+>
+  <!--v-if-->
+  <span
+    class=""
+    id="evocon-button-text"
+  >
+    button text
+  </span>
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly in mobile view 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class=""
+  color="primary"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height="32px"
+  icon="true"
+  id="evocon-button"
+  loading="false"
+  maxheight="32px"
+  maxwidth="32px"
+  minheight="32px"
+  minwidth="32px"
+  replace="false"
+  ripple="true"
+  size="small"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="text"
+  width="32px"
+>
+  <v-icon-stub
+    class="evocon-button-icon"
+    color="primary"
+    disabled="false"
+    end="false"
+    size="20"
+    start="false"
+    tag="i"
+  >
+    M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
+  </v-icon-stub>
+  <!--v-if-->
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly in mobile view as icon button 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class=""
+  color="primary"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height="32px"
+  icon="true"
+  id="evocon-button"
+  loading="false"
+  maxheight="32px"
+  maxwidth="32px"
+  minheight="32px"
+  minwidth="32px"
+  replace="false"
+  ripple="true"
+  size="small"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="text"
+  width="32px"
+>
+  <v-icon-stub
+    class="evocon-button-icon"
+    color="primary"
+    disabled="false"
+    end="false"
+    size="20"
+    start="false"
+    tag="i"
+  >
+    M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
+  </v-icon-stub>
+  <!--v-if-->
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly when icon button is disabled 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class=""
+  color="primary"
+  density="default"
+  disabled="true"
+  exact="false"
+  flat="false"
+  height="40px"
+  icon="true"
+  id="evocon-button"
+  loading="false"
+  maxheight="40px"
+  maxwidth="40px"
+  minheight="40px"
+  minwidth="40px"
+  replace="false"
+  ripple="true"
+  size="default"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="text"
+  width="40px"
+>
+  <v-icon-stub
+    class="evocon-button-icon"
+    color="text--secondary-text"
+    disabled="false"
+    end="false"
+    size="24"
+    start="false"
+    tag="i"
+  >
+    M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
+  </v-icon-stub>
+  <!--v-if-->
+</v-btn-stub>
+`;
+
+exports[`EvoconVButton > renders correctly with icon 1`] = `
+<v-btn-stub
+  block="false"
+  border="false"
+  class="pl-3 pr-4"
+  color="primary"
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  height=""
+  icon="false"
+  id="evocon-button"
+  loading="false"
+  maxheight=""
+  maxwidth=""
+  minheight=""
+  minwidth=""
+  replace="false"
+  ripple="true"
+  size="default"
+  slim="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-btn-toggle)"
+  tag="button"
+  tile="false"
+  variant="flat"
+  width=""
+>
+  <v-icon-stub
+    class="evocon-button-icon mr-2"
+    color=""
+    disabled="false"
+    end="false"
+    size="24"
+    start="false"
+    tag="i"
+  >
+    M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z
+  </v-icon-stub>
+  <span
+    class=""
+    id="evocon-button-text"
+  >
+    button text
+  </span>
+</v-btn-stub>
+`;

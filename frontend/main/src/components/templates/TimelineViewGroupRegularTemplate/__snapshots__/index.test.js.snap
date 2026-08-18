@@ -1,0 +1,70 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TimelineViewGroupRegularTemplate > renders correctly 1`] = `
+<div
+  class="chart-component"
+  data-v-6424c2f3=""
+>
+  <v-row-stub
+    class="header-row rounded"
+    data-v-6424c2f3=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="first-col flex-shrink-1 flex-grow-0 fill-height"
+      cols="false"
+      data-v-6424c2f3=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      
+    </v-col-stub>
+    <v-col-stub
+      class="flex-grow-1 flex-shrink-0 fill-height axis-container"
+      cols="false"
+      data-v-6424c2f3=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      
+    </v-col-stub>
+    <v-col-stub
+      class="last-col fill-height"
+      cols="false"
+      data-v-6424c2f3=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      
+    </v-col-stub>
+  </v-row-stub>
+  <draggable-stub
+    clone="[Function]"
+    data-v-6424c2f3=""
+    ghost-class="ghost"
+    group="factory-group-1"
+    handle=".handle"
+    itemkey="id"
+    modelvalue=""
+    tag="div"
+  />
+</div>
+`;

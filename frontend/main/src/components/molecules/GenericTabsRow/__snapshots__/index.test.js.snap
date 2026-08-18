@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GenericTabsRow > renders correctly 1`] = `
+<v-tabs-stub
+  aligntabs="start"
+  centeractive="false"
+  class="generic-tabs-row flex-shrink-0"
+  density="default"
+  direction="horizontal"
+  disabled="false"
+  fixedtabs="false"
+  grow="true"
+  height="56"
+  hideslider="false"
+  inset="false"
+  items=""
+  lazy=""
+  mandatory="force"
+  modelvalue="0"
+  multiple="false"
+  nexticon="$next"
+  previcon="$prev"
+  scrolltoactive="true"
+  selectedclass="v-tab-item--selected"
+  showarrows="false"
+  stacked="false"
+  symbol="Symbol(vuetify:v-slide-group)"
+  tag="div"
+  value="0"
+>
+  
+  
+</v-tabs-stub>
+`;

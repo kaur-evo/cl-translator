@@ -1,0 +1,62 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] SIS (Swedish Institute for Standards) — SS-EN 13306:2017 (Swedish maintenance terminology)",
+    "[S1] SIS — SS-ISO 22400 (Swedish adoption of manufacturing KPIs)",
+    "[S2] Novotek Sverige AB — TAK/OEE solution provider, uses TAK in Swedish-language UIs",
+    "[S2] MaintMaster (Swedish CMMS/OEE vendor) — TAK terminology in product documentation",
+    "[S2] SAP Swedish localization — OEE, tillgänglighet, prestanda",
+    "[S2] Plantvision (Swedish MES) — TAK/OEE",
+    "[S3] Swedish Wikipedia — Oee article documenting TAK acronym and components",
+    "[S3] IATE (EU inter-institutional terminology) — Swedish manufacturing terms",
+    "[S3] Microsoft Swedish Localization Style Guide (SWE-SWE) — informal 'du'",
+    "[S3] Unbabel Swedish Language Guidelines — 'du' is standard; 'ni' archaic",
+    "[S4] World-Class-Manufacturing.com/svenska — TAK/OEE calculator with Swedish terminology",
+    "[S4] Utek.se — TAK-faktor (OEE) calculator",
+    "[S4] Watching the Swedes — '25 Swedish False Friends' (aktuell confirmed)",
+    "[S4] DiVA Portal — Swedish manufacturing thesis literature using TAK",
+    "[S5] Hilcon.se, Qestio.se, Axelent Solutions — Swedish manufacturing websites using TAK/OEE"
+  ],
+  "termSubstitutions": {},
+  "formality": "informal",
+  "pronounForm": "du",
+  "falseFriends": {
+    "actual": "Use 'verklig' or 'faktisk', not 'aktuell' (which means 'current')",
+    "eventually": "Use 'till slut' or 'slutligen', not 'eventuellt' (which means 'possibly')",
+    "billion": "Use 'miljard' (10^9), not 'biljon' (which means 10^12)",
+    "performance": "In TAK/OEE context, use 'anläggningsutnyttjande' (the 'A' component), not generic 'prestanda'",
+    "station": "Use 'arbetsstation' for manufacturing workstation; 'station' means train/bus station",
+    "scrap": "Use 'kassation' for quality-rejected units, not 'skrot' (metal recycling waste)",
+    "idle": "Use 'tomgång' or 'väntar', not 'lat' (lazy — pejorative)",
+    "shift": "'Skift' is correct for work shift; also means keyboard Shift key — unambiguous in manufacturing",
+    "effective": "'Effektiv' can mean 'efficient' (not same as 'effective'). Use 'ändamålsenlig' for goal-achieving.",
+    "setup": "Use 'omställning' (changeover) or 'inställning' (calibration), not 'setup' (anglicism)"
+  },
+  "grammarNotes": {
+    "compoundWords": "Swedish forms compounds: 'cykeltid' (cycle time), 'driftstopp' (downtime). Never split: 'cykeltid' not 'cykel tid'.",
+    "enEtt": "Two genders with 'en' (common, ~75%) and 'ett' (neuter, ~25%). Definite form is suffix: 'maskinen', 'skiftet'.",
+    "definiteNounSuffix": "Swedish appends definite article as suffix: 'Tillgängligheten är 85%' vs 'Beräkna tillgänglighet'.",
+    "numberFormatting": "Comma decimal, space/period thousands: '85,5%'. '1 000 enheter'.",
+    "compoundPluralModifiers": "Swedish compound words inherently use singular modifier stems. Compound formation handles modifier singularity by construction. No compound pluralization issue."
+  },
+  "industryContext": {
+    "oeeTerminology": "Sweden has TAK (Tillgänglighet x Anläggningsutbyte x Kvalitet) as established OEE equivalent. Both TAK and OEE used interchangeably.",
+    "takAcronym": "TAK = Tillgänglighet (availability), Anläggningsutbyte (performance), Kvalitet (quality). Documented by Novotek, MaintMaster.",
+    "dominantSectors": "Automotive (Volvo, Scania), mining (Sandvik, Atlas Copco), defense (Saab), pulp/paper, engineering",
+    "standardsUsed": [
+      "SS-EN 13306:2017",
+      "SS-ISO 22400"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'ni' instead of 'du' — 'du' is correct since du-reformen 1967",
+    "Using 'aktuell' for 'actual' instead of 'verklig' or 'faktisk'",
+    "Splitting compound words: 'cykel tid' instead of 'cykeltid'",
+    "Using 'skrot' for production scrap instead of 'kassation'",
+    "Ignoring TAK — the culturally resonant Swedish OEE equivalent should be documented",
+    "Wrong article (en vs ett) for technical nouns"
+  ],
+  "lengthMultiplier": 2,
+  "acronymExpansionAllowed": false,
+  "notes": "Swedish has TAK as established OEE equivalent. Du-reformen (1967) eliminated formal address; 'du' is universal. P95 expansion 1.64x."
+}

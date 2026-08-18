@@ -1,0 +1,667 @@
+{
+    "audits": [],
+    "contentHashes": {
+        "alternative unit:ar": "3dfdb7f778ae78aff0fd080bd2c2e9b44dff834f88a8e629ded40e40e065702f",
+        "alternative unit:fr": "704e092e2db1687b",
+        "availability:ar": "b24fc7d45a28461224b07c4aafd6e33b77b2981e373ca1427dca3cb82e00d9c1",
+        "availability:fr": "76c9769359c74f6f",
+        "batch:ar": "6cce5888fb8cec699bf22ce86915d6e9f5caa45a9fafb931981f2ff1d236b80a",
+        "batch:fr": "bfaba23765837b0e",
+        "changeover:ar": "e9c13d4871c63a951e7de6fc47f123e107886d38ed12b26b4056ae34ab8b6da4",
+        "changeover:fr": "9c46934dab297852",
+        "checklist groups:ar": "5178ed971583b2522f1bfbf6d4f33c8f707ea42cce9e698ffa56771999e9f1b3",
+        "checklist groups:fr": "b69e30cc899e28fa",
+        "checklist:ar": "c6541f6b06bdb89e489aeb291735e34aec44afabf35d718ed021cb3e56c2291f",
+        "checklist:fr": "d13d6f10e64106f2",
+        "checklists:ar": "139cb400931f05b3609b83fbb5ed5247539ad93bef6e062304e2b4fc7d62f2f1",
+        "checklists:fr": "10034a08c6cdeca1",
+        "company administrator:ar": "f3260a7898465519fe85088a5c6026e9d9618d7988b67e88bdc8944a75943937",
+        "company administrator:fr": "43470ed7012a6c9e",
+        "cycle time:ar": "2fda1a1fefe73301949cce4d8004e436406c6cab8608cd2d3feffa7e0816a34a",
+        "cycle time:fr": "d3415d582fc5a1c8",
+        "dashboard:ar": "21c1ae137ee072f75dc42489ad8ceef1106533d56837e44a36c7604f4cf161bc",
+        "dashboard:fr": "0c4bdd0fbd665a1f",
+        "default scrap reason:ar": "247e687ec68cd3928ffbd2d36ea86eb94b6c96a8d15894eff2bb1003dac98a00",
+        "default scrap reason:fr": "d2cf766fb968b66a",
+        "downtime auto-commenting:ar": "3f6bbc1404b1356f0601c11fbb083c4a934ff7a0964cdc70123875ee01944073",
+        "downtime auto-commenting:fr": "657c99cd8e1ab8d2",
+        "downtime:ar": "baea094f3970fb438a50da18097aaa3ff8a559bb93ffffb677dff5a6b7936c34",
+        "downtime:fr": "6eefafb09550e06d",
+        "duration:ar": "433f8e7be56af7b67220fb991608f26fa8895af967dab063c1f78321ff3611a7",
+        "duration:fr": "1fa5631ccbac7b4c",
+        "empty shift reason:ar": "aebd12b38a84ed0370015322776e037596b76fe91437b32dfa38171a5e677042",
+        "empty shift reason:fr": "06e823ac0c209c97",
+        "empty shift:ar": "eadd3cdbddbea63c5169a7f71f9b9945697d2f3bb6cd2a9944221b96441cbd52",
+        "empty shift:fr": "130cc33b9c22a1b5",
+        "extra note:ar": "d9f5ba3f302eb026a4acb0f48db496fac598793818a38a87b0d194e3c94abe67",
+        "extra note:fr": "62119460814d4574",
+        "extra shift:ar": "fc79a53c7f36d2d671e4299cdab67d023f17c7d52c3deef8c1887f4b52d003fb",
+        "extra shift:fr": "ffb79cf32dcad2c2",
+        "factory administrator:ar": "bb04c100752264d62999822f4496d49845442da1f4f44e085c5f1aa278f6e8ac",
+        "factory administrator:fr": "d4e79c9f990a12e3",
+        "Factory Overview:ar": "db09b366a2481226ebb04535694422008a0f7b8787ca4f9ced4c6af59b7cc41e",
+        "Factory Overview:fr": "dd0b90d247a6d812",
+        "factory:ar": "5a80bf6202ee458ed8727a016ab72649b3ff024b1aac28047aa2d3265b0c0703",
+        "factory:fr": "0401fc841a65a9e3",
+        "good production:ar": "bd507fb178d5a7636691e2c742d8d5499e8fe4dd13098cf4e58ffbddf4fff98b",
+        "good production:fr": "48df0a4d96755afc",
+        "good quantity:ar": "219a5366c6f5d43f4ee6889e7cb7f8bcc27478af78a42043352a186cb768f114",
+        "good quantity:fr": "f5cd0409f87ce9f6",
+        "Grid View:ar": "ba603d75550db70b2dc41033dc604415b1b9de72a2a9d54d577ed5dbf2077be0",
+        "Grid View:fr": "9becb49f6df405ca",
+        "ideal cycle time:ar": "2a6cd02fc893ddec13d02953f2e37c5190317dc7a6ffa3d6be76fb2f34135abd",
+        "ideal cycle time:fr": "2712df67b084b623",
+        "location:ar": "38e7f5c0d9278468af1a11cc049a472330f51f1d253b2d954dbe853ed00ed11b",
+        "location:fr": "2ee828eb0d45de82",
+        "locations:ar": "cc11f5f2b5925caa71a3443cf22b0be5a85055286adf04cdcdad073d7464dd36",
+        "locations:fr": "d2926689d7d201d9",
+        "loss:ar": "c5b85aecd1510ef66681fdcd562158fa55f03e34c2aa9f9e992648f164e27445",
+        "loss:fr": "e781cd36c3a44ad3",
+        "LOT/Batch number:ar": "4f40a7fce8aadbf8eaf2ed1ccfb712d8d71b7d0484dd408b3735dddba8183085",
+        "LOT/Batch number:fr": "0c4879fcdc46f473",
+        "machine location:ar": "50b703b259bed0abd97289f3dc4a8164defcf7461c19da26127bb5b3318a03ef",
+        "machine location:fr": "a8925409641a36f8",
+        "machine locations:ar": "a8fb2efb0d4922e39cc95f6810216f9ccae6da2d2b61138e85a3cec9a2c4bc0b",
+        "machine locations:fr": "d284e1983c8f6ddd",
+        "No shift days:ar": "5b61191afce2350939d5236a657ca706ee9b011f47e9a1be5cc1088cf4c9007f",
+        "No shift days:fr": "46cceddac3c751f8",
+        "OEE calculation:ar": "455b6f2b0637c032a11304027592edafe990b4aa2fbe40aac8328bf4836c9d6c",
+        "OEE calculation:fr": "cc6e15065ae86ae7",
+        "OEE:ar": "5f71ade58f1159e5b1f902543dbdc689a2f0bb1350d2a35ac1dd42e0895bc8ca",
+        "OEE:fr": "bf1a38860b525534",
+        "OOE:ar": "28d3c26d1f003d4e14a54f38502ed631bd3de4c65dc180402723fd156fae9943",
+        "OOE:fr": "5c6c952bdd224ffc",
+        "operating time:ar": "7cdc3231d358ad632de791d8678071f2fda4e2c48b573bbca07c1c6b45ed658d",
+        "operating time:fr": "3a184fc519f455c5",
+        "operator:ar": "7a281c45a71a7201b96cb160e8f4e912e51bfa18d348b4d7571471345fc552f9",
+        "operator:fr": "a7c5592c885b7e47",
+        "performance:ar": "44d2e8c00dcbaa31bb86fd18d2cbeabcfd2810ebde0a1e7002a06921002551e8",
+        "performance:fr": "b224b9a8c3a1360e",
+        "planned stops:ar": "2bd295f9bf777813fb271e3df0c357b4566711d187b2c0a0dc685d3257435a07",
+        "planned stops:fr": "3d98964368e1f7d3",
+        "planned time:ar": "f442ceccf2eb5c99510e8f8a59283c03b5ce81ed70b4e54229ecd18c6bb1f44f",
+        "planned time:fr": "530dd3813d1b3f6f",
+        "primary unit:ar": "d70d621cdd4855094aea005e830d822a5f94726b688cf9634597ecbc004d885c",
+        "primary unit:fr": "8b4d9d2185029bcb",
+        "product changeover reason:ar": "de735078b872e7b8c490c7fa55d3440c995b8bf9c3d2487fb1799029be919c10",
+        "product changeover reason:fr": "b4293fbe0468168d",
+        "product code:ar": "807f908cec656c11921ab935b09206264a7936904e674f69059969d378234331",
+        "product code:fr": "9df05da3c5946a05",
+        "product:ar": "482d0c721b1496031ccdfae98d2bbbf041c6e47002f8ac98f00825f79335bc12",
+        "product:fr": "1f9ecfe3c463ef31",
+        "production signal:ar": "00bd68d13bee2045627a00cf8d6cab92e16f356cfbc79fd074d176323d4cdc38",
+        "production signal:fr": "ded67d45a92d0773",
+        "production signals:ar": "369d940edd31feab8255edf37e1ac197f9e90ab47c52ccd37f7e8c31d073ae92",
+        "production signals:fr": "e53332ac4d3ebcfe",
+        "production speed:ar": "a76915ae7297ebe142dc78a74526d21774b48ebe3375516ebc690103f06fb89d",
+        "production speed:fr": "868caeb49fb3e2f3",
+        "quality:ar": "cadeb056a6d68c35182dd487589c7d01ff1cf0c309476f584b2a74016698b31b",
+        "quality:fr": "64ef5ccd1c4858a5",
+        "scrap reason:ar": "3fa15a469f3c5898523b341a98a57c6697e819476812aa44fce14f6c97f8bba0",
+        "scrap reason:fr": "2484b6d6e6864034",
+        "scrap:ar": "1eb156a45a75901672cd6ce7519f62332e0a84c0ebfa7ab0b3e9b994964e15dd",
+        "scrap:fr": "9cc5ed4152b24a84",
+        "setup time:ar": "aa6ae5884b9072e04e64246eeb8f574ae223ecbb82f5237edc82bbd887016479",
+        "setup time:fr": "646e35c5adfa4c1c",
+        "shift template:ar": "440e72ac37fd2dee5412fe6b9eaaa42f4d16ad3a11c571f32d5200bba974e348",
+        "shift template:fr": "d21063b010a17988",
+        "shift time:ar": "8d2a8756bf9d768df8d826eb07a1968f395f7d2c401d202ba1edac723514e3d1",
+        "shift time:fr": "66a8c343c8f37236",
+        "shift times:ar": "faff28c548022557b478f22544a815aff5f50dab915aff33776dfd5eb17f013d",
+        "shift times:fr": "c1a8746370fdb7d3",
+        "Shift View:ar": "6dde1638515991f8062760870701b2222cc93e04495ccbfe3b4af3d010164931",
+        "Shift View:fr": "eb291817ca00e7f4",
+        "shift:ar": "aaa641b20e49ed7f514b8148753845ed6744e5287f549b37d47f341384be8b7c",
+        "shift:fr": "4f75e1fbc5860fb5",
+        "speed loss groups:ar": "c2a41f7040ea270a9051c680d06bc266e980c4aaa8bf9d9edd598aaf102b10a0",
+        "speed loss groups:fr": "7dedb5e9398b40c9",
+        "speed loss reason:ar": "93589e7cb5445419de66970b5fe2437685d060258e2a7ea77314e2f7afe2d32b",
+        "speed loss reason:fr": "868e397304cdf9cf",
+        "speed loss reasons:ar": "4fa0470147b2b256e0db94d0f7dc4ecaff59312bd7bb9e6b68f23478be106f71",
+        "speed loss reasons:fr": "5689e44eefecc6ce",
+        "speed loss:ar": "19d4ba09e28e4347b4a220c273d0f7131d64e659f1fd7235d59c7f1096dfc59f",
+        "speed loss:fr": "cc54b6737d0de3e3",
+        "station groups:ar": "dd91837039329f8917ffca2598e17827f813526372df1860f22c3d4063e5ba49",
+        "station groups:fr": "51835e484c498921",
+        "station:ar": "e6848d7a6a5348cf989f53eb09b5c7ffd0de0e86fa47ef511aca7bc7cc700722",
+        "stations:ar": "7cdd8219c75bc07ccdee03dd35a46ce2a5069916196685943884b9500b7e16da",
+        "stations:fr": "0825e50cff0e7cc9",
+        "stop reason:ar": "15aff88e0d765121552f2ed50e86fdbccca25e4c1afbb9e688585ef776e1827e",
+        "stop reason:fr": "96b0d518d1af99ca",
+        "stop reasons:ar": "2d4f055532a1c967266f2654e5915c1afdde2272855427c14459d227acccce4f",
+        "stop reasons:fr": "644413f63b1b61cc",
+        "stop type:ar": "61df1e7ef1180637d639799f23798e73b6ad67f18d6375271f7f3f727c21adc1",
+        "stop type:fr": "1a741aa1535f84d8",
+        "stop:ar": "2152c98feb73d3fde55f2829d5c191cf45c26d8bb637499e45b6ee343afdca4f",
+        "stop:fr": "47f82dddda4ee5fc",
+        "target speed:ar": "2c011a5c9ad03a64d14b3e98292ac3a68e3f9202790db312ea922ab66a547c0b",
+        "target speed:fr": "2f610a0a4116e1bf",
+        "technical availability:ar": "e3c9b83df3e9a157494608da21be486fcb76328420f076f56d8be2899806f289",
+        "technical availability:fr": "1f2dc9f014774069",
+        "TEEP:ar": "872ac9ccb09e62330dc12953284b2cb07c75dcd87e9cb184056f68fc8c472cab",
+        "TEEP:fr": "cbddd6acf62f99f9",
+        "total quantity:ar": "b5a8192a63aab638026bb4170b2218300ba875da396d4741771b64ad4a8849e6",
+        "total quantity:fr": "500ef2d24b601fcb",
+        "uncommented:ar": "1bff6ce550969b8fcfdaed3fda97b2f03955c812981b8357c5595817d90d129a",
+        "uncommented:fr": "03f056f61022ba25",
+        "unplanned stops:ar": "4fe280c54cad79a495d324f5d367c4a86babb407ee1f861fc5ab935570481b11",
+        "unplanned stops:fr": "b246e5694a3b475d"
+    },
+    "generatedAt": "2026-04-22T08:22:17.919Z",
+    "heuristicFailures": [
+        {
+            "currentTranslation": "station",
+            "details": "Translation \"station\" is identical to English term",
+            "language": "fr",
+            "reason": "identical_to_english",
+            "term": "station"
+        }
+    ],
+    "perfectScorePairs": [
+        {
+            "language": "fr",
+            "term": "company administrator"
+        },
+        {
+            "language": "fr",
+            "term": "factory administrator"
+        },
+        {
+            "language": "fr",
+            "term": "factory"
+        },
+        {
+            "language": "fr",
+            "term": "downtime"
+        },
+        {
+            "language": "fr",
+            "term": "stop"
+        },
+        {
+            "language": "fr",
+            "term": "stop reason"
+        },
+        {
+            "language": "fr",
+            "term": "changeover"
+        },
+        {
+            "language": "fr",
+            "term": "production signal"
+        },
+        {
+            "language": "fr",
+            "term": "production signals"
+        },
+        {
+            "language": "fr",
+            "term": "stop type"
+        },
+        {
+            "language": "fr",
+            "term": "unplanned stops"
+        },
+        {
+            "language": "fr",
+            "term": "planned stops"
+        },
+        {
+            "language": "fr",
+            "term": "batch"
+        },
+        {
+            "language": "fr",
+            "term": "product code"
+        },
+        {
+            "language": "fr",
+            "term": "primary unit"
+        },
+        {
+            "language": "fr",
+            "term": "alternative unit"
+        },
+        {
+            "language": "fr",
+            "term": "product changeover reason"
+        },
+        {
+            "language": "fr",
+            "term": "OEE"
+        },
+        {
+            "language": "fr",
+            "term": "performance"
+        },
+        {
+            "language": "fr",
+            "term": "quality"
+        },
+        {
+            "language": "fr",
+            "term": "cycle time"
+        },
+        {
+            "language": "fr",
+            "term": "ideal cycle time"
+        },
+        {
+            "language": "fr",
+            "term": "stop reasons"
+        },
+        {
+            "language": "fr",
+            "term": "technical availability"
+        },
+        {
+            "language": "fr",
+            "term": "OEE calculation"
+        },
+        {
+            "language": "fr",
+            "term": "loss"
+        },
+        {
+            "language": "fr",
+            "term": "good production"
+        },
+        {
+            "language": "fr",
+            "term": "scrap"
+        },
+        {
+            "language": "fr",
+            "term": "scrap reason"
+        },
+        {
+            "language": "fr",
+            "term": "good quantity"
+        },
+        {
+            "language": "fr",
+            "term": "total quantity"
+        },
+        {
+            "language": "fr",
+            "term": "speed loss"
+        },
+        {
+            "language": "fr",
+            "term": "target speed"
+        },
+        {
+            "language": "fr",
+            "term": "production speed"
+        },
+        {
+            "language": "fr",
+            "term": "operating time"
+        },
+        {
+            "language": "fr",
+            "term": "setup time"
+        },
+        {
+            "language": "fr",
+            "term": "duration"
+        },
+        {
+            "language": "fr",
+            "term": "shift time"
+        },
+        {
+            "language": "fr",
+            "term": "dashboard"
+        },
+        {
+            "language": "fr",
+            "term": "checklist"
+        },
+        {
+            "language": "fr",
+            "term": "Factory Overview"
+        },
+        {
+            "language": "fr",
+            "term": "Grid View"
+        },
+        {
+            "language": "fr",
+            "term": "extra note"
+        },
+        {
+            "language": "ar",
+            "term": "factory administrator"
+        },
+        {
+            "language": "ar",
+            "term": "alternative unit"
+        },
+        {
+            "language": "ar",
+            "term": "batch"
+        },
+        {
+            "language": "ar",
+            "term": "changeover"
+        },
+        {
+            "language": "ar",
+            "term": "downtime"
+        },
+        {
+            "language": "ar",
+            "term": "factory"
+        },
+        {
+            "language": "ar",
+            "term": "location"
+        },
+        {
+            "language": "ar",
+            "term": "locations"
+        },
+        {
+            "language": "ar",
+            "term": "LOT/Batch number"
+        },
+        {
+            "language": "ar",
+            "term": "primary unit"
+        },
+        {
+            "language": "ar",
+            "term": "product"
+        },
+        {
+            "language": "ar",
+            "term": "product changeover reason"
+        },
+        {
+            "language": "ar",
+            "term": "product code"
+        },
+        {
+            "language": "ar",
+            "term": "production signal"
+        },
+        {
+            "language": "ar",
+            "term": "production signals"
+        },
+        {
+            "language": "ar",
+            "term": "stations"
+        },
+        {
+            "language": "ar",
+            "term": "stop"
+        },
+        {
+            "language": "ar",
+            "term": "stop reason"
+        },
+        {
+            "language": "ar",
+            "term": "stop type"
+        },
+        {
+            "language": "ar",
+            "term": "unplanned stops"
+        },
+        {
+            "language": "ar",
+            "term": "availability"
+        },
+        {
+            "language": "ar",
+            "term": "cycle time"
+        },
+        {
+            "language": "ar",
+            "term": "OEE"
+        },
+        {
+            "language": "ar",
+            "term": "OEE calculation"
+        },
+        {
+            "language": "ar",
+            "term": "OOE"
+        },
+        {
+            "language": "ar",
+            "term": "performance"
+        },
+        {
+            "language": "ar",
+            "term": "quality"
+        },
+        {
+            "language": "ar",
+            "term": "speed loss reasons"
+        },
+        {
+            "language": "ar",
+            "term": "stop reasons"
+        },
+        {
+            "language": "ar",
+            "term": "technical availability"
+        },
+        {
+            "language": "ar",
+            "term": "TEEP"
+        },
+        {
+            "language": "ar",
+            "term": "good quantity"
+        },
+        {
+            "language": "ar",
+            "term": "total quantity"
+        },
+        {
+            "language": "ar",
+            "term": "production speed"
+        },
+        {
+            "language": "ar",
+            "term": "speed loss"
+        },
+        {
+            "language": "ar",
+            "term": "target speed"
+        },
+        {
+            "language": "ar",
+            "term": "empty shift"
+        },
+        {
+            "language": "ar",
+            "term": "extra shift"
+        },
+        {
+            "language": "ar",
+            "term": "No shift days"
+        },
+        {
+            "language": "ar",
+            "term": "operating time"
+        },
+        {
+            "language": "ar",
+            "term": "planned time"
+        },
+        {
+            "language": "ar",
+            "term": "setup time"
+        },
+        {
+            "language": "ar",
+            "term": "shift template"
+        },
+        {
+            "language": "ar",
+            "term": "shift time"
+        },
+        {
+            "language": "ar",
+            "term": "shift times"
+        },
+        {
+            "language": "ar",
+            "term": "checklist"
+        },
+        {
+            "language": "ar",
+            "term": "checklist groups"
+        },
+        {
+            "language": "ar",
+            "term": "dashboard"
+        },
+        {
+            "language": "ar",
+            "term": "downtime auto-commenting"
+        },
+        {
+            "language": "ar",
+            "term": "extra note"
+        },
+        {
+            "language": "ar",
+            "term": "Factory Overview"
+        },
+        {
+            "language": "ar",
+            "term": "Grid View"
+        },
+        {
+            "language": "ar",
+            "term": "Shift View"
+        }
+    ],
+    "provider": "claude",
+    "scope": {
+        "categories": [
+            "manufacturing",
+            "oee",
+            "time",
+            "ui",
+            "quality",
+            "general",
+            "speed"
+        ],
+        "languages": [
+            "fr",
+            "ar"
+        ],
+        "terms": [
+            "shift",
+            "LOT/Batch number",
+            "location",
+            "machine locations",
+            "stations",
+            "station groups",
+            "speed loss groups",
+            "shift template",
+            "shift times",
+            "Shift View",
+            "product",
+            "operator",
+            "locations",
+            "machine location",
+            "availability",
+            "speed loss reason",
+            "OOE",
+            "TEEP",
+            "speed loss reasons",
+            "default scrap reason",
+            "planned time",
+            "extra shift",
+            "No shift days",
+            "empty shift",
+            "empty shift reason",
+            "uncommented",
+            "checklists",
+            "checklist groups",
+            "downtime auto-commenting",
+            "company administrator",
+            "factory administrator",
+            "factory",
+            "downtime",
+            "stop",
+            "stop reason",
+            "changeover",
+            "production signal",
+            "production signals",
+            "stop type",
+            "unplanned stops",
+            "planned stops",
+            "batch",
+            "product code",
+            "primary unit",
+            "alternative unit",
+            "product changeover reason",
+            "OEE",
+            "performance",
+            "quality",
+            "cycle time",
+            "ideal cycle time",
+            "stop reasons",
+            "technical availability",
+            "OEE calculation",
+            "loss",
+            "good production",
+            "scrap",
+            "scrap reason",
+            "good quantity",
+            "total quantity",
+            "speed loss",
+            "target speed",
+            "production speed",
+            "operating time",
+            "setup time",
+            "duration",
+            "shift time",
+            "dashboard",
+            "checklist",
+            "Factory Overview",
+            "Grid View",
+            "extra note",
+            "station"
+        ],
+        "totalPairsEvaluated": 145,
+        "totalPairsSkipped": 1,
+        "totalPairsValidated": 0
+    },
+    "skippedTerms": [],
+    "summary": {
+        "byLanguage": {
+            "ar": {
+                "averageScore": 4.589041095890411,
+                "criticalCount": 3,
+                "passCount": 66,
+                "totalAudited": 73,
+                "warningCount": 4
+            },
+            "fr": {
+                "averageScore": 4.458333333333333,
+                "criticalCount": 0,
+                "passCount": 62,
+                "totalAudited": 72,
+                "warningCount": 10
+            }
+        },
+        "overall": {
+            "averageScore": 4.524137931034483,
+            "criticalCount": 3,
+            "passCount": 128,
+            "totalIssues": 17,
+            "warningCount": 14
+        }
+    },
+    "version": "1.1.0"
+}

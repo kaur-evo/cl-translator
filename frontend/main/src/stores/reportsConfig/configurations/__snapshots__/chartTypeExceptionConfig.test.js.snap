@@ -1,0 +1,217 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CHECKLIST > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of CUSTOM_REPORT > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "groupedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "groupedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of DOWNTIME > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of OEE > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of PRODUCTION_SPEED > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of QUANTITY > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SCRAPREASON > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "groupedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "groupedColumn",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of SPEEDLOSS > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `
+[
+  "stackedColumn",
+  "dataPointLabel",
+]
+`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis avgDurationVal > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis avgDurationVal > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis value > with groupBy something else > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 1`] = `"default"`;
+
+exports[`chartTypeExceptionConfig > with config type of TIME_USAGE > with yAxis value > with groupBy stationId > returns expected configuration snapshot with start 2020-01-01 and end 2021-01-01 2`] = `"default"`;

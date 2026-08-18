@@ -1,0 +1,53 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] HZN (Croatian Standards Institute) — HRN EN ISO 22400, HRN EN 13306 (EU/CEN member since 2013)",
+    "[S2] SAP Croatia — Croatian localization available",
+    "[S3] MNG Centar Croatia — 'Sveukupna efektivnost opreme (OEE)' training",
+    "[S3] Localization Station — Croatian localization guide",
+    "[S4] Unbabel Language Guidelines Croatian — formal 'Vi'",
+    "[S4] ProZ.com Croatian technical translation forums",
+    "[S5] terms.json — Croatian translations analyzed for consistency"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Vi",
+  "falseFriends": {
+    "actual": "Use 'stvaran' or 'realan', not 'aktualan' (which means 'current/topical')",
+    "eventually": "Use 'na kraju' or 'konačno', not 'eventualno' (which means 'possibly')",
+    "fabric": "Use 'tkanina', not 'tvornica' (which means 'factory' — Croatian uses 'tvornica', not Serbian 'fabrika')",
+    "magazine": "Use 'časopis', not 'skladište' (which means 'warehouse')",
+    "quality": "Use 'kvaliteta' (Croatian feminine), NOT 'kvalitet' (Serbian masculine)",
+    "factory": "Use 'tvornica' (Croatian), NOT 'fabrika' (Serbian)",
+    "shift": "Use 'smjena' (Croatian Ijekavian), NOT 'smena' (Serbian Ekavian)"
+  },
+  "grammarNotes": {
+    "latinScript": "Latin script exclusively. Diacritics (č, ć, š, ž, đ) mandatory.",
+    "caseSystem": "7 cases affecting noun endings",
+    "ijekavianDialect": "Croatian uses Ijekavian: 'vrijeme' (time), 'smjena' (shift) — not Serbian Ekavian 'vreme', 'smena'.",
+    "vocabulary": "Key distinctions: factory='tvornica' (HR)/'fabrika' (SR), quality='kvaliteta' (HR)/'kvalitet' (SR)",
+    "numberFormatting": "Comma decimal, period thousands: '85,5%', '1.000'.",
+    "compoundPluralModifiers": "In compound noun phrases with genitive modifiers, prefer SINGULAR genitive for the modifier when it names a concept/category. PREFERRED: 'razlozi gubitka brzine' (reasons + loss [gen.sg] + speed [gen.sg]). CHECK: 'razlozi gubitaka brzine' — genitive plural 'gubitaka' may be governed by Croatian grammar. Flag for G3 native speaker review. Compare singular 'razlog gubitka brzine' — the modifier should ideally not change when only the head noun pluralizes."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE (English acronym) is standard. Full: 'Sveukupna efektivnost opreme'.",
+    "preferAcronym": true,
+    "euMember": "EU member since 2013 — all CEN/ISO standards mandatory.",
+    "standardsUsed": [
+      "HRN EN ISO 22400",
+      "HRN EN 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'aktualan' for 'actual' instead of 'stvaran'",
+    "Using 'eventualno' for 'eventually' instead of 'konačno'",
+    "Using Serbian vocabulary: fabrika->tvornica, kvalitet->kvaliteta, smena->smjena",
+    "Using informal 'ti' instead of formal 'Vi'",
+    "Dropping diacritics (č, ć, š, ž, đ)",
+    "Using Ekavian forms: 'vreme' instead of Ijekavian 'vrijeme'",
+    "Compound plural modifier ambiguity: 'razlozi gubitaka brzine' vs 'razlozi gubitka brzine' — genitive plural 'gubitaka' vs singular 'gubitka'. Prefer singular modifier (names the concept); flag for G3 native speaker review"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE (English) standard. Latin script. Formal 'Vi'. Ijekavian dialect required. 7-case system. EU member since 2013."
+}

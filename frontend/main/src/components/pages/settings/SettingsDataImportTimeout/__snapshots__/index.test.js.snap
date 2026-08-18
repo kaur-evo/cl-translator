@@ -1,0 +1,325 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsDataImportTimeout > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  id="data-import-timeout"
+>
+  <div
+    class="v-card v-theme--light v-card--density-default v-card--variant-elevated mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    style="max-width: 900px;"
+  >
+    <!---->
+    <div
+      class="v-card__loader"
+    >
+      <div
+        aria-hidden="true"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        class="v-progress-linear v-theme--light v-locale--is-ltr"
+        role="progressbar"
+        style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+      >
+        <!---->
+        <div
+          class="v-progress-linear__background"
+        />
+        <div
+          class="v-progress-linear__buffer"
+          style="width: 0%;"
+        />
+        <transition-stub
+          appear="false"
+          css="true"
+          name="fade-transition"
+          persisted="false"
+        >
+          <div
+            class="v-progress-linear__indeterminate"
+          >
+            
+            <div
+              class="v-progress-linear__indeterminate long"
+            />
+            <div
+              class="v-progress-linear__indeterminate short"
+            />
+            
+          </div>
+        </transition-stub>
+        <!---->
+      </div>
+    </div>
+    <!---->
+    <!---->
+    
+    <!--v-if-->
+    
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div
+        class="v-row v-row--density-default"
+      >
+        <div
+          class="v-col v-col--cols-12 pt-4 px-1"
+        >
+          <div
+            class="text-center py-5 mx-auto"
+            data-v-8b15b0cc=""
+            id="empty-state"
+          >
+            <img
+              alt="empty-view-img"
+              class="empty-state__image"
+              data-v-8b15b0cc=""
+              id="empty-state__img"
+              src="imageAsset"
+            />
+            <div
+              class="font-weight-regular mb-2 empty-view-text text-headline-small mt-6"
+              data-v-8b15b0cc=""
+              id="empty-state__header"
+            >
+              Timeout
+            </div>
+            <div
+              class="text-secondary-text text-body-medium mb-6"
+              data-v-8b15b0cc=""
+              id="empty-state__description"
+            >
+              <span
+                data-v-8b15b0cc=""
+              >
+                Something went wrong. Please try again.
+              </span>
+              
+              
+            </div>
+            <!--v-if-->
+            <!--v-if-->
+            <button
+              class="v-btn v-theme--light bg-quaternary-dark v-btn--density-default v-btn--size-default v-btn--variant-flat mx-1 px-4 mx-1"
+              data-v-8b15b0cc=""
+              id="empty-state__primary-button"
+              type="button"
+            >
+              
+              <span
+                class="v-btn__overlay"
+              />
+              <span
+                class="v-btn__underlay"
+              />
+              
+              <!---->
+              <span
+                class="v-btn__content"
+                data-no-activator=""
+              >
+                
+                
+                <!--v-if-->
+                <span
+                  class=""
+                  id="evocon-button-text"
+                >
+                  Retry
+                </span>
+                
+                
+              </span>
+              <!---->
+              <!---->
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    
+    <!---->
+    
+    <!---->
+    <span
+      class="v-card__underlay"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`SettingsDataImportTimeout > renders correctly when retried 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  id="data-import-timeout"
+>
+  <div
+    class="v-card v-theme--light v-card--density-default v-card--variant-elevated mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    style="max-width: 900px;"
+  >
+    <!---->
+    <div
+      class="v-card__loader"
+    >
+      <div
+        aria-hidden="true"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        class="v-progress-linear v-theme--light v-locale--is-ltr"
+        role="progressbar"
+        style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+      >
+        <!---->
+        <div
+          class="v-progress-linear__background"
+        />
+        <div
+          class="v-progress-linear__buffer"
+          style="width: 0%;"
+        />
+        <transition-stub
+          appear="false"
+          css="true"
+          name="fade-transition"
+          persisted="false"
+        >
+          <div
+            class="v-progress-linear__indeterminate"
+          >
+            
+            <div
+              class="v-progress-linear__indeterminate long"
+            />
+            <div
+              class="v-progress-linear__indeterminate short"
+            />
+            
+          </div>
+        </transition-stub>
+        <!---->
+      </div>
+    </div>
+    <!---->
+    <!---->
+    
+    <!--v-if-->
+    
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div
+        class="v-row v-row--density-default"
+      >
+        <div
+          class="v-col v-col--cols-12 pt-4 px-1"
+        >
+          <div
+            class="text-center py-5 mx-auto"
+            data-v-8b15b0cc=""
+            id="empty-state"
+          >
+            <img
+              alt="empty-view-img"
+              class="empty-state__image"
+              data-v-8b15b0cc=""
+              id="empty-state__img"
+              src="imageAsset"
+            />
+            <div
+              class="font-weight-regular mb-2 empty-view-text text-headline-small mt-6"
+              data-v-8b15b0cc=""
+              id="empty-state__header"
+            >
+              Problem loading data
+            </div>
+            <div
+              class="text-secondary-text text-body-medium mb-6"
+              data-v-8b15b0cc=""
+              id="empty-state__description"
+            >
+              <span
+                data-v-8b15b0cc=""
+              >
+                Something went wrong. Please try again.
+              </span>
+              
+              
+            </div>
+            <!--v-if-->
+            <button
+              class="v-btn v-theme--light bg-quaternary-dark v-btn--density-default v-btn--size-default v-btn--variant-flat mx-1 px-4 mx-1"
+              data-v-8b15b0cc=""
+              id="empty-state__secondary-button"
+              type="button"
+            >
+              
+              <span
+                class="v-btn__overlay"
+              />
+              <span
+                class="v-btn__underlay"
+              />
+              
+              <!---->
+              <span
+                class="v-btn__content"
+                data-no-activator=""
+              >
+                
+                
+                <!--v-if-->
+                <span
+                  class=""
+                  id="evocon-button-text"
+                >
+                  Contact support
+                </span>
+                
+                
+              </span>
+              <!---->
+              <!---->
+            </button>
+            <!--v-if-->
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    
+    <!---->
+    
+    <!---->
+    <span
+      class="v-card__underlay"
+    />
+    
+  </div>
+</div>
+`;

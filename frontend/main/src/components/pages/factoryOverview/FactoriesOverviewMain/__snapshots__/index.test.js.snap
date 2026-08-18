@@ -1,0 +1,136 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FactoriesOverviewMain > renders correctly 1`] = `
+<div
+  class="fill-height flex-column bg-lw-gray"
+  data-v-77dd6332=""
+>
+  <div
+    class="d-flex align-center justify-space-between bg-primary-dark pl-1 px-4 flex-shrink-1 flex-grow-0"
+    data-v-77dd6332=""
+  >
+    <div
+      class="d-flex align-center"
+      data-v-77dd6332=""
+    >
+      <draggable-tabs-stub
+        data-v-77dd6332=""
+        draggingenabled="false"
+        selectedtabindex="0"
+        tabs="[object Object],[object Object]"
+        textvalue="name"
+      />
+    </div>
+    <evocon-v-button-stub
+      color="white"
+      data-v-77dd6332=""
+      icon="M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z"
+      iconcolor=""
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <div
+    class="fo-content"
+    data-v-77dd6332=""
+  >
+    <v-window-stub
+      class="bg-transparent"
+      continuous="false"
+      crossfade="false"
+      data-v-77dd6332=""
+      direction="horizontal"
+      disabled="false"
+      mandatory="force"
+      modelvalue="realtime"
+      nexticon="$next"
+      previcon="$prev"
+      reverse="false"
+      selectedclass="v-window-item--active"
+      showarrows="false"
+      tag="div"
+      verticalarrows="false"
+    >
+      
+      <v-window-item-stub
+        data-v-77dd6332=""
+        disabled="false"
+        eager="false"
+        value="realtime"
+      >
+        <router-view-stub
+          data-v-77dd6332=""
+        />
+      </v-window-item-stub>
+      <v-window-item-stub
+        data-v-77dd6332=""
+        disabled="false"
+        eager="false"
+        value="timeline"
+      >
+        <!--v-if-->
+      </v-window-item-stub>
+      
+    </v-window-stub>
+  </div>
+</div>
+`;
+
+exports[`FactoriesOverviewMain > renders correctly in small view 1`] = `
+<div
+  class="fill-height flex-column bg-lw-gray"
+  data-v-77dd6332=""
+>
+  <main-app-toolbar-stub
+    data-v-77dd6332=""
+    hasbackbutton="false"
+    items="[object Object],[object Object]"
+    modelvalue="realtime"
+    selectionitemvalue="resolved"
+  />
+  <div
+    class="fo-content"
+    data-v-77dd6332=""
+  >
+    <v-window-stub
+      class="bg-transparent"
+      continuous="false"
+      crossfade="false"
+      data-v-77dd6332=""
+      direction="horizontal"
+      disabled="false"
+      mandatory="force"
+      modelvalue="realtime"
+      nexticon="$next"
+      previcon="$prev"
+      reverse="false"
+      selectedclass="v-window-item--active"
+      showarrows="false"
+      tag="div"
+      verticalarrows="false"
+    >
+      
+      <v-window-item-stub
+        data-v-77dd6332=""
+        disabled="false"
+        eager="false"
+        value="realtime"
+      >
+        <router-view-stub
+          data-v-77dd6332=""
+        />
+      </v-window-item-stub>
+      <v-window-item-stub
+        data-v-77dd6332=""
+        disabled="false"
+        eager="false"
+        value="timeline"
+      >
+        <!--v-if-->
+      </v-window-item-stub>
+      
+    </v-window-stub>
+  </div>
+</div>
+`;

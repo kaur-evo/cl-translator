@@ -1,0 +1,1019 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsDeviceEdit > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width fit-screen"
+  data-v-4db4f123=""
+  data-v-b5c41b60=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    <div
+      class="d-flex pa-4 align-center justify-center"
+      data-v-b5c41b60=""
+    >
+      <div
+        data-v-b5c41b60=""
+      >
+        <v-card-title-stub
+          class="d-flex align-center justify-center pa-0"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          <v-icon-stub
+            class="mr-2"
+            color="primary"
+            data-v-b5c41b60=""
+            disabled="false"
+            end="false"
+            size="9"
+            start="false"
+            tag="i"
+          >
+            M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z
+          </v-icon-stub>
+           1234
+        </v-card-title-stub>
+        <v-card-subtitle-stub
+          class="d-flex justify-center pa-0 text-body-medium"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          Last online: {variable} ago
+        </v-card-subtitle-stub>
+      </div>
+      <div
+        class="status-icon-wrapper"
+        data-v-b5c41b60=""
+      >
+        <v-tooltip-stub
+          activatorprops="[object Object]"
+          attach="false"
+          closeonback="false"
+          closeoncontentclick="false"
+          contained="false"
+          data-v-b5c41b60=""
+          disabled="false"
+          eager="true"
+          interactive="false"
+          location="top"
+          locationstrategy="connected"
+          minwidth="0"
+          modelvalue="false"
+          noclickanimation="false"
+          offset="10"
+          openonclick="false"
+          openonhover="true"
+          origin="auto"
+          persistent="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <span
+            data-v-b5c41b60=""
+          >
+            Learn more
+          </span>
+        </v-tooltip-stub>
+      </div>
+    </div>
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-row-stub
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="false"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            data-v-b5c41b60=""
+            hint="Description (optional)"
+            maxlength="200"
+            modelmodifiers="[object Object]"
+            modelvalue="test description"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="pt-2"
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="4"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="mr-1"
+            contentheader="Hostname"
+            contentvalue="Hostname"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          cols="4"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="mx-1"
+            contentheader="Wifi"
+            contentvalue="Wifi"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          cols="4"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="ml-1"
+            contentheader="Ethernet"
+            contentvalue="Ethernet"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="mt-2"
+          cols="false"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            contentheader="Command line password"
+            contentvalue="Command line password"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Inputs
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <list-card-stub
+          buttonparams="[object Object]"
+          cardbuttons=""
+          data-v-b5c41b60=""
+          flagiconcode=""
+          icon=""
+          primaryactiontext=""
+          subtitlekeyvaluepairs="[object Object]"
+          title="Input 1"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 2: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 3: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      
+      <!--v-if-->
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <evocon-v-button-stub
+        color="quaternary-dark"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Contact support"
+        textclass=""
+        type="primary"
+      />
+      <v-spacer-stub
+        data-v-b5c41b60=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsDeviceEdit > renders correctly for v2 device 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width fit-screen"
+  data-v-4db4f123=""
+  data-v-b5c41b60=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    <div
+      class="d-flex pa-4 align-center justify-center"
+      data-v-b5c41b60=""
+    >
+      <div
+        data-v-b5c41b60=""
+      >
+        <v-card-title-stub
+          class="d-flex align-center justify-center pa-0"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          <v-icon-stub
+            class="mr-2"
+            color="primary"
+            data-v-b5c41b60=""
+            disabled="false"
+            end="false"
+            size="9"
+            start="false"
+            tag="i"
+          >
+            M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z
+          </v-icon-stub>
+           1234
+        </v-card-title-stub>
+        <v-card-subtitle-stub
+          class="d-flex justify-center pa-0 text-body-medium"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          Last online: {variable} ago
+        </v-card-subtitle-stub>
+      </div>
+      <div
+        class="status-icon-wrapper"
+        data-v-b5c41b60=""
+      >
+        <!--v-if-->
+      </div>
+    </div>
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-row-stub
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="false"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            data-v-b5c41b60=""
+            hint="Description (optional)"
+            maxlength="200"
+            modelmodifiers="[object Object]"
+            modelvalue="test description"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="pt-2"
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="6"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="mr-1"
+            contentheader="Hostname"
+            contentvalue="Hostname"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+        <!--v-if-->
+        <v-col-stub
+          cols="6"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="ml-1"
+            contentheader="Ethernet"
+            contentvalue="Ethernet"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <!--v-if-->
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Inputs
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <list-card-stub
+          buttonparams="[object Object]"
+          cardbuttons=""
+          data-v-b5c41b60=""
+          flagiconcode=""
+          icon=""
+          primaryactiontext=""
+          subtitlekeyvaluepairs="[object Object]"
+          title="Input 1"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 2: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 3: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      
+      <!--v-if-->
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <evocon-v-button-stub
+        color="quaternary-dark"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Contact support"
+        textclass=""
+        type="primary"
+      />
+      <v-spacer-stub
+        data-v-b5c41b60=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsDeviceEdit > renders correctly in mobile 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width fit-screen"
+  data-v-4db4f123=""
+  data-v-b5c41b60=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-0"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="1888"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    <div
+      class="d-flex pa-4 align-center justify-center"
+      data-v-b5c41b60=""
+    >
+      <div
+        data-v-b5c41b60=""
+      >
+        <v-card-title-stub
+          class="d-flex align-center justify-center pa-0"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          <v-icon-stub
+            class="mr-2"
+            color="primary"
+            data-v-b5c41b60=""
+            disabled="false"
+            end="false"
+            size="9"
+            start="false"
+            tag="i"
+          >
+            M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z
+          </v-icon-stub>
+           1234
+        </v-card-title-stub>
+        <v-card-subtitle-stub
+          class="d-flex justify-center pa-0 text-body-medium"
+          data-v-b5c41b60=""
+          tag="div"
+        >
+          Last online: {variable} ago
+        </v-card-subtitle-stub>
+      </div>
+      <div
+        class="status-icon-wrapper"
+        data-v-b5c41b60=""
+      >
+        <v-tooltip-stub
+          activatorprops="[object Object]"
+          attach="false"
+          closeonback="false"
+          closeoncontentclick="false"
+          contained="false"
+          data-v-b5c41b60=""
+          disabled="false"
+          eager="true"
+          interactive="false"
+          location="top"
+          locationstrategy="connected"
+          minwidth="0"
+          modelvalue="false"
+          noclickanimation="false"
+          offset="10"
+          openonclick="false"
+          openonhover="true"
+          origin="auto"
+          persistent="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <span
+            data-v-b5c41b60=""
+          >
+            Learn more
+          </span>
+        </v-tooltip-stub>
+      </div>
+    </div>
+    
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-row-stub
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="false"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <evocon-v-textarea-stub
+            data-v-b5c41b60=""
+            hint="Description (optional)"
+            maxlength="200"
+            modelmodifiers="[object Object]"
+            modelvalue="test description"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        class="pt-2"
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          cols="12"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="mb-2"
+            contentheader="Hostname"
+            contentvalue="Hostname"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          cols="12"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class="mb-2"
+            contentheader="Wifi"
+            contentvalue="Wifi"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+        <v-col-stub
+          cols="12"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            class=""
+            contentheader="Ethernet"
+            contentvalue="Ethernet"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      <v-row-stub
+        data-v-b5c41b60=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="mt-2"
+          cols="false"
+          data-v-b5c41b60=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <content-column-stub
+            contentheader="Command line password"
+            contentvalue="Command line password"
+            data-v-b5c41b60=""
+            haserror="false"
+            prependicon=""
+          />
+        </v-col-stub>
+      </v-row-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Inputs
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <list-card-stub
+          buttonparams="[object Object]"
+          cardbuttons=""
+          data-v-b5c41b60=""
+          flagiconcode=""
+          icon=""
+          primaryactiontext=""
+          subtitlekeyvaluepairs="[object Object]"
+          title="Input 1"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 2: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      <div
+        class="px-1 mb-4"
+        data-v-b5c41b60=""
+      >
+        <info-block-stub
+          body="To use this input, please contact your Evocon account representative"
+          collapsible="false"
+          color="#9E9E9E"
+          data-v-b5c41b60=""
+          header="Input 3: Inactive"
+          headertextcolor="text-secondary-text"
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        />
+      </div>
+      
+      <evocon-v-button-stub
+        class="mb-4"
+        color="quaternary-dark"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Contact support"
+        textclass=""
+        type="primary"
+      />
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-b5c41b60=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-b5c41b60=""
+        icon=""
+        iconcolor=""
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;

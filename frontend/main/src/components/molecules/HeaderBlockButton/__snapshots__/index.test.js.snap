@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeaderBlockButton > renders correctly 1`] = `
+<div
+  class="header-block-button rounded d-flex align-center cursor-pointer text-truncate pa-1"
+  data-v-af6021d8=""
+  disabled="false"
+>
+  
+  
+  <div
+    class="text-truncate px-2 font-weight-medium d-flex justify-center"
+    data-v-af6021d8=""
+  >
+    <div
+      class="flex-shrink-1 flex-grow-0 text-truncate"
+      data-v-af6021d8=""
+    >
+      string
+    </div>
+    
+    
+  </div>
+</div>
+`;
+
+exports[`HeaderBlockButton > renders correctly when large prop is true 1`] = `
+<div
+  class="header-block-button rounded d-flex align-center cursor-pointer text-truncate pa-2"
+  data-v-af6021d8=""
+  disabled="false"
+>
+  
+  
+  <div
+    class="text-truncate px-2 font-weight-medium d-flex justify-center"
+    data-v-af6021d8=""
+  >
+    <div
+      class="flex-shrink-1 flex-grow-0 text-truncate"
+      data-v-af6021d8=""
+    >
+      string
+    </div>
+    
+    
+  </div>
+</div>
+`;

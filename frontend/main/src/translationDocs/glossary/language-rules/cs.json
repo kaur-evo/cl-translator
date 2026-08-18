@@ -1,0 +1,56 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] ÚNMZ (Úřad pro technickou normalizaci) — ČSN EN 13306 (01 0660):2018 (ISO/CEN full member)",
+    "[S2] COMES MES (comes.eu / oee.cz) — Czech MES software, uses OEE in product name and UI",
+    "[S2] SAP Czech localization — SAP Business One and S/4HANA with Czech localization",
+    "[S3] Czech Wikipedia: Celková efektivnost zařízení (CEZ) — defines components D x R x Q",
+    "[S3] e-api.cz, strojirenstvi.cz, vseoprumyslu.cz — Czech manufacturing and lean portals",
+    "[S3] MES PHARIS (pharis.cz) — Czech MES system documenting OEE and derived indicators",
+    "[S4] Microsoft Czech Localization Style Guide — formal 'vy' (vykání) for software",
+    "[S4] HelpForEnglish.cz, terceflmc.com — Czech-English false friends (aktuální, eventuálně)",
+    "[S5] terms.json — 73 Czech translations analyzed for length multiplier calibration"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "vy",
+  "falseFriends": {
+    "actual": "Use 'skutečný' or 'reálný', not 'aktuální' (which means 'current')",
+    "fabric": "Use 'tkanina' for cloth, not 'fabrika' (which means 'factory')",
+    "performance": "Use 'výkonnost', not 'performance' (anglicism sounds non-professional)",
+    "station": "Use 'pracovní stanice' for workstation, not 'stanice' (train/bus station)",
+    "shift": "Use 'směna' for work shift, not 'posun' (movement) or keyboard 'shift'",
+    "effective": "Use 'účinný' vs 'efektivní' carefully in context",
+    "eventually": "Use 'nakonec', not 'eventuálně' (which means 'possibly')",
+    "idle": "Use 'nečinný' or 'v pohotovosti', not 'líný' (lazy — pejorative)"
+  },
+  "grammarNotes": {
+    "caseSystem": "7 cases with diacritics. Nominative: 'dostupnost'; genitive: 'výpočet dostupnosti'; locative: 'v přestavbě'.",
+    "genderAgreement": "Three genders: 'celková efektivnost' (f), 'skutečný čas cyklu' (m), 'plánované množství' (n)",
+    "germanInfluence": "German-origin terms exist (seřízení, šichta) — use Czech standard terms in professional software.",
+    "genitiveConstructions": "Genitive for compound terms: 'důvod zastavení' (stop reason)",
+    "numberFormatting": "Comma decimal, thin space thousands: '85,5%', '1 000 kusů'.",
+    "compoundPluralModifiers": "Singular genitive modifier is PREFERRED for manufacturing UI labels: 'příčiny ztráty rychlosti' (reasons + loss [gen.sg] + speed [gen.sg]). Plural genitive 'příčiny ztrát rychlosti' ('ztrát' [gen.pl]) may be governed by Czech grammar but should be treated as a soft warning, not a hard error. For automated audit purposes, treat singular genitive as correct. Flag plural genitive forms for G3 native speaker review."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE is dominant. Czech term: 'Celková efektivnost zařízení' (CEZ) — known but OEE preferred in software.",
+    "cezAcronym": "CEZ documented in Czech Wikipedia. OEE more common in practice.",
+    "manufacturingGDP": "One of Europe's highest manufacturing-to-GDP ratios (~28%)",
+    "standardsUsed": [
+      "ČSN EN 13306 (01 0660):2018",
+      "ČSN ISO 22400 (adoption expected per CEN membership)"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'aktuální' for 'actual' instead of 'skutečný'",
+    "Incorrect case endings in technical terminology",
+    "Using informal 'ty' instead of formal 'vy'",
+    "Using 'performance' (anglicism) instead of 'výkonnost'",
+    "Dropping diacritics: 'přestavba' not 'prestavba'",
+    "Using German-origin colloquialisms ('šichta') instead of standard Czech ('směna')",
+    "Compound plural modifier ambiguity: 'příčiny ztrát rychlosti' vs 'příčiny ztráty rychlosti' — genitive plural 'ztrát' vs singular 'ztráty'. Prefer singular modifier (names the concept); flag for G3 native speaker review"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is used; CEZ exists as Czech alternative but OEE preferred. Formal 'vy' (vykání). 7-case system. Strong German automotive influence. P95 expansion 2.10x."
+}

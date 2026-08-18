@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HourChart > renders correctly 1`] = `
+<div
+  class="canvas"
+  data-v-78cfa1a0=""
+  style="--canvas-height: 0px;"
+>
+  <hour-lines-layer-stub
+    data-v-78cfa1a0=""
+    requireoperator="true"
+    shifthours=""
+  />
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  <bracket-layer-stub
+    data-v-78cfa1a0=""
+    shifthours=""
+  />
+  <!--v-if-->
+</div>
+`;

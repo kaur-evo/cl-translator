@@ -1,0 +1,325 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`checklistsTableHeadersConf 1`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "active",
+    "tooltip": null,
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Checklist name",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "appendIcon": [Function],
+    "appendIconClass": "ml-2",
+    "appendIconSize": 16,
+    "appendIconTooltipText": "Global group",
+    "prependIcon": [Function],
+    "prependIconColor": [Function],
+    "prependIconSize": 16,
+    "text": "Group",
+    "textKey": "groupName",
+    "value": "groupId",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Frequency",
+    "textKey": "frequencyTableItem",
+    "valueKey": "frequencyTableItem",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Product",
+    "textKey": "productNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Authentication",
+    "textKey": "authenticationRequired",
+    "value": "authenticationRequired",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;
+
+exports[`checklistsTableHeadersConf 2`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "active",
+    "tooltip": null,
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Checklist name",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Frequency",
+    "textKey": "frequencyTableItem",
+    "valueKey": "frequencyTableItem",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Product",
+    "textKey": "productNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Authentication",
+    "textKey": "authenticationRequired",
+    "value": "authenticationRequired",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;
+
+exports[`checklistsTableHeadersConf if checklists authentication is enabled 1`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "active",
+    "tooltip": null,
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Checklist name",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "appendIcon": [Function],
+    "appendIconClass": "ml-2",
+    "appendIconSize": 16,
+    "appendIconTooltipText": "Global group",
+    "prependIcon": [Function],
+    "prependIconColor": [Function],
+    "prependIconSize": 16,
+    "text": "Group",
+    "textKey": "groupName",
+    "value": "groupId",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Frequency",
+    "textKey": "frequencyTableItem",
+    "valueKey": "frequencyTableItem",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Product",
+    "textKey": "productNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Authentication",
+    "textKey": "authenticationRequired",
+    "value": "authenticationRequired",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;
+
+exports[`checklistsTableHeadersConf if checklists authentication is enabled 2`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "active",
+    "tooltip": null,
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "style": {
+      "minWidth": "200px",
+    },
+    "text": "Checklist name",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "text": "Frequency",
+    "textKey": "frequencyTableItem",
+    "valueKey": "frequencyTableItem",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Product",
+    "textKey": "productNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Authentication",
+    "textKey": "authenticationRequired",
+    "value": "authenticationRequired",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;

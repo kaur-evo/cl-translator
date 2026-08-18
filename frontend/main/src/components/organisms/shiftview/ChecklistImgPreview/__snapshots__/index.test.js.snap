@@ -1,0 +1,165 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistImgPreview > renders correctly 1`] = `
+<v-dialog-stub
+  absolute="false"
+  activatorprops="[object Object]"
+  attach="false"
+  capturefocus="true"
+  closeonback="true"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-6b8af3c3=""
+  disabled="false"
+  eager="false"
+  fullscreen="false"
+  height="90%"
+  location="bottom"
+  locationstrategy="static"
+  maxwidth="1100px"
+  modelvalue="true"
+  noclickanimation="false"
+  openonhover="false"
+  origin="center center"
+  persistent="false"
+  retainfocus="true"
+  scrim="true"
+  scrollable="false"
+  scrollstrategy="block"
+  sticktotarget="false"
+  transition="[object Object]"
+  viewportmargin="12"
+  zindex="2400"
+>
+  <v-card-stub
+    border="false"
+    data-v-6b8af3c3=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <v-card-text-stub
+      class="px-4 pt-4 pb-0 dialog-content d-flex align-center justify-center"
+      data-v-6b8af3c3=""
+      tag="div"
+    >
+      <!--v-if-->
+      <img
+        alt="cl-image"
+        class="image"
+        data-v-6b8af3c3=""
+      />
+    </v-card-text-stub>
+    <v-card-actions-stub
+      class=""
+      data-v-6b8af3c3=""
+      tag="div"
+    >
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-6b8af3c3=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-6b8af3c3=""
+        icon=""
+        iconcolor=""
+        text="Close"
+        textclass=""
+        type="secondary"
+      />
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-dialog-stub>
+`;
+
+exports[`ChecklistImgPreview > renders correctly when deletable is false 1`] = `
+<v-dialog-stub
+  absolute="false"
+  activatorprops="[object Object]"
+  attach="false"
+  capturefocus="true"
+  closeonback="true"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-6b8af3c3=""
+  disabled="false"
+  eager="false"
+  fullscreen="false"
+  height="90%"
+  location="bottom"
+  locationstrategy="static"
+  maxwidth="1100px"
+  modelvalue="true"
+  noclickanimation="false"
+  openonhover="false"
+  origin="center center"
+  persistent="false"
+  retainfocus="true"
+  scrim="true"
+  scrollable="false"
+  scrollstrategy="block"
+  sticktotarget="false"
+  transition="[object Object]"
+  viewportmargin="12"
+  zindex="2400"
+>
+  <v-card-stub
+    border="false"
+    data-v-6b8af3c3=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <v-card-text-stub
+      class="px-4 pt-4 pb-0 dialog-content d-flex align-center justify-center"
+      data-v-6b8af3c3=""
+      tag="div"
+    >
+      <!--v-if-->
+      <img
+        alt="cl-image"
+        class="image"
+        data-v-6b8af3c3=""
+      />
+    </v-card-text-stub>
+    <v-card-actions-stub
+      class=""
+      data-v-6b8af3c3=""
+      tag="div"
+    >
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-6b8af3c3=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-6b8af3c3=""
+        icon=""
+        iconcolor=""
+        text="Close"
+        textclass=""
+        type="secondary"
+      />
+    </v-card-actions-stub>
+  </v-card-stub>
+</v-dialog-stub>
+`;

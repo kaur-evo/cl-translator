@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`NewIndicator > renders correctly as small 1`] = `
+<div
+  class="new-indicator bg-primary rounded small"
+  data-v-3b348e5b=""
+>
+  <!--v-if-->
+</div>
+`;
+
+exports[`NewIndicator > renders correctly if shownUntil is in the future 1`] = `
+<div
+  class="new-indicator bg-primary rounded"
+  data-v-3b348e5b=""
+>
+  <span
+    class="font-weight-bold text-uppercase"
+    data-v-3b348e5b=""
+  >
+    New
+  </span>
+</div>
+`;
+
+exports[`NewIndicator > renders correctly if shownUntil is in the past 1`] = `<!--v-if-->`;
+
+exports[`NewIndicator > renders correctly if shownUntil is null 1`] = `
+<div
+  class="new-indicator bg-primary rounded"
+  data-v-3b348e5b=""
+>
+  <span
+    class="font-weight-bold text-uppercase"
+    data-v-3b348e5b=""
+  >
+    New
+  </span>
+</div>
+`;
+
+exports[`NewIndicator > renders correctly when text is provided 1`] = `
+<div
+  class="new-indicator bg-primary rounded"
+  data-v-3b348e5b=""
+>
+  <span
+    class="font-weight-bold text-uppercase"
+    data-v-3b348e5b=""
+  >
+    Try for free
+  </span>
+</div>
+`;

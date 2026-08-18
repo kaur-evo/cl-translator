@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsDataImportOverview > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  id="data-import-overview"
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Data export and import
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-row-stub
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="px-1"
+          cols="12"
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          <settings-data-import-card-stub
+            description="To get started, download your existing data. If there is no data yet, use the downloaded file as a template."
+            ordernumber="1"
+            title="Download existing data"
+          />
+          <settings-data-import-card-stub
+            description="Paste/type your new data into the relevant fields in the Excel spreadsheet. For the best compatibility, please use Microsoft Excel for editing and follow the formatting guidelines."
+            ordernumber="2"
+            title="Edit existing data"
+          />
+          <settings-data-import-card-stub
+            description="After making necessary changes, upload the .xlsx file back to Evocon. Contact support if you need to restore to the previous version."
+            ordernumber="3"
+            title="Import updated file back"
+          />
+        </v-col-stub>
+      </v-row-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+  </v-card-stub>
+</div>
+`;

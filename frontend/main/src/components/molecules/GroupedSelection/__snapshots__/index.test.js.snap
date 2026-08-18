@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GroupedSelection > renders correctly 1`] = `
+<v-row-stub
+  class="grouped-multiselect"
+  data-v-9da71ebf=""
+  dense="false"
+  density="default"
+  nogutters="false"
+  overflow="scroll"
+  tag="div"
+>
+  <v-col-stub
+    cols="12"
+    data-v-9da71ebf=""
+    lg="false"
+    md="false"
+    sm="false"
+    tag="div"
+    xl="false"
+    xxl="false"
+  >
+    <selection-list-search-input-stub
+      data-v-9da71ebf=""
+      disabled="true"
+      error="false"
+      isdropdown="true"
+      isfocused="false"
+      label="Search"
+      loading="false"
+      modelvalue=""
+    />
+    
+    
+    <div
+      class="overflow-container rounded light"
+      data-v-9da71ebf=""
+      style="max-height: 288px;"
+    >
+      <v-list-stub
+        activatable="false"
+        border="false"
+        data-v-9da71ebf=""
+        density="default"
+        disabled="false"
+        filterable="false"
+        itemchildren="children"
+        itemprops="props"
+        items=""
+        itemsregistration="render"
+        itemtitle="title"
+        itemtype="type"
+        itemvalue="value"
+        lines="one"
+        mandatory="false"
+        nav="false"
+        navigationstrategy="focus"
+        opened=""
+        openstrategy="multiple"
+        returnobject="false"
+        selectable="false"
+        selectstrategy="single-leaf"
+        slim="false"
+        tag="div"
+        tile="false"
+        variant="text"
+      >
+        <v-list-item-stub
+          border="false"
+          data-v-9da71ebf=""
+          density="default"
+          disabled="false"
+          exact="false"
+          lines="false"
+          nav="false"
+          replace="false"
+          ripple="true"
+          slim="false"
+          tag="div"
+          tile="false"
+          variant="text"
+        >
+          <v-list-item-subtitle-stub
+            data-v-9da71ebf=""
+            tag="div"
+          >
+            No data
+          </v-list-item-subtitle-stub>
+        </v-list-item-stub>
+        
+        
+      </v-list-stub>
+    </div>
+  </v-col-stub>
+</v-row-stub>
+`;

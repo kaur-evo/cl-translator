@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BatchQuantityAmount > renders correctly 1`] = `
+<div
+  class="text-truncate max-width-100"
+>
+  <!--v-if-->
+  <span>
+    <span
+      class="text-primary"
+    >
+      95
+    </span>
+    <span
+      class="text-lw-orange"
+    >
+       (5) 
+    </span>
+    
+    /
+    
+  </span>
+  <span
+    class="text-no-wrap"
+  >
+    <span>
+      50
+    </span>
+    <span>
+       unit
+    </span>
+  </span>
+</div>
+`;
+
+exports[`BatchQuantityAmount > renders correctly if alternative unit is used 1`] = `
+<div
+  class="text-truncate max-width-100"
+>
+  <!--v-if-->
+  <span>
+    <span
+      class="text-primary"
+    >
+      47,5
+    </span>
+    <span
+      class="text-lw-orange"
+    >
+       (2,5) 
+    </span>
+    
+    /
+    
+  </span>
+  <span
+    class="text-no-wrap"
+  >
+    <span>
+      25
+    </span>
+    <span>
+       alternativeUnit
+    </span>
+  </span>
+</div>
+`;
+
+exports[`BatchQuantityAmount > renders correctly with progress 1`] = `
+<div
+  class="text-truncate max-width-100"
+>
+  <v-progress-circular-stub
+    class="mr-1 d-inline-block align-middle"
+    color="lw-yellow"
+    indeterminate="false"
+    modelvalue="200"
+    reveal="false"
+    rotate="0"
+    rounded="false"
+    size="12"
+    tag="div"
+    width="2"
+  />
+  <span>
+    <span
+      class="text-primary"
+    >
+      95
+    </span>
+    <span
+      class="text-lw-orange"
+    >
+       (5) 
+    </span>
+    
+    /
+    
+  </span>
+  <span
+    class="text-no-wrap"
+  >
+    <span>
+      50
+    </span>
+    <span>
+       unit
+    </span>
+  </span>
+</div>
+`;
+
+exports[`BatchQuantityAmount > renders correctly, when showGoodQty is false 1`] = `
+<div
+  class="text-truncate max-width-100"
+>
+  <!--v-if-->
+  <!--v-if-->
+  <span
+    class="text-no-wrap"
+  >
+    <span>
+      50
+    </span>
+    <span>
+       unit
+    </span>
+  </span>
+</div>
+`;

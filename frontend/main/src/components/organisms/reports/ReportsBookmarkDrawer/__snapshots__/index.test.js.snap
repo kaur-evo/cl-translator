@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsBookmarkDrawer > renders correctly 1`] = `
+<secondary-nav-drawer-wrapper-stub
+  collapsed="true"
+  data-v-fc6c6dd8=""
+  hasinfoicon="false"
+  selecteditem=""
+/>
+`;

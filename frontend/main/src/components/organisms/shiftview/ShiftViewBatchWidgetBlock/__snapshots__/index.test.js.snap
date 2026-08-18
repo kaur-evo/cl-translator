@@ -1,0 +1,220 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewBatchWidgetBlock > renders correctly when loading 1`] = `
+<div
+  class="bg-black d-flex flex-column flex-grow-1 rounded"
+  data-v-b13d0c66=""
+>
+  <shift-view-skeleton-loader-stub
+    data-v-b13d0c66=""
+  />
+</div>
+`;
+
+exports[`ShiftViewBatchWidgetBlock > renders current batch component 1`] = `
+<div
+  class="pa-2 bg-black d-flex flex-column flex-grow-1 rounded"
+  data-v-b13d0c66=""
+>
+  
+  <div
+    class="position-relative d-flex align-center mb-1"
+    data-v-b13d0c66=""
+  >
+    <div
+      class="title-wrapper"
+      data-v-b13d0c66=""
+    >
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="false"
+        icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <div
+        class="shift-view-label mx-1"
+        data-v-b13d0c66=""
+      >
+        Current batch
+      </div>
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="false"
+        icon="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <evocon-v-button-stub
+      class="expand-btn"
+      color="white"
+      data-v-b13d0c66=""
+      icon="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z"
+      iconcolor=""
+      size="default"
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <div
+    class="widget-container flex-grow-1"
+    data-v-b13d0c66=""
+  >
+    <current-batch-stub
+      data-v-b13d0c66=""
+      expanded="false"
+      large="false"
+      progresstype="circle"
+      showflagicon="false"
+      valueclass="text-body-medium"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewBatchWidgetBlock > renders next products component 1`] = `
+<div
+  class="pa-2 bg-black d-flex flex-column flex-grow-1 rounded"
+  data-v-b13d0c66=""
+>
+  
+  <div
+    class="position-relative d-flex align-center mb-1"
+    data-v-b13d0c66=""
+  >
+    <div
+      class="title-wrapper"
+      data-v-b13d0c66=""
+    >
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="false"
+        icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <div
+        class="shift-view-label mx-1"
+        data-v-b13d0c66=""
+      >
+        Upcoming batches
+      </div>
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="true"
+        icon="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <evocon-v-button-stub
+      class="expand-btn"
+      color="white"
+      data-v-b13d0c66=""
+      icon="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z"
+      iconcolor=""
+      size="default"
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <div
+    class="widget-container flex-grow-1"
+    data-v-b13d0c66=""
+  >
+    <next-products-stub
+      data-v-b13d0c66=""
+      valueclass="value-class"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`ShiftViewBatchWidgetBlock > renders next products component by default when showCurrentBatch is false and orders exist 1`] = `
+<div
+  class="pa-2 bg-black d-flex flex-column flex-grow-1 rounded"
+  data-v-b13d0c66=""
+>
+  
+  <div
+    class="position-relative d-flex align-center mb-1"
+    data-v-b13d0c66=""
+  >
+    <div
+      class="title-wrapper"
+      data-v-b13d0c66=""
+    >
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="false"
+        icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <div
+        class="shift-view-label mx-1"
+        data-v-b13d0c66=""
+      >
+        Upcoming batches
+      </div>
+      <evocon-v-button-stub
+        color="white"
+        data-v-b13d0c66=""
+        disabled="true"
+        icon="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+        iconcolor=""
+        size="default"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <evocon-v-button-stub
+      class="expand-btn"
+      color="white"
+      data-v-b13d0c66=""
+      icon="M10,21V19H6.41L10.91,14.5L9.5,13.09L5,17.59V14H3V21H10M14.5,10.91L19,6.41V10H21V3H14V5H17.59L13.09,9.5L14.5,10.91Z"
+      iconcolor=""
+      size="default"
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <div
+    class="widget-container flex-grow-1"
+    data-v-b13d0c66=""
+  >
+    <next-products-stub
+      data-v-b13d0c66=""
+      valueclass="value-class"
+    />
+  </div>
+  
+</div>
+`;

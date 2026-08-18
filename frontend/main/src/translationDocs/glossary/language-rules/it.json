@@ -1,0 +1,63 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] UNI (Ente Italiano di Normazione) — UNI EN ISO 22400-1:2014, UNI EN ISO 22400-2:2014",
+    "[S1] UNI EN 13306:2018 — Italian adoption of EN 13306 maintenance terminology",
+    "[S2] SAP Italy — OEE, disponibilità, prestazione, qualità (sap.com/italy)",
+    "[S2] Siemens Opcenter Italy — Gruppo Campari case study: OEE across 3 Italian sites",
+    "[S2] Microsoft Italian Localization Style Guide — formal 'Lei' convention for B2B software",
+    "[S3] ANIE Automazione — Italian automation industry association, 100+ member companies",
+    "[S3] Italian Wikipedia — 'Overall Equipment Effectiveness' article, 'Efficienza Complessiva degli Impianti'",
+    "[S4] qualitas.it, bravomanufacturing.it, opta.it — Italian manufacturing/lean consulting corpus",
+    "[S4] PTC Italy — OEE terminology in Italian Industry 4.0 context",
+    "[S5] terms.json — 73 Italian translations analyzed for length multiplier and consistency validation"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Lei",
+  "falseFriends": {
+    "actual": "Use 'effettivo' or 'reale', not 'attuale' (which means 'current')",
+    "eventually": "Use 'alla fine' or 'finalmente', not 'eventualmente' (which means 'possibly')",
+    "sensible": "Use 'ragionevole', not 'sensibile' (which means 'sensitive')",
+    "fabric": "Use 'tessuto' for cloth, not 'fabbrica' (which means 'factory')",
+    "assist": "Use 'aiutare', not 'assistere' (which means 'to attend/watch')",
+    "performance": "Use 'prestazione' for OEE performance rate, not 'performance' (anglicism for artistic/show performance)",
+    "station": "Use 'stazione di lavoro' for workstation, not 'stazione' alone (train/radio station)",
+    "setup": "Use 'attrezzaggio' or 'messa a punto', not 'setup' (means computer setup in Italian)",
+    "yield": "Use 'resa' for manufacturing yield; financial yield = 'rendimento' — context-specific",
+    "demand": "Use 'domanda' carefully — also means 'question' or 'job application'",
+    "billion": "Use 'miliardo' (10^9), not 'bilione' (which means 10^12 in Italian long scale)",
+    "idle": "Use 'inattivo' or 'in attesa', not 'pigro' (lazy — pejorative for machines)",
+    "scrap": "Use 'scarto' for manufacturing defective; 'rifiuto' = garbage; 'sfrido' = cutting waste in metalworking"
+  },
+  "grammarNotes": {
+    "genderAgreement": "Two genders; 'il rendimento' (m), 'la qualità' (f). Compound terms with 'tempo di' always masculine.",
+    "compoundWords": "Italian uses prepositional phrases: 'tempo di ciclo' (cycle time), 'tempo di fermo' (downtime)",
+    "numberFormatting": "Comma for decimal, period for thousands: '1.234,56'. Percentage: '85%' (no space).",
+    "articlesWithMetrics": "Use definite articles with metrics in sentences: 'l'OEE è all'85%'. In UI labels, omit articles.",
+    "scartoDistinction": "'Scarto' = manufacturing defective. 'Rifiuto' = garbage. 'Sfrido' = cutting waste in metalworking.",
+    "compoundPluralModifiers": "In prepositional compound phrases, the modifier noun after 'di' stays SINGULAR when naming a concept/category. CORRECT: 'cause di perdita di velocità' (causes of loss [sg] of speed). WRONG: 'cause delle perdite di velocità' (causes of-the losses [pl] of speed). The article 'delle' (di+le) signals incorrect pluralization of the modifier. Same pattern: 'motivi di fermo' (reasons of stop [sg]), not 'motivi dei fermi'. Only the head noun takes plural."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE acronym is commonly used in Italian manufacturing. Full forms: 'Efficienza Complessiva degli Impianti' — descriptive only.",
+    "wcmFiat": "World Class Manufacturing (WCM) — a TPM/lean hybrid developed by Fiat — is extremely influential in Italian industry.",
+    "industry40": "'Piano Transizione 4.0/5.0' is the Italian government incentive program for Industry 4.0.",
+    "standardsUsed": [
+      "UNI EN ISO 22400-1:2014",
+      "UNI EN ISO 22400-2:2014",
+      "UNI EN 13306:2018"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'attuale' for 'actual' instead of 'effettivo' or 'reale'",
+    "Using informal 'tu' instead of formal 'Lei' in professional software",
+    "Using 'performance' (English loanword) instead of 'prestazione' for OEE performance",
+    "Leaving 'setup' in English for manufacturing setup — use 'attrezzaggio'",
+    "Inconsistent 'fermo' vs 'tempo di fermo' — use 'fermo' for stop event, 'tempo di fermo' for duration",
+    "Using 'bilione' for English billion (10^9) — Italian 'bilione' = 10^12",
+    "Pluralizing the modifier in compound noun phrases: 'cause delle perdite di velocità' (WRONG — 'delle perdite' pluralizes the modifier) instead of 'cause di perdita di velocità' (CORRECT — 'perdita' stays singular as it names the concept). Only the head noun should take plural"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE acronym is commonly used; formal Lei form. WCM (Fiat) methodology is influential. P95 expansion 1.80x. CEN member with UNI EN ISO 22400."
+}

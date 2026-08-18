@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewSkeletonLoader > renders correctly 1`] = `"<v-skeleton-loader-stub theme="dark" boilerplate="false" loading="false" loadingtext="$vuetify.loading" type="image" class="sv-skeleton-loader"></v-skeleton-loader-stub>"`;

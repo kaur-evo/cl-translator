@@ -1,0 +1,65 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DashboardTabSettings > renders correctly 1`] = `
+<v-form-stub
+  data-v-ac9c5bbc=""
+  disabled="false"
+  fastfail="false"
+  modelvalue="true"
+  validateon="input"
+>
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-ac9c5bbc=""
+    iconcolor="secondary-text"
+    title="Edit tabs"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content"
+    data-v-ac9c5bbc=""
+    tag="div"
+  >
+    <draggable-stub
+      clone="[Function]"
+      data-v-ac9c5bbc=""
+      draggable=".drag-item"
+      handle=".handle"
+      itemkey="id"
+      modelvalue=""
+      tag="div"
+    />
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class="fullscreen-card-actions"
+    data-v-ac9c5bbc=""
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      data-v-ac9c5bbc=""
+      disabled="false"
+      icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      iconcolor=""
+      size="small"
+      text="Tab"
+      textclass=""
+      type="primary-light"
+    />
+    <v-spacer-stub
+      data-v-ac9c5bbc=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-ac9c5bbc=""
+      icon=""
+      iconcolor=""
+      size="small"
+      text="Close"
+      textclass=""
+      type="secondary"
+    />
+  </v-card-actions-stub>
+</v-form-stub>
+`;

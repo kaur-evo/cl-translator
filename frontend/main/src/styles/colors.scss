@@ -1,0 +1,18 @@
+// vuetify color variables do not support rgba/transparency therefore this
+
+:root {
+    --lw-slice-hover: rgba(0, 0, 0, 0.38); // should not be used, use tertiary-dark instead
+    --color-12-light: rgba(255, 255, 255, 0.12);
+    --color-12-primary: rgba(var(--v-theme-primary), .12);
+    --color-28-primary: rgba(var(--v-theme-primary), .28);
+    --color-12-error: rgba(var(--v-theme-error), .12);
+    --color-28-error: rgba(var(--v-theme-error), .28);
+}
+
+.bg-primary-tint {
+    background-color: var(--color-12-primary);
+}
+
+.bg-error-tint {
+    background-color: var(--color-12-error);
+}

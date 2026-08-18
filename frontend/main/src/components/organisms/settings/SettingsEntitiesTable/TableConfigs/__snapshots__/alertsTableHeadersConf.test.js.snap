@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`alertsTableHeadersConf > should return the correct table headers configuration 1`] = `
+[
+  {
+    "additionalStyle": {
+      "minWidth": "120px",
+    },
+    "isBold": true,
+    "isFixed": true,
+    "isSlotColumn": true,
+    "notClickable": true,
+    "slotName": "dropdown-selection",
+    "text": "Status",
+    "textKey": "active",
+    "tooltip": null,
+    "width": "152px",
+  },
+  {
+    "isBold": true,
+    "isFixed": true,
+    "text": "Name",
+    "textKey": "name",
+    "value": "name",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "isHidden": [Function],
+    "showTooltip": [Function],
+    "sortable": true,
+    "text": "Factories",
+    "textKey": "factoryNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "sortable": true,
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "formatTooltipFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Product",
+    "textKey": "productNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Operators",
+    "textKey": "operatorNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Shifts",
+    "textKey": "shiftTemplateNamesArray",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Machine locations",
+    "textKey": "positionNamesArray",
+  },
+  {
+    "text": "Trigger",
+    "textKey": "triggerName",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Channels",
+    "textKey": "channels",
+  },
+  {
+    "text": "Emails",
+    "textKey": "emailOutputString",
+  },
+  {
+    "additionalStyle": {
+      "float": "right",
+    },
+    "appendIcon": "M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z",
+    "filterable": false,
+    "isHidden": [Function],
+    "sortable": false,
+    "style": {
+      "width": "50px",
+    },
+  },
+]
+`;

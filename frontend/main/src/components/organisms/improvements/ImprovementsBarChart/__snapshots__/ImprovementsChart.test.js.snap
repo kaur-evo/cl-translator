@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementsChart > renders correctly 1`] = `
+<div
+  class="chart-wrapper"
+  id="improvements-chart"
+/>
+`;

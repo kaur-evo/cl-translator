@@ -1,0 +1,91 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsEntitiesTable > renders correctly 1`] = `
+<span>
+  <evocon-v-table-stub
+    arecolsloading="false"
+    arerowsclickable="true"
+    disablepagination="false"
+    emptyviewbtn=""
+    emptyviewbtncolor="primary"
+    emptyviewbtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+    emptyviewdescription="Start adding new values"
+    emptyviewheader="Nothing to display"
+    emptyviewimg="settings-view"
+    footeroptions="[object Object]"
+    group="null"
+    headers="[object Object],[object Object],[object Object]"
+    height="auto"
+    hiddenrowkeys=""
+    hidedefaultfooter="true"
+    items="[object Object],[object Object],[object Object]"
+    loading="false"
+    options="[object Object]"
+    primaryemptyviewbtn=""
+    resizeable="true"
+    width="900"
+  />
+  <div
+    class="d-flex justify-end"
+  >
+    <evocon-v-data-footer-stub
+      class="mr-1"
+      disableitemsperpage="true"
+      hasunknowntotalitems="false"
+      items="[object Object],[object Object],[object Object]"
+      itemsperpagelist="[object Object],[object Object],[object Object],[object Object]"
+      itemsperpageoptions="10,25,50,-1"
+      options="[object Object]"
+      scrollintoview="true"
+      showallitems="true"
+      showrowsperpage="true"
+    />
+  </div>
+</span>
+`;
+
+exports[`SettingsEntitiesTable > renders correctly when it is non-empty group 1`] = `
+<span
+  group="123"
+>
+  <evocon-v-table-stub
+    arecolsloading="false"
+    arerowsclickable="true"
+    disablepagination="false"
+    emptyviewbtn=""
+    emptyviewbtncolor="primary"
+    emptyviewbtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+    emptyviewdescription="Start adding new values"
+    emptyviewheader="Nothing to display"
+    emptyviewimg="settings-view"
+    footeroptions="[object Object]"
+    group="null"
+    headers="[object Object],[object Object],[object Object]"
+    height="auto"
+    hiddenrowkeys=""
+    hidedefaultfooter="true"
+    items="[object Object],[object Object],[object Object]"
+    loading="false"
+    options="[object Object]"
+    primaryemptyviewbtn=""
+    resizeable="true"
+    width="900"
+  />
+  <div
+    class="d-flex justify-end"
+  >
+    <evocon-v-data-footer-stub
+      class="mr-1"
+      disableitemsperpage="true"
+      hasunknowntotalitems="false"
+      items="[object Object],[object Object],[object Object]"
+      itemsperpagelist="[object Object],[object Object],[object Object],[object Object]"
+      itemsperpageoptions="10,25,50,-1"
+      options="[object Object]"
+      scrollintoview="true"
+      showallitems="true"
+      showrowsperpage="true"
+    />
+  </div>
+</span>
+`;

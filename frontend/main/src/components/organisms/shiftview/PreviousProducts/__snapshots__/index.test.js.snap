@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PreviousProducts > renders correctly 1`] = `
+<batch-widget-stub
+  class="previous-products pr-1"
+  productlist="[object Object],[object Object]"
+  showtooltip="true"
+  title="Previous"
+  valueclass="value-class"
+/>
+`;
+
+exports[`PreviousProducts > renders correctly in mobile view 1`] = `
+<mobile-batch-widget-stub
+  items="[object Object],[object Object]"
+/>
+`;

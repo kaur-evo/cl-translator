@@ -1,0 +1,59 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] STAMEQ (Directorate for Standards, Metrology and Quality) — ISO member, 13,000+ TCVN standards",
+    "[S1] TCVN/tcvn.gov.vn — TPM document 'Duy trì hiệu suất thiết bị tổng thể' confirming OEE terminology",
+    "[S2] Siemens Vietnam (biendongco.vn) — Opcenter MES partner, Analyze MyPerformance/OEE",
+    "[S2] SAP Vietnam (irsvietnam.com) — SAP Business One Vietnam partner, MES documentation",
+    "[S3] STI Vietnam (stivietnam.com) — Vietnamese MES/IoT vendor, 'Hiệu suất thiết bị tổng thể (OEE)' pattern",
+    "[S3] Viet Quality (vietquality.vn) — Vietnamese quality management, OEE articles",
+    "[S4] pms.edu.vn, rtc.edu.vn — Vietnamese education portals confirming OEE terminology",
+    "[S4] vti-solutions.vn, itgtechnology.vn — Vietnamese technology portals, SPC/KPI/MTBF/MTTR",
+    "[S4] Microsoft Vietnamese Localization Style Guide — 'bạn' as standard pronoun for software",
+    "[S5] terms.json — 76 Vietnamese translations analyzed, 30 sampled for length multiplier calibration"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "quý vị",
+  "falseFriends": {
+    "actual": "Use 'thực tế' (real/factual), not 'hiện tại' (which means 'current/at present')",
+    "performance": "Use 'hiệu suất', not 'màn trình diễn' (arts/show) or 'thành tích' (HR achievement). Note: 'hiệu suất' appears in both OEE full term and Performance pillar — context disambiguates.",
+    "available": "Use 'tính khả dụng' (operational availability) not 'có sẵn' (in stock/ready-made)",
+    "quality": "Use 'chất lượng' (manufacturing quality), not 'phẩm chất' (personal character/moral quality)",
+    "setup": "Use 'thời gian chuẩn bị máy' (machine preparation time), not 'cài đặt' or 'thiết lập' (software configuration)",
+    "stop": "Use 'dừng máy' (machine stop, noun compound), not bare verb 'dừng' (to stop) — bare verbs cannot serve as noun labels",
+    "line": "Use 'dây chuyền sản xuất' (production line), not 'dòng' (text line) or 'hàng' (queue/row)",
+    "yield": "Use 'tỷ lệ đạt yêu cầu lần đầu' (first pass yield rate), not 'sản lượng' (output quantity) or 'năng suất' (agricultural yield)",
+    "waste": "Use 'lãng phí' (lean waste/muda), not 'rác thải' (garbage/trash)",
+    "capacity": "Use 'công suất' (production capacity), not 'sức chứa' (physical container volume)"
+  },
+  "grammarNotes": {
+    "tones": "6 tones are phonemic. Removing diacritics changes meaning: 'ca' (shift) vs 'cà' (eggplant) vs 'cá' (fish). Full Unicode support mandatory.",
+    "isolating": "Analytic/isolating — no inflection. All compounds are multi-word: 'thời gian chu kỳ' (cycle time, 4 words). Same form regardless of syntactic position.",
+    "classifiers": "Classifiers required between numbers and nouns: '3 chiếc máy' (3 machines), '5 lần dừng máy' (5 stops), '2 ca' (2 shifts).",
+    "headModifierOrder": "Modifiers AFTER head noun (opposite of English): 'tốc độ mục tiêu' (speed + target = target speed), 'thời gian theo kế hoạch' (time according-to plan = planned time).",
+    "numberFormatting": "Decimal: comma (,). Thousands: period (.). '1.000.000,50'. Percentage: '85%' (no space). European-style, opposite of English.",
+    "compoundPluralModifiers": "Not applicable — Vietnamese has no morphological pluralization. Singular and plural forms are identical."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE is standard. Full term: 'Hiệu suất thiết bị tổng thể'. English acronym used universally in dashboards.",
+    "highExpansion": "Vietnamese produces some of the highest expansion ratios: 'downtime' → 'thời gian ngừng hoạt động' (3.38x). Analytic language structure inherently multi-word.",
+    "dominantSectors": "Electronics (Samsung ~20% exports, Intel, Foxconn, LG), automotive (VinFast, Toyota, Honda), textiles, food & beverage",
+    "samsungInfluence": "Samsung's supplier development program (400+ Vietnamese enterprises) drives lean/TPM adoption. TCVN portal hosts TPM guidance.",
+    "standardsUsed": [
+      "TCVN standards (~60% harmonized with ISO)"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'có sẵn' (in stock) instead of 'tính khả dụng' for OEE availability — commercial vs operational availability",
+    "Ambiguous 'hiệu suất' for both OEE overall and Performance pillar — pair with 'P' or 'Performance' parenthetical when referring to pillar",
+    "Missing or incorrect diacritics — every Vietnamese word requires correct tone marks. LLM translators sometimes drop diacritics.",
+    "Using bare verbs as noun labels: 'dừng' (to stop) cannot label a widget — use 'dừng máy' (machine stop)",
+    "Inconsistent downtime terms: 'thời gian ngừng hoạt động' (formal) vs 'thời gian dừng máy' (specific) — maintain terms.json convention",
+    "Using 'quý vị' where 'bạn' may be more appropriate — 'quý vị' is very formal; Microsoft guide recommends 'bạn' for B2B software",
+    "Font rendering issues — requires full Unicode support for all Vietnamese diacritics"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": true,
+  "notes": "OEE is used; formal 'quý vị'. Tonal with Latin script. Highest expansion for compound time terms (up to 3.38x). Full Vietnamese term available for expansion. P95 expansion 2.40x."
+}

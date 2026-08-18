@@ -1,0 +1,53 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] EVS (Eesti Standardikeskus) — ISO/CEN member; EVS-EN 13306:2017 confirmed adoption",
+    "[S3] Leanway.ee — Estonian lean manufacturing consultancy; OEE terminology: kättesaadavus, tootlus, kvaliteet",
+    "[S3] TSENTER.ee — Estonian lean centre; OEE as 'Seadmete Kogumõjusus (SKM)'; tsükliaeg confirmed",
+    "[S3] Atemix.ee — Estonian industrial automation and OEE solutions; uses 'seadmete üldine efektiivsus' as full OEE name",
+    "[S3] GlobalReader.eu — Estonian OEE software provider using OEE acronym with Estonian labels"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "teie",
+  "falseFriends": {
+    "availability": "Use 'kättesaadavus' (OEE equipment operational availability) not 'saadavus' (product/service obtainability). Evocon uses 'kasulik tööaeg' (useful working time) — a valid alternative framing for the OEE availability pillar.",
+    "performance": "Use 'tootmiskiirus' (Evocon: production rate/speed) or 'tootlus' (lean practitioners: output/yield rate) for OEE performance pillar. Never 'esitus' or 'etendus' (theatrical performance/show).",
+    "scrap": "Use 'praak' (manufacturing defect/scrap product) not 'praht' (general garbage/rubbish). Similar phonetically but different register — 'praht' is domestic waste.",
+    "stop": "Use 'seisak' (production stoppage event) not 'stopp' (anglicism/informal loanword). Plural 'seisakud' = downtime collectively.",
+    "shift": "Use 'vahetus' (work shift/rotation period) not 'nihe' (physical displacement/shift movement).",
+    "idle": "Use 'tühikäik' (idle running — machine powered but not producing) or 'ootamisaeg' (waiting time). Never 'laisk' (lazy, pejorative).",
+    "changeover": "Use 'tootevahetus' (product changeover/format change) not 'vahetus' alone. 'Vahetus' = work shift. The compound disambiguates."
+  },
+  "grammarNotes": {
+    "caseSystem": "14 grammatical cases — nominative for UI labels/headings: 'Vahetus', 'Kvaliteet', 'Seisakud'; genitive for compound modifiers: 'vahetuse vaade' (shift view), 'seisaku põhjus' (stop reason); partitive for measurements and negation: 'vahetust ei leitud'. Wrong case endings are immediately apparent to Estonian readers.",
+    "compoundWords": "Estonian merges technical terms into single compound words — never split: 'tsükliaeg' (cycle time), 'tootmissignaal' (production signal), 'tootevahetus' (changeover), 'eesmärkkiirus' (target speed), 'vahetusmall' (shift template). Splitting produces ungrammatical text.",
+    "genitiveCompounding": "Two-word technical phrases use genitive of the first word: 'seisaku põhjus' (seisak→seisaku), 'vahetuse vaade' (vahetus→vahetuse), 'kiiruse kadu' (kiirus→kiiruse). Missing the genitive suffix makes phrases sound truncated.",
+    "noArticles": "Estonian has no articles. UI labels are bare nominative: 'Vahetus', 'Tootmiskiirus', 'Praak'. Do not insert demonstratives ('see', 'need') as article substitutes in UI labels.",
+    "numberFormatting": "Decimal: comma (,). Thousands: non-breaking space. Percentage: '85%' or '85 %'. Example: 1 234 567,89. Never use period as decimal separator.",
+    "compoundPluralModifiers": "When pluralizing compound noun phrases, only the HEAD noun takes plural form. The genitive modifier stays SINGULAR because it names a concept/category, not individual instances. CORRECT: 'kiiruskao põhjused' (speed loss [gen.sg] + reasons [nom.pl]). WRONG: 'kiiruskadude põhjused' (speed losses [gen.pl] + reasons). Same pattern: 'seisaku põhjused' (stop [gen.sg] + reasons), not 'seisakute põhjused'. Compare singular 'kiiruse kao põhjus' — the modifier 'kiiruse kao' stays in the same genitive singular conceptual form when the head noun pluralizes."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE acronym is universal in Estonian manufacturing software. Full Estonian forms: 'seadmete efektiivsus' (most common), 'seadmete üldine efektiivsus' (literal). No nationally standardized Estonian acronym exists. SKM (Seadmete Kogumõjusus) proposed by TSENTER.ee but not standardized — do not use.",
+    "evoconHomeLanguage": "Estonian is Evocon's home language (Evocon OÜ, Tallinn). terms.json Estonian translations are first-party authoritative product choices, tested with Estonian factory operators (HKScan Estonia case study).",
+    "standardsUsed": [
+      "EVS-EN 13306:2017",
+      "ISO 22400-2 (EVS-ISO 22400 adoption expected per CEN membership)"
+    ],
+    "dominantSectors": "Electronics (Enics/GPV, Incap Estonia, Kitron), food processing (HKScan Estonia), wood/furniture, machinery/metalworking",
+    "vendors": "Evocon (OEE/MES, home-grown Estonian leader), Leanest.ee (OEE), SAP (legal/financial localization, limited manufacturing KPI terminology for Estonian)"
+  },
+  "commonMistakes": [
+    "Using 'saadavus' instead of 'kättesaadavus' for OEE availability — 'saadavus' means product obtainability, not equipment operational availability",
+    "Splitting compound words: 'tsükli aeg' instead of 'tsükliaeg'; 'tootmis signaal' instead of 'tootmissignaal'; 'eesmärk kiirus' instead of 'eesmärkkiirus'",
+    "Missing genitive connector in two-word phrases: 'seisak põhjus' (wrong) instead of 'seisaku põhjus' (correct); 'vahetus vaade' instead of 'vahetuse vaade'",
+    "Using informal 'sina' form instead of formal 'teie' for professional software user address",
+    "Using 'esitus' or 'etendus' (theatrical performance/show) for OEE performance metric — use 'tootmiskiirus' or 'tootlus'",
+    "Using period as decimal separator (85.5%) instead of comma (85,5%) — critical for all OEE metric displays",
+    "Confusing 'vahetus' (work shift) with 'tootevahetus' (product changeover) — context determines which is correct; both appear in manufacturing UI",
+    "Pluralizing the modifier in compound noun phrases: 'kiiruskadude põhjused' (WRONG — modifier in genitive plural) instead of 'kiiruskao põhjused' (CORRECT — modifier in genitive singular). When pluralizing, only the head noun changes; the modifier stays singular genitive because it names the category"
+  ],
+  "lengthMultiplier": 2.0,
+  "acronymExpansionAllowed": false,
+  "notes": "Estonian is Evocon's home language — terms.json translations are first-party authoritative. OEE used directly; no established Estonian acronym (SKM exists as TSENTER.ee proposal but is not standardized). Formal 'teie' confirmed. 14-case system with compound word formation: never split compounds (tsükliaeg, tootmissignaal, tootevahetus). Genitive connector required in two-word phrases (seisaku põhjus, vahetuse vaade). Length multiplier reduced 2.5→2.0 based on 73-term empirical measurement (max observed: 1.80, aligns with FI=HU=ET=2.0)."
+}

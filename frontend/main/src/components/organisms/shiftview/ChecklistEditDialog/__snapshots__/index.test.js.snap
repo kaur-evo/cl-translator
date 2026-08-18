@@ -1,0 +1,1313 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistEditDialog > renders correctly 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Manual checklist in another timezone"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          <!--v-if-->
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          <!--v-if-->
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Manual activation 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a manual checklist in another timezone"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 align-center justify-end"
+      data-v-daba2064=""
+    >
+      <!--v-if-->
+      <div
+        class=""
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="0"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          0/1 (0%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <delete-button-stub
+      data-v-daba2064=""
+      id="delete-btn"
+    />
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ChecklistEditDialog > renders correctly for manual checklist 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Manual checklist in another timezone"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          <!--v-if-->
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Done
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Manual activation 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a manual checklist in another timezone"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 align-center justify-end"
+      data-v-daba2064=""
+    >
+      <!--v-if-->
+      <div
+        class=""
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="0"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          0/1 (0%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ChecklistEditDialog > renders correctly if checklist authentication is required and active user role is lineview user 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+    modelvalue="true"
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Checklist test"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          
+          <img
+            alt="Editing"
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            height="24"
+            src="/src/assets/animations/editing.gif"
+            style="display: none;"
+            width="24"
+          />
+          <v-icon-stub
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            disabled="false"
+            end="false"
+            size="24"
+            start="false"
+            tag="i"
+          >
+            M9.75 20.85C11.53 20.15 11.14 18.22 10.24 17C9.35 15.75 8.12 14.89 6.88 14.06C6 13.5 5.19 12.8 4.54 12C4.26 11.67 3.69 11.06 4.27 10.94C4.86 10.82 5.88 11.4 6.4 11.62C7.31 12 8.21 12.44 9.05 12.96L10.06 11.26C8.5 10.23 6.5 9.32 4.64 9.05C3.58 8.89 2.46 9.11 2.1 10.26C1.78 11.25 2.29 12.25 2.87 13.03C4.24 14.86 6.37 15.74 7.96 17.32C8.3 17.65 8.71 18.04 8.91 18.5C9.12 18.94 9.07 18.97 8.6 18.97C7.36 18.97 5.81 18 4.8 17.36L3.79 19.06C5.32 20 7.88 21.47 9.75 20.85M20.84 5.25C21.06 5.03 21.06 4.67 20.84 4.46L19.54 3.16C19.33 2.95 18.97 2.95 18.76 3.16L17.74 4.18L19.82 6.26M11 10.92V13H13.08L19.23 6.85L17.15 4.77L11 10.92Z
+          </v-icon-stub>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            Test User
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Done
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Every {interval} 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a checklist auth test"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 align-center justify-end"
+      data-v-daba2064=""
+    >
+      <!--v-if-->
+      <div
+        class=""
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="0"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          0/1 (0%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ChecklistEditDialog > renders correctly if not applicable checkbox is visible 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Manual checklist in another timezone"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          <!--v-if-->
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          <!--v-if-->
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Manual activation 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a manual checklist in another timezone"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="2"
+      />
+    </div>
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="3"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 align-center justify-space-between"
+      data-v-daba2064=""
+    >
+      <evocon-v-checkbox-stub
+        class="pl-2"
+        dark="false"
+        data-v-daba2064=""
+        disabled="false"
+        label="Mark unfilled tasks as "Not Applicable" (if available)"
+        modelvalue="false"
+        sublabel=""
+        truevalue="true"
+      />
+      <div
+        class=""
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="33,33"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          1/3 (33,33%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <delete-button-stub
+      data-v-daba2064=""
+      id="delete-btn"
+    />
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ChecklistEditDialog > renders correctly in mobile view if checklist authentication is required and active user role is lineview user 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+    modelvalue="true"
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Checklist test"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0 dialog-content--mobile"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          
+          <img
+            alt="Editing"
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            height="16"
+            src="/src/assets/animations/editing.gif"
+            style="display: none;"
+            width="16"
+          />
+          <v-icon-stub
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            disabled="false"
+            end="false"
+            size="16"
+            start="false"
+            tag="i"
+          >
+            M9.75 20.85C11.53 20.15 11.14 18.22 10.24 17C9.35 15.75 8.12 14.89 6.88 14.06C6 13.5 5.19 12.8 4.54 12C4.26 11.67 3.69 11.06 4.27 10.94C4.86 10.82 5.88 11.4 6.4 11.62C7.31 12 8.21 12.44 9.05 12.96L10.06 11.26C8.5 10.23 6.5 9.32 4.64 9.05C3.58 8.89 2.46 9.11 2.1 10.26C1.78 11.25 2.29 12.25 2.87 13.03C4.24 14.86 6.37 15.74 7.96 17.32C8.3 17.65 8.71 18.04 8.91 18.5C9.12 18.94 9.07 18.97 8.6 18.97C7.36 18.97 5.81 18 4.8 17.36L3.79 19.06C5.32 20 7.88 21.47 9.75 20.85M20.84 5.25C21.06 5.03 21.06 4.67 20.84 4.46L19.54 3.16C19.33 2.95 18.97 2.95 18.76 3.16L17.74 4.18L19.82 6.26M11 10.92V13H13.08L19.23 6.85L17.15 4.77L11 10.92Z
+          </v-icon-stub>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            Test User
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Done
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Every {interval} 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a checklist auth test"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="true"
+        disabled="false"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 flex-column"
+      data-v-daba2064=""
+    >
+      <!--v-if-->
+      <div
+        class="pl-2"
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="0"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          0/1 (0%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ChecklistEditDialog > renders correctly in readonly mode 1`] = `
+<div
+  data-v-daba2064=""
+>
+  <shiftview-checklist-auth-dialog-stub
+    data-v-daba2064=""
+    modelvalue="false"
+  />
+  <dialog-toolbar-stub
+    color="lw-gray"
+    data-v-daba2064=""
+    iconcolor="secondary-text"
+    id="dialog-toolbar"
+    title="Checklist test"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="dialog-content pb-0"
+    data-v-daba2064=""
+    tag="div"
+  >
+    <v-card-stub
+      border="false"
+      class="px-4 py-2"
+      data-v-daba2064=""
+      density="default"
+      disabled="false"
+      exact="false"
+      flat="false"
+      hover="false"
+      loading="false"
+      replace="false"
+      ripple="true"
+      tag="div"
+      tile="false"
+      variant="elevated"
+    >
+      <div
+        class="d-flex align-center justify-space-between"
+        data-v-daba2064=""
+      >
+        <div
+          class="d-flex flex-wrap align-baseline"
+          data-v-daba2064=""
+        >
+          
+          <img
+            alt="Editing"
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            height="24"
+            src="/src/assets/animations/editing.gif"
+            style="display: none;"
+            width="24"
+          />
+          <v-icon-stub
+            class="align-self-center mr-1"
+            data-v-daba2064=""
+            disabled="false"
+            end="false"
+            size="24"
+            start="false"
+            tag="i"
+          >
+            M9.75 20.85C11.53 20.15 11.14 18.22 10.24 17C9.35 15.75 8.12 14.89 6.88 14.06C6 13.5 5.19 12.8 4.54 12C4.26 11.67 3.69 11.06 4.27 10.94C4.86 10.82 5.88 11.4 6.4 11.62C7.31 12 8.21 12.44 9.05 12.96L10.06 11.26C8.5 10.23 6.5 9.32 4.64 9.05C3.58 8.89 2.46 9.11 2.1 10.26C1.78 11.25 2.29 12.25 2.87 13.03C4.24 14.86 6.37 15.74 7.96 17.32C8.3 17.65 8.71 18.04 8.91 18.5C9.12 18.94 9.07 18.97 8.6 18.97C7.36 18.97 5.81 18 4.8 17.36L3.79 19.06C5.32 20 7.88 21.47 9.75 20.85M20.84 5.25C21.06 5.03 21.06 4.67 20.84 4.46L19.54 3.16C19.33 2.95 18.97 2.95 18.76 3.16L17.74 4.18L19.82 6.26M11 10.92V13H13.08L19.23 6.85L17.15 4.77L11 10.92Z
+          </v-icon-stub>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            Test User
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Due
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Done
+          </span>
+          <span
+            class="text-body-medium mr-4"
+            data-v-daba2064=""
+          >
+            08:00
+          </span>
+          
+          
+          <span
+            class="text-label-small text-tertiary-dark mr-1"
+            data-v-daba2064=""
+          >
+            Frequency
+          </span>
+          <span
+            class="text-body-medium d-flex align-center mr-4"
+            data-v-daba2064=""
+            id="frequency-string"
+          >
+            
+            
+            Every {interval} 
+            <!--v-if-->
+            
+            
+          </span>
+          
+        </div>
+        <!--v-if-->
+      </div>
+      <div
+        class="mt-2 checklist-description checklist-description--collapsed"
+        data-v-daba2064=""
+      >
+        
+        <text-with-url-stub
+          class="text-body-medium mb-0 checklist-description--collapsed"
+          data-v-daba2064=""
+          id="check-description"
+          tag="div"
+          text="This is a readonly test"
+        />
+        
+        
+      </div>
+    </v-card-stub>
+    
+    <div
+      class="check-card"
+      data-v-daba2064=""
+    >
+      <check-card-stub
+        checklistid="48fa54dc-4a20-4522-b742-f0c2f722c974"
+        data-v-daba2064=""
+        dense="false"
+        disabled="true"
+        files=""
+        fileuuid="mocked-uuid-12345"
+        item="[object Object]"
+        ordernumber="1"
+      />
+    </div>
+    
+    <div
+      class="d-flex py-2 align-center justify-end"
+      data-v-daba2064=""
+    >
+      <!--v-if-->
+      <div
+        class=""
+        data-v-daba2064=""
+      >
+        <v-progress-circular-stub
+          class="mr-1"
+          color="secondary-dark"
+          data-v-daba2064=""
+          indeterminate="false"
+          modelvalue="0"
+          reveal="false"
+          rotate="0"
+          rounded="false"
+          size="12"
+          tag="div"
+          width="2"
+        />
+        <span
+          class="mr-1 text-label-small text-secondary-dark"
+          data-v-daba2064=""
+        >
+          Tasks filled
+        </span>
+        <span
+          data-v-daba2064=""
+        >
+          0/1 (0%)
+        </span>
+      </div>
+    </div>
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-daba2064=""
+    tag="div"
+  >
+    <delete-button-stub
+      data-v-daba2064=""
+      id="delete-btn"
+    />
+    <v-spacer-stub
+      data-v-daba2064=""
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      data-v-daba2064=""
+      icon=""
+      iconcolor=""
+      id="cancel-button"
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-daba2064=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-button"
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;

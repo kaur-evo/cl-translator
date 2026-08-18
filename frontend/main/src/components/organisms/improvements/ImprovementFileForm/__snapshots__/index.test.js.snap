@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementFileForm > renders correctly 1`] = `
+<v-col-stub
+  class="px-4"
+  cols="false"
+  data-v-d342a6b9=""
+  lg="false"
+  md="false"
+  sm="false"
+  tag="div"
+  xl="false"
+  xxl="false"
+>
+  
+  
+  <v-sheet-stub
+    border="false"
+    class="file-upload-sheet"
+    data-v-d342a6b9=""
+    tag="div"
+    tile="false"
+  >
+    <div
+      class="fill-height d-flex justify-center align-center"
+      data-v-d342a6b9=""
+    >
+      <evocon-v-button-stub
+        color="primary"
+        data-v-d342a6b9=""
+        icon="M9,16V10H5L12,3L19,10H15V16H9M5,20V18H19V20H5Z"
+        iconcolor=""
+        size="x-large"
+        text="Click here to upload a file"
+        textclass="text-none"
+        type="primary"
+        variant="text"
+      />
+    </div>
+    <label
+      data-v-d342a6b9=""
+      for="file-input"
+    >
+      <input
+        class="file-input"
+        data-v-d342a6b9=""
+        id="file-input"
+        multiple=""
+        type="file"
+      />
+    </label>
+  </v-sheet-stub>
+  <v-card-actions-stub
+    class="px-0 justify-end"
+    data-v-d342a6b9=""
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      data-v-d342a6b9=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-d342a6b9=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</v-col-stub>
+`;

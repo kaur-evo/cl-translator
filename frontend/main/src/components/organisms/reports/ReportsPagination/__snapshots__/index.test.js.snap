@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsPagination > renders correctly 1`] = `
+<evocon-v-data-footer-stub
+  allitemsnotloaded="false"
+  hasunknowntotalitems="false"
+  items=""
+  items-per-page-options="100"
+  itemsperpagelist="[object Object],[object Object],[object Object],[object Object]"
+  options="[object Object]"
+  scrollintoview="false"
+  showallitems="false"
+  showrowsperpage="false"
+/>
+`;

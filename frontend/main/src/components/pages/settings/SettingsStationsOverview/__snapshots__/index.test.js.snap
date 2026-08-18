@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsStationsOverview > renders correctly 1`] = `
+<settings-entities-overview-stub
+  arecolsloading="false"
+  arerowsclickable="true"
+  caneditgroups="true"
+  customviews=""
+  entityname="station"
+  filterconfiguration="[object Map]"
+  groupdeletefn="[Function]"
+  groupfields="name,singleFactory"
+  groups="[object Object],[object Object]"
+  hasgroupview="true"
+  hideresetbtn="false"
+  isdeletinggroupinprogress="false"
+  items="[object Object],[object Object]"
+  languagetextentity=""
+  loading="false"
+  menuitems=""
+  namefield="name"
+  navigatetoeditroute="true"
+  openpanelsonfilter="true"
+  overviewheader="Stations"
+  primarybtntext=""
+  saveactionname="saveStationGroup"
+  secondarybtntext="Group"
+  showdragicon="false"
+  showemptygroups="true"
+  showglobalgroupsicon="false"
+  showgroupitemscount="true"
+  statuskey="enabled"
+  tableheaders="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  togglebtnvalue="list"
+  usebackendfiltering="false"
+/>
+`;

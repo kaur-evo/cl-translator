@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GlobalNotification > renders correctly if type is "error" 1`] = `
+<evocon-v-snackbar-stub
+  description=""
+  icon=""
+  label="text"
+  location="top right"
+  modelvalue="true"
+  timeout="5000"
+  type="error"
+/>
+`;
+
+exports[`GlobalNotification > renders correctly if type is "success" 1`] = `
+<evocon-v-snackbar-stub
+  description=""
+  icon=""
+  label="text"
+  location="top right"
+  modelvalue="true"
+  timeout="5000"
+  type="success"
+/>
+`;
+
+exports[`GlobalNotification > renders correctly if type is "warning" 1`] = `
+<evocon-v-snackbar-stub
+  description=""
+  icon=""
+  label="text"
+  location="top right"
+  modelvalue="true"
+  timeout="5000"
+  type="warning"
+/>
+`;

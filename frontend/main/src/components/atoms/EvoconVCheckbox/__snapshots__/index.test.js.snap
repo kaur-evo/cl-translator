@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconVCheckbox > renders correctly 1`] = `
+<v-checkbox-stub
+  centeraffix="true"
+  color="primary"
+  data-v-11da4d2c=""
+  density="default"
+  disabled="false"
+  error="false"
+  errormessages=""
+  falseicon="$checkboxOff"
+  focused="false"
+  glow="false"
+  hidedetails="true"
+  hidespinbuttons="false"
+  iconcolor="false"
+  indeterminate="false"
+  indeterminateicon="$checkboxIndeterminate"
+  maxerrors="1"
+  messages=""
+  modelvalue="true"
+  persistenthint="false"
+  ripple="true"
+  rules=""
+  trueicon="$checkboxOn"
+  truevalue="true"
+  valuecomparator="[Function]"
+/>
+`;
+
+exports[`EvoconVCheckbox > renders correctly in disabled state 1`] = `
+<v-checkbox-stub
+  centeraffix="true"
+  color="primary"
+  data-v-11da4d2c=""
+  density="default"
+  disabled="true"
+  error="false"
+  errormessages=""
+  falseicon="$checkboxOff"
+  focused="false"
+  glow="false"
+  hidedetails="true"
+  hidespinbuttons="false"
+  iconcolor="false"
+  indeterminate="false"
+  indeterminateicon="$checkboxIndeterminate"
+  maxerrors="1"
+  messages=""
+  modelvalue="true"
+  persistenthint="false"
+  ripple="true"
+  rules=""
+  trueicon="$checkboxOn"
+  truevalue="true"
+  valuecomparator="[Function]"
+/>
+`;

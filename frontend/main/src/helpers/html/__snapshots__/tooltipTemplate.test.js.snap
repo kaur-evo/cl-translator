@@ -1,0 +1,73 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`tooltipTemplate > should return correct template with all fields 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  <div class="font-weight-regular align-center d-flex">
+             <img style="width: 12px;" class="ml-n1 mr-2" src="" />
+              <span class="text-label-small text-tertiary-dark font-weight-medium">Param1:&nbsp;</span>
+              <span class="text-body-small font-weight-medium text-none">Value1</span><span class="ml-1 text-body-small text-none text-quaternary-dark-2">(Secondary1)</span>
+              </div><div class="font-weight-regular align-center d-flex">
+             <img style="width: 12px;" class="ml-n1 mr-2" src="" />
+              <span class="text-label-small text-tertiary-dark font-weight-medium">Param2:&nbsp;</span>
+              <span class="text-body-small font-weight-medium text-none">Value2</span>
+              </div>
+  <div class="mt-1 text-body-small align-center flex-nowrap"><span class="mr-2"><svg>M18,8H6V6H18V8M18,11H6V9H18V11M18,14H6V12H18V14M22,4A2,2 0 0,0 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z</svg></span><span>This is a note</span></div>
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template with empty paramRows 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  
+  
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template with note 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  
+  <div class="mt-1 text-body-small align-center flex-nowrap"><span class="mr-2"><svg>M18,8H6V6H18V8M18,11H6V9H18V11M18,14H6V12H18V14M22,4A2,2 0 0,0 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z</svg></span><span>This is a note</span></div>
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template with only topLabel and primaryLabel 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  
+  
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template with paramRows and useAxisIcons 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  <div class="font-weight-regular align-center d-flex">
+             <img style="width: 12px;" class="ml-n1 mr-2" src="" />
+              <span class="text-label-small text-tertiary-dark font-weight-medium">Param1:&nbsp;</span>
+              <span class="text-body-small font-weight-medium text-none">Value1</span><span class="ml-1 text-body-small text-none text-quaternary-dark-2">(Secondary1)</span>
+              </div><div class="font-weight-regular align-center d-flex">
+             <img style="width: 12px;" class="ml-n1 mr-2" src="" />
+              <span class="text-label-small text-tertiary-dark font-weight-medium">Param2:&nbsp;</span>
+              <span class="text-body-small font-weight-medium text-none">Value2</span>
+              </div>
+  
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template with topLabel and topLabelIcon 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  
+  
+  </v-col></div>"
+`;
+
+exports[`tooltipTemplate > should return correct template without optional fields 1`] = `
+"<div class="v-row align-center text-white"><v-col class="pb-2 pt-1">
+
+  
+  
+  </v-col></div>"
+`;

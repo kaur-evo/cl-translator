@@ -1,0 +1,245 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MainAppToolbar > renders correctly 1`] = `
+<v-app-bar-stub
+  absolute="false"
+  border="false"
+  class="pl-1 pr-2 app-bar ml-16"
+  collapse="false"
+  collapseposition="start"
+  data-v-bc209aca=""
+  density="default"
+  extensionheight="48"
+  flat="false"
+  floating="false"
+  height="64"
+  id="main-app-toolbar"
+  location="top"
+  modelvalue="true"
+  order="0"
+  scrollthreshold="300"
+  tag="header"
+  theme="dark"
+  tile="false"
+>
+  <!-- logo drawer button in small tablets and mobiles -->
+  <!--v-if-->
+  <!-- back button  -->
+  <evocon-v-button-stub
+    class="mr-2"
+    color="white"
+    data-v-bc209aca=""
+    icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+    iconcolor=""
+    id="app-toolbar-back"
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <!-- title  -->
+  <v-toolbar-title-stub
+    class=""
+    data-v-bc209aca=""
+    tag="div"
+  >
+    <span
+      data-v-bc209aca=""
+      id="app-toolbar-title"
+    >
+      Route title
+    </span>
+  </v-toolbar-title-stub>
+  <!--v-if-->
+</v-app-bar-stub>
+`;
+
+exports[`MainAppToolbar > renders correctly in small view if items prop is empty 1`] = `
+<v-app-bar-stub
+  absolute="false"
+  border="false"
+  class="pl-1 pr-2 app-bar ml-16"
+  collapse="false"
+  collapseposition="start"
+  data-v-bc209aca=""
+  density="default"
+  extensionheight="48"
+  flat="false"
+  floating="false"
+  height="64"
+  id="main-app-toolbar"
+  location="top"
+  modelvalue="true"
+  order="0"
+  scrollthreshold="300"
+  tag="header"
+  theme="dark"
+  tile="false"
+>
+  <!-- logo drawer button in small tablets and mobiles -->
+  <v-app-bar-nav-icon-stub
+    block="false"
+    border="false"
+    data-v-bc209aca=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    icon="$menu"
+    id="app-toolbar-logo"
+    loading="false"
+    replace="false"
+    ripple="true"
+    size="default"
+    slim="false"
+    stacked="false"
+    symbol="Symbol(vuetify:v-btn-toggle)"
+    tag="button"
+    tile="false"
+    variant="text"
+  >
+    <div
+      class="toolbar-logo pa-3"
+      data-v-bc209aca=""
+    />
+  </v-app-bar-nav-icon-stub>
+  <!-- back button  -->
+  <evocon-v-button-stub
+    class="mr-2"
+    color="white"
+    data-v-bc209aca=""
+    icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+    iconcolor=""
+    id="app-toolbar-back"
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <!-- title  -->
+  <v-toolbar-title-stub
+    class=""
+    data-v-bc209aca=""
+    tag="div"
+  >
+    <span
+      data-v-bc209aca=""
+      id="app-toolbar-title"
+    >
+      Route title
+    </span>
+  </v-toolbar-title-stub>
+  <!--v-if-->
+</v-app-bar-stub>
+`;
+
+exports[`MainAppToolbar > renders correctly in small view if items prop is not empty 1`] = `
+<v-app-bar-stub
+  absolute="false"
+  border="false"
+  class="pl-1 pr-2 app-bar ml-16"
+  collapse="false"
+  collapseposition="start"
+  data-v-bc209aca=""
+  density="default"
+  extensionheight="48"
+  flat="false"
+  floating="false"
+  height="64"
+  id="main-app-toolbar"
+  location="top"
+  modelvalue="true"
+  order="0"
+  scrollthreshold="300"
+  tag="header"
+  theme="dark"
+  tile="false"
+>
+  <!-- logo drawer button in small tablets and mobiles -->
+  <v-app-bar-nav-icon-stub
+    block="false"
+    border="false"
+    data-v-bc209aca=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    icon="$menu"
+    id="app-toolbar-logo"
+    loading="false"
+    replace="false"
+    ripple="true"
+    size="default"
+    slim="false"
+    stacked="false"
+    symbol="Symbol(vuetify:v-btn-toggle)"
+    tag="button"
+    tile="false"
+    variant="text"
+  >
+    <div
+      class="toolbar-logo pa-3"
+      data-v-bc209aca=""
+    />
+  </v-app-bar-nav-icon-stub>
+  <!-- back button  -->
+  <evocon-v-button-stub
+    class="mr-2"
+    color="white"
+    data-v-bc209aca=""
+    icon="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"
+    iconcolor=""
+    id="app-toolbar-back"
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <!-- title  -->
+  <v-toolbar-title-stub
+    class="font-weight-medium"
+    data-v-bc209aca=""
+    tag="div"
+  >
+    <selection-input-stub
+      checkbox="true"
+      coloractiveprepend="false"
+      data-v-bc209aca=""
+      density="compact"
+      disabled="false"
+      disabledvalues=""
+      emittoggleall="false"
+      emptyequalsallselected="false"
+      error="false"
+      filled="false"
+      groupidkey="id"
+      groups=""
+      groupsorderby="name"
+      hiddenitemscount="0"
+      hidesearch="true"
+      hint=""
+      inverted="false"
+      isgroupedselect="false"
+      issingleselect="true"
+      itemflag=""
+      itemgroupidkey="groupId"
+      items="[object Object],[object Object]"
+      itemsecondarytext=""
+      itemtertiarytext=""
+      itemtext="name"
+      itemvalue="id"
+      loading="false"
+      menuinputtype="primary"
+      modelvalue="1"
+      numericorderby="false"
+      placeholder=""
+      prependtext=""
+      removenonexistentselections="false"
+      required="true"
+      showemptyarrayasallselected="false"
+      someselected="false"
+      totalcount="0"
+      usechips="false"
+      width="256"
+    />
+  </v-toolbar-title-stub>
+  <!--v-if-->
+</v-app-bar-stub>
+`;

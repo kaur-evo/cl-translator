@@ -1,0 +1,123 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsIntroCard > renders correctly 1`] = `
+<v-card-stub
+  border="false"
+  class="pt-4 px-6 settings-card"
+  data-v-f4513d32=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  id="settings-intro-card"
+  loading="false"
+  replace="false"
+  ripple="true"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  <v-row-stub
+    class="text-truncate flex-nowrap align-center"
+    data-v-f4513d32=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <span
+      class="card-img string"
+      data-v-f4513d32=""
+    />
+    <span
+      class="ml-2 text-headline-small font-weight-bold text-truncate"
+      data-v-f4513d32=""
+    >
+      string
+    </span>
+    <!--v-if-->
+    <v-icon-stub
+      class="next-icon"
+      data-v-f4513d32=""
+      disabled="false"
+      end="false"
+      size="default"
+      start="false"
+      tag="i"
+    >
+      M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z
+    </v-icon-stub>
+  </v-row-stub>
+  <span
+    class="text-secondary-text text-body-medium font-weight-regular d-none d-md-inline-block pt-2"
+    data-v-f4513d32=""
+  >
+    string. 
+  </span>
+</v-card-stub>
+`;
+
+exports[`SettingsIntroCard > renders correctly with new indicator 1`] = `
+<v-card-stub
+  border="false"
+  class="pt-4 px-6 settings-card"
+  data-v-f4513d32=""
+  density="default"
+  disabled="false"
+  exact="false"
+  flat="false"
+  hover="false"
+  id="settings-intro-card"
+  loading="false"
+  replace="false"
+  ripple="true"
+  tag="div"
+  tile="false"
+  variant="elevated"
+>
+  <v-row-stub
+    class="text-truncate flex-nowrap align-center"
+    data-v-f4513d32=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <span
+      class="card-img string"
+      data-v-f4513d32=""
+    />
+    <span
+      class="ml-2 text-headline-small font-weight-bold text-truncate"
+      data-v-f4513d32=""
+    >
+      string
+    </span>
+    <new-indicator-stub
+      class="ml-1 mt-n4"
+      data-v-f4513d32=""
+      shownuntil="2020-01-01T00:00:00"
+      small="false"
+      text="New"
+    />
+    <v-icon-stub
+      class="next-icon"
+      data-v-f4513d32=""
+      disabled="false"
+      end="false"
+      size="default"
+      start="false"
+      tag="i"
+    >
+      M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z
+    </v-icon-stub>
+  </v-row-stub>
+  <span
+    class="text-secondary-text text-body-medium font-weight-regular d-none d-md-inline-block pt-2"
+    data-v-f4513d32=""
+  >
+    string. 
+  </span>
+</v-card-stub>
+`;

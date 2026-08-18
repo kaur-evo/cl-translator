@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsAlertsOverview > it mounts correctly 1`] = `
+<settings-entities-overview-stub
+  arecolsloading="false"
+  arerowsclickable="true"
+  caneditgroups="true"
+  customviews=""
+  entityname="alert"
+  filterconfiguration="[object Map]"
+  groupfields=""
+  groups=""
+  hasgroupview="false"
+  hideresetbtn="false"
+  isdeletinggroupinprogress="false"
+  items="[object Object]"
+  languagetextentity=""
+  loading="false"
+  menuitems=""
+  namefield="name"
+  navigatetoeditroute="true"
+  openpanelsonfilter="true"
+  overviewheader="Alerts"
+  primarybtntext="Alert"
+  saveactionname=""
+  secondarybtntext=""
+  showdragicon="false"
+  showemptygroups="true"
+  showglobalgroupsicon="false"
+  showgroupitemscount="true"
+  statuskey="active"
+  tableheaders="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  togglebtnvalue="list"
+  usebackendfiltering="false"
+/>
+`;

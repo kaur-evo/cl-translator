@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CommentSpeedLossDialog > renders correctly 1`] = `
+<comment-dialog-stub
+  deletecallback="[Function]"
+  emptyviewdescription="To comment speed loss, please go to settings and define reasons for speed loss."
+  emptyviewheader="Uncommented speed loss"
+  emptyviewimg="speedloss"
+  extranoterequired="false"
+  groups="[object Object],[object Object]"
+  groupsmap="2,[object Object]"
+  isedit="false"
+  loading="false"
+  notes=""
+  notestoragekey="speedlossNoteSuggestions"
+  originalreasonscount="2"
+  positionentityprop="performanceCommentIds"
+  positionid="0"
+  positions="[object Object]"
+  reason-id="0"
+  reasons="[object Object],[object Object]"
+  reasonsmap="[object Object]"
+  savecallback="[Function]"
+  savedisabled="true"
+  selectedreason="[object Object]"
+  settingsmodule="speedlossreasons"
+  toolbarcolor="lw-yellow"
+  toolbartitle="Uncommented 00:00 - 00:10"
+  topreasons=""
+  topreasonsloading="false"
+/>
+`;

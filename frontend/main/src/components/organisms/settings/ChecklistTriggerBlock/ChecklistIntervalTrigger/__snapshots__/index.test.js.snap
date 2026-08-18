@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistIntervalTrigger > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <span
+    class="d-flex align-center white-space-nowrap"
+  >
+    <span
+      class="ma-1"
+    >
+      show every
+    </span>
+    <evocon-duration-chip-stub
+      class="ma-1"
+      error="false"
+      maxhours="9999"
+      modelvalue="180"
+    />
+    <!--v-if-->
+  </span>
+  
+  
+  
+</div>
+`;
+
+exports[`ChecklistIntervalTrigger > renders correctly if intervalTime is less than a minute 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <span
+    class="d-flex align-center white-space-nowrap"
+  >
+    <span
+      class="ma-1"
+    >
+      show every
+    </span>
+    <evocon-duration-chip-stub
+      class="ma-1"
+      error="true"
+      maxhours="9999"
+      modelvalue="30"
+    />
+    <span
+      class="ma-1 text-body-small text-error"
+    >
+      At least {value} min
+    </span>
+  </span>
+  
+  
+  
+</div>
+`;

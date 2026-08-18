@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftTimeline > renders correctly 1`] = `
+<div
+  class="frame"
+  data-v-dbe886d1=""
+>
+  <div
+    class="frame-row minutes-frame"
+    data-v-dbe886d1=""
+    style="grid-template-columns: 50px auto 124px;"
+  >
+    <div
+      class="right-border"
+      data-v-dbe886d1=""
+    />
+    <div
+      class="minutes"
+      data-v-dbe886d1=""
+      style="font-size: 14px;"
+    >
+      <div
+        class="minute-15"
+        data-v-dbe886d1=""
+      >
+         :15 
+      </div>
+      <div
+        class="minute-30"
+        data-v-dbe886d1=""
+      >
+         :30 
+      </div>
+      <div
+        class="minute-45"
+        data-v-dbe886d1=""
+      >
+         :45 
+      </div>
+    </div>
+    <div
+      class="left-border targets"
+      data-v-dbe886d1=""
+    >
+      <evocon-v-tooltip-wrap-stub
+        data-v-dbe886d1=""
+        location="top"
+        opendelay="500"
+        text="Learn more"
+      />
+    </div>
+  </div>
+  <div
+    class="frame-row"
+    data-v-dbe886d1=""
+    style="grid-template-columns: 50px auto 124px;"
+  >
+    <div
+      class="right-border"
+      data-v-dbe886d1=""
+    >
+      <shift-hours-stub
+        data-v-dbe886d1=""
+        shifthours="[object Object],[object Object],[object Object],[object Object],[object Object]"
+      />
+    </div>
+    <hour-chart-stub
+      comments="[object Map]"
+      data-v-dbe886d1=""
+      requireoperator="false"
+      shift="[object Object]"
+      shifthours="[object Object],[object Object],[object Object],[object Object],[object Object]"
+    />
+    <div
+      class="left-border"
+      data-v-dbe886d1=""
+    >
+      <hour-targets-stub
+        data-v-dbe886d1=""
+        shifthours="[object Object],[object Object],[object Object],[object Object],[object Object]"
+      />
+    </div>
+  </div>
+</div>
+`;

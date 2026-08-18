@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FactorySelectDialog > should render correctly 1`] = `
+<div
+  data-v-91599494=""
+>
+  <dialog-toolbar-stub
+    color="white"
+    data-v-91599494=""
+    iconcolor=""
+    title="Choose factory"
+    titleicon=""
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content px-2 pt-2"
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    <div
+      class="px-2"
+    >
+      <evocon-v-checkbox-stub
+        class="my-2"
+        dark="false"
+        disabled="false"
+        indeterminate="false"
+        label="Select all"
+        modelvalue="false"
+        sublabel=""
+        truevalue="true"
+      />
+      <v-divider-stub
+        gradient="false"
+        inset="false"
+        variant="solid"
+        vertical="false"
+      />
+      
+      <evocon-v-checkbox-stub
+        class="my-2"
+        dark="false"
+        disabled="false"
+        label="Factory 1"
+        modelvalue=""
+        sublabel=""
+        truevalue="1"
+      />
+      <evocon-v-checkbox-stub
+        class="my-2"
+        dark="false"
+        disabled="false"
+        label="Factory 2"
+        modelvalue=""
+        sublabel=""
+        truevalue="2"
+      />
+      <evocon-v-checkbox-stub
+        class="my-2"
+        dark="false"
+        disabled="false"
+        label="Factory 3"
+        modelvalue=""
+        sublabel=""
+        truevalue="3"
+      />
+      
+    </div>
+    
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"
+      iconcolor=""
+      text="Download"
+      textclass=""
+      type="primary"
+    />
+    
+  </v-card-actions-stub>
+</div>
+`;

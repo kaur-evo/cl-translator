@@ -1,0 +1,448 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShrinkableListItem > Render > renders active item correctly 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  closed="false"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="primary"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <!--v-if-->
+      <!--v-if-->
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 font-weight-regular d-flex align-center text-body-large text-primary"
+      data-v-8c606292=""
+      id="menu-item-chip"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <!--v-if-->
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`ShrinkableListItem > Render > renders correctly 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="white"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <!--v-if-->
+      <!--v-if-->
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 font-weight-regular d-flex align-center text-body-large"
+      data-v-8c606292=""
+      id="menu-item-chip"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <!--v-if-->
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`ShrinkableListItem > Render > renders inactive item correctly 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  closed="false"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="white"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <!--v-if-->
+      <!--v-if-->
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 font-weight-regular d-flex align-center text-body-large"
+      data-v-8c606292=""
+      id="menu-item-chip"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <!--v-if-->
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`ShrinkableListItem > Render > renders menu item with dot correctly 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  closed="true"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="white"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <v-icon-stub
+        class="ml-8 mt-n3 position-absolute"
+        color=""
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="9"
+        start="false"
+        tag="i"
+      >
+        M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z
+      </v-icon-stub>
+      <!--v-if-->
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 font-weight-regular d-flex align-center text-body-large"
+      data-v-8c606292=""
+      id="menu-item-chip"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <!--v-if-->
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`ShrinkableListItem > Render > renders menu item with new tag correctly if newIndicatorShownUntil exists 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  closed="false"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="white"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <!--v-if-->
+      <new-indicator-stub
+        class="ml-n1 mt-n3"
+        data-v-8c606292=""
+        shownuntil="2024-10-01"
+        small="true"
+        text=""
+      />
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 font-weight-regular d-flex align-center text-body-large"
+      data-v-8c606292=""
+      id="menu-item-chip"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <new-indicator-stub
+        class="ml-2"
+        data-v-8c606292=""
+        shownuntil="2024-10-01"
+        small="true"
+        text=""
+      />
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;
+
+exports[`ShrinkableListItem > Render > renders menu item with title dot correcly 1`] = `
+<div
+  class="v-list-item v-list-item--link v-theme--light v-list-item--density-default rounded-0 v-list-item--variant-text nav-drawer-item list-item--flex mb-0 py-0 mx-1"
+  closed="false"
+  data-v-8c606292=""
+  inactive="false"
+  tabindex="0"
+>
+  
+  <span
+    class="v-list-item__overlay"
+  />
+  <span
+    class="v-list-item__underlay"
+  />
+  
+  <div
+    class="v-list-item__prepend"
+  >
+    <v-defaults-provider-stub
+      defaults="[object Object]"
+      disabled="false"
+      root="false"
+      scoped="false"
+    >
+      
+      <v-icon-stub
+        class="mx-2 prepend-icon"
+        color="white"
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="20"
+        start="false"
+        tag="i"
+      >
+        
+      </v-icon-stub>
+      <!--v-if-->
+      <!--v-if-->
+      
+    </v-defaults-provider-stub>
+    <div
+      class="v-list-item__spacer"
+    />
+  </div>
+  <div
+    class="v-list-item__content"
+    data-no-activator=""
+  >
+    <!---->
+    <!---->
+    
+    <v-list-item-title-stub
+      class="nav-drawer-item-title text-subtitle pl-3 d-flex text-body-large"
+      data-v-8c606292=""
+      id="menu-item-title-dot"
+      style="display: none;"
+      tag="div"
+    >
+       
+      <v-icon-stub
+        class="ml-1"
+        color=""
+        data-v-8c606292=""
+        disabled="false"
+        end="false"
+        size="9"
+        start="false"
+        tag="i"
+      >
+        M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z
+      </v-icon-stub>
+    </v-list-item-title-stub>
+    
+  </div>
+  <!---->
+</div>
+`;

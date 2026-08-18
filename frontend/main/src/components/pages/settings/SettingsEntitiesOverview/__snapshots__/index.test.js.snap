@@ -1,0 +1,859 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsEntitiesOverview > renders correctly if it is devices overview without any items 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <empty-view-stub
+      description=""
+      descriptionrows=""
+      header="Nothing to display"
+      imgurl="settings-view"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      small="false"
+      tertiarybtnicon=""
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is group edit 1`] = `
+<div
+  btntext="Primary btn"
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-004542b8=""
+  data-v-4db4f123=""
+  header="Overview header"
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Add new group
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        data-v-004542b8=""
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          data-v-004542b8=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-004542b8=""
+            lg="false"
+            md="12"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <!--v-if-->
+          </v-col-stub>
+          <!--v-if-->
+          <!--v-if-->
+          <!--v-if-->
+          <!--v-if-->
+          <!--v-if-->
+        </v-row-stub>
+      </v-form-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-004542b8=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-004542b8=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-004542b8=""
+        disabled="false"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is group view with no groups and items added 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <empty-view-stub
+      description="Start adding new values"
+      descriptionrows=""
+      header="Nothing to display"
+      imgurl="settings-view"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      small="false"
+      tertiarybtnicon=""
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is group view with no items added 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <empty-view-stub
+      description="Start adding new values"
+      descriptionrows=""
+      header="Nothing to display"
+      imgurl="settings-view"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      small="false"
+      tertiarybtnicon=""
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is not group edit and there are no items 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <empty-view-stub
+      description="Start adding new values"
+      descriptionrows=""
+      header="Nothing to display"
+      imgurl="settings-view"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      small="false"
+      tertiarybtnicon=""
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is not group edit and there are no items and no groups 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <empty-view-stub
+      description="Start adding new values"
+      descriptionrows=""
+      header="Nothing to display"
+      imgurl="settings-view"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      small="false"
+      tertiarybtnicon=""
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is not group edit, but group view 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    
+    
+    <settings-entities-table-stub
+      addentitybtntext=""
+      arecolsloading="false"
+      arerowsclickable="true"
+      entityname="entityName"
+      footeroptions="[object Object]"
+      headers=""
+      isglobal="false"
+      items="[object Object],[object Object]"
+      loading="false"
+      navigatetoeditroute="true"
+      statuskey="enabled"
+      tableoptions="[object Object]"
+      width="200"
+    />
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsEntitiesOverview > renders correctly if it is not group edit, but list view 1`] = `
+<div
+  class="full-width"
+  fields="field1,field2"
+  namespace="nameSpace"
+>
+  <div
+    class="d-flex align-center justify-space-between mb-4"
+    id="settings-header"
+    style="margin-left: 64px;"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <span
+        class="text-headline-large"
+      >
+        Overview header
+      </span>
+      
+      
+      
+      
+    </div>
+    <div>
+      
+      
+      <!--v-if-->
+      <!--v-if-->
+      <evocon-v-button-stub
+        color=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Secondary btn"
+        textclass=""
+        type="primary-light"
+      />
+      <evocon-v-button-stub
+        class="ml-2"
+        color="primary"
+        disabled="false"
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="Primary btn"
+        textclass=""
+        type="primary"
+      />
+    </div>
+  </div>
+  <v-card-stub
+    border="false"
+    class="px-2 py-1 mb-4"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    style="display: none;"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <settings-filter-bar-stub
+      filterconfiguration="[object Map]"
+      hideresetbtn="false"
+      togglebtnitems=""
+      togglebtnvalue="list"
+    />
+  </v-card-stub>
+  
+  <v-card-stub
+    border="false"
+    class="pa-2"
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    
+    
+    <settings-entities-table-stub
+      addentitybtntext=""
+      arecolsloading="false"
+      arerowsclickable="true"
+      entityname="entityName"
+      footeroptions="[object Object]"
+      headers=""
+      isglobal="false"
+      items="[object Object],[object Object]"
+      loading="false"
+      navigatetoeditroute="true"
+      statuskey="enabled"
+      tableoptions="[object Object]"
+      width="200"
+    />
+  </v-card-stub>
+  
+</div>
+`;

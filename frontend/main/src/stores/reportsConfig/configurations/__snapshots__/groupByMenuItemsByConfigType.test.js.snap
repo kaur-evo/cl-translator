@@ -1,0 +1,641 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getGroupByMenuItemmsByConfigType > if it returns expected configuration snapshot 1`] = `
+{
+  "CHECKLIST": {
+    "doneBy": {
+      "requestGroupByArgs": [
+        "doneby",
+      ],
+      "text": "Done by",
+      "value": "doneBy",
+    },
+    "entityGroupId": {
+      "requestGroupByArgs": [
+        "checklistgroupId",
+      ],
+      "text": "Checklist groups",
+      "value": "entityGroupId",
+    },
+    "entityId": {
+      "requestGroupByArgs": [
+        "checklistId",
+      ],
+      "text": "Checklists",
+      "value": "entityId",
+    },
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "DOWNTIME": {
+    "entityGroupId": {
+      "requestGroupByArgs": [
+        "commentgroup",
+        "commentgroup",
+      ],
+      "text": "Stop groups",
+      "value": "entityGroupId",
+    },
+    "entityId": {
+      "requestGroupByArgs": [
+        "comment",
+        "commentgroup",
+      ],
+      "text": "Stop reasons",
+      "value": "entityId",
+    },
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+        "commentgroup",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+        "commentgroup",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "positionId": {
+      "requestGroupByArgs": [
+        "stoplocation",
+        "commentgroup",
+      ],
+      "text": "Machine locations",
+      "value": "positionId",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+        "commentgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+        "commentgroup",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+        "commentgroup",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+        "commentgroup",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+        "commentgroup",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+        "commentgroup",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+        "commentgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+        "commentgroup",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "OEE": {
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "PRODUCTION_SPEED": {
+    "SECOND_PER_UNIT": {
+      "requestGroupByArgs": [
+        "sec/unit",
+      ],
+      "text": [Function],
+      "value": "SECOND_PER_UNIT",
+    },
+    "UNIT_PER_HOUR": {
+      "requestGroupByArgs": [
+        "unit/hour",
+      ],
+      "text": [Function],
+      "value": "UNIT_PER_HOUR",
+    },
+    "UNIT_PER_MINUTE": {
+      "requestGroupByArgs": [
+        "unit/min",
+      ],
+      "text": [Function],
+      "value": "UNIT_PER_MINUTE",
+    },
+    "UNIT_PER_SECOND": {
+      "requestGroupByArgs": [
+        "unit/sec",
+      ],
+      "text": [Function],
+      "value": "UNIT_PER_SECOND",
+    },
+  },
+  "QUANTITY": {
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "SCRAPREASON": {
+    "entityGroupId": {
+      "requestGroupByArgs": [
+        "scrapreasongroup",
+        "scrapreasongroup",
+      ],
+      "text": "Scrap groups",
+      "value": "entityGroupId",
+    },
+    "entityId": {
+      "requestGroupByArgs": [
+        "scrapreason",
+        "scrapreasongroup",
+      ],
+      "text": "Scrap reasons",
+      "value": "entityId",
+    },
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+        "scrapreasongroup",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+        "scrapreasongroup",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+        "scrapreasongroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+        "scrapreasongroup",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+        "scrapreasongroup",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+        "scrapreasongroup",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+        "scrapreasongroup",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+        "scrapreasongroup",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+        "scrapreasongroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+        "scrapreasongroup",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "SPEEDLOSS": {
+    "entityGroupId": {
+      "requestGroupByArgs": [
+        "performancelossgroup",
+        "performancelossgroup",
+      ],
+      "text": "Speed loss groups",
+      "value": "entityGroupId",
+    },
+    "entityId": {
+      "requestGroupByArgs": [
+        "performancecomment",
+        "performancelossgroup",
+      ],
+      "text": "Speed loss reasons",
+      "value": "entityId",
+    },
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+        "performancelossgroup",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+        "performancelossgroup",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "performancePositionId": {
+      "requestGroupByArgs": [
+        "performancelosslocation",
+        "performancelossgroup",
+      ],
+      "text": "Machine locations",
+      "value": "performancePositionId",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+        "performancelossgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+        "performancelossgroup",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+        "performancelossgroup",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+        "performancelossgroup",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+        "performancelossgroup",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+        "performancelossgroup",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+        "performancelossgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+        "performancelossgroup",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+  "TIME_USAGE": {
+    "factoryId": {
+      "requestGroupByArgs": [
+        "factory",
+      ],
+      "text": "Factories",
+      "value": "factoryId",
+    },
+    "lotCode": {
+      "requestGroupByArgs": [
+        "lotcode",
+      ],
+      "text": "LOT/Batch",
+      "value": "lotCode",
+    },
+    "productGroupId": {
+      "requestGroupByArgs": [
+        "productgroup",
+      ],
+      "text": "Product groups",
+      "value": "productGroupId",
+    },
+    "productId": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "products",
+      "value": "productId",
+    },
+    "productionOrder": {
+      "requestGroupByArgs": [
+        "productionorder",
+      ],
+      "text": "Orders",
+      "value": "productionOrder",
+    },
+    "shiftTemplate": {
+      "requestGroupByArgs": [
+        "shifttemplate",
+      ],
+      "text": "Shifts",
+      "value": "shiftTemplate",
+    },
+    "singleOperator": {
+      "requestGroupByArgs": [
+        "singleoperator",
+      ],
+      "text": "Operators",
+      "value": "singleOperator",
+    },
+    "sku": {
+      "requestGroupByArgs": [
+        "product",
+      ],
+      "text": "Product code",
+      "value": "sku",
+    },
+    "stationGroupId": {
+      "requestGroupByArgs": [
+        "stationgroup",
+      ],
+      "text": "Station groups",
+      "value": "stationGroupId",
+    },
+    "stationId": {
+      "requestGroupByArgs": [
+        "station",
+      ],
+      "text": "Stations",
+      "value": "stationId",
+    },
+  },
+}
+`;

@@ -1,0 +1,183 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewExtraSmallHeader > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-row-stub
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="d-flex"
+      cols="6"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-evocon-logo-btn-stub
+        class="ma-1"
+        large="false"
+      />
+      <shift-view-station-select-stub
+        class="ma-1 flex-grow-1"
+        large="false"
+        titleclass="text-body-medium"
+      />
+      <shift-view-user-settings-btn-stub
+        class="ma-1"
+        large="false"
+      />
+    </v-col-stub>
+    <v-col-stub
+      class="d-flex"
+      cols="6"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-shift-select-stub
+        class="ma-1 flex-grow-1"
+        compact="true"
+        compactoffline="true"
+        large="false"
+        status="online"
+        titleclass="text-body-medium"
+      />
+      <shift-view-widgets-button-stub
+        class="ma-1 flex-shrink-0"
+      />
+    </v-col-stub>
+  </v-row-stub>
+  <mobile-shift-stats-row-stub />
+  
+</div>
+`;
+
+exports[`ShiftViewExtraSmallHeader > renders correctly in portrait mode 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-row-stub
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="d-flex"
+      cols="12"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-evocon-logo-btn-stub
+        class="ma-1"
+        large="false"
+      />
+      <shift-view-station-select-stub
+        class="ma-1 flex-grow-1"
+        large="false"
+        titleclass="text-body-medium"
+      />
+      <shift-view-user-settings-btn-stub
+        class="ma-1"
+        large="false"
+      />
+    </v-col-stub>
+    <v-col-stub
+      class="d-flex"
+      cols="12"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-shift-select-stub
+        class="ma-1 flex-grow-1"
+        compact="true"
+        compactoffline="true"
+        large="false"
+        status="online"
+        titleclass="text-body-medium"
+      />
+      <shift-view-widgets-button-stub
+        class="ma-1 flex-shrink-0"
+      />
+    </v-col-stub>
+  </v-row-stub>
+  <mobile-shift-stats-row-stub />
+  
+</div>
+`;
+
+exports[`ShiftViewExtraSmallHeader > renders correctly without shifts 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <v-row-stub
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="d-flex"
+      cols="6"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-evocon-logo-btn-stub
+        class="ma-1"
+        large="false"
+      />
+      <shift-view-station-select-stub
+        class="ma-1 flex-grow-1"
+        large="false"
+        titleclass="text-body-medium"
+      />
+      <shift-view-user-settings-btn-stub
+        class="ma-1"
+        large="false"
+      />
+    </v-col-stub>
+    <v-col-stub
+      class="d-flex"
+      cols="6"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <!--v-if-->
+      <shift-view-widgets-button-stub
+        class="ma-1 flex-shrink-0"
+      />
+    </v-col-stub>
+  </v-row-stub>
+  <mobile-shift-stats-row-stub />
+  
+</div>
+`;

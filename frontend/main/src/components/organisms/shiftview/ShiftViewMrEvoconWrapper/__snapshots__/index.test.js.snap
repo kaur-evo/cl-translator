@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewMrEvoconWrapper > renders correctly 1`] = `
+<v-tooltip-stub
+  activatorprops="[object Object]"
+  attach="false"
+  closeonback="false"
+  closeoncontentclick="false"
+  contained="false"
+  data-v-00fc7105=""
+  disabled="false"
+  eager="true"
+  interactive="false"
+  location="bottom"
+  locationstrategy="connected"
+  minwidth="0"
+  modelvalue="false"
+  noclickanimation="false"
+  offset="10"
+  openonclick="false"
+  openonhover="true"
+  origin="auto"
+  persistent="false"
+  scrim="false"
+  scrollstrategy="reposition"
+  sticktotarget="false"
+  viewportmargin="12"
+  zindex="2000"
+>
+  <evocon-v-tooltip-stub
+    data-v-00fc7105=""
+    iconcolor=""
+    rows="[object Object],[object Object]"
+    title="Mr Evocon"
+    titleicon=""
+    titleiconcolor="white"
+    type=""
+  />
+</v-tooltip-stub>
+`;

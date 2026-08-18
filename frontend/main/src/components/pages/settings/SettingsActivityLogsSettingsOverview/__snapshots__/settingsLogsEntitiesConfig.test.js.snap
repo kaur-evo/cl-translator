@@ -1,0 +1,618 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getSettingsEntityConfig > returns correct config for CHECKLIST entityType 1`] = `
+{
+  "active": {
+    "key": "Status",
+    "value": [Function],
+  },
+  "authenticationRequired": {
+    "key": "Require authentication",
+    "value": [Function],
+  },
+  "description": {
+    "key": "Description",
+  },
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "frequencyDetails": {
+    "isSubheader": true,
+    "key": "Frequency",
+    "value": [Function],
+  },
+  "group": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "products": {
+    "key": "products",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+  "tasks": {
+    "key": "",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for CHECKLIST_GROUP entityType 1`] = `
+{
+  "color": {
+    "key": "Color",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Group name",
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for OPERATOR entityType 1`] = `
+{
+  "firstName": {
+    "key": "First name",
+  },
+  "lastName": {
+    "key": "Last name",
+  },
+  "passcode": {
+    "key": "Passcode",
+    "value": [Function],
+  },
+  "passcodeCreatedAt": {
+    "ignore": [Function],
+    "key": "Passcode generated",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for POSITION entityType 1`] = `
+{
+  "comments": {
+    "key": "Stop reasons",
+    "value": [Function],
+  },
+  "performanceComments": {
+    "key": "Speed loss reasons",
+    "value": [Function],
+  },
+  "primaryName": {
+    "key": "Name",
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for PRODUCT entityType when semiFinished conf is false 1`] = `
+{
+  "alternativeUnitId": {
+    "ignore": [Function],
+    "key": "Alternative unit",
+  },
+  "cycleTimeCritical": {
+    "key": "Downtime start time",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "productGroup": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "runTime": {
+    "key": "Ideal cycle time",
+    "value": [Function],
+  },
+  "scrapUnitQty": {
+    "ignore": [Function],
+    "key": "Number of scrap units registered per one sensor signal",
+    "value": [Function],
+  },
+  "semiFinished": {
+    "ignore": true,
+    "key": "Semi-finished",
+    "value": [Function],
+  },
+  "sku": {
+    "ignore": [Function],
+    "key": "Product code",
+  },
+  "station": {
+    "ignore": [Function],
+    "key": "Station",
+    "persistent": true,
+    "value": [Function],
+  },
+  "unitConversion": {
+    "key": "Alternative unit value",
+    "value": [Function],
+  },
+  "unitId": {
+    "ignore": [Function],
+    "key": "Primary unit",
+  },
+  "unitQty": {
+    "key": "Number of units registered per one sensor signal",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for PRODUCT entityType when semiFinished conf is true 1`] = `
+{
+  "alternativeUnitId": {
+    "ignore": [Function],
+    "key": "Alternative unit",
+  },
+  "cycleTimeCritical": {
+    "key": "Downtime start time",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "productGroup": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "runTime": {
+    "key": "Ideal cycle time",
+    "value": [Function],
+  },
+  "scrapUnitQty": {
+    "ignore": [Function],
+    "key": "Number of scrap units registered per one sensor signal",
+    "value": [Function],
+  },
+  "semiFinished": {
+    "ignore": false,
+    "key": "Semi-finished",
+    "value": [Function],
+  },
+  "sku": {
+    "ignore": [Function],
+    "key": "Product code",
+  },
+  "station": {
+    "ignore": [Function],
+    "key": "Station",
+    "persistent": true,
+    "value": [Function],
+  },
+  "unitConversion": {
+    "key": "Alternative unit value",
+    "value": [Function],
+  },
+  "unitId": {
+    "ignore": [Function],
+    "key": "Primary unit",
+  },
+  "unitQty": {
+    "key": "Number of units registered per one sensor signal",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for PRODUCT_GROUP entityType if hasMultipleFactories conf is true 1`] = `
+{
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "local": {
+    "key": "Global group",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Group name",
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SCRAP_REASON entityType 1`] = `
+{
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "group": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "increaseTotalQty": {
+    "ignore": [Function],
+    "key": "Add scrap and increase total quantity",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "noteRequired": {
+    "key": "Require extra note from operators",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SCRAP_REASON_GROUP entityType 1`] = `
+{
+  "color": {
+    "key": "Color",
+    "value": [Function],
+  },
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "local": {
+    "key": "Global group",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Group name",
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SECURITY entityType 1`] = `
+{
+  "absoluteTimeoutMinutes": {
+    "key": "Log out",
+    "value": [Function],
+  },
+  "description": {
+    "key": "Description",
+  },
+  "ipAddress": {
+    "ignore": [Function],
+    "key": "Public IP address",
+    "persistent": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "roles": {
+    "key": "Roles",
+    "value": [Function],
+  },
+  "singleSignOnRequired": {
+    "key": "SSO",
+    "value": [Function],
+  },
+  "twoFactorAuthenticationRequired": {
+    "key": "2FA",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SHIFT entityType 1`] = `
+{
+  "autoCommentEndTime": {
+    "ignore": [Function],
+    "key": "End time",
+    "persistent": true,
+    "value": [Function],
+  },
+  "autoCommentStartTime": {
+    "ignore": [Function],
+    "key": "Start time",
+    "persistent": true,
+    "value": [Function],
+  },
+  "comment": {
+    "ignore": [Function],
+    "key": "Stop reason",
+    "persistent": true,
+    "value": [Function],
+  },
+  "days": {
+    "key": "Days",
+    "value": [Function],
+  },
+  "enabled": {
+    "key": "Status",
+    "value": [Function],
+  },
+  "endTime": {
+    "key": "End time",
+    "value": [Function],
+  },
+  "factory": {
+    "ignore": true,
+    "key": "Factory",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Name",
+  },
+  "position": {
+    "key": "Machine location",
+    "value": [Function],
+  },
+  "startTime": {
+    "key": "Start time",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SPEED_LOSS entityType 1`] = `
+{
+  "group": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "noteRequired": {
+    "key": "Require extra note from operators",
+    "value": [Function],
+  },
+  "primaryName": {
+    "key": "Name",
+    "value": [Function],
+  },
+  "requirePosition": {
+    "key": "Require location from operators",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for SPEED_LOSS_GORUP entityType 1`] = `
+{
+  "color": {
+    "key": "Color",
+    "value": [Function],
+  },
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "local": {
+    "key": "Global group",
+    "value": [Function],
+  },
+  "primaryName": {
+    "key": "Group name",
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for STATION entityType 1`] = `
+{
+  "defaultScrapReason": {
+    "key": "Default scrap reason",
+    "value": [Function],
+  },
+  "deleteSlicesAllowed": {
+    "key": "Allow deleting of production signals",
+    "value": [Function],
+  },
+  "description": {
+    "key": "Description",
+  },
+  "emptyShiftComment": {
+    "key": "Empty shift reason",
+    "value": [Function],
+  },
+  "extendStopReason": {
+    "key": "Extend stop reason after shift change",
+    "value": [Function],
+  },
+  "group": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "manualShiftName": {
+    "key": "Extra shift name",
+  },
+  "name": {
+    "key": "Name",
+  },
+  "notificationEmails": {
+    "key": "Notification emails",
+  },
+  "oeeGoalHappy": {
+    "key": "Mr Evocon happy %",
+  },
+  "oeeGoalSad": {
+    "key": "Mr Evocon unhappy %",
+  },
+  "productChangeComment": {
+    "key": "Product changeover reason",
+    "value": [Function],
+  },
+  "requireChangeoverNote": {
+    "key": "Require note on changeovers",
+    "value": [Function],
+  },
+  "requireLotBatch": {
+    "key": "Require Lot/Batch on changeovers",
+    "value": [Function],
+  },
+  "requireOperator": {
+    "key": "Require operator",
+    "value": [Function],
+  },
+  "showManualShift": {
+    "key": "Allow managing of shifts",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for STATION_GROUP entityType if hasMultipleFactories conf is false 1`] = `
+{
+  "factory": {
+    "ignore": true,
+    "key": "Factory",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Group name",
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for STATION_GROUP entityType if hasMultipleFactories conf is true 1`] = `
+{
+  "factory": {
+    "ignore": false,
+    "key": "Factory",
+    "value": [Function],
+  },
+  "name": {
+    "key": "Group name",
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for STOP_REASON entityType 1`] = `
+{
+  "commentGroup": {
+    "key": "Group",
+    "value": [Function],
+  },
+  "includeInOee": {
+    "key": "Include in OEE calculation",
+    "value": [Function],
+  },
+  "joiningAllowed": {
+    "key": "Allow joining of multiple stops",
+    "value": [Function],
+  },
+  "maxDuration": {
+    "key": "Maximum allowed duration",
+    "value": [Function],
+  },
+  "negative": {
+    "key": "Stop type",
+    "value": [Function],
+  },
+  "noteRequiredDuration": {
+    "key": "Require extra note from operators",
+    "value": [Function],
+  },
+  "primaryName": {
+    "key": "Name",
+    "value": [Function],
+  },
+  "requirePosition": {
+    "key": "Require location from operators",
+    "value": [Function],
+  },
+  "stations": {
+    "key": "Stations",
+    "value": [Function],
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+  "technical": {
+    "key": "Include in technical availability",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for STOP_REASON_GROUP entityType 1`] = `
+{
+  "color": {
+    "key": "Color",
+    "value": [Function],
+  },
+  "factories": {
+    "ignore": [Function],
+    "key": "Factories",
+    "value": [Function],
+  },
+  "local": {
+    "key": "Global group",
+    "value": [Function],
+  },
+  "primaryName": {
+    "key": "Group name",
+    "value": [Function],
+  },
+  "tags": {
+    "key": "Tags",
+    "value": [Function],
+  },
+}
+`;
+
+exports[`getSettingsEntityConfig > returns correct config for USER entityType 1`] = `
+{
+  "email": {
+    "key": "Email",
+  },
+  "name": {
+    "key": "Name",
+  },
+  "roles": {
+    "key": "",
+    "value": [Function],
+  },
+  "securityProfileName": {
+    "ignore": [Function],
+    "key": "Security profile",
+    "value": [Function],
+  },
+  "username": {
+    "key": "Username",
+  },
+}
+`;

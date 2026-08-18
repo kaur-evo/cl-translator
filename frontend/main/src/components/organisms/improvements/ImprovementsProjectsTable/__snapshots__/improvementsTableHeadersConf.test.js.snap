@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`improvementsTableHeadersConf 1`] = `
+[
+  {
+    "isBold": true,
+    "prependIcon": [Function],
+    "prependIconColor": "secondary",
+    "prependIconSize": 16,
+    "text": "Name",
+    "textKey": "name",
+    "value": "name",
+    "width": "200px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Start",
+    "textKey": "startDate",
+    "value": "startDate",
+    "width": "100px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "End",
+    "textKey": "endDate",
+    "value": "endDate",
+    "width": "100px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Team",
+    "textKey": "usersArray",
+    "value": "users",
+    "width": "200px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Stations",
+    "textKey": "stationNamesArray",
+    "value": "stationIds",
+    "width": "200px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Stop reason",
+    "textKey": "commentsNamesArray",
+    "value": "commentIds",
+    "width": "200px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Actions",
+    "textKey": "steps",
+    "value": "steps",
+    "width": "100px",
+  },
+  {
+    "formatFn": [Function],
+    "hasProgressBarOnLoad": true,
+    "text": "Baseline average",
+    "textKey": "initialDailyAverage",
+    "value": "initialDailyAverage",
+    "width": "100px",
+  },
+  {
+    "formatFn": [Function],
+    "text": "Current average",
+    "textKey": "currentAverage",
+    "value": "currentAverage",
+    "width": "100px",
+  },
+  {
+    "class": [Function],
+    "formatFn": [Function],
+    "text": "Change",
+    "textKey": "change",
+    "value": "change",
+    "width": "100px",
+  },
+]
+`;

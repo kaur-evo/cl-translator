@@ -1,0 +1,52 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] BDS (Български институт за стандартизация) — BDS EN ISO 22400, BDS EN 13306 (ISO/CEN member)",
+    "[S2] Autodesk Fusion Operations (Bulgarian) — наличност, производителност, качество",
+    "[S2] SpaceCAD/Quinx MDC-OEE monitoring (Bulgarian)",
+    "[S3] T&S Group Bulgaria — 'OEE – Обща Ефективност на Оборудването'",
+    "[S3] Automotive Cluster Bulgaria — automotive.bg",
+    "[S4] Unbabel Language Guidelines Bulgarian — formal 'Вие'",
+    "[S5] terms.json — Bulgarian translations analyzed for consistency validation"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "Вие",
+  "falseFriends": {
+    "actual": "Use 'действителен' or 'реален', not 'актуален' (which means 'current')",
+    "eventually": "Use 'в крайна сметка', not 'евентуално' (which means 'possibly')",
+    "performance": "Use 'производителност', not 'перформанс' (anglicism)",
+    "station": "Use 'работна станция' for workstation, not 'станция' (train/power station)",
+    "shift": "Use 'смяна' for work shift, not 'шифт' (keyboard Shift key only)",
+    "effective": "'Ефективен' acceptable in manufacturing; 'действен' = operative/effective",
+    "idle": "Use 'на изчакване' (waiting), not 'безделен' (lazy/pejorative)"
+  },
+  "grammarNotes": {
+    "noCase": "Bulgarian has lost most case distinctions (unique among Slavic). Uses prepositional constructions: 'ефективността на оборудването'.",
+    "postposedArticle": "Definite article postposed: 'наличност' → 'наличността'. Critical for UI: label vs instruction forms.",
+    "cyrillicScript": "Uses Cyrillic. No Latin alternative (unlike Serbian). Uses 'Ъ' (back vowel).",
+    "verbAspect": "Perfective imperative for buttons: 'Запази' (save). Imperfective for ongoing: 'Машината работи'.",
+    "numberFormatting": "Comma decimal, space/period thousands: '85,5%'.",
+    "compoundPluralModifiers": "Bulgarian uses prepositional 'за/на' constructions (no case system). In compound phrases, the modifier noun after the preposition should stay SINGULAR when naming a concept. CORRECT: 'причини за загуба на скорост' (reasons for loss [sg] of speed). CHECK: 'причини за загуби на скорост' — 'загуби' is plural, which incorrectly implies individual loss events rather than the concept of speed loss."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE is commonly used. Full Bulgarian term: 'Обща Ефективност на Оборудването'.",
+    "emergingHub": "Bulgaria is an emerging SE Europe manufacturing hub with Western European FDI",
+    "standardsUsed": [
+      "BDS EN ISO 22400",
+      "BDS EN 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'актуален' for 'actual' instead of 'действителен'",
+    "Incorrect postposed article suffixing",
+    "Using informal 'ти' instead of formal 'Вие'",
+    "Using 'перформанс' (anglicism) instead of 'производителност'",
+    "Using 'шифт' for work shift instead of 'смяна'",
+    "Mixing Russian Cyrillic forms with Bulgarian",
+    "Pluralizing the modifier in compound noun phrases: 'причини за загуби на скорост' (WRONG — 'загуби' is plural) instead of 'причини за загуба на скорост' (CORRECT — 'загуба' stays singular as it names the concept). Only the head noun should pluralize"
+  ],
+  "lengthMultiplier": 2.5,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is used; Bulgarian uses Cyrillic. Unusually for Slavic, has postposed article and minimal case system. P95 expansion 2.06x."
+}

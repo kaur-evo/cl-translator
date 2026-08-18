@@ -1,0 +1,1272 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsMain > renders correctly if type is DOWNTIME 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    data-v-fbdb9206=""
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <v-row-stub
+    class="bg-quaternary-dark flex-nowrap fill-height pt-8 px-4"
+    data-v-ed62b159=""
+    data-v-fbdb9206=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="compact-layout-nav"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      <reports-bookmark-drawer-stub
+        data-v-fbdb9206=""
+        mini="true"
+      />
+      
+    </v-col-stub>
+    <v-col-stub
+      class="compact-layout-content"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <!-- HEADER ROW -->
+      <v-row-stub
+        class="align-start justify-space-between mb-6 flex-nowrap compact-header-content"
+        data-v-ed62b159=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        
+        <reports-header-title-stub
+          data-v-fbdb9206=""
+          id="report-title"
+        />
+        
+        
+        <reports-header-actions-stub
+          data-v-fbdb9206=""
+        />
+        
+      </v-row-stub>
+      <!-- FILTERS CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 px-3 py-1"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-filter-bar-stub
+          data-v-fbdb9206=""
+          id="report-filter-bar"
+        />
+        
+      </v-sheet-stub>
+      <!-- MAIN CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-4"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        <!-- OPTIONS ROW -->
+        <v-row-stub
+          class="flex-nowrap"
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="flex-grow-0 flex-shirink-0"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <reports-back-btn-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+          <v-col-stub
+            class="d-flex overflow-auto flex-shrink-0 flex-grow"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <v-spacer-stub
+              data-v-ed62b159=""
+              tag="div"
+            />
+            
+            <reports-chart-options-menu-stub
+              changeactionkey="onChartTypeChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc=""
+              label=""
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="chartTypeJoined"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxis"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onRightYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="2nd Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxisRight"
+            />
+            <v-divider-stub
+              class="my-2 mx-2"
+              data-v-fbdb9206=""
+              gradient="false"
+              inset="false"
+              variant="solid"
+              vertical="true"
+            />
+            <reports-granularity-selection-stub
+              data-v-fbdb9206=""
+              disabled="false"
+            />
+            <reports-chart-options-menu-stub
+              arrayvaluekeyindex="1"
+              changeactionkey="onGroupByChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="Split by"
+              menuitems="[object Map]"
+              menutextkey="text"
+              valuekey="groupBy"
+            />
+            <reports-view-options-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- CHART ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="chart-height"
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <v-col-stub
+              class="fill-height pa-0"
+              cols="false"
+              data-v-fbdb9206=""
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <reports-chart-stub
+                data-v-fbdb9206=""
+                id="report-chart"
+                issidemenuopen="false"
+                totals=""
+              />
+              <!--v-if-->
+            </v-col-stub>
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- LEGEND ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <div
+              class="d-flex flex-column"
+              data-v-fbdb9206=""
+            >
+              <div
+                class="d-flex"
+                data-v-fbdb9206=""
+              >
+                <div
+                  class="flex-shrink-1 flex-grow-1 align-center d-flex overflow-hidden"
+                  data-v-fbdb9206=""
+                >
+                  <span
+                    class="text-body-small font-weight-medium text-uppercase mr-4 text-no-wrap overflow-hidden text-overflow-ellipsis"
+                    data-v-fbdb9206=""
+                  >
+                    Stop groups
+                  </span>
+                </div>
+                <div
+                  class="flex-shrink-0 flex-grow-0 mr-0"
+                  data-v-fbdb9206=""
+                >
+                  <reports-pagination-stub
+                    data-v-fbdb9206=""
+                    id="reports-chart-pagination"
+                    items="[object Object]"
+                    scrollintoview="false"
+                  />
+                </div>
+              </div>
+              <div
+                class="d-flex flex-grow-1 flex-shrink-0 max-width-100"
+                data-v-fbdb9206=""
+              >
+                <reports-graph-legend-stub
+                  data-v-fbdb9206=""
+                  id="reports-chart-legend"
+                  totals=""
+                />
+              </div>
+            </div>
+            
+          </v-col-stub>
+        </v-row-stub>
+      </v-sheet-stub>
+      <!-- TABLE  -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-2"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-table-header-stub
+          data-v-fbdb9206=""
+          tabletotals=""
+        />
+        <reports-table-stub
+          data="[object Object]"
+          data-v-fbdb9206=""
+          height="auto"
+          id="report-table"
+          loading="false"
+          tabletotals=""
+          width="100"
+        />
+        <div
+          class="d-flex justify-end"
+          data-v-fbdb9206=""
+        >
+          <reports-pagination-stub
+            data-v-fbdb9206=""
+            items="[object Object]"
+            scrollintoview="true"
+          />
+        </div>
+        
+      </v-sheet-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ReportsMain > renders correctly in mobile 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    data-v-fbdb9206=""
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <v-row-stub
+    class="bg-quaternary-dark flex-nowrap fill-height"
+    data-v-ed62b159=""
+    data-v-fbdb9206=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="compact-layout-nav"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      
+    </v-col-stub>
+    <v-col-stub
+      class="compact-layout-content"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <!-- HEADER ROW -->
+      <!--v-if-->
+      <!-- FILTERS CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 px-3 py-1"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-filter-bar-stub
+          data-v-fbdb9206=""
+          id="report-filter-bar"
+        />
+        
+      </v-sheet-stub>
+      <!-- MAIN CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-4"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        <!-- OPTIONS ROW -->
+        <v-row-stub
+          class="flex-nowrap"
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <!--v-if-->
+          <v-col-stub
+            class="d-flex overflow-auto flex-shrink-0 flex-grow"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <v-spacer-stub
+              data-v-ed62b159=""
+              tag="div"
+            />
+            
+            <reports-chart-options-menu-stub
+              changeactionkey="onChartTypeChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc=""
+              label=""
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="chartTypeJoined"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxis"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onRightYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="2nd Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxisRight"
+            />
+            <v-divider-stub
+              class="my-2 mx-2"
+              data-v-fbdb9206=""
+              gradient="false"
+              inset="false"
+              variant="solid"
+              vertical="true"
+            />
+            <reports-granularity-selection-stub
+              data-v-fbdb9206=""
+              disabled="false"
+            />
+            <!--v-if-->
+            <reports-view-options-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- CHART ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="chart-height"
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <v-col-stub
+              class="fill-height pa-0"
+              cols="false"
+              data-v-fbdb9206=""
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <reports-chart-stub
+                data-v-fbdb9206=""
+                id="report-chart"
+                issidemenuopen="true"
+                totals=""
+              />
+              <!--v-if-->
+            </v-col-stub>
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- LEGEND ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <div
+              class="d-flex flex-row-reverse flex-wrap"
+              data-v-fbdb9206=""
+            >
+              <div
+                class="d-flex"
+                data-v-fbdb9206=""
+              >
+                <!--v-if-->
+                <div
+                  class="flex-shrink-0 flex-grow-0 mr-0"
+                  data-v-fbdb9206=""
+                >
+                  <reports-pagination-stub
+                    data-v-fbdb9206=""
+                    id="reports-chart-pagination"
+                    items="[object Object]"
+                    scrollintoview="false"
+                  />
+                </div>
+              </div>
+              <div
+                class="d-flex flex-grow-1 flex-shrink-0 max-width-100"
+                data-v-fbdb9206=""
+              >
+                <reports-graph-legend-stub
+                  data-v-fbdb9206=""
+                  id="reports-chart-legend"
+                  totals=""
+                />
+              </div>
+            </div>
+            
+          </v-col-stub>
+        </v-row-stub>
+      </v-sheet-stub>
+      <!-- TABLE  -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-2"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-table-header-stub
+          data-v-fbdb9206=""
+          tabletotals=""
+        />
+        <reports-table-stub
+          data="[object Object],[object Object],[object Object]"
+          data-v-fbdb9206=""
+          height="auto"
+          id="report-table"
+          loading="false"
+          tabletotals=""
+          width="888"
+        />
+        <div
+          class="d-flex justify-end"
+          data-v-fbdb9206=""
+        >
+          <reports-pagination-stub
+            data-v-fbdb9206=""
+            items="[object Object]"
+            scrollintoview="true"
+          />
+        </div>
+        
+      </v-sheet-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ReportsMain > renders correctly with empty data 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    data-v-fbdb9206=""
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <v-row-stub
+    class="bg-quaternary-dark flex-nowrap fill-height pt-8 px-4"
+    data-v-ed62b159=""
+    data-v-fbdb9206=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="compact-layout-nav"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      <reports-bookmark-drawer-stub
+        data-v-fbdb9206=""
+        mini="false"
+      />
+      
+    </v-col-stub>
+    <v-col-stub
+      class="compact-layout-content"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <!-- HEADER ROW -->
+      <v-row-stub
+        class="align-start justify-space-between mb-6 flex-nowrap compact-header-content"
+        data-v-ed62b159=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        
+        <reports-header-title-stub
+          data-v-fbdb9206=""
+          id="report-title"
+        />
+        
+        
+        <reports-header-actions-stub
+          data-v-fbdb9206=""
+        />
+        
+      </v-row-stub>
+      <!-- FILTERS CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 px-3 py-1"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-filter-bar-stub
+          data-v-fbdb9206=""
+          id="report-filter-bar"
+        />
+        
+      </v-sheet-stub>
+      <!-- MAIN CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-4"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        <!-- OPTIONS ROW -->
+        <v-row-stub
+          class="flex-nowrap"
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="flex-grow-0 flex-shirink-0"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <reports-back-btn-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+          <v-col-stub
+            class="d-flex overflow-auto flex-shrink-0 flex-grow"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <v-spacer-stub
+              data-v-ed62b159=""
+              tag="div"
+            />
+            
+            <reports-chart-options-menu-stub
+              changeactionkey="onChartTypeChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc=""
+              label=""
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="chartTypeJoined"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxis"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onRightYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="2nd Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxisRight"
+            />
+            <v-divider-stub
+              class="my-2 mx-2"
+              data-v-fbdb9206=""
+              gradient="false"
+              inset="false"
+              variant="solid"
+              vertical="true"
+            />
+            <reports-granularity-selection-stub
+              data-v-fbdb9206=""
+              disabled="false"
+            />
+            <!--v-if-->
+            <reports-view-options-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- CHART ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="chart-height"
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <v-col-stub
+              class="fill-height pa-0"
+              cols="false"
+              data-v-fbdb9206=""
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <div
+                class="d-flex align-center fill-height justify-center"
+                data-v-fbdb9206=""
+              >
+                <empty-view-stub
+                  data-v-fbdb9206=""
+                  description="Please try again with other settings."
+                  descriptionrows=""
+                  header="No results"
+                  id="report-empty-view"
+                  imgurl="reports"
+                  imgwidth=""
+                  primarybtn=""
+                  primarybtnicon=""
+                  secondarybtn=""
+                  secondarybtncolor=""
+                  secondarybtnicon=""
+                  small="false"
+                  tertiarybtn=""
+                  tertiarybtnicon=""
+                />
+              </div>
+              <!--v-if-->
+            </v-col-stub>
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- LEGEND ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <div
+              class="d-flex flex-row-reverse flex-wrap"
+              data-v-fbdb9206=""
+            >
+              <div
+                class="d-flex"
+                data-v-fbdb9206=""
+              >
+                <!--v-if-->
+                <div
+                  class="flex-shrink-0 flex-grow-0 mr-0"
+                  data-v-fbdb9206=""
+                >
+                  <!--v-if-->
+                </div>
+              </div>
+              <div
+                class="d-flex flex-grow-1 flex-shrink-0 max-width-100"
+                data-v-fbdb9206=""
+              >
+                <reports-graph-legend-stub
+                  data-v-fbdb9206=""
+                  id="reports-chart-legend"
+                  totals=""
+                />
+              </div>
+            </div>
+            
+          </v-col-stub>
+        </v-row-stub>
+      </v-sheet-stub>
+      <!-- TABLE  -->
+      <!--v-if-->
+    </v-col-stub>
+  </v-row-stub>
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ReportsMain > renders correctly with tableData set 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <main-app-toolbar-stub
+    data-v-fbdb9206=""
+    hasbackbutton="false"
+    items=""
+    modelvalue=""
+    selectionitemvalue="id"
+  />
+  <v-row-stub
+    class="bg-quaternary-dark flex-nowrap fill-height pt-8 px-4"
+    data-v-ed62b159=""
+    data-v-fbdb9206=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="compact-layout-nav"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      
+      <reports-bookmark-drawer-stub
+        data-v-fbdb9206=""
+        mini="false"
+      />
+      
+    </v-col-stub>
+    <v-col-stub
+      class="compact-layout-content"
+      cols="false"
+      data-v-ed62b159=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <!-- HEADER ROW -->
+      <v-row-stub
+        class="align-start justify-space-between mb-6 flex-nowrap compact-header-content"
+        data-v-ed62b159=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        
+        <reports-header-title-stub
+          data-v-fbdb9206=""
+          id="report-title"
+        />
+        
+        
+        <reports-header-actions-stub
+          data-v-fbdb9206=""
+        />
+        
+      </v-row-stub>
+      <!-- FILTERS CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 px-3 py-1"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-filter-bar-stub
+          data-v-fbdb9206=""
+          id="report-filter-bar"
+        />
+        
+      </v-sheet-stub>
+      <!-- MAIN CARD -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-4"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        <!-- OPTIONS ROW -->
+        <v-row-stub
+          class="flex-nowrap"
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="flex-grow-0 flex-shirink-0"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <reports-back-btn-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+          <v-col-stub
+            class="d-flex overflow-auto flex-shrink-0 flex-grow"
+            cols="false"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <v-spacer-stub
+              data-v-ed62b159=""
+              tag="div"
+            />
+            
+            <reports-chart-options-menu-stub
+              changeactionkey="onChartTypeChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc=""
+              label=""
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="chartTypeJoined"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxis"
+            />
+            <reports-chart-options-menu-stub
+              changeactionkey="onRightYAxisChange"
+              data-v-fbdb9206=""
+              disabled="false"
+              imgsrc="iconAsset"
+              label="2nd Y-axis"
+              menuitems="[object Map]"
+              menutextkey="label"
+              valuekey="yAxisRight"
+            />
+            <v-divider-stub
+              class="my-2 mx-2"
+              data-v-fbdb9206=""
+              gradient="false"
+              inset="false"
+              variant="solid"
+              vertical="true"
+            />
+            <reports-granularity-selection-stub
+              data-v-fbdb9206=""
+              disabled="false"
+            />
+            <!--v-if-->
+            <reports-view-options-stub
+              data-v-fbdb9206=""
+            />
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- CHART ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="chart-height"
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <v-col-stub
+              class="fill-height pa-0"
+              cols="false"
+              data-v-fbdb9206=""
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <reports-chart-stub
+                data-v-fbdb9206=""
+                id="report-chart"
+                issidemenuopen="true"
+                totals=""
+              />
+              <!--v-if-->
+            </v-col-stub>
+            
+          </v-col-stub>
+        </v-row-stub>
+        <!-- LEGEND ROW -->
+        <v-row-stub
+          data-v-ed62b159=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            cols="12"
+            data-v-ed62b159=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            
+            <div
+              class="d-flex flex-row-reverse flex-wrap"
+              data-v-fbdb9206=""
+            >
+              <div
+                class="d-flex"
+                data-v-fbdb9206=""
+              >
+                <!--v-if-->
+                <div
+                  class="flex-shrink-0 flex-grow-0 mr-0"
+                  data-v-fbdb9206=""
+                >
+                  <reports-pagination-stub
+                    data-v-fbdb9206=""
+                    id="reports-chart-pagination"
+                    items="[object Object]"
+                    scrollintoview="false"
+                  />
+                </div>
+              </div>
+              <div
+                class="d-flex flex-grow-1 flex-shrink-0 max-width-100"
+                data-v-fbdb9206=""
+              >
+                <reports-graph-legend-stub
+                  data-v-fbdb9206=""
+                  id="reports-chart-legend"
+                  totals=""
+                />
+              </div>
+            </div>
+            
+          </v-col-stub>
+        </v-row-stub>
+      </v-sheet-stub>
+      <!-- TABLE  -->
+      <v-sheet-stub
+        border="false"
+        class="ma-4 pa-2"
+        color="white"
+        data-v-ed62b159=""
+        tag="div"
+        tile="false"
+      >
+        
+        <reports-table-header-stub
+          data-v-fbdb9206=""
+          tabletotals=""
+        />
+        <reports-table-stub
+          data="[object Object],[object Object],[object Object]"
+          data-v-fbdb9206=""
+          height="auto"
+          id="report-table"
+          loading="false"
+          tabletotals=""
+          width="856"
+        />
+        <div
+          class="d-flex justify-end"
+          data-v-fbdb9206=""
+        >
+          <reports-pagination-stub
+            data-v-fbdb9206=""
+            items="[object Object]"
+            scrollintoview="true"
+          />
+        </div>
+        
+      </v-sheet-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;

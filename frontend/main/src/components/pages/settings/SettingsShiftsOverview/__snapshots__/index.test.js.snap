@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsShiftsOverview > renders correctly 1`] = `
+<settings-entities-overview-stub
+  arecolsloading="false"
+  arerowsclickable="true"
+  caneditgroups="true"
+  customviews="timeline"
+  entityname="shiftTemplate"
+  filterconfiguration="[object Map]"
+  groupfields=""
+  groups=""
+  hasgroupview="false"
+  hideresetbtn="false"
+  isdeletinggroupinprogress="false"
+  items="[object Object],[object Object]"
+  languagetextentity=""
+  loading="true"
+  menuitems=""
+  namefield="name"
+  navigatetoeditroute="true"
+  openpanelsonfilter="true"
+  overviewheader="Shifts"
+  primarybtntext="Shift"
+  saveactionname=""
+  secondarybtntext=""
+  showdragicon="false"
+  showemptygroups="true"
+  showglobalgroupsicon="false"
+  showgroupitemscount="true"
+  statuskey="enabled"
+  tableheaders="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+  togglebtnitems="[object Object],[object Object]"
+  togglebtnvalue="timeline"
+  usebackendfiltering="false"
+/>
+`;

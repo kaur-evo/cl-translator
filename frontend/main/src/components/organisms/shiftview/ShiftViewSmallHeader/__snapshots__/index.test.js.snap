@@ -1,0 +1,173 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftViewSmallHeader > renders correctly 1`] = `
+<div
+  class="header-row"
+  data-v-8955adef=""
+>
+  <div
+    class="d-flex"
+    data-v-8955adef=""
+  >
+    <shift-view-evocon-logo-btn-stub
+      class="ma-1"
+      data-v-8955adef=""
+      large="false"
+    />
+    <shift-view-station-select-stub
+      class="ma-1 flex-grow-1"
+      data-v-8955adef=""
+      large="false"
+      titleclass="text-body-large"
+    />
+    <shift-view-user-settings-btn-stub
+      class="ma-1"
+      data-v-8955adef=""
+      large="false"
+    />
+  </div>
+  <div
+    class="d-flex"
+    data-v-8955adef=""
+  >
+    <shift-view-shift-select-stub
+      class="ma-1 flex-grow-1"
+      compact="false"
+      compactoffline="true"
+      data-v-8955adef=""
+      large="false"
+      status="online"
+      titleclass="text-body-large"
+    />
+    <shift-view-widgets-button-stub
+      class="ma-1 flex-shrink-0"
+      data-v-8955adef=""
+    />
+  </div>
+  <v-row-stub
+    class="quantity-widgets-row"
+    data-v-8955adef=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="d-flex max-height-100"
+      cols="3"
+      data-v-8955adef=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-shift-quantity-block-stub
+        class="ma-1"
+        compact="false"
+        data-v-8955adef=""
+        large="false"
+        loading="false"
+        maxshifttotalfontsize="24"
+        minshifttotalfontsize="14"
+        targetclass="text-body-medium"
+        valueclass=""
+      />
+    </v-col-stub>
+    <v-col-stub
+      class="d-flex max-height-100"
+      cols="6"
+      data-v-8955adef=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <shift-view-batch-widget-block-stub
+        buttonsize="small"
+        class="overflow-hidden ma-1"
+        data-v-8955adef=""
+        expanded="false"
+        headerbottommarginclass="mb-0"
+        large="false"
+        loading="false"
+        progresstype="circle"
+        showcurrentbatch="true"
+        valueclass="text-body-medium"
+      />
+    </v-col-stub>
+    <v-col-stub
+      class="d-flex max-height-100"
+      cols="3"
+      data-v-8955adef=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <oee-component-stub
+        class="ma-1"
+        data-v-8955adef=""
+        expanded="false"
+        labelclass=""
+        loading="false"
+        maxoeefontsize="24"
+        minoeefontsize="14"
+        oeeclass="text-headline-medium"
+        oeecomponentsclass="text-label-small"
+        vertical="false"
+      />
+    </v-col-stub>
+  </v-row-stub>
+</div>
+`;
+
+exports[`ShiftViewSmallHeader > renders correctly without shifts 1`] = `
+<div
+  class="header-row"
+  data-v-8955adef=""
+>
+  <div
+    class="d-flex"
+    data-v-8955adef=""
+  >
+    <shift-view-evocon-logo-btn-stub
+      class="ma-1"
+      data-v-8955adef=""
+      large="false"
+    />
+    <shift-view-station-select-stub
+      class="ma-1 flex-grow-1"
+      data-v-8955adef=""
+      large="false"
+      titleclass="text-body-large"
+    />
+    <shift-view-user-settings-btn-stub
+      class="ma-1"
+      data-v-8955adef=""
+      large="false"
+    />
+  </div>
+  <div
+    class="d-flex"
+    data-v-8955adef=""
+  >
+    <shift-view-shift-select-stub
+      class="ma-1 flex-grow-1"
+      compact="false"
+      compactoffline="true"
+      data-v-8955adef=""
+      large="false"
+      status="online"
+      titleclass="text-body-large"
+    />
+    <!--v-if-->
+  </div>
+  <!--v-if-->
+</div>
+`;

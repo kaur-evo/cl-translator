@@ -1,0 +1,218 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EvoconTextEditor > renders correctly 1`] = `
+<div
+  class="input-wrapper"
+  data-v-8cbedc01=""
+  rows="5"
+>
+  <div
+    class="text-input"
+    data-v-8cbedc01=""
+  >
+    
+    
+    <div
+      class="text-container d-flex flex-grow-1 flex-shrink-0"
+      data-v-8cbedc01=""
+      id="text-container"
+      style="height: 56px;"
+    >
+      <div
+        class="tip-tap-editor"
+        data-v-8cbedc01=""
+      >
+        <div
+          class="tiptap ProseMirror text-editor"
+          contenteditable="true"
+          role="textbox"
+          style="outline: none; width: 100%; height: 100%;"
+          tabindex="0"
+          translate="no"
+        >
+          <p>
+            test value with {variable}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="append-slot"
+      data-v-8cbedc01=""
+    >
+      
+      
+    </div>
+    <!--v-if-->
+  </div>
+  <span
+    class="hint-text"
+    data-v-8cbedc01=""
+  >
+    hint
+  </span>
+</div>
+`;
+
+exports[`EvoconTextEditor > renders correctly in mobile 1`] = `
+<div
+  class="input-wrapper"
+  data-v-8cbedc01=""
+  rows="5"
+>
+  <div
+    class="text-input text-input--compact"
+    data-v-8cbedc01=""
+  >
+    
+    
+    <div
+      class="text-container d-flex flex-grow-1 flex-shrink-0"
+      data-v-8cbedc01=""
+      id="text-container"
+      style="height: 40px;"
+    >
+      <div
+        class="tip-tap-editor"
+        data-v-8cbedc01=""
+      >
+        <div
+          class="tiptap ProseMirror text-editor"
+          contenteditable="true"
+          role="textbox"
+          style="outline: none; width: 100%; height: 100%;"
+          tabindex="0"
+          translate="no"
+        >
+          <p>
+            test value with {variable}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="append-slot"
+      data-v-8cbedc01=""
+    >
+      
+      
+    </div>
+    <!--v-if-->
+  </div>
+  <span
+    class="hint-text"
+    data-v-8cbedc01=""
+  >
+    hint
+  </span>
+</div>
+`;
+
+exports[`EvoconTextEditor > renders correctly with text formatting options 1`] = `
+<div
+  class="input-wrapper"
+  data-v-8cbedc01=""
+  rows="5"
+>
+  <div
+    class="text-input"
+    data-v-8cbedc01=""
+  >
+    
+    
+    <div
+      class="text-container d-flex flex-grow-1 flex-shrink-0"
+      data-v-8cbedc01=""
+      id="text-container"
+      style="height: 56px;"
+    >
+      <div
+        class="tip-tap-editor"
+        data-v-8cbedc01=""
+      >
+        <div
+          class="tiptap ProseMirror text-editor"
+          contenteditable="true"
+          role="textbox"
+          style="outline: none; width: 100%; height: 100%;"
+          tabindex="0"
+          translate="no"
+        >
+          <p>
+            test value with 
+            <mark
+              class="text-editor-variable"
+            >
+              {variable}
+            </mark>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="append-slot"
+      data-v-8cbedc01=""
+    >
+      
+      
+    </div>
+    <div
+      class="d-flex px-2 py-1"
+      data-v-8cbedc01=""
+    >
+      
+      <evocon-v-button-stub
+        color=""
+        data-v-8cbedc01=""
+        disabled="false"
+        icon="M13.5,15.5H10V12.5H13.5A1.5,1.5 0 0,1 15,14A1.5,1.5 0 0,1 13.5,15.5M10,6.5H13A1.5,1.5 0 0,1 14.5,8A1.5,1.5 0 0,1 13,9.5H10M15.6,10.79C16.57,10.11 17.25,9 17.25,8C17.25,5.74 15.5,4 13.25,4H7V18H14.04C16.14,18 17.75,16.3 17.75,14.21C17.75,12.69 16.89,11.39 15.6,10.79Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-8cbedc01=""
+        disabled="false"
+        icon="M10,4V7H12.21L8.79,15H6V18H14V15H11.79L15.21,7H18V4H10Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-8cbedc01=""
+        disabled="false"
+        icon="M5,21H19V19H5V21M12,17A6,6 0 0,0 18,11V3H15.5V11A3.5,3.5 0 0,1 12,14.5A3.5,3.5 0 0,1 8.5,11V3H6V11A6,6 0 0,0 12,17Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-8cbedc01=""
+        disabled="false"
+        icon="M7,5H21V7H7V5M7,13V11H21V13H7M4,4.5A1.5,1.5 0 0,1 5.5,6A1.5,1.5 0 0,1 4,7.5A1.5,1.5 0 0,1 2.5,6A1.5,1.5 0 0,1 4,4.5M4,10.5A1.5,1.5 0 0,1 5.5,12A1.5,1.5 0 0,1 4,13.5A1.5,1.5 0 0,1 2.5,12A1.5,1.5 0 0,1 4,10.5M7,19V17H21V19H7M4,16.5A1.5,1.5 0 0,1 5.5,18A1.5,1.5 0 0,1 4,19.5A1.5,1.5 0 0,1 2.5,18A1.5,1.5 0 0,1 4,16.5Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+      
+    </div>
+  </div>
+  <span
+    class="hint-text"
+    data-v-8cbedc01=""
+  >
+    hint
+  </span>
+</div>
+`;

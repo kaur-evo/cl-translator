@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementsActions > renders empty state correctly for user who can edit 1`] = `
+<empty-view-stub
+  data-v-db4d6e0a=""
+  description="A goal without a plan is just a wish."
+  descriptionrows=""
+  header="Create an action plan"
+  id="improvement-actions-empty-view"
+  imgurl="steps345"
+  imgwidth=""
+  primarybtn="Action"
+  primarybtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+  secondarybtn="Load template"
+  secondarybtncolor=""
+  secondarybtnicon=""
+  small="false"
+  tertiarybtn="Learn more"
+  tertiarybtnicon=""
+/>
+`;
+
+exports[`ImprovementsActions > renders empty state correctly for user who cannot edit 1`] = `
+<empty-view-stub
+  data-v-db4d6e0a=""
+  description=""
+  descriptionrows=""
+  header="Create an action plan"
+  id="improvement-actions-empty-view"
+  imgurl="steps345"
+  imgwidth=""
+  primarybtn=""
+  primarybtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+  secondarybtn=""
+  secondarybtncolor=""
+  secondarybtnicon=""
+  small="false"
+  tertiarybtn="Learn more"
+  tertiarybtnicon=""
+/>
+`;

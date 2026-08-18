@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReportsViewOptionsForm > renders correctly 1`] = `
+<form-dialog-template-stub
+  primarysegmenttitle="View options"
+  secondarysegmentsubtitle=""
+  secondarysegmentsubtitleicon=""
+  secondarysegmenttitle=""
+/>
+`;

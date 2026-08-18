@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WidgetRenderer > renders correctly with custom chart widget 1`] = `
+<shiftview-custom-chart-widget-stub
+  config="[object Object]"
+  large="false"
+  value-class=""
+  widget-key="0"
+/>
+`;
+
+exports[`WidgetRenderer > renders correctly with measures widget 1`] = `
+<measures-widget-stub
+  config="[object Object]"
+  large="false"
+  value-class=""
+  widget-key="0"
+/>
+`;
+
+exports[`WidgetRenderer > renders correctly with oee widget 1`] = `
+<o-e-e-widget-stub
+  config="[object Object]"
+  large="false"
+  value-class=""
+  widget-key="0"
+/>
+`;
+
+exports[`WidgetRenderer > renders correctly with performance widget 1`] = `
+<performance-widget-stub
+  config="[object Object]"
+  large="false"
+  value-class=""
+  widget-key="0"
+  widget-sub-type="UNIT_PER_MINUTE"
+/>
+`;

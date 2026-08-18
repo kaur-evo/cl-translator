@@ -1,0 +1,176 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftManagementDialog > renders correctly if it is a planned shift start dialog 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <shift-management-dialog-toolbar-stub
+    isshiftstartselectionvisible="false"
+    isstartshiftdialog="true"
+  />
+  <start-planned-shift-content-stub
+    enddate="2022-12-02"
+    endtime="22:00"
+    minstartfromrequest="2022-12-02T12:00:00.000Z"
+    nextshiftendfromrequest="2022-12-02T23:30:00.000Z"
+    shiftduration="9h 46m"
+    startdate="2022-12-02"
+    starttime="12:14"
+  />
+  <v-card-actions-stub
+    class="justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`ShiftManagementDialog > renders correctly if it is a shift start dialog 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <shift-management-dialog-toolbar-stub
+    isshiftstartselectionvisible="true"
+    isstartshiftdialog="true"
+  />
+  <shift-start-selection-stub
+    maxendfromrequest="2022-12-02T22:00:00.000Z"
+    maxstartfromrequest="2022-12-02T12:30:00.000Z"
+    minstartfromrequest="2022-12-02T12:00:00.000Z"
+    nextshiftendfromrequest="2022-12-02T23:30:00.000Z"
+    nextshiftname="Shift"
+    nextshiftstartfromrequest="2022-12-02T22:00:00.000Z"
+  />
+  <v-card-actions-stub
+    class="justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <!--v-if-->
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`ShiftManagementDialog > renders correctly if it is an extra shift start dialog 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <shift-management-dialog-toolbar-stub
+    isshiftstartselectionvisible="false"
+    isstartshiftdialog="true"
+  />
+  <start-extra-shift-content-stub
+    enddate="2022-12-02"
+    endtime="22:00"
+    maxendfromrequest="2022-12-02T22:00:00.000Z"
+    maxstartfromrequest="2022-12-02T12:30:00.000Z"
+    minendfromrequest="2022-12-02T21:25:00.000Z"
+    minstartfromrequest="2022-12-02T12:00:00.000Z"
+    nextshiftstartfromrequest="2022-12-02T22:00:00.000Z"
+    shiftduration="9h 46m"
+    startdate="2022-12-02"
+    starttime="12:14"
+  />
+  <v-card-actions-stub
+    class="justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="false"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;
+
+exports[`ShiftManagementDialog > renders correctly if its edit shift dialog 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <shift-management-dialog-toolbar-stub
+    isshiftstartselectionvisible="false"
+    isstartshiftdialog="false"
+  />
+  <edit-shift-content-stub
+    enddate="2022-12-02"
+    endtime="21:50"
+    maxendfromrequest="2022-12-02T22:00:00.000Z"
+    maxstartfromrequest="2022-12-02T12:30:00.000Z"
+    minendfromrequest="2022-12-02T21:25:00.000Z"
+    minstartfromrequest="2022-12-02T12:00:00.000Z"
+    shiftduration="9h 50m"
+    startdate="2022-12-02"
+    starttime="12:00"
+  />
+  <v-card-actions-stub
+    class="justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="secondary"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+  
+</div>
+`;

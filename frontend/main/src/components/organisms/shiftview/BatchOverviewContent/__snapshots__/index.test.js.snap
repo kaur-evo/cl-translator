@@ -1,0 +1,227 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BatchOverviewContent > renders correctly 1`] = `
+<div
+  class="batch-overview-content pb-1"
+  data-v-89dffb4c=""
+>
+  <generic-tabs-row-stub
+    class="px-4"
+    color=""
+    dark="false"
+    data-v-89dffb4c=""
+    disabledrulefunc="[Function]"
+    grow="false"
+    height="48"
+    items="[object Object],[object Object]"
+    labelkey="name"
+    modelvalue="0"
+    notclickable="false"
+    sizeclass=""
+    tabnamefn="[Function]"
+  />
+  <v-window-stub
+    class="batch-overview-window"
+    continuous="false"
+    crossfade="false"
+    data-v-89dffb4c=""
+    direction="horizontal"
+    disabled="false"
+    mandatory="force"
+    modelvalue="0"
+    nexticon="$next"
+    previcon="$prev"
+    reverse="false"
+    selectedclass="v-window-item--active"
+    showarrows="false"
+    tag="div"
+    verticalarrows="false"
+  >
+    
+    <v-window-item-stub
+      class="px-4"
+      data-v-89dffb4c=""
+      disabled="false"
+      eager="false"
+    >
+      <shiftview-cards-list-stub
+        additionallineprops="[object Object]"
+        bordercolorkey=""
+        data-v-89dffb4c=""
+        dense="false"
+        disabled="true"
+        iconcolorfn="[Function]"
+        iconfn="[Function]"
+        items="[object Object]"
+        primaryactionicon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+        primaryactiontext=""
+        primaryactiontooltip=""
+        secondaryactionicon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        secondaryactiontooltip=""
+        subtitleitemsprops="[Function]"
+        tertiaryactionicon=""
+        tertiaryactiontooltip=""
+        titleiconfn="[Function]"
+        titletextkey="[Function]"
+        verticalsubtitle="true"
+      />
+    </v-window-item-stub>
+    <v-window-item-stub
+      class="px-4"
+      data-v-89dffb4c=""
+      disabled="false"
+      eager="false"
+    >
+      <shiftview-cards-list-stub
+        additionallineprops="[object Object]"
+        bordercolorkey=""
+        data-v-89dffb4c=""
+        dense="false"
+        disabled="true"
+        iconcolorfn="[Function]"
+        iconfn="[Function]"
+        items="[object Object]"
+        primaryactionicon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+        primaryactiontext=""
+        primaryactiontooltip=""
+        secondaryactionicon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        secondaryactiontooltip=""
+        subtitleitemsprops="[Function]"
+        tertiaryactionicon=""
+        tertiaryactiontooltip=""
+        titleiconfn="[Function]"
+        titletextkey="[Function]"
+        verticalsubtitle="true"
+      />
+    </v-window-item-stub>
+    
+  </v-window-stub>
+</div>
+`;
+
+exports[`BatchOverviewContent > renders correctly with orders enabled 1`] = `
+<div
+  class="batch-overview-content pb-1"
+  data-v-89dffb4c=""
+>
+  <generic-tabs-row-stub
+    class="px-4"
+    color=""
+    dark="false"
+    data-v-89dffb4c=""
+    disabledrulefunc="[Function]"
+    grow="false"
+    height="48"
+    items="[object Object],[object Object],[object Object]"
+    labelkey="name"
+    modelvalue="0"
+    notclickable="false"
+    sizeclass=""
+    tabnamefn="[Function]"
+  />
+  <v-window-stub
+    class="batch-overview-window"
+    continuous="false"
+    crossfade="false"
+    data-v-89dffb4c=""
+    direction="horizontal"
+    disabled="false"
+    mandatory="force"
+    modelvalue="0"
+    nexticon="$next"
+    previcon="$prev"
+    reverse="false"
+    selectedclass="v-window-item--active"
+    showarrows="false"
+    tag="div"
+    verticalarrows="false"
+  >
+    
+    <v-window-item-stub
+      class="px-4"
+      data-v-89dffb4c=""
+      disabled="false"
+      eager="false"
+    >
+      <shiftview-cards-list-stub
+        additionallineprops="[object Object]"
+        bordercolorkey=""
+        data-v-89dffb4c=""
+        dense="false"
+        disabled="true"
+        iconcolorfn="[Function]"
+        iconfn="[Function]"
+        items="[object Object]"
+        primaryactionicon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+        primaryactiontext=""
+        primaryactiontooltip=""
+        secondaryactionicon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        secondaryactiontooltip=""
+        subtitleitemsprops="[Function]"
+        tertiaryactionicon=""
+        tertiaryactiontooltip=""
+        titleiconfn="[Function]"
+        titletextkey="[Function]"
+        verticalsubtitle="true"
+      />
+    </v-window-item-stub>
+    <v-window-item-stub
+      class="px-4"
+      data-v-89dffb4c=""
+      disabled="false"
+      eager="false"
+    >
+      <shiftview-cards-list-stub
+        additionallineprops="[object Object]"
+        bordercolorkey=""
+        data-v-89dffb4c=""
+        dense="false"
+        disabled="true"
+        iconcolorfn="[Function]"
+        iconfn="[Function]"
+        items="[object Object]"
+        primaryactionicon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+        primaryactiontext=""
+        primaryactiontooltip=""
+        secondaryactionicon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        secondaryactiontooltip=""
+        subtitleitemsprops="[Function]"
+        tertiaryactionicon=""
+        tertiaryactiontooltip=""
+        titleiconfn="[Function]"
+        titletextkey="[Function]"
+        verticalsubtitle="true"
+      />
+    </v-window-item-stub>
+    <v-window-item-stub
+      class="px-4"
+      data-v-89dffb4c=""
+      disabled="false"
+      eager="false"
+    >
+      <shiftview-cards-list-stub
+        additionallineprops="[object Object]"
+        bordercolorkey=""
+        data-v-89dffb4c=""
+        dense="false"
+        disabled="true"
+        iconcolorfn="[Function]"
+        iconfn="[Function]"
+        items=""
+        primaryactionicon="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+        primaryactiontext=""
+        primaryactiontooltip=""
+        secondaryactionicon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        secondaryactiontooltip=""
+        subtitleitemsprops="[Function]"
+        tertiaryactionicon=""
+        tertiaryactiontooltip=""
+        titleiconfn="[Function]"
+        titletextkey="productionOrder"
+        verticalsubtitle="true"
+      />
+    </v-window-item-stub>
+    
+  </v-window-stub>
+</div>
+`;

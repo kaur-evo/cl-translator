@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProfilePicture > renders correctly 1`] = `
+<div
+  class="user-pic profile-img-1 string"
+  data-v-1d0587e9=""
+  style="--size: 100px;"
+>
+  <!--v-if-->
+</div>
+`;

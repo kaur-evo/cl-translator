@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OeeHorizontalGraph > renders correctly 1`] = `
+<div
+  class="oee-horizontal-graph fill-height full-width"
+  id="oee-horizontal-graphstring"
+>
+  <svg
+    height="0"
+    width="0"
+  >
+    <g
+      transform="translate(0,0)"
+    />
+  </svg>
+</div>
+`;

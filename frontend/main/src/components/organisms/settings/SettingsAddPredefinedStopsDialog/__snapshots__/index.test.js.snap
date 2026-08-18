@@ -1,0 +1,489 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsAddPredefinedStopsDialog > renders correctly when adding shiftTemplate 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="white"
+    data-v-44323e6a=""
+    iconcolor="secondary-text"
+    subtitle="Automatic comments for recurring events within a shift (e.g., Break)"
+    title="Downtime auto-commenting"
+    titleicon=""
+  />
+  <v-card-stub
+    border="false"
+    class="elevation-0"
+    data-v-44323e6a=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="dialog-content"
+      data-v-44323e6a=""
+    >
+      <div
+        class="px-3"
+        data-v-44323e6a=""
+      >
+        
+        <v-form-stub
+          disabled="false"
+          fastfail="false"
+          modelvalue="true"
+          validateon="input"
+        >
+          <v-row-stub
+            dense="false"
+            density="default"
+            nogutters="false"
+            tag="div"
+          >
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="6"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <evocon-time-input-stub
+                hint="Start time"
+                id="start-time-input"
+                modelmodifiers="[object Object]"
+                modelvalue="12:00"
+                prepend-inner-icon="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+                required=""
+                rules="true"
+                usechip="false"
+                validate-on-blur=""
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="6"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <evocon-time-input-stub
+                hint="End time"
+                id="end-time-input"
+                modelmodifiers="[object Object]"
+                modelvalue="18:00"
+                prepend-inner-icon="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+                required=""
+                rules="true"
+                usechip="false"
+                validate-on-blur=""
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              id="comment-select-column"
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <selection-input-stub
+                checkbox="true"
+                coloractiveprepend="false"
+                disabled="false"
+                disabledvalues=""
+                emittoggleall="false"
+                emptyequalsallselected="false"
+                error="false"
+                filled="true"
+                groupidkey="id"
+                groups="[object Object],[object Object]"
+                groupsorderby="name"
+                hiddenitemscount="0"
+                hidesearch="false"
+                hint="Stop reason"
+                id="comment-select"
+                inverted="false"
+                isgroupedselect="true"
+                issingleselect="true"
+                itemflag=""
+                itemgroupidkey="groupId"
+                items="[object Object],[object Object]"
+                itemsecondarytext=""
+                itemtertiarytext=""
+                itemtext="name"
+                itemvalue="id"
+                loading="false"
+                menuinputtype="primary"
+                modelvalue=""
+                numericorderby="false"
+                placeholder="Stop reason"
+                prependtext=""
+                removenonexistentselections="false"
+                required="true"
+                showemptyarrayasallselected="false"
+                someselected="false"
+                totalcount="0"
+                usechips="false"
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <selection-input-stub
+                checkbox="true"
+                coloractiveprepend="false"
+                disabled="false"
+                disabledvalues=""
+                emittoggleall="false"
+                emptyequalsallselected="false"
+                error="false"
+                filled="true"
+                groupidkey="id"
+                groups=""
+                groupsorderby="name"
+                hiddenitemscount="0"
+                hidesearch="false"
+                hint="Machine location (optional)"
+                id="position-select"
+                inverted="false"
+                isgroupedselect="false"
+                issingleselect="true"
+                itemflag=""
+                itemgroupidkey="groupId"
+                items="[object Object],[object Object]"
+                itemsecondarytext=""
+                itemsmap="[object Object]"
+                itemtertiarytext=""
+                itemtext="name"
+                itemvalue="id"
+                loading="false"
+                menuinputtype="primary"
+                modelvalue="0"
+                numericorderby="false"
+                placeholder="Machine location"
+                prependtext=""
+                removenonexistentselections="false"
+                required="false"
+                showemptyarrayasallselected="false"
+                someselected="false"
+                totalcount="0"
+                usechips="false"
+              />
+            </v-col-stub>
+          </v-row-stub>
+        </v-form-stub>
+        
+      </div>
+      <!--v-if-->
+      <div
+        class="px-3"
+        data-v-44323e6a=""
+      >
+        
+        
+      </div>
+    </div>
+    <v-card-actions-stub
+      class=""
+      data-v-44323e6a=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        id="cancel-button"
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        id="save-button"
+        text="Apply"
+        textclass=""
+        type="primary-light"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsAddPredefinedStopsDialog > renders correctly when editing existing shiftTemplate 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <dialog-toolbar-stub
+    color="white"
+    data-v-44323e6a=""
+    iconcolor="secondary-text"
+    subtitle="Automatic comments for recurring events within a shift (e.g., Break)"
+    title="Downtime auto-commenting"
+    titleicon=""
+  />
+  <v-card-stub
+    border="false"
+    class="elevation-0"
+    data-v-44323e6a=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <div
+      class="dialog-content"
+      data-v-44323e6a=""
+    >
+      <div
+        class="px-3"
+        data-v-44323e6a=""
+      >
+        
+        <v-form-stub
+          disabled="false"
+          fastfail="false"
+          modelvalue="true"
+          validateon="input"
+        >
+          <v-row-stub
+            dense="false"
+            density="default"
+            nogutters="false"
+            tag="div"
+          >
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="6"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <evocon-time-input-stub
+                hint="Start time"
+                id="start-time-input"
+                modelmodifiers="[object Object]"
+                modelvalue=""
+                prepend-inner-icon="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+                required=""
+                rules="Start time needs to be defined"
+                usechip="false"
+                validate-on-blur=""
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="6"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <evocon-time-input-stub
+                hint="End time"
+                id="end-time-input"
+                modelmodifiers="[object Object]"
+                modelvalue=""
+                prepend-inner-icon="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"
+                required=""
+                rules="End time needs to be defined"
+                usechip="false"
+                validate-on-blur=""
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              id="comment-select-column"
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <selection-input-stub
+                checkbox="true"
+                coloractiveprepend="false"
+                disabled="false"
+                disabledvalues=""
+                emittoggleall="false"
+                emptyequalsallselected="false"
+                error="false"
+                filled="true"
+                groupidkey="id"
+                groups="[object Object],[object Object]"
+                groupsorderby="name"
+                hiddenitemscount="0"
+                hidesearch="false"
+                hint="Stop reason"
+                id="comment-select"
+                inverted="false"
+                isgroupedselect="true"
+                issingleselect="true"
+                itemflag=""
+                itemgroupidkey="groupId"
+                items="[object Object],[object Object]"
+                itemsecondarytext=""
+                itemtertiarytext=""
+                itemtext="name"
+                itemvalue="id"
+                loading="false"
+                menuinputtype="primary"
+                modelvalue=""
+                numericorderby="false"
+                placeholder="Stop reason"
+                prependtext=""
+                removenonexistentselections="false"
+                required="true"
+                showemptyarrayasallselected="false"
+                someselected="false"
+                totalcount="0"
+                usechips="false"
+              />
+            </v-col-stub>
+            <v-col-stub
+              class="px-1 mb-2"
+              cols="12"
+              lg="false"
+              md="false"
+              sm="false"
+              tag="div"
+              xl="false"
+              xxl="false"
+            >
+              <selection-input-stub
+                checkbox="true"
+                coloractiveprepend="false"
+                disabled="false"
+                disabledvalues=""
+                emittoggleall="false"
+                emptyequalsallselected="false"
+                error="false"
+                filled="true"
+                groupidkey="id"
+                groups=""
+                groupsorderby="name"
+                hiddenitemscount="0"
+                hidesearch="false"
+                hint="Machine location (optional)"
+                id="position-select"
+                inverted="false"
+                isgroupedselect="false"
+                issingleselect="true"
+                itemflag=""
+                itemgroupidkey="groupId"
+                items="[object Object],[object Object]"
+                itemsecondarytext=""
+                itemsmap="[object Object]"
+                itemtertiarytext=""
+                itemtext="name"
+                itemvalue="id"
+                loading="false"
+                menuinputtype="primary"
+                modelvalue=""
+                numericorderby="false"
+                placeholder="Machine location"
+                prependtext=""
+                removenonexistentselections="false"
+                required="false"
+                showemptyarrayasallselected="false"
+                someselected="false"
+                totalcount="0"
+                usechips="false"
+              />
+            </v-col-stub>
+          </v-row-stub>
+        </v-form-stub>
+        
+      </div>
+      <!--v-if-->
+      <div
+        class="px-3"
+        data-v-44323e6a=""
+      >
+        
+        
+      </div>
+    </div>
+    <v-card-actions-stub
+      class=""
+      data-v-44323e6a=""
+      tag="div"
+    >
+      
+      <delete-button-stub />
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        id="cancel-button"
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        id="save-button"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+  
+</div>
+`;

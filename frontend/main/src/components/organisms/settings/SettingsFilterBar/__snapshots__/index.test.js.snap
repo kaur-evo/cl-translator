@@ -1,0 +1,268 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsFilterBar > renders correctly 1`] = `
+<div
+  class="d-flex flex-row align-center"
+>
+  <div
+    class="d-flex align-center"
+    data-v-be19f3dc=""
+  >
+    <div
+      class="d-flex flex-wrap align-center flex-grow-1"
+      data-v-be19f3dc=""
+    >
+      
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="search"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="factoryId"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="stationId"
+        limit="1000"
+        usechips="true"
+      />
+      
+      
+      
+      <div
+        class="filter-bar__extra-actions"
+        data-v-be19f3dc=""
+      >
+        <v-menu-stub
+          activatorprops="[object Object]"
+          attach="false"
+          capturefocus="true"
+          closedelay="250"
+          closeonback="true"
+          closeoncontentclick="true"
+          contained="false"
+          data-v-be19f3dc=""
+          disabled="false"
+          disableinitialfocus="false"
+          eager="false"
+          locationstrategy="connected"
+          minwidth="200"
+          modelvalue="false"
+          noclickanimation="false"
+          opendelay="300"
+          openonhover="false"
+          origin="auto"
+          persistent="false"
+          retainfocus="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          submenu="false"
+          transition="[object Object]"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <single-select-list-stub
+            data-v-be19f3dc=""
+            dense="true"
+            iconkey="attr.prependInnerIcon"
+            items="[object Object],[object Object]"
+            itemtext="label"
+          />
+        </v-menu-stub>
+        <evocon-v-button-stub
+          class="mx-1"
+          color=""
+          data-v-be19f3dc=""
+          disabled="true"
+          icon=""
+          iconcolor=""
+          size="small"
+          text="Reset"
+          textclass=""
+          type="secondary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+  <evocon-v-toggle-button-stub
+    class=""
+    iconkey="icon"
+    iscompact="true"
+    items="[object Object],[object Object]"
+    modelvalue="list"
+    textkey="text"
+    valuekey="id"
+  />
+</div>
+`;
+
+exports[`SettingsFilterBar > renders correctly in mobile view 1`] = `
+<div
+  class="d-flex flex-column"
+>
+  <div
+    class="d-flex align-center"
+    data-v-be19f3dc=""
+  >
+    <div
+      class="d-flex flex-wrap align-center flex-grow-1"
+      data-v-be19f3dc=""
+    >
+      
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="search"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="factoryId"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="stationId"
+        limit="1000"
+        usechips="true"
+      />
+      
+      
+      
+      <!--v-if-->
+    </div>
+    <evocon-v-button-stub
+      class="ml-1"
+      color=""
+      data-v-be19f3dc=""
+      icon="M14,12V19.88C14.04,20.18 13.94,20.5 13.71,20.71C13.32,21.1 12.69,21.1 12.3,20.71L10.29,18.7C10.06,18.47 9.96,18.16 10,17.87V12H9.97L4.21,4.62C3.87,4.19 3.95,3.56 4.38,3.22C4.57,3.08 4.78,3 5,3V3H19V3C19.22,3 19.43,3.08 19.62,3.22C20.05,3.56 20.13,4.19 19.79,4.62L14.03,12H14Z"
+      iconcolor=""
+      size="small"
+      text=""
+      textclass=""
+      type="primary"
+    />
+  </div>
+  <evocon-v-toggle-button-stub
+    class="full-width ma-1"
+    iconkey="icon"
+    iscompact="false"
+    items="[object Object],[object Object]"
+    modelvalue="list"
+    textkey="text"
+    valuekey="id"
+  />
+</div>
+`;
+
+exports[`SettingsFilterBar > renders correctly without toggle button 1`] = `
+<div
+  class="d-flex flex-row align-center"
+>
+  <div
+    class="d-flex align-center"
+    data-v-be19f3dc=""
+  >
+    <div
+      class="d-flex flex-wrap align-center flex-grow-1"
+      data-v-be19f3dc=""
+    >
+      
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="search"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="factoryId"
+        limit="1000"
+        usechips="true"
+      />
+      <filter-bar-filter-stub
+        data-v-be19f3dc=""
+        dense="false"
+        filter="stationId"
+        limit="1000"
+        usechips="true"
+      />
+      
+      
+      
+      <div
+        class="filter-bar__extra-actions"
+        data-v-be19f3dc=""
+      >
+        <v-menu-stub
+          activatorprops="[object Object]"
+          attach="false"
+          capturefocus="true"
+          closedelay="250"
+          closeonback="true"
+          closeoncontentclick="true"
+          contained="false"
+          data-v-be19f3dc=""
+          disabled="false"
+          disableinitialfocus="false"
+          eager="false"
+          locationstrategy="connected"
+          minwidth="200"
+          modelvalue="false"
+          noclickanimation="false"
+          opendelay="300"
+          openonhover="false"
+          origin="auto"
+          persistent="false"
+          retainfocus="false"
+          scrim="false"
+          scrollstrategy="reposition"
+          sticktotarget="false"
+          submenu="false"
+          transition="[object Object]"
+          viewportmargin="12"
+          zindex="2000"
+        >
+          <single-select-list-stub
+            data-v-be19f3dc=""
+            dense="true"
+            iconkey="attr.prependInnerIcon"
+            items="[object Object],[object Object]"
+            itemtext="label"
+          />
+        </v-menu-stub>
+        <evocon-v-button-stub
+          class="mx-1"
+          color=""
+          data-v-be19f3dc=""
+          disabled="true"
+          icon=""
+          iconcolor=""
+          size="small"
+          text="Reset"
+          textclass=""
+          type="secondary"
+        />
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+  <!--v-if-->
+</div>
+`;

@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`EditShiftContent > renders correctly 1`] = `
+<div
+  end-date="2022-12-02"
+  end-time="22:00"
+  end-time-error="false"
+  is-end-time-input-disabled="false"
+  is-start-time-input-disabled="false"
+  start-date="2022-12-02"
+  start-range-dates="[object Object]"
+  start-time="12:00"
+  start-time-error="false"
+>
+  
+  <info-block-stub
+    body="10h 0m"
+    class="mb-2"
+    collapsible="false"
+    color="#9E9E9E"
+    header="Shift duration (max 24 h)"
+    headertextcolor="text-secondary-text"
+    icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+  />
+  <!--v-if-->
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`EditShiftContent > renders correctly if startTimeError and endTimeError are true 1`] = `
+<div
+  end-date="2022-12-02"
+  end-time=""
+  end-time-error="true"
+  is-end-time-input-disabled="false"
+  is-start-time-input-disabled="false"
+  start-date="2022-12-02"
+  start-range-dates="[object Object]"
+  start-time=""
+  start-time-error="true"
+>
+  
+  <info-block-stub
+    body="10h 0m"
+    class="mb-2"
+    collapsible="false"
+    color="#9E9E9E"
+    header="Shift duration (max 24 h)"
+    headertextcolor="text-secondary-text"
+    icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+  />
+  <info-block-stub
+    body="12:00 - 12:01 (02.12)"
+    class="mb-2"
+    collapsible="false"
+    color="#F44336"
+    header="Start time range"
+    headertextcolor="text-secondary-text"
+    icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+  />
+  <info-block-stub
+    body="21:58 - 22:00 (02.12)"
+    collapsible="false"
+    color="#F44336"
+    header="End time range"
+    headertextcolor="text-secondary-text"
+    icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+  />
+  
+</div>
+`;

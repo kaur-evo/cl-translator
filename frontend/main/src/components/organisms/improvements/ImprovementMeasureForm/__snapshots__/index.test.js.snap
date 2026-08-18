@@ -1,0 +1,385 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementMeasureForm > renders correctly when measure type is ACTION 1`] = `
+<div
+  class="px-4"
+>
+  <evocon-v-textarea-stub
+    class="mb-2"
+    hint="Description"
+    id="measure-description"
+    maxlength="500"
+    modelmodifiers="[object Object]"
+    modelvalue=""
+    no-resize=""
+    placeholder="Description"
+    rules="(v) => !!v && !!v.trim() || _ctx.$t('Description')"
+  />
+  <v-row-stub
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="pr-2"
+      cols="4"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <evocon-date-input-stub
+        clearable="true"
+        disabled="false"
+        hint="Deadline (optional)"
+        id="deadline-field"
+        max=""
+        min=""
+        persistenthint="true"
+        range="false"
+        required="false"
+      />
+    </v-col-stub>
+    <v-col-stub
+      cols="8"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <selection-input-stub
+        checkbox="true"
+        coloractiveprepend="false"
+        disabled="false"
+        disabledvalues=""
+        emittoggleall="false"
+        emptyequalsallselected="false"
+        error="false"
+        filled="true"
+        groupidkey="id"
+        groups=""
+        groupsorderby="name"
+        hiddenitemscount="0"
+        hidesearch="true"
+        hint="Person responsible (optional)"
+        id="responsible-people"
+        inverted="false"
+        isgroupedselect="false"
+        issingleselect="false"
+        itemflag=""
+        itemgroupidkey="groupId"
+        items="[object Object],[object Object]"
+        itemsecondarytext=""
+        itemtertiarytext=""
+        itemtext="fullName"
+        itemvalue="userId"
+        loading="false"
+        menuinputtype="primary"
+        modelvalue=""
+        numericorderby="false"
+        placeholder="Person responsible"
+        prependtext=""
+        removenonexistentselections="false"
+        required="false"
+        showemptyarrayasallselected="false"
+        someselected="false"
+        totalcount="0"
+        usechips="false"
+      />
+    </v-col-stub>
+  </v-row-stub>
+  <v-card-actions-stub
+    class="px-0"
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      id="cancel-btn"
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-btn"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ImprovementMeasureForm > renders correctly when measure type is ACTION and is edit view 1`] = `
+<div
+  class="px-4"
+>
+  <evocon-v-textarea-stub
+    class="mb-2"
+    hint="Description"
+    id="measure-description"
+    maxlength="500"
+    modelmodifiers="[object Object]"
+    modelvalue=""
+    no-resize=""
+    placeholder="Description"
+    rules="(v) => !!v && !!v.trim() || _ctx.$t('Description')"
+  />
+  <v-row-stub
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="pr-2"
+      cols="4"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <evocon-date-input-stub
+        clearable="true"
+        disabled="false"
+        hint="Deadline (optional)"
+        id="deadline-field"
+        max=""
+        min=""
+        persistenthint="true"
+        range="false"
+        required="false"
+      />
+    </v-col-stub>
+    <v-col-stub
+      cols="8"
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <selection-input-stub
+        checkbox="true"
+        coloractiveprepend="false"
+        disabled="false"
+        disabledvalues=""
+        emittoggleall="false"
+        emptyequalsallselected="false"
+        error="false"
+        filled="true"
+        groupidkey="id"
+        groups=""
+        groupsorderby="name"
+        hiddenitemscount="0"
+        hidesearch="true"
+        hint="Person responsible (optional)"
+        id="responsible-people"
+        inverted="false"
+        isgroupedselect="false"
+        issingleselect="false"
+        itemflag=""
+        itemgroupidkey="groupId"
+        items="[object Object],[object Object]"
+        itemsecondarytext=""
+        itemtertiarytext=""
+        itemtext="fullName"
+        itemvalue="userId"
+        loading="false"
+        menuinputtype="primary"
+        modelvalue=""
+        numericorderby="false"
+        placeholder="Person responsible"
+        prependtext=""
+        removenonexistentselections="false"
+        required="false"
+        showemptyarrayasallselected="false"
+        someselected="false"
+        totalcount="0"
+        usechips="false"
+      />
+    </v-col-stub>
+  </v-row-stub>
+  <v-card-actions-stub
+    class="px-0"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color="error"
+      icon=""
+      iconcolor=""
+      id="delete-btn"
+      text="Delete"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      id="cancel-btn"
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-btn"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ImprovementMeasureForm > renders correctly when measure type is SOLUTION 1`] = `
+<div
+  class="px-4"
+>
+  <evocon-v-textarea-stub
+    class="mb-2"
+    hint="Description"
+    id="measure-description"
+    maxlength="500"
+    modelmodifiers="[object Object]"
+    modelvalue=""
+    no-resize=""
+    placeholder="Description"
+    rules="(v) => !!v && !!v.trim() || _ctx.$t('Description')"
+  />
+  <evocon-date-input-stub
+    clearable="true"
+    disabled="false"
+    hint="Implemented (optional)"
+    id="implementation-date-field"
+    max=""
+    min=""
+    persistenthint="true"
+    range="false"
+    required="false"
+  />
+  <v-card-actions-stub
+    class="px-0"
+    tag="div"
+  >
+    <!--v-if-->
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      id="cancel-btn"
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-btn"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;
+
+exports[`ImprovementMeasureForm > renders correctly when measure type is SOLUTION and is edit view 1`] = `
+<div
+  class="px-4"
+>
+  <evocon-v-textarea-stub
+    class="mb-2"
+    hint="Description"
+    id="measure-description"
+    maxlength="500"
+    modelmodifiers="[object Object]"
+    modelvalue=""
+    no-resize=""
+    placeholder="Description"
+    rules="(v) => !!v && !!v.trim() || _ctx.$t('Description')"
+  />
+  <evocon-date-input-stub
+    clearable="true"
+    disabled="false"
+    hint="Implemented (optional)"
+    id="implementation-date-field"
+    max=""
+    min=""
+    persistenthint="true"
+    range="false"
+    required="false"
+  />
+  <v-card-actions-stub
+    class="px-0"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color="error"
+      icon=""
+      iconcolor=""
+      id="delete-btn"
+      text="Delete"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <v-spacer-stub
+      tag="div"
+    />
+    <evocon-v-button-stub
+      color=""
+      icon=""
+      iconcolor=""
+      id="cancel-btn"
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      disabled="true"
+      icon=""
+      iconcolor=""
+      id="save-btn"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;

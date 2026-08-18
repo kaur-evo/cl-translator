@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SecondaryNavDrawer > renders correctly on large screens 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  <draggable-list-stub
+    data-v-fe37adeb=""
+    disabled="true"
+    draggableclasses=""
+    hidehover="false"
+    items="[object Object],[object Object],[object Object]"
+    tag="div"
+  />
+  <!--v-if-->
+  <!--v-if-->
+  
+  
+</div>
+`;
+
+exports[`SecondaryNavDrawer > renders correctly on medium screens 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  <draggable-list-stub
+    data-v-fe37adeb=""
+    disabled="true"
+    draggableclasses=""
+    hidehover="false"
+    items="[object Object],[object Object],[object Object]"
+    tag="div"
+  />
+  <!--v-if-->
+  <!--v-if-->
+  
+  
+</div>
+`;

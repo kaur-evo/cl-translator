@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementActionsTemplateSaveForm > renders correctly 1`] = `
+<v-col-stub
+  class="px-4"
+  cols="false"
+  lg="false"
+  md="false"
+  sm="false"
+  tag="div"
+  xl="false"
+  xxl="false"
+>
+  <v-form-stub
+    disabled="false"
+    fastfail="false"
+    modelvalue="true"
+    validateon="input"
+  >
+    <evocon-v-input-stub
+      class="mx-2"
+      filled="true"
+      grow="false"
+      modelmodifiers="[object Object]"
+      modelvalue=""
+      placeholder="Template name"
+      required=""
+      rules="(v) => !!v && !!String(v).trim() || _ctx.$t('Template name')"
+      truncateinput="false"
+      type="text"
+      usechip="false"
+    />
+  </v-form-stub>
+  <v-card-actions-stub
+    class="px-0 justify-end"
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color="grey-darken-4"
+      icon=""
+      iconcolor=""
+      text="Close"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      icon=""
+      iconcolor=""
+      loading="false"
+      text="Save"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</v-col-stub>
+`;

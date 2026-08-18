@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Brackets > renders correctly 1`] = `
+<div
+  class="bracket-layer"
+  data-v-47a30192=""
+  style="touch-action: none;"
+>
+  
+  
+  <div
+    class="bracket"
+    data-v-47a30192=""
+    id="left-bracket"
+    style="height: 0px;"
+  >
+    
+    <span
+      class="drag"
+      data-v-47a30192=""
+    />
+    <span
+      class="drag"
+      data-v-47a30192=""
+    />
+    
+  </div>
+  <div
+    class="bracket"
+    data-v-47a30192=""
+    id="right-bracket"
+    style="height: 0px;"
+  >
+    
+    <span
+      class="drag"
+      data-v-47a30192=""
+    />
+    <span
+      class="drag"
+      data-v-47a30192=""
+    />
+    
+  </div>
+</div>
+`;

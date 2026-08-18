@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DialogTemplate > renders correctly 1`] = `
+<div
+  data-v-91599494=""
+>
+  <dialog-toolbar-stub
+    color="string"
+    data-v-91599494=""
+    iconcolor="string"
+    title="string"
+    titleicon="string"
+  />
+  <v-card-text-stub
+    class="pb-0 dialog-content px-2 pt-2"
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    
+  </v-card-text-stub>
+  <v-card-actions-stub
+    class=""
+    data-v-91599494=""
+    tag="div"
+  >
+    
+    
+  </v-card-actions-stub>
+</div>
+`;

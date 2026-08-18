@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrderingNumber > renders correctly as small 1`] = `"<span class="ordering-number ordering-number--small">9</span>"`;
+
+exports[`OrderingNumber > renders correctly if color is given 1`] = `"<span class="ordering-number bg-lw-orange ordering-number--borderless">9</span>"`;
+
+exports[`OrderingNumber > renders correctly if color is white 1`] = `"<span class="ordering-number bg-white">9</span>"`;
+
+exports[`OrderingNumber > renders correctly if number is bigger than 100 1`] = `"<span class="ordering-number small-text">999</span>"`;
+
+exports[`OrderingNumber > renders correctly with default props 1`] = `"<span class="ordering-number">2</span>"`;

@@ -1,0 +1,205 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DialogToolbar > renders correctly 1`] = `
+<v-toolbar-stub
+  absolute="false"
+  border="false"
+  class="d-flex justify-center"
+  collapse="false"
+  collapseposition="start"
+  color="string"
+  density="default"
+  extensionheight="48"
+  flat="true"
+  floating="false"
+  height="78"
+  tag="header"
+  tile="false"
+>
+  <v-toolbar-title-stub
+    class="mx-6 d-flex justify-center font-weight-medium"
+    tag="div"
+  >
+    
+    
+    <div
+      class="text-center text-wrap"
+    >
+      <div
+        class="d-flex align-center justify-center"
+      >
+        <v-icon-stub
+          class="mr-2"
+          color="string"
+          disabled="false"
+          end="false"
+          size="24"
+          start="false"
+          tag="i"
+        >
+          string
+        </v-icon-stub>
+        <span
+          class="text-truncate"
+          id="toolbar-title"
+        >
+          string
+        </span>
+        
+        
+      </div>
+      <div
+        class="subtitle text-body-medium text-secondary-dark"
+      >
+        string
+      </div>
+    </div>
+  </v-toolbar-title-stub>
+</v-toolbar-stub>
+`;
+
+exports[`DialogToolbar > renders correctly with titleIcon, but without subtitle 1`] = `
+<v-toolbar-stub
+  absolute="false"
+  border="false"
+  class="d-flex justify-center"
+  collapse="false"
+  collapseposition="start"
+  color="string"
+  density="default"
+  extensionheight="48"
+  flat="true"
+  floating="false"
+  height="64"
+  tag="header"
+  tile="false"
+>
+  <v-toolbar-title-stub
+    class="mx-6 d-flex justify-center font-weight-medium"
+    tag="div"
+  >
+    
+    
+    <div
+      class="text-center text-truncate"
+    >
+      <div
+        class="d-flex align-center justify-center"
+      >
+        <v-icon-stub
+          class="mr-2"
+          color="string"
+          disabled="false"
+          end="false"
+          size="24"
+          start="false"
+          tag="i"
+        >
+          string
+        </v-icon-stub>
+        <span
+          class="text-truncate"
+          id="toolbar-title"
+        >
+          string
+        </span>
+        
+        
+      </div>
+      <!--v-if-->
+    </div>
+  </v-toolbar-title-stub>
+</v-toolbar-stub>
+`;
+
+exports[`DialogToolbar > renders correctly without titleIcon and subtitle 1`] = `
+<v-toolbar-stub
+  absolute="false"
+  border="false"
+  class="d-flex justify-center"
+  collapse="false"
+  collapseposition="start"
+  color="string"
+  density="default"
+  extensionheight="48"
+  flat="true"
+  floating="false"
+  height="64"
+  tag="header"
+  tile="false"
+>
+  <v-toolbar-title-stub
+    class="mx-6 d-flex justify-center font-weight-medium"
+    tag="div"
+  >
+    
+    
+    <div
+      class="text-center text-truncate"
+    >
+      <div
+        class="d-flex align-center justify-center"
+      >
+        <!--v-if-->
+        <span
+          class="text-truncate"
+          id="toolbar-title"
+        >
+          string
+        </span>
+        
+        
+      </div>
+      <!--v-if-->
+    </div>
+  </v-toolbar-title-stub>
+</v-toolbar-stub>
+`;
+
+exports[`DialogToolbar > renders correctly witout titleIcon, but with subtitle 1`] = `
+<v-toolbar-stub
+  absolute="false"
+  border="false"
+  class="d-flex justify-center"
+  collapse="false"
+  collapseposition="start"
+  color="string"
+  density="default"
+  extensionheight="48"
+  flat="true"
+  floating="false"
+  height="78"
+  tag="header"
+  tile="false"
+>
+  <v-toolbar-title-stub
+    class="mx-6 d-flex justify-center font-weight-medium"
+    tag="div"
+  >
+    
+    
+    <div
+      class="text-center text-wrap"
+    >
+      <div
+        class="d-flex align-center justify-center"
+      >
+        <!--v-if-->
+        <span
+          class="text-truncate"
+          id="toolbar-title"
+        >
+          string
+        </span>
+        
+        
+      </div>
+      <div
+        class="subtitle text-body-medium text-secondary-dark"
+      >
+        string
+      </div>
+    </div>
+  </v-toolbar-title-stub>
+</v-toolbar-stub>
+`;

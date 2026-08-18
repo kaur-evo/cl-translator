@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShiftviewWidgetChart > that tooltipHTMLFunc returns expected snapshot 1`] = `
+"<div class="row align-center text-white"><v-col>
+          <div class="row align-center mb-1 text-body-large">03:01:00</div>
+          <div class="text-label-small font-weight-regular">
+          <span class="text-tertiary-dark font-weight-medium">point1: </span>
+          <span class="text-body-small font-weight-medium text-none" style="color:#1b9e77">7 unit</span>
+          </div><div class="text-label-small font-weight-regular">
+          <span class="text-tertiary-dark font-weight-medium">point2: </span>
+          <span class="text-body-small font-weight-medium text-none" style="color:#d95f02">10 units</span>
+          </div>
+          </v-col></div>"
+`;

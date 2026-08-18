@@ -1,0 +1,123 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsSideMenu > mounts correctly when collapsed large view 1`] = `
+<div
+  class="secondary-nav-drawer"
+  data-v-57f52551=""
+  max-height="100%"
+  style="position: initial;"
+>
+  <evocon-v-button-stub
+    class="mr-2 rotate180deg ml-3"
+    color=""
+    data-v-57f52551=""
+    icon="M21,15.61L19.59,17L14.58,12L19.59,7L21,8.39L17.44,12L21,15.61M3,6H16V8H3V6M3,13V11H13V13H3M3,18V16H16V18H3Z"
+    iconcolor=""
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <!--v-if-->
+</div>
+`;
+
+exports[`SettingsSideMenu > mounts correctly when not collapsed large view 1`] = `
+<div
+  class="secondary-nav-drawer"
+  data-v-57f52551=""
+  max-height="100%"
+  style="position: initial;"
+>
+  <evocon-v-button-stub
+    class="mr-2 ml-3"
+    color=""
+    data-v-57f52551=""
+    icon="M21,15.61L19.59,17L14.58,12L19.59,7L21,8.39L17.44,12L21,15.61M3,6H16V8H3V6M3,13V11H13V13H3M3,18V16H16V18H3Z"
+    iconcolor=""
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <div
+    class="py-2 overflow-container"
+    data-v-57f52551=""
+    style="width: 256px;"
+  >
+    
+    <secondary-nav-drawer-stub
+      activecolorkey=""
+      activekey="id"
+      activesubitemvalue=""
+      activevalue="products"
+      collapsed="false"
+      groups="[object Object],[object Object]"
+      iconkey="icon"
+      labelkey="name"
+      loadingkey="isLoading"
+      openeddraweritems="comments,activitylogs"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`SettingsSideMenu > mounts correctly when small collapsed view 1`] = `
+<div
+  class="secondary-nav-drawer"
+  data-v-57f52551=""
+  max-height="100%"
+  style="position: absolute;"
+>
+  <evocon-v-button-stub
+    class="mr-2 rotate180deg ml-1"
+    color=""
+    data-v-57f52551=""
+    icon="M21,15.61L19.59,17L14.58,12L19.59,7L21,8.39L17.44,12L21,15.61M3,6H16V8H3V6M3,13V11H13V13H3M3,18V16H16V18H3Z"
+    iconcolor=""
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <!--v-if-->
+</div>
+`;
+
+exports[`SettingsSideMenu > mounts correctly when small not collapsed view 1`] = `
+<div
+  class="secondary-nav-drawer"
+  data-v-57f52551=""
+  max-height="100%"
+  style="position: absolute;"
+>
+  <evocon-v-button-stub
+    class="mr-2 ml-1"
+    color=""
+    data-v-57f52551=""
+    icon="M21,15.61L19.59,17L14.58,12L19.59,7L21,8.39L17.44,12L21,15.61M3,6H16V8H3V6M3,13V11H13V13H3M3,18V16H16V18H3Z"
+    iconcolor=""
+    text=""
+    textclass=""
+    type="primary"
+  />
+  <div
+    class="elevation-1 rounded mt-2 bg-white py-2 overflow-container"
+    data-v-57f52551=""
+    style="width: 256px;"
+  >
+    
+    <secondary-nav-drawer-stub
+      activecolorkey=""
+      activekey="id"
+      activesubitemvalue=""
+      activevalue="products"
+      collapsed="false"
+      groups="[object Object],[object Object]"
+      iconkey="icon"
+      labelkey="name"
+      loadingkey="isLoading"
+      openeddraweritems="comments,activitylogs"
+    />
+    
+  </div>
+</div>
+`;

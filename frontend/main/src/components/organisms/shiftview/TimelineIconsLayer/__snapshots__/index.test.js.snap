@@ -1,0 +1,376 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TimelineIconsLayer > renders correctly if checklist pins are hidden 1`] = `
+<div
+  class="timeline-icons-layer"
+  data-v-fd857bd5=""
+>
+  
+  
+  <!--v-if-->
+  
+  <!---->
+  <!--teleport start-->
+  <!--teleport end-->
+  
+</div>
+`;
+
+exports[`TimelineIconsLayer > renders correctly if checklist pins are visible 1`] = `
+<div
+  class="timeline-icons-layer"
+  data-v-fd857bd5=""
+>
+  
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    <svg
+      class="timeline-icon timeline-icon--without-leg"
+      data-v-fd857bd5=""
+      style="left: 0%; z-index: 1;"
+    >
+      <svg
+        data-v-fd857bd5=""
+        height="0"
+        width="100%"
+      >
+        <path
+          d="M 14, 16 m -13, 0 a 13,13 0 1,0 26,0 a 13,13 0 1,0 -26,0"
+          data-v-fd857bd5=""
+          fill="#975AB6"
+          stroke="white"
+          stroke-width="2"
+        />
+        <!--v-if-->
+        <path
+          class="pin-icon"
+          d="M14 10H3V12H14V10M14 6H3V8H14V6M3 16H10V14H3V16M21.5 11.5L23 13L16 20L11.5 15.5L13 14L16 17L21.5 11.5Z"
+          data-v-fd857bd5=""
+          fill="white"
+        />
+        
+        <svg
+          class="pin-append"
+          data-v-fd857bd5=""
+          height="12"
+          viewBox="0 0 22 22"
+          width="12"
+        >
+          <rect
+            data-v-fd857bd5=""
+            fill="#975AB6"
+            height="18"
+            rx="3"
+            ry="3"
+            stroke="white"
+            stroke-width="2"
+            width="18"
+            x="1"
+            y="1"
+          />
+          <path
+            class="pin-append__icon"
+            d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+        </svg>
+        
+        <svg
+          class="pin-leg-parts"
+          data-v-fd857bd5=""
+        >
+          <path
+            class="pin-leg"
+            d="M11 32.5C11 27 6 23 4 21L11 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <path
+            class="pin-leg"
+            d="M13 32.5C13 27 18 23 20 21L13 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <line
+            data-v-fd857bd5=""
+            stroke="white"
+            stroke-width="2"
+            x1="14"
+            x2="14"
+            y1="28"
+            y2="0"
+          />
+        </svg>
+      </svg>
+    </svg>
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    <svg
+      class="timeline-icon timeline-icon--without-leg"
+      data-v-fd857bd5=""
+      style="left: 0%; z-index: 1;"
+    >
+      <svg
+        data-v-fd857bd5=""
+        height="0"
+        width="100%"
+      >
+        <path
+          d="M 14, 16 m -13, 0 a 13,13 0 1,0 26,0 a 13,13 0 1,0 -26,0"
+          data-v-fd857bd5=""
+          fill="#975AB6"
+          stroke="white"
+          stroke-width="2"
+        />
+        <!--v-if-->
+        <path
+          class="pin-icon"
+          d="M14 10H3V12H14V10M14 6H3V8H14V6M3 16H10V14H3V16M21.5 11.5L23 13L16 20L11.5 15.5L13 14L16 17L21.5 11.5Z"
+          data-v-fd857bd5=""
+          fill="white"
+        />
+        
+        <svg
+          class="pin-append"
+          data-v-fd857bd5=""
+          height="12"
+          viewBox="0 0 22 22"
+          width="12"
+        >
+          <rect
+            data-v-fd857bd5=""
+            fill="#975AB6"
+            height="18"
+            rx="3"
+            ry="3"
+            stroke="white"
+            stroke-width="2"
+            width="18"
+            x="1"
+            y="1"
+          />
+          <path
+            class="pin-append__icon"
+            d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+        </svg>
+        
+        <svg
+          class="pin-leg-parts"
+          data-v-fd857bd5=""
+        >
+          <path
+            class="pin-leg"
+            d="M11 32.5C11 27 6 23 4 21L11 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <path
+            class="pin-leg"
+            d="M13 32.5C13 27 18 23 20 21L13 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <line
+            data-v-fd857bd5=""
+            stroke="white"
+            stroke-width="2"
+            x1="14"
+            x2="14"
+            y1="28"
+            y2="0"
+          />
+        </svg>
+      </svg>
+    </svg>
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    <svg
+      class="timeline-icon timeline-icon--without-leg"
+      data-v-fd857bd5=""
+      style="left: 0%; z-index: 1;"
+    >
+      <svg
+        data-v-fd857bd5=""
+        height="0"
+        width="100%"
+      >
+        <path
+          d="M 14, 16 m -13, 0 a 13,13 0 1,0 26,0 a 13,13 0 1,0 -26,0"
+          data-v-fd857bd5=""
+          fill="#975AB6"
+          stroke="white"
+          stroke-width="2"
+        />
+        <!--v-if-->
+        <path
+          class="pin-icon"
+          d="M14 10H3V12H14V10M14 6H3V8H14V6M3 16H10V14H3V16M21.5 11.5L23 13L16 20L11.5 15.5L13 14L16 17L21.5 11.5Z"
+          data-v-fd857bd5=""
+          fill="white"
+        />
+        <!--v-if-->
+        <svg
+          class="pin-leg-parts"
+          data-v-fd857bd5=""
+        >
+          <path
+            class="pin-leg"
+            d="M11 32.5C11 27 6 23 4 21L11 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <path
+            class="pin-leg"
+            d="M13 32.5C13 27 18 23 20 21L13 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <line
+            data-v-fd857bd5=""
+            stroke="white"
+            stroke-width="2"
+            x1="14"
+            x2="14"
+            y1="28"
+            y2="0"
+          />
+        </svg>
+      </svg>
+    </svg>
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    <svg
+      class="timeline-icon timeline-icon--without-leg"
+      data-v-fd857bd5=""
+      style="left: 99.97222222222223%; z-index: 1;"
+    >
+      <svg
+        data-v-fd857bd5=""
+        height="0"
+        width="100%"
+      >
+        <path
+          d="M 14, 16 m -13, 0 a 13,13 0 1,0 26,0 a 13,13 0 1,0 -26,0"
+          data-v-fd857bd5=""
+          fill="#975AB6"
+          stroke="white"
+          stroke-width="2"
+        />
+        <!--v-if-->
+        <path
+          class="pin-icon"
+          d="M14 10H3V12H14V10M14 6H3V8H14V6M3 16H10V14H3V16M21.5 11.5L23 13L16 20L11.5 15.5L13 14L16 17L21.5 11.5Z"
+          data-v-fd857bd5=""
+          fill="white"
+        />
+        <!--v-if-->
+        <svg
+          class="pin-leg-parts"
+          data-v-fd857bd5=""
+        >
+          <path
+            class="pin-leg"
+            d="M11 32.5C11 27 6 23 4 21L11 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <path
+            class="pin-leg"
+            d="M13 32.5C13 27 18 23 20 21L13 23V32.5Z"
+            data-v-fd857bd5=""
+            fill="white"
+          />
+          <line
+            data-v-fd857bd5=""
+            stroke="white"
+            stroke-width="2"
+            x1="14"
+            x2="14"
+            y1="28"
+            y2="0"
+          />
+        </svg>
+      </svg>
+    </svg>
+    
+  </div>
+  <div
+    class="shift-hour-row"
+    data-v-fd857bd5=""
+  >
+    
+    
+  </div>
+  
+  <!--v-if-->
+  
+  <!---->
+  <!--teleport start-->
+  <!--teleport end-->
+  
+</div>
+`;

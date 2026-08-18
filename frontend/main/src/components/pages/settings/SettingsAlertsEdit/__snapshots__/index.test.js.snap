@@ -1,0 +1,513 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsAlertsEdit > renders correctly when adding new 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      New: Alert
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <evocon-v-input-stub
+          autofocus=""
+          class="mx-1"
+          filled="true"
+          grow="false"
+          hint="Name"
+          maxlength="100"
+          modelmodifiers="[object Object]"
+          modelvalue=""
+          placeholder="Name"
+          required=""
+          rules="Name"
+          truncateinput="false"
+          type="text"
+          usechip="false"
+          validate-on-blur=""
+        />
+      </v-form-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Conditions
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <event-conditions-block-stub
+        class="mx-1"
+        eventtype="alert"
+        filters="factoryIds,stationIds,productIds,operatorIds,shiftTemplateIds"
+        loading="false"
+        requirements="[object Object]"
+        savedrequirements="[object Object]"
+        secondarytitle="Trigger"
+      />
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="tertiary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Channels
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="tertiary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div
+        class="px-1"
+      >
+        <tiny-cards-list-stub
+          cardbuttons=""
+          flagiconkey=""
+          items=""
+          listitemicon=""
+          subtitlekeyvaluepairs=""
+          titlefunction="[Function]"
+          titletextkey=""
+          useslot="true"
+        />
+        <evocon-v-button-stub
+          class="my-2"
+          color=""
+          disabled="false"
+          icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+          iconcolor=""
+          text="Channel"
+          textclass=""
+          type="primary-light"
+        />
+        <!--v-if-->
+        <multi-line-switch-stub
+          class="my-2"
+          disabled="false"
+          helptext=""
+          maintext="Alert status"
+          modelvalue="false"
+          samelineinput="false"
+        />
+      </div>
+      
+    </div>
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsAlertsEdit > renders correctly when editing existing 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      Edit: Alert
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-form-stub
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <evocon-v-input-stub
+          autofocus=""
+          class="mx-1"
+          filled="true"
+          grow="false"
+          hint="Name"
+          maxlength="100"
+          modelmodifiers="[object Object]"
+          modelvalue=""
+          placeholder="Name"
+          required=""
+          rules="Name"
+          truncateinput="false"
+          type="text"
+          usechip="false"
+          validate-on-blur=""
+        />
+      </v-form-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Conditions
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <event-conditions-block-stub
+        class="mx-1"
+        eventtype="alert"
+        filters="factoryIds,stationIds,productIds,operatorIds,shiftTemplateIds"
+        loading="false"
+        requirements="[object Object]"
+        savedrequirements="[object Object]"
+        secondarytitle="Trigger"
+      />
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="tertiary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Channels
+          </span>
+          <icon-with-tooltip-stub
+            additionalclasses="ml-1 position-absolute"
+            color=""
+            data-v-4db4f123=""
+            icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+            iconclickedfn="[Function]"
+            iconid=""
+            iconsrc=""
+            size="16"
+            tooltiplocation="top"
+            tooltiptext="Learn more"
+          />
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="tertiary-subtitle"
+        />
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <div
+        class="px-1"
+      >
+        <tiny-cards-list-stub
+          cardbuttons=""
+          flagiconkey=""
+          items=""
+          listitemicon=""
+          subtitlekeyvaluepairs=""
+          titlefunction="[Function]"
+          titletextkey=""
+          useslot="true"
+        />
+        <evocon-v-button-stub
+          class="my-2"
+          color=""
+          disabled="false"
+          icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+          iconcolor=""
+          text="Channel"
+          textclass=""
+          type="primary-light"
+        />
+        <!--v-if-->
+        <multi-line-switch-stub
+          class="my-2"
+          disabled="false"
+          helptext=""
+          maintext="Alert status"
+          modelvalue="false"
+          samelineinput="false"
+        />
+      </div>
+      
+    </div>
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <delete-button-stub />
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsAlertsEdit > renders correctly when selected alert is not in alertsMap 1`] = `<removed-entity-view-stub />`;

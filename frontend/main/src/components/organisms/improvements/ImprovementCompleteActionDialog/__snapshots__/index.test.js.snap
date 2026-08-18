@@ -1,0 +1,86 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementCompleteActionDialog > renders correctly 1`] = `
+<div
+  class="pa-4"
+  data-v-70ff1e30=""
+>
+  <v-row-stub
+    data-v-70ff1e30=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <v-col-stub
+      class="pl-2"
+      cols="false"
+      data-v-70ff1e30=""
+      lg="false"
+      md="false"
+      sm="false"
+      tag="div"
+      xl="false"
+      xxl="false"
+    >
+      <div
+        class="text-body-small font-weight-medium text-disabled"
+        data-v-70ff1e30=""
+      >
+        Description
+      </div>
+      <div
+        class="text-body-medium pb-2"
+        data-v-70ff1e30=""
+      >
+        description
+      </div>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub
+    data-v-70ff1e30=""
+    dense="false"
+    density="default"
+    nogutters="false"
+    tag="div"
+  >
+    <evocon-date-input-stub
+      clearable="false"
+      data-v-70ff1e30=""
+      disabled="false"
+      hint="Done"
+      max=""
+      min=""
+      modelvalue="2020-04-01"
+      persistenthint="true"
+      range="false"
+      required="false"
+    />
+  </v-row-stub>
+  <v-card-actions-stub
+    class="pa-2 justify-end"
+    data-v-70ff1e30=""
+    tag="div"
+  >
+    <evocon-v-button-stub
+      color=""
+      data-v-70ff1e30=""
+      icon=""
+      iconcolor=""
+      text="Cancel"
+      textclass=""
+      type="primary"
+      variant="text"
+    />
+    <evocon-v-button-stub
+      color="primary"
+      data-v-70ff1e30=""
+      icon="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+      iconcolor=""
+      text="Done"
+      textclass=""
+      type="primary"
+    />
+  </v-card-actions-stub>
+</div>
+`;

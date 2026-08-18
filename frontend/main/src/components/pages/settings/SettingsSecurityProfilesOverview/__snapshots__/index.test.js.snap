@@ -1,0 +1,169 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsSecurityProfilesOverview.vue > renders correctly 1`] = `
+<div
+  class="d-flex flex-column align-center full-width mt-10"
+>
+  
+  <v-card-stub
+    border="false"
+    class=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900px"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+    width="100%"
+  >
+    
+    <v-card-title-stub
+      class="d-flex justify-center align-center"
+      tag="div"
+    >
+      Security profiles 
+      
+      <icon-with-tooltip-stub
+        additionalclasses="ml-2"
+        color=""
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+      
+    </v-card-title-stub>
+    <!--v-if-->
+    
+    <tiny-cards-list-stub
+      cardbuttons="[object Object],[object Object]"
+      class="mx-4"
+      flagiconkey=""
+      items="[object Object],[object Object]"
+      listitemicon=""
+      subtitlekeyvaluepairs="[Function]"
+      titlefunction="[Function]"
+      titletextkey="name"
+      useslot="false"
+    />
+    <evocon-v-button-stub
+      class="ml-4 mt-2"
+      color=""
+      icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      iconcolor=""
+      text="Security profile"
+      textclass=""
+      type="primary-light"
+    />
+    <v-card-actions-stub
+      tag="div"
+    >
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+    </v-card-actions-stub>
+    
+    
+  </v-card-stub>
+  
+</div>
+`;
+
+exports[`SettingsSecurityProfilesOverview.vue > renders correctly if securityProfiles is empty 1`] = `
+<div
+  class="d-flex flex-column align-center full-width mt-10"
+>
+  
+  <v-card-stub
+    border="false"
+    class=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900px"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+    width="100%"
+  >
+    
+    <v-card-title-stub
+      class="d-flex justify-center align-center"
+      tag="div"
+    >
+      Security profiles 
+      
+      <icon-with-tooltip-stub
+        additionalclasses="ml-2"
+        color=""
+        icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+        iconclickedfn="[Function]"
+        iconid=""
+        iconsrc=""
+        size="16"
+        tooltiplocation="top"
+        tooltiptext="Learn more"
+      />
+      
+    </v-card-title-stub>
+    <!--v-if-->
+    
+    <empty-view-stub
+      description="Create reusable profiles to enforce security rules. Profiles can be attached in user settings."
+      descriptionrows=""
+      header=""
+      imgurl="security"
+      imgwidth=""
+      primarybtn=""
+      primarybtnicon=""
+      secondarybtn="Security profile"
+      secondarybtncolor="primary"
+      secondarybtnicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      small="false"
+      tertiarybtn=""
+      tertiarybtnicon=""
+    />
+    <!--v-if-->
+    <v-card-actions-stub
+      tag="div"
+    >
+      <v-spacer-stub
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+    </v-card-actions-stub>
+    
+    
+  </v-card-stub>
+  
+</div>
+`;

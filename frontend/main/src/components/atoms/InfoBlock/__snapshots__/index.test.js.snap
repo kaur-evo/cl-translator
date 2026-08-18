@@ -1,0 +1,183 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InfoBlock > renders correctly 1`] = `
+<div
+  class="d-flex pa-2 rounded align-center"
+  style="background-color: rgba(144, 93, 208, 0.12);"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="#905DD0"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    Info icon
+  </v-icon-stub>
+  <div
+    class="d-flex flex-column flex-grow-1 overflow-hidden"
+  >
+    <span
+      class="text-body-small text-secondary-text"
+    >
+      Card header
+    </span>
+    
+    <div
+      class="text-body-medium"
+    >
+      <text-with-url-stub
+        tag="span"
+        text="Card body"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+</div>
+`;
+
+exports[`InfoBlock > renders correctly as collapsible 1`] = `
+<div
+  class="d-flex pa-2 rounded"
+  style="background-color: rgba(144, 93, 208, 0.12);"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="#905DD0"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    Info icon
+  </v-icon-stub>
+  <div
+    class="d-flex flex-column flex-grow-1 overflow-hidden"
+  >
+    <span
+      class="text-body-small text-secondary-text"
+    >
+      Card header
+    </span>
+    
+    <div
+      class="text-body-medium overflow-hidden white-space-nowrap text-overflow-ellipsis"
+    >
+      <text-with-url-stub
+        tag="span"
+        text="Card body"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+</div>
+`;
+
+exports[`InfoBlock > renders correctly if body is truncated and collapsed 1`] = `
+<div
+  class="d-flex pa-2 rounded cursor-pointer"
+  style="background-color: rgba(144, 93, 208, 0.12);"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="#905DD0"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    Info icon
+  </v-icon-stub>
+  <div
+    class="d-flex flex-column flex-grow-1 overflow-hidden"
+  >
+    <span
+      class="text-body-small text-secondary-text"
+    >
+      Card header
+    </span>
+    
+    <div
+      class="text-body-medium overflow-hidden white-space-nowrap text-overflow-ellipsis"
+    >
+      <text-with-url-stub
+        tag="span"
+        text="first line "
+      />
+    </div>
+    
+  </div>
+  <v-icon-stub
+    class="m-2"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z
+  </v-icon-stub>
+</div>
+`;
+
+exports[`InfoBlock > renders correctly if body is truncated and its not collapsed 1`] = `
+<div
+  class="d-flex pa-2 rounded cursor-pointer"
+  style="background-color: rgba(144, 93, 208, 0.12);"
+>
+  <v-icon-stub
+    class="mr-2"
+    color="#905DD0"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    Info icon
+  </v-icon-stub>
+  <div
+    class="d-flex flex-column flex-grow-1 overflow-hidden"
+  >
+    <span
+      class="text-body-small text-secondary-text"
+    >
+      Card header
+    </span>
+    
+    <div
+      class="text-body-medium"
+    >
+      <text-with-url-stub
+        tag="span"
+        text="first line"
+      />
+    </div>
+    <div
+      class="text-body-medium"
+    >
+      <text-with-url-stub
+        tag="span"
+        text="second line"
+      />
+    </div>
+    
+  </div>
+  <v-icon-stub
+    class="m-2"
+    disabled="false"
+    end="false"
+    size="18"
+    start="false"
+    tag="i"
+  >
+    M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z
+  </v-icon-stub>
+</div>
+`;

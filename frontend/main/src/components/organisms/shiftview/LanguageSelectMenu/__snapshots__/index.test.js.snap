@@ -1,0 +1,207 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LanguageSelectMenu > renders correctly 1`] = `
+<div
+  class="v-list v-theme--light v-list--density-default v-list--one-line overflow-container"
+  data-v-e415e36b=""
+  role="list"
+  tabindex="0"
+>
+  
+  
+  <div
+    aria-selected="true"
+    class="v-list-item v-list-item--active v-list-item--link v-theme--light text-primary v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text list-item--flex"
+    data-v-e415e36b=""
+    role="option"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="mt-1 mr-4"
+        data-v-72626beb=""
+        data-v-e415e36b=""
+      >
+        <div
+          class="flag mb-n1 rounded-flag-icon"
+          data-v-72626beb=""
+        >
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <span
+            data-v-72626beb=""
+          />
+        </div>
+      </div>
+      <div
+        class="v-list-item-title"
+        data-v-e415e36b=""
+      >
+        Eesti
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    aria-selected="false"
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text list-item--flex"
+    data-v-e415e36b=""
+    role="option"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="mt-1 mr-4"
+        data-v-72626beb=""
+        data-v-e415e36b=""
+      >
+        <div
+          class="flag mb-n1 rounded-flag-icon"
+          data-v-72626beb=""
+        >
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <span
+            data-v-72626beb=""
+          />
+        </div>
+      </div>
+      <div
+        class="v-list-item-title"
+        data-v-e415e36b=""
+      >
+        English
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    aria-selected="false"
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text list-item--flex"
+    data-v-e415e36b=""
+    role="option"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="mt-1 mr-4"
+        data-v-72626beb=""
+        data-v-e415e36b=""
+      >
+        <div
+          class="flag mb-n1 rounded-flag-icon"
+          data-v-72626beb=""
+        >
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <span
+            data-v-72626beb=""
+          />
+        </div>
+      </div>
+      <div
+        class="v-list-item-title"
+        data-v-e415e36b=""
+      >
+        Latviešu
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  <div
+    aria-selected="false"
+    class="v-list-item v-list-item--link v-theme--light v-list-item--density-default v-list-item--one-line rounded-0 v-list-item--variant-text list-item--flex"
+    data-v-e415e36b=""
+    role="option"
+    tabindex="-2"
+  >
+    
+    <span
+      class="v-list-item__overlay"
+    />
+    <span
+      class="v-list-item__underlay"
+    />
+    
+    <!---->
+    <div
+      class="v-list-item__content"
+      data-no-activator=""
+    >
+      <!---->
+      <!---->
+      
+      <div
+        class="mt-1 mr-4"
+        data-v-72626beb=""
+        data-v-e415e36b=""
+      >
+        <div
+          class="flag mb-n1 rounded-flag-icon"
+          data-v-72626beb=""
+        >
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <span
+            data-v-72626beb=""
+          />
+        </div>
+      </div>
+      <div
+        class="v-list-item-title"
+        data-v-e415e36b=""
+      >
+        Lietuvių
+      </div>
+      
+    </div>
+    <!---->
+  </div>
+  
+  
+</div>
+`;

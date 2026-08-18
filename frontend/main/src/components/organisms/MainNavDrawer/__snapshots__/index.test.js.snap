@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MainNavDrawer > renders correctly 1`] = `
+<navigation-drawer-template-stub
+  avatar="avatar"
+  caneditprofile="true"
+  cansuggestfeature="true"
+  email="email"
+  fullname="fullName"
+  menuitems="[object Object]"
+/>
+`;
+
+exports[`MainNavDrawer > renders correctly in mobile view 1`] = `
+<navigation-drawer-template-stub
+  avatar="avatar"
+  caneditprofile="true"
+  cansuggestfeature="true"
+  email="email"
+  fullname="fullName"
+  menuitems="[object Object]"
+/>
+`;

@@ -1,0 +1,60 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] ELOT (Hellenic Organization for Standardization) — CEN member, ΕΛΟΤ ΕΝ 13306",
+    "[S2] Epoptia MES (epoptia.com) — Greek manufacturing software using OEE in Latin script",
+    "[S2] SAP Greece — Greek localization available, uses OEE",
+    "[S3] Theodorou Group — Greek manufacturing services, OEE methodology resources",
+    "[S3] 5S Six Sigma Greece (5ssixsigmagreece.com) — OEE terminology confirmed in Greek",
+    "[S3] oe-e.gr — ΟΕΕ (Greek letters) conflicts with Greek Economic Chamber (documented hazard)",
+    "[S4] Microsoft Greek Localization Style Guide — formal 'εσείς' for professional software",
+    "[S4] Greek Wikipedia — OEE article, Συνολική Απόδοση Εξοπλισμού",
+    "[S4] Greek manufacturing blogs (lean-greece.gr, quality.gr) — OEE practitioner corpus",
+    "[S4] Greek false friends references — sympathetic/συμπαθητικός, physical/φυσικός confirmed",
+    "[S5] terms.json — Greek translations analyzed for consistency validation"
+  ],
+  "termSubstitutions": {},
+  "formality": "formal",
+  "pronounForm": "εσείς",
+  "falseFriends": {
+    "sympathetic": "Use 'συμπονετικός', not 'συμπαθητικός' (which means 'likeable')",
+    "performance": "Use 'απόδοση' for OEE performance, not 'performans' (English loanword)",
+    "actual": "Use 'πραγματικός' (real/actual), not calques of English 'actual'",
+    "economy": "'Οικονομικό' can mean both 'economic' and 'cheap' — context matters in manufacturing",
+    "physical": "'Φυσικός' means 'natural', not 'physical/bodily'",
+    "schedule": "Use 'πρόγραμμα παραγωγής' for production schedule, not 'σχέδιο' (design/plan)",
+    "available": "Use 'διαθεσιμότητα' for machine availability; personal availability = 'ελευθερία'",
+    "station": "Use 'σταθμός εργασίας' for workstation; bare 'σταθμός' means transport station",
+    "idle": "Use 'αδρανής' or 'σε αναμονή', not 'τεμπέλης' (lazy — pejorative)"
+  },
+  "grammarNotes": {
+    "greekAlphabet": "Uses Greek alphabet; Latin characters for international technical terms like OEE, KPI, MTBF",
+    "caseSystem": "4 cases (nominative, genitive, accusative, vocative). 'Η διαθεσιμότητα' (nom.) vs 'της διαθεσιμότητας' (gen.).",
+    "genderAgreement": "Three genders: 'η διαθεσιμότητα' (f), 'ο σταθμός' (m), 'το εργοστάσιο' (n). Adjectives must agree.",
+    "monotonicScript": "Modern Greek uses monotonic (single accent). Never polytonic (classical).",
+    "compoundTermsAsPhrases": "Greek terms are multi-word: 'χρόνος διακοπής' (downtime), 'προγραμματισμένος χρόνος' (planned time).",
+    "numberFormatting": "Comma decimal, period thousands: '85,5%', '1.000 μονάδες'.",
+    "compoundPluralModifiers": "In compound noun phrases with genitive modifiers, only the HEAD noun pluralizes. The genitive modifier stays SINGULAR. CORRECT: 'αιτίες απώλειας ταχύτητας' (causes [nom.pl] + loss [gen.sg] + speed [gen.sg]). WRONG: 'αιτίες απωλειών ταχύτητας' (causes + losses [gen.pl] + speed). The modifier 'απώλειας' names the concept of speed loss; only the head noun 'αιτίες' counts items."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE (Latin acronym) is the standard in Greek manufacturing. ΣΑΕ is NOT used in practice. ΟΕΕ (Greek letters) conflicts with Greek Economic Chamber.",
+    "preferAcronym": true,
+    "greekFullTerm": "Συνολική Απόδοση Εξοπλισμού",
+    "dominantSectors": "Food & beverage, pharmaceuticals, metals, cement, shipping equipment, renewable energy",
+    "standardsUsed": [
+      "ΕΛΟΤ ΕΝ 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using ΣΑΕ instead of OEE — ΣΑΕ is not used in Greek manufacturing practice",
+    "Using ΟΕΕ (Greek letters) which conflicts with Οικονομικό Επιμελητήριο Ελλάδας",
+    "Using informal 'εσύ' instead of formal 'εσείς'",
+    "Gender agreement errors: 'ο διαθεσιμότητα' (wrong) vs 'η διαθεσιμότητα' (correct)",
+    "Calquing 'planned' as 'σχεδιαζόμενος' — use 'προγραμματισμένος χρόνος'",
+    "Mixing monotonic and polytonic accent marks",
+    "Pluralizing the modifier in compound noun phrases: 'αιτίες απωλειών ταχύτητας' (WRONG — 'απωλειών' is genitive plural) instead of 'αιτίες απώλειας ταχύτητας' (CORRECT — 'απώλειας' is genitive singular). The modifier names the category; only the head noun takes plural"
+  ],
+  "lengthMultiplier": 1.8,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE (Latin) is standard in Greek manufacturing; ΣΑΕ not used, ΟΕΕ conflicts with Economic Chamber. Formal εσείς. Greek alphabet but Latin technical acronyms preserved. P95 expansion 2.00x."
+}

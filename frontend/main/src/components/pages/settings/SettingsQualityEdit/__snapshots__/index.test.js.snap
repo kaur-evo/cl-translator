@@ -1,0 +1,193 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsQualityEdit > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+>
+  <div
+    class="v-card v-theme--light v-card--density-default v-card--variant-elevated mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    style="max-width: 900px;"
+  >
+    <!---->
+    <div
+      class="v-card__loader"
+    >
+      <div
+        aria-hidden="true"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        class="v-progress-linear v-theme--light v-locale--is-ltr"
+        role="progressbar"
+        style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+      >
+        <!---->
+        <div
+          class="v-progress-linear__background"
+        />
+        <div
+          class="v-progress-linear__buffer"
+          style="width: 0%;"
+        />
+        <transition-stub
+          appear="false"
+          css="true"
+          name="fade-transition"
+          persisted="false"
+        >
+          <div
+            class="v-progress-linear__indeterminate"
+          >
+            
+            <div
+              class="v-progress-linear__indeterminate long"
+            />
+            <div
+              class="v-progress-linear__indeterminate short"
+            />
+            
+          </div>
+        </transition-stub>
+        <!---->
+      </div>
+    </div>
+    <!---->
+    <!---->
+    
+    <!--v-if-->
+    
+    
+    <div
+      class="v-card-title justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+    >
+      quality
+    </div>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <!--v-if-->
+      <div
+        class="mb-4"
+      >
+        <i
+          aria-hidden="true"
+          class="v-icon notranslate v-theme--light text-secondary mr-2"
+          style="font-size: 16px; height: 16px; width: 16px;"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon__svg"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"
+            />
+          </svg>
+        </i>
+        <span
+          class="text-label-small text-secondary-text font-weight-medium"
+        >
+           Kui valitud periood kattub mõne eelnevaga, siis kirjutatakse andmed üle 
+        </span>
+      </div>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <div
+      class="v-card-actions"
+      data-v-4db4f123=""
+    >
+      
+      <div
+        class="v-spacer"
+      />
+      <button
+        class="v-btn v-btn--slim v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text px-4"
+        id="evocon-button"
+        type="button"
+      >
+        
+        <span
+          class="v-btn__overlay"
+        />
+        <span
+          class="v-btn__underlay"
+        />
+        
+        <!---->
+        <span
+          class="v-btn__content"
+          data-no-activator=""
+        >
+          
+          
+          <!--v-if-->
+          <span
+            class=""
+            id="evocon-button-text"
+          >
+            Cancel
+          </span>
+          
+          
+        </span>
+        <!---->
+        <!---->
+      </button>
+      <button
+        class="v-btn v-btn--slim v-theme--light bg-primary v-btn--density-default v-btn--size-default v-btn--variant-flat px-4"
+        id="evocon-button"
+        type="button"
+      >
+        
+        <span
+          class="v-btn__overlay"
+        />
+        <span
+          class="v-btn__underlay"
+        />
+        
+        <!---->
+        <span
+          class="v-btn__content"
+          data-no-activator=""
+        >
+          
+          
+          <!--v-if-->
+          <span
+            class=""
+            id="evocon-button-text"
+          >
+            Save
+          </span>
+          
+          
+        </span>
+        <!---->
+        <!---->
+      </button>
+      
+    </div>
+    
+    <!---->
+    
+    <!---->
+    <span
+      class="v-card__underlay"
+    />
+    
+  </div>
+</div>
+`;

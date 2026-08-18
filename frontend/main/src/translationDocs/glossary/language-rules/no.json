@@ -1,0 +1,52 @@
+{
+  "reviewStatus": "researched",
+  "sources": [
+    "[S1] Standard Norge — NS-ISO 22400-2",
+    "[S1] NS-EN 13306 — Norwegian adoption of EN 13306",
+    "[S2] Novotek Norge — Norwegian OEE documentation",
+    "[S2] SAP Norwegian localization",
+    "[S3] Norsk Industri — 3,000+ member companies",
+    "[S3] Unbabel Norwegian (Bokmål) Guidelines — 'De/Dem has disappeared'",
+    "[S3] Simultrans: Norwegian Localization — Bokmål for B2B software",
+    "[S5] terms.json — Norwegian translations analyzed for consistency"
+  ],
+  "termSubstitutions": {},
+  "formality": "informal",
+  "pronounForm": "du",
+  "falseFriends": {
+    "actual": "Use 'virkelig' or 'faktisk', not 'aktuell' (which means 'current')",
+    "eventually": "Use 'til slutt', not 'eventuelt' (which means 'possibly')",
+    "billion": "Use 'milliard' (10^9), not 'billion' (which means 10^12)",
+    "performance": "'Ytelse' = speed ratio in OEE, not general capability",
+    "station": "Use 'arbeidsstasjon' for workstation; 'stasjon' means transport station",
+    "scrap": "Use 'kassasjon' or 'vrak' for quality rejects, not 'skrot' (metal recycling waste)",
+    "order": "Use 'arbeidsordre' for production orders, not 'ordre' (commercial order)",
+    "idle": "Use 'tomgang' or 'venter', not 'lat' (lazy — pejorative)"
+  },
+  "grammarNotes": {
+    "compoundWords": "Norwegian forms compounds: 'syklustid' (cycle time), 'nedetid' (downtime). Bokmål spelling differs from DA/SV.",
+    "enEt": "Two genders in Bokmål: 'en' (masculine/feminine) and 'et' (neuter).",
+    "bokmalSpelling": "Norwegian double consonants: 'fabrikk' (NO) vs 'fabrik' (DA/SV).",
+    "numberFormatting": "Comma decimal, space/period thousands: '85,5%', '1 000 enheter'.",
+    "compoundPluralModifiers": "Norwegian compound words inherently use singular modifier stems. Compound formation handles modifier singularity by construction. No compound pluralization issue."
+  },
+  "industryContext": {
+    "oeeTerminology": "OEE acronym is used directly. No established Norwegian acronym.",
+    "dominantSectors": "Petroleum/energy (Equinor), maritime (Kongsberg), metals (Norsk Hydro), fish farming, fertilizer (Yara)",
+    "standardsUsed": [
+      "NS-ISO 22400-2",
+      "NS-EN 13306"
+    ]
+  },
+  "commonMistakes": [
+    "Using 'De' instead of 'du' — 'De' has 'more or less disappeared'; 'du' correct for all software",
+    "Using 'aktuell' for 'actual' instead of 'virkelig' or 'faktisk'",
+    "Mixing Bokmål and Nynorsk — use Bokmål exclusively for B2B",
+    "Using 'vrak' inconsistently with 'kassasjon' — choose one and be consistent",
+    "Norwegian double consonant spelling: 'fabrikk' not 'fabrik'",
+    "Using 'stasjon' alone — use 'arbeidsstasjon' for manufacturing"
+  ],
+  "lengthMultiplier": 1.8,
+  "acronymExpansionAllowed": false,
+  "notes": "OEE is used; Bokmål standard for B2B. 'du' is universal. P95 expansion 1.44x. Norwegian egalitarian culture makes informal address non-negotiable."
+}

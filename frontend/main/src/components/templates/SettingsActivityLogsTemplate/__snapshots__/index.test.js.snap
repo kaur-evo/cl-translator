@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsActivityLogsTemplate > renders correctly 1`] = `
+<settings-entities-overview-stub
+  arecolsloading="false"
+  arerowsclickable="true"
+  caneditgroups="true"
+  customviews=""
+  entityname="entityName"
+  filterconfiguration="[object Map]"
+  groupfields=""
+  groups=""
+  hasgroupview="false"
+  hideresetbtn="false"
+  isdeletinggroupinprogress="false"
+  items=""
+  languagetextentity=""
+  loading="false"
+  menuitems=""
+  namefield="name"
+  navigatetoeditroute="false"
+  openpanelsonfilter="true"
+  overviewheader=""
+  primarybtntext=""
+  rowclickmode="contentExpand"
+  saveactionname=""
+  secondarybtntext=""
+  showdragicon="false"
+  showemptygroups="true"
+  showglobalgroupsicon="false"
+  showgroupitemscount="true"
+  statuskey="enabled"
+  tableheaders="[object Object],[object Object]"
+  togglebtnvalue="list"
+  usebackendfiltering="true"
+/>
+`;

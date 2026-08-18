@@ -1,0 +1,9 @@
+export const SHIFT_VIEW = 'shiftview';
+export const ALL_FACTORIES = 'allfactories';
+export const DASHBOARD = 'dashboard';
+export const REPORTS = 'reportsNew';
+export const SETTINGS = 'settings';
+export const IMPROVEMENTS = 'improvements';
+export const REALTIME = 'realtime';
+export const TIMELINE = 'timeline';
+export const SPLIT_VIEW = 'splitview';

@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SelectionListSearchInput > renders correctly 1`] = `
+<evocon-v-input-stub
+  class="mx-3 mt-3"
+  density="compact"
+  filled="true"
+  grow="false"
+  hide-details=""
+  label="label"
+  modelvalue=""
+  single-line=""
+  truncateinput="false"
+  type="text"
+  usechip="false"
+/>
+`;

@@ -1,0 +1,308 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsQualityOverview > renders correctly 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  data-v-8fab00db=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      quality
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <v-row-stub
+        class="text-body-small px-4"
+        data-v-8fab00db=""
+        dense="false"
+        density="default"
+        nogutters="false"
+        tag="div"
+      >
+        <v-col-stub
+          class="quality-col py-3"
+          cols="2.4"
+          data-v-8fab00db=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          Stations
+        </v-col-stub>
+        <v-col-stub
+          class="quality-col px-2 py-3"
+          cols="2.4"
+          data-v-8fab00db=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          Start date
+        </v-col-stub>
+        <v-col-stub
+          class="quality-col px-2 py-3"
+          cols="2.4"
+          data-v-8fab00db=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          End date
+        </v-col-stub>
+        <v-col-stub
+          class="quality-col px-2 py-3"
+          cols="2.4"
+          data-v-8fab00db=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          Entry date
+        </v-col-stub>
+        <v-col-stub
+          class="text-right py-3"
+          cols="2.4"
+          data-v-8fab00db=""
+          lg="false"
+          md="false"
+          sm="false"
+          tag="div"
+          xl="false"
+          xxl="false"
+        >
+          quality
+        </v-col-stub>
+      </v-row-stub>
+      <v-list-stub
+        activatable="false"
+        border="false"
+        data-v-8fab00db=""
+        density="default"
+        disabled="false"
+        filterable="false"
+        itemchildren="children"
+        itemprops="props"
+        items=""
+        itemsregistration="render"
+        itemtitle="title"
+        itemtype="type"
+        itemvalue="value"
+        lines="one"
+        mandatory="false"
+        nav="false"
+        navigationstrategy="focus"
+        opened=""
+        openstrategy="list"
+        returnobject="false"
+        selectable="false"
+        selectstrategy="single-leaf"
+        slim="false"
+        tag="div"
+        tile="false"
+        variant="text"
+      >
+        
+        <v-list-group-stub
+          class="quality-row"
+          collapseicon="$collapse"
+          color="black"
+          data-v-8fab00db=""
+          disabled="false"
+          expandicon="$expand"
+          fluid="false"
+          subgroup="false"
+          tag="div"
+          value="0"
+        >
+          <v-list-item-stub
+            border="false"
+            class="quality-group"
+            data-v-8fab00db=""
+            density="default"
+            disabled="false"
+            exact="false"
+            lines="false"
+            nav="false"
+            replace="false"
+            ripple="true"
+            slim="false"
+            tag="div"
+            tile="false"
+            variant="text"
+          >
+            
+            <v-row-stub
+              class="py-3 text-body-medium"
+              data-v-8fab00db=""
+              dense="false"
+              density="default"
+              nogutters="false"
+              tag="div"
+            >
+              <v-col-stub
+                cols="false"
+                data-v-8fab00db=""
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                Station 1
+              </v-col-stub>
+              <v-col-stub
+                class="text-right"
+                cols="false"
+                data-v-8fab00db=""
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                10%
+              </v-col-stub>
+            </v-row-stub>
+            
+          </v-list-item-stub>
+        </v-list-group-stub>
+        <v-list-group-stub
+          class="quality-row"
+          collapseicon="$collapse"
+          color="black"
+          data-v-8fab00db=""
+          disabled="false"
+          expandicon="$expand"
+          fluid="false"
+          subgroup="false"
+          tag="div"
+          value="1"
+        >
+          <v-list-item-stub
+            border="false"
+            class="quality-group"
+            data-v-8fab00db=""
+            density="default"
+            disabled="false"
+            exact="false"
+            lines="false"
+            nav="false"
+            replace="false"
+            ripple="true"
+            slim="false"
+            tag="div"
+            tile="false"
+            variant="text"
+          >
+            
+            <v-row-stub
+              class="py-3 text-body-medium"
+              data-v-8fab00db=""
+              dense="false"
+              density="default"
+              nogutters="false"
+              tag="div"
+            >
+              <v-col-stub
+                cols="false"
+                data-v-8fab00db=""
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                Station 2
+              </v-col-stub>
+              <v-col-stub
+                class="text-right"
+                cols="false"
+                data-v-8fab00db=""
+                lg="false"
+                md="false"
+                sm="false"
+                tag="div"
+                xl="false"
+                xxl="false"
+              >
+                20%
+              </v-col-stub>
+            </v-row-stub>
+            
+          </v-list-item-stub>
+        </v-list-group-stub>
+        
+      </v-list-stub>
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <v-spacer-stub
+        data-v-8fab00db=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-8fab00db=""
+        icon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+        iconcolor=""
+        text="quality"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;

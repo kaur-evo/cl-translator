@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OTPInput > renders correctly 1`] = `
+<div
+  default="string"
+>
+  <v-otp-input-stub
+    autocomplete="off"
+    autofocus="false"
+    default="string"
+    density="default"
+    error="true"
+    focusall="false"
+    focused="false"
+    label="$vuetify.input.otp"
+    length="1"
+    loading="false"
+    masked="false"
+    type="number"
+    variant="outlined"
+  />
+  <div
+    class="text-center input-label text-body-small mt-n2 text-error"
+  >
+    string
+  </div>
+</div>
+`;

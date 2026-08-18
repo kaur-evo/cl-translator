@@ -1,0 +1,1272 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsStopReasonEdit > renders correctly when adding new 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  data-v-aa5c8409=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      New: Stop reason
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <station-difference-notification-stub
+        data-v-aa5c8409=""
+        stationstoberemoved=""
+      />
+      <v-form-stub
+        data-v-aa5c8409=""
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          data-v-aa5c8409=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              data-v-aa5c8409=""
+              disabled="false"
+              filled="true"
+              grow="false"
+              hint="Stop name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue=""
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Stop name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Stop type"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="text"
+              itemvalue="value"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="true"
+              numericorderby="false"
+              placeholder="Type"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <generic-station-input-stub
+              data-v-aa5c8409=""
+              groupsoverride="[object Object],[object Object]"
+              itemsoverride="[object Object],[object Object]"
+              modelvalue=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="true"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Tags (Optional)"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="false"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items=""
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Tags"
+              prependtext=""
+              removenonexistentselections="false"
+              required="false"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mt-4"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-button-stub
+              color="quaternary-dark"
+              data-v-aa5c8409=""
+              icon="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+              iconcolor=""
+              text="Machine locations"
+              textclass=""
+              type="primary"
+            />
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              data-v-aa5c8409=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Link reasons to specific machine locations to track exactly where issues occur."
+            />
+          </v-col-stub>
+          <v-expansion-panels-stub
+            class="px-1 mt-4"
+            collapseicon="$collapse"
+            data-v-aa5c8409=""
+            disabled="false"
+            eager="false"
+            expandicon="$expand"
+            flat="false"
+            focusable="false"
+            hideactions="false"
+            mandatory="false"
+            modelvalue="0"
+            multiple="false"
+            ripple="false"
+            static="true"
+            tag="div"
+            tile="false"
+            variant="default"
+          >
+            <v-expansion-panel-stub
+              collapseicon="$collapse"
+              data-v-aa5c8409=""
+              disabled="false"
+              eager="false"
+              expandicon="$expand"
+              focusable="false"
+              hideactions="false"
+              ripple="false"
+              static="false"
+              tag="div"
+              tile="false"
+            />
+          </v-expansion-panels-stub>
+        </v-row-stub>
+      </v-form-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Translations
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        >
+          Please add translations
+        </div>
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <settings-translations-card-stub
+        data-v-aa5c8409=""
+        entityid="NaN"
+        languagetextentity="comment"
+      />
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-aa5c8409=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStopReasonEdit > renders correctly when edit is forbidden 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  data-v-aa5c8409=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      comment 1
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <station-difference-notification-stub
+        data-v-aa5c8409=""
+        stationstoberemoved=""
+      />
+      <v-form-stub
+        data-v-aa5c8409=""
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          data-v-aa5c8409=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              data-v-aa5c8409=""
+              disabled="true"
+              filled="true"
+              grow="false"
+              hint="Stop name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue="comment 1"
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Stop name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="true"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="1"
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="true"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Stop type"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="text"
+              itemvalue="value"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="true"
+              numericorderby="false"
+              placeholder="Type"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <generic-station-input-stub
+              data-v-aa5c8409=""
+              groupsoverride="[object Object],[object Object]"
+              itemsoverride="[object Object],[object Object]"
+              modelvalue="1"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="true"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Tags (Optional)"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="false"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items=""
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Tags"
+              prependtext=""
+              removenonexistentselections="false"
+              required="false"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mt-4"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-button-stub
+              color="quaternary-dark"
+              data-v-aa5c8409=""
+              icon="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+              iconcolor=""
+              text="Machine locations"
+              textclass=""
+              type="primary"
+            />
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              data-v-aa5c8409=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Link reasons to specific machine locations to track exactly where issues occur."
+            />
+          </v-col-stub>
+          <v-expansion-panels-stub
+            class="px-1 mt-4"
+            collapseicon="$collapse"
+            data-v-aa5c8409=""
+            disabled="false"
+            eager="false"
+            expandicon="$expand"
+            flat="false"
+            focusable="false"
+            hideactions="false"
+            mandatory="false"
+            modelvalue="0"
+            multiple="false"
+            ripple="false"
+            static="true"
+            tag="div"
+            tile="false"
+            variant="default"
+          >
+            <v-expansion-panel-stub
+              collapseicon="$collapse"
+              data-v-aa5c8409=""
+              disabled="false"
+              eager="false"
+              expandicon="$expand"
+              focusable="false"
+              hideactions="false"
+              ripple="false"
+              static="false"
+              tag="div"
+              tile="false"
+            />
+          </v-expansion-panels-stub>
+        </v-row-stub>
+      </v-form-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Translations
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        >
+          Please add translations
+        </div>
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <settings-translations-card-stub
+        data-v-aa5c8409=""
+        entityid="1"
+        languagetextentity="comment"
+      />
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <!--v-if-->
+      <v-spacer-stub
+        data-v-aa5c8409=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStopReasonEdit > renders correctly when editing existing 1`] = `
+<div
+  class="bg-quaternary-dark fill-height full-width"
+  data-v-4db4f123=""
+  data-v-aa5c8409=""
+>
+  <v-card-stub
+    border="false"
+    class="mx-auto mb-10 mt-10"
+    data-v-4db4f123=""
+    density="default"
+    disabled="false"
+    exact="false"
+    flat="false"
+    hover="false"
+    loading="false"
+    maxwidth="900"
+    replace="false"
+    ripple="true"
+    tag="div"
+    tile="false"
+    variant="elevated"
+  >
+    <!--v-if-->
+    
+    
+    <v-card-title-stub
+      class="justify-center d-flex white-space-wrap text-center"
+      data-v-4db4f123=""
+      id="primary-title"
+      tag="div"
+    >
+      comment 1
+    </v-card-title-stub>
+    <!--v-if-->
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <station-difference-notification-stub
+        data-v-aa5c8409=""
+        stationstoberemoved=""
+      />
+      <v-form-stub
+        data-v-aa5c8409=""
+        disabled="false"
+        fastfail="false"
+        modelvalue="true"
+        validateon="input"
+      >
+        <v-row-stub
+          data-v-aa5c8409=""
+          dense="false"
+          density="default"
+          nogutters="false"
+          tag="div"
+        >
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-input-stub
+              counter="200"
+              data-v-aa5c8409=""
+              disabled="false"
+              filled="true"
+              grow="false"
+              hint="Stop name"
+              maxlength="200"
+              modelmodifiers="[object Object]"
+              modelvalue="comment 1"
+              placeholder="Name"
+              required=""
+              rules="(v) => !!v && !!v.trim() || _ctx.$t('Stop name')"
+              truncateinput="false"
+              type="text"
+              usechip="false"
+              validate-on-blur=""
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Group"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="1"
+              numericorderby="false"
+              placeholder="Group"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="false"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="true"
+              hint="Stop type"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="true"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items="[object Object],[object Object]"
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="text"
+              itemvalue="value"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue="true"
+              numericorderby="false"
+              placeholder="Type"
+              prependtext=""
+              removenonexistentselections="false"
+              required="true"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <generic-station-input-stub
+              data-v-aa5c8409=""
+              groupsoverride="[object Object],[object Object]"
+              itemsoverride="[object Object],[object Object]"
+              modelvalue="1"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mb-2"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="6"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <selection-input-stub
+              checkbox="true"
+              coloractiveprepend="false"
+              data-v-aa5c8409=""
+              disabled="true"
+              disabledvalues=""
+              emittoggleall="false"
+              emptyequalsallselected="false"
+              error="false"
+              filled="true"
+              groupidkey="id"
+              groups=""
+              groupsorderby="name"
+              hiddenitemscount="0"
+              hidesearch="false"
+              hint="Tags (Optional)"
+              inverted="false"
+              isgroupedselect="false"
+              issingleselect="false"
+              itemflag=""
+              itemgroupidkey="groupId"
+              items=""
+              itemsecondarytext=""
+              itemtertiarytext=""
+              itemtext="name"
+              itemvalue="id"
+              loading="false"
+              menuinputtype="primary"
+              modelvalue=""
+              numericorderby="false"
+              placeholder="Tags"
+              prependtext=""
+              removenonexistentselections="false"
+              required="false"
+              showemptyarrayasallselected="false"
+              someselected="false"
+              totalcount="0"
+              usechips="false"
+            />
+          </v-col-stub>
+          <v-col-stub
+            class="px-1 mt-4"
+            cols="12"
+            data-v-aa5c8409=""
+            lg="false"
+            md="false"
+            sm="false"
+            tag="div"
+            xl="false"
+            xxl="false"
+          >
+            <evocon-v-button-stub
+              color="quaternary-dark"
+              data-v-aa5c8409=""
+              icon="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"
+              iconcolor=""
+              text="Machine locations"
+              textclass=""
+              type="primary"
+            />
+            <icon-with-tooltip-stub
+              additionalclasses="ml-2"
+              color=""
+              data-v-aa5c8409=""
+              icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+              iconclickedfn="[Function]"
+              iconid=""
+              iconsrc=""
+              size="16"
+              tooltiplocation="top"
+              tooltiptext="Link reasons to specific machine locations to track exactly where issues occur."
+            />
+          </v-col-stub>
+          <v-expansion-panels-stub
+            class="px-1 mt-4"
+            collapseicon="$collapse"
+            data-v-aa5c8409=""
+            disabled="false"
+            eager="false"
+            expandicon="$expand"
+            flat="false"
+            focusable="false"
+            hideactions="false"
+            mandatory="false"
+            modelvalue="0"
+            multiple="false"
+            ripple="false"
+            static="true"
+            tag="div"
+            tile="false"
+            variant="default"
+          >
+            <v-expansion-panel-stub
+              collapseicon="$collapse"
+              data-v-aa5c8409=""
+              disabled="false"
+              eager="false"
+              expandicon="$expand"
+              focusable="false"
+              hideactions="false"
+              ripple="false"
+              static="false"
+              tag="div"
+              tile="false"
+            />
+          </v-expansion-panels-stub>
+        </v-row-stub>
+      </v-form-stub>
+      
+    </div>
+    <v-row-stub
+      class="ma-4"
+      data-v-4db4f123=""
+      dense="false"
+      density="default"
+      nogutters="false"
+      tag="div"
+    >
+      <v-col-stub
+        class="text-center"
+        cols="false"
+        data-v-4db4f123=""
+        lg="false"
+        md="false"
+        sm="false"
+        tag="div"
+        xl="false"
+        xxl="false"
+      >
+        <div
+          class="text-body-large font-weight-bold position-relative text-align-center full-width"
+          data-v-4db4f123=""
+          id="secondary-title"
+        >
+          <span
+            class="segment-title"
+            data-v-4db4f123=""
+          >
+            Translations
+          </span>
+          <!--v-if-->
+          
+          
+        </div>
+        <div
+          class="text-body-medium text-secondary-text"
+          data-v-4db4f123=""
+          id="secondary-subtitle"
+        >
+          Please add translations
+        </div>
+      </v-col-stub>
+    </v-row-stub>
+    <div
+      class="px-3"
+      data-v-4db4f123=""
+    >
+      
+      <settings-translations-card-stub
+        data-v-aa5c8409=""
+        entityid="1"
+        languagetextentity="comment"
+      />
+      
+    </div>
+    <!--v-if-->
+    <!--v-if-->
+    <v-card-actions-stub
+      data-v-4db4f123=""
+      tag="div"
+    >
+      
+      <delete-button-stub
+        data-v-aa5c8409=""
+      />
+      <v-spacer-stub
+        data-v-aa5c8409=""
+        tag="div"
+      />
+      <evocon-v-button-stub
+        color=""
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        text="Cancel"
+        textclass=""
+        type="secondary"
+      />
+      <evocon-v-button-stub
+        color="primary"
+        data-v-aa5c8409=""
+        icon=""
+        iconcolor=""
+        loading="false"
+        text="Save"
+        textclass=""
+        type="primary"
+      />
+      
+    </v-card-actions-stub>
+  </v-card-stub>
+</div>
+`;
+
+exports[`SettingsStopReasonEdit > renders correctly when selected stop reason is not in commentsMap 1`] = `
+<removed-entity-view-stub
+  data-v-aa5c8409=""
+/>
+`;

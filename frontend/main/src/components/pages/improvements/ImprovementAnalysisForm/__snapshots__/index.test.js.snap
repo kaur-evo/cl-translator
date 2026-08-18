@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImprovementAnalysisForm > renders correctly 1`] = `
+<router-view-stub
+  data-v-5d4f41f9=""
+/>
+`;

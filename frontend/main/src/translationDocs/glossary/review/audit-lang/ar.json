@@ -1,0 +1,692 @@
+{
+    "audits": [
+        {
+            "currentTranslation": "سبب الخردة الافتراضي",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [
+                        "Directly violates the false friend rule: 'الخردة' (al-khurda = junk/scrap metal for recycling) is used instead of 'الهالك' (al-halik = manufacturing waste/scrap) or 'المرفوضات' (al-marfudat = rejected units)."
+                    ],
+                    "score": 1
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Within the 'scrap' term family, 'الخردة' is used consistently across 'scrap', 'scrap reason', and 'default scrap reason', but it is the wrong root word entirely. All three should use 'الهالك' for manufacturing context."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "'الخردة' is associated with scrap metal recycling yards, not OEE quality defect tracking in manufacturing software."
+                    ],
+                    "score": 3
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "The translation uses 'الخردة' (al-khurda) for 'scrap', which per the false friends list means recycling/junk metal, not manufacturing defect tracking. Should use 'الهالك' (al-halik) for manufacturing scrap/waste."
+                    ],
+                    "score": 3
+                }
+            },
+            "language": "ar",
+            "overallScore": 2,
+            "suggestedTranslation": "سبب الهالك الافتراضي",
+            "term": "default scrap reason"
+        },
+        {
+            "currentTranslation": "خُردة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [
+                        "Directly uses the false friend 'الخردة'. The language rules explicitly state: use 'الهالك' (al-halik = manufacturing waste/scrap) or 'المرفوضات' (al-marfudat = rejected units), NOT 'الخردة' (al-khurda = junk/scrap metal for recycling)."
+                    ],
+                    "score": 1
+                },
+                "formalityCompliance": {
+                    "issues": [
+                        "The translation includes tashkeel (ضمة on the خاء: 'خُردة'). Per language rules and Microsoft Arabic Style Guide §4.1.7, professional B2B text must NOT contain tashkeel diacritics."
+                    ],
+                    "score": 4
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'خردة' evokes scrap yards and metal recycling, not a manufacturing quality metric. 'الهالك' is the natural term in Arabic-speaking factories for production rejects/waste."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "In manufacturing OEE context, scrap refers to rejected production units counted against the Quality rate. 'الهالك' is the appropriate Arabic manufacturing term for this concept."
+                    ],
+                    "score": 3
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'خُردة' (khurda) denotes junk/scrap metal for recycling, not defective production units rejected during quality control. The definition specifies units that fail quality standards and reduce the OEE Quality component."
+                    ],
+                    "score": 3
+                }
+            },
+            "language": "ar",
+            "overallScore": 2,
+            "suggestedTranslation": "الهالك",
+            "term": "scrap"
+        },
+        {
+            "currentTranslation": "سبب الخردة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [
+                        "Violates the 'scrap' false friend rule: uses 'الخردة' instead of 'الهالك' or 'المرفوضات'."
+                    ],
+                    "score": 1
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Consistent with the other 'scrap' family terms in using 'الخردة', but the entire family uses the wrong root. Should align to 'الهالك' across the family."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "'سبب الخردة' sounds like a reason for scrapping metal, not a categorized cause for quality rejects in OEE tracking."
+                    ],
+                    "score": 3
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "Uses 'الخردة' (recycling junk) instead of 'الهالك' (manufacturing scrap/waste), misrepresenting the manufacturing quality concept."
+                    ],
+                    "score": 3
+                }
+            },
+            "language": "ar",
+            "overallScore": 2,
+            "suggestedTranslation": "سبب الهالك",
+            "term": "scrap reason"
+        },
+        {
+            "currentTranslation": "مُشغِّل",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'مُشغِّل' contains tashkeel (damma on mim, kasra on ghayn, shadda on lam). Per the language rules and Microsoft Arabic Style Guide §4.1.7, professional B2B manufacturing software must NOT contain tashkeel/vowel diacritics. The word should be written as 'مشغل' without any diacritics."
+                    ],
+                    "score": 2
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 3,
+            "suggestedTranslation": "مشغل",
+            "term": "operator"
+        },
+        {
+            "currentTranslation": "خسارة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [
+                        "'خسارة' is effectively a false friend in this domain — it maps to 'financial loss' in an Arabic speaker's first interpretation, not 'production effectiveness reduction'. The term is polysemous but the manufacturing-specific meaning is carried by 'فقد' not 'خسارة'."
+                    ],
+                    "score": 3
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Cross-term family inconsistency: 'loss' uses 'خسارة', 'speed loss groups' uses 'خسائر' (plural of خسارة), but 'speed loss reason' uses 'فقدان' (a completely different root). The oee-metrics family and speed family must unify on a single root for 'loss'. Recommend 'فقد' throughout."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "Arabic OEE training materials and SAP Arabic localization use 'فقد' (faqd) or 'فواقد' (fawaqid, plural) for OEE losses. 'خسائر' (plural of خسارة) is used for financial/war losses. The ISO 22400 framework's loss categories (availability losses, performance losses, quality losses) translate more naturally as 'فواقد التوافر، فواقد الأداء، فواقد الجودة'."
+                    ],
+                    "score": 3
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'خسارة' primarily denotes financial/commercial loss or defeat in Arabic. The domain note explicitly warns: 'NOT financial loss or emotional loss.' In manufacturing OEE contexts, 'فقد' (faqd) or 'فاقد' (faqid) refers to production waste/loss — the measurable reduction in output or effectiveness. 'خسارة' would lead an Arabic-speaking operator to think of monetary cost rather than the OEE availability/performance/quality loss categories."
+                    ],
+                    "score": 3
+                }
+            },
+            "language": "ar",
+            "overallScore": 3,
+            "suggestedTranslation": "فقد",
+            "term": "loss"
+        },
+        {
+            "currentTranslation": "مجموعات خسائر السرعة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [
+                        "'خسائر' inherits the same financial-loss connotation flagged under 'loss'."
+                    ],
+                    "score": 4
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Two issues: (1) Cross-term inconsistency — 'speed loss groups' uses 'خسائر' but 'speed loss reason' uses 'فقدان'. The speed family must use one root. (2) Compound pluralization — 'خسائر' (losses, plural) is the modifier inside 'مجموعات خسائر السرعة'. Per the compound pluralization rule, the modifier naming a concept/category should stay singular: 'مجموعات فقد السرعة' (groups of speed-loss), not 'مجموعات خسائر السرعة' (groups of speed-losses)."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "Should align with the unified 'فقد' root for OEE production losses."
+                    ],
+                    "score": 3
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "The meaning is conveyed but 'خسائر' carries a financial connotation (see 'loss' audit). Should use the manufacturing-specific 'فقد' root."
+                    ],
+                    "score": 4
+                }
+            },
+            "language": "ar",
+            "overallScore": 3,
+            "suggestedTranslation": "مجموعات فقد السرعة",
+            "term": "speed loss groups"
+        },
+        {
+            "currentTranslation": "سبب فقدان السرعة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Cross-term inconsistency within the speed family: 'speed loss reason' uses 'فقدان' while 'speed loss groups' uses 'خسائر'. Both terms translate the same English compound 'speed loss' but with entirely different Arabic roots. This is confusing in a manufacturing UI where both terms appear together. Recommend unifying to 'فقد السرعة' across both terms."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "Should use 'فقد' to unify with the recommended 'loss' translation across the oee-metrics and speed families."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'فقدان السرعة' (losing of speed) conveys the meaning but 'فقدان' is the verbal noun (masdar) emphasizing the process of losing, whereas 'فقد' (loss, as a state/result) is more appropriate for a categorized production metric."
+                    ],
+                    "score": 4
+                }
+            },
+            "language": "ar",
+            "overallScore": 3,
+            "suggestedTranslation": "سبب فقد السرعة",
+            "term": "speed loss reason"
+        },
+        {
+            "currentTranslation": "مسؤول النظام على مستوى الشركة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "The translation is verbose at 5 words. A native Arabic UI would prefer a tighter iḍāfah construct. Additionally, the family consistency check: 'factory administrator' = 'مسؤول المصنع' uses 'مسؤول' + direct iḍāfah, but 'company administrator' uses 'مسؤول النظام على مستوى الشركة' — the root pattern is inconsistent within the 'admin' family. Both should use the same 'مسؤول + [scope]' pattern."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "Other languages consistently use a direct compound: 'administrator + company' (e.g., ru: 'администратор компании', de: 'Unternehmensadministrator'). The Arabic translation diverges by inserting 'النظام' and using a prepositional phrase instead of a compact iḍāfah."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'مسؤول النظام على مستوى الشركة' (system administrator at company level) adds 'النظام' (system) which is not in the source term. The English term is 'company administrator', not 'company system administrator'. The phrase also uses a prepositional expansion 'على مستوى الشركة' rather than a direct iḍāfah construct."
+                    ],
+                    "score": 4
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "مسؤول الشركة",
+            "term": "company administrator"
+        },
+        {
+            "currentTranslation": "موقع الآلة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'موقع الآلة' is grammatically correct iḍāfah. However, in manufacturing software context, 'الماكينة' or 'الآلة' are both acceptable, but 'الماكينة' is more common in GCC manufacturing for individual machines on a line. 'الآلة' is more generic/classical. Minor preference issue — both are valid."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "موقع الماكينة",
+            "term": "machine location"
+        },
+        {
+            "currentTranslation": "مواقع الآلات",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Consistent with singular form — 'مواقع' is correct broken plural of 'موقع', and modifier stays singular per iḍāfah rules. Same note as singular: 'الماكينات' may be slightly more natural in GCC manufacturing than 'الآلات'."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "مواقع الماكينات",
+            "term": "machine locations"
+        },
+        {
+            "currentTranslation": "إيقافات مخططة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'توقفات مخططة' would be more consistent with the prescribed 'توقف' root and with how other stop-related terms should be translated in the system."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "The false-friend rule for 'stop' explicitly states to use 'توقف' (tawaqquf). 'إيقافات' uses a different root form (Form IV causative) rather than the prescribed Form V 'توقف'."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'إيقافات' derives from the verb 'أوقف' (to cause to stop / to halt), which has an active/causative sense. The language rules specify using 'توقف' (tawaqquf) for production stop events. The plural form consistent with 'توقف' would be 'توقفات'. 'إيقافات' shifts the meaning slightly toward 'stoppages imposed' rather than 'stops that occurred/were scheduled'."
+                    ],
+                    "score": 4
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "توقفات مخططة",
+            "term": "planned stops"
+        },
+        {
+            "currentTranslation": "وردية",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "The translation 'وردية' uses the correct root per language rules (الوردية is preferred over النوبة). However, the definite article 'ال' is omitted. In Arabic manufacturing UI, bare indefinite nouns are acceptable for labels, but the language rules specify 'الوردية' (al-wardiyya) as the standard form. For a standalone UI label, 'وردية' (indefinite) is natural and common, so this is minor."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "الوردية",
+            "term": "shift"
+        },
+        {
+            "currentTranslation": "محطة عمل",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'محطة عمل' is a natural iḍāfah compound. The term is idiomatic, though in some GCC manufacturing contexts 'ماكينة' (machine) or 'محطة إنتاج' (production station) may be more domain-specific. For a generic production workstation concept, 'محطة عمل' is appropriate."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "'محطة عمل' (work station) is a valid translation. In manufacturing contexts, 'محطة إنتاج' (production station) or simply 'محطة' with context could also work. However, 'محطة عمل' is well-established in Arabic manufacturing and IT localization, aligning with Microsoft Arabic style conventions."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "محطة عمل",
+            "term": "station"
+        },
+        {
+            "currentTranslation": "مجموعات المحطات",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Family consistency check: 'station' = 'محطة عمل', 'stations' = 'محطات العمل', but 'station groups' = 'مجموعات المحطات'. The root 'محطة/محطات' is consistent across the family. However, 'مجموعات المحطات' drops 'عمل' (work) that appears in the singular and plural forms. For full family consistency, it should be 'مجموعات محطات العمل'. The current form is understandable but slightly inconsistent with the family pattern."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "مجموعات محطات العمل",
+            "term": "station groups"
+        },
+        {
+            "currentTranslation": "إنتاج جيد",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [
+                        "'جيد' is conversational in register. B2B manufacturing UIs typically use more technical vocabulary."
+                    ],
+                    "score": 4
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'إنتاج جيد' is perfectly natural Arabic but reads as 'nice/fine production' rather than as a technical OEE concept."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "In Arabic manufacturing QA contexts, 'مطابق' (conforming) or 'مقبول' (accepted) are standard terms for production that passes quality inspection. 'جيد' (good) is informal and subjective — it does not clearly distinguish from general praise."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [
+                        "'إنتاج جيد' is a literal translation meaning 'good production' which captures the general sense, but the definition emphasizes output meeting quality standards. Compare Romance-language translations (es 'producción conforme', fr 'production conforme', pt 'produção conforme') which use 'conforming'. 'الإنتاج المطابق' (conforming/compliant production) would more precisely convey that the output meets quality specifications, aligning with the OEE quality-gate meaning."
+                    ],
+                    "score": 4
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "الإنتاج المطابق",
+            "term": "good production"
+        },
+        {
+            "currentTranslation": "وقت الدورة المثالي",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'وقت الدورة المثالي' is grammatically correct but 'زمن الدورة المثالي' is the more idiomatic manufacturing Arabic compound, consistent with the grammar notes."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "The language rules grammar notes use 'زمن الدورة' (zamn al-dawra) as the standard iḍāfah for 'cycle time'. The current translation uses 'وقت الدورة' (waqt al-dawra). Both 'وقت' and 'زمن' mean time, but 'زمن' is the more technical/scientific term (duration/elapsed time) while 'وقت' is more general (moment/occasion). Using 'زمن' would align with the language rules example and SAP/ISO Arabic localization practice."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "زمن الدورة المثالي",
+            "term": "ideal cycle time"
+        },
+        {
+            "currentTranslation": "مدة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "As a standalone UI label, 'المدة' (definite) reads more naturally than the bare indefinite 'مدة'. The indefinite form reads as if mid-sentence ('a duration') rather than as a label heading."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "The translation 'مدة' is indefinite (no definite article). In a UI label context where 'duration' stands as a standalone field name, Arabic typically uses the definite form. Compare the pattern in sibling terms: 'operating time' = 'وقت التشغيل' (definite), 'planned time' = 'الوقت المخطط' (definite)."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "المدة",
+            "term": "duration"
+        },
+        {
+            "currentTranslation": "سبب وردية فارغة",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "The current translation 'سبب وردية فارغة' uses a loose juxtaposition rather than a proper iḍāfah construct. In Arabic, 'reason for X' is best expressed as an iḍāfah chain: 'سبب الوردية الفارغة' (reason-of the-empty-shift). The current form reads as 'a reason, an empty shift' — two indefinite nouns placed side by side without the genitive relationship being clearly marked. Per the grammar notes on iḍāfah construct state, the muḍāf ilayhi should carry the definite article."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [],
+                    "score": 5
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "سبب الوردية الفارغة",
+            "term": "empty shift reason"
+        },
+        {
+            "currentTranslation": "قوائم التحقق",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "Cross-term inconsistency within the 'checklist' family: 'checklist' uses 'المراجعة' and 'checklist groups' uses 'المراجعة', but 'checklists' uses 'التحقق'. The modifier root must be consistent across the family. Should be 'قوائم المراجعة' to match 'قائمة المراجعة' (singular) and 'مجموعات قوائم المراجعة' (groups)."
+                    ],
+                    "score": 3
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "Both 'المراجعة' (review) and 'التحقق' (verification) are valid Arabic equivalents for 'check' in this context, but consistency with the family baseline is required."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "قوائم المراجعة",
+            "term": "checklists"
+        },
+        {
+            "currentTranslation": "غير معلَّق عليه",
+            "dimensions": {
+                "falseFriendCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "formalityCompliance": {
+                    "issues": [],
+                    "score": 5
+                },
+                "idiomaticity": {
+                    "issues": [
+                        "'غير معلَّق عليه' is relatively verbose for a UI status label (4 words). Compare peer translations: 'sin comentar' (es, 2 words), 'non commenté' (fr, 2 words), 'некоментований' (uk, 1 word). A more concise alternative like 'بدون تعليق' (without comment) would be more natural in a compact UI status context while preserving the meaning."
+                    ],
+                    "score": 4
+                },
+                "industryStandardAlignment": {
+                    "issues": [
+                        "The translation 'غير معلَّق عليه' includes a tashkeel mark (shadda+fatha on لَّ). Per Microsoft Arabic Style Guide §4.1.7 and the language rules, tashkeel must be omitted in professional B2B text except for genuine ambiguity. Here, the preposition 'عليه' already disambiguates the passive participle from the 'suspended/hanging' reading, so the diacritic is arguably unnecessary."
+                    ],
+                    "score": 4
+                },
+                "semanticAccuracy": {
+                    "issues": [],
+                    "score": 5
+                }
+            },
+            "language": "ar",
+            "overallScore": 4,
+            "suggestedTranslation": "بدون تعليق",
+            "term": "uncommented"
+        }
+    ],
+    "language": "ar",
+    "summary": {
+        "averageScore": 4.589041095890411,
+        "criticalCount": 3,
+        "passCount": 66,
+        "totalAudited": 73,
+        "warningCount": 4
+    }
+}

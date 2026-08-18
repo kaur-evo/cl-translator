@@ -1,0 +1,311 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistDowntimeTrigger > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups="[object Object],[object Object],[object Object]"
+    groupsorderby="ordering"
+    hiddenitemscount="0"
+    hidesearch="false"
+    hint=""
+    inverted="false"
+    isgroupedselect="true"
+    issingleselect="false"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    max-width="300px"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    min-width="300px"
+    modelvalue=""
+    numericorderby="true"
+    placeholder=""
+    prependtext="Stops:"
+    removenonexistentselections="true"
+    required="false"
+    showemptyarrayasallselected="true"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups=""
+    groupsorderby="name"
+    hiddenitemscount="0"
+    hidesearch="true"
+    hint=""
+    inverted="false"
+    isgroupedselect="false"
+    issingleselect="true"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    modelvalue="EXCEEDS"
+    numericorderby="false"
+    placeholder=""
+    prependtext=""
+    removenonexistentselections="false"
+    required="true"
+    showemptyarrayasallselected="false"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  
+  <evocon-duration-chip-stub
+    class="ma-1"
+    error="false"
+    maxhours="99"
+    modelvalue="1800"
+  />
+  <!--v-if-->
+  
+  
+  
+  
+</div>
+`;
+
+exports[`ChecklistDowntimeTrigger > renders correctly if subType is EXCEEDS 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups="[object Object],[object Object],[object Object]"
+    groupsorderby="ordering"
+    hiddenitemscount="0"
+    hidesearch="false"
+    hint=""
+    inverted="false"
+    isgroupedselect="true"
+    issingleselect="false"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    max-width="300px"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    min-width="300px"
+    modelvalue=""
+    numericorderby="true"
+    placeholder=""
+    prependtext="Stops:"
+    removenonexistentselections="true"
+    required="false"
+    showemptyarrayasallselected="true"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups=""
+    groupsorderby="name"
+    hiddenitemscount="0"
+    hidesearch="true"
+    hint=""
+    inverted="false"
+    isgroupedselect="false"
+    issingleselect="true"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    modelvalue="EXCEEDS"
+    numericorderby="false"
+    placeholder=""
+    prependtext=""
+    removenonexistentselections="false"
+    required="true"
+    showemptyarrayasallselected="false"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  
+  <evocon-duration-chip-stub
+    class="ma-1"
+    error="false"
+    maxhours="99"
+    modelvalue="1800"
+  />
+  <!--v-if-->
+  
+  
+  
+  
+</div>
+`;
+
+exports[`ChecklistDowntimeTrigger > renders correctly if subType is EXCEEDS and setpoint is less than 5 minutes 1`] = `
+<div
+  data-v-app=""
+>
+  
+  
+  
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups="[object Object],[object Object],[object Object]"
+    groupsorderby="ordering"
+    hiddenitemscount="0"
+    hidesearch="false"
+    hint=""
+    inverted="false"
+    isgroupedselect="true"
+    issingleselect="false"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    max-width="300px"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    min-width="300px"
+    modelvalue=""
+    numericorderby="true"
+    placeholder=""
+    prependtext="Stops:"
+    removenonexistentselections="true"
+    required="false"
+    showemptyarrayasallselected="true"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  <selection-input-stub
+    checkbox="true"
+    coloractiveprepend="false"
+    disabled="false"
+    disabledvalues=""
+    emittoggleall="false"
+    emptyequalsallselected="false"
+    error="false"
+    filled="true"
+    groupidkey="id"
+    groups=""
+    groupsorderby="name"
+    hiddenitemscount="0"
+    hidesearch="true"
+    hint=""
+    inverted="false"
+    isgroupedselect="false"
+    issingleselect="true"
+    itemflag=""
+    itemgroupidkey="groupId"
+    items="[object Object],[object Object]"
+    itemsecondarytext=""
+    itemtertiarytext=""
+    itemtext="name"
+    itemvalue="id"
+    loading="false"
+    menuinputclass="ma-1"
+    menuinputtype="primary"
+    modelvalue="EXCEEDS"
+    numericorderby="false"
+    placeholder=""
+    prependtext=""
+    removenonexistentselections="false"
+    required="true"
+    showemptyarrayasallselected="false"
+    someselected="false"
+    totalcount="0"
+    usechips="true"
+  />
+  
+  <evocon-duration-chip-stub
+    class="ma-1"
+    error="true"
+    maxhours="99"
+    modelvalue="240"
+  />
+  <span
+    class="ml-1 text-body-small text-error"
+  >
+    At least {value} min
+  </span>
+  
+  
+  
+  
+</div>
+`;

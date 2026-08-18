@@ -1,0 +1,1382 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChecklistTriggerBlock > CHANGEOVER type > renders correctly if type is CHANGEOVER and intervalTime is less than a minute 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-changeover-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Add interval
+        </span>
+        <!--v-if-->
+        
+        <evocon-duration-chip-stub
+          class="mx-1"
+          data-v-ffffc4c1=""
+          error="true"
+          maxhours="9999"
+          modelvalue="30"
+        />
+        <span
+          class="mx-1 text-body-small text-error"
+          data-v-ffffc4c1=""
+        >
+          At least {value} min
+        </span>
+        
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8 ml-4"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at shift start
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Pause timer during downtime
+        </span>
+        <icon-with-tooltip-stub
+          additionalclasses="ml-1"
+          color=""
+          data-v-ffffc4c1=""
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          iconid=""
+          iconsrc=""
+          size="16"
+          tooltiplocation="top"
+          tooltiptext="This option excludes machine downtime. E.g. if 10 minutes of downtime occur, the checklist will be displayed 10 minutes later"
+        />
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > CHANGEOVER type > renders correctly if type is CHANGEOVER and intervalTime is more than a minute 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-changeover-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Add interval
+        </span>
+        <!--v-if-->
+        
+        <evocon-duration-chip-stub
+          class="mx-1"
+          data-v-ffffc4c1=""
+          error="false"
+          maxhours="9999"
+          modelvalue="3600"
+        />
+        <!--v-if-->
+        
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8 ml-4"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at shift start
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Pause timer during downtime
+        </span>
+        <icon-with-tooltip-stub
+          additionalclasses="ml-1"
+          color=""
+          data-v-ffffc4c1=""
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          iconid=""
+          iconsrc=""
+          size="16"
+          tooltiplocation="top"
+          tooltiptext="This option excludes machine downtime. E.g. if 10 minutes of downtime occur, the checklist will be displayed 10 minutes later"
+        />
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > INTERVAL type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-interval-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at shift start
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at product changeover
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Pause timer during downtime
+        </span>
+        <icon-with-tooltip-stub
+          additionalclasses="ml-1"
+          color=""
+          data-v-ffffc4c1=""
+          icon="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"
+          iconid=""
+          iconsrc=""
+          size="16"
+          tooltiplocation="top"
+          tooltiptext="This option excludes machine downtime. E.g. if 10 minutes of downtime occur, the checklist will be displayed 10 minutes later"
+        />
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > MANUAL type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-manual-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > MANUAL type > renders correctly in mobile view if type is MANUAL 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap flex-column justify-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-manual-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    
+  </div>
+  <div
+    class="d-flex justify-space-between mt-2"
+    data-v-ffffc4c1=""
+  >
+    <menu-with-button-activator-stub
+      buttonclasses="d-none"
+      buttonicon="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+      buttontype="primary-light"
+      closeoncontentclick="true"
+      data-v-ffffc4c1=""
+      disabled="true"
+      hascheckbox="true"
+      iconkey=""
+      issingleselect="false"
+      items=""
+      listwidth="300px"
+      location="bottom right"
+      primarytextfield="text"
+      secondarytextfield=""
+      size="small"
+      tertiarytextfield=""
+      value=""
+      valuekey="isSelected"
+    />
+    <evocon-v-button-stub
+      class="ml-auto mr-1"
+      color=""
+      data-v-ffffc4c1=""
+      disabled="true"
+      icon=""
+      iconcolor=""
+      size="small"
+      text="Reset"
+      textclass=""
+      type="secondary"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > PERIODIC type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-periodic-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > QUANTITY type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-quantity-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at shift start
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Reset at product changeover
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > SHIFT type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-shift-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > STOPREASON type > renders correctly 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    class="d-flex flex-column text-body-medium max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    <span
+      class="d-flex flex-wrap align-center"
+      data-v-ffffc4c1=""
+    >
+      <checklist-downtime-trigger-stub
+        data-v-ffffc4c1=""
+        requirements="[object Object]"
+      />
+    </span>
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Machine location
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <span
+          class="mx-1 flex-grow-1 flex-shrink-1 overflow-hidden"
+          data-v-ffffc4c1=""
+        >
+          <selection-input-stub
+            checkbox="true"
+            coloractiveprepend="false"
+            data-v-ffffc4c1=""
+            disabled="false"
+            disabledvalues=""
+            emittoggleall="false"
+            emptyequalsallselected="false"
+            error="false"
+            filled="true"
+            groupidkey="id"
+            groups=""
+            groupsorderby="name"
+            hiddenitemscount="0"
+            hidesearch="false"
+            hint=""
+            inverted="false"
+            isgroupedselect="false"
+            issingleselect="false"
+            itemflag=""
+            itemgroupidkey="groupId"
+            items=""
+            itemsecondarytext=""
+            itemsmap="[object Object]"
+            itemtertiarytext=""
+            itemtext="name"
+            itemvalue="id"
+            loading="false"
+            menuinputtype="primary"
+            modelvalue="1"
+            numericorderby="false"
+            placeholder=""
+            prependtext="Machine locations:"
+            removenonexistentselections="true"
+            required="false"
+            showemptyarrayasallselected="true"
+            someselected="false"
+            totalcount="0"
+            usechips="true"
+          />
+        </span>
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    <div
+      class="d-flex align-center justify-space-between px-4 py-2 frequency-row pl-8"
+      data-v-ffffc4c1=""
+    >
+      <span
+        class="d-flex align-center text-body-medium additional-item__text"
+        data-v-ffffc4c1=""
+      >
+        <v-icon-stub
+          data-v-ffffc4c1=""
+          disabled="false"
+          end="false"
+          size="16"
+          start="false"
+          tag="i"
+        >
+          M19,15L13,21L11.58,19.58L15.17,16H4V4H6V14H15.17L11.58,10.42L13,9L19,15Z
+        </v-icon-stub>
+        <span
+          class="ml-2"
+          data-v-ffffc4c1=""
+        >
+          and_2
+        </span>
+        <span
+          class="font-weight-medium mx-1"
+          data-v-ffffc4c1=""
+        >
+          Allow manual activation
+        </span>
+        <!--v-if-->
+        <!--v-if-->
+        <!--v-if-->
+      </span>
+      <evocon-v-button-stub
+        color=""
+        data-v-ffffc4c1=""
+        icon="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+        iconcolor=""
+        size="extra-small"
+        text=""
+        textclass=""
+        type="primary"
+      />
+    </div>
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
+
+exports[`ChecklistTriggerBlock > renders correctly without any type selected 1`] = `
+<div
+  data-v-app=""
+>
+  
+  <div
+    data-v-ffffc4c1=""
+  >
+    
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Periodical"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Regular intervals"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Shift time"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Changeover"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Quantity produced"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Downtime"
+      type="neutral"
+    />
+    <evocon-v-chip-stub
+      active="false"
+      allowgrow="false"
+      class="ma-1"
+      data-v-ffffc4c1=""
+      disabled="false"
+      error="false"
+      icon=""
+      iconclass=""
+      imgsrc=""
+      label="Manual activation"
+      type="neutral"
+    />
+    
+  </div>
+  <div
+    class="full-width max-width-100 overflow-hidden"
+    data-v-ffffc4c1=""
+  >
+    
+    
+  </div>
+  <!--v-if-->
+  
+</div>
+`;
