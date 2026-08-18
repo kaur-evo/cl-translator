@@ -12,10 +12,9 @@ Written to be implemented against, by two kinds of reader:
   who reads them, how to write them) and R9 (what to do with each of the eight
   kinds). R10, R13 and R14 cover punctuation, source language and length.
 
-Section 9 is rationale, section 10 is a conformance checklist. Where this
-document and an implementation disagree, this document is wrong and should be
-fixed. It describes an existing working pipeline (`translate_run.py`,
-`prototype/js/model.js`), not a proposal.
+Where this document and an implementation disagree, this document is wrong
+and should be fixed. It describes an existing working pipeline
+(`translate_run.py`, `prototype/js/model.js`), not a proposal.
 
 **Reference implementations.** Producer: `prototype/js/model.js`
 (`collectStrings`). Consumer: `translator/translate_run.py`. Browser-side
@@ -406,8 +405,8 @@ key set of `strings` equals the key set of `fields`.
 `review`, `inputTokens`, `outputTokens`, `costUsd`, `seconds`.
 
 **R19.** A consumer must never pad a missing translation with its source
-text. A partly-failed run returns only what it got, with `type: "error"`. See
-section 9 for why this one matters more than it looks.
+text. A partly-failed run returns only what it got, with `type: "error"`.
+See R25: a padded field defeats the completeness check that blocks the save.
 
 **R20.** A producer applies `strings` over the existing translation map for
 that language. Keys absent from the response keep their existing values.
@@ -448,70 +447,3 @@ since a padded field would pass the completeness check while being untranslated.
 (R14a) leaves the checklist incomplete, and so blocks the save until it is
 resolved. The failure is visible at the point it happens rather than shipping
 a checklist an operator cannot fully read.
-
-## 9. Rationale (non-normative)
-
-**Why string identity rather than field paths.** Field-path identity forces
-you to solve, separately: deduplicating repeated labels, invalidating
-translations when an original is edited, and garbage-collecting translations
-when a task is deleted. String identity dissolves all three: they become
-consequences of the data model rather than features. The cost is R7's
-collision rule, which is a genuine but minor loss: a string used as two kinds
-gets one kind. In practice a string that reads the same in two roles
-translates the same way.
-
-**Why no source language.** Any single declared source language is a lie in a
-multi-factory tenant, and a lie the model would then act on. Per-string
-detection is both more honest and simpler: there is no field to keep accurate,
-no migration when a tenant's assumed base language turns out wrong, and mixed
-checklists need no special handling.
-
-**Why never pad with source text (R19, R25).** Padding is the failure mode
-that hurts most, because it is invisible. An untranslated field left empty is
-obviously unfinished and gets fixed; a field silently holding its source text
-looks complete, ships, and reaches an operator who cannot read it. It also
-defeats R23: a padded field passes the completeness check that is supposed to
-block the save, so the one guard against an unreadable checklist stops
-working.
-
-**Why ordering is load-bearing (R11).** The model returns a bare array of
-translations, mapped back by position. This keeps output tokens minimal —
-worth real money at 40 strings per run, at the cost of an ordering contract.
-A consumer that reorders `fields` breaks every mapping.
-
-## 10. Conformance checklist
-
-Wire-level:
-
-- [ ] result keys == request keys on success (bijective, order-independent)
-- [ ] description, when present, is the last element of `fields`
-- [ ] a `unit` string carrying an international symbol returns unchanged
-- [ ] a `unit` string with a language convention is converted (`tk` → `pcs`)
-- [ ] error path returns partial `strings`, never source-language padding
-- [ ] no request field names a source language
-- [ ] empty `fields` performs no model call
-- [ ] a translation longer than its source is accepted while within its cap
-- [ ] a translation over its kind's cap is reported failed, never truncated
-- [ ] the 10-character unit cap is enforced on the response
-- [ ] every request carries `context.checklistName`
-- [ ] a partial run carries the checklist's other strings as context
-- [ ] no context string appears in the response
-- [ ] the glossary passed matches the target language, never a fixed one
-- [ ] a glossary term appearing in a source string survives into the output
-- [ ] the glossary reaches the translate call, not only the review call
-
-Identity-level (all observable through the producer's collected set):
-
-- [ ] a string used by two fields appears exactly once in `fields`
-- [ ] `"Hea"` and `"hea "` are two units
-- [ ] editing an original leaves its old translation unreachable and the new
-      text missing
-- [ ] deleting a task removes only strings no surviving field uses
-- [ ] deleting a fully-translated task leaves completeness unchanged
-- [ ] a partial run leaves unsent units untouched
-
-Behaviour-level:
-
-- [ ] a checklist with an incomplete language refuses to save
-- [ ] a missing string reads as missing to the admin, never as its source text
-- [ ] a string dropped for exceeding its limit leaves the language incomplete
