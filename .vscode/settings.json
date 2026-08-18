@@ -1,0 +1,19 @@
+{
+  // Claude and a person edit these files in parallel. A buffer with unsaved
+  // changes blocks VS Code from reloading the file when it changes on disk,
+  // and then writes the stale version back on the next save. Auto-saving
+  // quickly keeps buffers clean, so external changes appear instead of being
+  // overwritten.
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // Warn instead of silently clobbering if the two do collide anyway.
+  "files.saveConflictResolution": "askUser",
+
+  // Markdown is the shared surface here; keep it from reformatting on save,
+  // which would otherwise produce spurious diffs against Claude's edits.
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "files.trimTrailingWhitespace": false
+  }
+}
