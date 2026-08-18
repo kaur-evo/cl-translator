@@ -161,6 +161,14 @@ Every phrase comes with an explicit "type" — never guess what a string is:
 - "option": one answer choice in a select list; keep parallel phrasing across options.
 - "checklist description": the standard-operating-procedure text; always the last phrase.
 
+Each phrase's "type" also fixes its maximum length. Stay within it:
+- "checklist name" 50, "unit" 10
+- "task", "out-of-range message", "no-answer message", "option" 200
+- "task description", "checklist description" 500
+Aim for the source's own length and never pad. Where a faithful translation
+would not fit, shorten it: drop articles, use the accepted abbreviation, use
+the shorter synonym. A translation that does not fit its field is unusable.
+
 Do not modify end-of-sentence punctuation. Return the translations in the same order as the input.
 
 Phrases:
