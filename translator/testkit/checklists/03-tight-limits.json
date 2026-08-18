@@ -1,0 +1,58 @@
+{
+  "id": 103,
+  "name": "Hügieenikontroll pakkeliinil enne vahetuse algust",
+  "description": "Enne vahetuse algust kontrolli kõik pakkeliini pinnad, tööriistad ja konveierilindid. Pese ja desinfitseeri kõik kokkupuutepinnad vastavalt HACCP plaanile. Dokumenteeri iga kõrvalekalle ja teavita kvaliteedijuhti enne liini käivitamist. Kui desinfitseerimisvahendi kontsentratsioon on alla nõutud taseme, ära käivita liini.",
+  "active": true,
+  "_notes": "Length pressure. The name is 48 of 50 characters and the unit fields are the tightest in the set, so a target language that runs longer than Estonian should force shortening rather than overflow.",
+  "elements": [
+    {
+      "type": "MEASUREMENT",
+      "name": "Desinfitseerimisvahendi kontsentratsioon",
+      "description": "Mõõda kontsentratsioon testribaga kolmest punktist liini pikkuses ja sisesta madalaim tulemus.",
+      "unit": "ppm",
+      "warningMessage": "Ära käivita liini. Korda desinfitseerimist ja teavita kvaliteedijuhti kohe."
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Pesuvee temperatuur",
+      "unit": "°C",
+      "warningMessage": "Tõsta vee temperatuur nõutud tasemele enne jätkamist."
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Kontrolli tükkide arvu kastis",
+      "unit": "tk"
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Konveierilindi kiirus",
+      "unit": "m/min"
+    },
+    {
+      "type": "YES_NO",
+      "name": "Kas kõik kokkupuutepinnad on desinfitseeritud vastavalt HACCP plaanile?",
+      "warningMessage": "Peata liin ja teavita kvaliteedijuhti."
+    },
+    {
+      "type": "MULTI_SELECT",
+      "name": "Millised alad kontrolliti?",
+      "selectionOptions": [
+        {
+          "value": "Konveier"
+        },
+        {
+          "value": "Pakkemasin"
+        },
+        {
+          "value": "Kaalud"
+        },
+        {
+          "value": "Tööriistad"
+        },
+        {
+          "value": "Põrand"
+        }
+      ]
+    }
+  ]
+}

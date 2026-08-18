@@ -1,0 +1,55 @@
+{
+  "id": 101,
+  "name": "Ohutuskontroll enne tootevahetust",
+  "description": "Veenduge, et olete teostanud ja teavitanud kõikidest ohutusmeetmetest enne uue toote seadistamist. Kui midagi on puudu, peatage liin ja teavitage vahetuse vanemat.",
+  "active": true,
+  "_notes": "Baseline checklist. Estonian throughout, fragments and full sentences mixed, two tasks share the options Hea/Halb so dedup must collapse them.",
+  "elements": [
+    {
+      "type": "YES_NO",
+      "name": "Kas masin puhastati?",
+      "description": "Kontrolli, et liinil ei ole eelmise toote jääke.",
+      "warningMessage": "Puhasta liin enne jätkamist."
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Mis oli toote kaal?",
+      "description": "Kaalu kolm juhuslikku pakendit otse liinilt ja sisesta aritmeetiline keskmine.",
+      "unit": "kg",
+      "warningMessage": "Eemalda partii ja märgi praaki, kui kaal on vahemikust väljas."
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Mitu pakendit valmis?",
+      "unit": "tk"
+    },
+    {
+      "type": "SINGLE_SELECT",
+      "name": "Milline oli toote välimus vasakult?",
+      "selectionOptions": [
+        {
+          "value": "Hea"
+        },
+        {
+          "value": "Halb"
+        }
+      ]
+    },
+    {
+      "type": "SINGLE_SELECT",
+      "name": "Milline oli toote välimus paremalt?",
+      "selectionOptions": [
+        {
+          "value": "Hea"
+        },
+        {
+          "value": "Halb"
+        }
+      ]
+    },
+    {
+      "type": "CHECK",
+      "name": "Lülita masin välja"
+    }
+  ]
+}

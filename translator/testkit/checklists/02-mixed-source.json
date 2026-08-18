@@ -1,0 +1,55 @@
+{
+  "id": 102,
+  "name": "Pinnakvaliteedi kontroll",
+  "description": "Hinda toote pinda hea valgustuse all. Märgi kõik täheldatud defektid.",
+  "active": true,
+  "_notes": "Mixed source languages inside one checklist: Estonian tasks with Russian option labels, typed by a Russian-speaking shift lead. Tests per-string language detection.",
+  "elements": [
+    {
+      "type": "SINGLE_SELECT",
+      "name": "Mis oli toote välimus?",
+      "description": "Hinda toote välimust visuaalselt hea valgustuse all.",
+      "selectionOptions": [
+        {
+          "value": "Плохой"
+        },
+        {
+          "value": "Хороший"
+        },
+        {
+          "value": "Отличный"
+        }
+      ]
+    },
+    {
+      "type": "MULTI_SELECT",
+      "name": "Millised defektid olid pinnal näha?",
+      "description": "Märgi kõik täheldatud defektid; vali mitu, kui vajalik.",
+      "selectionOptions": [
+        {
+          "value": "Царапины"
+        },
+        {
+          "value": "Пузыри"
+        },
+        {
+          "value": "Värvimuutus"
+        },
+        {
+          "value": "Mõlgid"
+        }
+      ]
+    },
+    {
+      "type": "MEASUREMENT",
+      "name": "Kontrolli pinna temperatuuri",
+      "description": "Mõõda kolmes punktis üle laiuse pärast tootevahetust.",
+      "unit": "°C",
+      "warningMessage": "Eemalda partii ja märgi praaki, kui väärtus on vahemikust väljas."
+    },
+    {
+      "type": "TEXT",
+      "name": "Lisa kommentaar, kui midagi ebatavalist"
+    }
+  ]
+}
