@@ -100,6 +100,38 @@ def find_glossary_matches(english_phrase):
     return matches
 
 
+# Character limits per kind, from the checklist editor. A translation that
+# exceeds its field's limit cannot be stored, so these are enforced on the
+# response, not merely stated in the prompt. See R14 in TRANSLATION-GUIDE.md.
+KIND_LIMITS = {
+    "checklist name": 50,
+    "task": 200,
+    "task description": 500,
+    "unit": 10,
+    "out-of-range message": 200,
+    "no-answer message": 200,
+    "option": 200,
+    "checklist description": 500,
+}
+DEFAULT_LIMIT = 200
+
+
+def limit_for(kind):
+    return KIND_LIMITS.get(kind, DEFAULT_LIMIT)
+
+
+SHORTEN_PROMPT = """These {language} translations are too long for the field they go into.
+Shorten each one to fit its limit while keeping its meaning and its type's
+conventions. Drop articles, use the accepted abbreviation, use the shorter
+synonym. Do not summarise away information; if it truly cannot fit, get as
+close as you can.
+
+Return them in the same order as the input.
+
+{payload}
+"""
+
+
 TRANSLATE_TOOLS = [{
     "name": "store_translations",
     "description": "Store translated strings",
@@ -174,6 +206,50 @@ Do not modify end-of-sentence punctuation. Return the translations in the same o
 Phrases:
 {payload}
 """
+
+def enforce_limits(language, fields, translations, model):
+    """Bring over-length translations within their field's limit (R14).
+
+    One shortening pass over just the offenders, then anything still too long
+    is dropped: a string that cannot be stored is a failed translation, and
+    leaving it missing is better than truncating it, because a truncated
+    string looks finished and never gets revisited (R19, R26).
+    """
+    over = [i for i, t in enumerate(translations)
+            if len(t) > limit_for(fields[i]["kind"])]
+    if not over:
+        return translations, []
+
+    log(f"✂️  {len(over)} translation(s) over the field limit — shortening")
+    payload = json.dumps(
+        [{"type": fields[i]["kind"], "limit": limit_for(fields[i]["kind"]),
+          "too_long": translations[i]} for i in over],
+        ensure_ascii=False, indent=2,
+    )
+    try:
+        resp = client.messages.create(
+            model=model, max_tokens=4096,
+            messages=[{"role": "user", "content": SHORTEN_PROMPT.format(
+                language=language, payload=payload)}],
+            tools=TRANSLATE_TOOLS,
+            tool_choice={"type": "tool", "name": "store_translations"},
+        )
+        account(model, resp)
+        block = next(b for b in resp.content if b.type == "tool_use")
+        fixed = block.input.get("translations", [])
+        if isinstance(fixed, list) and len(fixed) == len(over):
+            for slot, text in zip(over, fixed):
+                if isinstance(text, str) and len(text) <= limit_for(fields[slot]["kind"]):
+                    translations[slot] = text
+    except Exception as e:
+        log(f"⚠️ Shortening pass failed: {e}")
+
+    still = [i for i in over if len(translations[i]) > limit_for(fields[i]["kind"])]
+    for i in still:
+        lim = limit_for(fields[i]["kind"])
+        log(f"❌ {fields[i]['kind']}: {len(translations[i])} chars, limit {lim} — left untranslated")
+    return translations, still
+
 
 REVIEWER_ROLE = "You are a translation quality reviewer specialising in OEE manufacturing software."
 
@@ -322,12 +398,18 @@ def main():
                     applied += 1
         log(f"📝 Review applied {applied} change(s)" if applied else "✅ Review: no changes needed")
 
+    # After review, since a suggestion can push a string back over its limit.
+    translations, too_long = enforce_limits(language, fields, translations, translate_model)
+
     seconds = round(time.time() - t0, 2)
     log(f"⏱  {seconds}s · {usage['in']+usage['out']} tokens · ${usage['cost']:.4f}")
 
     emit({
         "type": "result",
-        "strings": {keys[i]: translations[i] for i in range(len(keys))},
+        # Strings still over their field limit are omitted: they cannot be
+        # stored, so they stay missing rather than being truncated (R14a).
+        "strings": {keys[i]: translations[i]
+                    for i in range(len(keys)) if i not in set(too_long)},
         "log": log_buffer,
         "stats": {
             "translateModel": translate_model,

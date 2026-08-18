@@ -431,21 +431,23 @@ what changed rather than checklist size.
 
 ## 8. Incomplete translations
 
-**R23.** Missing translations never block saving. A checklist may be saved
-with any number of languages incomplete.
+**R23.** A checklist cannot be saved with an incomplete translation. Every
+language attached to it must have every string translated. The admin either
+fills the gaps, generates them, or removes the language.
 
-**R24.** A string with no translation in the operator's language falls back to
-the **original string**, the same rule Shift View already applies to a wholly
-untranslated language.
+**R24.** Incompleteness is therefore a transient editing state, not a stored
+one. It exists while the admin is working, and the save is what refuses it.
 
-**R25.** The fallback makes no claim about what language the original is in
-(R12). A checklist mixing source languages string by string falls back
-per string, and the rule does not change.
-
-**R26.** A missing translation must remain visibly missing to the admin.
+**R25.** A missing translation must remain visibly missing to the admin.
 Together with R19: never write source text into a translation slot, because a
 field holding its own source text is indistinguishable from a completed
-translation and will never be revisited.
+translation and will never be revisited. This is what makes R23 enforceable,
+since a padded field would pass the completeness check while being untranslated.
+
+**R26.** A language whose translation is dropped for exceeding a field limit
+(R14a) leaves the checklist incomplete, and so blocks the save until it is
+resolved. The failure is visible at the point it happens rather than shipping
+a checklist an operator cannot fully read.
 
 ## 9. Rationale (non-normative)
 
@@ -464,12 +466,13 @@ detection is both more honest and simpler: there is no field to keep accurate,
 no migration when a tenant's assumed base language turns out wrong, and mixed
 checklists need no special handling.
 
-**Why never pad with source text (R19, R26).** Padding is the failure mode
+**Why never pad with source text (R19, R25).** Padding is the failure mode
 that hurts most, because it is invisible. An untranslated field left empty is
 obviously unfinished and gets fixed; a field silently holding its source text
-looks complete, ships, and reaches an operator who cannot read it. The whole
-point of the fallback in R24 is that it happens at *display* time, where it is
-recoverable, and never at *storage* time, where it is not.
+looks complete, ships, and reaches an operator who cannot read it. It also
+defeats R23: a padded field passes the completeness check that is supposed to
+block the save, so the one guard against an unreadable checklist stops
+working.
 
 **Why ordering is load-bearing (R11).** The model returns a bare array of
 translations, mapped back by position. This keeps output tokens minimal —
@@ -509,6 +512,6 @@ Identity-level (all observable through the producer's collected set):
 
 Behaviour-level:
 
-- [ ] a checklist saves while a language is incomplete
-- [ ] a missing string displays its original, and still reads as missing to
-      the admin
+- [ ] a checklist with an incomplete language refuses to save
+- [ ] a missing string reads as missing to the admin, never as its source text
+- [ ] a string dropped for exceeding its limit leaves the language incomplete

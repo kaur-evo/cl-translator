@@ -20,6 +20,31 @@ window.DirectBackend = (function () {
   };
   const DEFAULT_PRICE = { in: 5.0, out: 25.0 };
 
+  // Character limits per kind, from the checklist editor. Enforced on the
+  // response, not merely stated in the prompt (R14 in TRANSLATION-GUIDE.md).
+  const KIND_LIMITS = {
+    "checklist name": 50,
+    "task": 200,
+    "task description": 500,
+    "unit": 10,
+    "out-of-range message": 200,
+    "no-answer message": 200,
+    "option": 200,
+    "checklist description": 500,
+  };
+  const limitFor = (kind) => KIND_LIMITS[kind] || 200;
+
+  const SHORTEN_PROMPT = (language, payload) =>
+`These ${language} translations are too long for the field they go into.
+Shorten each one to fit its limit while keeping its meaning and its type's
+conventions. Drop articles, use the accepted abbreviation, use the shorter
+synonym. Do not summarise away information; if it truly cannot fit, get as
+close as you can.
+
+Return them in the same order as the input.
+
+${payload}`;
+
   const TRANSLATE_TOOLS = [{
     name: "store_translations",
     description: "Store translated strings",
@@ -185,7 +210,45 @@ ${JSON.stringify(pairs, null, 2)}` }],
       log(applied ? `📝 Review applied ${applied} change(s)` : `✅ Review: no changes needed`);
     }
 
-    fields.forEach((f, i) => { strings[f.key] = translations[i]; });
+    // After review, since a suggestion can push a string back over its limit.
+    const over = translations
+      .map((t, i) => (t.length > limitFor(fields[i].kind) ? i : -1))
+      .filter(i => i >= 0);
+    if (over.length) {
+      log(`✂️  ${over.length} translation(s) over the field limit — shortening`);
+      try {
+        const payload = JSON.stringify(over.map(i => ({
+          type: fields[i].kind, limit: limitFor(fields[i].kind), too_long: translations[i],
+        })), null, 2);
+        const sResp = await call(cfg.key, {
+          model: cfg.translateModel, max_tokens: 4096,
+          messages: [{ role: "user", content: SHORTEN_PROMPT(language, payload) }],
+          tools: TRANSLATE_TOOLS,
+          tool_choice: { type: "tool", name: "store_translations" },
+        });
+        account(cfg.translateModel, sResp);
+        const fixed = (toolInput(sResp, "store_translations") || {}).translations || [];
+        if (fixed.length === over.length) {
+          over.forEach((slot, k) => {
+            if (typeof fixed[k] === "string" && fixed[k].length <= limitFor(fields[slot].kind)) {
+              translations[slot] = fixed[k];
+            }
+          });
+        }
+      } catch (e) {
+        log(`⚠️ Shortening pass failed: ${e.message}`);
+      }
+    }
+
+    // Anything still over its limit cannot be stored, so it stays missing
+    // rather than being truncated: a cut-off string looks finished.
+    fields.forEach((f, i) => {
+      if (translations[i].length > limitFor(f.kind)) {
+        log(`❌ ${f.kind}: ${translations[i].length} chars, limit ${limitFor(f.kind)} — left untranslated`);
+        return;
+      }
+      strings[f.key] = translations[i];
+    });
     const seconds = Math.round((performance.now() - t0) / 10) / 100;
     log(`⏱  ${seconds}s · ${usage.in + usage.out} tokens · $${usage.cost.toFixed(4)}`);
     return { strings, stats: stats(cfg, usage, seconds) };
