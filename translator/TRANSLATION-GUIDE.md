@@ -120,48 +120,6 @@ not a fact about any individual string. Real tenants might mix languages inside 
 checklist, a task typed in Russian among Estonian ones, and both are equally
 original. Do not assume the strings in one run share a source language.
 
-## Match the rest of the checklist
-
-Every run tells you which checklist the strings belong to, and on a partial
-run it also carries the strings you are *not* translating:
-
-- the checklist name, always
-- strings of this checklist already translated into the target language
-- strings of this checklist not yet translated
-
-This is reference material. Never translate it, never return it.
-
-Use it to keep the checklist reading as one document. A partial run otherwise
-sees orphaned fragments: `Halb` alone could be an option in a visual quality
-check or a rating of a surface finish, and the operator reads it in a list
-beside options translated during an earlier run. Match that existing wording.
-
-## Match the surrounding Evocon UI
-
-Evocon's interface is already translated into 25+ languages, and a checklist
-is read *inside* that interface. A task saying "mark the scrap" must use the
-same word as the Shift View scrap button, or the operator sees two names for
-one thing on one screen.
-
-Each run is given the Evocon UI terminology for the target language:
-
-```json
-"glossary": {
-  "Scrap": "Praak",
-  "Downtime": "Seisakud",
-  "Changeover": "Tootevahetus",
-  "Station": "Töökeskus",
-  "Not applicable": "Pole kohaldatav"
-}
-```
-
-- **A glossary hit beats a better general translation.** Matching the
-  surrounding UI matters more than the most natural rendering in isolation.
-- **A miss contributes nothing.** Tenant text is free-form and mostly will not
-  match. That is expected, not a failure.
-- **It never overrides the tenant's own wording.** The glossary settles what
-  an Evocon concept is called, not how the tenant phrased their instruction.
-
 ## Never return the source text as a translation
 
 If you cannot translate a string, leave it out. Returning the source text
