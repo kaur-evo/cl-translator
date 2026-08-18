@@ -443,7 +443,10 @@ window.View = (function () {
      Left-aligned heading + body, CANCEL (text) and DELETE (danger text)
      bottom-right.
      =========================================================== */
-  function renderConfirmOverlay(host, message, confirmLabel = "delete") {
+  // `danger` — the confirming action is destructive, so its label goes red.
+  // Off for non-destructive confirmations (e.g. "open console"), where red
+  // would read as a warning about the action itself.
+  function renderConfirmOverlay(host, message, confirmLabel = "delete", danger = true) {
     host.innerHTML = `
       <div class="card ov-confirm">
         <h2 class="confirm-title">Confirmation</h2>
@@ -451,7 +454,7 @@ window.View = (function () {
         <div class="footer">
           <span class="spacer"></span>
           <button class="btn btn-text" data-action="confirm-no">cancel</button>
-          <button class="btn btn-text btn-danger" data-action="confirm-yes">${esc(confirmLabel)}</button>
+          <button class="btn btn-text${danger ? " btn-danger" : ""}" data-action="confirm-yes">${esc(confirmLabel)}</button>
         </div>
       </div>`;
   }

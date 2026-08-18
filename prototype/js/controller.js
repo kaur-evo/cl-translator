@@ -22,14 +22,31 @@
      Styled overlay rather than the browser's native confirm(). The pending
      action is held until the user answers. */
   let confirmAction = null;
-  function askConfirm(message, onYes, confirmLabel = "delete") {
+  function askConfirm(message, onYes, confirmLabel = "delete", danger = true) {
     confirmAction = onYes;
-    View.renderConfirmOverlay(els.ovConfirm, message, confirmLabel);
+    View.renderConfirmOverlay(els.ovConfirm, message, confirmLabel, danger);
     els.ovConfirm.hidden = false;
   }
   function closeConfirm() {
     els.ovConfirm.hidden = true;
     confirmAction = null;
+  }
+
+  /* Real mode on static hosting needs the viewer's own key. The proxy path
+     reads ANTHROPIC_API_KEY from its own environment, so it never needs one,
+     and mock mode never calls anything. */
+  function needsKey() {
+    return !con.mock && !HAS_PROXY && !sessionStorage.getItem(KEY_STORE);
+  }
+  // Offer the console rather than just refusing: the key field lives there, so
+  // the dialog's action is the fix, not an acknowledgement.
+  function promptForKey() {
+    askConfirm(
+      "Real translation needs an Anthropic API key. Add one in the console, " +
+      "or switch Translation to mock to try the flow without calling the API.",
+      () => { closeConfirm(); openConsole(); renderConsole();
+              els.console.querySelector(".con-key")?.focus(); },
+      "open console", false);
   }
 
   // Animate a snackbar out and remove it. Safe to call twice (the timeout and
@@ -72,7 +89,7 @@
     translateModel: "claude-haiku-4-5",
     reviewModel: "claude-opus-4-8",
     review: true,
-    mock: true,   // default: fake local translation, no proxy/key/cost. Flip to real to call Claude.
+    mock: false,  // default: real translation. Flip to mock for a fake local run with no proxy/key/cost.
     // Which loading treatment a generating language shows on the base view:
     // "cta" = ring replaces the GENERATE label; "separate" = ring beside the
     // language name, no GENERATE button. A design variant, not a behaviour one.
@@ -354,6 +371,10 @@
   // including a sibling language finishing first.
   function startBackgroundGenerate(lang, onlyMissing) {
     if (generatingLangs.has(lang.name)) return;
+    // Nothing can translate without a key on static hosting, so say so BEFORE
+    // the row starts spinning. Failing mid-run would spin, fail, and leave a
+    // bare "Translation failed" that never mentions the key.
+    if (needsKey()) { promptForKey(); return; }
     generatingLangs.add(lang.name);
     showBase(); // render the row immediately so it shows loading right away
     notify("Translation started");
@@ -484,6 +505,10 @@
         // the confirmation that it started, so there's no need to hold the
         // dialog open on a fake spinner first.
         if (!pendingLang || t.disabled) break;
+        // Ask for the key BEFORE the language enters the model, or an aborted
+        // generate would leave a language with no strings: invisible on the
+        // base view but missing from the picker.
+        if (needsKey()) { promptForKey(); break; }
         const lang = pendingLang;
         Model.addLanguage(lang);
         closeOverlay();
