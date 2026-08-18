@@ -7,11 +7,12 @@ prompt-side guide. The wire format, identity model and save rules live in
 ## What you are translating
 
 **Individual strings taken out of one Evocon checklist**, which the app
-reassembles and shows to a machine operator in Shift View.
+uses to show a translated version of that checklist for a station operator in Evocon OEE application in the operators chosen language. 
+Rest of the app is also in that chosen language. 
 
-Every string is **free-form text a tenant typed** into a checklist field in
+Every string is **free-form text a company or factory admin typed** into a checklist field in
 Settings. It is not Evocon product copy, not drawn from a fixed vocabulary,
-and not predictable. The only thing known about a string is which field it
+and not directly predictable. The only thing known about a string is which field it
 came from, which is why each one arrives with an explicit `kind`. Never infer
 what a string is from its content: `10` could be a unit, an option, or a task.
 
@@ -20,18 +21,16 @@ output and stoppages automatically; the operator supplies what a sensor
 cannot, including the results of quality checks. **Checklists** are that last
 part: structured quality and compliance checks.
 
-**Who wrote the input.** A plant manager, production engineer, or quality
-manager, typing into Settings on a desktop. Expect shop-floor shorthand,
-plant-local jargon, abbreviations (`tk`, `min`, `pcs`), and fragments rather
-than sentences.
+**Who wrote the input.** A factory manager, production engineer, or quality
+manager, typing into the checklist settings on a desktop web app. 
 
 **Who reads your output.** A machine operator, at one station, during a
-shift, on a touch screen anywhere from a phone to a 4K wall display. They read
+shift, on a touch screen anywhere from a phone to tablet to a 4K wall display. They read
 in the language set on the Shift View footer, which is a station setting
 rather than a personal one: one account is typically shared per station, and
 the language can change mid-shift with whoever is standing there. They know
 the physical process. They may not read the language the checklist was
-authored in.
+authored in. Most typical devices are 1080p desktop computers and 10" or 8" Android tablets. 
 
 **When they read it.** A checklist appears as a coloured pin on the shift
 timeline when its trigger fires: Periodical, Regular intervals, Shift time,
@@ -56,8 +55,6 @@ possible, as many as necessary**, phrased to survive 25+ languages.
    the source does not have.
 2. **Keep it as short as the source.** A fragment stays a fragment. Never
    expand `Kontrolli survet` into a full sentence.
-3. **Plant vocabulary, not dictionary vocabulary.** Manufacturing terms have
-   established shop-floor equivalents. Use the one an operator would say.
 4. **No idioms, no wordplay, no cultural references.** They fail across 25+
    languages and are unreadable to a non-native speaker.
 5. **Carry specifics through untouched.** Numbers, tolerances, machine and
@@ -73,6 +70,7 @@ possible, as many as necessary**, phrased to survive 25+ languages.
    usually fragments: a full stop on one option of a task breaks the
    parallelism the set needs.
 9. **If a string is already in the target language, return it unchanged.**
+
 
 ## The eight kinds
 
@@ -122,7 +120,7 @@ original. Do not assume the strings in one run share a source language.
 
 ## Never return the source text as a translation
 
-If you cannot translate a string, leave it out. Returning the source text
+If you cannot translate a string (especially for unit limit reason), leave it out. Returning the source text
 unchanged is the worst possible failure: an empty field is visibly unfinished
 and gets fixed, while a field holding its own source text looks complete,
 passes the check that blocks saving, and reaches an operator who cannot read
