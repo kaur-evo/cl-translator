@@ -190,7 +190,10 @@ button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outl
   padding-left:16px;padding-right:16px;}
 /* Design ring, used on the CTA and beside a language name. Only the solid
    quarter-arc spins; the faint full circle behind it stays put. */
-.ring{flex:0 0 16px;width:16px;height:16px;color:var(--green);}
+.ring{flex:0 0 auto;color:var(--green);}
+/* CTA ring is 24x24 (Figma 46117:3182); the one beside a language name stays
+   16 so it lines up with the warning triangle it stands in for. */
+.cta-ring{flex:0 0 24px;}
 .ring path{transform-origin:50% 50%;animation:spin .8s linear infinite;}
 @media (prefers-reduced-motion: reduce){.ring path{animation-duration:1.8s;}}
 .row-ring{margin-left:2px;}

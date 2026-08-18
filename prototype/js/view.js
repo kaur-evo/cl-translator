@@ -50,8 +50,8 @@ window.View = (function () {
      mask with a fixed id, which would collide once several rows spin at the
      same time, so the same shape is drawn with stroke-dasharray instead. The
      colour comes from currentColor, so it stays green wherever it is used. */
-  const ring = (cls = "") =>
-    `<svg class="ring${cls ? " " + cls : ""}" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">` +
+  const ring = (cls = "", size = 16) =>
+    `<svg class="ring${cls ? " " + cls : ""}" viewBox="0 0 16 16" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">` +
       `<circle cx="8" cy="8" r="6.8" stroke="currentColor" stroke-width="2.4" opacity=".3"/>` +
       `<path d="M8 1.2A6.8 6.8 0 0 0 1.2 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>` +
     `</svg>`;
@@ -217,7 +217,7 @@ window.View = (function () {
       const genBtn = incomplete
         ? (generating
             ? (ctaVariant
-                ? `<button class="btn btn-secondary row-gen is-generating" data-action="gen-lang" data-lang="${esc(l.name)}" disabled aria-label="Translating ${esc(l.name)}">${ring()}</button>`
+                ? `<button class="btn btn-secondary row-gen is-generating" data-action="gen-lang" data-lang="${esc(l.name)}" disabled aria-label="Translating ${esc(l.name)}">${ring("cta-ring", 24)}</button>`
                 : "")
             : `<button class="btn btn-secondary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`)
         : "";
