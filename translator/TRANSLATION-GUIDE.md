@@ -8,9 +8,10 @@ Written to be implemented against, by two kinds of reader:
 
 - **An engine integrating this pipeline** needs sections 1–8. These are
   normative, and rules are numbered (`R1`, `R2`, …) so they can be cited.
-- **An agent doing the translating** needs section 0, which supplies the
-  domain context the strings themselves have been stripped of, plus R1's kind
-  table, R9 (units), R10 (punctuation) and R13–R14 (source language, length).
+- **An agent doing the translating** needs section 0 for the domain context
+  the strings themselves have been stripped of, then R9 for how to handle each
+  of the eight kinds, plus R10 (punctuation) and R13–R14 (source language,
+  length).
 
 Section 9 is rationale, section 10 is a conformance checklist. Where this
 document and an implementation disagree, this document is wrong and should be
@@ -190,14 +191,24 @@ pass it to the model and must not infer it from content. `°C` is knowable as
 a unit only because the producer said so; `10` could be a unit, an option, or
 a task title.
 
-**R9.** Unit handling is kind-driven:
+**R9.** Each kind carries its own handling. Section 1 says which kinds exist
+and section 0 says where they appear; this is what to do with each one.
 
-- a unit with a language-specific convention is translated to the target
-  language's convention (`tk` → English `pcs`)
-- an international symbol is returned unchanged: `°C`, `kg`, `%`, `mm`, …
+| `kind` | Handling |
+|--------|----------|
+| `checklist name` | Keep it short. It is scanned in a list beside other checklists and in report tables, so it must stay distinguishable from its neighbours and short enough not to truncate. |
+| `task` | The instruction the operator acts on. Imperative and concrete. Highest stakes in the set: misreading it means the wrong physical action on a machine. |
+| `task description` | Supporting detail below the task. Same register as the task, but it may run longer, and it is only read when the task line alone is not enough. |
+| `unit` | Convert to the target language's convention where one exists (`tk` → `pcs`). Return international symbols unchanged: `°C`, `kg`, `%`, `mm`, `bar`. Never expand a symbol into a word: the field is ten characters wide. |
+| `out-of-range message` | Fires the instant a measurement falls outside min/max. The operator has just entered a bad reading, so say what to do about it, not merely that something is wrong. |
+| `no-answer message` | Fires when the operator answers "No" on a Yes/No task, which by convention means the check failed. Same job as out-of-range. |
+| `option` | One choice in a select list, read as a set at a glance. Translate the options of a task as a group: keep them mutually distinguishable and grammatically parallel. If the source options are all nouns, the translations are all nouns. |
+| `checklist description` | The standard-operating-procedure text, and the only string an operator may read at length. Closest to ordinary prose; still no padding. |
 
 **R10.** End-of-sentence punctuation is preserved as-is. A source ending
-without a full stop returns without one.
+without a full stop returns without one. This matters most for the short
+kinds: `task` and `option` are usually fragments, and adding a full stop to
+one of a task's options breaks the parallelism R9 requires.
 
 ## 4. Source language is not an input
 
