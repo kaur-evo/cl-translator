@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`ImprovementProject > renders correctly 1`] = `
-<router-view-stub
-  data-v-250f4461=""
-/>
-`;

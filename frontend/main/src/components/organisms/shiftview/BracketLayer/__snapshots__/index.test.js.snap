@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`BracketLayer > renders correctly 1`] = `<!--v-if-->`;

@@ -1,8 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`FactoriesOverviewTimelinesChart > renders correctly 1`] = `
-<timeline-view-group-regular-template-stub
-  id="1"
-  items=""
-/>
-`;

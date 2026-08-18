@@ -1,2 +1,0 @@
-export const NO_TRACKING_DATA = 'NO_TRACKING_DATA';
-export const STOP_REASON = 'STOP_REASON';

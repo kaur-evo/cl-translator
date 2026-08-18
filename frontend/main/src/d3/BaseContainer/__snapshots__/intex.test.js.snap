@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`BaseContainer > if drawSVGContainer results in valid snapshot of BaseContainer 1`] = `"<g class="vertical-axes"></g><g class="bottom-axis"></g><g transform="translate(2,3)" clip-path="url(#clip)" class="graph-plot"><defs><clipPath id="clip"><rect width="194" height="90"></rect></clipPath></defs></g>"`;

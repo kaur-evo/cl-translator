@@ -1,2 +1,0 @@
-export const ERROR_REQUEST_TIMEOUT = 408;
-export const ERROR_UNAUTHORIZED = 401;

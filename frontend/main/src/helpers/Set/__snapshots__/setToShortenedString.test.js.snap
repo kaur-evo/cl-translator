@@ -1,5 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`setToShortenedString > if it does not return "more" test when set size is at or below limit 1`] = `"test1, test2"`;
-
-exports[`setToShortenedString > if it returns "more" test when set size is above limit 1`] = `"test1, test2 + 2 more"`;
