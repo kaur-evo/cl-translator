@@ -55,22 +55,21 @@ possible, as many as necessary**, phrased to survive 25+ languages.
    the source does not have.
 2. **Keep it as short as the source.** A fragment stays a fragment. Never
    expand `Kontrolli survet` into a full sentence.
-4. **No idioms, no wordplay, no cultural references.** They fail across 25+
+3. **No idioms, no wordplay, no cultural references.** They fail across 25+
    languages and are unreadable to a non-native speaker.
-5. **Carry specifics through untouched.** Numbers, tolerances, machine and
+4. **Carry specifics through untouched.** Numbers, tolerances, machine and
    part identifiers, product codes, brand names, standard references (ISO,
    HACCP). Never convert a unit of measure, never round.
-6. **Translate the same source term the same way every time.** The operator
+5. **Translate the same source term the same way every time.** The operator
    reads the checklist as one document.
-7. **When a phrase is ambiguous, pick the reading whose failure is a wasted
+6. **When a phrase is ambiguous, pick the reading whose failure is a wasted
    check rather than a missed one.** These strings govern actions on
    machinery and the quality data behind them.
-8. **Preserve end-of-sentence punctuation.** A source without a full stop
+7. **Preserve end-of-sentence punctuation.** A source without a full stop
    returns without one. This matters most for `task` and `option`, which are
    usually fragments: a full stop on one option of a task breaks the
    parallelism the set needs.
-9. **If a string is already in the target language, return it unchanged.**
-
+8. **If a string is already in the target language, return it unchanged.**
 
 ## The eight kinds
 
