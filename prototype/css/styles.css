@@ -181,13 +181,19 @@ button{font-family:var(--font);}
 .btn-text{background:transparent;color:var(--text);}
 button:focus-visible,.reset-btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
 
-/* loading state on a CTA (Figma 46051:3919): disabled-secondary look
-   (black-12% fill, 25% opacity, dark text/icon), loader after the label */
-.btn.is-loading,.btn.is-loading:disabled{background:#0000001f;color:var(--text);
-  opacity:.25;cursor:progress;pointer-events:none;}
-/* Loader per Figma 46051:3919: 24x24, pl-4 gap after the label */
-.btn-loader{display:inline-flex;align-items:center;padding-left:4px;}
-.btn-loader .spinner{width:24px;height:24px;border-width:2.5px;}
+/* Generating CTA (Figma 46117:3182): the ring REPLACES the label, and the
+   button keeps its green secondary fill. A run in progress is not a disabled
+   control — the old grey-at-25% treatment read as "this broke", and greying
+   the ring made the one moving element the hardest thing to see. */
+.btn.is-generating,.btn.is-generating:disabled{background:var(--green-fill);
+  color:var(--green);opacity:1;cursor:progress;pointer-events:none;
+  padding-left:16px;padding-right:16px;}
+/* Design ring, used on the CTA and beside a language name. Only the solid
+   quarter-arc spins; the faint full circle behind it stays put. */
+.ring{flex:0 0 16px;width:16px;height:16px;color:var(--green);}
+.ring path{transform-origin:50% 50%;animation:spin .8s linear infinite;}
+@media (prefers-reduced-motion: reduce){.ring path{animation-duration:1.8s;}}
+.row-ring{margin-left:2px;}
 .spinner{flex:0 0 auto;width:14px;height:14px;border-radius:50%;
   border:2px solid currentColor;border-top-color:transparent;
   display:inline-block;animation:spin .6s linear infinite;}

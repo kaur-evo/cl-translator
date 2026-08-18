@@ -73,6 +73,10 @@
     reviewModel: "claude-opus-4-8",
     review: true,
     mock: true,   // default: fake local translation, no proxy/key/cost. Flip to real to call Claude.
+    // Which loading treatment a generating language shows on the base view:
+    // "cta" = ring replaces the GENERATE label; "separate" = ring beside the
+    // language name, no GENERATE button. A design variant, not a behaviour one.
+    spinner: "cta",
     runs: [],     // { language, log, stats }
     busy: false,
   };
@@ -96,7 +100,7 @@
      first and triggering its own showBase() can't wipe a still-running row's
      state, since it's derived fresh from generatingLangs every time. */
   function showBase() {
-    View.renderBase(els.base, Model.getLanguages(), Model.getTasks(), generatingLangs);
+    View.renderBase(els.base, Model.getLanguages(), Model.getTasks(), generatingLangs, con.spinner);
   }
 
   /* ---------- View 2: review & edit — a modal over the base view ----------
@@ -580,6 +584,13 @@
 
       case "close-overlay":
         closeOverlay();
+        break;
+
+      // Design variant toggle: which loading treatment a generating row shows.
+      case "set-spinner":
+        con.spinner = t.dataset.spinner === "separate" ? "separate" : "cta";
+        renderConsole();
+        showBase(); // any in-flight rows switch treatment immediately
         break;
 
       case "dismiss-snack":

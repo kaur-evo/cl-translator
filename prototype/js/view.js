@@ -45,6 +45,17 @@ window.View = (function () {
   };
 
   // public/globe — exact Material glyph from Figma (20x20 in a 24 box)
+  /* Design-supplied loading ring (Figma 46117:3182). Two concentric arcs: a
+     faint full circle plus a solid quarter that spins. The source SVG used a
+     mask with a fixed id, which would collide once several rows spin at the
+     same time, so the same shape is drawn with stroke-dasharray instead. The
+     colour comes from currentColor, so it stays green wherever it is used. */
+  const ring = (cls = "") =>
+    `<svg class="ring${cls ? " " + cls : ""}" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">` +
+      `<circle cx="8" cy="8" r="6.8" stroke="currentColor" stroke-width="2.4" opacity=".3"/>` +
+      `<path d="M8 1.2A6.8 6.8 0 0 0 1.2 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>` +
+    `</svg>`;
+
   const globe = '<svg class="btn-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="translate(2 2)" fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 17.93C5.05 17.44 2 14.08 2 10C2 9.38 2.08 8.79 2.21 8.21L7 13V14C7 15.1 7.9 16 9 16V17.93ZM14 14C14.9 14 15.64 14.58 15.9 15.39C17.2 13.97 18 12.08 18 10C18 6.65 15.93 3.78 13 2.59V3C13 4.1 12.1 5 11 5H9V7C9 7.55 8.55 8 8 8H6V10H12C12.55 10 13 10.45 13 11V14H14Z" fill="currentColor"/></svg>';
 
   /* ---- flat rectangular flags (20x14 in a 24px box) per Figma 46018:6391.
@@ -165,7 +176,7 @@ window.View = (function () {
   /* ===========================================================
      VIEW 1 — base checklist editor (Figma 46012:3499)
      =========================================================== */
-  function renderBase(host, langs, tasks, generatingLangs) {
+  function renderBase(host, langs, tasks, generatingLangs, spinnerVariant = "cta") {
     generatingLangs = generatingLangs || new Set();
     // Card heading = the task's own title (its "Task" field), matching the
     // real task editor — not a positional "Task N" label.
@@ -195,14 +206,28 @@ window.View = (function () {
       // are disabled, the card itself isn't clickable, and the generate
       // button shows its loading state. There's nothing to edit or delete
       // mid-request.
+      // Two loading variants, switchable from the console (con.spinner):
+      //   "cta"      — the ring replaces the GENERATE button's label, so the
+      //                button itself is the progress indicator.
+      //   "separate" — the ring sits next to the language name and the
+      //                GENERATE button is removed for the duration.
+      // Both keep the ring green: a run in progress is not a disabled control,
+      // and the old grey treatment read as "this broke" rather than "working".
+      const ctaVariant = spinnerVariant === "cta";
       const genBtn = incomplete
-        ? `<button class="btn btn-secondary row-gen${generating ? " is-loading" : ""}" data-action="gen-lang" data-lang="${esc(l.name)}" ${generating ? "disabled" : ""}>generate${generating ? `<span class="btn-loader"><span class="spinner"></span></span>` : ""}</button>`
+        ? (generating
+            ? (ctaVariant
+                ? `<button class="btn btn-secondary row-gen is-generating" data-action="gen-lang" data-lang="${esc(l.name)}" disabled aria-label="Translating ${esc(l.name)}">${ring()}</button>`
+                : "")
+            : `<button class="btn btn-secondary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`)
         : "";
+      // separate-variant ring, shown beside the name instead of on the CTA
+      const nameRing = (generating && !ctaVariant) ? ring("row-ring") : "";
       return `
       <div class="row-card${generating ? "" : " clickable"}" ${generating ? "" : `data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0"`} aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
         <div class="row-card-body">
-          <div class="row-card-head">${esc(l.name)}${incomplete && !generating ? mdi(P.warn, "row-warn", 16, true) : ""}</div>
+          <div class="row-card-head">${esc(l.name)}${incomplete && !generating ? mdi(P.warn, "row-warn", 16, true) : ""}${nameRing}</div>
         </div>
         <div class="row-card-icons">
           <button class="icon-btn trash" data-action="del-lang" data-lang="${esc(l.name)}" aria-label="Delete ${esc(l.name)} translation" ${generating ? "disabled" : ""}>${mdi(P.del, "", 24)}</button>
@@ -469,7 +494,7 @@ window.View = (function () {
   }
 
   function renderConsole(host, state) {
-    const { translateModel, reviewModel, review, runs, busy, mock, needKey, hasKey } = state;
+    const { translateModel, reviewModel, review, runs, busy, mock, needKey, hasKey, spinner } = state;
 
     // On static hosting (no proxy), real mode needs the viewer's own key.
     const keyRow = (!mock && needKey) ? `
@@ -525,6 +550,13 @@ window.View = (function () {
           <span>Review stage</span>
           <span class="toggle sm ${review ? "on" : ""}" data-action="toggle-review" role="switch" aria-checked="${review}"></span>
         </label>
+        <div class="con-row">
+          <span>Variants</span>
+          <span class="con-seg" role="radiogroup" aria-label="Loading variant">
+            <button class="con-seg-opt${spinner === "separate" ? " on" : ""}" data-action="set-spinner" data-spinner="separate" role="radio" aria-checked="${spinner === "separate"}">spinner separate</button>
+            <button class="con-seg-opt${spinner === "cta" ? " on" : ""}" data-action="set-spinner" data-spinner="cta" role="radio" aria-checked="${spinner === "cta"}">spinner generate cta</button>
+          </span>
+        </div>
         <button class="btn con-run" data-action="run-full" ${busy ? "disabled" : ""}>
           ${busy ? `<span class="spinner"></span><span>RUNNING…</span>` : `${globe}GENERATE`}
         </button>
