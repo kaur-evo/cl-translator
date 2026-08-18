@@ -367,7 +367,7 @@ window.View = (function () {
       <div class="footer">
         <button class="btn btn-secondary" data-action="retranslate" ${complete ? "disabled" : ""}>generate</button>
         <span class="spacer"></span>
-        <button class="btn btn-text" data-action="review-cancel">close</button>
+        <button class="btn btn-text" data-action="review-cancel">cancel</button>
         <button class="btn btn-primary" data-action="review-save">save</button>
       </div>`;
   }
@@ -379,7 +379,7 @@ window.View = (function () {
      - picker (default): pick a language, GENERATE (primary) runs AI
        translation; ADD MANUALLY (tertiary, left) switches to...
      - manual: the full flat field list for that language (like the
-       review modal), footer becomes generate (tertiary) / close / save
+       review modal), footer becomes generate (secondary) / cancel / save
        (primary). Used to hand-type a translation instead of generating.
      =========================================================== */
   function renderAddOverlay(host, available) {
@@ -403,7 +403,7 @@ window.View = (function () {
         <div class="footer">
           <button class="btn btn-tertiary" data-action="add-manually" disabled>add manually</button>
           <span class="spacer"></span>
-          <button class="btn btn-text" data-action="close-overlay">close</button>
+          <button class="btn btn-text" data-action="close-overlay">cancel</button>
           <button class="btn btn-primary" data-action="do-translate" disabled>generate</button>
         </div>
       </div>`;
@@ -426,7 +426,7 @@ window.View = (function () {
         <div class="footer">
           <button class="btn btn-secondary" data-action="manual-generate">generate</button>
           <span class="spacer"></span>
-          <button class="btn btn-text" data-action="close-overlay">close</button>
+          <button class="btn btn-text" data-action="close-overlay">cancel</button>
           <button class="btn btn-primary" data-action="save-manual">save</button>
         </div>
       </div>`;
@@ -471,7 +471,7 @@ window.View = (function () {
         <div class="review-fields" style="padding:0 16px;">${rows}</div>
         <div class="footer">
           <span class="spacer"></span>
-          <button class="btn btn-text" data-action="close-task">close</button>
+          <button class="btn btn-text" data-action="close-task">cancel</button>
           <button class="btn btn-primary" data-action="save-task">save</button>
         </div>
       </div>`;
