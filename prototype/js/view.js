@@ -50,10 +50,10 @@ window.View = (function () {
      mask with a fixed id, which would collide once several rows spin at the
      same time, so the same shape is drawn with stroke-dasharray instead. The
      colour comes from currentColor, so it stays green wherever it is used. */
-  const ring = (cls = "", size = 16) =>
-    `<svg class="ring${cls ? " " + cls : ""}" viewBox="0 0 16 16" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">` +
-      `<circle cx="8" cy="8" r="6.8" stroke="currentColor" stroke-width="2.4" opacity=".3"/>` +
-      `<path d="M8 1.2A6.8 6.8 0 0 0 1.2 8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>` +
+  const ring = (cls = "", size = 24) =>
+    `<svg class="ring${cls ? " " + cls : ""}" viewBox="0 0 24 24" width="${size}" height="${size}" fill="none" xmlns="http://www.w3.org/2000/svg">` +
+      `<circle cx="12" cy="12" r="10.8" stroke="currentColor" stroke-width="2.4" opacity=".3"/>` +
+      `<path d="M12 1.2A10.8 10.8 0 0 0 1.2 12" stroke="currentColor" stroke-width="2.4"/>` +
     `</svg>`;
 
   const globe = '<svg class="btn-ico" viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="translate(2 2)" fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 17.93C5.05 17.44 2 14.08 2 10C2 9.38 2.08 8.79 2.21 8.21L7 13V14C7 15.1 7.9 16 9 16V17.93ZM14 14C14.9 14 15.64 14.58 15.9 15.39C17.2 13.97 18 12.08 18 10C18 6.65 15.93 3.78 13 2.59V3C13 4.1 12.1 5 11 5H9V7C9 7.55 8.55 8 8 8H6V10H12C12.55 10 13 10.45 13 11V14H14Z" fill="currentColor"/></svg>';
@@ -222,7 +222,7 @@ window.View = (function () {
             : `<button class="btn btn-secondary row-gen" data-action="gen-lang" data-lang="${esc(l.name)}">generate</button>`)
         : "";
       // separate-variant ring, shown beside the name instead of on the CTA
-      const nameRing = (generating && !ctaVariant) ? ring("row-ring") : "";
+      const nameRing = (generating && !ctaVariant) ? ring("row-ring", 16) : "";
       return `
       <div class="row-card${generating ? "" : " clickable"}" ${generating ? "" : `data-action="open-lang" data-lang="${esc(l.name)}" role="button" tabindex="0"`} aria-label="Review ${esc(l.name)} translation">
         ${flagSvg(l.flag)}
