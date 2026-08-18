@@ -21,11 +21,14 @@ fixed. It describes an existing working pipeline (`translate_run.py`,
 (`collectStrings`). Consumer: `translator/translate_run.py`. Browser-side
 consumer: `prototype/js/backend-direct.js`.
 
-**Not yet implemented.** Two rules describe intended behaviour rather than
-working code, and both are flagged where they appear:
+**Not yet implemented.** Three rules describe intended behaviour rather than
+working code, and each is flagged where it appears:
 
 - **R9a (checklist context).** The prototype sends each string with its kind
   but no checklist context, so a partial run translates its strings blind.
+- **R14 (length).** The limits are real and enforced in the editor, but no
+  `maxLength` reaches the model and no response is checked against one. A
+  translation that overflows its field is currently accepted.
 - **R15 (glossary).** A glossary exists (`et.json`, 1346 UI phrases) but only
   reaches the review stage, is hardcoded to Estonian whatever the target
   language, and is absent from the browser backend entirely.
@@ -143,10 +146,21 @@ Measurement task the hint reads "Message to operators when measurement is out
 of range", on a Yes/No task "Message to operators when the answer is No".
 Both are optional.
 
-Authoring limits, from the editor: checklist name 50, task 200, task
-description 500, unit 10, warning message 200, option 200 (2–30 options per
-select task), checklist description 500. These are source-side limits; see
-R14.
+Character limits, from the editor. These cap the tenant's input *and* the
+translation, and each string is sent with its own (R14):
+
+| `kind` | `maxLength` |
+|--------|-------------|
+| `checklist name` | 50 |
+| `task` | 200 |
+| `task description` | 500 |
+| `unit` | 10 |
+| `out-of-range message` | 200 |
+| `no-answer message` | 200 |
+| `option` | 200 |
+| `checklist description` | 500 |
+
+A select task holds 2 to 30 options.
 
 ## 2. Identity: the unique string is the unit of translation
 
@@ -250,10 +264,30 @@ are equally original.
 **R13.** The model detects each string's own language per string, and returns
 a string unchanged if it is already in the target language.
 
-**R14.** Translations may exceed the source length. Authoring limits (section
-1) constrain what an admin types, not what a translation may be; German and
-Finnish routinely run longer than Estonian. A consumer must not truncate, and
-a producer must not reject a longer translation.
+**R14 (length).** Every string is sent with the `maxLength` of the field it
+came from, because the translator cannot know it otherwise and the limits
+differ by an order of magnitude (10 for a unit, 500 for a description).
+
+The limit is a **hard cap on the translation**, not a target:
+
+- Aim for the source's own length. A short source deserves a short
+  translation regardless of how much room is left.
+- Never pad to fill the space.
+- Where a faithful translation would exceed the cap, shorten it: drop
+  articles, use the accepted abbreviation, use the shorter synonym. Prefer a
+  terse translation that fits over a complete one that does not.
+
+**R14a.** The cap binds in practice, so a consumer must check it. Target
+languages routinely run longer than the source: German and Finnish commonly
+30–40% longer than English or Estonian, which turns a 200-character task into
+an overflow. A response string over its `maxLength` is a failed translation
+for that string, handled like any other failure (R19): return the rest, leave
+that one missing, never truncate silently. A truncated string is worse than a
+missing one, because it looks finished.
+
+The one field where this bites hardest is `unit`: 10 characters. It is also
+the field where the answer is usually to keep the international symbol
+unchanged (R9) rather than to translate at all.
 
 **R15 (glossary).** Evocon's own UI is already translated into 25+ languages,
 and a checklist is read *inside* that UI. A task that says "mark the scrap"
@@ -299,10 +333,10 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
 {
   "language": "English",
   "fields": [
-    {"key": "Ohutuskontroll enne tootevahetust", "text": "Ohutuskontroll enne tootevahetust", "kind": "checklist name"},
-    {"key": "Mis oli toote kogus?",              "text": "Mis oli toote kogus?",              "kind": "task"},
-    {"key": "tk",                                "text": "tk",                                "kind": "unit"},
-    {"key": "Veenduge, et liin on puhas.",       "text": "Veenduge, et liin on puhas.",       "kind": "checklist description"}
+    {"key": "Ohutuskontroll enne tootevahetust", "text": "Ohutuskontroll enne tootevahetust", "kind": "checklist name",        "maxLength": 50},
+    {"key": "Mis oli toote kogus?",              "text": "Mis oli toote kogus?",              "kind": "task",                  "maxLength": 200},
+    {"key": "tk",                                "text": "tk",                                "kind": "unit",                  "maxLength": 10},
+    {"key": "Veenduge, et liin on puhas.",       "text": "Veenduge, et liin on puhas.",       "kind": "checklist description", "maxLength": 500}
   ],
   "context": {
     "checklistName": "Ohutuskontroll enne tootevahetust",
@@ -330,6 +364,7 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
 | `fields[].key` | yes | Identity of the unit. Opaque to the consumer. |
 | `fields[].text` | yes | The source string to translate. |
 | `fields[].kind` | yes | One of the eight values in R1. |
+| `fields[].maxLength` | yes | Character cap on the translation, from the field the string came from (R14). |
 | `context` | yes | The checklist these strings belong to, per R9a. Reference material only, never translated and never returned. |
 | `context.checklistName` | yes | The checklist's name, even when it is not in `fields`. |
 | `context.translated` | no | Strings of this checklist already translated into `language`, so new work matches existing wording. Omit on a first full run, where there are none. |
@@ -449,7 +484,10 @@ Wire-level:
 - [ ] error path returns partial `strings`, never source-language padding
 - [ ] no request field names a source language
 - [ ] empty `fields` performs no model call
-- [ ] a translation longer than its source is accepted, not truncated
+- [ ] a translation longer than its source is accepted while within maxLength
+- [ ] every field carries a maxLength matching its kind
+- [ ] a translation over maxLength is reported failed, never truncated
+- [ ] a 10-character unit cap is enforced on the response
 - [ ] every request carries `context.checklistName`
 - [ ] a partial run carries the checklist's other strings as context
 - [ ] no context string appears in the response
