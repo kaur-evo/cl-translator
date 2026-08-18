@@ -21,9 +21,16 @@ fixed. It describes an existing working pipeline (`translate_run.py`,
 (`collectStrings`). Consumer: `translator/translate_run.py`. Browser-side
 consumer: `prototype/js/backend-direct.js`.
 
-**Not yet implemented:** R9a (checklist context). The prototype sends each
-string with its kind but no checklist context, so a partial run currently
-translates its strings blind. Everything else here describes working code.
+**Not yet implemented.** Two rules describe intended behaviour rather than
+working code, and both are flagged where they appear:
+
+- **R9a (checklist context).** The prototype sends each string with its kind
+  but no checklist context, so a partial run translates its strings blind.
+- **R15 (glossary).** A glossary exists (`et.json`, 1346 UI phrases) but only
+  reaches the review stage, is hardcoded to Estonian whatever the target
+  language, and is absent from the browser backend entirely.
+
+Everything else here describes working code.
 
 ## 0. What you are translating
 
@@ -248,9 +255,41 @@ a string unchanged if it is already in the target language.
 Finnish routinely run longer than Estonian. A consumer must not truncate, and
 a producer must not reject a longer translation.
 
-**R15.** A glossary (e.g. `et.json`) is keyed on **matching source text**, and
-contributes hints only when a phrase matches. It is not a declaration that
-inputs are in its language, and a non-matching glossary contributes nothing.
+**R15 (glossary).** Evocon's own UI is already translated into 25+ languages,
+and a checklist is read *inside* that UI. A task that says "mark the scrap"
+must use the same word as the Shift View scrap button, or the operator sees
+two names for one thing on one screen.
+
+Every run is therefore given the Evocon UI terminology for the target
+language, as source-term to UI-term pairs:
+
+```json
+"glossary": {
+  "Scrap": "Praak",
+  "Downtime": "Seisakud",
+  "Changeover": "Tootevahetus",
+  "Station": "Töökeskus",
+  "Not applicable": "Pole kohaldatav"
+}
+```
+
+Rules for using it:
+
+- **A glossary hit wins over a better general translation.** Matching the
+  surrounding UI matters more than the most natural rendering of the term in
+  isolation.
+- **It applies to both stages.** The translate call uses it to get the term
+  right; the review call uses it to check the term was kept.
+- **It is filtered to the strings in the run.** Sending 1300 UI phrases per
+  request wastes tokens; send the entries whose source term actually appears.
+- **A miss contributes nothing.** Tenant text is free-form (section 0) and
+  mostly will not match. That is expected, not a failure.
+- **It never overrides a tenant's own wording.** The glossary settles what an
+  Evocon concept is called, not how the tenant phrases their instruction.
+
+**R15a.** The glossary is per target language. An English→Estonian glossary is
+useless on a run targeting German, and actively harmful if passed anyway: the
+model is handed Estonian text as the reference for German output.
 
 ## 5. Request
 
@@ -274,6 +313,10 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
       {"text": "Hea", "kind": "option"}
     ]
   },
+  "glossary": {
+    "Scrap": "Praak",
+    "Changeover": "Tootevahetus"
+  },
   "translateModel": "claude-haiku-4-5",
   "reviewModel": "claude-opus-4-8",
   "review": true
@@ -291,6 +334,7 @@ Sent to stdin of `translate_run.py`, or POSTed to `/translate`:
 | `context.checklistName` | yes | The checklist's name, even when it is not in `fields`. |
 | `context.translated` | no | Strings of this checklist already translated into `language`, so new work matches existing wording. Omit on a first full run, where there are none. |
 | `context.untranslated` | no | Strings of this checklist with no translation yet and not in this run. |
+| `glossary` | no | Evocon UI terminology for `language`, per R15. Source term to UI term. Filtered to terms appearing in this run. |
 | `translateModel` | no | Defaults to `claude-haiku-4-5`. |
 | `reviewModel` | no | Defaults to `claude-opus-4-8`. |
 | `review` | no | Defaults to `true`. |
@@ -409,6 +453,9 @@ Wire-level:
 - [ ] every request carries `context.checklistName`
 - [ ] a partial run carries the checklist's other strings as context
 - [ ] no context string appears in the response
+- [ ] the glossary passed matches the target language, never a fixed one
+- [ ] a glossary term appearing in a source string survives into the output
+- [ ] the glossary reaches the translate call, not only the review call
 
 Identity-level (all observable through the producer's collected set):
 
