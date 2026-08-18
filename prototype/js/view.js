@@ -323,7 +323,7 @@ window.View = (function () {
 
       <div class="footer">
         <span class="spacer"></span>
-        <button class="btn btn-text">cancel</button>
+        <button class="btn btn-text" data-action="leave-checklist">cancel</button>
         <button class="btn btn-primary" data-action="save-checklist">save</button>
       </div>`;
   }

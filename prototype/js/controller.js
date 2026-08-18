@@ -207,8 +207,13 @@
      Every run commits to the model on completion: generating always happens on
      the row, never behind an open modal, so there is no unsaved result for the
      admin to accept or reject. */
-  async function runTranslation(lang, onlyMissing) {
-    const commit = (strings) => Model.applyTranslation(lang.name, strings);
+  async function runTranslation(lang, onlyMissing, abandoned = () => false) {
+    // An abandoned run still finishes its request, but its result is dropped
+    // rather than written to the checklist (R27).
+    const commit = (strings) => {
+      if (abandoned()) return;
+      Model.applyTranslation(lang.name, strings);
+    };
     // Ordered, TYPED, DEDUPED strings: [{key, text, kind}] where key === text.
     // The translator is told what each string is (task / unit / option / …);
     // the checklist description is always last. Identical strings appear once.
@@ -369,6 +374,26 @@
   // immediately rather than waiting. generatingLangs + showBase()'s re-apply
   // logic keeps the row's loading state correct across any re-render,
   // including a sibling language finishing first.
+  /* A run belongs to the editing session that started it (R27). Leaving the
+     checklist abandons every run in flight: the result is thrown away even if
+     the request completes, which is what gives the admin a way to cancel an
+     unwanted generation. Bumping the token is the discard. */
+  let sessionToken = 0;
+  function leaveChecklist() {
+    if (generatingLangs.size === 0) { notify("Changes discarded"); return; }
+    askConfirm(
+      "A translation is still running. Leaving discards it, along with any " +
+      "unsaved changes to this checklist.",
+      () => {
+        closeConfirm();
+        sessionToken += 1;           // every in-flight run is now stale
+        generatingLangs.clear();
+        showBase();
+        notify("Translation discarded");
+      },
+      "leave");
+  }
+
   function startBackgroundGenerate(lang, onlyMissing) {
     if (generatingLangs.has(lang.name)) return;
     // Nothing can translate without a key on static hosting, so say so BEFORE
@@ -378,17 +403,20 @@
     generatingLangs.add(lang.name);
     showBase(); // render the row immediately so it shows loading right away
     notify("Translation started");
-    runTranslation(lang, onlyMissing)
+    const startedIn = sessionToken;
+    const abandoned = () => sessionToken !== startedIn;
+    runTranslation(lang, onlyMissing, abandoned)
       // A background run commits straight to the model, so finishing IS a save
       // and it says so — the run started long enough ago that the row quietly
       // losing its spinner isn't enough of a signal on its own.
-      .then(() => notify("Translation saved"))
+      .then(() => { if (!abandoned()) notify("Translation saved"); })
       // A background run can finish while the admin is anywhere in the app.
       // We never interrupt with a modal — a failed run just leaves the language
       // incomplete (so the warning + generate CTA come back on their own) and
       // says so with an error snackbar.
-      .catch(() => notify("Translation failed", "error"))
+      .catch(() => { if (!abandoned()) notify("Translation failed", "error"); })
       .finally(() => {
+        if (abandoned()) return; // the row is already gone; don't resurrect it
         generatingLangs.delete(lang.name);
         showBase();
       });
@@ -616,6 +644,10 @@
         con.spinner = t.dataset.spinner === "separate" ? "separate" : "cta";
         renderConsole();
         showBase(); // any in-flight rows switch treatment immediately
+        break;
+
+      case "leave-checklist":
+        leaveChecklist();
         break;
 
       case "dismiss-snack":

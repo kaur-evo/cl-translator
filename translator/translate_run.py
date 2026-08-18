@@ -82,8 +82,12 @@ def account(model, resp):
     usage["cost"] += (i / 1_000_000) * p["in"] + (o / 1_000_000) * p["out"]
 
 
-def find_glossary_matches(english_phrase):
-    if not glossary:
+def find_glossary_matches(english_phrase, language=None):
+    # et.json is an English->Estonian UI phrase list, so it is only a valid
+    # reference when Estonian is the target. Passing it on a run targeting any
+    # other language hands the reviewer Estonian as the model answer, which is
+    # worse than passing nothing.
+    if not glossary or (language or "").strip().lower() not in ("estonian", "eesti"):
         return {}
     matches = {}
     phrase_lower = english_phrase.lower()
@@ -289,7 +293,7 @@ def call_review(language, fields, translations, model, retries=3):
     # glossary hints from any matching source phrase
     glossary_matches = {}
     for s in sources:
-        glossary_matches.update(find_glossary_matches(s))
+        glossary_matches.update(find_glossary_matches(s, language))
     glossary_section = ""
     if glossary_matches:
         glossary_section = (
