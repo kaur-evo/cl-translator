@@ -471,6 +471,10 @@
         els.ovTask.querySelectorAll(".edit-field textarea").forEach(ta => {
           Model.setTaskBaseField(editingTaskId, ta.dataset.field, ta.value);
         });
+        // Once every field is written, drop translations whose source string
+        // the edit removed. Done after the loop so two fields swapping values
+        // don't orphan a phrase the finished edit still uses.
+        Model.syncTranslations();
         closeTaskOverlay();
         showBase();
         break;

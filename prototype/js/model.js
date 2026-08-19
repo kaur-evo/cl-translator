@@ -226,6 +226,39 @@ window.Model = (function () {
   let taskSeq = tasks.length;
   let randomTaskCount = 0; // alternates addRandomTask's source language
 
+  // Every unique translatable source string currently in the checklist, in
+  // checklist order (name, then tasks, then description). Deduped by string.
+  // Module-scoped so pruning can use it without going through the public API.
+  function currentStrings() {
+    const seen = new Set();
+    const out = [];
+    const push = (text, kind) => {
+      if (text == null || text === "" || seen.has(text)) return;
+      seen.add(text);
+      out.push({ key: text, text, kind });
+    };
+    push(name.base, "checklist name");
+    tasks.forEach(task => {
+      task.fields.forEach(([field]) => push(task.base[field], kindOf(field)));
+    });
+    push(description.base, "checklist description");
+    return out;
+  }
+
+  // Spec: "If a task is deleted/edited in a way that a unique phrase is
+  // removed, then those translations for that phrase will be removed from the
+  // translations." Drop every stored translation whose source string is no
+  // longer used anywhere in the checklist. A phrase still used by another task
+  // keeps its translation, since strings are deduped and shared.
+  function pruneOrphanedTranslations() {
+    const live = new Set(currentStrings().map(s => s.key));
+    Object.keys(trans).forEach(lang => {
+      Object.keys(trans[lang]).forEach(src => {
+        if (!live.has(src)) delete trans[lang][src];
+      });
+    });
+  }
+
   return {
     getBaseLanguage: () => baseLanguage,
     getLanguages: () => languages,
@@ -334,18 +367,27 @@ window.Model = (function () {
     removeTask(id) {
       const i = tasks.findIndex(t => t.id === id);
       if (i > -1) tasks.splice(i, 1);
+      pruneOrphanedTranslations();
     },
 
     // Edit a single base field's text directly (mocking tool — the flat
-    // per-task edit dialog, not the real Evocon task editor). No translation
-    // bookkeeping needed: translations are keyed by source string, so a changed
-    // original is simply a new, untranslated string, and the old one stops
-    // being collected the moment nothing references it.
+    // per-task edit dialog, not the real Evocon task editor). A changed
+    // original is a new, untranslated string; if the old one was the last
+    // instance of that phrase, its translations go with it.
     setTaskBaseField(id, field, value) {
       const task = tasks.find(t => t.id === id);
       if (!task) return;
       task.base[field] = value;
+      // No pruning here: one save writes several fields in a loop, and two
+      // fields swapping values would momentarily orphan a phrase that the
+      // finished edit still uses. The caller runs syncTranslations() once the
+      // whole edit is committed.
     },
+
+    // Re-check the checklist against the stored translations and drop any that
+    // no longer have a source string. Call after committing an edit (the spec
+    // puts this check on the checklist/task edit or the save attempt).
+    syncTranslations() { pruneOrphanedTranslations(); },
 
     /* ---- Translation layer: UNIQUE STRINGS, not per-field ----
        A translation is keyed by the SOURCE STRING itself, not by which task or
@@ -353,29 +395,20 @@ window.Model = (function () {
          - "Good" appearing in five tasks is ONE string to translate once.
          - Editing an original produces a NEW string, which is untranslated —
            the old translation is simply no longer collected.
-         - Deleting the last task using a string orphans it, so it stops being
-           collected and its translation is dropped. If another task still uses
-           the same string, it survives.
+         - Deleting a task, or editing it so a phrase is no longer used
+           anywhere, removes that phrase's translations outright (spec:
+           "If a task is deleted/edited in a way that a unique phrase is
+           removed, then those translations for that phrase will be removed
+           from the translations"). Enforced by pruneOrphanedTranslations()
+           after every edit that can orphan a string, so a phrase that later
+           comes back returns untranslated rather than resurrecting its old
+           translation. If another task still uses the same string, it survives.
        `trans` is { langName: { sourceString: translatedString } }. */
 
     // Every unique translatable source string, in checklist order:
     // name → tasks (authoring order, fields in on-screen order) → description.
     // Deduped by string, first occurrence wins for `kind`.
-    collectStrings() {
-      const seen = new Set();
-      const out = [];
-      const push = (text, kind) => {
-        if (text == null || text === "" || seen.has(text)) return;
-        seen.add(text);
-        out.push({ key: text, text, kind });
-      };
-      push(name.base, "checklist name");
-      tasks.forEach(task => {
-        task.fields.forEach(([field]) => push(task.base[field], kindOf(field)));
-      });
-      push(description.base, "checklist description");
-      return out;
-    },
+    collectStrings() { return currentStrings(); },
     // Same, but only strings this language hasn't translated yet.
     collectMissingStrings(langName) {
       const t = trans[langName] || {};

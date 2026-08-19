@@ -88,8 +88,11 @@ adopted:
   translated yet, so it reads as missing. There is no "stale translation"
   state to detect or invalidate.
 - **Deleting a task drops its strings** from the collected set, so they are
-  neither displayed nor sent. Any translations left in the map are unreachable
-  and ignored.
+  neither displayed nor sent. A string the checklist no longer uses anywhere
+  also has its stored translations removed, not merely ignored: re-creating the
+  same source text later gives a new, untranslated unit rather than
+  resurrecting the old translation. A string still used by another task keeps
+  its translation, since units are deduped and shared.
 - **Completeness is a property of the set**: a language is complete when every
   currently-collected string has a translation. Deleting a fully-translated
   task cannot make a complete language incomplete.
